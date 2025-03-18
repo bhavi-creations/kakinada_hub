@@ -1,0 +1,56 @@
+
+/* Full-screen video */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    background: black;
+}
+
+.video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Ensures full video is visible */
+    background: black;
+}
+
+/* Content styling */
+.content {
+    position: absolute;
+    top: 50%;
+    right: 50px; /* Moves content to the right */
+    transform: translateY(-50%);
+    text-align: right;
+    color: white;
+    white-space: nowrap; /* Keeps text on one line */
+    display: flex;
+    flex-direction: column; /* Stacks elements vertically */
+    align-items: flex-end;
+    gap: 10px; /* Adds space between elements */
+}
+
+.content h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.content .btn {
+    width: 200px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
