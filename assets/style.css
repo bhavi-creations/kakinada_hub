@@ -1,47 +1,116 @@
-/* Ensure full-screen video */
-body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    overflow: hidden;
-}
+        /* Ensure full-screen video */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
 
-.video-container {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100vw;
-    height: 100vh;
-    z-index: -1;
-    background: black;
-}
+        .video-container {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100vw;
+            height: 100vh;
+            z-index: -1;
+            background: black;
+        }
 
-video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Cover entire screen */
-}
+        video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
 
-/* Content styling */
-.content {
+        /* Center Icon in the Wheel */
+        .center-icon {
+            position: absolute;
+            top: 48%;
+            left: 3%;
+            /* transform: translate(-50%, -50%); */
+            width: 100px;
+            height: 100px;
+        }
+
+        .center-icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        /* Content styling */
+        .content {
+            position: absolute;
+            top: 50%;
+            right: 50px;
+            transform: translateY(-50%);
+            text-align: right;
+            color: white;
+        }
+
+        .content h1 {
+            font-size: 2.5em;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .content .btn {
+            width: 200px;
+            margin-bottom: 15px;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        /* Mobile View: Move Icon to Top */
+        @media (max-width: 768px) {
+            .center-icon {
+                position: absolute;
+                top: 5%;
+                left: 80%;
+                transform: translate(-50%, 0);
+                width: 125px;
+                height: 125px;
+                background-color: white; /* Set white background */
+                border-radius: 50%; /* Make it a circle */
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 13px; /* Ensure the logo fits well inside */
+            }
+        
+            .center-icon img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain; /* Keep logo inside */
+             
+            }
+        
+            .content h1 {
+                font-size: 36px;
+            }
+        }
+        
+/* Default: "MEGA SOFTWARE" on Top-Left for Tablets & Larger Screens */
+.mega_software {
     position: absolute;
-    top: 50%;
-    right: 50px; /* Adjust to move content to right */
-    transform: translateY(-50%);
-    text-align: right;
-    color: white;
+    top: 10%;
+    right: 5%; 
+    font-size: 3.5em;
+    font-weight: bold;
+    text-align: left;
+    color: white !important;
 }
 
-.content h1 {
-    font-size: 2.5em;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-.content .btn {
-    width: 200px;
-    margin-bottom: 15px;
-    font-size: 1.2em;
-    font-weight: bold;
+@media (max-width: 768px) {
+    .mega_software {
+        top: auto;
+        bottom: 7%;
+        left: 40%;
+        transform: translateX(-50%);
+      padding-right: 50px !important;
+        text-align: center;
+        font-size: 2.3em; /* Reduce font size for better fit */
+        white-space: nowrap; /* Ensures text stays in one line */
+    }
 }
