@@ -4228,7 +4228,7 @@ textarea.form-control.is-invalid {
   color: var(--theme-color);
 }
 .main-menu > ul > li {
-  margin: 0 15px;
+  margin: 0 14px;
 }
 .main-menu > ul > li > a .new-label {
   position: absolute;
