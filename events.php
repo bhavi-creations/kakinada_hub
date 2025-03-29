@@ -140,10 +140,10 @@ $result = $stmt->get_result();
                                 </div>
 
                                 <div class="col-12 col-md-8">
-                                    <h4> <strong class="property_strong">  occasion :</strong>  Holi Dhamaka</h4>
+                                    <h4> <strong class="property_strong">  occasion :</strong>Ugadhi</h4>
                                     <p class="property_p_tag"><strong class="property_strong"> Venue :</strong> Spandhana </p>
                                     <p class="property_p_tag"> <strong class="property_strong"> Location : </strong> Kakinada </p>
-                                    <p class="property_p_tag"> <strong class="property_strong"> Phone :</strong> 9876543210 </p>
+                                    <p class="property_p_tag"> <strong class="property_strong"> Phone :</strong>9642343434 </p>
                                     <p class="property_p_tag"> <strong class="property_strong"> Website :</strong><a target="_blank" href="https://bhavicreationspvtltd.com/"> https://Spandhnaevents.com/ </a>  </p>
 
 
@@ -177,10 +177,10 @@ $result = $stmt->get_result();
                                 </div>
 
                                 <div class="col-12 col-md-8">
-                                    <h4> <strong class="property_strong">  occasion :</strong>  Holi Dhamaka</h4>
+                                    <h4> <strong class="property_strong">  occasion :</strong>ramzan</h4>
                                     <p class="property_p_tag"><strong class="property_strong"> Venue :</strong> Challa function hall </p>
                                     <p class="property_p_tag"> <strong class="property_strong"> Location : </strong> Kakinada </p>
-                                    <p class="property_p_tag"> <strong class="property_strong"> Phone :</strong> 9876543210 </p>
+                                    <p class="property_p_tag"> <strong class="property_strong"> Phone :</strong> 9642343434 </p>
                                     <p class="property_p_tag"> <strong class="property_strong"> Website :</strong><a target="_blank" href="https://bhavicreationspvtltd.com/"> https://challaevents.com/ </a>  </p>
 
 
@@ -193,7 +193,7 @@ $result = $stmt->get_result();
                                     <div class="terms_justify">
 
                                         <p>
-                                            <a href="event_full_page.php" class=" ">View More Details</a>
+                                            <a href="event_full_page1.php" class=" ">View More Details</a>
                                         </p>
                                     </div>
 

@@ -18,7 +18,7 @@
     <div class="container">
 
         <div class="text-center   mb-5">
-            <h1> ugadhi</h1>
+            <h1> Ramzan</h1>
 
         </div>
         <div class="row">
@@ -31,13 +31,13 @@
                         <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <img src="assets/img/self_images/ugadhi1.png" class="  img-fluid  d-block w-100" alt="...">
+                                    <img src="assets/img/self_images/ramzan.png" class="  img-fluid  d-block w-100" alt="...">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="assets/img/self_images/ugadhi2.png" class="  img-fluid  d-block w-100" alt="...">
+                                    <img src="assets/img/self_images/ramzan1.png" class="  img-fluid  d-block w-100" alt="...">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="assets/img/self_images/ugadhi3.png" class="  img-fluid  d-block w-100" alt="...">
+                                    <img src="assets/img/self_images/ramzan2.png" class="  img-fluid  d-block w-100" alt="...">
                                 </div>
                             </div>
                         </div>
@@ -50,7 +50,7 @@
                         <div class="product-content">
                             <div class="d-flex justify-content-between align-items-center">
                                 <p class="movie-label"><strong>Venue:</strong></p>
-                                <h3 class="movie-value">Spandhana</h3>
+                                <h3 class="movie-value">Challa function hall</h3>
                             </div>
                             <div class="d-flex justify-content-between align-items-center">
                                 <p class="movie-label"><strong>Rating:</strong></p>
@@ -58,11 +58,11 @@
                             </div>
                             <div class="d-flex justify-content-between align-items-center">
                                 <p class="movie-label"><strong>Location:</strong></p>
-                                <p class="movie-value">  Kakinada</p>
+                                <p class="movie-value"> Kakinada</p>
                             </div>
                             <div class="d-flex justify-content-between align-items-center">
                                 <p class="movie-label"><strong>Date:</strong></p>
-                                <p class="movie-value">  14-03-2025</p>
+                                <p class="movie-value"> 14-03-2025</p>
                             </div>
                         </div>
 
@@ -74,11 +74,12 @@
                     <div class="col-md-8 col-12 ">
                         <h2>About the Event</h2>
                         <h6>
-                        Ugadi, also known as the Telugu and Kannada New Year, is a joyous festival celebrated primarily in the states of Andhra Pradesh, Telangana, and Karnataka. It marks the beginning of a new year according to the lunisolar Hindu calendar and symbolizes new beginnings, prosperity, and hope. The festival falls in the spring season, usually in March or April, and is observed with great enthusiasm.                         </h6>
-                        <h2>About the Venue</h2>
-                        <h6>
-                        Spandana Function Hall is a versatile event venue located in Kakinada, Andhra Pradesh. It offers two indoor spaces: one accommodating up to 200 guests and another larger hall suitable for up to 600 seated guests, making it ideal for various events from intimate gatherings to grand celebrations. The venue also provides four rooms for guests and parking facilities for up to 50 vehicles.                         </h6>
+                            Ramzan, also known as Ramadan, is a sacred month observed by Muslims worldwide as a time of fasting, prayer, and self-reflection. It is the ninth month of the Islamic lunar calendar and is considered the holiest month in Islam. During Ramzan, Muslims fast from dawn to sunset, abstaining from food, drink, and other physical needs as an act of devotion and spiritual purification. The fast is broken each day with a meal called Iftar, often starting with dates and water, followed by a variety of traditional dishes. The pre-dawn meal before the fast begins is known as Suhoor.
 
+                            <h2>About the Venue</h2>
+                            <h6>
+                            Challa Function Hall is a versatile event venue located in Kakinada, Andhra Pradesh. It offers two indoor spaces: one accommodating up to 200 guests and another larger hall suitable for up to 600 seated guests, making it ideal for various events from intimate gatherings to grand celebrations. The venue also provides four rooms for guests and parking facilities for up to 50 vehicles.
+                            </h6>
                     </div>
                     <div class="col-md-4 col-12  ">
                         <h3 class="text-center">Tickets</h3>
@@ -96,7 +97,7 @@
                             </div>
                             <div class="d-flex justify-content-between align-items-center">
                                 <p class="movie-label"><strong>Couple : </strong></p>
-                                <p class="cast_names">   700/- </p>
+                                <p class="cast_names"> 700/- </p>
                             </div>
 
                         </div>
