@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Sidebar</title>
+    <script defer src="script.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .sidebar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 250px;
+            height: 100%;
+            background: #333;
+            color: white;
+            padding: 20px;
+            transform: translateX(-100%);
+            transition: transform 0.3s ease-in-out;
+        }
+        .sidebar.open {
+            transform: translateX(0);
+        }
+        .restaurant-icon {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background: #333;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+        }
+        .restaurant-list {
+            margin-top: 20px;
+        }
+        .restaurant-list a {
+            display: flex;
+            align-items: center;
+            color: white;
+            text-decoration: none;
+            padding: 10px 0;
+        }
+        .restaurant-list a:hover {
+            background: #555;
+        }
+    </style>
+</head>
+<body>
+    <button id="restaurant-icon" class="restaurant-icon">🍽</button>
+    <div id="sidebar" class="sidebar">
+        <h2>Restaurants</h2>
+        <ul id="restaurant-list" class="restaurant-list"></ul>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const restaurantIcon = document.getElementById("restaurant-icon");
+            const sidebar = document.getElementById("sidebar");
+            
+            restaurantIcon.addEventListener("click", function () {
+                sidebar.classList.toggle("open");
+            });
+        });
+
+        const restaurants = [
+            { name: "Pizza Palace", link: "https://example.com/pizza" },
+            { name: "Sushi Spot", link: "https://example.com/sushi" },
+            { name: "Burger Barn", link: "https://example.com/burger" },
+        ];
+
+        const restaurantList = document.getElementById("restaurant-list");
+        restaurants.forEach((restaurant) => {
+            const listItem = document.createElement("li");
+            const link = document.createElement("a");
+            link.href = restaurant.link;
+            link.target = "_blank";
+            link.rel = "noopener noreferrer";
+            link.textContent = restaurant.name;
+            
+            listItem.appendChild(link);
+            restaurantList.appendChild(listItem);
+        });
+    </script>
+</body>
+</html>

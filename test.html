@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Circuit Board Animation</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body style="margin: 0; overflow: hidden;">
+    <script>
+        let scene = new THREE.Scene();
+        let camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+        let renderer = new THREE.WebGLRenderer();
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        document.body.appendChild(renderer.domElement);
+
+        // Circuit board material (neon effect)
+        let material = new THREE.LineBasicMaterial({ color: 0x00ffff, linewidth: 2 });
+        let glowMaterial = new THREE.MeshBasicMaterial({ color: 0x00ffff });
+
+        // Circuit geometry (lines forming the board)
+        let points = [
+            new THREE.Vector3(-2, 0, 0),
+            new THREE.Vector3(-1, 1, 0),
+            new THREE.Vector3(1, -1, 0),
+            new THREE.Vector3(2, 0, 0),
+            new THREE.Vector3(1, 1, 0),
+            new THREE.Vector3(-1, -1, 0),
+            new THREE.Vector3(-2, 0, 0)
+        ];
+        let geometry = new THREE.BufferGeometry().setFromPoints(points);
+        let circuit = new THREE.Line(geometry, material);
+        scene.add(circuit);
+
+        // Glowing pulse (animated light dot)
+        let pulseGeometry = new THREE.SphereGeometry(0.1, 16, 16);
+        let pulse = new THREE.Mesh(pulseGeometry, glowMaterial);
+        scene.add(pulse);
+
+        camera.position.z = 5;
+
+        let clock = new THREE.Clock();
+
+        function animate() {
+            requestAnimationFrame(animate);
+            let time = clock.getElapsedTime() % 2;
+            let index = Math.floor(time / (2 / points.length));
+            let lerpFactor = (time % (2 / points.length)) / (2 / points.length);
+            
+            if (index < points.length - 1) {
+                pulse.position.lerpVectors(points[index], points[index + 1], lerpFactor);
+            }
+            renderer.render(scene, camera);
+        }
+        animate();
+
+        window.addEventListener("resize", () => {
+            renderer.setSize(window.innerWidth, window.innerHeight);
+            camera.aspect = window.innerWidth / window.innerHeight;
+            camera.updateProjectionMatrix();
+        });
+    </script>
+</body>
+</html>
