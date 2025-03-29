@@ -73,8 +73,8 @@
     <div class="container">
 
         <div class="text-center   ">
-            <h1>Welcome to The Followers</h1>
-            <h5>Exquisite Flower Bouquets for Every Occasion
+            <h1>Welcome to The Jewellery & Watches</h1>
+            <h5>Exquisite Jewelry Collection
             </h5>
         </div>
         <div class="row">
@@ -105,7 +105,7 @@
                     <div class="col-md-4 col-12 p-3">
                         <div class="product-content">
                             <h3>The Followers</h3>
-                            <p class="product-title h5 mt-1">Elegant & Fresh Floral Arrangements
+                            <p class="product-title h5 mt-1">Timeless Watches for Every Occasion
 
                             </p>
 
@@ -122,11 +122,13 @@
                 <div class="row my-5 p-3">
                     <div class="col-md-8 col-12 ">
                         <h6>
-                            Flowers have a unique way of expressing emotions, making every moment special with their beauty and fragrance. Whether it's a romantic gesture, a celebration, or a heartfelt sympathy, a bouquet of fresh flowers can brighten anyone’s day.
+                        Jewelry and watches are more than just accessories—they are timeless expressions of style, sophistication, and personal identity. Whether it's a dazzling diamond necklace, a sleek gold bracelet, or a luxurious timepiece, these pieces add charm and elegance to any look.
+
 
                         </h6>
                         <h6>
-                            Flower bouquets come in a variety of styles, from classic rose arrangements to mixed seasonal blooms. Each bouquet is thoughtfully crafted to reflect elegance, love, and warmth. Whether you prefer a vibrant mix of lilies, daisies, and tulips or the timeless charm of roses and orchids, there's a perfect bouquet for every occasion.
+                        Jewelry enhances beauty and signifies love, tradition, and self-expression. From intricately designed earrings to statement rings, every piece tells a story. Watches, on the other hand, combine functionality with fashion, making them an essential accessory for both men and women. Whether you prefer a classic leather strap watch or a high-end designer timepiece, the right watch adds a touch of refinement to any outfit.
+
 
 
                         </h6>
@@ -148,18 +150,18 @@
                         <h3 class="text-center">Menu</h3>
                         <div class="menu-container">
                             <div class="menu-item">
-                                <span class="food-name">Romantic Rose Delight
+                                <span class="food-name">Diamond Necklace  
 
                                 </span>
-                                <span class="price"> $45</span>
+                                <span class="price"> $1,200</span>
                             </div>
                             <div class="menu-item">
-                                <span class="food-name">Sunshine Sunflower Bunch </span>
-                                <span class="price"> $35</span>
+                                <span class="food-name">Gold Bracelet </span>
+                                <span class="price"> $850</span>
                             </div>
                             <div class="menu-item">
-                                <span class="food-name">Elegant Lily Charm </span>
-                                <span class="price"> $50 </span>
+                                <span class="food-name">Silver Earrings </span>
+                                <span class="price">  $250</span>
                             </div>
                             <div class="menu-item">
                                 <span class="food-name">Orchid Bliss Bouquet </span>

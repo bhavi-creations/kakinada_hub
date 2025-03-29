@@ -18,7 +18,7 @@
     <div class="container">
 
         <div class="text-center   mb-5">
-            <h1> Bhavi Creation Pvt Ltd</h1>
+            <h1>Neuro Star Hospital </h1>
 
 
         </div>
@@ -29,7 +29,7 @@
 
                     <div class="col-md-6 col-12 my-2 ">
                         <div class="job_image_card">
-                            <img src="assets/img/self_images/Bhavi pvt ltd logo.png" class="img-fluid" alt="">
+                            <img src="assets/img/self_images/neurostar_logo.png" class="img-fluid" alt="">
                         </div>
 
                     </div>
@@ -39,7 +39,7 @@
                         <div class="product-content">
                             <div class="d-flex justify-content-between align-items-center">
                                 <p class="movie-label"><strong>category : </strong></p>
-                                <h4 class="movie-value">Digital Marketing</h4>
+                                <h4 class="movie-value">Multispeciality Hospital  </h4>
                             </div>
                             <div class="d-flex justify-content-between align-items-center">
                                 <p class="movie-label"><strong>Rating :</strong></p>
@@ -56,14 +56,16 @@
                     <div class="col-md-8 col-12 ">
                         <h2>About Company</h2>
                         <h6>
-                        Launch your career with Bhavi Creations! Free internships in SEO, Content Writing, Design, and more. Join us in Kakinada and grow your skills
-                        </h6>
+                        Neuro Star Multispeciality Hospital is a leading healthcare institution committed to providing exceptional medical care through advanced technology and expert medical professionals. Our hospital offers a wide range of specialized treatments across multiple disciplines, ensuring comprehensive care for patients with various health conditions. With a patient-first approach, we focus on delivering personalized treatment plans that cater to individual needs, promoting faster recovery and overall well-being.
+
+
+                         </h6>
 
 
                         <h2>Address</h2>
                         <h6>
-                        Plot no 28, H No 70, 17-28, RTO Office Rd, opposite to New, behind J.N.T.U.Engineering College Play Ground, Ranga Rao Nagar, Kakinada, Andhra Pradesh 533003
-                        </h6>
+                        67-19-1, opp. Ashram School, Nagamalli Thota, Kakinada, 533003
+                    </h6>
 
                     </div>
                     <div class="col-md-4 col-12  ">
@@ -77,23 +79,23 @@
                             </div>
 
                             <div class="d-flex justify-content-between align-items-center">
-                                <p class="movie-label"><strong>Designer : </strong></p>
+                                <p class="movie-label"><strong>Orthodontist  : </strong></p>
                                 <p class="job_roles">2 </p>
                             </div>
                             <div class="d-flex justify-content-between align-items-center">
-                                <p class="movie-label"><strong>Website developer : </strong></p>
+                                <p class="movie-label"><strong>Endodontist  : </strong></p>
                                 <p class="job_roles">1 </p>
                             </div>
                             <div class="d-flex justify-content-between align-items-center">
-                                <p class="movie-label"><strong>   Content Writer : </strong></p>
+                                <p class="movie-label"><strong>  Periodontist  : </strong></p>
                                 <p class="job_roles">2 </p>
                             </div>
                             <div class="d-flex justify-content-between align-items-center">
-                                <p class="movie-label"><strong> Social Media Maneger : </strong></p>
+                                <p class="movie-label"><strong> Prosthodontist  : </strong></p>
                                 <p class="job_roles">1 </p>
                             </div>
                             <div class="d-flex justify-content-between align-items-center">
-                                <p class="movie-label"><strong> Telecaller : </strong></p>
+                                <p class="movie-label"><strong> Oral Surgeon : </strong></p>
                                 <p class="job_roles">1 </p>
                             </div>
                         </div>
@@ -108,7 +110,7 @@
 
                             <div class="d-flex justify-content-between align-items-center">
                                 <p class="movie-label"><strong>Phone : </strong></p>
-                                <p class="job_roles">+91 9642343434</p>
+                                <p class="job_roles">+91 9121476777</p>
                             </div>
 
                             <div class="d-flex justify-content-between align-items-center">
@@ -117,7 +119,7 @@
                             </div>
                             <div class="d-flex justify-content-between align-items-center">
                                 <p class="movie-label"><strong>Website : </strong></p>
-                                <p class="job_roles"> <a target="_blank" href="https://bhavicreationspvtltd.com/"> bhavicreationspvtltd.com </a> </p>
+                                <p class="job_roles"> <a target="_blank" href="https://neurostarhospital.com/"> https://neurostar <br> hospital.com/</a> </p>
                             </div>
 
                         </div>
@@ -134,13 +136,13 @@
                                 <div class="review-header">
                                     <img src="assets/img/test/woman.png" alt="User" class="profile-img">
                                     <div class="">
-                                        <p><strong>Emma R</strong></p>
+                                        <p><strong>Veera Venkata Durgadevi Gandi</strong></p>
                                         <p class="stars">⭐⭐⭐⭐⭐ 5/5</p>
                                     </div>
                                 </div>
                                 <p class="review-text">
-                                    "The ambiance was elegant, and the food was absolutely delicious! Every dish was beautifully presented, and the flavors were exceptional.
-                                    <span class="hidden-text">The staff was courteous and attentive, making the experience even more enjoyable. Highly recommended!"</span>
+                                Teeth gap fill cheyinchukunna chala Baga chesaru and chala Baga treat chesaru                                
+                                    <!-- <span class="hidden-text"> It’s wonderful to know you’re satisfied with the teeth gap treatment. We're always here to keep your smile healthy and beautiful! Best regards, Srinivasa Multispecialty Dental Hospital"</span> -->
                                 </p>
                                 <p class="view-more" onclick="toggleText(this)">Read More</p>
                                 <p class="view-images" onclick="toggleImages(this)">View Images</p>
@@ -156,13 +158,15 @@
                                 <div class="review-header">
                                     <img src="assets/img/test/boy11.png" alt="User" class="profile-img">
                                     <div class="">
-                                        <p><strong>David M</strong></p>
+                                        <p><strong>
+                                        kranthi kumar m
+</strong></p>
                                         <p class="stars">⭐⭐⭐⭐</p>
                                     </div>
                                 </div>
                                 <p class="review-text">
-                                    "A top-notch restaurant with a warm and inviting atmosphere. The wine selection was impressive, and the.
-                                    <span class="hidden-text">chef’s special was divine. Will definitely be coming back!"</span>
+                                Treatment is very good.receving is fantastic and fully equipped dental hospital, fully satisfied.price is reasonable
+                                 <span class="hidden-text">Dr.kiran Raju explains everything in detail and very happy for whole process"</span>
                                 </p>
                                 <p class="view-more" onclick="toggleText(this)">Read More</p>
                                 <p class="view-images" onclick="toggleImages(this)">View Images</p>
@@ -177,13 +181,13 @@
                                 <div class="review-header">
                                     <img src="assets/img/test/woman.png" alt="User" class="profile-img">
                                     <div class="">
-                                        <p><strong> Sophia L.</strong></p>
+                                        <p><strong>Iqra mahi
+                                        </strong></p>
                                         <p class="stars">⭐⭐⭐⭐⭐ 5/5</p>
                                     </div>
                                 </div>
                                 <p class="review-text">
-                                    "The food was amazing, especially the wood-fired pizza and seafood platter! However, the service was a
-                                    <span class="hidden-text">little slow during peak hours. Overall, a great place for a relaxed meal."</span>
+                                Thanks you so much all im soo happy                                     <!-- <span class="hidden-text">little slow during peak hours. Overall, a great place for a relaxed meal."</span> -->
                                 </p>
                                 <p class="view-more" onclick="toggleText(this)">Read More</p>
                                 <p class="view-images" onclick="toggleImages(this)">View Images</p>
@@ -199,13 +203,13 @@
                                 <div class="review-header">
                                     <img src="assets/img/test/boy11.png" alt="User" class="profile-img">
                                     <div class="">
-                                        <p><strong>David M</strong></p>
+                                        <p><strong>lokesh nandan</strong></p>
                                         <p class="stars">⭐⭐⭐⭐</p>
                                     </div>
                                 </div>
                                 <p class="review-text">
-                                    "A top-notch restaurant with a warm and inviting atmosphere. The wine selection was impressive, and the.
-                                    <span class="hidden-text">chef’s special was divine. Will definitely be coming back!"</span>
+                                Treatment was super & excellent.... complete painless treatment....clinic was very clean and hygienic...Dr kira raju sir was treated me very caring....staff also very supported....and
+                                   <span class="hidden-text">carring....I'm fully satisfied my treatment....tk u Dr Kiran raju sir and staff....tk u srinivasa dental"</span>
                                 </p>
                                 <p class="view-more" onclick="toggleText(this)">Read More</p>
                                 <p class="view-images" onclick="toggleImages(this)">View Images</p>

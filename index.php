@@ -6,7 +6,7 @@
  <section class="marquee-section">
      <div class="marquee_content">
          <marquee behavior="scroll" direction="left" class="marquee">
-             Get &nbsp; &nbsp; All &nbsp; &nbsp; Your &nbsp; &nbsp; Discounts &nbsp; &nbsp; At &nbsp; &nbsp;One &nbsp; &nbsp;Place &nbsp; &nbsp; IN &nbsp; &nbsp;Kakinada &nbsp; &nbsp; Hub &nbsp; &nbsp; || &nbsp; &nbsp; Get &nbsp; &nbsp; All &nbsp; &nbsp; Your &nbsp; &nbsp; Discounts &nbsp; &nbsp; At &nbsp; &nbsp;One &nbsp; &nbsp;Place &nbsp; &nbsp; IN &nbsp; &nbsp;Kakinada &nbsp; &nbsp; Hub &nbsp; &nbsp; || &nbsp; &nbsp; Get &nbsp; &nbsp; All &nbsp; &nbsp; Your &nbsp; &nbsp; Discounts &nbsp; &nbsp; At &nbsp; &nbsp;One &nbsp; &nbsp;Place &nbsp; &nbsp; IN &nbsp; &nbsp;Kakinada &nbsp; &nbsp; Hub &nbsp; &nbsp; || &nbsp; &nbsp; Get &nbsp; &nbsp; All &nbsp; &nbsp; Your &nbsp; &nbsp; Discounts &nbsp; &nbsp; At &nbsp; &nbsp;One &nbsp; &nbsp;Place &nbsp; &nbsp; IN &nbsp; &nbsp;Kakinada &nbsp; &nbsp; Hub &nbsp; &nbsp;
+             Get   All  Your   Discounts  At  One  Place  IN  Kakinada   Hub &nbsp;  ||  &nbsp;  Happy  Ugadhi &nbsp;   ||&nbsp;Get All Discounts Here &nbsp;  ||&nbsp; We Are Launching Soon
          </marquee>
      </div>
  </section>

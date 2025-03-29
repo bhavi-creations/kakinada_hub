@@ -141,8 +141,9 @@ $result = $stmt->get_result();
                                     <h4>Bhavi Creations Pvt Ltd</h4>
                                     <p class="property_p_tag"><strong class="property_strong"> vacancies :</strong> 12 </p>
                                     <p class="property_p_tag"> <strong class="property_strong"> Location : </strong> Kakinada </p>
-                                    <p class="property_p_tag"> <strong class="property_strong"> Phone :</strong> 9876543210 </p>
+                                    <p class="property_p_tag"> <strong class="property_strong"> Phone :</strong>+91 9642343434 </p>
                                     <p class="property_p_tag"> <strong class="property_strong"> Website :</strong><a target="_blank" href="https://bhavicreationspvtltd.com/"> https://bhavicreationspvtltd.com/ </a>  </p>
+
 
 
                                 </div>
@@ -167,6 +168,80 @@ $result = $stmt->get_result();
                     </section>
 
                     <section class="OfferContainer_exclusive__non wow fadeInUp my-2" data-wow-delay="100ms">
+                        <div class="col-12  card_div px-3">
+                            <div class="row  py-3">
+                                <div class="col-12 col-md-4 job_image_card  ">
+                                    <img src="assets/img/self_images/srinivasa_dental_logo.png" class="img-fluid company_logo_size" alt="">
+
+                                </div>
+
+                                <div class="col-12 col-md-8">
+                                    <h4>Srinivasa Dental Hospital </h4>
+                                    <p class="property_p_tag"><strong class="property_strong"> vacancies :</strong> 12 </p> 
+                                    <p class="property_p_tag"> <strong class="property_strong"> Location : </strong> Kakinada </p>
+                                    <p class="property_p_tag"> <strong class="property_strong"> Phone :</strong>+91 9569568567 </p>
+                                    <p class="property_p_tag"> <strong class="property_strong"> Website :</strong><a target="_blank" href="https://srinivasadentalkakinada.com/">https://srinivasadentalkakinada.com/</a>  </p>
+
+
+                                </div>
+
+
+
+
+                                <div class="col-12 terms_cond_styles">
+                                    <div class="terms_justify">
+
+                                        <p>
+                                            <a href="job_full_page1.php" class=" ">View More Details</a>
+                                        </p>
+                                    </div>
+
+                                     
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </section>
+
+                    <section class="OfferContainer_exclusive__non wow fadeInUp my-2" data-wow-delay="100ms">
+                        <div class="col-12  card_div px-3">
+                            <div class="row  py-3">
+                                <div class="col-12 col-md-4 job_image_card  ">
+                                    <img src="assets/img/self_images/neurostar_logo.png" class="img-fluid company_logo_size" alt="">
+
+                                </div>
+
+                                <div class="col-12 col-md-8">
+                                    <h4>Neuro Star Hospital</h4>
+                                    <p class="property_p_tag"><strong class="property_strong"> vacancies :</strong> 12 </p>
+                                    <p class="property_p_tag"> <strong class="property_strong"> Location : </strong> Kakinada </p>
+                                    <p class="property_p_tag"> <strong class="property_strong"> Phone :</strong> +91 9121476777,9885943399</p>
+                                    <p class="property_p_tag"> <strong class="property_strong"> Website :</strong><a target="_blank" href="https://neurostarhospital.com/">https://neurostarhospital.com/</a>  </p>
+
+
+                                </div>
+
+
+
+
+                                <div class="col-12 terms_cond_styles">
+                                    <div class="terms_justify">
+
+                                        <p>
+                                            <a href="job_full_page2.php" class=" ">View More Details</a>
+                                        </p>
+                                    </div>
+
+                                     
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </section>
+
+                    <!-- <section class="OfferContainer_exclusive__non wow fadeInUp my-2" data-wow-delay="100ms">
                         <div class="col-12  card_div px-3">
                             <div class="row  py-3">
                                 <div class="col-12 col-md-4 job_image_card  ">
@@ -201,81 +276,7 @@ $result = $stmt->get_result();
                             </div>
 
                         </div>
-                    </section>
-
-                    <section class="OfferContainer_exclusive__non wow fadeInUp my-2" data-wow-delay="100ms">
-                        <div class="col-12  card_div px-3">
-                            <div class="row  py-3">
-                                <div class="col-12 col-md-4 job_image_card  ">
-                                    <img src="assets/img/self_images/Bhavi pvt ltd logo.png" class="img-fluid company_logo_size" alt="">
-
-                                </div>
-
-                                <div class="col-12 col-md-8">
-                                    <h4>Bhavi Creations Pvt Ltd</h4>
-                                    <p class="property_p_tag"><strong class="property_strong"> vacancies :</strong> 12 </p>
-                                    <p class="property_p_tag"> <strong class="property_strong"> Location : </strong> Kakinada </p>
-                                    <p class="property_p_tag"> <strong class="property_strong"> Phone :</strong> 9876543210 </p>
-                                    <p class="property_p_tag"> <strong class="property_strong"> Website :</strong><a target="_blank" href="https://bhavicreationspvtltd.com/"> https://bhavicreationspvtltd.com/ </a>  </p>
-
-
-                                </div>
-
-
-
-
-                                <div class="col-12 terms_cond_styles">
-                                    <div class="terms_justify">
-
-                                        <p>
-                                            <a href="job_full_page.php" class=" ">View More Details</a>
-                                        </p>
-                                    </div>
-
-                                     
-
-                                </div>
-                            </div>
-
-                        </div>
-                    </section>
-
-                    <section class="OfferContainer_exclusive__non wow fadeInUp my-2" data-wow-delay="100ms">
-                        <div class="col-12  card_div px-3">
-                            <div class="row  py-3">
-                                <div class="col-12 col-md-4 job_image_card  ">
-                                    <img src="assets/img/self_images/Bhavi pvt ltd logo.png" class="img-fluid company_logo_size" alt="">
-
-                                </div>
-
-                                <div class="col-12 col-md-8">
-                                    <h4>Bhavi Creations Pvt Ltd</h4>
-                                    <p class="property_p_tag"><strong class="property_strong"> vacancies :</strong> 12 </p>
-                                    <p class="property_p_tag"> <strong class="property_strong"> Location : </strong> Kakinada </p>
-                                    <p class="property_p_tag"> <strong class="property_strong"> Phone :</strong> 9876543210 </p>
-                                    <p class="property_p_tag"> <strong class="property_strong"> Website :</strong><a target="_blank" href="https://bhavicreationspvtltd.com/"> https://bhavicreationspvtltd.com/ </a>  </p>
-
-
-                                </div>
-
-
-
-
-                                <div class="col-12 terms_cond_styles">
-                                    <div class="terms_justify">
-
-                                        <p>
-                                            <a href="job_full_page.php" class=" ">View More Details</a>
-                                        </p>
-                                    </div>
-
-                                     
-
-                                </div>
-                            </div>
-
-                        </div>
-                    </section>
+                    </section> -->
 
 
                     <script>

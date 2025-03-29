@@ -28,7 +28,7 @@
         <div class="row align-items-center">
             <!-- Left Side: Mobile Number -->
             <div class="col-md-4 text-white">
-                <p class="mb-0 white_color"><i class="fas fa-phone-alt"></i> +91 98765 43210</p>
+                <p class="mb-0 white_color"><i class="fas fa-phone-alt"></i> +91 9642343434</p>
             </div>
 
             <!-- Center: Kakinada Hub -->
