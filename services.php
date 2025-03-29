@@ -54,14 +54,14 @@
                     <h4 class="yello_heding"><img src="assets/img/self_images/haircut.png" alt="" class="img-fluid"> Saloons & Spa</h4>
 
                     <ul>
-                        <li><a class="sub_mini_serices" href="business_layout.php"> Royal Touch </a></li>
-                        <li><a class="sub_mini_serices" href="business_layout.php"> V & V </a></li>
-                        <li><a class="sub_mini_serices" href="business_layout.php"> Tomboi </a></li>
-                        <li><a class="sub_mini_serices" href="business_layout.php"> VJ saloon </a></li>
-                        <li><a class="sub_mini_serices" href="business_layout.php"> Nice Looks </a></li>
-                        <li><a class="sub_mini_serices" href="business_layout.php"> Alince </a></li>
-                        <li><a class="sub_mini_serices" href="business_layout.php"> Celebraties secrets </a></li>
-                        <li><a class="sub_mini_serices" href="business_layout.php"> Decent </a></li>
+                        <li><a class="sub_mini_serices" href="royal_touch.php"> Royal Touch </a></li>
+                        <li><a class="sub_mini_serices" href="royal_touch.php"> V & V </a></li>
+                        <li><a class="sub_mini_serices" href="royal_touch.php"> Tomboi </a></li>
+                        <li><a class="sub_mini_serices" href="royal_touch.php"> VJ saloon </a></li>
+                        <li><a class="sub_mini_serices" href="royal_touch.php"> Nice Looks </a></li>
+                        <li><a class="sub_mini_serices" href="royal_touch.php"> Alince </a></li>
+                        <li><a class="sub_mini_serices" href="royal_touch.php"> Celebraties secrets </a></li>
+                        <li><a class="sub_mini_serices" href="royal_touch.php"> Decent </a></li>
 
 
                         <li><a class="view_all_sub_mini_serices" href="list_layout.php"> View All Saloons & Spa Deals </a></li>
@@ -125,12 +125,12 @@
 
 
                     <ul>
-                        <li><a class="sub_mini_serices" href="sports_gym.php"> Sports Clothing </a></li>
-                        <li><a class="sub_mini_serices" href="sports_gym.php"> Clubs & Gyms </a></li>
-                        <li><a class="sub_mini_serices" href="sports_gym.php"> Camping & Outdoors </a></li>
-                        <li><a class="sub_mini_serices" href="sports_gym.php"> Sports & Fitness Equipment </a></li>
-                        <li><a class="sub_mini_serices" href="sports_gym.php"> Sports Nutrition & Diet </a></li>
-                        <li><a class="sub_mini_serices" href="sports_gym.php"> Cycling - Bikes & Accessories </a></li>
+                        <li><a class="sub_mini_serices" href="sports_clothing.php"> Sports Clothing </a></li>
+                        <li><a class="sub_mini_serices" href="sports_clothing.php"> Clubs & Gyms </a></li>
+                        <li><a class="sub_mini_serices" href="sports_clothing.php"> Camping & Outdoors </a></li>
+                        <li><a class="sub_mini_serices" href="sports_clothing.php"> Sports & Fitness Equipment </a></li>
+                        <li><a class="sub_mini_serices" href="sports_clothing.php"> Sports Nutrition & Diet </a></li>
+                        <li><a class="sub_mini_serices" href="sports_clothing.php"> Cycling - Bikes & Accessories </a></li>
                         <li><a class="view_all_sub_mini_serices" href="list_layout.php"> View All Sports & Fitness Deals </a></li>
 
                     </ul>
@@ -141,10 +141,10 @@
 
 
                     <ul>
-                        <li><a class="sub_mini_serices" href="kids_babies.php"> Toys & Games </a></li>
-                        <li><a class="sub_mini_serices" href="kids_babies.php"> Kids & Baby Clothes </a></li>
-                        <li><a class="sub_mini_serices" href="kids_babies.php"> Maternity </a></li>
-                        <li><a class="sub_mini_serices" href="kids_babies.php"> Baby Items & Furniture </a></li>
+                        <li><a class="sub_mini_serices" href="toys_games.php"> Toys & Games </a></li>
+                        <li><a class="sub_mini_serices" href="toys_games.php"> Kids & Baby Clothes </a></li>
+                        <li><a class="sub_mini_serices" href="toys_games.php"> Maternity </a></li>
+                        <li><a class="sub_mini_serices" href="toys_games.php"> Baby Items & Furniture </a></li>
                         <li><a class="view_all_sub_mini_serices" href="list_layout.php"> View All Kids & Babies Deals </a></li>
 
                     </ul>

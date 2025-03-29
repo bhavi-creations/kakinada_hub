@@ -120,14 +120,14 @@
                             </li>
                             <li class="saloon_bg"><a class=" " href="#"> Saloons & Spa</a>
                                 <ul>
-                                    <li><a class="sub_mini_serices" href="business_layout.php"> Royal Touch </a></li>
-                                    <li><a class="sub_mini_serices" href="business_layout.php"> V & V </a></li>
-                                    <li><a class="sub_mini_serices" href="business_layout.php"> Tomboi </a></li>
-                                    <li><a class="sub_mini_serices" href="business_layout.php"> VJ saloon </a></li>
-                                    <li><a class="sub_mini_serices" href="business_layout.php"> Nice Looks </a></li>
-                                    <li><a class="sub_mini_serices" href="business_layout.php"> Alince </a></li>
-                                    <li><a class="sub_mini_serices" href="business_layout.php"> Celebraties secrets </a></li>
-                                    <li><a class="sub_mini_serices" href="business_layout.php"> Decent </a></li>
+                                    <li><a class="sub_mini_serices" href="royal_touch.php"> Royal Touch </a></li>
+                                    <li><a class="sub_mini_serices" href="royal_touch.php"> V & V </a></li>
+                                    <li><a class="sub_mini_serices" href="royal_touch.php"> Tomboi </a></li>
+                                    <li><a class="sub_mini_serices" href="royal_touch.php"> VJ saloon </a></li>
+                                    <li><a class="sub_mini_serices" href="royal_touch.php"> Nice Looks </a></li>
+                                    <li><a class="sub_mini_serices" href="royal_touch.php"> Alince </a></li>
+                                    <li><a class="sub_mini_serices" href="royal_touch.php"> Celebraties secrets </a></li>
+                                    <li><a class="sub_mini_serices" href="royal_touch.php"> Decent </a></li>
 
 
                                     <li><a class="view_all_sub_mini_serices" href="list_layout.php"> View All Saloons & Spa Deals </a></li>
@@ -136,27 +136,27 @@
                             </li>
                             <li class="gifts_bg"><a class="" href="business_layout.php"> Gifts & Jewellery</a>
                                 <ul>
-                                    <li><a class="sub_mini_serices" href="business_layout.php"> Sweets & Chocolates </a></li>
-                                    <li><a class="sub_mini_serices" href="business_layout.php"> Gifts & Collectables </a></li>
-                                    <li><a class="sub_mini_serices" href="business_layout.php"> Flowers </a></li>
-                                    <li><a class="sub_mini_serices" href="business_layout.php"> Jewellery & Watches </a></li>
-                                    <li><a class="sub_mini_serices" href="business_layout.php"> Malbar </a></li>
-                                    <li><a class="sub_mini_serices" href="business_layout.php"> Tansique </a></li>
-                                    <li><a class="sub_mini_serices" href="business_layout.php"> Kazana Jewellery </a></li>
+                                    <li><a class="sub_mini_serices" href="sweets_chocolate.php"> Sweets & Chocolates </a></li>
+                                    <li><a class="sub_mini_serices" href="sweets_chocolate.php"> Gifts & Collectables </a></li>
+                                    <li><a class="sub_mini_serices" href="sweets_chocolate.php"> Flowers </a></li>
+                                    <li><a class="sub_mini_serices" href="sweets_chocolate.php"> Jewellery & Watches </a></li>
+                                    <li><a class="sub_mini_serices" href="sweets_chocolate.php"> Malbar </a></li>
+                                    <li><a class="sub_mini_serices" href="sweets_chocolate.php"> Tansique </a></li>
+                                    <li><a class="sub_mini_serices" href="sweets_chocolate.php"> Kazana Jewellery </a></li>
                                     <li><a class="view_all_sub_mini_serices" href="list_layout.php"> View All Gifts & Jewellery Deals </a></li>
 
                                 </ul>
                             </li>
                             <li class="fashion_bg"><a class=" " href="#"> Fashion</a>
                                 <ul>
-                                    <li><a class="sub_mini_serices" href="business_layout.php"> Footwear </a></li>
-                                    <li><a class="sub_mini_serices" href="business_layout.php"> Jewellery </a></li>
-                                    <li><a class="sub_mini_serices" href="business_layout.php"> Women's Fashion </a></li>
-                                    <li><a class="sub_mini_serices" href="business_layout.php"> Designerwear </a></li>
-                                    <li><a class="sub_mini_serices" href="business_layout.php"> Men's Fashion </a></li>
-                                    <li><a class="sub_mini_serices" href="business_layout.php"> Lingerie </a></li>
-                                    <li><a class="sub_mini_serices" href="business_layout.php"> Fashion Accessories </a></li>
-                                    <li><a class="sub_mini_serices" href="business_layout.php"> Children & Teen Fashion </a></li>
+                                    <li><a class="sub_mini_serices" href="footware_fashion.php"> Footwear </a></li>
+                                    <li><a class="sub_mini_serices" href="footware_fashion.php"> Jewellery </a></li>
+                                    <li><a class="sub_mini_serices" href="footware_fashion.php"> Women's Fashion </a></li>
+                                    <li><a class="sub_mini_serices" href="footware_fashion.php"> Designerwear </a></li>
+                                    <li><a class="sub_mini_serices" href="footware_fashion.php"> Men's Fashion </a></li>
+                                    <li><a class="sub_mini_serices" href="footware_fashion.php"> Lingerie </a></li>
+                                    <li><a class="sub_mini_serices" href="footware_fashion.php"> Fashion Accessories </a></li>
+                                    <li><a class="sub_mini_serices" href="footware_fashion.php"> Children & Teen Fashion </a></li>
 
                                     <li><a class="view_all_sub_mini_serices" href="list_layout.php"> View All Fashion Deals </a></li>
 
@@ -164,11 +164,11 @@
                             </li>
                             <li class="hospital_bg"><a class=" " href="#"> Hospitals</a>
                                 <ul>
-                                    <li><a class="sub_mini_serices" href="business_layout.php"> Dental Hospitals </a></li>
-                                    <li><a class="sub_mini_serices" href="business_layout.php"> Neuro Hospitals </a></li>
-                                    <li><a class="sub_mini_serices" href="business_layout.php"> ENT Hospitals </a></li>
-                                    <li><a class="sub_mini_serices" href="business_layout.php"> Skincare Hospitals </a></li>
-                                    <li><a class="sub_mini_serices" href="business_layout.php"> physiotherapy </a></li>
+                                    <li><a class="sub_mini_serices" href="dental_hospital.php"> Dental Hospitals </a></li>
+                                    <li><a class="sub_mini_serices" href="dental_hospital.php"> Neuro Hospitals </a></li>
+                                    <li><a class="sub_mini_serices" href="dental_hospital.php"> ENT Hospitals </a></li>
+                                    <li><a class="sub_mini_serices" href="dental_hospital.php"> Skincare Hospitals </a></li>
+                                    <li><a class="sub_mini_serices" href="dental_hospital.php"> physiotherapy </a></li>
 
                                     <li><a class="view_all_sub_mini_serices" href="list_layout.php"> View All Fashion Deals </a></li>
 
@@ -176,22 +176,22 @@
                             </li>
                             <li class="sports_bg"><a class=" " href="business_layout.php"> Sports & Gym</a>
                                 <ul>
-                                    <li><a class="sub_mini_serices" href="business_layout.php"> Sports Clothing </a></li>
-                                    <li><a class="sub_mini_serices" href="business_layout.php"> Clubs & Gyms </a></li>
-                                    <li><a class="sub_mini_serices" href="business_layout.php"> Camping & Outdoors </a></li>
-                                    <li><a class="sub_mini_serices" href="business_layout.php"> Sports & Fitness Equipment </a></li>
-                                    <li><a class="sub_mini_serices" href="business_layout.php"> Sports Nutrition & Diet </a></li>
-                                    <li><a class="sub_mini_serices" href="business_layout.php"> Cycling - Bikes & Accessories </a></li>
+                                    <li><a class="sub_mini_serices" href="sports_clothing.php"> Sports Clothing </a></li>
+                                    <li><a class="sub_mini_serices" href="sports_clothing.php"> Clubs & Gyms </a></li>
+                                    <li><a class="sub_mini_serices" href="sports_clothing.php"> Camping & Outdoors </a></li>
+                                    <li><a class="sub_mini_serices" href="sports_clothing.php"> Sports & Fitness Equipment </a></li>
+                                    <li><a class="sub_mini_serices" href="sports_clothing.php"> Sports Nutrition & Diet </a></li>
+                                    <li><a class="sub_mini_serices" href="sports_clothing.php"> Cycling - Bikes & Accessories </a></li>
                                     <li><a class="view_all_sub_mini_serices" href="list_layout.php"> View All Sports & Fitness Deals </a></li>
 
                                 </ul>
                             </li>
                             <li class="kids_bg"><a class=" " href="business_layout.php"> Kids & Babies</a>
                                 <ul>
-                                    <li><a class="sub_mini_serices" href="business_layout.php"> Toys & Games </a></li>
-                                    <li><a class="sub_mini_serices" href="business_layout.php"> Kids & Baby Clothes </a></li>
-                                    <li><a class="sub_mini_serices" href="business_layout.php"> Maternity </a></li>
-                                    <li><a class="sub_mini_serices" href="business_layout.php"> Baby Items & Furniture </a></li>
+                                    <li><a class="sub_mini_serices" href="toys_games.php"> Toys & Games </a></li>
+                                    <li><a class="sub_mini_serices" href="toys_games.php"> Kids & Baby Clothes </a></li>
+                                    <li><a class="sub_mini_serices" href="toys_games.php"> Maternity </a></li>
+                                    <li><a class="sub_mini_serices" href="toys_games.php"> Baby Items & Furniture </a></li>
                                     <li><a class="view_all_sub_mini_serices" href="list_layout.php"> View All Kids & Babies Deals </a></li>
 
                                 </ul>
@@ -305,14 +305,14 @@
                                                     <div class="col-3 saloon_bg my-2">
                                                         <li><a class="sub_heading" href="#"> Saloons & Spa</a>
                                                             <ul>
-                                                                <li><a class="sub_mini_serices" href="business_layout.php"> Royal Touch </a></li>
-                                                                <li><a class="sub_mini_serices" href="business_layout.php"> V & V </a></li>
-                                                                <li><a class="sub_mini_serices" href="business_layout.php"> Tomboi </a></li>
-                                                                <li><a class="sub_mini_serices" href="business_layout.php"> VJ saloon </a></li>
-                                                                <li><a class="sub_mini_serices" href="business_layout.php"> Nice Looks </a></li>
-                                                                <li><a class="sub_mini_serices" href="business_layout.php"> Alince </a></li>
-                                                                <li><a class="sub_mini_serices" href="business_layout.php"> Celebraties secrets </a></li>
-                                                                <li><a class="sub_mini_serices" href="business_layout.php"> Decent </a></li>
+                                                                <li><a class="sub_mini_serices" href="royal_touch.php"> Royal Touch </a></li>
+                                                                <li><a class="sub_mini_serices" href="royal_touch.php"> V & V </a></li>
+                                                                <li><a class="sub_mini_serices" href="royal_touch.php"> Tomboi </a></li>
+                                                                <li><a class="sub_mini_serices" href="royal_touch.php"> VJ saloon </a></li>
+                                                                <li><a class="sub_mini_serices" href="royal_touch.php"> Nice Looks </a></li>
+                                                                <li><a class="sub_mini_serices" href="royal_touch.php"> Alince </a></li>
+                                                                <li><a class="sub_mini_serices" href="royal_touch.php"> Celebraties secrets </a></li>
+                                                                <li><a class="sub_mini_serices" href="royal_touch.php"> Decent </a></li>
 
 
                                                                 <li><a class="view_all_sub_mini_serices" href="list_layout.php"> View All Saloons & Spa Deals </a></li>
@@ -325,13 +325,13 @@
                                                         <li><a class="sub_heading" href="business_layout.php"> Gifts & Jewellery</a>
                                                         <ul   >
 
-                                                                <li><a class="sub_mini_serices" href="business_layout.php"> Sweets & Chocolates </a></li>
-                                                                <li><a class="sub_mini_serices" href="business_layout.php"> Gifts & Collectables </a></li>
-                                                                <li><a class="sub_mini_serices" href="business_layout.php"> Flowers </a></li>
-                                                                <li><a class="sub_mini_serices" href="business_layout.php"> Jewellery & Watches </a></li>
-                                                                <li><a class="sub_mini_serices" href="business_layout.php"> Malbar </a></li>
-                                                                <li><a class="sub_mini_serices" href="business_layout.php"> Tansique </a></li>
-                                                                <li><a class="sub_mini_serices" href="business_layout.php"> Kazana Jewellery </a></li>
+                                                                <li><a class="sub_mini_serices" href="sweets_chocolate.php"> Sweets & Chocolates </a></li>
+                                                                <li><a class="sub_mini_serices" href="sweets_chocolate.php"> Gifts & Collectables </a></li>
+                                                                <li><a class="sub_mini_serices" href="sweets_chocolate.php"> Flowers </a></li>
+                                                                <li><a class="sub_mini_serices" href="sweets_chocolate.php"> Jewellery & Watches </a></li>
+                                                                <li><a class="sub_mini_serices" href="sweets_chocolate.php"> Malbar </a></li>
+                                                                <li><a class="sub_mini_serices" href="sweets_chocolate.php"> Tansique </a></li>
+                                                                <li><a class="sub_mini_serices" href="sweets_chocolate.phpp"> Kazana Jewellery </a></li>
                                                                 <li><a class="view_all_sub_mini_serices" href="list_layout.php"> View All Gifts & Jewellery Deals </a></li>
 
                                                             </ul>
@@ -341,14 +341,14 @@
                                                     <div class="col-3 fashion_bg  my-2">
                                                         <li><a class="sub_heading" href="#"> Fashion</a>
                                                             <ul>
-                                                                <li><a class="sub_mini_serices" href="business_layout.php"> Footwear </a></li>
-                                                                <li><a class="sub_mini_serices" href="business_layout.php"> Jewellery </a></li>
-                                                                <li><a class="sub_mini_serices" href="business_layout.php"> Women's Fashion </a></li>
-                                                                <li><a class="sub_mini_serices" href="business_layout.php"> Designerwear </a></li>
-                                                                <li><a class="sub_mini_serices" href="business_layout.php"> Men's Fashion </a></li>
-                                                                <li><a class="sub_mini_serices" href="business_layout.php"> Lingerie </a></li>
-                                                                <li><a class="sub_mini_serices" href="business_layout.php"> Fashion Accessories </a></li>
-                                                                <li><a class="sub_mini_serices" href="business_layout.php"> Children & Teen Fashion </a></li>
+                                                                <li><a class="sub_mini_serices" href="footware_fashion.php"> Footwear </a></li>
+                                                                <li><a class="sub_mini_serices" href="footware_fashion.php"> Jewellery </a></li>
+                                                                <li><a class="sub_mini_serices" href="footware_fashion.php"> Women's Fashion </a></li>
+                                                                <li><a class="sub_mini_serices" href="footware_fashion.php"> Designerwear </a></li>
+                                                                <li><a class="sub_mini_serices" href="footware_fashion.php"> Men's Fashion </a></li>
+                                                                <li><a class="sub_mini_serices" href="footware_fashion.php"> Lingerie </a></li>
+                                                                <li><a class="sub_mini_serices" href="footware_fashion.php"> Fashion Accessories </a></li>
+                                                                <li><a class="sub_mini_serices" href="footware_fashion.php"> Children & Teen Fashion </a></li>
 
                                                                 <li><a class="view_all_sub_mini_serices" href="list_layout.php"> View All Fashion Deals </a></li>
 
@@ -359,11 +359,11 @@
                                                     <div class="col-3 hospital_bg my-2">
                                                         <li><a class="sub_heading" href="#"> Hospitals</a>
                                                             <ul>
-                                                                <li><a class="sub_mini_serices" href="business_layout.php"> Dental Hospitals </a></li>
-                                                                <li><a class="sub_mini_serices" href="business_layout.php"> Neuro Hospitals </a></li>
-                                                                <li><a class="sub_mini_serices" href="business_layout.php"> ENT Hospitals </a></li>
-                                                                <li><a class="sub_mini_serices" href="business_layout.php"> Skincare Hospitals </a></li>
-                                                                <li><a class="sub_mini_serices" href="business_layout.php"> physiotherapy </a></li>
+                                                                <li><a class="sub_mini_serices" href="dental_hospital.php"> Dental Hospitals </a></li>
+                                                                <li><a class="sub_mini_serices" href="dental_hospital.php"> Neuro Hospitals </a></li>
+                                                                <li><a class="sub_mini_serices" href="dental_hospital.php"> ENT Hospitals </a></li>
+                                                                <li><a class="sub_mini_serices" href="dental_hospital.php"> Skincare Hospitals </a></li>
+                                                                <li><a class="sub_mini_serices" href="dental_hospital.php"> physiotherapy </a></li>
 
                                                                 <li><a class="view_all_sub_mini_serices" href="list_layout.php"> View All Fashion Deals </a></li>
 
@@ -374,12 +374,12 @@
                                                     <div class="col-3 sports_bg my-2">
                                                         <li><a class="sub_heading" href="business_layout.php"> Sports & Gym</a>
                                                             <ul>
-                                                                <li><a class="sub_mini_serices" href="business_layout.php"> Sports Clothing </a></li>
-                                                                <li><a class="sub_mini_serices" href="business_layout.php"> Clubs & Gyms </a></li>
-                                                                <li><a class="sub_mini_serices" href="business_layout.php"> Camping & Outdoors </a></li>
-                                                                <li><a class="sub_mini_serices" href="business_layout.php"> Sports & Fitness Equipment </a></li>
-                                                                <li><a class="sub_mini_serices" href="business_layout.php"> Sports Nutrition & Diet </a></li>
-                                                                <li><a class="sub_mini_serices" href="business_layout.php"> Cycling - Bikes & Accessories </a></li>
+                                                                <li><a class="sub_mini_serices" href="sports_clothing.php"> Sports Clothing </a></li>
+                                                                <li><a class="sub_mini_serices" href="sports_clothing.php"> Clubs & Gyms </a></li>
+                                                                <li><a class="sub_mini_serices" href="sports_clothing.php"> Camping & Outdoors </a></li>
+                                                                <li><a class="sub_mini_serices" href="sports_clothing.php"> Sports & Fitness Equipment </a></li>
+                                                                <li><a class="sub_mini_serices" href="sports_clothing.php"> Sports Nutrition & Diet </a></li>
+                                                                <li><a class="sub_mini_serices" href="sports_clothing.php"> Cycling - Bikes & Accessories </a></li>
                                                                 <li><a class="view_all_sub_mini_serices" href="list_layout.php"> View All Sports & Fitness Deals </a></li>
 
                                                             </ul>
@@ -389,10 +389,10 @@
                                                     <div class="col-3 kids_bg my-2">
                                                         <li><a class="sub_heading" href="business_layout.php"> Kids & Babies</a>
                                                             <ul>
-                                                                <li><a class="sub_mini_serices" href="business_layout.php"> Toys & Games </a></li>
-                                                                <li><a class="sub_mini_serices" href="business_layout.php"> Kids & Baby Clothes </a></li>
-                                                                <li><a class="sub_mini_serices" href="business_layout.php"> Maternity </a></li>
-                                                                <li><a class="sub_mini_serices" href="business_layout.php"> Baby Items & Furniture </a></li>
+                                                                <li><a class="sub_mini_serices" href="toys_games.php"> Toys & Games </a></li>
+                                                                <li><a class="sub_mini_serices" href="toys_games.php"> Kids & Baby Clothes </a></li>
+                                                                <li><a class="sub_mini_serices" href="toys_games.php"> Maternity </a></li>
+                                                                <li><a class="sub_mini_serices" href="toys_games.php"> Baby Items & Furniture </a></li>
                                                                 <li><a class="view_all_sub_mini_serices" href="list_layout.php"> View All Kids & Babies Deals </a></li>
 
                                                             </ul>
