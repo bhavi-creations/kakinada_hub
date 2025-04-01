@@ -2,7 +2,7 @@
 
 
 
-<?php include 'moviesidebar.php';  ?>
+<!-- <?php include 'moviesidebar.php';  ?> -->
 
 
 

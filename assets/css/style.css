@@ -63,6 +63,8 @@
    01. Theme Base
 ==================================*/
 /*------------------- 1.1. Variable-------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 :root {
   --theme-color: #7D1C4A;
   --theme-color2: #2cb624;
@@ -1877,7 +1879,7 @@ textarea.form-control.is-invalid {
 
 .scrollToTop {
   position: fixed;
-  right: 60px;
+  left: 20px !important;
   bottom: 500px;
   opacity: 0;
   visibility: hidden;
@@ -1907,7 +1909,7 @@ textarea.form-control.is-invalid {
   color: var(--theme-color);
   line-height: 70px;
   text-align: center;
-  right: 60px;
+  left: 60px !important;
   bottom: 0;
   font-size: 1.2em;
   -webkit-box-shadow: 0 -5px 50px 0 rgba(0, 0, 0, 0.1);
@@ -18628,4 +18630,35 @@ padding-bottom: 5px;
 
 
 
+.carousel-control-prev, .carousel-control-next {
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  border-radius: 50%; /* Make the buttons circular */
+  width: 40px; /* Width of the buttons */
+  height: 40px; /* Height of the buttons */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute; /* Position them absolutely */
+  top: 50%; /* Vertically center the buttons */
+  transform: translateY(-50%); /* Adjust position to perfectly center */
+  z-index: 1; /* Ensure the buttons are above the images */
+  border: none;
+}
+
+/* Positioning for the previous button */
+.carousel-control-prev {
+  left: 10px; /* Place it slightly from the left side */
+}
+
+/* Positioning for the next button */
+.carousel-control-next {
+  right: 10px; /* Place it slightly from the right side */
+}
+
  
+
+ .events_paragraph{
+  font-family: "Poppins", sans-serif;
+  word-spacing: 3px;
+  line-height: 27px;
+ }

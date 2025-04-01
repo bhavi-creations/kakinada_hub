@@ -2157,7 +2157,7 @@
 
 
  .redirect_blog_srivice {
-   background-color: #ed87d1;
+   background-color: #7d1c4ae6;
    color: White;
    font-weight: 600;
    border: none;
@@ -3089,24 +3089,26 @@
 
 
 
-
-
 .marquee-section {
   background: linear-gradient(to Left, #e446b4, #b92a7e, #d74097, #e446b4);
   color: white;
   padding: 8px 0px 0px 6px;
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center; */
 }
 
 .marquee-content {
-  font-size: 16px;
+  font-size: 25px;
   font-weight: bold;
+  font-family: 'Arial', sans-serif; /* Change to any font you prefer */
+  letter-spacing: 1px;
 }
 
 .marquee {
   white-space: nowrap;
+}
+
+.highlight-text { 
+  font-family: 'Courier New', Courier, monospace;  
+  padding: 2px 5px; /* Add padding to the highlighted text */
 }
 
 
@@ -3171,3 +3173,6 @@
   padding:  0px !important;
 }
  
+
+
+

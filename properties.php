@@ -192,7 +192,15 @@
                                         </div>
                                         <div class="col-8 col-md-9">
                                             <h4><?php echo $row['title']; ?></h4>
-                                            <p class="property_p_tag"><strong class="property_strong">Price:</strong> <?php echo $row['price'] ?: 'Not Provided'; ?></p>
+                                            <p class="property_p_tag">
+                                                <strong class="property_strong">Price:</strong>
+                                                <?php
+                                                // Check if the price is available and apply number formatting, otherwise show 'Not Provided'
+                                                $price = isset($row['price']) ? $row['price'] : null;
+                                                echo $price ? '₹' . number_format($price) : 'Not Provided';
+                                                ?>
+                                            </p>
+
                                             <p class="property_p_tag"><strong class="property_strong">Location:</strong> <?php echo $row['location']; ?></p>
                                             <p class="property_p_tag">
                                                 <strong class="property_strong">Posted On:</strong>
@@ -209,14 +217,14 @@
                                         </div>
                                         <div class="col-12 terms_cond_styles">
                                             <div class="terms_justify">
-                                                <p><a href="#" class="toggle-terms">View More Details</a></p>
+                                                <p><a href="property_details.php?id=<?php echo $row['id']; ?>" class=" ">View Full Details</a></p>
                                             </div>
-                                            <div class="terms-content mb-3" style="display: none;">
+                                            <!-- <div class="terms-content mb-3" style="display: none;">
                                                 <h4>Addtional Details</h4>
                                                 <p class="property_p_tag"><strong class="property_strong">Phone:</strong> <?php echo $row['phone'] ?: 'Not Available'; ?></p>
                                                 <p class="property_p_tag"><strong class="property_strong">Description:</strong> <?php echo nl2br($row['description']); ?></p>
                                                 <a href="property_details.php?id=<?php echo $row['id']; ?>" class="btn btn-primary">View Full Details</a>
-                                            </div>
+                                            </div> -->
                                         </div>
                                     </div>
                                 </div>

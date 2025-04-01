@@ -41,15 +41,33 @@ if (isset($_GET['id'])) {
                         <div class="col-12 card_div px-3">
                             <div class="row py-3">
                                 <h4><?php echo htmlspecialchars($property['type']); ?></h4>
-                                <p class="property_p_tag"><strong class="property_strong">Price:</strong> <?php echo htmlspecialchars($property['price']); ?></p>
+                                <p class="property_p_tag">
+                                    <strong class="property_strong">Price:</strong>
+                                    <?php
+                                    $price = isset($property['price']) ? $property['price'] : 0;
+                                    echo '₹' . number_format($price); 
+                                    ?>
+                                </p>
+
                                 <p class="property_p_tag"><strong class="property_strong">Location:</strong> <?php echo htmlspecialchars($property['location']); ?></p>
                                 <p class="property_p_tag"><strong class="property_strong">Size (Sqft):</strong> <?php echo htmlspecialchars($property['size_sqft']); ?></p>
                                 <p class="property_p_tag"><strong class="property_strong">Bed Rooms:</strong> <?php echo htmlspecialchars($property['bedrooms']); ?></p>
                                 <p class="property_p_tag"><strong class="property_strong">Bath Rooms:</strong> <?php echo htmlspecialchars($property['bathrooms']); ?></p>
                                 <p class="property_p_tag"><strong class="property_strong">Furnishing Status :</strong> <?php echo htmlspecialchars($property['furnishing_status']); ?></p>
                                 <p class="property_p_tag"><strong class="property_strong">Amenities :</strong> <?php echo htmlspecialchars($property['amenities']); ?> Available</p>
+                                <p class="property_p_tag">
+                                    <strong class="property_strong">Posted On:</strong>
+                                    <?php
+                                    // Ensure the date is in the desired format
+                                    $created_at = isset($property['created_at']) ? strtotime($property['created_at']) : null;
+                                    if ($created_at) {
+                                        echo date('d M Y', $created_at) . ' (' . date('H:i', $created_at) . ')';
+                                    } else {
+                                        echo 'Not Available';
+                                    }
+                                    ?>
+                                </p>
 
-                                <p class="property_p_tag"><strong class="property_strong">Posted On:</strong> <?php echo htmlspecialchars($property['created_at']); ?></p>
                                 <p class="property_p_tag"><strong class="property_strong">Contact Person:</strong> <?php echo htmlspecialchars($property['phone']); ?></p>
                                 <p class="property_p_tag"><strong class="property_strong">Description:</strong> <?php echo nl2br(htmlspecialchars($property['description'])); ?></p>
                             </div>

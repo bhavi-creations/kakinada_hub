@@ -2,7 +2,7 @@
 
 
 
-<?php include 'moviesidebar.php';  ?>
+<!-- <?php include 'moviesidebar.php';  ?> -->
 
 
 
@@ -71,63 +71,17 @@
 
                 </div>
                 <div class="row my-5 p-3">
-                    <div class="col-md-8 col-12 ">
+                    <div class="  col-12 ">
                         <h2>About the Event</h2>
-                        <h6>
+                          <h6  class="events_paragraph">
                             Ramzan, also known as Ramadan, is a sacred month observed by Muslims worldwide as a time of fasting, prayer, and self-reflection. It is the ninth month of the Islamic lunar calendar and is considered the holiest month in Islam. During Ramzan, Muslims fast from dawn to sunset, abstaining from food, drink, and other physical needs as an act of devotion and spiritual purification. The fast is broken each day with a meal called Iftar, often starting with dates and water, followed by a variety of traditional dishes. The pre-dawn meal before the fast begins is known as Suhoor.
 
                             <h2>About the Venue</h2>
-                            <h6>
+                              <h6  class="events_paragraph">
                             Challa Function Hall is a versatile event venue located in Kakinada, Andhra Pradesh. It offers two indoor spaces: one accommodating up to 200 guests and another larger hall suitable for up to 600 seated guests, making it ideal for various events from intimate gatherings to grand celebrations. The venue also provides four rooms for guests and parking facilities for up to 50 vehicles.
                             </h6>
                     </div>
-                    <div class="col-md-4 col-12  ">
-                        <h3 class="text-center">Tickets</h3>
-
-                        <div class="product-content">
-
-                            <div class="d-flex justify-content-between align-items-center">
-                                <p class="movie-label"><strong>Single : </strong></p>
-                                <p class="cast_names">299/-</p>
-                            </div>
-
-                            <div class="d-flex justify-content-between align-items-center">
-                                <p class="movie-label"><strong>Stag : </strong></p>
-                                <p class="cast_names">500/- </p>
-                            </div>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <p class="movie-label"><strong>Couple : </strong></p>
-                                <p class="cast_names"> 700/- </p>
-                            </div>
-
-                        </div>
-
-
-
-                        <hr>
-
-                        <h3 class="text-center">menu</h3>
-
-                        <div class="product-content">
-
-                            <div class="d-flex justify-content-between align-items-center">
-                                <p class="movie-label"><strong>Single : </strong></p>
-                                <p class="cast_names">1 Drink,1 lunch</p>
-                            </div>
-
-                            <div class="d-flex justify-content-between align-items-center">
-                                <p class="movie-label"><strong>Stage : </strong></p>
-                                <p class="cast_names">2 Drink,2 lunch </p>
-                            </div>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <p class="movie-label"><strong>Couples : </strong></p>
-                                <p class="cast_names">2 Drink,2 lunch </p>
-                            </div>
-
-                        </div>
-
-
-                    </div>
+                     
                 </div>
                 <div class="row p-3">
                     <div class="col-md-8 col-12">

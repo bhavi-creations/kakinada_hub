@@ -27,7 +27,7 @@
                         <div class="card-body card_img_top_travel_body text-center">
                         </div>
                         <div class="card-footer text-center bg-white border-0">
-                            <button class="btn ' . $btnClass . ' filter-btn filter-btn-travel" data-filter="' . $lowerType . '">Explore ' . $type . '</button>
+                            <button class="btn ' . $btnClass . ' filter-btn filter-btn-travel" data-filter="' . $lowerType . '">  ' . $type . '</button>
                         </div>
                     </div>
                 </div>';

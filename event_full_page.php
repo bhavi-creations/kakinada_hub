@@ -2,7 +2,7 @@
 
 
 
-<?php include 'moviesidebar.php';  ?>
+<!-- <?php include 'moviesidebar.php';  ?> -->
 
 
 
@@ -71,62 +71,16 @@
 
                 </div>
                 <div class="row my-5 p-3">
-                    <div class="col-md-8 col-12 ">
+                    <div class=" col-12 ">
                         <h2>About the Event</h2>
-                        <h6>
+                        <h6 class="events_paragraph">
                         Ugadi, also known as the Telugu and Kannada New Year, is a joyous festival celebrated primarily in the states of Andhra Pradesh, Telangana, and Karnataka. It marks the beginning of a new year according to the lunisolar Hindu calendar and symbolizes new beginnings, prosperity, and hope. The festival falls in the spring season, usually in March or April, and is observed with great enthusiasm.                         </h6>
                         <h2>About the Venue</h2>
-                        <h6>
+                        <h6  class="events_paragraph">
                         Spandana Function Hall is a versatile event venue located in Kakinada, Andhra Pradesh. It offers two indoor spaces: one accommodating up to 200 guests and another larger hall suitable for up to 600 seated guests, making it ideal for various events from intimate gatherings to grand celebrations. The venue also provides four rooms for guests and parking facilities for up to 50 vehicles.                         </h6>
 
                     </div>
-                    <div class="col-md-4 col-12  ">
-                        <h3 class="text-center">Tickets</h3>
-
-                        <div class="product-content">
-
-                            <div class="d-flex justify-content-between align-items-center">
-                                <p class="movie-label"><strong>Single : </strong></p>
-                                <p class="cast_names">299/-</p>
-                            </div>
-
-                            <div class="d-flex justify-content-between align-items-center">
-                                <p class="movie-label"><strong>Stag : </strong></p>
-                                <p class="cast_names">500/- </p>
-                            </div>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <p class="movie-label"><strong>Couple : </strong></p>
-                                <p class="cast_names">   700/- </p>
-                            </div>
-
-                        </div>
-
-
-
-                        <hr>
-
-                        <h3 class="text-center">menu</h3>
-
-                        <div class="product-content">
-
-                            <div class="d-flex justify-content-between align-items-center">
-                                <p class="movie-label"><strong>Single : </strong></p>
-                                <p class="cast_names">1 Drink,1 lunch</p>
-                            </div>
-
-                            <div class="d-flex justify-content-between align-items-center">
-                                <p class="movie-label"><strong>Stage : </strong></p>
-                                <p class="cast_names">2 Drink,2 lunch </p>
-                            </div>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <p class="movie-label"><strong>Couples : </strong></p>
-                                <p class="cast_names">2 Drink,2 lunch </p>
-                            </div>
-
-                        </div>
-
-
-                    </div>
+                 
                 </div>
                 <div class="row p-3">
                     <div class="col-md-8 col-12">
