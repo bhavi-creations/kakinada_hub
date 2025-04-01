@@ -1,4 +1,4 @@
-<!-- <section id="bottomAdBanner" class="sticky-bottom-ad">
+  <section id="bottomAdBanner" class="sticky-bottom-ad">
     <div style="position: relative; display: inline-block;">
 
         <button class="close-bottom-ad" onclick="closeBottomAd()">✖</button>
@@ -12,7 +12,7 @@
     function closeBottomAd() {
         document.getElementById("bottomAdBanner").style.display = "none";
     }
-</script> -->
+</script>  
 
 
 
