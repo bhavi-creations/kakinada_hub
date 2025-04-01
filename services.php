@@ -55,12 +55,12 @@
 
                     <ul>
                         <li><a class="sub_mini_serices" href="royal_touch.php"> Royal Touch </a></li>
-                        <li><a class="sub_mini_serices" href="royal_touch.php"> V & V </a></li>
-                        <li><a class="sub_mini_serices" href="royal_touch.php"> Tomboi </a></li>
-                        <li><a class="sub_mini_serices" href="royal_touch.php"> VJ saloon </a></li>
-                        <li><a class="sub_mini_serices" href="royal_touch.php"> Nice Looks </a></li>
-                        <li><a class="sub_mini_serices" href="royal_touch.php"> Alince </a></li>
-                        <li><a class="sub_mini_serices" href="royal_touch.php"> Celebraties secrets </a></li>
+                        <li><a class="sub_mini_serices" href="vv_saloon.php"> V & V Saloon </a></li>
+                        <li><a class="sub_mini_serices" href="s3_beauty_saloon.php"> S3 Beauty Saloon </a></li>
+                        <li><a class="sub_mini_serices" href="groom9_saloon.php">Groom 9  Saloon </a></li>
+                        <li><a class="sub_mini_serices" href="natural_saloon.php"> Natural Saloon  </a></li>
+                        <li><a class="sub_mini_serices" href="angelic_beauty_salon.php"> Angelic Beauty Saloom </a></li>
+                        <li><a class="sub_mini_serices" href="laavish_saloon.php"> Laavish Saloon </a></li>
                         <li><a class="sub_mini_serices" href="royal_touch.php"> Decent </a></li>
 
 
@@ -75,12 +75,12 @@
 
                     <ul>
                         <li><a class="sub_mini_serices" href="sweets_chocolate.php"> Sweets & Chocolates </a></li>
-                        <li><a class="sub_mini_serices" href="sweets_chocolate.php"> Gifts & Collectables </a></li>
-                        <li><a class="sub_mini_serices" href="sweets_chocolate.php"> Flowers </a></li>
-                        <li><a class="sub_mini_serices" href="sweets_chocolate.php"> Jewellery & Watches </a></li>
-                        <li><a class="sub_mini_serices" href="sweets_chocolate.php"> Malbar </a></li>
-                        <li><a class="sub_mini_serices" href="sweets_chocolate.php"> Tansique </a></li>
-                        <li><a class="sub_mini_serices" href="sweets_chocolate.php"> Kazana Jewellery </a></li>
+                        <li><a class="sub_mini_serices" href="gifts_collactable.php"> Gifts & Collectables </a></li>
+                        <li><a class="sub_mini_serices" href="flowers_gifts.php"> Flowers </a></li>
+                        <li><a class="sub_mini_serices" href="jewellery_watches.php"> Jewellery & Watches </a></li>
+                        <li><a class="sub_mini_serices" href="malbar.php"> Malbar </a></li>
+                        <li><a class="sub_mini_serices" href="tanisqe.php"> Tansique </a></li>
+                        <li><a class="sub_mini_serices" href="khazana.php"> Kazana Jewellery </a></li>
                         <li><a class="view_all_sub_mini_serices" href=""> View All Gifts & Jewellery Deals </a></li>
 
                     </ul>
@@ -93,12 +93,12 @@
                     <ul>
                         <li><a class="sub_mini_serices" href="footware_fashion.php"> Footwear </a></li>
                         <li><a class="sub_mini_serices" href="footware_fashion.php"> Jewellery </a></li>
-                        <li><a class="sub_mini_serices" href="footware_fashion.php"> Women's Fashion </a></li>
+                        <li><a class="sub_mini_serices" href="womens_fashion.php"> Women's Fashion </a></li>
                         <li><a class="sub_mini_serices" href="footware_fashion.php"> Designerwear </a></li>
-                        <li><a class="sub_mini_serices" href="footware_fashion.php"> Men's Fashion </a></li>
-                        <li><a class="sub_mini_serices" href="footware_fashion.php"> Lingerie </a></li>
-                        <li><a class="sub_mini_serices" href="footware_fashion.php"> Fashion Accessories </a></li>
-                        <li><a class="sub_mini_serices" href="footware_fashion.php"> Children & Teen Fashion </a></li>
+                        <li><a class="sub_mini_serices" href="mens_fashion.php"> Men's Fashion </a></li>
+                        <!-- <li><a class="sub_mini_serices" href="footware_fashion.php"> Lingerie </a></li> -->
+                        <li><a class="sub_mini_serices" href="fashion_accessories.php"> Fashion Accessories </a></li>
+                        <li><a class="sub_mini_serices" href="child_accessories_fashion.php"> Children & Teen Fashion </a></li>
 
                         <li><a class="view_all_sub_mini_serices" href="list_layout.php"> View All Fashion Deals </a></li>
 

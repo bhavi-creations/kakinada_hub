@@ -73,8 +73,8 @@
     <div class="container">
 
         <div class="text-center   ">
-            <h1>Welcome to The Footware</h1>
-            <h5>Trendy Footwear for Every Occasion</h5>
+            <h1>Welcome to The Woman Fashion</h1>
+            <h5>Elevate Your Style with Trendy Women's Fashion</h5>
         </div>
         <div class="row">
             <div class="col-lg-9 col-12">
@@ -88,13 +88,13 @@
                         <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <img src="assets/img/test/4.png" class="  img-fluid  d-block w-100" alt="...">
+                                    <img src="assets/img/test/wf1.png" class="  img-fluid  d-block w-100" alt="...">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="assets/img/test/5.png" class="img-fluid d-block w-100" alt="...">
+                                    <img src="assets/img/test/wf2.png" class="img-fluid d-block w-100" alt="...">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="assets/img/test/6.png" class="img-fluid  d-block w-100" alt="...">
+                                    <img src="assets/img/test/wf3.png" class="img-fluid  d-block w-100" alt="...">
                                 </div>
                             </div>
                         </div>
@@ -103,8 +103,8 @@
                     </div>
                     <div class="col-md-4 col-12 p-3">
                         <div class="product-content">
-                            <h3>The Footware</h3>
-                            <p class="product-title h5 mt-1">Comfort & Style in Every Step</p>
+                            <h3>The Woman Fashion</h3>
+                            <p class="product-title h5 mt-1">Chic, Comfortable, and Timeless – Fashion for Every Woman</p>
 
                             <div class="rating-wrap">
                                 <div class="star-rating " role="img" aria-label="Rated 5.00 out of 5"><span
@@ -119,7 +119,13 @@
                 <div class="row my-5 p-3">
                     <div class="col-md-8 col-12 ">
                         <h6>
-                            Footwear is more than just a necessity; it’s a statement of style, comfort, and durability. Whether it’s for daily wear, sports activities, or special occasions, the right pair of shoes can enhance your confidence and protect your feet. High-quality footwear offers the perfect balance of design and functionality, ensuring a snug fit, excellent grip, and lasting durability. From trendy sneakers and formal shoes to cozy sandals and athletic footwear, there’s a perfect pair for every need.
+                        Women's fashion is a dynamic and ever-evolving industry that allows women to express their individuality, creativity, and confidence. From classic pieces to contemporary trends, fashion is an essential aspect of every woman's daily life. Whether it’s a casual outing, a formal event, or a special occasion, there’s always something in fashion that fits perfectly.
+
+
+
+                        </h6>
+                        <h6>
+                        Fashion is not just about following trends; it’s about choosing pieces that make a woman feel comfortable, empowered, and stylish. The clothing and accessories a woman chooses often reflect her personality, mood, and the environment she’s in, making fashion an essential form of self-expression.
 
 
                         </h6>
@@ -140,37 +146,37 @@
                         <h3 class="text-center">Menu</h3>
                         <div class="menu-container">
                             <div class="menu-item">
-                                <span class="food-name">Sneakers </span>
-                                <span class="price"> ₹4,000</span>
+                                <span class="food-name">Casual T-Shirts  </span>
+                                <span class="price"> ₹500 to ₹1,500 </span>
                             </div>
                             <div class="menu-item">
-                                <span class="food-name">Formal Shoes </span>
-                                <span class="price">₹5,000</span>
+                                <span class="food-name">Maxi Dresses  </span>
+                                <span class="price"> ₹1,500 to ₹4,000</span>
                             </div>
                             <div class="menu-item">
-                                <span class="food-name">Slippers </span>
-                                <span class="price">₹1,000</span>
+                                <span class="food-name">Tailored Blazers </span>
+                                <span class="price"> ₹2,000 to ₹6,000 </span>
                             </div>
                             <div class="menu-item">
-                                <span class="food-name">Heels </span>
-                                <span class="price"> ₹4,000</span>
+                                <span class="food-name">Sarees (Traditional) </span>
+                                <span class="price"> ₹1,500 to ₹15,000 </span>
                             </div>
                             <div class="menu-item">
-                                <span class="food-name">Juttis/Mojaris</span>
-                                <span class="price">₹2,500</span>
+                                <span class="food-name">Casual Sneakers </span>
+                                <span class="price"> ₹1,000 to ₹3,500</span>
                             </div>
 
                             <div class="menu-item">
-                                <span class="food-name">Flip-flops </span>
-                                <span class="price"> ₹1,000</span>
+                                <span class="food-name">Flats and Sandals </span>
+                                <span class="price">  ₹500 to ₹2,500</span>
                             </div>
                             <div class="menu-item">
-                                <span class="food-name">Casual Shoes   </span>
-                                <span class="price">₹2,000</span>
+                                <span class="food-name">Handbags  </span>
+                                <span class="price"> ₹1,500 to ₹10,000 </span>
                             </div>
                             <div class="menu-item">
-                                <span class="food-name">Loafers </span>
-                                <span class="price">₹3,500</span>
+                                <span class="food-name">Sunglasses  </span>
+                                <span class="price"> ₹1,000 to ₹4,000</span>
                             </div>
                         </div>
 
@@ -192,8 +198,8 @@
                                     </div>
                                 </div>
                                 <p class="review-text">
-                                    "These sneakers are the best! Super comfortable, .
-                                    <span class="hidden-text">stylish, and perfect for long walks Worth every penny!"</span>
+                                    "I love the variety of styles and the quality of clothing at affordable prices. .
+                                    <span class="hidden-text">The maxi dress I bought was perfect for the wedding I attended!"</span>
                                 </p>
                                 <p class="view-more" onclick="toggleText(this)">Read More</p>
                                 <p class="view-images" onclick="toggleImages(this)">View Images</p>
@@ -214,8 +220,8 @@
                                     </div>
                                 </div>
                                 <p class="review-text">
-                                    Bought a pair of formal shoes, and they exceeded my expectations.
-                                    <span class="hidden-text"> High-quality material and excellent craftsmanship.</span>
+                                The casual t-shirts and jeans collection is amazing. Super comfortable and stylish!
+                                    <span class="hidden-text">Definitely worth the investment.</span>
                                 </p>
                                 <p class="view-more" onclick="toggleText(this)">Read More</p>
                                 <p class="view-images" onclick="toggleImages(this)">View Images</p>
@@ -235,8 +241,8 @@
                                     </div>
                                 </div>
                                 <p class="review-text">
-                                    "My new running shoes feel amazing! Great support, lightweight
-                                    <span class="hidden-text">and perfect for workouts."</span>
+                                    "I bought a pair of wedges and a blazer from the store. Both are excellent in quality
+                                    <span class="hidden-text">and make me feel so confident and fashionable"</span>
                                 </p>
                                 <p class="view-more" onclick="toggleText(this)">Read More</p>
                                 <p class="view-images" onclick="toggleImages(this)">View Images</p>

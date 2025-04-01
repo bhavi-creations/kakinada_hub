@@ -121,11 +121,11 @@
                             <li class="saloon_bg"><a class=" " href="#"> Saloons & Spa</a>
                                 <ul>
                                     <li><a class="sub_mini_serices" href="royal_touch.php"> Royal Touch </a></li>
-                                    <li><a class="sub_mini_serices" href="royal_touch.php"> V & V </a></li>
-                                    <li><a class="sub_mini_serices" href="royal_touch.php"> Tomboi </a></li>
-                                    <li><a class="sub_mini_serices" href="royal_touch.php"> VJ saloon </a></li>
-                                    <li><a class="sub_mini_serices" href="royal_touch.php"> Nice Looks </a></li>
-                                    <li><a class="sub_mini_serices" href="royal_touch.php"> Alince </a></li>
+                                    <li><a class="sub_mini_serices" href="vv_saloon.php"> V & V </a></li>
+                                    <li><a class="sub_mini_serices" href="s3_beauty_saloon.php"> S3 Saloon & Spa </a></li>
+                                    <li><a class="sub_mini_serices" href="groom9_saloon.php"> Groom 9 saloon </a></li>
+                                    <li><a class="sub_mini_serices" href="natural_saloon.php"> Natural Saloon </a></li>
+                                    <li><a class="sub_mini_serices" href="laavish_saloon.php"> Laavish Saloon </a></li>
                                     <li><a class="sub_mini_serices" href="royal_touch.php"> Celebraties secrets </a></li>
                                     <li><a class="sub_mini_serices" href="royal_touch.php"> Decent </a></li>
 
@@ -137,9 +137,9 @@
                             <li class="gifts_bg"><a class="" href="business_layout.php"> Gifts & Jewellery</a>
                                 <ul>
                                     <li><a class="sub_mini_serices" href="sweets_chocolate.php"> Sweets & Chocolates </a></li>
-                                    <li><a class="sub_mini_serices" href="sweets_chocolate.php"> Gifts & Collectables </a></li>
-                                    <li><a class="sub_mini_serices" href="sweets_chocolate.php"> Flowers </a></li>
-                                    <li><a class="sub_mini_serices" href="sweets_chocolate.php"> Jewellery & Watches </a></li>
+                                    <li><a class="sub_mini_serices" href="gifts_collactable.php"> Gifts & Collectables </a></li>
+                                    <li><a class="sub_mini_serices" href="flowers_gifts.php"> Flowers </a></li>
+                                    <li><a class="sub_mini_serices" href="jewellery_watches.php"> Jewellery & Watches </a></li>
                                     <li><a class="sub_mini_serices" href="sweets_chocolate.php"> Malbar </a></li>
                                     <li><a class="sub_mini_serices" href="sweets_chocolate.php"> Tansique </a></li>
                                     <li><a class="sub_mini_serices" href="sweets_chocolate.php"> Kazana Jewellery </a></li>
