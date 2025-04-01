@@ -73,8 +73,8 @@
     <div class="container">
 
         <div class="text-center   ">
-            <h1>Welcome to The Footware</h1>
-            <h5>Trendy Footwear for Every Occasion</h5>
+            <h1>Welcome to The Fashion Accessories</h1>
+            <h5>Elevate Your Look with the Right Details</h5>
         </div>
         <div class="row">
             <div class="col-lg-9 col-12">
@@ -88,13 +88,13 @@
                         <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <img src="assets/img/test/4.png" class="  img-fluid  d-block w-100" alt="...">
+                                    <img src="assets/img/test/f1.png" class="  img-fluid  d-block w-100" alt="...">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="assets/img/test/5.png" class="img-fluid d-block w-100" alt="...">
+                                    <img src="assets/img/test/f2.png" class="img-fluid d-block w-100" alt="...">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="assets/img/test/6.png" class="img-fluid  d-block w-100" alt="...">
+                                    <img src="assets/img/test/f3.png" class="img-fluid  d-block w-100" alt="...">
                                 </div>
                             </div>
                         </div>
@@ -103,8 +103,8 @@
                     </div>
                     <div class="col-md-4 col-12 p-3">
                         <div class="product-content">
-                            <h3>The Footware</h3>
-                            <p class="product-title h5 mt-1">Comfort & Style in Every Step</p>
+                            <h3>The Fashion Accessories </h3>
+                            <p class="product-title h5 mt-1">Elevate Your Look with the Right Details</p>
 
                             <div class="rating-wrap">
                                 <div class="star-rating " role="img" aria-label="Rated 5.00 out of 5"><span
@@ -119,7 +119,8 @@
                 <div class="row my-5 p-3">
                     <div class="col-md-8 col-12 ">
                         <h6>
-                            Footwear is more than just a necessity; it’s a statement of style, comfort, and durability. Whether it’s for daily wear, sports activities, or special occasions, the right pair of shoes can enhance your confidence and protect your feet. High-quality footwear offers the perfect balance of design and functionality, ensuring a snug fit, excellent grip, and lasting durability. From trendy sneakers and formal shoes to cozy sandals and athletic footwear, there’s a perfect pair for every need.
+                        Fashion accessories play an essential role in elevating any outfit. While clothes may form the foundation of your look, accessories are what bring it all together, adding personality, flair, and a unique touch. Whether you’re dressing for a formal event, a casual outing, or just looking to upgrade your daily wear, accessories have the power to transform your style.
+
 
 
                         </h6>
@@ -140,37 +141,37 @@
                         <h3 class="text-center">Menu</h3>
                         <div class="menu-container">
                             <div class="menu-item">
-                                <span class="food-name">Sneakers </span>
-                                <span class="price"> ₹4,000</span>
+                                <span class="food-name">Leather Strap Watch  </span>
+                                <span class="price">  ₹1,500 to ₹5,000</span>
                             </div>
                             <div class="menu-item">
-                                <span class="food-name">Formal Shoes </span>
-                                <span class="price">₹5,000</span>
+                                <span class="food-name">Leather Belt </span>
+                                <span class="price"> ₹1,000 to ₹3,500 </span>
                             </div>
                             <div class="menu-item">
-                                <span class="food-name">Slippers </span>
-                                <span class="price">₹1,000</span>
+                                <span class="food-name">Classic Aviators </span>
+                                <span class="price"> ₹800 to ₹4,000 </span>
                             </div>
                             <div class="menu-item">
-                                <span class="food-name">Heels </span>
-                                <span class="price"> ₹4,000</span>
+                                <span class="food-name">Leather Wallet </span>
+                                <span class="price">  ₹1,000 to ₹5,000 </span>
                             </div>
                             <div class="menu-item">
-                                <span class="food-name">Juttis/Mojaris</span>
-                                <span class="price">₹2,500</span>
+                                <span class="food-name">Fedora </span>
+                                <span class="price"> ₹1,500 to ₹4,000</span>
                             </div>
 
                             <div class="menu-item">
-                                <span class="food-name">Flip-flops </span>
-                                <span class="price"> ₹1,000</span>
+                                <span class="food-name">Cashmere Scarf </span>
+                                <span class="price"> ₹1,500 to ₹4,000</span>
                             </div>
                             <div class="menu-item">
-                                <span class="food-name">Casual Shoes   </span>
-                                <span class="price">₹2,000</span>
+                                <span class="food-name">Leather Bracelet </span>
+                                <span class="price"> ₹500 to ₹2,500 </span>
                             </div>
                             <div class="menu-item">
-                                <span class="food-name">Loafers </span>
-                                <span class="price">₹3,500</span>
+                                <span class="food-name">Beaded Bracelet  </span>
+                                <span class="price"> ₹300 to ₹1,500</span>
                             </div>
                         </div>
 
@@ -192,8 +193,8 @@
                                     </div>
                                 </div>
                                 <p class="review-text">
-                                    "These sneakers are the best! Super comfortable, .
-                                    <span class="hidden-text">stylish, and perfect for long walks Worth every penny!"</span>
+                                    "I bought a leather belt from a well-known brand, and the quality is exceptional. It’s
+                                    <span class="hidden-text">sleek, durable, and pairs well with almost any outfit."</span>
                                 </p>
                                 <p class="view-more" onclick="toggleText(this)">Read More</p>
                                 <p class="view-images" onclick="toggleImages(this)">View Images</p>
@@ -214,8 +215,8 @@
                                     </div>
                                 </div>
                                 <p class="review-text">
-                                    Bought a pair of formal shoes, and they exceeded my expectations.
-                                    <span class="hidden-text"> High-quality material and excellent craftsmanship.</span>
+                                The aviators I purchased are stylish and lightweight. They’re perfect for sunny days
+                                    <span class="hidden-text"> and give off that classic vibe. A great addition to my collection!</span>
                                 </p>
                                 <p class="view-more" onclick="toggleText(this)">Read More</p>
                                 <p class="view-images" onclick="toggleImages(this)">View Images</p>
@@ -235,8 +236,8 @@
                                     </div>
                                 </div>
                                 <p class="review-text">
-                                    "My new running shoes feel amazing! Great support, lightweight
-                                    <span class="hidden-text">and perfect for workouts."</span>
+                                    "I ordered a leather wallet, and it was exactly what I was looking for. The design is
+                                    <span class="hidden-text">minimalist, and the leather feels soft yet sturdy. Worth every penny!"</span>
                                 </p>
                                 <p class="view-more" onclick="toggleText(this)">Read More</p>
                                 <p class="view-images" onclick="toggleImages(this)">View Images</p>

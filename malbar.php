@@ -73,8 +73,8 @@
     <div class="container">
 
         <div class="text-center   ">
-            <h1>Welcome to The Footware</h1>
-            <h5>Trendy Footwear for Every Occasion</h5>
+            <h1>Welcome to The Malabar</h1>
+            <h5>Crafted to Perfection, Designed for You</h5>
         </div>
         <div class="row">
             <div class="col-lg-9 col-12">
@@ -88,13 +88,13 @@
                         <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <img src="assets/img/test/4.png" class="  img-fluid  d-block w-100" alt="...">
+                                    <img src="assets/img/test/m1.png" class="  img-fluid  d-block w-100" alt="...">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="assets/img/test/5.png" class="img-fluid d-block w-100" alt="...">
+                                    <img src="assets/img/test/m2.png" class="img-fluid d-block w-100" alt="...">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="assets/img/test/6.png" class="img-fluid  d-block w-100" alt="...">
+                                    <img src="assets/img/test/m3.png" class="img-fluid  d-block w-100" alt="...">
                                 </div>
                             </div>
                         </div>
@@ -103,8 +103,8 @@
                     </div>
                     <div class="col-md-4 col-12 p-3">
                         <div class="product-content">
-                            <h3>The Footware</h3>
-                            <p class="product-title h5 mt-1">Comfort & Style in Every Step</p>
+                            <h3>The Malabar</h3>
+                            <p class="product-title h5 mt-1">Timeless Elegance in Every Piece</p>
 
                             <div class="rating-wrap">
                                 <div class="star-rating " role="img" aria-label="Rated 5.00 out of 5"><span
@@ -119,10 +119,15 @@
                 <div class="row my-5 p-3">
                     <div class="col-md-8 col-12 ">
                         <h6>
-                            Footwear is more than just a necessity; it’s a statement of style, comfort, and durability. Whether it’s for daily wear, sports activities, or special occasions, the right pair of shoes can enhance your confidence and protect your feet. High-quality footwear offers the perfect balance of design and functionality, ensuring a snug fit, excellent grip, and lasting durability. From trendy sneakers and formal shoes to cozy sandals and athletic footwear, there’s a perfect pair for every need.
+                        Malabar is a globally recognized jewelry brand known for its commitment to purity, craftsmanship, and exceptional service. Established in 1993, Malabar has grown into one of the largest jewelry retail chains, offering a wide range of gold, diamond, platinum, and gemstone jewelry.
+
+                       </h6>
+
+                       <h6>
+                       With showrooms across India, the Middle East, Southeast Asia, and the USA, Malabar is trusted for its high-quality designs, ethical sourcing, and transparent pricing. The brand blends traditional artistry with modern aesthetics, catering to diverse customer preferences.
 
 
-                        </h6>
+                       </h6>
                     </div>
 
 
@@ -140,36 +145,36 @@
                         <h3 class="text-center">Menu</h3>
                         <div class="menu-container">
                             <div class="menu-item">
-                                <span class="food-name">Sneakers </span>
-                                <span class="price"> ₹4,000</span>
+                                <span class="food-name">Gold Necklace (22K, 10g) </span>
+                                <span class="price">  ₹65,000 </span>
                             </div>
                             <div class="menu-item">
-                                <span class="food-name">Formal Shoes </span>
-                                <span class="price">₹5,000</span>
+                                <span class="food-name">Gold Bangles (22K, per pair) </span>
+                                <span class="price"> ₹1,00,000</span>
                             </div>
                             <div class="menu-item">
-                                <span class="food-name">Slippers </span>
-                                <span class="price">₹1,000</span>
+                                <span class="food-name">Diamond Necklace  </span>
+                                <span class="price">₹3,00,000 </span>
                             </div>
                             <div class="menu-item">
-                                <span class="food-name">Heels </span>
-                                <span class="price"> ₹4,000</span>
+                                <span class="food-name">Diamond Ring   </span>
+                                <span class="price">₹90,000</span>
                             </div>
                             <div class="menu-item">
-                                <span class="food-name">Juttis/Mojaris</span>
-                                <span class="price">₹2,500</span>
+                                <span class="food-name">Platinum Chain </span>
+                                <span class="price">₹90,000</span>
                             </div>
 
                             <div class="menu-item">
-                                <span class="food-name">Flip-flops </span>
-                                <span class="price"> ₹1,000</span>
+                                <span class="food-name">Platinum Ring </span>
+                                <span class="price">  ₹50,000 </span>
                             </div>
                             <div class="menu-item">
-                                <span class="food-name">Casual Shoes   </span>
-                                <span class="price">₹2,000</span>
+                                <span class="food-name">Emerald Earrings  </span>
+                                <span class="price">₹1,20,000  </span>
                             </div>
                             <div class="menu-item">
-                                <span class="food-name">Loafers </span>
+                                <span class="food-name">Sapphire Ring – ₹90,000 </span>
                                 <span class="price">₹3,500</span>
                             </div>
                         </div>
@@ -192,8 +197,8 @@
                                     </div>
                                 </div>
                                 <p class="review-text">
-                                    "These sneakers are the best! Super comfortable, .
-                                    <span class="hidden-text">stylish, and perfect for long walks Worth every penny!"</span>
+                                    "solutely stunning designs! The craftsmanship is top-notch, and the gold purity.
+                                    <span class="hidden-text"> is guaranteed. Loved my purchase!"</span>
                                 </p>
                                 <p class="view-more" onclick="toggleText(this)">Read More</p>
                                 <p class="view-images" onclick="toggleImages(this)">View Images</p>
@@ -214,8 +219,8 @@
                                     </div>
                                 </div>
                                 <p class="review-text">
-                                    Bought a pair of formal shoes, and they exceeded my expectations.
-                                    <span class="hidden-text"> High-quality material and excellent craftsmanship.</span>
+                                The diamond collection is exquisite. I bought a ring, and the sparkle .
+                                    <span class="hidden-text">is just mesmerizing. Worth every penny!</span>
                                 </p>
                                 <p class="view-more" onclick="toggleText(this)">Read More</p>
                                 <p class="view-images" onclick="toggleImages(this)">View Images</p>
@@ -235,8 +240,8 @@
                                     </div>
                                 </div>
                                 <p class="review-text">
-                                    "My new running shoes feel amazing! Great support, lightweight
-                                    <span class="hidden-text">and perfect for workouts."</span>
+                                    "Great customer service and beautiful jewelry. The intricate detailing
+                                    <span class="hidden-text">on the necklace I bought is just amazing!"</span>
                                 </p>
                                 <p class="view-more" onclick="toggleText(this)">Read More</p>
                                 <p class="view-images" onclick="toggleImages(this)">View Images</p>

@@ -73,8 +73,8 @@
     <div class="container">
 
         <div class="text-center   ">
-            <h1>Welcome to The Footware</h1>
-            <h5>Trendy Footwear for Every Occasion</h5>
+            <h1>Welcome to The Men's Fashion</h1>
+            <h5>Men's Fashion – Classic, Bold, and Timeless Styles</h5>
         </div>
         <div class="row">
             <div class="col-lg-9 col-12">
@@ -88,13 +88,13 @@
                         <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <img src="assets/img/test/4.png" class="  img-fluid  d-block w-100" alt="...">
+                                    <img src="assets/img/test/m11.png" class="  img-fluid  d-block w-100" alt="...">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="assets/img/test/5.png" class="img-fluid d-block w-100" alt="...">
+                                    <img src="assets/img/test/m22.png" class="img-fluid d-block w-100" alt="...">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="assets/img/test/6.png" class="img-fluid  d-block w-100" alt="...">
+                                    <img src="assets/img/test/m33.png" class="img-fluid  d-block w-100" alt="...">
                                 </div>
                             </div>
                         </div>
@@ -103,8 +103,8 @@
                     </div>
                     <div class="col-md-4 col-12 p-3">
                         <div class="product-content">
-                            <h3>The Footware</h3>
-                            <p class="product-title h5 mt-1">Comfort & Style in Every Step</p>
+                            <h3>The Men's Fashion</h3>
+                            <p class="product-title h5 mt-1">Elevate Your Wardrobe with Modern Men’s Trends</p>
 
                             <div class="rating-wrap">
                                 <div class="star-rating " role="img" aria-label="Rated 5.00 out of 5"><span
@@ -119,10 +119,10 @@
                 <div class="row my-5 p-3">
                     <div class="col-md-8 col-12 ">
                         <h6>
-                            Footwear is more than just a necessity; it’s a statement of style, comfort, and durability. Whether it’s for daily wear, sports activities, or special occasions, the right pair of shoes can enhance your confidence and protect your feet. High-quality footwear offers the perfect balance of design and functionality, ensuring a snug fit, excellent grip, and lasting durability. From trendy sneakers and formal shoes to cozy sandals and athletic footwear, there’s a perfect pair for every need.
-
+                        Men's fashion is all about confidence, comfort, and style. Over the years, men's fashion has evolved, offering a variety of options that cater to every man’s personal style. Whether it's formal wear, casual attire, or streetwear, men’s fashion embraces versatility, enabling men to express their personalities through their clothing choices. Fashion isn’t just for women; it’s an essential part of a man’s identity and lifestyle.
 
                         </h6>
+                        
                     </div>
 
 
@@ -140,37 +140,37 @@
                         <h3 class="text-center">Menu</h3>
                         <div class="menu-container">
                             <div class="menu-item">
-                                <span class="food-name">Sneakers </span>
-                                <span class="price"> ₹4,000</span>
+                                <span class="food-name">Basic Cotton T-Shirt </span>
+                                <span class="price"> ₹500 to ₹1,500 </span>
                             </div>
                             <div class="menu-item">
-                                <span class="food-name">Formal Shoes </span>
-                                <span class="price">₹5,000</span>
+                                <span class="food-name">Linen Shirt </span>
+                                <span class="price"> ₹1,500 to ₹4,000</span>
                             </div>
                             <div class="menu-item">
-                                <span class="food-name">Slippers </span>
-                                <span class="price">₹1,000</span>
+                                <span class="food-name">Denim Jacket </span>
+                                <span class="price">  ₹2,500 to ₹6,000 </span>
                             </div>
                             <div class="menu-item">
-                                <span class="food-name">Heels </span>
-                                <span class="price"> ₹4,000</span>
+                                <span class="food-name">Casual Trousers </span>
+                                <span class="price">  ₹1,200 to ₹3,500  </span>
                             </div>
                             <div class="menu-item">
-                                <span class="food-name">Juttis/Mojaris</span>
-                                <span class="price">₹2,500</span>
+                                <span class="food-name">Cargo Shorts </span>
+                                <span class="price">  ₹1,200 to ₹3,000 </span>
                             </div>
 
                             <div class="menu-item">
-                                <span class="food-name">Flip-flops </span>
-                                <span class="price"> ₹1,000</span>
+                                <span class="food-name">Leather Jacket  </span>
+                                <span class="price">  ₹6,000 to ₹15,000</span>
                             </div>
                             <div class="menu-item">
-                                <span class="food-name">Casual Shoes   </span>
-                                <span class="price">₹2,000</span>
+                                <span class="food-name">Blazer </span>
+                                <span class="price">  ₹5,000 to ₹12,000  </span>
                             </div>
                             <div class="menu-item">
-                                <span class="food-name">Loafers </span>
-                                <span class="price">₹3,500</span>
+                                <span class="food-name">Zip-Up Hoodie  </span>
+                                <span class="price">  ₹1,200 to ₹3,500 </span>
                             </div>
                         </div>
 
@@ -192,8 +192,8 @@
                                     </div>
                                 </div>
                                 <p class="review-text">
-                                    "These sneakers are the best! Super comfortable, .
-                                    <span class="hidden-text">stylish, and perfect for long walks Worth every penny!"</span>
+                                    "The jeans I bought fit perfectly and are incredibly comfortable. The quality is
+                                    <span class="hidden-text">excellent, and they look great with almost any outfit!"</span>
                                 </p>
                                 <p class="view-more" onclick="toggleText(this)">Read More</p>
                                 <p class="view-images" onclick="toggleImages(this)">View Images</p>
@@ -214,8 +214,8 @@
                                     </div>
                                 </div>
                                 <p class="review-text">
-                                    Bought a pair of formal shoes, and they exceeded my expectations.
-                                    <span class="hidden-text"> High-quality material and excellent craftsmanship.</span>
+                                I recently purchased a formal shirt for a wedding, and the fabric was soft yet crisp. It
+                                    <span class="hidden-text">was very stylish and comfortable throughout the event.</span>
                                 </p>
                                 <p class="view-more" onclick="toggleText(this)">Read More</p>
                                 <p class="view-images" onclick="toggleImages(this)">View Images</p>
@@ -235,8 +235,8 @@
                                     </div>
                                 </div>
                                 <p class="review-text">
-                                    "My new running shoes feel amazing! Great support, lightweight
-                                    <span class="hidden-text">and perfect for workouts."</span>
+                                    "I absolutely love the bomber jacket I got! The design is sleek, and it's perfect for
+                                    <span class="hidden-text">I absolutely love the bomber jacket I got! The design is sleek, and it's perfect for"</span>
                                 </p>
                                 <p class="view-more" onclick="toggleText(this)">Read More</p>
                                 <p class="view-images" onclick="toggleImages(this)">View Images</p>
