@@ -1,49 +1,8 @@
-<?php
-include './db.connection/db_connection.php'; // Include your database connection file
-
-// Retrieve service filter from GET request
-$service = isset($_GET['service']) ? $_GET['service'] : '';
-
-// Prepare SQL query with optional service filter
-$sql = "SELECT id, title, main_content, main_image, created_at FROM blogs";
-if (!empty($service)) {
-  $sql .= " WHERE service = ?";
-}
-$sql .= " ORDER BY created_at DESC";
-
-// Initialize statement
-$stmt = $conn->prepare($sql);
-
-// Bind parameters if service is set
-if (!empty($service)) {
-  $stmt->bind_param("s", $service);
-}
-
-// Execute the statement
-$stmt->execute();
-
-// Get the result
-$result = $stmt->get_result();
-?>
-
-
-
-
-
-
-
+ 
+ 
 
 <?php include 'navbar.php';  ?>
 
-
-<div id="overlay" class="overlay"></div>
-
-
-
- 
-
- 
- 
 
 
 
@@ -56,189 +15,60 @@ $result = $stmt->get_result();
         </div>
         <div class="row">
 
-            <div class="col-lg-9 col-12 ">
-                <div class="row    fadeIn" data-wow-delay="0.3s">
+        <div class="col-lg-9 col-12 ">
+    <?php include 'db.connection/db_connection.php'; ?>
 
+    <div class="row fadeIn" data-wow-delay="0.3s">
 
+        <?php
+        // Fetch all companies
+        $companyQuery = "SELECT * FROM companies";
+        $companyResult = mysqli_query($conn, $companyQuery);
 
-                <section class="OfferContainer_exclusive__non wow fadeInUp my-2" data-wow-delay="100ms">
-                        <div class="col-12  card_div px-3">
-                            <div class="row  py-3">
-                                <div class="col-12 col-md-4 job_image_card  ">
-                                    <img src="assets/img/self_images/Bhavi pvt ltd logo.png" class="img-fluid company_logo_size" alt="">
+        while ($company = mysqli_fetch_assoc($companyResult)) {
+            // Fetch job details related to this company
+            $company_id = $company['id'];
+            $jobQuery = "SELECT * FROM jobs WHERE company_id = $company_id";
+            $jobResult = mysqli_query($conn, $jobQuery);
+            $jobCount = mysqli_num_rows($jobResult);
 
-                                </div>
-
-                                <div class="col-12 col-md-8">
-                                    <h4>Bhavi Creations Pvt Ltd</h4>
-                                    <p class="property_p_tag"><strong class="property_strong"> vacancies :</strong> 12 </p>
-                                    <p class="property_p_tag"> <strong class="property_strong"> Location : </strong> Kakinada </p>
-                                    <p class="property_p_tag"> <strong class="property_strong"> Phone :</strong>+91 9642343434 </p>
-                                    <p class="property_p_tag"> <strong class="property_strong"> Website :</strong><a target="_blank" href="https://bhavicreationspvtltd.com/"> https://bhavicreationspvtltd.com/ </a>  </p>
-
-
-
-                                </div>
-
-
-
-
-                                <div class="col-12 terms_cond_styles">
-                                    <div class="terms_justify">
-
-                                        <p>
-                                            <a href="job_full_page.php" class=" ">View More Details</a>
-                                        </p>
-                                    </div>
-
-                                     
-
-                                </div>
+            echo '<section class="OfferContainer_exclusive__non wow fadeInUp my-2" data-wow-delay="100ms">
+                    <div class="col-12 card_div px-3">
+                        <div class="row py-3">
+                            <div class="col-12 col-md-4 job_image_card">
+                                <img src="./admin/uploads/companies/' . $company['logo'] . '" class="img-fluid company_logo_size" alt="">
                             </div>
 
-                        </div>
-                    </section>
-
-                    <section class="OfferContainer_exclusive__non wow fadeInUp my-2" data-wow-delay="100ms">
-                        <div class="col-12  card_div px-3">
-                            <div class="row  py-3">
-                                <div class="col-12 col-md-4 job_image_card  ">
-                                    <img src="assets/img/self_images/srinivasa_dental_logo.png" class="img-fluid company_logo_size" alt="">
-
-                                </div>
-
-                                <div class="col-12 col-md-8">
-                                    <h4>Srinivasa Dental Hospital </h4>
-                                    <p class="property_p_tag"><strong class="property_strong"> vacancies :</strong> 12 </p> 
-                                    <p class="property_p_tag"> <strong class="property_strong"> Location : </strong> Kakinada </p>
-                                    <p class="property_p_tag"> <strong class="property_strong"> Phone :</strong>+91 9569568567 </p>
-                                    <p class="property_p_tag"> <strong class="property_strong"> Website :</strong><a target="_blank" href="https://srinivasadentalkakinada.com/">https://srinivasadentalkakinada.com/</a>  </p>
-
-
-                                </div>
-
-
-
-
-                                <div class="col-12 terms_cond_styles">
-                                    <div class="terms_justify">
-
-                                        <p>
-                                            <a href="job_full_page1.php" class=" ">View More Details</a>
-                                        </p>
-                                    </div>
-
-                                     
-
-                                </div>
+                            <div class="col-12 col-md-8">
+                                <h4>' . $company['name'] . '</h4>
+                                <p class="property_p_tag"> <strong class="property_strong"> Category: </strong>' . $company['category'] . '</p>
+                                <p class="property_p_tag"> <strong class="property_strong"> Phone: </strong>' . $company['phone'] . '</p>
+                                <p class="property_p_tag"> <strong class="property_strong"> Email: </strong>' . $company['email'] . '</p>
+                                <p class="property_p_tag"> <strong class="property_strong"> Website: </strong>
+                                    <a target="_blank" href="' . $company['website'] . '">' . $company['website'] . '</a>
+                                </p>
                             </div>
+                        </div>';
 
-                        </div>
-                    </section>
+            // Display jobs count if available
+            if ($jobCount > 0) {
+                echo '<div class="col-12 terms_cond_styles">';
+                echo '<div class="terms_justify">
+                        <p>
+                            <a href="job_full_page.php?company_id=' . $company_id . '" class="">View More Details</a>
+                        </p>
+                      </div>';
+                echo '</div>';
+            }
 
-                    <section class="OfferContainer_exclusive__non wow fadeInUp my-2" data-wow-delay="100ms">
-                        <div class="col-12  card_div px-3">
-                            <div class="row  py-3">
-                                <div class="col-12 col-md-4 job_image_card  ">
-                                    <img src="assets/img/self_images/neurostar_logo.png" class="img-fluid company_logo_size" alt="">
+            echo '</div>
+                </section>';
+        }
+        ?>
 
-                                </div>
+    </div>
+</div>
 
-                                <div class="col-12 col-md-8">
-                                    <h4>Neuro Star Hospital</h4>
-                                    <p class="property_p_tag"><strong class="property_strong"> vacancies :</strong> 12 </p>
-                                    <p class="property_p_tag"> <strong class="property_strong"> Location : </strong> Kakinada </p>
-                                    <p class="property_p_tag"> <strong class="property_strong"> Phone :</strong> +91 9121476777,9885943399</p>
-                                    <p class="property_p_tag"> <strong class="property_strong"> Website :</strong><a target="_blank" href="https://neurostarhospital.com/">https://neurostarhospital.com/</a>  </p>
-
-
-                                </div>
-
-
-
-
-                                <div class="col-12 terms_cond_styles">
-                                    <div class="terms_justify">
-
-                                        <p>
-                                            <a href="job_full_page2.php" class=" ">View More Details</a>
-                                        </p>
-                                    </div>
-
-                                     
-
-                                </div>
-                            </div>
-
-                        </div>
-                    </section>
-
-                    <!-- <section class="OfferContainer_exclusive__non wow fadeInUp my-2" data-wow-delay="100ms">
-                        <div class="col-12  card_div px-3">
-                            <div class="row  py-3">
-                                <div class="col-12 col-md-4 job_image_card  ">
-                                    <img src="assets/img/self_images/Bhavi pvt ltd logo.png" class="img-fluid company_logo_size" alt="">
-
-                                </div>
-
-                                <div class="col-12 col-md-8">
-                                    <h4>Bhavi Creations Pvt Ltd</h4>
-                                    <p class="property_p_tag"><strong class="property_strong"> vacancies :</strong> 12 </p>
-                                    <p class="property_p_tag"> <strong class="property_strong"> Location : </strong> Kakinada </p>
-                                    <p class="property_p_tag"> <strong class="property_strong"> Phone :</strong> 9876543210 </p>
-                                    <p class="property_p_tag"> <strong class="property_strong"> Website :</strong><a target="_blank" href="https://bhavicreationspvtltd.com/"> https://bhavicreationspvtltd.com/ </a>  </p>
-
-
-                                </div>
-
-
-
-
-                                <div class="col-12 terms_cond_styles">
-                                    <div class="terms_justify">
-
-                                        <p>
-                                            <a href="job_full_page.php" class=" ">View More Details</a>
-                                        </p>
-                                    </div>
-
-                                     
-
-                                </div>
-                            </div>
-
-                        </div>
-                    </section> -->
-
-
-                    <script>
-                        document.addEventListener("DOMContentLoaded", function() {
-                            document.querySelectorAll(".toggle-terms").forEach(function(link) {
-                                link.addEventListener("click", function(event) {
-                                    event.preventDefault(); // Prevent default anchor behavior
-
-                                    var parentDiv = this.closest(".col-12");
-                                    var termsDiv = parentDiv.querySelector(".terms-content");
-                                    var separator = parentDiv.querySelector(".terms-separator");
-
-                                    // Toggle visibility
-                                    if (termsDiv.style.display === "none" || termsDiv.style.display === "") {
-                                        termsDiv.style.display = "block";
-                                        separator.style.display = "block"; // Show the separator
-                                    } else {
-                                        termsDiv.style.display = "none";
-                                        separator.style.display = "none"; // Hide the separator
-                                    }
-                                });
-                            });
-                        });
-                    </script>
-
-
-
-                </div>
-
-            </div>
 
             <div class="col-lg-3  col-12 text_side_div d-none d-lg-block">
 
@@ -284,7 +114,7 @@ $result = $stmt->get_result();
 
 
 
- 
+
 
 <script>
     let currentSlide = 0;

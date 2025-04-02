@@ -2,130 +2,152 @@
 
 
 
-<!-- <?php include 'moviesidebar.php';  ?> -->
-
-
-
-
-
-
-
-
-
-
-
 <section>
     <div class="container">
+        <?php
+        include './db.connection/db_connection.php';
+
+        // Get company ID from URL
+        if (isset($_GET['company_id'])) {
+            $company_id = intval($_GET['company_id']);
+
+            // Fetch company details
+            $companyQuery = "SELECT * FROM companies WHERE id = $company_id";
+            $companyResult = mysqli_query($conn, $companyQuery);
+            $company = mysqli_fetch_assoc($companyResult);
+
+            // Fetch all jobs for this company
+            $jobQuery = "SELECT * FROM jobs WHERE company_id = $company_id";
+            $jobResult = mysqli_query($conn, $jobQuery);
+        } else {
+            echo "Invalid Company Selection";
+            exit;
+        }
+        ?>
 
         <div class="text-center   mb-5">
-            <h1> Bhavi Creation Pvt Ltd</h1>
+            <h1><?php echo $company['name']; ?></h1>
 
 
         </div>
         <div class="row">
+
+
+            <?php
+            include './db.connection/db_connection.php';
+
+            // Get company ID from URL
+            if (isset($_GET['company_id'])) {
+                $company_id = intval($_GET['company_id']);
+
+                // Fetch company details
+                $companyQuery = "SELECT * FROM companies WHERE id = $company_id";
+                $companyResult = mysqli_query($conn, $companyQuery);
+                $company = mysqli_fetch_assoc($companyResult);
+
+                // Fetch all jobs for this company
+                $jobQuery = "SELECT * FROM jobs WHERE company_id = $company_id";
+                $jobResult = mysqli_query($conn, $jobQuery);
+            } else {
+                echo "Invalid Company Selection";
+                exit;
+            }
+            ?>
+
             <div class="col-lg-9 col-12">
                 <div class="row">
-                    
-
-                    <div class="col-md-6 col-12 my-2 ">
+                    <div class="col-md-6 col-12 my-2">
                         <div class="job_image_card">
-                            <img src="assets/img/self_images/Bhavi pvt ltd logo.png" class="img-fluid" alt="">
+                            <img src="./admin/uploads/companies/<?php echo $company['logo']; ?>" class="img-fluid" alt="">
                         </div>
-
                     </div>
 
-                    <div class="col-md-6   col-12  my-2 movie_title_card">
-
+                    <div class="col-md-6 col-12 my-2 movie_title_card">
                         <div class="product-content">
                             <div class="d-flex justify-content-between align-items-center">
-                                <p class="movie-label"><strong>category : </strong></p>
-                                <h4 class="movie-value">Digital Marketing</h4>
+                                <p class="movie-label"><strong>Company : </strong></p>
+                                <h4 class="movie-value"><?php echo $company['name']; ?></h4>
                             </div>
                             <div class="d-flex justify-content-between align-items-center">
-                                <p class="movie-label"><strong>Rating :</strong></p>
-                                <p class="movie-value">⭐⭐⭐⭐⭐ 5/5</p>
+                                <p class="movie-label"><strong>Category : </strong></p>
+                                <h4 class="movie-value"><?php echo $company['category']; ?></h4>
                             </div>
-
+                            <div class="d-flex justify-content-between align-items-center">
+                                <p class="movie-label"><strong>Website :</strong></p>
+                                <p class="movie-value"><a href="<?php echo $company['website']; ?>" target="_blank"><?php echo $company['website']; ?></a></p>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <p class="movie-label"><strong>Phone :</strong></p>
+                                <p class="movie-value"><?php echo $company['phone']; ?></p>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <p class="movie-label"><strong>Employees :</strong></p>
+                                <p class="movie-value"><?php echo $company['no_of_employees']; ?></p>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <p class="movie-label"><strong>Experience :</strong></p>
+                                <p class="movie-value"><?php echo $company['experience_years']; ?></p>
+                            </div>
                         </div>
-
                     </div>
-
-
                 </div>
-                <div class="row my-5 p-3">
-                    <div class="col-md-8 col-12 ">
-                        <h2>About Company</h2>
-                        <h6>
-                        Launch your career with Bhavi Creations! Free internships in SEO, Content Writing, Design, and more. Join us in Kakinada and grow your skills
-                        </h6>
 
+                <div class="row my-5 p-3">
+                    <div class="col-md-8 col-12">
+                        <h2>About Company</h2>
+                        <h6><?php echo $company['about']; ?></h6>
 
                         <h2>Address</h2>
-                        <h6>
-                        Plot no 28, H No 70, 17-28, RTO Office Rd, opposite to New, behind J.N.T.U.Engineering College Play Ground, Ranga Rao Nagar, Kakinada, Andhra Pradesh 533003
+                        <h6 class="card-text">
+                           
+                            <?php if (!empty($company['map_url'])) { ?>
+                                <a href="<?php echo $company['map_url']; ?>" target="_blank" style="text-decoration: none; color: #007bff;">
+                                    <?php echo $company['address']; ?>
+                                </a>
+                            <?php } else {
+                                echo $company['address'];
+                            } ?>
                         </h6>
 
                     </div>
-                    <div class="col-md-4 col-12  ">
+                    <div class="col-md-4 col-12">
                         <h3 class="text-center">Jobs</h3>
-
                         <div class="product-content">
-
-                            <div class="d-flex justify-content-between align-items-center">
-                                <p class="movie-label"><strong>vacancies : </strong></p>
-                                <p class="job_roles">7</p>
-                            </div>
-
-                            <div class="d-flex justify-content-between align-items-center">
-                                <p class="movie-label"><strong>Designer : </strong></p>
-                                <p class="job_roles">2 </p>
-                            </div>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <p class="movie-label"><strong>Website developer : </strong></p>
-                                <p class="job_roles">1 </p>
-                            </div>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <p class="movie-label"><strong>   Content Writer : </strong></p>
-                                <p class="job_roles">2 </p>
-                            </div>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <p class="movie-label"><strong> Social Media Maneger : </strong></p>
-                                <p class="job_roles">1 </p>
-                            </div>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <p class="movie-label"><strong> Telecaller : </strong></p>
-                                <p class="job_roles">1 </p>
-                            </div>
+                            <?php while ($job = mysqli_fetch_assoc($jobResult)) { ?>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <p class="movie-label"><strong><?php echo $job['job_title']; ?> : </strong></p>
+                                    <p class="job_roles"><?php echo $job['vacancies']; ?></p>
+                                </div>
+                            <?php } ?>
                         </div>
-
-
-
-                        <hr>
-
-                        <h3 class="text-center">Contact</h3>
-
-                        <div class="product-content">
-
-                            <div class="d-flex justify-content-between align-items-center">
-                                <p class="movie-label"><strong>Phone : </strong></p>
-                                <p class="job_roles">+91 9642343434</p>
-                            </div>
-
-                            <div class="d-flex justify-content-between align-items-center">
-                                <p class="movie-label"><strong>Location : </strong></p>
-                                <p class="job_roles">Kakinada </p>
-                            </div>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <p class="movie-label"><strong>Website : </strong></p>
-                                <p class="job_roles"> <a target="_blank" href="https://bhavicreationspvtltd.com/"> bhavicreationspvtltd.com </a> </p>
-                            </div>
-
-                        </div>
-
-
                     </div>
                 </div>
-                <div class="row p-3">
+
+
+
+                <div class="row">
+                    <div class="  col-12 my-2">
+                        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <?php
+                                if (!empty($company['company_images'])) {
+                                    $images = explode(',', $company['company_images']); // Assuming images are stored as CSV
+                                    foreach ($images as $index => $image) {
+                                        $active = $index === 0 ? 'active' : '';
+                                        echo "<div class='carousel-item $active'>
+                                <img src='./admin/uploads/companies/$image' class='img-fluid d-block w-100' alt='Company Image'>
+                              </div>";
+                                    }
+                                } else {
+                                    echo "<p class='text-center'>No images available</p>";
+                                }
+                                ?>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-5 p-3">
                     <div class="col-md-8 col-12">
                         <div class="review-container">
                             <h2>Customer Reviews</h2>
@@ -134,13 +156,13 @@
                                 <div class="review-header">
                                     <img src="assets/img/test/woman.png" alt="User" class="profile-img">
                                     <div class="">
-                                        <p><strong>Emma R</strong></p>
+                                        <p><strong>Veera Venkata Durgadevi Gandi</strong></p>
                                         <p class="stars">⭐⭐⭐⭐⭐ 5/5</p>
                                     </div>
                                 </div>
                                 <p class="review-text">
-                                    "The ambiance was elegant, and the food was absolutely delicious! Every dish was beautifully presented, and the flavors were exceptional.
-                                    <span class="hidden-text">The staff was courteous and attentive, making the experience even more enjoyable. Highly recommended!"</span>
+                                    Teeth gap fill cheyinchukunna chala Baga chesaru and chala Baga treat chesaru
+                                    <!-- <span class="hidden-text"> It’s wonderful to know you’re satisfied with the teeth gap treatment. We're always here to keep your smile healthy and beautiful! Best regards, Srinivasa Multispecialty Dental Hospital"</span> -->
                                 </p>
                                 <p class="view-more" onclick="toggleText(this)">Read More</p>
                                 <p class="view-images" onclick="toggleImages(this)">View Images</p>
@@ -156,13 +178,15 @@
                                 <div class="review-header">
                                     <img src="assets/img/test/boy11.png" alt="User" class="profile-img">
                                     <div class="">
-                                        <p><strong>David M</strong></p>
+                                        <p><strong>
+                                                kranthi kumar m
+                                            </strong></p>
                                         <p class="stars">⭐⭐⭐⭐</p>
                                     </div>
                                 </div>
                                 <p class="review-text">
-                                    "A top-notch restaurant with a warm and inviting atmosphere. The wine selection was impressive, and the.
-                                    <span class="hidden-text">chef’s special was divine. Will definitely be coming back!"</span>
+                                    Treatment is very good.receving is fantastic and fully equipped dental hospital, fully satisfied.price is reasonable
+                                    <span class="hidden-text">Dr.kiran Raju explains everything in detail and very happy for whole process"</span>
                                 </p>
                                 <p class="view-more" onclick="toggleText(this)">Read More</p>
                                 <p class="view-images" onclick="toggleImages(this)">View Images</p>
@@ -177,13 +201,13 @@
                                 <div class="review-header">
                                     <img src="assets/img/test/woman.png" alt="User" class="profile-img">
                                     <div class="">
-                                        <p><strong> Sophia L.</strong></p>
+                                        <p><strong>Iqra mahi
+                                            </strong></p>
                                         <p class="stars">⭐⭐⭐⭐⭐ 5/5</p>
                                     </div>
                                 </div>
                                 <p class="review-text">
-                                    "The food was amazing, especially the wood-fired pizza and seafood platter! However, the service was a
-                                    <span class="hidden-text">little slow during peak hours. Overall, a great place for a relaxed meal."</span>
+                                    Thanks you so much all im soo happy <!-- <span class="hidden-text">little slow during peak hours. Overall, a great place for a relaxed meal."</span> -->
                                 </p>
                                 <p class="view-more" onclick="toggleText(this)">Read More</p>
                                 <p class="view-images" onclick="toggleImages(this)">View Images</p>
@@ -199,13 +223,13 @@
                                 <div class="review-header">
                                     <img src="assets/img/test/boy11.png" alt="User" class="profile-img">
                                     <div class="">
-                                        <p><strong>David M</strong></p>
+                                        <p><strong>lokesh nandan</strong></p>
                                         <p class="stars">⭐⭐⭐⭐</p>
                                     </div>
                                 </div>
                                 <p class="review-text">
-                                    "A top-notch restaurant with a warm and inviting atmosphere. The wine selection was impressive, and the.
-                                    <span class="hidden-text">chef’s special was divine. Will definitely be coming back!"</span>
+                                    Treatment was super & excellent.... complete painless treatment....clinic was very clean and hygienic...Dr kira raju sir was treated me very caring....staff also very supported....and
+                                    <span class="hidden-text">carring....I'm fully satisfied my treatment....tk u Dr Kiran raju sir and staff....tk u srinivasa dental"</span>
                                 </p>
                                 <p class="view-more" onclick="toggleText(this)">Read More</p>
                                 <p class="view-images" onclick="toggleImages(this)">View Images</p>
@@ -266,6 +290,10 @@
 
                 </div>
             </div>
+
+
+
+
             <div class="col-lg-3  col-12 text_side_div d-none d-lg-block">
 
                 <img src="assets/img/test/sideimg2.png" alt="" class="img-fluid">

@@ -1,4 +1,5 @@
 <?php include 'header.php'; ?>
+<?php include '../../db.connection/db_connection.php'; ?> 
 
 <!-- Page Wrapper -->
 <div id="wrapper">
@@ -10,51 +11,53 @@
 
         <div id="content">
             <div class="container-fluid">
-                <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                    <h1 class="h3 mb-0 text-gray-800">Theaters</h1>
-                    <a href="add_theater.php" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">
-                        <i class="fa fa-plus"></i> Add Theater
+            <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                    <h1 class="h3 mb-0 text-gray-800">Available jobs</h1>
+                    <a href="add_job.php" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">
+                        <i class="fa-solid fa-plus"></i> Add Jobs
+                    </a>
+                    <a href="add_companies.php" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">
+                        <i class="fa-solid fa-plus"></i> Add Companies
                     </a>
                 </div>
 
-                <div class="container">
-                    <div class="row">
-                        <?php
-                        include '../../db.connection/db_connection.php';
+                <div class="table-responsive">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Company Name</th>
+                                <th>Job Title</th>
+                                <th>Vacancies</th>
+                                <th>Total Vacancies</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <?php
+                            $sql = "SELECT jobs.id, jobs.job_title, jobs.vacancies, jobs.total_vacancies, 
+                                           companies.name AS company_name 
+                                    FROM jobs 
+                                    JOIN companies ON jobs.company_id = companies.id";
+                            $result = mysqli_query($conn, $sql);
+                            $counter = 1;
 
-                        // Fetch theaters from the database
-                        $query = "SELECT * FROM theaters";
-                        $result = mysqli_query($conn, $query);
-
-                        if (mysqli_num_rows($result) > 0) {
                             while ($row = mysqli_fetch_assoc($result)) {
-                        ?>
-                                <div class="col-md-4">
-                                    <div class="card mb-4">
-                                        <img src="../uploads/theaters/<?php echo $row['image']; ?>" class="card-img-top" alt="Theater Image">
-                                        <div class="card-body">
-                                            <h5 class="card-title"><?php echo $row['name']; ?></h5>
-                                            <p class="card-text"><strong>Location:</strong> <?php echo $row['location']; ?></p>
-
-                                            <!-- Manage Screens Button -->
-                                            <a href="manage_screens.php?theater_id=<?php echo $row['id']; ?>" class="btn btn-info btn-sm">
-                                                <i class="fa fa-tv"></i> Manage Screens
-                                            </a>
-
-                                            <!-- Show Screens Button -->
-                                            <a href="show_screens.php?theater_id=<?php echo $row['id']; ?>" class="btn btn-success btn-sm">
-                                                <i class="fa fa-eye"></i> Show Screens
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                        <?php
+                                echo "<tr>";
+                                echo "<td>" . $counter++ . "</td>";
+                                echo "<td>" . $row['company_name'] . "</td>";
+                                echo "<td>" . $row['job_title'] . "</td>";
+                                echo "<td>" . $row['vacancies'] . "</td>";
+                                echo "<td>" . $row['total_vacancies'] . "</td>";
+                                echo "<td>
+                                        <a href='edit_job.php?id=" . $row['id'] . "' class='btn btn-warning btn-sm'>Edit</a>
+                                        <a href='delete_job.php?id=" . $row['id'] . "' class='btn btn-danger btn-sm' onclick='return confirm(\"Are you sure you want to delete this job?\")'>Delete</a>
+                                      </td>";
+                                echo "</tr>";
                             }
-                        } else {
-                            echo "<div class='col-md-12'><div class='alert alert-warning'>No Theaters Found.</div></div>";
-                        }
-                        ?>
-                    </div>
+                            ?>
+                        </tbody>
+                    </table>
                 </div>
 
             </div>
