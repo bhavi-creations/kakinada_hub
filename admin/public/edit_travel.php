@@ -12,105 +12,75 @@
             <div class="container-fluid">
                 <div class="d-sm-flex align-items-center justify-content-between mb-4">
                     <h1 class="h3 mb-0 text-gray-800">Edit Travel</h1>
-                    <a href="add_travel.php" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">
-                        <i class="fa-solid fa-plus"></i> Add Travel
+                    <a href="travel.php" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">
+                    <i class="fa-regular fa-eye"></i> Back to Travel
                     </a>
                 </div>
 
                 <div class="container">
                     <div class="row">
                         <div class="row row-custom no-gutters col-12">
-
                             <?php
-                            include '../../db.connection/db_connection.php';
 
+                            include '../../db.connection/db_connection.php'; // Database connection
+
+                            // Get the travel type details
                             if (isset($_GET['id'])) {
                                 $id = $_GET['id'];
                                 $query = "SELECT * FROM travels WHERE id = $id";
                                 $result = mysqli_query($conn, $query);
-                                $travel = mysqli_fetch_assoc($result);
-                            } else {
-                                $_SESSION['message'] = "Travel entry not found!";
-                                $_SESSION['msg_type'] = "danger";
-                                header("Location: travels.php");
-                                exit();
+                                $row = mysqli_fetch_assoc($result);
                             }
 
-                            if ($_SERVER["REQUEST_METHOD"] == "POST") {
-                                // Escape user inputs
-                                $type = mysqli_real_escape_string($conn, $_POST['type']);
-                                $model = mysqli_real_escape_string($conn, $_POST['model']);
-                                $seating_capacity = mysqli_real_escape_string($conn, $_POST['seating_capacity']);
-                                $fuel_efficiency = mysqli_real_escape_string($conn, $_POST['fuel_efficiency']);
-                                $price = mysqli_real_escape_string($conn, $_POST['price']);
+                            // Update travel type
+                            if (isset($_POST['update'])) {
+                                $name = mysqli_real_escape_string($conn, $_POST['name']);
 
-                                // Initialize query
-                                $update_query = "UPDATE travels SET 
-                                type='$type', 
-                                model='$model', 
-                                seating_capacity='$seating_capacity', 
-                                fuel_efficiency='$fuel_efficiency', 
-                                price='$price'";
+                                // Handle Image Upload
+                                if (!empty($_FILES["filter_image"]["name"])) {
+                                    $targetDir = "../uploads/travels/";
+                                    $fileName = basename($_FILES["filter_image"]["name"]);
+                                    $targetFilePath = $targetDir . $fileName;
+                                    $fileType = strtolower(pathinfo($targetFilePath, PATHINFO_EXTENSION));
+                                    $allowTypes = array("jpg", "jpeg", "png", "gif");
 
-                                // Handle Image Upload (Optional)
-                                if (!empty($_FILES['image']['name'])) {
-                                    $image = $_FILES['image']['name'];
-                                    $target = "../uploads/travels/" . basename($image);
-                                    move_uploaded_file($_FILES['image']['tmp_name'], $target);
-                                    $update_query .= ", image='$image'";
+                                    if (in_array($fileType, $allowTypes)) {
+                                        if (move_uploaded_file($_FILES["filter_image"]["tmp_name"], $targetFilePath)) {
+                                            $updateQuery = "UPDATE travels SET name='$name', filter_image='$fileName' WHERE id=$id";
+                                        } else {
+                                            echo "<div class='alert alert-danger'>Error uploading image.</div>";
+                                        }
+                                    } else {
+                                        echo "<div class='alert alert-danger'>Invalid file type. Allowed types: JPG, JPEG, PNG, GIF.</div>";
+                                    }
+                                } else {
+                                    // Update without changing the image
+                                    $updateQuery = "UPDATE travels SET name='$name' WHERE id=$id";
                                 }
 
-                                // Finalizing SQL query
-                                $update_query .= " WHERE id=$id";
-
-                                // Execute Query
-                                if (mysqli_query($conn, $update_query)) {
-                                    $_SESSION['message'] = "Travel entry updated successfully!";
-                                    $_SESSION['msg_type'] = "success";
-                                    header("Location: travels.php");
+                                if (mysqli_query($conn, $updateQuery)) {
+                                    header("Location: travel.php?success=updated");
                                     exit();
                                 } else {
-                                    echo "Error updating record: " . mysqli_error($conn);
+                                    echo "<div class='alert alert-danger'>Database error: " . mysqli_error($conn) . "</div>";
                                 }
                             }
                             ?>
 
-                            <div class="container mt-5">
-                                <h2>Edit Travel</h2>
-                                <form method="POST" enctype="multipart/form-data">
-                                    <div class="row">
-
-                                    <div class="form-group col-6">
-                                        <label>Type</label>
-                                        <input type="text" name="type" value="<?php echo $travel['type']; ?>" class="form-control" required>
+                            <!-- Edit Travel Type Form -->
+                            <div class="container">
+                                <h2>Edit Travel Type</h2>
+                                <form action="" method="POST" enctype="multipart/form-data">
+                                    <div class="mb-3">
+                                        <label for="name" class="form-label">Travel Type Name</label>
+                                        <input type="text" class="form-control" id="name" name="name" value="<?php echo $row['name']; ?>" required>
                                     </div>
-                                    <div class="form-group col-6">
-                                        <label>Model</label>
-                                        <input type="text" name="model" value="<?php echo $travel['model']; ?>" class="form-control" required>
+                                    <div class="mb-3">
+                                        <label for="filter_image" class="form-label">Upload New Image (Optional)</label>
+                                        <input type="file" class="form-control" id="filter_image" name="filter_image">
+                                        <p>Current Image: <img src="../uploads/travels/<?php echo $row['filter_image']; ?>" width="100"></p>
                                     </div>
-                                    <div class="form-group col-6">
-                                        <label>Seating Capacity</label>
-                                        <input type="text" name="seating_capacity" value="<?php echo $travel['seating_capacity']; ?>" class="form-control" required>
-                                    </div>
-                                    <div class="form-group col-6">
-                                        <label>Fuel Efficiency</label>
-                                        <input type="text" name="fuel_efficiency" value="<?php echo $travel['fuel_efficiency']; ?>" class="form-control" required>
-                                    </div>
-                                    <div class="form-group col-6">
-                                        <label>Price</label>
-                                        <input type="text" name="price" value="<?php echo $travel['price']; ?>" class="form-control" required>
-                                    </div>
-                                    <div class="form-group col-6">
-                                        <label>Current Image</label><br>
-                                        <img src="../uploads/travels/<?php echo $travel['image']; ?>" width="150">
-                                    
-                                        <label>Upload New Image (optional)</label>
-                                        <input type="file" name="image" class="form-control">
-                                    </div>
-                                    </div>
-
-                                    <button type="submit" class="btn btn-primary">Update Travel</button>
-                                    <a href="travel.php" class="btn btn-secondary">Cancel</a>
+                                    <button type="submit" name="update" class="btn btn-primary">Update Travel Type</button>
                                 </form>
                             </div>
 
