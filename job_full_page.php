@@ -1,4 +1,5 @@
 <?php include 'navbar.php';  ?>
+<?php include 'jobs_sidebar.php'; ?>
 
 
 
