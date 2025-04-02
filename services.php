@@ -10,7 +10,7 @@
             <div class="yellow_fields_cards_container">
 
 
-            <div class="yellow_field_card movies_bg">
+                <div class="yellow_field_card movies_bg">
                     <h4 class="yello_heding">
                         <img src="assets/img/self_images/day.png" alt="" class="img-fluid"> Movies
                     </h4>
@@ -28,7 +28,7 @@
                         ?>
                         <li><a class="view_all_sub_mini_serices" href="list_layout.php"> View All Movies Deals </a></li>
                     </ul>
-                </div>
+                </div>
                 <div class="yellow_field_card resturent_bg">
                     <h4 class="yello_heding"><img src="assets/img/self_images/spoon-and-fork.png" alt="" class="img-fluid"> Resturents</h4>
 
@@ -57,8 +57,8 @@
                         <li><a class="sub_mini_serices" href="royal_touch.php"> Royal Touch </a></li>
                         <li><a class="sub_mini_serices" href="vv_saloon.php"> V & V Saloon </a></li>
                         <li><a class="sub_mini_serices" href="s3_beauty_saloon.php"> S3 Beauty Saloon </a></li>
-                        <li><a class="sub_mini_serices" href="groom9_saloon.php">Groom 9  Saloon </a></li>
-                        <li><a class="sub_mini_serices" href="natural_saloon.php"> Natural Saloon  </a></li>
+                        <li><a class="sub_mini_serices" href="groom9_saloon.php">Groom 9 Saloon </a></li>
+                        <li><a class="sub_mini_serices" href="natural_saloon.php"> Natural Saloon </a></li>
                         <li><a class="sub_mini_serices" href="angelic_beauty_salon.php"> Angelic Beauty Saloom </a></li>
                         <li><a class="sub_mini_serices" href="laavish_saloon.php"> Laavish Saloon </a></li>
                         <li><a class="sub_mini_serices" href="royal_touch.php"> Decent </a></li>
