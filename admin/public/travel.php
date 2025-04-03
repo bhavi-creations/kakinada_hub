@@ -49,6 +49,7 @@ include '../../db.connection/db_connection.php'; // Include database connection
                                                 <td><img src='../uploads/travels/{$row['filter_image']}' width='80' height='50' alt='Image'></td>
                                                 <td>{$row['created_at']}</td>
                                                 <td>
+                                                    <a href='view_travel.php?id={$row['id']}' class='btn btn-info btn-sm'>View</a>
                                                     <a href='edit_travel.php?id={$row['id']}' class='btn btn-warning btn-sm'>Edit</a>
                                                     <a href='delete_travel.php?id={$row['id']}' class='btn btn-danger btn-sm' onclick='return confirm(\"Are you sure?\")'>Delete</a>
                                                 </td>

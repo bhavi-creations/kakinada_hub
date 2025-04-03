@@ -1,9 +1,9 @@
 <?php include 'header.php'; ?>
-<?php include '../../db.connection/db_connection.php';  
+<?php include '../../db.connection/db_connection.php';
 
 // Fetch travel names from the travels table
 $travelOptions = "";
-$sql = "SELECT id, name FROM travels"; 
+$sql = "SELECT id, name FROM travels";
 $result = $conn->query($sql);
 if ($result->num_rows > 0) {
     while ($row = $result->fetch_assoc()) {
@@ -12,21 +12,22 @@ if ($result->num_rows > 0) {
 }
 
 // Handle form submission
+// Handle form submission
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $travel_id = $_POST['travel_id'];
-    $model = $_POST['model'];
-    $seating_capacity = $_POST['seating_capacity'];
-    $fuel_efficiency = $_POST['fuel_efficiency'];
-    $price = $_POST['price'];
-    $name = $_POST['name'];
-    $age = $_POST['age'];
-    $gender = $_POST['gender'];
-    $experience = $_POST['experience'];
-    $price_per_6hrs = $_POST['price_per_6hrs'];
+    $model = !empty($_POST['model']) ? $_POST['model'] : NULL;
+    $seating_capacity = !empty($_POST['seating_capacity']) ? $_POST['seating_capacity'] : NULL;
+    $fuel_efficiency = !empty($_POST['fuel_efficiency']) ? $_POST['fuel_efficiency'] : NULL;
+    $price = !empty($_POST['price']) ? $_POST['price'] : NULL;
+    $name = !empty($_POST['name']) ? $_POST['name'] : NULL;
+    $age = !empty($_POST['age']) ? $_POST['age'] : NULL;
+    $gender = isset($_POST['gender']) && $_POST['gender'] !== "" ? $_POST['gender'] : NULL;
+    $experience = !empty($_POST['experience']) ? $_POST['experience'] : NULL;
+    $price_per_6hrs = !empty($_POST['price_per_6hrs']) ? $_POST['price_per_6hrs'] : NULL;
     $created_at = date('Y-m-d H:i:s');
 
     // Handle image upload
-    $image = '';
+    $image = NULL;
     if (!empty($_FILES['image']['name'])) {
         $target_dir = "../uploads/travels/";
         $image = basename($_FILES['image']['name']);
@@ -47,10 +48,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt->bind_param("issiisisssss", $travel_id, $model, $seating_capacity, $fuel_efficiency, $price, $name, $age, $gender, $experience, $price_per_6hrs, $image, $created_at);
 
     if ($stmt->execute()) {
-        echo "<script>alert('Travel details added successfully!'); window.location.href='add_service.php';</script>";
+        echo "<script>alert('Travel details added successfully!'); window.location.href='add_travel_type.php';</script>";
     } else {
         echo "Error: " . $stmt->error;
     }
+
     $stmt->close();
     $conn->close();
 }
@@ -75,43 +77,45 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         </div>
                         <div class="col-md-6">
                             <label>Model</label>
-                            <input type="text" name="model" class="form-control" required>
+                            <input type="text" name="model" class="form-control">
                         </div>
                         <div class="col-md-6">
                             <label>Seating Capacity</label>
-                            <input type="number" name="seating_capacity" class="form-control" required>
+                            <input type="number" name="seating_capacity" class="form-control">
                         </div>
                         <div class="col-md-6">
                             <label>Fuel Efficiency</label>
-                            <input type="text" name="fuel_efficiency" class="form-control" required>
+                            <input type="text" name="fuel_efficiency" class="form-control">
                         </div>
                         <div class="col-md-6">
                             <label>Price</label>
-                            <input type="text" name="price" class="form-control" required>
+                            <input type="text" name="price" class="form-control">
                         </div>
                         <div class="col-md-6">
                             <label>Name</label>
-                            <input type="text" name="name" class="form-control" required>
+                            <input type="text" name="name" class="form-control">
                         </div>
                         <div class="col-md-6">
                             <label>Age</label>
-                            <input type="number" name="age" class="form-control" required>
+                            <input type="number" name="age" class="form-control">
                         </div>
                         <div class="col-md-6">
                             <label>Gender</label>
-                            <select name="gender" class="form-control" required>
+                            <select name="gender" class="form-control">
+                                <option value="">Select Gender</option> <!-- Empty option to allow NULL -->
                                 <option value="Male">Male</option>
                                 <option value="Female">Female</option>
                                 <option value="Other">Other</option>
                             </select>
                         </div>
+
                         <div class="col-md-6">
                             <label>Experience (Years)</label>
-                            <input type="text" name="experience" class="form-control" required>
+                            <input type="text" name="experience" class="form-control">
                         </div>
                         <div class="col-md-6">
                             <label>Price per 6 hours</label>
-                            <input type="text" name="price_per_6hrs" class="form-control" required>
+                            <input type="text" name="price_per_6hrs" class="form-control">
                         </div>
                         <div class="col-md-6">
                             <label>Image</label>
