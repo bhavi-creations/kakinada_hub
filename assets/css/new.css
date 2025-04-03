@@ -3234,4 +3234,31 @@
 
 
 
+.travel-card {
+  position: relative !important;
+  height: 250px; /* Adjust height */
+  background-size: cover !important;
+  background-position: center !important;
+  border-radius: 10px;
+  overflow: hidden !important;
+  display: flex !important;
+  align-items: flex-end !important;
+  justify-content: center !important;
+}
+
+.travel_card_overlay {
+  width: 100%;
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+
+.travel_card_tittle {
+  margin-bottom: 5px;
+  font-size: 1.3rem;
+  color: #e0e0e0 !important;
+
+}
 

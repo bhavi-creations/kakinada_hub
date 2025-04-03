@@ -1,55 +1,36 @@
 <?php include 'navbar.php'; ?>
+<?php include './db.connection/db_connection.php'; ?>
 
-
-<h1 class="text-center my-4">Let's Travel</h1>
-
-
+<h1 class="text-center my-4">Travel Destinations</h1>
 
 <div class="container">
     <div class="row justify-content-center">
-        <?php include './db.connection/db_connection.php'; ?>
-
         <?php
+        $query = "SELECT id, name, filter_image, created_at FROM travels";
+        $result = mysqli_query($conn, $query);
 
+        while ($row = mysqli_fetch_assoc($result)) {
+            $id = $row['id'];
+            $name = ucwords($row['name']);
+            $image = "./admin/uploads/travels/" . $row['filter_image']; 
+            $createdAt = date("F j, Y", strtotime($row['created_at']));
 
-        $typeQuery = "SELECT DISTINCT type FROM travels";
-        $typeResult = mysqli_query($conn, $typeQuery);
-        while ($typeRow = mysqli_fetch_assoc($typeResult)) {
-            $type = ucfirst($typeRow['type']);
-            $lowerType = strtolower($type);
-            $imgSrc = $typeImages[$lowerType] ?? "assets/img/self_images/rental.png"; // Default image
-            $btnClass = $buttonColors[$lowerType] ?? "btn-secondary";
-
-            echo '
+            if (!empty($row['filter_image'])) {
+                echo '
                 <div class="col-md-4 col-sm-6 mb-4">
-                    <div class="card travel_card shadow border-0">
-                        <img src="' . $imgSrc . '" class="card_img_top_travel" alt="' . $type . '">
-                        <div class="card-body card_img_top_travel_body text-center">
+                    <a href="travel_details.php?id=' . $id . '" class="travel-card-link">
+                        <div class="card shadow border-0 travel-card" style="background-image: url(\'' . $image . '\');">
+                            <div class="card-overlay travel_card_overlay">
+                                <h5 class="card-title travel_card_tittle">' . $name . '</h5>
+                            </div>
                         </div>
-                        <div class="card-footer text-center bg-white border-0">
-                            <button class="btn ' . $btnClass . ' filter-btn filter-btn-travel" data-filter="' . $lowerType . '">  ' . $type . '</button>
-                        </div>
-                    </div>
+                    </a>
                 </div>';
+            }
         }
         ?>
     </div>
 </div>
 
-<!-- JavaScript for Redirecting on Filter Click -->
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        document.querySelectorAll(".filter-btn").forEach(button => {
-            button.addEventListener("click", function() {
-                let filter = this.getAttribute("data-filter").toLowerCase();
-                window.location.href = "filtered_travel.php?filter=" + filter;
-            });
-        });
-    });
-</script>
-
-
-<?php include 'chat_bot.php';  ?>
-
-
+<?php include 'chat_bot.php'; ?>
 <?php include 'footer.php'; ?>
