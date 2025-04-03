@@ -1,4 +1,6 @@
 <?php include 'navbar.php'; ?>
+<?php include 'travel_sidebar.php'; ?>
+
 <?php include './db.connection/db_connection.php'; ?>
 
 <h1 class="text-center my-4">Travel Destinations</h1>
