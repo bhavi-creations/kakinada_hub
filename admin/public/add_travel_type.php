@@ -65,7 +65,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <?php include 'navbar.php'; ?>
         <div id="content">
             <div class="container-fluid">
-                <h1 class="h3 mb-4 text-gray-800">Add Travel Service</h1>
+            <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                    <h1 class="h3 mb-0 text-gray-800">Add Travel Service</h1>
+                   
+                    <a href="travel.php " class="btn btn-primary">
+                    <i class="fa-regular fa-eye"></i> Back To Travel List
+                    </a>
+                </div>
                 <form method="POST" enctype="multipart/form-data">
                     <div class="row">
                         <div class="col-md-6">
