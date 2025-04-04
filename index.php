@@ -4,13 +4,31 @@
 
 
 
+ <?php
+    include './db.connection/db_connection.php'; // Ensure the database connection is included
+
+    // Fetch marquee texts
+    $sql = "SELECT text FROM marquee_texts ORDER BY created_at DESC";
+    $result = $conn->query($sql);
+
+    // Prepare marquee content
+    $marquee_texts = [];
+    while ($row = $result->fetch_assoc()) {
+        $marquee_texts[] = '<span class="highlight-text">' . htmlspecialchars($row['text']) . '</span>';
+    }
+
+    // Convert array to string with separators
+    $marquee_content = implode(' &nbsp; || &nbsp; ', $marquee_texts);
+    ?>
+
  <section class="marquee-section">
      <div class="marquee-content">
          <marquee behavior="scroll" direction="left" class="marquee">
-             <span class="highlight-text">Get All Your Discounts At One Place IN Kakinada Hub</span> &nbsp; || &nbsp; <span class="highlight-text">Happy Ugadhi</span> &nbsp; ||&nbsp;<span class="highlight-text">Get All Discounts Here</span> &nbsp; ||&nbsp; <span class="highlight-text">We Are Launching Soon</span>
+             <?php echo $marquee_content; ?>
          </marquee>
      </div>
  </section>
+
 
 
  <?php
@@ -58,12 +76,12 @@
 
                          <!-- Navigation buttons -->
                          <button class="carousel-control-prev" type="button" data-bs-target="#upperCarousel" data-bs-slide="prev">
-                           
-                                 <i class="fas fa-arrow-left"></i> <!-- Left arrow icon -->
-                         
+
+                             <i class="fas fa-arrow-left"></i> <!-- Left arrow icon -->
+
                          </button>
                          <button class="carousel-control-next" type="button" data-bs-target="#upperCarousel" data-bs-slide="next">
-                         <i class="fas fa-arrow-right"></i>
+                             <i class="fas fa-arrow-right"></i>
 
                          </button>
                      </div>
@@ -79,567 +97,212 @@
 
 
 
+ <?php
+    include './db.connection/db_connection.php'; // Ensure the database connection is included
 
+    // Fetch trending items with type 'upper'
+    $sqlUpper = "SELECT * FROM trending WHERE type = 'upper' ORDER BY created_at DESC";
+    $resultUpper = $conn->query($sqlUpper);
 
+    // Fetch trending items with type 'lower'
+    $sqlLower = "SELECT * FROM trending WHERE type = 'lower' ORDER BY created_at DESC";
+    $resultLower = $conn->query($sqlLower);
+    ?>
 
- <section class="team-section-three   space-md-bottom">
+ <section class="team-section-three space-md-bottom">
      <div class="container-style6">
          <div class="title-area-three text-center wow fadeInUp" data-wow-delay="600ms">
              <span class="sub-title7">Trending Now</span>
-
          </div>
 
-         <div class="swiper-container team-slider"> <!-- Swiper Container -->
-             <div class="swiper-wrapper"> <!-- Swiper Wrapper -->
-                 <!-- Team block -->
-                 <div class="swiper-slide "> <!-- Swiper Slide -->
-                     <div class="card_border_styles">
-                         <div class="row">
-                             <div class="col-4 ">
-                                 <div class="img_border">
-                                     <img src="assets/img/self_images/srmt_mall.jpeg" class="img-fluid" alt="">
-                                 </div>
-                             </div>
+         <!-- Upper Type Swiper -->
+         <div class="swiper-container swiper-container-upper team-slider mb-5">
+             <div class="swiper-wrapper">
+                 <?php if ($resultUpper->num_rows > 0): ?>
+                     <?php while ($row = $resultUpper->fetch_assoc()): ?>
+                         <div class="swiper-slide">
+                             <div class="card_border_styles">
+                                 <div class="row">
+                                     <div class="col-4">
+                                         <div class="img_border">
+                                             <img src="./admin/uploads/home_trending/<?php echo htmlspecialchars($row['image']); ?>" class="img-fluid" alt="">
+                                         </div>
+                                     </div>
+                                     <div class="col-8">
+                                         <div class="d-flex">
+                                             <p class="brand_name"><?php echo htmlspecialchars($row['title']); ?></p>
+                                         </div>
+                                         <div class="d-flex">
+                                             <p class="brand_type"><i class="fal fa-star"></i> <?php echo htmlspecialchars($row['offer']); ?></p>
+                                         </div>
 
-                             <div class="col-8">
-                                 <div class="d-flex">
-                                     <p class="brand_name">SRMT Mall</p>
+                                     </div>
                                  </div>
-
-                                 <div class="d-flex">
-                                     <p class="brand_type"> <i class="fal fa-star"></i> Exclusive</p>
-                                 </div>
-                             </div>
-                         </div>
-                         <div class="row  mini_card_spacings">
-                             <p class="brand_special_discount">On Your First Purchase Get Up to 50% off 1000rs of items at SRMT </p>
-                         </div>
-                     </div>
-                 </div>
-
-                 <div class="swiper-slide "> <!-- Swiper Slide -->
-                     <div class="card_border_styles">
-                         <div class="row">
-                             <div class="col-4 ">
-                                 <div class="img_border">
-                                     <img src="assets/img/self_images/bbq.png" class="img-fluid" alt="">
-                                 </div>
-                             </div>
-
-                             <div class="col-8">
-                                 <div class="d-flex">
-                                     <p class="brand_name">BBQ Nation</p>
+                                 <div class="row mini_card_spacings">
+                                     <p class="brand_special_discount">
+                                         <?php
+                                            $text = htmlspecialchars($row['description']);
+                                            echo (strlen($text) > 60) ? substr($text, 0, 57) . '...' : $text;
+                                            ?>
+                                     </p>
                                  </div>
 
-                                 <div class="d-flex">
-                                     <p class="brand_type"> <i class="fal fa-star"></i> Exclusive</p>
-                                 </div>
+
                              </div>
                          </div>
-                         <div class="row  mini_card_spacings">
-                             <p class="brand_special_discount">Up to 10% off 1000rs of items at BBQ - Don't miss
-                                 out, ...</p>
-                         </div>
-                     </div>
-                 </div>
-                 <div class="swiper-slide "> <!-- Swiper Slide -->
-                     <div class="card_border_styles">
-                         <div class="row">
-                             <div class="col-4 ">
-                                 <div class="img_border">
-                                     <img src="assets/img/self_images/lenskart.png" class="img-fluid" alt="">
-                                 </div>
-                             </div>
-
-                             <div class="col-8">
-                                 <div class="d-flex">
-                                     <p class="brand_name">LensKart</p>
-                                 </div>
-
-                                 <div class="d-flex">
-                                     <p class="brand_type"> <i class="fal fa-star"></i> Exclusive</p>
-                                 </div>
-                             </div>
-                         </div>
-                         <div class="row  mini_card_spacings">
-                             <p class="brand_special_discount">Up to 20% off 1000rs of items at Lentkart - Don't miss
-                                 out, ...</p>
-                         </div>
-                     </div>
-                 </div>
-                 <div class="swiper-slide "> <!-- Swiper Slide -->
-                     <div class="card_border_styles">
-                         <div class="row">
-                             <div class="col-4 ">
-                                 <div class="img_border">
-                                     <img src="assets/img/self_images/kfc.png" class="img-fluid" alt="">
-                                 </div>
-                             </div>
-
-                             <div class="col-8">
-                                 <div class="d-flex">
-                                     <p class="brand_name">KFC</p>
-                                 </div>
-
-                                 <div class="d-flex">
-                                     <p class="brand_type"> <i class="fal fa-star"></i> Exclusive</p>
-                                 </div>
-                             </div>
-                         </div>
-                         <div class="row  mini_card_spacings">
-                             <p class="brand_special_discount">Up to 20% off 800rs of items at KFC - Don't miss
-                                 out, ...</p>
-                         </div>
-                     </div>
-                 </div>
-                 <div class="swiper-slide "> <!-- Swiper Slide -->
-                     <div class="card_border_styles">
-                         <div class="row">
-                             <div class="col-4 ">
-                                 <div class="img_border">
-                                     <img src="assets/img/self_images/reliance trends.jpeg" class="img-fluid" alt="">
-                                 </div>
-                             </div>
-
-                             <div class="col-8">
-                                 <div class="d-flex">
-                                     <p class="brand_name">Reliance Trends</p>
-                                 </div>
-
-                                 <div class="d-flex">
-                                     <p class="brand_type"> <i class="fal fa-star"></i> Exclusive</p>
-                                 </div>
-                             </div>
-                         </div>
-                         <div class="row  mini_card_spacings">
-                             <p class="brand_special_discount">Up to 50% off 1000s of items at Trends - Don't miss
-                                 out, ...</p>
-                         </div>
-                     </div>
-                 </div>
-
-
+                     <?php endwhile; ?>
+                 <?php else: ?>
+                     <p>No upper trending items found.</p>
+                 <?php endif; ?>
              </div>
-             <!-- Pagination and Navigation Buttons -->
-
          </div>
-         <div class="swiper-container team-slider"> <!-- Swiper Container -->
-             <div class="swiper-wrapper"> <!-- Swiper Wrapper -->
-                 <div class="swiper-slide "> <!-- Swiper Slide -->
-                     <div class="card_border_styles">
-                         <div class="row">
-                             <div class="col-4 ">
-                                 <div class="img_border">
-                                     <img src="assets/img/self_images/lenskart.png" class="img-fluid" alt="">
-                                 </div>
-                             </div>
 
-                             <div class="col-8">
-                                 <div class="d-flex">
-                                     <p class="brand_name">LensKart</p>
+         <!-- Lower Type Swiper -->
+         <div class="swiper-container swiper-container-lower team-slider">
+             <div class="swiper-wrapper">
+                 <?php if ($resultLower->num_rows > 0): ?>
+                     <?php while ($row = $resultLower->fetch_assoc()): ?>
+                         <div class="swiper-slide">
+                             <div class="card_border_styles">
+                                 <div class="row">
+                                     <div class="col-4">
+                                         <div class="img_border">
+                                             <img src="./admin/uploads/home_trending/<?php echo htmlspecialchars($row['image']); ?>" class="img-fluid" alt="">
+                                         </div>
+                                     </div>
+                                     <div class="col-8">
+                                         <div class="d-flex">
+                                             <p class="brand_name"><?php echo htmlspecialchars($row['title']); ?></p>
+                                         </div>
+                                         <div class="d-flex">
+                                             <p class="brand_type"><i class="fal fa-star"></i> <?php echo htmlspecialchars($row['offer']); ?></p>
+                                         </div>
+                                     </div>
                                  </div>
-
-                                 <div class="d-flex">
-                                     <p class="brand_type"> <i class="fal fa-star"></i> Exclusive</p>
-                                 </div>
-                             </div>
-                         </div>
-                         <div class="row  mini_card_spacings">
-                             <p class="brand_special_discount">Up to 20% off 1000rs of items at Lentkart - Don't miss
-                                 out, ...</p>
-                         </div>
-                     </div>
-                 </div>
-                 <div class="swiper-slide "> <!-- Swiper Slide -->
-                     <div class="card_border_styles">
-                         <div class="row">
-                             <div class="col-4 ">
-                                 <div class="img_border">
-                                     <img src="assets/img/self_images/kfc.png" class="img-fluid" alt="">
-                                 </div>
-                             </div>
-
-                             <div class="col-8">
-                                 <div class="d-flex">
-                                     <p class="brand_name">KFC</p>
+                                 <div class="row mini_card_spacings">
+                                     <p class="brand_special_discount">
+                                         <?php
+                                            $text = htmlspecialchars($row['description']);
+                                            echo (strlen($text) > 60) ? substr($text, 0, 57) . '...' : $text;
+                                            ?>
+                                     </p>
                                  </div>
 
-                                 <div class="d-flex">
-                                     <p class="brand_type"> <i class="fal fa-star"></i> Exclusive</p>
-                                 </div>
                              </div>
                          </div>
-                         <div class="row  mini_card_spacings">
-                             <p class="brand_special_discount">Up to 20% off 800rs of items at KFC - Don't miss
-                                 out, ...</p>
-                         </div>
-                     </div>
-                 </div>
-                 <div class="swiper-slide "> <!-- Swiper Slide -->
-                     <div class="card_border_styles">
-                         <div class="row">
-                             <div class="col-4 ">
-                                 <div class="img_border">
-                                     <img src="assets/img/self_images/reliance trends.jpeg" class="img-fluid" alt="">
-                                 </div>
-                             </div>
-
-                             <div class="col-8">
-                                 <div class="d-flex">
-                                     <p class="brand_name">Reliance Trends</p>
-                                 </div>
-
-                                 <div class="d-flex">
-                                     <p class="brand_type"> <i class="fal fa-star"></i> Exclusive</p>
-                                 </div>
-                             </div>
-                         </div>
-                         <div class="row  mini_card_spacings">
-                             <p class="brand_special_discount">Up to 50% off 1000s of items at Trends - Don't miss
-                                 out, ...</p>
-                         </div>
-                     </div>
-                 </div>
-                 <div class="swiper-slide "> <!-- Swiper Slide -->
-                     <div class="card_border_styles">
-                         <div class="row">
-                             <div class="col-4 ">
-                                 <div class="img_border">
-                                     <img src="assets/img/self_images/srmt_mall.jpeg" class="img-fluid" alt="">
-                                 </div>
-                             </div>
-
-                             <div class="col-8">
-                                 <div class="d-flex">
-                                     <p class="brand_name">SRMT Mall</p>
-                                 </div>
-
-                                 <div class="d-flex">
-                                     <p class="brand_type"> <i class="fal fa-star"></i> Exclusive</p>
-                                 </div>
-                             </div>
-                         </div>
-                         <div class="row  mini_card_spacings">
-                             <p class="brand_special_discount">On Your First Purchase Get Up to 50% off 1000rs of items at SRMT </p>
-                         </div>
-                     </div>
-                 </div>
-
-                 <div class="swiper-slide "> <!-- Swiper Slide -->
-                     <div class="card_border_styles">
-                         <div class="row">
-                             <div class="col-4 ">
-                                 <div class="img_border">
-                                     <img src="assets/img/self_images/bbq.png" class="img-fluid" alt="">
-                                 </div>
-                             </div>
-
-                             <div class="col-8">
-                                 <div class="d-flex">
-                                     <p class="brand_name">BBQ Nation</p>
-                                 </div>
-
-                                 <div class="d-flex">
-                                     <p class="brand_type"> <i class="fal fa-star"></i> Exclusive</p>
-                                 </div>
-                             </div>
-                         </div>
-                         <div class="row  mini_card_spacings">
-                             <p class="brand_special_discount">Up to 10% off 1000rs of items at BBQ - Don't miss
-                                 out, ...</p>
-                         </div>
-                     </div>
-                 </div>
+                     <?php endwhile; ?>
+                 <?php else: ?>
+                     <p>No lower trending items found.</p>
+                 <?php endif; ?>
              </div>
-             <!-- Pagination and Navigation Buttons -->
-
          </div>
+
      </div>
  </section>
 
 
 
 
- <section class="team-section-three   space-md-bottom">
+ <?php
+    include './db.connection/db_connection.php'; // Ensure the database connection is included
+
+    // Fetch offers items with type 'upper'
+    $sqlUpper = "SELECT * FROM offers WHERE type = 'upper' ORDER BY created_at DESC";
+    $resultUpper = $conn->query($sqlUpper);
+
+    // Fetch offers items with type 'lower'
+    $sqlLower = "SELECT * FROM offers WHERE type = 'lower' ORDER BY created_at DESC";
+    $resultLower = $conn->query($sqlLower);
+    ?>
+
+ <section class="team-section-three space-md-bottom">
      <div class="container-style6">
          <div class="title-area-three text-center wow fadeInUp" data-wow-delay="600ms">
-             <span class="sub-title7">Offers</span>
-
+             <span class="sub-title7">Offers </span>
          </div>
 
-         <div class="swiper-container team-slider"> <!-- Swiper Container -->
-             <div class="swiper-wrapper"> <!-- Swiper Wrapper -->
-                 <!-- Team block -->
-                 <div class="swiper-slide "> <!-- Swiper Slide -->
-                     <div class="card_border_styles">
-                         <div class="row">
-                             <div class="col-4 ">
-                                 <div class="img_border">
-                                     <img src="assets/img/self_images/undaer.webp" class="img-fluid" alt="">
-                                 </div>
-                             </div>
+         <!-- Upper Type Swiper -->
+         <div class="swiper-container swiper-container-upper team-slider mb-5">
+             <div class="swiper-wrapper">
+                 <?php if ($resultUpper->num_rows > 0): ?>
+                     <?php while ($row = $resultUpper->fetch_assoc()): ?>
+                         <div class="swiper-slide">
+                             <div class="card_border_styles">
+                                 <div class="row">
+                                     <div class="col-4">
+                                         <div class="img_border">
+                                             <img src="./admin/uploads/home_offers/<?php echo htmlspecialchars($row['image']); ?>" class="img-fluid" alt="">
+                                         </div>
+                                     </div>
+                                     <div class="col-8">
+                                         <div class="d-flex">
+                                             <p class="brand_name"><?php echo htmlspecialchars($row['title']); ?></p>
+                                         </div>
+                                         <div class="d-flex">
+                                             <p class="brand_type"><i class="fal fa-star"></i> <?php echo htmlspecialchars($row['offer']); ?></p>
+                                         </div>
 
-                             <div class="col-8">
-                                 <div class="d-flex">
-                                     <p class="brand_name">Under Armour
+                                     </div>
+                                 </div>
+                                 <div class="row mini_card_spacings">
+                                     <p class="brand_special_discount">
+                                         <?php
+                                            $text = htmlspecialchars($row['description']);
+                                            echo (strlen($text) > 60) ? substr($text, 0, 57) . '...' : $text;
+                                            ?>
                                      </p>
                                  </div>
 
-                                 <div class="d-flex">
-                                     <p class="brand_type"> <i class="fal fa-star"></i> Exclusive</p>
-                                 </div>
+
                              </div>
                          </div>
-                         <div class="row  mini_card_spacings">
-                             <p class="brand_special_discount">Up to 50% off 1000s of items at Under Armour - Don't miss
-                                 out, ...</p>
-                         </div>
-                     </div>
-                 </div>
-
-                 <div class="swiper-slide "> <!-- Swiper Slide -->
-                     <div class="card_border_styles">
-                         <div class="row">
-                             <div class="col-4 ">
-                                 <div class="img_border">
-                                     <img src="assets/img/self_images/adida.png" class="img-fluid" alt="">
-                                 </div>
-                             </div>
-
-                             <div class="col-8">
-                                 <div class="d-flex">
-                                     <p class="brand_name">Adadis</p>
-                                 </div>
-
-                                 <div class="d-flex">
-                                     <p class="brand_type"> <i class="fal fa-star"></i> Exclusive</p>
-                                 </div>
-                             </div>
-                         </div>
-                         <div class="row  mini_card_spacings">
-                             <p class="brand_special_discount">Up to 50% off 1000s of items at Adadis - Don't miss
-                                 out, ...</p>
-                         </div>
-                     </div>
-                 </div>
-                 <div class="swiper-slide "> <!-- Swiper Slide -->
-                     <div class="card_border_styles">
-                         <div class="row">
-                             <div class="col-4 ">
-                                 <div class="img_border">
-                                     <img src="assets/img/self_images/nike.png" class="img-fluid" alt="">
-                                 </div>
-                             </div>
-
-                             <div class="col-8">
-                                 <div class="d-flex">
-                                     <p class="brand_name">Nike
-                                     </p>
-                                 </div>
-
-                                 <div class="d-flex">
-                                     <p class="brand_type"> <i class="fal fa-star"></i> Exclusive</p>
-                                 </div>
-                             </div>
-                         </div>
-                         <div class="row  mini_card_spacings">
-                             <p class="brand_special_discount">Up to 50% off 1000s of items at Nike - Don't miss
-                                 out, ...</p>
-                         </div>
-                     </div>
-                 </div>
-                 <div class="swiper-slide "> <!-- Swiper Slide -->
-                     <div class="card_border_styles">
-                         <div class="row">
-                             <div class="col-4 ">
-                                 <div class="img_border">
-                                     <img src="assets/img/self_images/Ray.webp" class="img-fluid" alt="">
-                                 </div>
-                             </div>
-
-                             <div class="col-8">
-                                 <div class="d-flex">
-                                     <p class="brand_name">Ray-Ban
-                                     </p>
-                                 </div>
-
-                                 <div class="d-flex">
-                                     <p class="brand_type"> <i class="fal fa-star"></i> Exclusive</p>
-                                 </div>
-                             </div>
-                         </div>
-                         <div class="row  mini_card_spacings">
-                             <p class="brand_special_discount">Up to 50% off 1000s of items at Ray-Ban - Don't miss
-                                 out, ...</p>
-                         </div>
-                     </div>
-                 </div>
-                 <div class="swiper-slide "> <!-- Swiper Slide -->
-                     <div class="card_border_styles">
-                         <div class="row">
-                             <div class="col-4 ">
-                                 <div class="img_border">
-                                     <img src="assets/img/self_images/Crocs-logo.jpg" class="img-fluid" alt="">
-                                 </div>
-                             </div>
-
-                             <div class="col-8">
-                                 <div class="d-flex">
-                                     <p class="brand_name">Crocs</p>
-                                 </div>
-
-                                 <div class="d-flex">
-                                     <p class="brand_type"> <i class="fal fa-star"></i> Exclusive</p>
-                                 </div>
-                             </div>
-                         </div>
-                         <div class="row  mini_card_spacings">
-                             <p class="brand_special_discount">Up to 50% off 1000s of items at Crocs - Don't miss
-                                 out, ...</p>
-                         </div>
-                     </div>
-                 </div>
-
-
+                     <?php endwhile; ?>
+                 <?php else: ?>
+                     <p>No upper offers items found.</p>
+                 <?php endif; ?>
              </div>
-             <!-- Pagination and Navigation Buttons -->
-
          </div>
-         <div class="swiper-container team-slider"> <!-- Swiper Container -->
-             <div class="swiper-wrapper"> <!-- Swiper Wrapper -->
-                 <!-- Team block -->
-                 <div class="swiper-slide "> <!-- Swiper Slide -->
-                     <div class="card_border_styles">
-                         <div class="row">
-                             <div class="col-4 ">
-                                 <div class="img_border">
-                                     <img src="assets/img/self_images/Ray.webp" class="img-fluid" alt="">
-                                 </div>
-                             </div>
 
-                             <div class="col-8">
-                                 <div class="d-flex">
-                                     <p class="brand_name">Ray-Ban
+         <!-- Lower Type Swiper -->
+         <div class="swiper-container swiper-container-lower team-slider">
+             <div class="swiper-wrapper">
+                 <?php if ($resultLower->num_rows > 0): ?>
+                     <?php while ($row = $resultLower->fetch_assoc()): ?>
+                         <div class="swiper-slide">
+                             <div class="card_border_styles">
+                                 <div class="row">
+                                     <div class="col-4">
+                                         <div class="img_border">
+                                             <img src="./admin/uploads/home_offers/<?php echo htmlspecialchars($row['image']); ?>" class="img-fluid" alt="">
+                                         </div>
+                                     </div>
+                                     <div class="col-8">
+                                         <div class="d-flex">
+                                             <p class="brand_name"><?php echo htmlspecialchars($row['title']); ?></p>
+                                         </div>
+                                         <div class="d-flex">
+                                             <p class="brand_type"><i class="fal fa-star"></i> <?php echo htmlspecialchars($row['offer']); ?></p>
+                                         </div>
+                                     </div>
+                                 </div>
+                                 <div class="row mini_card_spacings">
+                                     <p class="brand_special_discount">
+                                         <?php
+                                            $text = htmlspecialchars($row['description']);
+                                            echo (strlen($text) > 60) ? substr($text, 0, 57) . '...' : $text;
+                                            ?>
                                      </p>
                                  </div>
 
-                                 <div class="d-flex">
-                                     <p class="brand_type"> <i class="fal fa-star"></i> Exclusive</p>
-                                 </div>
                              </div>
                          </div>
-                         <div class="row  mini_card_spacings">
-                             <p class="brand_special_discount">Up to 50% off 1000s of items at Ray-Ban - Don't miss
-                                 out, ...</p>
-                         </div>
-                     </div>
-                 </div>
-                 <div class="swiper-slide "> <!-- Swiper Slide -->
-                     <div class="card_border_styles">
-                         <div class="row">
-                             <div class="col-4 ">
-                                 <div class="img_border">
-                                     <img src="assets/img/self_images/Crocs-logo.jpg" class="img-fluid" alt="">
-                                 </div>
-                             </div>
-
-                             <div class="col-8">
-                                 <div class="d-flex">
-                                     <p class="brand_name">Crocs</p>
-                                 </div>
-
-                                 <div class="d-flex">
-                                     <p class="brand_type"> <i class="fal fa-star"></i> Exclusive</p>
-                                 </div>
-                             </div>
-                         </div>
-                         <div class="row  mini_card_spacings">
-                             <p class="brand_special_discount">Up to 50% off 1000s of items at Crocs - Don't miss
-                                 out, ...</p>
-                         </div>
-                     </div>
-                 </div>
-                 <div class="swiper-slide "> <!-- Swiper Slide -->
-                     <div class="card_border_styles">
-                         <div class="row">
-                             <div class="col-4 ">
-                                 <div class="img_border">
-                                     <img src="assets/img/self_images/adida.png" class="img-fluid" alt="">
-                                 </div>
-                             </div>
-
-                             <div class="col-8">
-                                 <div class="d-flex">
-                                     <p class="brand_name">Adadis</p>
-                                 </div>
-
-                                 <div class="d-flex">
-                                     <p class="brand_type"> <i class="fal fa-star"></i> Exclusive</p>
-                                 </div>
-                             </div>
-                         </div>
-                         <div class="row  mini_card_spacings">
-                             <p class="brand_special_discount">Up to 50% off 1000s of items at Adadis - Don't miss
-                                 out, ...</p>
-                         </div>
-                     </div>
-                 </div>
-                 <div class="swiper-slide "> <!-- Swiper Slide -->
-                     <div class="card_border_styles">
-                         <div class="row">
-                             <div class="col-4 ">
-                                 <div class="img_border">
-                                     <img src="assets/img/self_images/nike.png" class="img-fluid" alt="">
-                                 </div>
-                             </div>
-
-                             <div class="col-8">
-                                 <div class="d-flex">
-                                     <p class="brand_name">Nike
-                                     </p>
-                                 </div>
-
-                                 <div class="d-flex">
-                                     <p class="brand_type"> <i class="fal fa-star"></i> Exclusive</p>
-                                 </div>
-                             </div>
-                         </div>
-                         <div class="row  mini_card_spacings">
-                             <p class="brand_special_discount">Up to 50% off 1000s of items at Nike - Don't miss
-                                 out, ...</p>
-                         </div>
-                     </div>
-                 </div>
-                 <div class="swiper-slide "> <!-- Swiper Slide -->
-                     <div class="card_border_styles">
-                         <div class="row">
-                             <div class="col-4 ">
-                                 <div class="img_border">
-                                     <img src="assets/img/self_images/undaer.webp" class="img-fluid" alt="">
-                                 </div>
-                             </div>
-
-                             <div class="col-8">
-                                 <div class="d-flex">
-                                     <p class="brand_name">Under Armour
-                                     </p>
-                                 </div>
-
-                                 <div class="d-flex">
-                                     <p class="brand_type"> <i class="fal fa-star"></i> Exclusive</p>
-                                 </div>
-                             </div>
-                         </div>
-                         <div class="row  mini_card_spacings">
-                             <p class="brand_special_discount">Up to 50% off 1000s of items at Under Armour - Don't miss
-                                 out, ...</p>
-                         </div>
-                     </div>
-                 </div>
+                     <?php endwhile; ?>
+                 <?php else: ?>
+                     <p>No lower Offers items found.</p>
+                 <?php endif; ?>
              </div>
-             <!-- Pagination and Navigation Buttons -->
-
          </div>
+
      </div>
  </section>
 
@@ -648,37 +311,37 @@
 
 
  <section class="mb-5">
-    <div class="px-0">
-        <div class="row justify-content-center mx-0">
-            <div class="col-12 px-0">
-                <?php if (!empty($lowerImages)): ?>
-                    <div id="lowerCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
-                        <div class="carousel-inner">
-                            <?php foreach ($lowerImages as $index => $image): ?>
-                                <div class="carousel-item <?= ($index === 0) ? 'active' : ''; ?>">
-                                    <img src="./admin/uploads/home_ads/<?= htmlspecialchars($image) ?>"
+     <div class="px-0">
+         <div class="row justify-content-center mx-0">
+             <div class="col-12 px-0">
+                 <?php if (!empty($lowerImages)): ?>
+                     <div id="lowerCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+                         <div class="carousel-inner">
+                             <?php foreach ($lowerImages as $index => $image): ?>
+                                 <div class="carousel-item <?= ($index === 0) ? 'active' : ''; ?>">
+                                     <img src="./admin/uploads/home_ads/<?= htmlspecialchars($image) ?>"
                                          class="d-block w-100 img-fluid"
                                          style="object-fit: cover; max-height: 500px;"
                                          alt="Lower Image">
-                                </div>
-                            <?php endforeach; ?>
-                        </div>
+                                 </div>
+                             <?php endforeach; ?>
+                         </div>
 
-                        <!-- Navigation buttons -->
-                        <button class="carousel-control-prev" type="button" data-bs-target="#lowerCarousel" data-bs-slide="prev">
-                            <i class="fas fa-arrow-left"></i> <!-- Left arrow icon -->
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#lowerCarousel" data-bs-slide="next">
-                            <i class="fas fa-arrow-right"></i> <!-- Right arrow icon -->
-                        </button>
-                    </div>
-                <?php else: ?>
-                    <p class="text-center text-muted">No lower images available.</p>
-                <?php endif; ?>
-            </div>
-        </div>
-    </div>
-</section>
+                         <!-- Navigation buttons -->
+                         <button class="carousel-control-prev" type="button" data-bs-target="#lowerCarousel" data-bs-slide="prev">
+                             <i class="fas fa-arrow-left"></i> <!-- Left arrow icon -->
+                         </button>
+                         <button class="carousel-control-next" type="button" data-bs-target="#lowerCarousel" data-bs-slide="next">
+                             <i class="fas fa-arrow-right"></i> <!-- Right arrow icon -->
+                         </button>
+                     </div>
+                 <?php else: ?>
+                     <p class="text-center text-muted">No lower images available.</p>
+                 <?php endif; ?>
+             </div>
+         </div>
+     </div>
+ </section>
 
 
 

@@ -15,14 +15,14 @@
         </a>
     </li>
 
-
     <div class="sidebar-heading">Advertisings</div>
-<li class="nav-item">
-    <a class="nav-link" href="home_ads.php">
-        <i class="fas fa-plus-circle"></i>
-        <span>Home Ads</span>
-    </a>
-</li>
+    <li class="nav-item">
+        <a class="nav-link" href="home_index.php">
+            <i class="fas fa-plus-circle"></i>
+            <span>Home  </span>
+        </a>
+    </li>
+    
     <!-- Divider -->
     <hr class="sidebar-divider">
 
