@@ -1,10 +1,6 @@
 <?php
 include 'header.php';
-
 ?>
-
-
-
 
 <!-- Page Wrapper -->
 <div id="wrapper">
@@ -29,6 +25,7 @@ include 'header.php';
                 if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     $title = $_POST['title'];
                     $type = $_POST['type'];
+                    $category = ucfirst(strtolower(trim($_POST['category']))); // Capitalize first letter
                     $price = (int) $_POST['price']; // Ensure integer
                     $phone = $_POST['phone'];
                     $location = $_POST['location'];
@@ -37,7 +34,8 @@ include 'header.php';
                     $bathrooms = (int) $_POST['bathrooms']; // Ensure integer
                     $furnishing_status = $_POST['furnishing_status'];
                     $description = $_POST['description'];
-                    $amenities = isset($_POST['amenities']) ? implode(',', $_POST['amenities']) : '';
+                    $amenities = $_POST['amenities'];
+
 
                     // ✅ Set Correct Upload Path (Relative Path)
                     $upload_folder = "../uploads/properties/";
@@ -81,12 +79,12 @@ include 'header.php';
                     }
                     $multiple_images_str = implode(',', $multiple_images);
 
-                    // ✅ Corrected Query & Bind Parameters
-                    $query = "INSERT INTO properties (title, type, price, phone, location, size_sqft, bedrooms, bathrooms, furnishing_status, amenities, image, images, description) 
-              VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+                    // ✅ Updated Query with Category
+                    $query = "INSERT INTO properties (title, type, category, price, phone, location, size_sqft, bedrooms, bathrooms, furnishing_status, amenities, image, images, description) 
+                              VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
 
                     $stmt = $conn->prepare($query);
-                    $stmt->bind_param("ssissiiisssss", $title, $type, $price, $phone, $location, $size_sqft, $bedrooms, $bathrooms, $furnishing_status, $amenities, $image_name, $multiple_images_str, $description);
+                    $stmt->bind_param("sssissiiisssss", $title, $type, $category, $price, $phone, $location, $size_sqft, $bedrooms, $bathrooms, $furnishing_status, $amenities, $image_name, $multiple_images_str, $description);
 
                     if ($stmt->execute()) {
                         $_SESSION['message'] = "Property added successfully!";
@@ -101,7 +99,6 @@ include 'header.php';
                     }
                 }
                 ?>
-
 
                 <!-- ✅ Success Message Display in HTML -->
                 <?php if (isset($_SESSION['message'])): ?>
@@ -123,25 +120,18 @@ include 'header.php';
                     </script>
                 <?php endif; ?>
 
-
-
-
-
-
-
-
-
-
-
-
-
                 <!-- Property Form -->
                 <div class="container">
                     <form action="add_property_type.php" method="POST" enctype="multipart/form-data">
                         <div class="row">
+
                             <div class="col-md-6 mb-3">
-                                <label>Title:</label>
-                                <input type="text" name="title" class="form-control" required>
+                                <label>Category:</label>
+                                <select name="category" class="form-control" required>
+                                    <option value="Residential">Residential</option>
+                                    <option value="Commercial">Commercial</option>
+                                </select>
+
                             </div>
                             <div class="col-md-6 mb-3">
                                 <label>Type:</label>
@@ -152,18 +142,18 @@ include 'header.php';
                                 </select>
                             </div>
                             <div class="col-md-6 mb-3">
+                                <label>Title:</label>
+                                <input type="text" name="title" class="form-control" required>
+                            </div>
+
+                            <div class="col-md-6 mb-3">
                                 <label>Price:</label>
                                 <input type="text" name="price" class="form-control" required>
                             </div>
-
-
                             <div class="col-md-6 mb-3">
-                                <label>Phone Number</label>
+                                <label>Phone Number:</label>
                                 <input type="text" name="phone" class="form-control" required>
                             </div>
-
-
-
                             <div class="col-md-6 mb-3">
                                 <label>Location:</label>
                                 <input type="text" name="location" class="form-control" required>
@@ -188,23 +178,23 @@ include 'header.php';
                                     <option value="Unfurnished">Unfurnished</option>
                                 </select>
                             </div>
-                            <div class="col-md-12 mb-3">
-                                <label>Amenities:</label><br>
-                                <input type="checkbox" name="amenities[]" value="Gym"> Gym
-                                <input type="checkbox" name="amenities[]" value="Pool"> Pool
-                                <input type="checkbox" name="amenities[]" value="Parking"> Parking
-                                <input type="checkbox" name="amenities[]" value="Security"> Security
-                            </div>
-                            <div class="col-md-6 mb-3">
-                                <label for="image">Main Image:</label>
-                                <input type="file" name="image" required>
 
-                                <label for="property_images">Upload More Images:</label>
-                                <input type="file" name="property_images[]" multiple>
-                            </div>
                             <div class="col-md-12 mb-3">
                                 <label>Description:</label>
                                 <textarea name="description" class="form-control" rows="3"></textarea>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label>Amenities:</label>
+                                <input type="text" name="amenities" class="form-control" placeholder="e.g. Gym, Pool, Parking, Security">
+                            </div>
+
+                            <div class="col-md-4 mb-3">
+                                <label for="image">Main Image:</label>
+                                <input type="file" name="image" required>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label for="property_images">Upload More Images:</label>
+                                <input type="file" name="property_images[]" multiple>
                             </div>
                             <div class="col-md-12">
                                 <button type="submit" class="btn btn-success">Add Property</button>

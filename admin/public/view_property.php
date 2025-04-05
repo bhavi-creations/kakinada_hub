@@ -39,6 +39,13 @@
                             <div class="container mt-5">
                                 <h2>Property Details</h2>
                                 <table class="table table-bordered">
+                                  
+                                
+
+                                    <tr>
+                                        <th>Category</th>
+                                        <td><?php echo ucfirst($property['category']); ?></td>
+                                    </tr>
                                     <tr>
                                         <th>Property Name</th>
                                         <td><?php echo $property['title']; ?></td>
