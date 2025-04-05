@@ -2,7 +2,7 @@
 include 'navbar.php';  
 include './db.connection/db_connection.php'; 
 ?>
-
+<?php include 'moviesidebar.php' ; ?>
 <h1 class="text-center my-3">Movie Theaters</h1>
 
 <section class="py-5">

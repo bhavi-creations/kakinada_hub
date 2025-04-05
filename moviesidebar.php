@@ -1,12 +1,31 @@
+<?php
+include 'db.connection/db_connection.php';
+
+// Fetch theaters from database
+$theaterQuery = "SELECT id, name FROM theaters ORDER BY name ASC";
+$theaterResult = mysqli_query($conn, $theaterQuery);
+
+// Store theaters in an array for JavaScript
+$theaters = [];
+while ($row = mysqli_fetch_assoc($theaterResult)) {
+    $theaters[] = $row;
+}
+
+// Encode as JSON
+$theatersJSON = json_encode($theaters);
+?>
+
+<!-- Sidebar Structure -->
 <div id="overlay" class="overlay"></div>
-<button id="restaurant-icon" class="restaurant-icon">🎬</button>
+<button id="sidebar-icon" class="sidebar-icon">🎥</button>
 <div id="sidebar" class="sidebar side_view">
-    <h1 class="side_bar_tittle">Movies 🎬</h1>
-    <ul id="restaurant-list" class="restaurant-list"></ul>
+    <h1 class="side_bar_tittle">Theaters 🎭</h1>
+    <ul id="theater-list" class="service-list"></ul>
 </div>
+
 <script>
     document.addEventListener("DOMContentLoaded", function() {
-        const restaurantIcon = document.getElementById("restaurant-icon");
+        const sidebarIcon = document.getElementById("sidebar-icon");
         const sidebar = document.getElementById("sidebar");
         const overlay = document.getElementById("overlay");
 
@@ -20,68 +39,21 @@
             overlay.classList.remove("active");
         }
 
-        restaurantIcon.addEventListener("click", openSidebar);
+        sidebarIcon.addEventListener("click", openSidebar);
         overlay.addEventListener("click", closeSidebar);
-    });
 
-    const restaurants = [{
-            name: "Devi Multiplex",
-            link: "./devi.php"
-        },
-        {
-            name: "Anand Complex",
-            link: "./anand.php"
-        },
-        {
-            name: "Sri Priya Padma Priya",
-            link: "./sripadama.php"
-        },
-        {
-            name: "C&C",
-            link: "./cc.php"
-        },
+        // Get theater data from PHP
+        const theaters = <?php echo $theatersJSON; ?>;
+        const theaterList = document.getElementById("theater-list");
 
-        {
-            name: "Geeth Sangeeth",
-            link: "./geeth_sangeeth.php"
-        },
-        {
-            name: "Thirumala",
-            link: "./tirumala.php"
-        }, 
-        {
-            name: "Inox",
-            link: "./inox.php"
-        }, 
-        {
-            name: "Surya",
-            link: "./surya.php"
-        },
-        {
-            name: "Satya Gowri",
-            link: "./satyagowri.php"
-        }, {
-            name: "Mayuri",
-            link: "./mayuri.php"
-        },
-
-
-
-
-
-
-    ];
-
-    const restaurantList = document.getElementById("restaurant-list");
-    restaurants.forEach((restaurant) => {
-        const listItem = document.createElement("li");
-        const link = document.createElement("a");
-        link.href = restaurant.link;
-        // link.target = "_blank";
-        link.rel = "noopener noreferrer";
-        link.textContent = restaurant.name;
-
-        listItem.appendChild(link);
-        restaurantList.appendChild(listItem);
+        theaters.forEach(theater => {
+            const listItem = document.createElement("li");
+            const link = document.createElement("a");
+            link.href = "screens.php?theater_id=" + theater.id;
+            link.rel = "noopener noreferrer";
+            link.textContent = theater.name;
+            listItem.appendChild(link);
+            theaterList.appendChild(listItem);
+        });
     });
 </script>
