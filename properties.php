@@ -1,191 +1,91 @@
-<?php include 'navbar.php';  ?>
+<?php include 'navbar.php'; ?>
+<?php include './db.connection/db_connection.php';?>
 
+<?php include 'propertys_sidebar.php'; ?>
 
-<div id="overlay" class="overlay"></div>
-<button id="restaurant-icon" class="restaurant-icon">🏠</button>
+<?php
+// Fetch distinct types
+$typeQuery = "SELECT DISTINCT type FROM properties WHERE type IS NOT NULL AND type != '' ORDER BY type ASC";
+$typeResult = mysqli_query($conn, $typeQuery);
 
-
-<div id="sidebar" class="sidebar side_view">
-    <h1 class="side_bar_tittle">Propertys 🏠</h1>
-    <ul id="restaurant-list" class="restaurant-list"></ul>
-</div>
-
-
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        const restaurantIcon = document.getElementById("restaurant-icon");
-        const sidebar = document.getElementById("sidebar");
-        const overlay = document.getElementById("overlay");
-
-        function openSidebar() {
-            sidebar.classList.add("open");
-            overlay.classList.add("active");
-        }
-
-        function closeSidebar() {
-            sidebar.classList.remove("open");
-            overlay.classList.remove("active");
-        }
-
-        restaurantIcon.addEventListener("click", openSidebar);
-        overlay.addEventListener("click", closeSidebar);
-    });
-
-    const restaurants = [{
-            name: "House Rent",
-            link: "#"
-        },
-        {
-            name: "Commercial Rent",
-            link: "#"
-        },
-        {
-            name: "House Sale",
-            link: "#"
-        },
-        {
-            name: "Commercial Sale",
-            link: "#"
-        },
-        {
-            name: "Land Sale",
-            link: "#"
-        },
-        {
-            name: "Land Lease",
-            link: "#"
-        },
-    ];
-
-    const restaurantList = document.getElementById("restaurant-list");
-    restaurants.forEach((restaurant) => {
-        const listItem = document.createElement("li");
-        const link = document.createElement("a");
-        link.href = restaurant.link;
-        // link.target = "_blank";
-        link.rel = "noopener noreferrer";
-        link.textContent = restaurant.name;
-
-        listItem.appendChild(link);
-        restaurantList.appendChild(listItem);
-    });
-</script>
-
-
-
-
-
-<div class="container">
-    <div class="row">
-        <div class="col-12">
-
-            <?php include './db.connection/db_connection.php'; ?>
-
-            <!-- Display Success Message -->
-            <?php if (isset($_SESSION['message'])): ?>
-                <div id="alert-box" class="alert alert-<?php echo $_SESSION['msg_type']; ?>">
-                    <?php echo $_SESSION['message']; ?>
-                    <?php unset($_SESSION['message']); ?>
-                </div>
-
-                <script>
-                    setTimeout(function() {
-                        let alertBox = document.getElementById('alert-box');
-                        if (alertBox) {
-                            alertBox.style.display = 'none';
-                        }
-                    }, 3000);
-                </script>
-            <?php endif; ?>
-
-
-
-        </div>
-    </div>
-</div>
-
-
-
-
-
-
-<div class="container text-center">
-
-    <!-- Buttons for Larger Screens -->
-    <div class="col-12  ">
-        <div class="mt-5 text-center">
-            <button class="redirect_blog_srivice filter-btn" data-filter="all">All</button>
-            <button class="redirect_blog_srivice filter-btn" data-filter="For Sale">For Sale</button>
-            <button class="redirect_blog_srivice filter-btn" data-filter="For Rent">For Rent</button>
-            <button class="redirect_blog_srivice filter-btn" data-filter="For Lease">For Lease</button>
-        </div>
-    </div>
-
-
-
-
-
-    <script>
-        $(document).ready(function() {
-            function filterProperties(filterValue) {
-                $(".property-item").hide(); // Hide all property items
-
-                if (filterValue === "all") {
-                    $(".property-item").fadeIn(); // Show all properties if "All" is selected
-                } else {
-                    $(".property-item").each(function() {
-                        if ($(this).data("type").trim() === filterValue) {
-                            $(this).fadeIn(); // Show only the matching properties
-                        }
-                    });
-                }
-            }
-
-            // Filter when a button is clicked (for large screens)
-            $(".filter-btn").click(function() {
-                let filterValue = $(this).data("filter");
-                filterProperties(filterValue);
-            });
-
-            // Filter when a dropdown option is selected (for mobile)
-            $(".filter-dropdown").change(function() {
-                let filterValue = $(this).val();
-                filterProperties(filterValue);
-            });
-        });
-    </script>
-
-</div>
-
-
-
-
-
+// Fetch distinct categories
+$categoryQuery = "SELECT DISTINCT category FROM properties WHERE category IS NOT NULL AND category != '' ORDER BY category ASC";
+$categoryResult = mysqli_query($conn, $categoryQuery);
+?>
 
 <section>
     <div class="container">
 
-        <div class="text-center   ">
+        <div class="text-center">
             <h1>List Of Properties</h1>
             <h5>Find Your Residency By One Click</h5>
         </div>
+
+
+        <!-- Filters -->
+        <div class="row gy-2 my-4 custom-filters">
+            <div class="col-12 col-md-3">
+                <select id="typeFilter" class="custom-input" onchange="filterProperties()">
+                    <option value="">All Types</option>
+                    <?php
+                    $typeQuery = "SELECT DISTINCT type FROM properties";
+                    $typeResult = mysqli_query($conn, $typeQuery);
+                    while ($typeRow = mysqli_fetch_assoc($typeResult)) {
+                        echo '<option value="' . htmlspecialchars($typeRow['type']) . '">' . htmlspecialchars($typeRow['type']) . '</option>';
+                    }
+                    ?>
+                </select>
+            </div>
+
+            <div class="col-12 col-md-3">
+                <select id="categoryFilter" class="custom-input" onchange="filterProperties()">
+                    <option value="">All Categories</option>
+                    <?php
+                    $categoryQuery = "SELECT DISTINCT category FROM properties";
+                    $categoryResult = mysqli_query($conn, $categoryQuery);
+                    while ($categoryRow = mysqli_fetch_assoc($categoryResult)) {
+                        echo '<option value="' . htmlspecialchars($categoryRow['category']) . '">' . htmlspecialchars($categoryRow['category']) . '</option>';
+                    }
+                    ?>
+                </select>
+            </div>
+
+            <div class="col-12 col-md-3">
+                <input type="text" id="searchInput" class="custom-input" placeholder="Search by title or location..." onkeyup="filterProperties()">
+            </div>
+
+            <div class="col-12 col-md-2">
+                <input type="text" id="priceInput" class="custom-input" placeholder="Search by price..." onkeyup="filterProperties()">
+            </div>
+
+            <div class="col-12 col-md-1">
+                <button class="btn btn-outline-secondary w-100 custom-reset" onclick="resetFilters()">Reset</button>
+            </div>
+        </div>
+
+
         <div class="row">
-
-            <div class="col-lg-9 col-12 ">
-                <div class="row    fadeIn" data-wow-delay="0.3s">
+            <div class="col-lg-9 col-12">
 
 
+
+                <!-- Property List -->
+                <div class="row fadeIn" data-wow-delay="0.3s">
                     <section class="OfferContainer_exclusive__non wow fadeInUp my-2" data-wow-delay="100ms">
-
-
                         <div class="row" id="property-list">
                             <?php
                             $query = "SELECT * FROM properties ORDER BY id DESC";
                             $result = mysqli_query($conn, $query);
                             while ($row = mysqli_fetch_assoc($result)):
                                 $propertyType = trim($row['type']);
+                                $propertyCategory = trim($row['category']);
+                                $numericPrice = isset($row['price']) ? (int) preg_replace('/[^\d]/', '', $row['price']) : '';
                             ?>
-                                <div class="col-12 card_div px-3 property-item" data-type="<?php echo $propertyType; ?>">
+                                <div class="col-12 card_div px-3 property-item"
+                                    data-type="<?php echo $propertyType; ?>"
+                                    data-category="<?php echo $propertyCategory; ?>"
+                                    data-price="<?php echo $numericPrice; ?>">
+
                                     <div class="row py-3">
                                         <div class="col-12 col-md-3 job_image_card">
                                             <img src="./admin/uploads/properties/<?php echo $row['image']; ?>" class="img-fluid company_logo_size" alt="Property Image">
@@ -194,107 +94,87 @@
                                             <h4><?php echo $row['title']; ?></h4>
                                             <p class="property_p_tag">
                                                 <strong class="property_strong">Price:</strong>
-                                                <?php
-                                                // Check if the price is available and apply number formatting, otherwise show 'Not Provided'
-                                                $price = isset($row['price']) ? $row['price'] : null;
-                                                echo $price ? '₹' . number_format($price) : 'Not Provided';
-                                                ?>
+                                                <?php echo $numericPrice ? '₹' . number_format($numericPrice) : 'Not Provided'; ?>
                                             </p>
-
                                             <p class="property_p_tag"><strong class="property_strong">Location:</strong> <?php echo $row['location']; ?></p>
                                             <p class="property_p_tag">
                                                 <strong class="property_strong">Posted On:</strong>
                                                 <?php echo isset($row['created_at']) ? date('d M Y', strtotime($row['created_at'])) : 'Not Available'; ?>
                                             </p>
-
-
                                             <p class="rent_tag <?php echo strtolower(str_replace(' ', '-', $propertyType)); ?>">
                                                 <?php echo $propertyType; ?>
                                             </p>
-
-
-
                                         </div>
                                         <div class="col-12 terms_cond_styles">
                                             <div class="terms_justify">
-                                                <p><a href="property_details.php?id=<?php echo $row['id']; ?>" class=" ">View Full Details</a></p>
+                                                <p><a href="property_details.php?id=<?php echo $row['id']; ?>">View Full Details</a></p>
                                             </div>
-                                            <!-- <div class="terms-content mb-3" style="display: none;">
-                                                <h4>Addtional Details</h4>
-                                                <p class="property_p_tag"><strong class="property_strong">Phone:</strong> <?php echo $row['phone'] ?: 'Not Available'; ?></p>
-                                                <p class="property_p_tag"><strong class="property_strong">Description:</strong> <?php echo nl2br($row['description']); ?></p>
-                                                <a href="property_details.php?id=<?php echo $row['id']; ?>" class="btn btn-primary">View Full Details</a>
-                                            </div> -->
                                         </div>
                                     </div>
                                 </div>
                             <?php endwhile; ?>
                         </div>
-
-
                     </section>
-
-
-                    <script>
-                        document.querySelectorAll('.filter-btn').forEach(button => {
-                            button.addEventListener('click', function() {
-                                let filter = this.getAttribute('data-filter');
-                                document.querySelectorAll('.property-item').forEach(item => {
-                                    if (filter === 'all' || item.getAttribute('data-type') === filter) {
-                                        item.style.display = 'block';
-                                    } else {
-                                        item.style.display = 'none';
-                                    }
-                                });
-                            });
-                        });
-                    </script>
-
-
-                    <script>
-                        document.addEventListener("DOMContentLoaded", function() {
-                            document.querySelectorAll(".toggle-terms").forEach(function(link) {
-                                link.addEventListener("click", function(event) {
-                                    event.preventDefault(); // Prevent default anchor behavior
-
-                                    var parentDiv = this.closest(".col-12");
-                                    var termsDiv = parentDiv.querySelector(".terms-content");
-                                    var separator = parentDiv.querySelector(".terms-separator");
-
-                                    // Toggle visibility
-                                    if (termsDiv.style.display === "none" || termsDiv.style.display === "") {
-                                        termsDiv.style.display = "block";
-                                        separator.style.display = "block"; // Show the separator
-                                    } else {
-                                        termsDiv.style.display = "none";
-                                        separator.style.display = "none"; // Hide the separator
-                                    }
-                                });
-                            });
-                        });
-                    </script>
-
-
-
                 </div>
+
+                <!-- JavaScript Filtering -->
+                <script>
+                    function normalizePrice(priceText) {
+                        return priceText.replace(/[₹,\s]/g, '').trim();
+                    }
+
+                    function filterProperties() {
+                        const typeValue = document.getElementById('typeFilter').value.toLowerCase();
+                        const categoryValue = document.getElementById('categoryFilter').value.toLowerCase();
+                        const searchText = document.getElementById('searchInput').value.toLowerCase();
+                        const priceInput = normalizePrice(document.getElementById('priceInput').value);
+
+                        const cards = document.querySelectorAll('.property-item');
+
+                        cards.forEach(card => {
+                            const type = card.getAttribute('data-type').toLowerCase();
+                            const category = card.getAttribute('data-category').toLowerCase();
+                            const price = card.getAttribute('data-price') || '';
+                            const title = card.querySelector('h4')?.textContent.toLowerCase() || '';
+                            const location = card.querySelector('p.property_p_tag:nth-of-type(2)')?.textContent.toLowerCase() || '';
+
+                            const matchesType = !typeValue || type === typeValue;
+                            const matchesCategory = !categoryValue || category === categoryValue;
+                            const matchesSearch = !searchText || title.includes(searchText) || location.includes(searchText);
+                            const matchesPrice = !priceInput || price.includes(priceInput);
+
+                            if (matchesType && matchesCategory && matchesSearch && matchesPrice) {
+                                card.style.display = '';
+                            } else {
+                                card.style.display = 'none';
+                            }
+                        });
+                    }
+
+                    function resetFilters() {
+                        document.getElementById('typeFilter').value = '';
+                        document.getElementById('categoryFilter').value = '';
+                        document.getElementById('searchInput').value = '';
+                        document.getElementById('priceInput').value = '';
+                        filterProperties();
+                    }
+                </script>
 
             </div>
 
-            <div class="col-lg-3  col-12 text_side_div d-none d-lg-block">
-
+            <!-- Sidebar (for desktop) -->
+            <div class="col-lg-3 col-12 text_side_div d-none d-lg-block">
                 <img src="assets/img/test/sideimg2.png" alt="" class="img-fluid">
-
                 <img src="assets/img/test/animation.gif" alt="Animated GIF" class="mt-5">
-
                 <img src="assets/img/test/sideimg1.png" alt="" class="img-fluid mt-5">
             </div>
 
+            <!-- Sidebar modal (for mobile) -->
             <div id="mobileModal" class="mobile-modal-overlay">
                 <div class="mobile-modal-content">
                     <button class="close-btn" onclick="closeMobileModal()">×</button>
                     <div class="col-12 text_side_div">
                         <img src="assets/img/test/sideimg2.png" alt="" class="img-fluid">
-
                     </div>
                 </div>
             </div>
@@ -313,66 +193,7 @@
 
 
 
-        </div>
 
+        </div>
     </div>
 </section>
-
-
-
-
-<script>
-    let currentSlide = 0;
-
-    function slideImages() {
-        const slides = document.querySelectorAll('.custom-slide');
-        slides[currentSlide].classList.remove('active');
-        currentSlide = (currentSlide + 1) % slides.length;
-        slides[currentSlide].classList.add('active');
-    }
-    setInterval(slideImages, 3000); // Auto-slide every 3 seconds
-</script>
-
-<script>
-    function toggleText(element) {
-        let hiddenText = element.previousElementSibling.querySelector(".hidden-text");
-        if (hiddenText.style.display === "none" || hiddenText.style.display === "") {
-            hiddenText.style.display = "inline";
-            element.innerText = "Read Less";
-        } else {
-            hiddenText.style.display = "none";
-            element.innerText = "Read More";
-        }
-    }
-
-    function toggleImages(element) {
-        let imagesDiv = element.nextElementSibling;
-        if (imagesDiv.style.display === "none" || imagesDiv.style.display === "") {
-            imagesDiv.style.display = "flex";
-            element.innerText = "Hide Images";
-        } else {
-            imagesDiv.style.display = "none";
-            element.innerText = "View Images";
-        }
-    }
-
-    function openLightbox(image) {
-        let lightbox = document.getElementById("lightbox");
-        let lightboxImg = document.getElementById("lightbox-img");
-        lightboxImg.src = image.src;
-        lightbox.style.display = "flex";
-    }
-
-    function closeLightbox() {
-        document.getElementById("lightbox").style.display = "none";
-    }
-</script>
-
-
-
-
-
-<?php include 'chat_bot.php';  ?>
-
-
-<?php include 'footer.php';  ?>

@@ -1,5 +1,6 @@
 <?php
 include 'navbar.php';
+
 include './db.connection/db_connection.php';
 
 if (isset($_GET['id'])) {
@@ -29,10 +30,19 @@ if (isset($_GET['id'])) {
 }
 
 ?>
+<a href="properties.php">
+<button id="restaurant-icon" class="restaurant-icon">🔙</button>
+ </a>
 
 <section>
     <div class="container">
-        <h1 class="text-center"><?php echo htmlspecialchars($property['title']); ?></h1>
+        <h1 class="text-center"><?php echo htmlspecialchars($property['category']); ?> - <?php echo htmlspecialchars($property['type']); ?></h1>
+
+        <!-- 🟡 Display category -->
+        <h5 class="text-center text-muted mb-4">
+
+        </h5>
+
         <div class="row">
 
             <div class="col-lg-7 col-12 order-1 order-md-0">
@@ -40,38 +50,90 @@ if (isset($_GET['id'])) {
                     <section class="OfferContainer_exclusive__non wow fadeInUp my-2" data-wow-delay="100ms">
                         <div class="col-12 card_div px-3">
                             <div class="row py-3">
-                                <h4><?php echo htmlspecialchars($property['type']); ?></h4>
-                                <p class="property_p_tag">
-                                    <strong class="property_strong">Price:</strong>
-                                    <?php
-                                    $price = isset($property['price']) ? $property['price'] : 0;
-                                    echo '₹' . number_format($price); 
-                                    ?>
-                                </p>
+                                <h4 class="  text-center property_title_sace"><i class="fas fa-home"></i> <?php echo htmlspecialchars($property['title']); ?></h4>
 
-                                <p class="property_p_tag"><strong class="property_strong">Location:</strong> <?php echo htmlspecialchars($property['location']); ?></p>
-                                <p class="property_p_tag"><strong class="property_strong">Size (Sqft):</strong> <?php echo htmlspecialchars($property['size_sqft']); ?></p>
-                                <p class="property_p_tag"><strong class="property_strong">Bed Rooms:</strong> <?php echo htmlspecialchars($property['bedrooms']); ?></p>
-                                <p class="property_p_tag"><strong class="property_strong">Bath Rooms:</strong> <?php echo htmlspecialchars($property['bathrooms']); ?></p>
-                                <p class="property_p_tag"><strong class="property_strong">Furnishing Status :</strong> <?php echo htmlspecialchars($property['furnishing_status']); ?></p>
-                                <p class="property_p_tag"><strong class="property_strong">Amenities :</strong> <?php echo htmlspecialchars($property['amenities']); ?> Available</p>
-                                <p class="property_p_tag">
-                                    <strong class="property_strong">Posted On:</strong>
-                                    <?php
-                                    // Ensure the date is in the desired format
-                                    $created_at = isset($property['created_at']) ? strtotime($property['created_at']) : null;
-                                    if ($created_at) {
-                                        echo date('d M Y', $created_at) . ' (' . date('H:i', $created_at) . ')';
-                                    } else {
-                                        echo 'Not Available';
-                                    }
-                                    ?>
-                                </p>
 
-                                <p class="property_p_tag"><strong class="property_strong">Contact Person:</strong> <?php echo htmlspecialchars($property['phone']); ?></p>
-                                <p class="property_p_tag"><strong class="property_strong">Description:</strong> <?php echo nl2br(htmlspecialchars($property['description'])); ?></p>
+
+                                <div class="col-12 col-md-6 propertys_divs_for_text_paras">
+                                    <p class="property_p_tag">
+                                        <strong class="property_strong">💰 Price:</strong>
+                                        ₹<?php echo number_format($property['price']); ?>
+                                    </p>
+                                </div>
+                                <div class="col-12 col-md-6 propertys_divs_for_text_paras">
+                                    <p class="property_p_tag">
+                                        <strong class="property_strong">📍 Location:</strong>
+                                        <?php echo htmlspecialchars($property['location']); ?>
+                                    </p>
+                                </div>
+                                <div class="col-12 col-md-6 propertys_divs_for_text_paras">
+                                    <p class="property_p_tag">
+                                        <strong class="property_strong">📏 Size (Sqft):</strong>
+                                        <?php echo htmlspecialchars($property['size_sqft']); ?>
+                                    </p>
+                                </div>
+
+                                <div class="col-12 col-md-6 propertys_divs_for_text_paras">
+
+                                    <p class="property_p_tag">
+                                        <strong class="property_strong">🛏 Bed Rooms:</strong>
+                                        <?php echo htmlspecialchars($property['bedrooms']); ?>
+                                    </p>
+                                </div>
+
+                                <div class="col-12 col-md-6 propertys_divs_for_text_paras">
+
+                                    <p class="property_p_tag">
+                                        <strong class="property_strong">🛁 Bath Rooms:</strong>
+                                        <?php echo htmlspecialchars($property['bathrooms']); ?>
+                                    </p>
+                                </div>
+
+                                <div class="col-12 col-md-6 propertys_divs_for_text_paras">
+
+                                    <p class="property_p_tag">
+                                        <strong class="property_strong">🪑 Furnishing Status:</strong>
+                                        <?php echo htmlspecialchars($property['furnishing_status']); ?>
+                                    </p>
+                                </div>
+
+                                <div class="col-12 col-md-6 propertys_divs_for_text_paras">
+
+                                    <p class="property_p_tag">
+                                        <strong class="property_strong">🛠 Amenities:</strong>
+                                        <?php echo htmlspecialchars($property['amenities']); ?> Available
+                                    </p>
+                                </div>
+
+                                <div class="col-12 col-md-6 propertys_divs_for_text_paras">
+
+                                    <p class="property_p_tag">
+                                        <strong class="property_strong">📅 Posted On:</strong>
+                                        <?php
+                                        $created_at = isset($property['created_at']) ? strtotime($property['created_at']) : null;
+                                        echo $created_at ? date('d M Y', $created_at) . ' (' . date('H:i', $created_at) . ')' : 'Not Available';
+                                        ?>
+                                    </p>
+                                </div>
+
+                                <div class="col-12 col-md-6 propertys_divs_for_text_paras">
+
+                                    <p class="property_p_tag">
+                                        <strong class="property_strong">📞 Contact Person:</strong>
+                                        <?php echo htmlspecialchars($property['phone']); ?>
+                                    </p>
+                                </div>
+
+                                <div class="col-12">
+
+                                    <p class="property_p_tag  ">
+                                        <strong class="property_strong">📝 Description:</strong>
+                                        <?php echo nl2br(htmlspecialchars($property['description'])); ?>
+                                    </p>
+                                </div>
                             </div>
                         </div>
+
                     </section>
                 </div>
             </div>

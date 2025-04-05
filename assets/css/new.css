@@ -2579,8 +2579,8 @@
 
 
  .sidebar.open {
-  left: 0;
-}
+   left: 0;
+ }
 
 
 
@@ -2595,52 +2595,53 @@
    border-radius: 3px;
    padding: 5px;
  }
+
  .service-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
+   list-style: none;
+   padding: 0;
+   margin: 0;
+ }
 
-.service-list li {
-  margin-bottom: 10px;
-  background: white;
-  padding: 10px;
-  border-radius: 8px;
-  transition: transform 0.2s, background 0.2s;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
+ .service-list li {
+   margin-bottom: 10px;
+   background: white;
+   padding: 10px;
+   border-radius: 8px;
+   transition: transform 0.2s, background 0.2s;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+ }
 
-.service-list li:hover {
-  transform: translateX(5px);
-  background: #007bff;
-}
+ .service-list li:hover {
+   transform: translateX(5px);
+   background: #007bff;
+ }
 
-.service-list li a {
-  text-decoration: none;
-  font-size: 16px;
-  font-weight: 500;
-  color: #333;
-  display: block;
-  text-align: center;
-}
+ .service-list li a {
+   text-decoration: none;
+   font-size: 16px;
+   font-weight: 500;
+   color: #333;
+   display: block;
+   text-align: center;
+ }
 
-.service-list li:hover a {
-  color: white;
-}
+ .service-list li:hover a {
+   color: white;
+ }
 
  .side_view {
-  width: 300px;
-  height: 100vh;
-  background:
-      linear-gradient(#cd4a87, #cf4a87),
-      white;
-  position: fixed;
-  top: 0;
-  left: -320px;
-  transition: all 0.3s ease-in-out;
-  box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  z-index: 100000;
+   width: 300px;
+   height: 100vh;
+   background:
+     linear-gradient(#cd4a87, #cf4a87),
+     white;
+   position: fixed;
+   top: 0;
+   left: -320px;
+   transition: all 0.3s ease-in-out;
+   box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.1);
+   padding: 20px;
+   z-index: 100000;
  }
 
 
@@ -2670,10 +2671,10 @@
      z-index: 99999;
    }
 
-   .sidebar-icon{
-    top: 100px;
-    left: 10px;
-    z-index: 99999;
+   .sidebar-icon {
+     top: 100px;
+     left: 10px;
+     z-index: 99999;
    }
  }
 
@@ -2684,26 +2685,29 @@
      left: 20px;
 
    }
-   .sidebar-icon{
-    top: 140px;
-    left: 20px;
+
+   .sidebar-icon {
+     top: 140px;
+     left: 20px;
    }
  }
- .sidebar-icon{
-  position: fixed;
-  background: #333;
-  color: white;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 20px;
+
+ .sidebar-icon {
+   position: fixed;
+   background: #333;
+   color: white;
+   border: none;
+   padding: 10px;
+   cursor: pointer;
+   border-radius: 50%;
+   width: 40px;
+   height: 40px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 20px;
  }
+
  .restaurant-icon {
    position: fixed;
    background: #333;
@@ -2835,41 +2839,38 @@
    border-color: #007bff;
  }
 
- 
-
-
-  
-
-.rent_tag {
-  border: none;
-  display: inline-block;
-  padding: 2px 10px;
-  border-radius: 4px;
-  color: white;
-  font-weight: bold;
-}
-
-/* Different styles based on property type */
-.for-sale {
-  background-color: rgb(212, 212, 2); /* Green */
- 
-}
-
-.for-rent {
-  background-color: #ff0707; /* Yellow */
- 
-}
-
-.for-lease {
-  background-color:  rgb(0, 135, 4); /* Blue */
-   
-}
-
-  
 
 
 
- 
+
+
+ .rent_tag {
+   border: none;
+   display: inline-block;
+   padding: 2px 10px;
+   border-radius: 4px;
+   color: white;
+   font-weight: bold;
+ }
+
+ /* Different styles based on property type */
+ .for-sale {
+   background-color: rgb(212, 212, 2);
+   /* Green */
+
+ }
+
+ .for-rent {
+   background-color: #ff0707;
+   /* Yellow */
+
+ }
+
+ .for-lease {
+   background-color: rgb(0, 135, 4);
+   /* Blue */
+
+ }
 
 
 
@@ -2881,7 +2882,13 @@
 
 
 
-  
+
+
+
+
+
+
+
 
 
 
@@ -2893,78 +2900,79 @@
 
 
  /* Sticky Ad Container */
-.sticky-ad {
-  position: absolute;
-  width: 100%;
-  top: 0;
-  left: 0;
-  z-index: 1050;
-  background: none;
-  padding: 10px 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+ .sticky-ad {
+   position: absolute;
+   width: 100%;
+   top: 0;
+   left: 0;
+   z-index: 1050;
+   background: none;
+   padding: 10px 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
 
-/* Sticky effect when reaching the top */
-.sticky-ad.fixed {
-  position: fixed;
-  top: 0;
-}
+ /* Sticky effect when reaching the top */
+ .sticky-ad.fixed {
+   position: fixed;
+   top: 0;
+ }
 
-/* Image wrapper to position close button */
-.ad-container {
-  position: relative;
-  display: inline-block; /* Ensures the div takes only as much space as the image */
-}
+ /* Image wrapper to position close button */
+ .ad-container {
+   position: relative;
+   display: inline-block;
+   /* Ensures the div takes only as much space as the image */
+ }
 
-/* Ensure image is centered and responsive */
-.sticky-ad img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
+ /* Ensure image is centered and responsive */
+ .sticky-ad img {
+   max-width: 100%;
+   height: auto;
+   display: block;
+ }
 
-/* Close button positioned inside the image container */
-.close-ad {
-  position: absolute;
-  background: rgba(0, 0, 0, 0.6);
-  color: white;
-  border: none;
-  width: 25px;
-  height: 25px;
-  font-size: 14px;
-  font-weight: bold;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  cursor: pointer;
-  z-index: 10000;
-}
+ /* Close button positioned inside the image container */
+ .close-ad {
+   position: absolute;
+   background: rgba(0, 0, 0, 0.6);
+   color: white;
+   border: none;
+   width: 25px;
+   height: 25px;
+   font-size: 14px;
+   font-weight: bold;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 50%;
+   cursor: pointer;
+   z-index: 10000;
+ }
 
-/* Hover effect on close button */
-.close-ad:hover {
-  background: red;
-}
+ /* Hover effect on close button */
+ .close-ad:hover {
+   background: red;
+ }
 
 
-@media (min-width:992px) {
-  .close-ad{
-    top: -5px;
-    right: -40px;
-  }
-}
+ @media (min-width:992px) {
+   .close-ad {
+     top: -5px;
+     right: -40px;
+   }
+ }
 
-/* Responsive adjustments */
-@media (max-width: 992px) {
-  .close-ad {
-      font-size: 12px;
-      padding: 3px 8px;
-      top: 0px;
-      right: 5px;
-  }
-}
+ /* Responsive adjustments */
+ @media (max-width: 992px) {
+   .close-ad {
+     font-size: 12px;
+     padding: 3px 8px;
+     top: 0px;
+     right: 5px;
+   }
+ }
 
 
 
@@ -2985,44 +2993,51 @@
    flex: 1;
  }
 
- .cast_names{
-  color: #7D1C4A;
-  text-align: center;
-  flex: 1;
-  font-weight: 800;
+ .cast_names {
+   color: #7D1C4A;
+   text-align: center;
+   flex: 1;
+   font-weight: 800;
  }
 
- .job_roles{
-  color: #7D1C4A;
-  text-align: right;
-  flex: 1;
-  font-weight: 800;
+ .job_roles {
+   color: #7D1C4A;
+   text-align: right;
+   flex: 1;
+   font-weight: 800;
  }
 
 
-  .job_image_card {
-  display: inline-block; /* Prevents extra spacing */
-  padding: 10px; /* Adds some spacing around the image */
-  background: transparent; /* Ensures the shadow is visible */
-  border-radius: 8px; /* Softens edges */
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5) !important; /* Stronger shadow */
+ .job_image_card {
+   display: inline-block;
+   /* Prevents extra spacing */
+   padding: 10px;
+   /* Adds some spacing around the image */
+   background: transparent;
+   /* Ensures the shadow is visible */
+   border-radius: 8px;
+   /* Softens edges */
+   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5) !important;
+   /* Stronger shadow */
 
-  display: flex;
-  justify-content: center; /* Centers the child horizontally */
-  align-items: center; /* Centers the child vertically (optional) */
-  margin-bottom: 30px !important;
-}
+   display: flex;
+   justify-content: center;
+   /* Centers the child horizontally */
+   align-items: center;
+   /* Centers the child vertically (optional) */
+   margin-bottom: 30px !important;
+ }
 
 
-@media (max-width:768px) {
-  
-  .company_logo_size{
-    width: 50%;
-  }
-}
+ @media (max-width:768px) {
+
+   .company_logo_size {
+     width: 50%;
+   }
+ }
 
 
- 
+
 
 
 
@@ -3035,230 +3050,352 @@
 
 
  /* Styling the bottom ad container */
-.sticky-bottom-ad {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
+ .sticky-bottom-ad {
+   position: fixed;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   z-index: 9999;
+   padding: 10px 0;
+ }
+
+ /* Wrapper for the image */
+ .ad-wrapper {
+   position: relative;
+   display: inline-block;
+ }
+
+ /* Ensure the image is centered */
+ .sticky-bottom-ad img {
+   max-width: 100%;
+   height: auto;
+   display: block;
+ }
+
+ /* Close button positioned ON TOP of the image */
+ .close-bottom-ad {
+   position: absolute;
+   background: rgba(0, 0, 0, 0.6);
+   color: white;
+   border: none;
+   width: 25px;
+   height: 25px;
+   font-size: 14px;
+   font-weight: bold;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 50%;
+   cursor: pointer;
+   z-index: 10000;
+   /* Ensures button is above the image */
+ }
+
+ /* Hover effect for close button */
+ .close-bottom-ad:hover {
+   background: red;
+ }
+
+
+ @media (min-width:992px) {
+   .close-bottom-ad {
+
+     top: 0px;
+     right: -40px;
+
+   }
+ }
+
+ @media (max-width:992px) {
+   .close-bottom-ad {
+
+     top: 5px;
+     right: 5px;
+
+   }
+ }
+
+
+ .white_color {
+   color: white !important;
+   font-weight: bold;
+   margin-bottom: 14px !important;
+ }
+
+
+ .car_iamge {
+   margin-bottom: 10px !important;
+ }
+
+
+
+
+
+
+ .rental-card {
+   background: #fff;
+   border-radius: 10px;
+   text-align: center;
+   margin-bottom: 20px;
+ }
+
+ .car_image {
+   width: 100%;
+   height: auto;
+   border-radius: 8px;
+ }
+
+ .book_now_btn {
+   background-color: #007bff;
+   border: none;
+   border-radius: 20px;
+   font-weight: bold;
+ }
+
+ .book_now_btn:hover {
+   background-color: #0056b3;
+ }
+
+
+
+
+ .marquee-section {
+   background: linear-gradient(to Left, #e446b4, #b92a7e, #d74097, #e446b4);
+   color: white;
+   padding: 8px 0px 0px 6px;
+ }
+
+ .marquee-content {
+   font-size: 25px;
+   font-weight: bold;
+   font-family: 'Arial', sans-serif;
+   /* Change to any font you prefer */
+   letter-spacing: 1px;
+ }
+
+ .marquee {
+   white-space: nowrap;
+ }
+
+ .highlight-text {
+   font-family: 'Courier New', Courier, monospace;
+   padding: 2px 5px;
+   /* Add padding to the highlighted text */
+ }
+
+
+
+ .footer_bg_last {
+   background-color: #7d1c4a;
+ }
+
+
+
+
+
+
+
+
+
+
+
+ .travel_card {
+   position: relative;
+   overflow: hidden;
+   /* Prevents any overflow from image */
+ }
+
+ .card_img_top_travel {
+   width: 100%;
+   height: 200px;
+   /* Adjust height */
+   object-fit: cover;
+   /* Ensures image fits properly */
+   display: block;
+ }
+
+ .card_img_top_travel_body {
+   position: absolute;
+   bottom: 50px;
+   /* Adjust to fit */
+   left: 50%;
+   transform: translateX(-50%);
+   background: rgba(255, 255, 255, 0.8);
+   /* Slight transparency */
+   padding: 10px;
+   border-radius: 5px;
+   text-align: center;
+   width: 90%;
+ }
+
+ .card-footer {
+   position: absolute;
+   bottom: 10px;
+   left: 50%;
+   transform: translateX(-50%);
+   background: transparent;
+   width: 100%;
+   text-align: center;
+ }
+
+ .filter-btn-travel {
+   position: relative;
+   z-index: 10;
+   padding: 10px 20px;
+ }
+
+
+ #travel_model_body {
+   margin-top: 140px !important;
+   padding: 0px !important;
+ }
+
+
+
+
+
+ .travel-card {
+   position: relative !important;
+   height: 250px;
+   /* Adjust height */
+   background-size: cover !important;
+   background-position: center !important;
+   border-radius: 10px;
+   overflow: hidden !important;
+   display: flex !important;
+   align-items: flex-end !important;
+   justify-content: center !important;
+ }
+
+ .travel_card_overlay {
+   width: 100%;
+   padding: 15px;
+   background: rgba(0, 0, 0, 0.5);
+   text-align: center;
+   color: white;
+   font-weight: bold;
+ }
+
+ .travel_card_tittle {
+   margin-bottom: 5px;
+   font-size: 1.3rem;
+   color: #e0e0e0 !important;
+
+ }
+
+ .custom-input {
+   width: 100%;
+   padding: 8px 12px;
+   border: 1px solid #ced4da;
+   border-radius: 8px;
+   background-color: #fff;
+   font-size: 14px;
+   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+   transition: border-color 0.2s ease-in-out;
+ }
+
+ .custom-input:focus {
+   border-color: #007bff;
+   outline: none;
+ }
+
+ .custom-reset {
+   padding: 8px 0;
+   font-size: 14px;
+   border-radius: 8px;
+   background-color: #7D1C4A;
+   color: white;
+ }
+
+ .custom-filters {
+   background-color: #f8f9fa;
+   padding: 15px 20px;
+   border-radius: 12px;
+   box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.06);
+ }
+
+
+ .reset-btn-side-bar {
+   padding: 8px 12px;
+   background-color: #7d1c4a;
+   color: #fff;
+   border: none;
+   border-radius: 6px;
+   cursor: pointer;
+ }
+
+ .properties_lable_sidebar {
+   color: white !important;
+ }
+
+ 
+ .filter-group {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 9999;
-  padding: 10px 0;
+  flex-direction: column;
+  gap: 15px;
 }
 
-/* Wrapper for the image */
-.ad-wrapper {
-  position: relative;
-  display: inline-block;
-}
-
-/* Ensure the image is centered */
-.sticky-bottom-ad img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
-/* Close button positioned ON TOP of the image */
-.close-bottom-ad {
-  position: absolute;
-  background: rgba(0, 0, 0, 0.6);
-  color: white;
-  border: none;
-  width: 25px;
-  height: 25px;
-  font-size: 14px;
-  font-weight: bold;
+.filter-item {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  cursor: pointer;
-  z-index: 10000; /* Ensures button is above the image */
+  flex-direction: column;
 }
 
-/* Hover effect for close button */
-.close-bottom-ad:hover {
-  background: red;
+.filter-item label {
+  margin-bottom: 5px;
+  font-weight: 500;
 }
 
-
-@media (min-width:992px) {
-  .close-bottom-ad {
-    
-    top: 0px;
-    right: -40px;
- 
-  }
-}
-
-@media (max-width:992px) {
-  .close-bottom-ad {
-    
-    top: 5px;
-    right: 5px;
- 
-  }
-}
-
-
-.white_color{
-  color: white !important;
-  font-weight: bold;
-  margin-bottom: 14px !important;
-}
- 
-
-.car_iamge{
-  margin-bottom: 10px !important;
-}
-
-
-
-
-
-
-.rental-card {
+.custom-input {
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
   background: #fff;
-  border-radius: 10px;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.car_image {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-}
-
-.book_now_btn {
-  background-color: #007bff;
-  border: none;
-  border-radius: 20px;
-  font-weight: bold;
-}
-
-.book_now_btn:hover {
-  background-color: #0056b3;
+  font-size: 14px;
 }
 
 
-
-
-.marquee-section {
-  background: linear-gradient(to Left, #e446b4, #b92a7e, #d74097, #e446b4);
-  color: white;
-  padding: 8px 0px 0px 6px;
+.restaurant-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 30px;
 }
 
-.marquee-content {
-  font-size: 25px;
-  font-weight: bold;
-  font-family: 'Arial', sans-serif; /* Change to any font you prefer */
-  letter-spacing: 1px;
-}
-
-.marquee {
-  white-space: nowrap;
-}
-
-.highlight-text { 
-  font-family: 'Courier New', Courier, monospace;  
-  padding: 2px 5px; /* Add padding to the highlighted text */
-}
-
-
-
-.footer_bg_last{
-  background-color: #7d1c4a;
-}
-
-
-
-
-
-
-
-
-
-
-
-.travel_card {
-  position: relative;
-  overflow: hidden; /* Prevents any overflow from image */
-}
-
-.card_img_top_travel {
-  width: 100%;
-  height: 200px; /* Adjust height */
-  object-fit: cover; /* Ensures image fits properly */
+.restaurant-list li a {
   display: block;
+  padding: 8px 0;
+  color: #007bff;
+  text-decoration: none;
+  border-bottom: 1px solid #ddd;
 }
 
-.card_img_top_travel_body {
-  position: absolute;
-  bottom: 50px; /* Adjust to fit */
-  left: 50%;
-  transform: translateX(-50%);
-  background: rgba(255, 255, 255, 0.8); /* Slight transparency */
+.restaurant-list li a:hover {
+  text-decoration: underline;
+}
+
+.property_p_tag {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.property_strong {
+  font-weight: 600;
+  color: #333;
+}
+.badg_color{
+  background-color: #b8266bf0;
   padding: 10px;
-  border-radius: 5px;
-  text-align: center;
-  width: 90%;
+}
+@media (min-width:768px) {
+  
+  .propertys_divs_for_text_paras{
+    margin-bottom: 15px !important;
+  }
 }
 
-.card-footer {
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: transparent;
-  width: 100%;
-  text-align: center;
+.property_title_sace{
+  margin-top: 10px;
+  margin-bottom: 30px;
 }
-
-.filter-btn-travel {
-  position: relative;
-  z-index: 10;
-  padding: 10px 20px;
-}
-
-
-#travel_model_body{
-  margin-top:  140px !important;
-  padding:  0px !important ;
-}
- 
-
-
-
-
-    .travel-card {
-        position: relative !important;
-        height: 250px; /* Adjust height */
-        background-size: cover !important;
-        background-position: center !important;
-        border-radius: 10px;
-        overflow: hidden !important;
-        display: flex !important;
-        align-items: flex-end !important;
-        justify-content: center !important;
-    }
-
-    .travel_card_overlay {
-        width: 100%;
-        padding: 15px;
-        background: rgba(0, 0, 0, 0.5);
-        text-align: center;
-        color: white;
-        font-weight: bold;
-    }
-
-    .travel_card_tittle {
-        margin-bottom: 5px;
-        font-size: 1.3rem;
-        color: #e0e0e0 !important;
-
-    }
-
