@@ -64,7 +64,7 @@
                             echo '<section class="OfferContainer_exclusive__non wow fadeInUp my-2" data-wow-delay="100ms">
                     <div class="col-12 card_div px-3">
                         <div class="row py-3">
-                            <div class="col-12 col-md-4 job_image_card">
+                            <div class="col-12 col-md-4 job_image_card_main">
                                 <img src="./admin/uploads/companies/' . $company['logo'] . '" class="img-fluid company_logo_size" alt="">
                             </div>
 

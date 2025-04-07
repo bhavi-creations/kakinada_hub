@@ -3020,6 +3020,17 @@
  
  }
 
+ .job_image_card_main {
+  display: inline-block;
+  padding: 10px;
+  background: transparent;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5) !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
 
  @media (max-width:768px) {
 

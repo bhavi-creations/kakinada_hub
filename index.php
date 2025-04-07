@@ -133,7 +133,8 @@
                                              <p class="brand_name"><?php echo htmlspecialchars($row['title']); ?></p>
                                          </div>
                                          <div class="d-flex">
-                                             <p class="brand_type"><i class="fal fa-star"></i> <?php echo htmlspecialchars($row['offer']); ?></p>
+                                             <p class="brand_type">
+                                                ⭐<?php echo htmlspecialchars($row['offer']); ?></p>
                                          </div>
 
                                      </div>
@@ -175,7 +176,7 @@
                                              <p class="brand_name"><?php echo htmlspecialchars($row['title']); ?></p>
                                          </div>
                                          <div class="d-flex">
-                                             <p class="brand_type"><i class="fal fa-star"></i> <?php echo htmlspecialchars($row['offer']); ?></p>
+                                             <p class="brand_type">⭐ <?php echo htmlspecialchars($row['offer']); ?></p>
                                          </div>
                                      </div>
                                  </div>
@@ -239,7 +240,7 @@
                                              <p class="brand_name"><?php echo htmlspecialchars($row['title']); ?></p>
                                          </div>
                                          <div class="d-flex">
-                                             <p class="brand_type"><i class="fal fa-star"></i> <?php echo htmlspecialchars($row['offer']); ?></p>
+                                             <p class="brand_type">⭐ <?php echo htmlspecialchars($row['offer']); ?></p>
                                          </div>
 
                                      </div>
@@ -281,7 +282,7 @@
                                              <p class="brand_name"><?php echo htmlspecialchars($row['title']); ?></p>
                                          </div>
                                          <div class="d-flex">
-                                             <p class="brand_type"><i class="fal fa-star"></i> <?php echo htmlspecialchars($row['offer']); ?></p>
+                                             <p class="brand_type">⭐ <?php echo htmlspecialchars($row['offer']); ?></p>
                                          </div>
                                      </div>
                                  </div>

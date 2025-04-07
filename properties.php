@@ -87,7 +87,7 @@ $categoryResult = mysqli_query($conn, $categoryQuery);
                                     data-price="<?php echo $numericPrice; ?>">
 
                                     <div class="row py-3">
-                                        <div class="col-12 col-md-3 job_image_card">
+                                        <div class="col-12 col-md-3 job_image_card_main">
                                             <img src="./admin/uploads/properties/<?php echo $row['image']; ?>" class="img-fluid company_logo_size" alt="Property Image">
                                         </div>
                                         <div class="col-8 col-md-9">
