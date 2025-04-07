@@ -64,11 +64,11 @@
                             echo '<section class="OfferContainer_exclusive__non wow fadeInUp my-2" data-wow-delay="100ms">
                     <div class="col-12 card_div px-3">
                         <div class="row py-3">
-                            <div class="col-12 col-md-4 job_image_card_main">
+                            <div class="col-12 col-md-3 job_image_card_main">
                                 <img src="./admin/uploads/companies/' . $company['logo'] . '" class="img-fluid company_logo_size" alt="">
                             </div>
 
-                            <div class="col-12 col-md-8">
+                            <div class="col-12 col-md-9">
                                 <h4>' . $company['name'] . '</h4>
                                 <p class="property_p_tag"> <strong class="property_strong"> Category: </strong>' . $company['category'] . '</p>
                                 <p class="property_p_tag"> <strong class="property_strong"> Phone: </strong>' . $company['phone'] . '</p>
