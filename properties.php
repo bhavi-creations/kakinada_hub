@@ -1,5 +1,5 @@
 <?php include 'navbar.php'; ?>
-<?php include './db.connection/db_connection.php';?>
+<?php include './db.connection/db_connection.php'; ?>
 
 <?php include 'propertys_sidebar.php'; ?>
 
@@ -123,11 +123,20 @@ $categoryResult = mysqli_query($conn, $categoryQuery);
                         return priceText.replace(/[₹,\s]/g, '').trim();
                     }
 
+                    function getFilterValue(id1, id2) {
+                        const el1 = document.getElementById(id1);
+                        const el2 = document.getElementById(id2);
+                        return (el1 && el1.value) ? el1.value.toLowerCase() :
+                            (el2 && el2.value) ? el2.value.toLowerCase() : '';
+                    }
+
+
                     function filterProperties() {
-                        const typeValue = document.getElementById('typeFilter').value.toLowerCase();
-                        const categoryValue = document.getElementById('categoryFilter').value.toLowerCase();
-                        const searchText = document.getElementById('searchInput').value.toLowerCase();
-                        const priceInput = normalizePrice(document.getElementById('priceInput').value);
+                        const typeValue = getFilterValue('typeFilter', 'typeFilterSidebar');
+                        const categoryValue = getFilterValue('categoryFilter', 'categoryFilterSidebar');
+                        const searchText = getFilterValue('searchInput', 'searchInputSidebar');
+                        const priceInput = normalizePrice(getFilterValue('priceInput', 'priceInputSidebar'));
+
 
                         const cards = document.querySelectorAll('.property-item');
 
@@ -143,19 +152,18 @@ $categoryResult = mysqli_query($conn, $categoryQuery);
                             const matchesSearch = !searchText || title.includes(searchText) || location.includes(searchText);
                             const matchesPrice = !priceInput || price.includes(priceInput);
 
-                            if (matchesType && matchesCategory && matchesSearch && matchesPrice) {
-                                card.style.display = '';
-                            } else {
-                                card.style.display = 'none';
-                            }
+                            card.style.display = (matchesType && matchesCategory && matchesSearch && matchesPrice) ? '' : 'none';
                         });
                     }
 
+                   
+   
                     function resetFilters() {
-                        document.getElementById('typeFilter').value = '';
-                        document.getElementById('categoryFilter').value = '';
-                        document.getElementById('searchInput').value = '';
-                        document.getElementById('priceInput').value = '';
+                        ['typeFilter', 'typeFilterSidebar', 'categoryFilter', 'categoryFilterSidebar', 'searchInput', 'searchInputSidebar', 'priceInput', 'priceInputSidebar'].forEach(id => {
+                            const el = document.getElementById(id);
+                            if (el) el.value = '';
+                        });
+
                         filterProperties();
                     }
                 </script>

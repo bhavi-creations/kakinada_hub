@@ -11,12 +11,12 @@
     <!-- Filter Inputs -->
     <div class="filter-group">
         <!-- Type Filter -->
+        <!-- Sidebar Filters -->
         <div class="filter-item">
-            <label  class="properties_lable_sidebar"  for="typeFilter">Type</label>
-            <select id="typeFilter" class="custom-input" onchange="filterProperties()">
+            <label class="properties_lable_sidebar" for="typeFilterSidebar">Type</label>
+            <select id="typeFilterSidebar" class="custom-input" onchange="filterProperties()">
                 <option value="">All Types</option>
                 <?php
-                include("db_connection.php"); // make sure db connection is available
                 $typeQuery = "SELECT DISTINCT type FROM properties";
                 $typeResult = mysqli_query($conn, $typeQuery);
                 while ($typeRow = mysqli_fetch_assoc($typeResult)) {
@@ -26,10 +26,13 @@
             </select>
         </div>
 
+        <!-- Repeat same for category filter -->
+
+
         <!-- Category Filter -->
         <div class="filter-item">
-            <label  class="properties_lable_sidebar"  for="categoryFilter">Category</label>
-            <select id="categoryFilter" class="custom-input" onchange="filterProperties()">
+            <label class="properties_lable_sidebar" for="categoryFilterSidebar">Category</label>
+            <select id="categoryFilterSidebar" class="custom-input" onchange="filterProperties()">
                 <option value="">All Categories</option>
                 <?php
                 $categoryQuery = "SELECT DISTINCT category FROM properties";
@@ -43,14 +46,14 @@
 
         <!-- Title/Location Search -->
         <div class="filter-item">
-            <label class="properties_lable_sidebar" for="searchInput">Title / Location</label>
-            <input type="text" id="searchInput" class="custom-input" placeholder="Search..." onkeyup="filterProperties()">
+            <label class="properties_lable_sidebar" for="searchInputSidebar">Title / Location</label>
+            <input type="text" id="searchInputSidebar" class="custom-input" placeholder="Search..." onkeyup="filterProperties()">
         </div>
 
         <!-- Price Search -->
         <div class="filter-item">
-            <label class="properties_lable_sidebar"  for="priceInput">Price</label>
-            <input type="text" id="priceInput" class="custom-input" placeholder="Search price..." onkeyup="filterProperties()">
+            <label class="properties_lable_sidebar" for="priceInputSidebar">Price</label>
+            <input type="text" id="priceInputSidebar" class="custom-input" placeholder="Search price..." onkeyup="filterProperties()">
         </div>
 
         <!-- Reset Button -->
@@ -65,7 +68,7 @@
 
 <!-- JS to Open/Close Sidebar -->
 <script>
-    document.addEventListener("DOMContentLoaded", function () {
+    document.addEventListener("DOMContentLoaded", function() {
         const sidebar = document.getElementById("sidebar");
         const overlay = document.getElementById("overlay");
 
@@ -79,7 +82,7 @@
             overlay.classList.remove("active");
         });
 
-        
+
 
         const list = document.getElementById("restaurant-list");
         restaurants.forEach(item => {
@@ -92,5 +95,3 @@
         });
     });
 </script>
-
- 
