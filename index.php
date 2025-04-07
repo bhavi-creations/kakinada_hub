@@ -116,7 +116,7 @@
          </div>
 
          <!-- Upper Type Swiper -->
-         <div class="swiper-container swiper-container-upper team-slider mb-5">
+         <div class="swiper-container swiper-container-upper team-slider  ">
              <div class="swiper-wrapper">
                  <?php if ($resultUpper->num_rows > 0): ?>
                      <?php while ($row = $resultUpper->fetch_assoc()): ?>
@@ -134,7 +134,7 @@
                                          </div>
                                          <div class="d-flex">
                                              <p class="brand_type">
-                                                ⭐<?php echo htmlspecialchars($row['offer']); ?></p>
+                                                 ⭐<?php echo htmlspecialchars($row['offer']); ?></p>
                                          </div>
 
                                      </div>
@@ -223,7 +223,7 @@
          </div>
 
          <!-- Upper Type Swiper -->
-         <div class="swiper-container swiper-container-upper team-slider mb-5">
+         <div class="swiper-container swiper-container-upper team-slider  ">
              <div class="swiper-wrapper">
                  <?php if ($resultUpper->num_rows > 0): ?>
                      <?php while ($row = $resultUpper->fetch_assoc()): ?>
