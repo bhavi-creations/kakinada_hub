@@ -3184,7 +3184,7 @@
  }
 
  .highlight-text {
-   font-family: 'Courier New', Courier, monospace;
+   /* font-family: 'Courier New', Courier, monospace; */
    padding: 2px 5px;
    /* Add padding to the highlighted text */
  }
