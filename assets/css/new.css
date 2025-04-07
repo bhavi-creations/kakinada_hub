@@ -3010,22 +3010,14 @@
 
  .job_image_card {
    display: inline-block;
-   /* Prevents extra spacing */
-   padding: 10px;
-   /* Adds some spacing around the image */
+   padding: 62px;
    background: transparent;
-   /* Ensures the shadow is visible */
    border-radius: 8px;
-   /* Softens edges */
    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5) !important;
-   /* Stronger shadow */
-
    display: flex;
    justify-content: center;
-   /* Centers the child horizontally */
    align-items: center;
-   /* Centers the child vertically (optional) */
-   margin-bottom: 30px !important;
+ 
  }
 
 

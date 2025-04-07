@@ -45,7 +45,7 @@ if (isset($_GET['id'])) {
 
         <div class="row">
 
-            <div class="col-lg-7 col-12 order-1 order-md-0">
+            <div class="col-lg-8 col-12 order-1 order-md-0">
                 <div class="row fadeIn" data-wow-delay="0.3s">
                     <section class="OfferContainer_exclusive__non wow fadeInUp my-2" data-wow-delay="100ms">
                         <div class="col-12 card_div px-3">
@@ -138,7 +138,7 @@ if (isset($_GET['id'])) {
                 </div>
             </div>
 
-            <div class="col-lg-5 col-12 text_side_div text-center order-0 order-md-1">
+            <div class="col-lg-4 col-12 text_side_div text-center order-0 order-md-1">
                 <div class="image-gallery">
                     <!-- Main Image Carousel -->
                     <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
