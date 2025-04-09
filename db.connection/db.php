@@ -4,11 +4,11 @@ $host = 'localhost';
 if ($_SERVER['SERVER_NAME'] == 'localhost') {
     $user = "root";
     $pass = "";
-    $db = "Kakinadahub";
+    $db = "kakinadahub";
 } else {
     $user = "kakinadahub";
     $pass = "2LxzQAMBBt6PnPF";
-    $db = "Kakinadahub";
+    $db = "kakinadahub";
 }
 
 

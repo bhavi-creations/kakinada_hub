@@ -5,12 +5,12 @@ $servername = "localhost";
 if ($_SERVER['SERVER_NAME'] == 'localhost') {
     $username = "root";
     $password = "";
-    $dbname = "Kakinadahub";
+    $dbname = "kakinadahub";
 } else {
     $username = "kakinadahub";
     $password = "2LxzQAMBBt6PnPF";
-    $dbname = "Kakinadahub";
-    
+    $dbname = "kakinadahub";
+ 
 }
 
 // Create connection
