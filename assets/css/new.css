@@ -605,6 +605,10 @@
    overflow: clip;
  }
 
+ #adSection{
+  padding:  0px;
+
+ }
  @media (max-width: 1199px) {
 
    section,
@@ -3402,3 +3406,43 @@
   margin-top: 10px;
   margin-bottom: 30px;
 }
+
+
+
+.bg_image_for_shops {
+  background-image: url('../img/self_images/shop_bg.png');
+  background-size: cover;            /* Ensures the image covers the entire section */
+  background-position: center;       /* Keeps the image centered */
+  background-repeat: no-repeat;      /* Prevents tiling */
+  background-attachment: fixed;      /* Optional: creates a parallax-like effect */
+  padding: 60px 20px;                /* Adjust as needed for spacing */
+  color: #fff;                       /* Text color to contrast with the background */
+  text-align: center;                /* Center align text */
+  position: relative;
+}
+
+/* Optional: Overlay for better readability of content */
+.bg_image_for_shops::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgb(255 255 255 / 91%);
+        ;    /* Dark transparent overlay */
+  z-index: 1;
+}
+
+/* Content inside should be above the overlay */
+.bg_image_for_shops > * {
+  position: relative;
+  z-index: 2;
+}
+
+
+.bg_color_white{
+  background-color: white;
+}
+
+ 

@@ -109,9 +109,9 @@
     $resultLower = $conn->query($sqlLower);
     ?>
 
- <section class="team-section-three space-md-bottom">
-     <div class="container-style6">
-         <div class="title-area-three text-center wow fadeInUp" data-wow-delay="600ms">
+ <section class="team-section-three space-md-bottom bg_image_for_shops">
+     <div class="container-style6 bg_color_white"   >
+         <div class="title-area-three text-center wow fadeInUp shop_heads" data-wow-delay="400ms">
              <span class="sub-title7">Trending Now</span>
          </div>
 
@@ -216,9 +216,9 @@
     $resultLower = $conn->query($sqlLower);
     ?>
 
- <section class="team-section-three space-md-bottom">
-     <div class="container-style6">
-         <div class="title-area-three text-center wow fadeInUp" data-wow-delay="600ms">
+ <section class="team-section-three space-md-bottom bg_image_for_shops">
+     <div class="container-style6 bg_color_white">
+         <div class="title-area-three text-center wow fadeInUp" data-wow-delay="400ms">
              <span class="sub-title7">Offers </span>
          </div>
 

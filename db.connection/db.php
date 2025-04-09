@@ -7,8 +7,8 @@ if ($_SERVER['SERVER_NAME'] == 'localhost') {
     $db = "Kakinadahub";
 } else {
     $user = "kakinadahub";
-    $pass = "ouNoM28yihyoOqG";
-    $db = "Kakinadahub1";
+    $pass = "2LxzQAMBBt6PnPF";
+    $db = "Kakinadahub";
 }
 
 

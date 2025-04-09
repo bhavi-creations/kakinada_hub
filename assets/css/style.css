@@ -2213,7 +2213,8 @@ textarea.form-control.is-invalid {
 }
 
 .title-area-three {
-  margin-bottom: 50px;
+  padding-top: 20px;
+  margin-bottom: 20px;
 }
 .title-area-three .sub-title7 {
   font-family: var(--subtitle-font);
