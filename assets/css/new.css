@@ -2136,9 +2136,9 @@
 
 
  .text_side_div {
-   border: #a1a1a1 solid 2px;
+   border: #7D1C4A solid 2px;
    background-color: #ffffff;
-   padding: 20px;
+   padding: 10px;
    border-radius: 8px;
 
  }
@@ -3446,3 +3446,54 @@
 }
 
  
+@media (min-width:1400px) {
+  .scrollable-list {
+    max-height: 930px;
+    overflow-y: auto;
+    padding-right: 10px;
+  }
+   
+}
+ 
+@media (min-width:1200px) and (max-width:1400px) {
+  .scrollable-list {
+    max-height: 835px;
+    overflow-y: auto;
+    padding-right: 10px;
+  }
+   
+}
+@media (min-width:992px) and (max-width:1200px) {
+  .scrollable-list {
+    max-height: 690px;
+    overflow-y: auto;
+    padding-right: 10px;
+  }
+   
+}
+ 
+
+/* Scrollbar Styles (WebKit - Chrome, Edge, Safari) */
+.scrollable-list::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scrollable-list::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.scrollable-list::-webkit-scrollbar-thumb {
+  background: #7D1C4A; /* Bootstrap Primary */
+  border-radius: 10px;
+}
+
+.scrollable-list::-webkit-scrollbar-thumb:hover {
+  background: #7D1C4A;
+}
+
+/* Firefox Scrollbar */
+.scrollable-list {
+  scrollbar-width: thin;
+  scrollbar-color: #7D1C4A #f1f1f1;
+}

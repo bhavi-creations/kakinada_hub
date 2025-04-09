@@ -7,7 +7,7 @@ $service = isset($_GET['service']) ? $_GET['service'] : '';
 // Prepare SQL query with optional service filter
 $sql = "SELECT id, title, main_content, main_image, created_at FROM blogs";
 if (!empty($service)) {
-  $sql .= " WHERE service = ?";
+    $sql .= " WHERE service = ?";
 }
 $sql .= " ORDER BY created_at DESC";
 
@@ -16,7 +16,7 @@ $stmt = $conn->prepare($sql);
 
 // Bind parameters if service is set
 if (!empty($service)) {
-  $stmt->bind_param("s", $service);
+    $stmt->bind_param("s", $service);
 }
 
 // Execute the statement
@@ -35,14 +35,14 @@ $result = $stmt->get_result();
 
 <?php include 'navbar.php';  ?>
 
- 
 
 
 
- 
 
- 
- 
+
+
+
+
 
 
 
@@ -55,7 +55,16 @@ $result = $stmt->get_result();
         </div>
         <div class="row">
 
-            <div class="col-lg-9 col-12 ">
+            <div class="col-lg-2  col-12 text_side_div d-none d-lg-block">
+
+                <img src="assets/img/test/sideimg2.png" alt="" class="img-fluid">
+
+                <img src="assets/img/test/animation.gif" alt="Animated GIF" class="mt-5">
+
+                <img src="assets/img/test/sideimg1.png" alt="" class="img-fluid mt-5">
+            </div>
+
+            <div class="col-lg-8 col-12 ">
                 <div class="row    fadeIn" data-wow-delay="0.3s">
 
 
@@ -71,11 +80,11 @@ $result = $stmt->get_result();
                                 </div>
 
                                 <div class="col-12 col-md-8">
-                                    <h4> <strong class="property_strong">  occasion :</strong>Ugadhi</h4>
+                                    <h4> <strong class="property_strong"> occasion :</strong>Ugadhi</h4>
                                     <p class="property_p_tag"><strong class="property_strong"> Venue :</strong> Spandhana </p>
                                     <p class="property_p_tag"> <strong class="property_strong"> Location : </strong> Kakinada </p>
                                     <p class="property_p_tag"> <strong class="property_strong"> Phone :</strong>9642343434 </p>
-                                    <p class="property_p_tag"> <strong class="property_strong"> Website :</strong><a target="_blank" href="https://bhavicreationspvtltd.com/"> https://Spandhnaevents.com/ </a>  </p>
+                                    <p class="property_p_tag"> <strong class="property_strong"> Website :</strong><a target="_blank" href="https://bhavicreationspvtltd.com/"> https://Spandhnaevents.com/ </a> </p>
 
 
                                 </div>
@@ -91,7 +100,7 @@ $result = $stmt->get_result();
                                         </p>
                                     </div>
 
-                                     
+
 
                                 </div>
                             </div>
@@ -108,11 +117,11 @@ $result = $stmt->get_result();
                                 </div>
 
                                 <div class="col-12 col-md-8">
-                                    <h4> <strong class="property_strong">  occasion :</strong>ramzan</h4>
+                                    <h4> <strong class="property_strong"> occasion :</strong>ramzan</h4>
                                     <p class="property_p_tag"><strong class="property_strong"> Venue :</strong> Challa function hall </p>
                                     <p class="property_p_tag"> <strong class="property_strong"> Location : </strong> Kakinada </p>
                                     <p class="property_p_tag"> <strong class="property_strong"> Phone :</strong> 9642343434 </p>
-                                    <p class="property_p_tag"> <strong class="property_strong"> Website :</strong><a target="_blank" href="https://bhavicreationspvtltd.com/"> https://challaevents.com/ </a>  </p>
+                                    <p class="property_p_tag"> <strong class="property_strong"> Website :</strong><a target="_blank" href="https://bhavicreationspvtltd.com/"> https://challaevents.com/ </a> </p>
 
 
                                 </div>
@@ -128,7 +137,7 @@ $result = $stmt->get_result();
                                         </p>
                                     </div>
 
-                                     
+
 
                                 </div>
                             </div>
@@ -145,11 +154,11 @@ $result = $stmt->get_result();
                                 </div>
 
                                 <div class="col-12 col-md-8">
-                                    <h4> <strong class="property_strong">  occasion :</strong>  Holi Dhamaka</h4>
+                                    <h4> <strong class="property_strong"> occasion :</strong> Holi Dhamaka</h4>
                                     <p class="property_p_tag"><strong class="property_strong"> Venue :</strong> Vedhika </p>
                                     <p class="property_p_tag"> <strong class="property_strong"> Location : </strong> Kakinada </p>
                                     <p class="property_p_tag"> <strong class="property_strong"> Phone :</strong> 9876543210 </p>
-                                    <p class="property_p_tag"> <strong class="property_strong"> Website :</strong><a target="_blank" href="https://bhavicreationspvtltd.com/"> https://Vedhikaevents.com/ </a>  </p>
+                                    <p class="property_p_tag"> <strong class="property_strong"> Website :</strong><a target="_blank" href="https://bhavicreationspvtltd.com/"> https://Vedhikaevents.com/ </a> </p>
 
 
                                 </div>
@@ -165,14 +174,14 @@ $result = $stmt->get_result();
                                         </p>
                                     </div>
 
-                                     
+
 
                                 </div>
                             </div>
 
                         </div>
                     </section>
-                    
+
 
                     <script>
                         document.addEventListener("DOMContentLoaded", function() {
@@ -203,7 +212,7 @@ $result = $stmt->get_result();
 
             </div>
 
-            <div class="col-lg-3  col-12 text_side_div d-none d-lg-block">
+            <div class="col-lg-2  col-12 text_side_div d-none d-lg-block">
 
                 <img src="assets/img/test/sideimg2.png" alt="" class="img-fluid">
 
@@ -247,7 +256,7 @@ $result = $stmt->get_result();
 
 
 
- 
+
 
 <script>
     let currentSlide = 0;
