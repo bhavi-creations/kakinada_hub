@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 29, 2025 at 04:58 AM
+-- Generation Time: Apr 09, 2025 at 07:49 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -51,6 +51,38 @@ INSERT INTO `blogs` (`id`, `title`, `main_content`, `full_content`, `title_image
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `companies`
+--
+
+CREATE TABLE `companies` (
+  `id` int(11) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `phone` varchar(20) DEFAULT NULL,
+  `address` text DEFAULT NULL,
+  `about` text DEFAULT NULL,
+  `map_url` text DEFAULT NULL,
+  `category` varchar(100) NOT NULL,
+  `no_of_employees` int(11) DEFAULT NULL,
+  `experience_years` int(11) DEFAULT NULL,
+  `website` varchar(255) DEFAULT NULL,
+  `logo` varchar(255) DEFAULT NULL,
+  `company_images` text DEFAULT NULL,
+  `created_at` timestamp NOT NULL DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `companies`
+--
+
+INSERT INTO `companies` (`id`, `name`, `email`, `phone`, `address`, `about`, `map_url`, `category`, `no_of_employees`, `experience_years`, `website`, `logo`, `company_images`, `created_at`) VALUES
+(2, 'TCS', 'tcs@gmail.com', '9239423432', 'vizag', NULL, 'https://www.google.com/maps/dir/16.9834286,82.2506434/INOX+Movies(SRMT),+INOX+Leisure+Ltd.,+3rd+Floor,+82%C2%B0+East+SRMT+Mall+%26+Multiplex,+Ramanayya+Peta,+Sarpavaram,+Kakinada+-+533005,+Andhra+Pradesh/@16.9898052,82.2360282,15z/data=!3m1!4b1!4m12!1m2!2m1!1sINOX!4m8!1m1!4e1!1m5!1m1!1s0x3a382944ec9e5f5b:0x2356059d79408404!2m2!1d82.243297!2d16.9980821?entry=ttu&g_ep=EgoyMDI1MDMzMC4wIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D', 'IT', 233, 12, 'https://srinivasadentalkakinada.com/', '1743575037_tcs.jpg', '1743575037_download (4).jpeg,1743575037_download (3).jpeg,1743575037_download (2).jpeg', '2025-04-02 06:23:57'),
+(3, 'bhavi', 'bhavicreations@gmail.com', '9239423434', 'kakinada', 'bhavi cretions company', 'https://www.google.com/maps/dir//Plot+no+28,+H+No+70,+17-28,+RTO+Office+Rd,+opposite+to+New,+behind+J.N.T.U.Engineering+College+Play+Ground,+Ranga+Rao+Nagar,+Kakinada,+Andhra+Pradesh+533003/@16.9834056,82.2094508,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3a3829915d3063a9:0x357d06d49d4e389a!2m2!1d82.2506066!2d16.9834178?entry=ttu&g_ep=EgoyMDI1MDMzMC4wIKXMDSoJLDEwMjExNjQwSAFQAw%3D%3D', 'digital marketing ', 15, 3, 'https://bhavicreationspvtltd.com/', '1743575200_Bhavi pvt ltd logo[1].png', '1743575200_Holi-Event-Organisers-in-Gurgaon.png,1743575200_holi 3.jpeg,1743575200_holi 1.jpeg', '2025-04-02 06:26:40'),
+(4, 'srinivasa dental', 'bhavicreations3022@gmail.come', '213', 'ew', '2', 'https://www.google.com/maps/dir/16.9834286,82.2506434/INOX+Movies(SRMT),+INOX+Leisure+Ltd.,+3rd+Floor,+82%C2%B0+East+SRMT+Mall+%26+Multiplex,+Ramanayya+Peta,+Sarpavaram,+Kakinada+-+533005,+Andhra+Pradesh/@16.9898052,82.2360282,15z/data=!3m1!4b1!4m12!1m2!2m1!1sINOX!4m8!1m1!4e1!1m5!1m1!1s0x3a382944ec9e5f5b:0x2356059d79408404!2m2!1d82.243297!2d16.9980821?entry=ttu&g_ep=EgoyMDI1MDMzMC4wIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D', 'health care', 3, 2, 'https://srinivasadentalkakinada.com/', '1743578704_srmt_mall.jpeg', '1743578704_vaccetion.jpeg,1743578704_booked.jpeg,1743578704_rentals.jpeg', '2025-04-02 07:25:04');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `home_ads`
 --
 
@@ -67,9 +99,59 @@ CREATE TABLE `home_ads` (
 --
 
 INSERT INTO `home_ads` (`id`, `title`, `image`, `created_at`, `type`) VALUES
-(1, 'aD', '1743135363_3uFKWSiuGKES9MyfJCPsHT-1280-80.jpg.webp', '2025-03-27 11:35:46', 'lower'),
-(2, 'add 1', '1743135128_3uFKWSiuGKES9MyfJCPsHT-1280-80.jpg.webp', '2025-03-28 04:12:08', 'upper'),
-(3, 'add 3', '1743135268_3uFKWSiuGKES9MyfJCPsHT-1280-80.jpg.webp', '2025-03-28 04:14:28', 'lower');
+(1, 'aD', '3uFKWSiuGKES9MyfJCPsHT-1280-80.jpg.webp', '2025-03-27 11:35:46', 'lower'),
+(2, 'add 1', 'toothbrushes-dental-hygiene-tools-white-background.jpg', '2025-03-28 04:12:08', 'upper'),
+(3, 'add 3', '3uFKWSiuGKES9MyfJCPsHT-1280-80.jpg.webp', '2025-03-28 04:14:28', 'lower'),
+(4, 'ff', '1743505281_toothbrushes-dental-hygiene-tools-white-background.jpg', '2025-04-01 11:01:21', 'upper');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `jobs`
+--
+
+CREATE TABLE `jobs` (
+  `id` int(11) NOT NULL,
+  `company_id` int(11) NOT NULL,
+  `job_title` varchar(255) NOT NULL,
+  `vacancies` int(11) DEFAULT 1,
+  `created_at` timestamp NOT NULL DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `jobs`
+--
+
+INSERT INTO `jobs` (`id`, `company_id`, `job_title`, `vacancies`, `created_at`) VALUES
+(1, 2, 'software', 3, '2025-04-02 06:54:07'),
+(2, 2, 'full stack', 2, '2025-04-02 06:54:28'),
+(3, 2, 'front end', 2, '2025-04-02 06:58:00'),
+(5, 3, 'it', 3, '2025-04-02 07:11:18'),
+(6, 4, 'reception', 2, '2025-04-02 07:27:53');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `marquee_texts`
+--
+
+CREATE TABLE `marquee_texts` (
+  `id` int(11) NOT NULL,
+  `text` varchar(255) NOT NULL,
+  `created_at` timestamp NOT NULL DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `marquee_texts`
+--
+
+INSERT INTO `marquee_texts` (`id`, `text`, `created_at`) VALUES
+(1, 'Get All Your Discounts At One Place IN Kakinada Hub', '2025-04-04 09:24:36'),
+(2, 'Happy Ugadhi', '2025-04-04 09:24:36'),
+(3, 'Get All Discounts Here', '2025-04-04 09:24:36'),
+(4, 'We Are Launching Soon', '2025-04-04 09:24:36'),
+(5, 'Hello World !', '2025-04-04 09:26:17'),
+(7, 'welcomes you', '2025-04-04 09:39:19');
 
 -- --------------------------------------------------------
 
@@ -109,6 +191,39 @@ INSERT INTO `movies` (`id`, `screen_id`, `movie_name`, `duration`, `start_time`,
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `offers`
+--
+
+CREATE TABLE `offers` (
+  `id` int(11) NOT NULL,
+  `title` varchar(255) NOT NULL,
+  `description` text DEFAULT NULL,
+  `image` varchar(255) NOT NULL,
+  `link` varchar(255) DEFAULT NULL,
+  `offer` varchar(255) DEFAULT NULL,
+  `type` enum('upper','lower') NOT NULL,
+  `created_at` timestamp NOT NULL DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `offers`
+--
+
+INSERT INTO `offers` (`id`, `title`, `description`, `image`, `link`, `offer`, `type`, `created_at`) VALUES
+(2, 'apple', 'Up to 50% off 1000s of items at Under Armour - Don\'t miss  p to 50% off 1000s of items at Under Armour - Don\'t miss  ', 'images (6).jpeg', 'https://srinivasadentalkakinada.com/', '  discount sale ', 'lower', '2025-04-04 06:46:10'),
+(3, 'mango', 'Up to 50% off 1000s of items at Under Armour - Don\'t miss Up to 50% off 1000s of items at Under Armour - Don\'t miUp to 50% off 1000s of items at Under Armour - Don\'t miss out, ...', 'tcs.jpg', 'https://bhavicreationspvtltd.com/', ' flash sale ', 'upper', '2025-04-04 06:54:26'),
+(4, 'nike', 'get upto 10 % discount on the spectial sale of ugadhi and on also upcoming festivels get upto 10 % discount on the spectial sale of ugadhi and on also upcoming festivels get upto 10 % discount on the spectial sale of ugadhi and on also upcoming festivels ', 'nike.png', 'https://bhavicreationspvtltd.com/', '  discount sale ', 'upper', '2025-04-04 07:01:01'),
+(5, 'addidas', 'get upto 10 % discount on the spectial sale of ugadhi and on also upcoming festivels get upto 10 % discount on the spectial sale of ugadhi and on also upcoming festivels get upto 10 % discount on the spectial sale of ugadhi and on also upcoming festivels get upto 10 % discount on the spectial sale of ugadhi and on also upcoming festivels ', 'adida.png', 'https://srinivasadentalkakinada.com/', ' flash sale ', 'upper', '2025-04-04 07:01:19'),
+(6, 'crocos', 'get upto 10 % discount on the spectial sale of ugadhi and on also upcoming festivels get upto 10 % discount on the spectial sale of ugadhi and on also upcoming festivels get upto 10 % discount on the spectial sale of ugadhi and on also upcoming festivels ', 'Crocs-logo.jpg', 'https://srinivasadentalkakinada.com/', ' flash sale ', 'upper', '2025-04-04 07:01:35'),
+(7, 'lenskart', 'get upto 10 % discount on the spectial sale of ugadhi and on also upcoming festivels get upto 10 % discount on the spectial sale of ugadhi and on also upcoming festivels get upto 10 % discount on the spectial sale of ugadhi and on also upcoming festivels ', 'lenskart.png', 'https://bhavicreationspvtltd.com/', '  discount sale ', 'upper', '2025-04-04 07:02:00'),
+(8, 'kfc', 'get upto 10 % discount on the spectial sale of ugadhi and on also upcoming festivels get upto 10 % discount on the spectial sale of ugadhi and on also upcoming festivels ', 'kfc.png', '', '  discount sale ', 'lower', '2025-04-04 07:03:13'),
+(9, 'SRMT', 'get upto 10 % discount on the spectial sale of ugadhi and on also upcoming festivels get upto 10 % discount on the spectial sale of ugadhi and on also upcoming festivels ', 'srmt_mall.jpeg', 'https://srinivasadentalkakinada.com/', ' flash sale ', 'lower', '2025-04-04 07:03:32'),
+(10, 'Kritunga', 'get upto 10 % discount on the spectial sale of ugadhi and on also upcoming festivels get upto 10 % discount on the spectial sale of ugadhi and on also upcoming festivels ', 'kritunga.jpeg', 'https://srinivasadentalkakinada.com/', '  discount sale ', 'lower', '2025-04-04 07:03:50'),
+(11, 'BBQ', 'get upto 10 % discount on the spectial sale of ugadhi and on also upcoming festivels get upto 10 % discount on the spectial sale of ugadhi and on also upcoming festivels ', 'bbq.png', 'https://srinivasadentalkakinada.com/', '  discount sale ', 'lower', '2025-04-04 07:04:13');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `properties`
 --
 
@@ -116,7 +231,8 @@ CREATE TABLE `properties` (
   `id` int(11) NOT NULL,
   `title` varchar(255) NOT NULL,
   `type` enum('For Rent','For Sale','For Lease') NOT NULL,
-  `price` decimal(10,2) NOT NULL,
+  `category` enum('Commercial','Residential') NOT NULL,
+  `price` int(11) DEFAULT NULL,
   `location` varchar(255) NOT NULL,
   `size_sqft` int(11) NOT NULL,
   `bedrooms` int(11) NOT NULL,
@@ -134,9 +250,15 @@ CREATE TABLE `properties` (
 -- Dumping data for table `properties`
 --
 
-INSERT INTO `properties` (`id`, `title`, `type`, `price`, `location`, `size_sqft`, `bedrooms`, `bathrooms`, `furnishing_status`, `amenities`, `image`, `description`, `created_at`, `images`, `phone`) VALUES
-(54, 'sales building', 'For Sale', 3300000.00, 'kkd', 22555, 2, 2, 'Unfurnished', 'Parking', '1742887299_download (6).jpeg', 'tata', '2025-03-25 07:21:39', '1742887299_images (7).jpeg,1742887299_images (6).jpeg,1742887299_images (5).jpeg,1742887299_download (6).jpeg', '9876543321'),
-(55, 'f', 'For Sale', 1200.00, 'ddd', 2, 2, 2, 'Unfurnished', 'Parking', '1742893760_download (5).jpeg', 'd', '2025-03-25 09:09:20', '1742893760_download (4).jpeg,1742893760_download (3).jpeg,1742893760_download (2).jpeg', '9239423432');
+INSERT INTO `properties` (`id`, `title`, `type`, `category`, `price`, `location`, `size_sqft`, `bedrooms`, `bathrooms`, `furnishing_status`, `amenities`, `image`, `description`, `created_at`, `images`, `phone`) VALUES
+(54, 'sales building', 'For Sale', 'Commercial', 3300000, 'kkd', 22555, 2, 2, 'Unfurnished', 'Parking', '1742887299_download (6).jpeg', 'tata', '2025-03-25 07:21:39', '1742887299_images (7).jpeg,1742887299_images (6).jpeg,1742887299_images (5).jpeg,1742887299_download (6).jpeg', '9876543321'),
+(55, 'f', 'For Sale', 'Residential', 1200, 'ddd', 2, 2, 2, 'Unfurnished', 'Parking', '1742893760_download (5).jpeg', 'd', '2025-03-25 09:09:20', '1742893760_download (4).jpeg,1742893760_download (3).jpeg,1742893760_download (2).jpeg', '9239423432'),
+(56, 'induvdial huse', 'For Rent', 'Residential', 8000, 'vakalapudi', 22200, 2, 3, 'Unfurnished', 'Parking', '1743762261_download (6).jpeg', 'call us for more details ', '2025-04-04 10:24:21', '1743762261_images (7).jpeg,1743762261_images (6).jpeg,1743762261_images (5).jpeg', '9879870987'),
+(57, 'sample', 'For Sale', 'Residential', 1200, 'kkd', 23223, 2, 2, 'Unfurnished', 'Parking', '1743769051_automobile-model-is-silver-car-with-black-interior.jpg', '3r', '2025-04-04 12:17:31', '1743769051_off-road-car-fantasy-scenario.jpg,1743769051_download (1).jpeg,1743769051_download.jpeg', '9239423432'),
+(58, 'storew', 'For Rent', 'Residential', 1200, 'ddd', 2, 3, 2, 'Semi-Furnished', 'Security', '1743769317_automobile-model-is-silver-car-with-black-interior.jpg', 'er', '2025-04-04 12:21:57', '1743769317_images (7).jpeg,1743769317_images (6).jpeg', '9239423432'),
+(59, 'land', 'For Lease', 'Commercial', 1200, 'rjy', 67687, 0, 0, 'Furnished', 'aa', '1743827030_automobile-model-is-silver-car-with-black-interior.jpg', 'fyuyu', '2025-04-05 04:23:50', '1743827030_images (7).jpeg,1743827030_images (6).jpeg', '456456'),
+(60, 'car', 'For Rent', 'Commercial', 90000, 'kkd', 2333, 2, 0, 'Unfurnished', 'swiming', '1743828006_Holi-Event-Organisers-in-Gurgaon.png', 'te', '2025-04-05 04:40:06', '1743828006_holi 3.jpeg,1743828006_holi 1.jpeg,1743828006_holi.jpeg,1743828006_spandhana.jpeg', '9239423432'),
+(61, 'ccs', 'For Sale', 'Commercial', 1200, 'cc', 333, 3, 3, 'Unfurnished', 'w', '1743831878_sangeeth.png', 'cc', '2025-04-05 05:44:38', '1743831878_automobile-model-is-silver-car-with-black-interior.jpg', '33');
 
 -- --------------------------------------------------------
 
@@ -226,12 +348,8 @@ INSERT INTO `theaters` (`id`, `name`, `image`, `location`, `created_at`) VALUES
 
 CREATE TABLE `travels` (
   `id` int(11) NOT NULL,
-  `type` varchar(255) DEFAULT NULL,
-  `model` varchar(255) DEFAULT NULL,
-  `seating_capacity` int(11) DEFAULT NULL,
-  `fuel_efficiency` varchar(255) DEFAULT NULL,
-  `price` decimal(10,2) DEFAULT NULL,
-  `image` varchar(255) DEFAULT NULL,
+  `name` varchar(100) NOT NULL,
+  `filter_image` varchar(255) DEFAULT NULL,
   `created_at` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
@@ -239,11 +357,75 @@ CREATE TABLE `travels` (
 -- Dumping data for table `travels`
 --
 
-INSERT INTO `travels` (`id`, `type`, `model`, `seating_capacity`, `fuel_efficiency`, `price`, `image`, `created_at`) VALUES
-(10, 'For driver', 'swift', 5, '12km', 5555.00, '1742971970_download (3).jpeg', '2025-03-26 06:52:50'),
-(12, 'For Rent', 'swift', 6, '12km', 1.00, '1742989750_download (4).jpeg', '2025-03-26 11:49:10'),
-(13, 'For Rent', 'innnova', 6, '12km', 1200.00, '1743048336_download (5).jpeg', '2025-03-27 04:05:36'),
-(14, 'For Marriages', 'Crytsa', 7, '7', 4000.00, '1743053229_download (5).jpeg', '2025-03-27 05:27:09');
+INSERT INTO `travels` (`id`, `name`, `filter_image`, `created_at`) VALUES
+(3, 'Car Bookings', 'car-body-parts-side-view-automotive-car-parts-such-as-window-wheel-tire-headlight-side-mirror-side (1).jpg', '2025-04-02 12:05:02'),
+(7, 'Hiring', 'download (3).jpeg', '2025-04-03 03:53:49'),
+(8, 'Car Rentals', 'download (1).jpeg', '2025-04-03 04:50:17');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `travel_details`
+--
+
+CREATE TABLE `travel_details` (
+  `id` int(11) NOT NULL,
+  `travel_id` int(11) NOT NULL,
+  `model` varchar(100) DEFAULT NULL,
+  `seating_capacity` int(11) DEFAULT NULL,
+  `fuel_efficiency` varchar(50) DEFAULT NULL,
+  `price` decimal(10,2) DEFAULT NULL,
+  `name` varchar(100) DEFAULT NULL,
+  `age` int(11) DEFAULT NULL,
+  `gender` enum('Male','Female','Other') DEFAULT NULL,
+  `experience` int(11) DEFAULT NULL,
+  `price_per_6hrs` decimal(10,2) DEFAULT NULL,
+  `image` varchar(255) DEFAULT NULL,
+  `created_at` timestamp NOT NULL DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `travel_details`
+--
+
+INSERT INTO `travel_details` (`id`, `travel_id`, `model`, `seating_capacity`, `fuel_efficiency`, `price`, `name`, `age`, `gender`, `experience`, `price_per_6hrs`, `image`, `created_at`) VALUES
+(2, 7, NULL, NULL, NULL, NULL, 'raja', 27, 'Male', 5, 600.00, 'rental.jpeg', '2025-04-03 00:24:31'),
+(3, 3, 'innnova', 7, '12', 1200.00, NULL, NULL, NULL, NULL, NULL, 'download (4).jpeg', '2025-04-03 01:10:21'),
+(5, 7, NULL, NULL, NULL, NULL, 'ram', 22, 'Male', 2, 600.00, 'automobile-model-is-silver-car-with-black-interior.jpg', '2025-04-03 01:11:45'),
+(6, 8, ' swift', 4, '12', 1200.00, NULL, NULL, NULL, NULL, NULL, 'download.jpeg', '2025-04-03 01:20:56');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `trending`
+--
+
+CREATE TABLE `trending` (
+  `id` int(11) NOT NULL,
+  `title` varchar(255) NOT NULL,
+  `description` text DEFAULT NULL,
+  `image` varchar(255) NOT NULL,
+  `link` varchar(255) DEFAULT NULL,
+  `offer` varchar(255) DEFAULT NULL,
+  `type` enum('upper','lower') NOT NULL,
+  `created_at` timestamp NOT NULL DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `trending`
+--
+
+INSERT INTO `trending` (`id`, `title`, `description`, `image`, `link`, `offer`, `type`, `created_at`) VALUES
+(4, 'maxfit', 'this is the smaple', 'images (5).jpeg', 'https://bhavicreationspvtltd.com/', '⭐ discount sale ', 'upper', '2025-04-04 05:01:56'),
+(5, 'tata', 'nothing', 'download (6).jpeg', 'https://bhavicreationspvtltd.com/', '⭐ flash sale ', 'lower', '2025-04-04 05:02:21'),
+(6, 'nike ', 'thisis the sample', 'automobile-model-is-silver-car-with-black-interior.jpg', 'https://bhavicreationspvtltd.com/', '⭐ flash sale ', 'upper', '2025-04-04 05:58:33'),
+(7, 'tere', 'saag wqet qq  q gr g4g', 'images (7).jpeg', 'https://bhavicreationspvtltd.com/', ' flash sale ', 'upper', '2025-04-04 06:02:55'),
+(8, 'rre', 'qrhg3 43q t43t3q4t43t    ggreg geg', 'rental.jpeg', 'https://bhavicreationspvtltd.com/', ' flash sale ', 'upper', '2025-04-04 06:03:14'),
+(9, 'ree wgq ', 'erht rthtrhtreh tr hh rt h hrth w erht rthtrhtreh tr hh rt h hrth w erht rthtrhtreh tr hh rt h hrth w erht rthtrhtreh tr hh rt h hrth w erht rthtrhtreh tr hh rt h hrth w erht rthtrhtreh tr hh rt h hrth w erht rthtrhtreh tr hh rt h hrth w erht rthtrhtreh tr hh rt h hrth w', 'rentals.jpeg', 'https://srinivasadentalkakinada.com/', ' flash sale ', 'upper', '2025-04-04 06:05:39'),
+(10, 'notiing', 'Up to 50% off 1000s of items at Under Armour - Don\'t miss out, ...', 'download (2).jpeg', 'https://srinivasadentalkakinada.com/', '  discount sale ', 'lower', '2025-04-04 06:06:42'),
+(11, 'ggh', 'Up to 50% off 1000s of items at Under Armour - Don\'t miss\r\n                                 out, ...', 'holi 3.jpeg', 'https://srinivasadentalkakinada.com/', '  discount sale ', 'lower', '2025-04-04 06:07:01'),
+(12, 'max', 'Up to 50% off 1000s of items at Under Armour - Don\'t miss\r\n                                 out, ...', 'portrait-3d-doctors-hospital-attire.jpg', 'https://bhavicreationspvtltd.com/', '  discount sale ', 'lower', '2025-04-04 06:07:23'),
+(13, 'fddf', 'Up to 50% off 1000s of items at Under Armour - Don\'t miss\r\n                                 out, ...', 'e04cf887-696b-43c0-9c55-7ae1c10e5f5c.jpeg', 'https://srinivasadentalkakinada.com/', ' flash sale ', 'lower', '2025-04-04 06:07:56');
 
 -- --------------------------------------------------------
 
@@ -278,9 +460,28 @@ ALTER TABLE `blogs`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `companies`
+--
+ALTER TABLE `companies`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `home_ads`
 --
 ALTER TABLE `home_ads`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `jobs`
+--
+ALTER TABLE `jobs`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `company_id` (`company_id`);
+
+--
+-- Indexes for table `marquee_texts`
+--
+ALTER TABLE `marquee_texts`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -289,6 +490,12 @@ ALTER TABLE `home_ads`
 ALTER TABLE `movies`
   ADD PRIMARY KEY (`id`),
   ADD KEY `screen_id` (`screen_id`);
+
+--
+-- Indexes for table `offers`
+--
+ALTER TABLE `offers`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `properties`
@@ -323,6 +530,19 @@ ALTER TABLE `travels`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `travel_details`
+--
+ALTER TABLE `travel_details`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `travel_id` (`travel_id`);
+
+--
+-- Indexes for table `trending`
+--
+ALTER TABLE `trending`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `users`
 --
 ALTER TABLE `users`
@@ -339,10 +559,28 @@ ALTER TABLE `blogs`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=62;
 
 --
+-- AUTO_INCREMENT for table `companies`
+--
+ALTER TABLE `companies`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
+--
 -- AUTO_INCREMENT for table `home_ads`
 --
 ALTER TABLE `home_ads`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
+--
+-- AUTO_INCREMENT for table `jobs`
+--
+ALTER TABLE `jobs`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+
+--
+-- AUTO_INCREMENT for table `marquee_texts`
+--
+ALTER TABLE `marquee_texts`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `movies`
@@ -351,10 +589,16 @@ ALTER TABLE `movies`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
+-- AUTO_INCREMENT for table `offers`
+--
+ALTER TABLE `offers`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+
+--
 -- AUTO_INCREMENT for table `properties`
 --
 ALTER TABLE `properties`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=56;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=62;
 
 --
 -- AUTO_INCREMENT for table `screens`
@@ -378,7 +622,19 @@ ALTER TABLE `theaters`
 -- AUTO_INCREMENT for table `travels`
 --
 ALTER TABLE `travels`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+
+--
+-- AUTO_INCREMENT for table `travel_details`
+--
+ALTER TABLE `travel_details`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+
+--
+-- AUTO_INCREMENT for table `trending`
+--
+ALTER TABLE `trending`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT for table `users`
@@ -391,6 +647,12 @@ ALTER TABLE `users`
 --
 
 --
+-- Constraints for table `jobs`
+--
+ALTER TABLE `jobs`
+  ADD CONSTRAINT `jobs_ibfk_1` FOREIGN KEY (`company_id`) REFERENCES `companies` (`id`) ON DELETE CASCADE;
+
+--
 -- Constraints for table `movies`
 --
 ALTER TABLE `movies`
@@ -401,6 +663,12 @@ ALTER TABLE `movies`
 --
 ALTER TABLE `screens`
   ADD CONSTRAINT `screens_ibfk_1` FOREIGN KEY (`theater_id`) REFERENCES `theaters` (`id`) ON DELETE CASCADE;
+
+--
+-- Constraints for table `travel_details`
+--
+ALTER TABLE `travel_details`
+  ADD CONSTRAINT `travel_details_ibfk_1` FOREIGN KEY (`travel_id`) REFERENCES `travels` (`id`) ON DELETE CASCADE;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
