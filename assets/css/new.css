@@ -2089,16 +2089,75 @@
 
 
 
- .card_border_styles {
-   border: #060606 1px solid;
-   border-radius: 8px;
-   padding: 10px;
 
+ .gradient_border_wrapper {
+   background: linear-gradient(to right, #dc3c0a, #ffb013);
+
+   padding-top: 2px;
+   padding-left: 2px;
+   padding-right: 2px;
+   padding-bottom: 2px;
+
+   border-radius: 50%;
+   display: inline-block;
+   width: 100%;
+   max-width: 200px;
+   aspect-ratio: 1 / 1;
+   margin: auto;
  }
 
+
+
+ .hr_line_side {
+   position: relative;
+ }
+
+ .hr_line_side::before {
+   content: "";
+   position: absolute;
+   right: 0;
+   /* or right: 0; if you want it on the right side */
+   top: 0;
+   width: 4px;
+   /* thickness of the line */
+   height: 100%;
+   background: linear-gradient(to bottom, #dc3c0a, #ffb013);
+   border-radius: 10px;
+ }
+
+ .gradient_card_wrapper {
+   background: linear-gradient(to right, #dc3c0a, #ffb013);
+   padding: 2px;
+   /* Thickness of the border */
+   border-radius: 10px;
+   display: inline-block;
+   width: 100%;
+ }
+
+ .card_border_styles {
+   background-color: #000000;
+   /* or any card background */
+   border-radius: 8px;
+   padding: 10px;
+ }
+
+
+
+
  .img_border {
-   border: #060606 1px solid;
-   text-align: center;
+   background-color: #fff;
+   /* inner background if needed */
+   border-radius: 50%;
+   overflow: hidden;
+   width: 100%;
+   height: 100%;
+ }
+
+ .img_border img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   display: block;
  }
 
  .brand_name {
@@ -2135,25 +2194,40 @@
 
 
 
-
+/* 
  .text_side_div {
    border: #7D1C4A solid 2px;
    background-color: #ffffff;
    padding: 10px;
    border-radius: 8px;
 
- }
+ } */
 
-
+.text_side_div {
+  border: 3px solid transparent;
+  border-radius: 12px;
+  background-image: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)), linear-gradient(135deg, #dc3c0a, #ffb013);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  padding-left: .5px;
+  padding-right: .5px;
+  
+}
+.side_dive_images{
+  border-radius: 3px;
+  padding: 2px;
+}
  .terms_cond_styles {
    margin-top: -10px;
-   margin-bottom: -20px;
+   margin-bottom: -10px;
+   margin-left: -20px;
  }
 
  .terms_justify {
    display: flex;
    flex-direction: row;
    justify-content: end;
+   
  }
 
  .merchants_div {
@@ -2268,6 +2342,7 @@
    /* background: linear-gradient(90deg, #B2A5FF, #DAD2FF); */
    padding-top: 0px;
    padding-bottom: 0px;
+ 
    border-radius: 5px;
 
  }
@@ -2810,11 +2885,15 @@
 
  .property_strong {
    font-weight: bold;
-   color: black;
+  background: linear-gradient(to right, #6b390d, #ffb013);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
  }
 
  .property_p_tag {
-   color: black;
+     background: linear-gradient(to right, #6b390d, #ffb013);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
  }
 
 
@@ -3013,29 +3092,7 @@
  }
 
 
- .job_image_card {
-   display: inline-block;
-   padding: 62px;
-   background: transparent;
-   border-radius: 8px;
-   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5) !important;
-   display: flex;
-   justify-content: center;
-   align-items: center;
 
- }
-
- .job_image_card_main {
-   display: inline-block;
-   padding: 10px;
-   background: transparent;
-   border-radius: 8px;
-   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5) !important;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-
- }
 
  @media (max-width:768px) {
 
@@ -3508,7 +3565,7 @@
  /* Firefox Scrollbar */
  .scrollable-list {
    scrollbar-width: thin;
-   scrollbar-color: #7D1C4A #f1f1f1;
+   scrollbar-color: #ffb013 #000000;
  }
 
 
@@ -3516,7 +3573,8 @@
 
 
  .vs-hero-wrappera .bg-overlay {
-   background-color: #f71c52;
+   /* background: linear-gradient(to right, #6b390d, #ffb013); */
+
    width: 89%;
    left: 0;
  }
@@ -3531,9 +3589,10 @@
 
 
  .slider-area .bg-overlay {
-   background-color: #f71c52;
+   background: linear-gradient(to right, #dc3c0a, #ffb013);
+
    width: 89%;
-   left: 0;
+   left: 56px;
  }
 
  .slider-area .slider-detail .slider-slide .slider-inner-content .slide-heading {
@@ -3545,7 +3604,8 @@
  }
 
  .slider-area .container .inner-bg-overlay {
-   background-color: #f71c52;
+
+
    position: absolute;
    width: 50%;
    left: 0;
@@ -3700,41 +3760,199 @@
    justify-content: center;
  }
 
- 
+
 
  .last_side_div_image {
-  text-align: right;
+   text-align: right;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: flex-end;
+   /* aligns child elements (like button) to the right */
+ }
+
+ .gradient_color_btn {
+   color: white;
+   background: linear-gradient(to right, #6b390d, #ffb013);
+   width: 140px;
+   border: none;
+   border-radius: 5px;
+   padding: 5px 0;
+ }
+
+
+
+ .equal-divs {
+   position: relative;
+ }
+
+
+
+ /* Horizontal Lines */
+ .horizontal_line_between_left,
+ .horizontal_line_between_right {
+   position: absolute;
+   top: 24%;
+   height: 2px;
+   background: linear-gradient(to right, #dc3c0a, #ffb013);
+   z-index: 9999;
+   width: 0;
+   transition: width 0.6s ease;
+ }
+
+ .horizontal_line_between_left {
+   right: 52%;
+ 
+   transform-origin: right;
+ }
+
+ .horizontal_line_between_right {
+   left: 52%;
+
+   transform-origin: left;
+ }
+
+ /* Vertical Lines */
+ .vertical_line_left,
+ .vertical_line_right {
+   position: absolute;
+   width: 2px;
+   height: 0;
+   background: linear-gradient(to bottom, #dc3c0a, #ffb013);
+   transition: height 0.6s ease 0.6s;
+   z-index: 9999;
+ }
+
+ .vertical_line_left {
+   top: 24%;
+   right: calc(50% - 46%);
+ }
+
+ .vertical_line_right {
+   top: 24%;
+   left: calc(50% - 46%);
+ }
+
+ /* Bullet Dot at End of Vertical Line */
+ .vertical_line_left::after,
+ .vertical_line_right::after {
+   content: '';
+   position: absolute;
+   bottom: 0;
+   left: 50%;
+   transform: translateX(-50%);
+   width: 10px;
+   height: 10px;
+   background: #ffb013;
+   border-radius: 50%;
+   box-shadow: 0 0 6px 2px #dc3c0a;
+   opacity: 0;
+   transition: opacity 0.4s ease 1.2s, transform 0.3s ease 1.2s;
+ }
+
+ /* Trigger on Hover */
+ .equal-divs:hover .horizontal_line_between_left,
+ .equal-divs:hover .horizontal_line_between_right {
+   width: 44%;
+ }
+
+ .equal-divs:hover .vertical_line_left,
+ .equal-divs:hover .vertical_line_right {
+   height: 65px;
+   /* adjust based on layout */
+ }
+
+ .equal-divs:hover .vertical_line_left::after,
+ .equal-divs:hover .vertical_line_right::after {
+   opacity: 1;
+   transform: translateX(-50%) scale(1.1);
+ }
+
+
+ .equal-divs {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-end; /* aligns child elements (like button) to the right */
-}
-
-.gradient_color_btn {
-  color: white;
-  background: linear-gradient(to right, #6b390d, #ffb013);
-  width: 140px;
-  border: none;
-  border-radius: 5px;
-  padding: 5px 0;
-}
-
-
-.equal-divs > div {
-  flex: 1; /* Makes each div take equal width */
-  padding: 0 10px; /* Optional: spacing between the content */
-}
-
-.center_side_div_image {
-  text-align: center; /* centers image horizontally inside */
-}
-
-.last_side_div_image {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px; /* space between center image and side text */
+  position: relative;
 }
 
 
  
+
+
+
+ .first_side_div_image,
+ .last_side_div_image,
+ .center_side_div_image {
+   position: relative;
+   z-index: 2;
+   /* Make sure content is above the line */
+ }
+
+
+
+
+ .equal-divs>div {
+   flex: 1;
+   /* Makes each div take equal width */
+   /* Optional: spacing between the content */
+ }
+
+ .center_side_div_image {
+   text-align: center;
+   /* centers image horizontally inside */
+ }
+
+ .last_side_div_image {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-end;
+   justify-content: center;
+ }
+
+ .offers_section_text {
+   padding-top: 100px;
+ }
+
+ .gradient_text_color {
+    background: linear-gradient(to right, #6b390d, #ffb013);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+ }
+
+
+
+ .gradient_text_color_orange_to_gold {
+   background: linear-gradient(to right, #ffb013, #dc3c0a);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+ }
+
+
+
+
+
+
+ .center_side_div_wrapper {
+   position: relative;
+   padding: 0 30px;
+ }
+
+ .vertical_line_between {
+   position: absolute;
+   height: 100%;
+   width: 2px;
+   background: linear-gradient(to bottom, #dc3c0a, #ffb013);
+   left: 50%;
+   transform: translateX(-50%);
+   z-index: 1;
+ }
+
+ .center_side_div_wrapper img {
+   position: relative;
+   z-index: 2;
+   /* keeps image above the line */
+   max-height: 300px;
+   /* Adjust based on your layout */
+ }

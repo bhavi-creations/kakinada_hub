@@ -28,20 +28,20 @@
         <div class="row align-items-center">
             <!-- Left Side: Mobile Number -->
             <div class="col-md-4 text-white">
-                <p class="mb-0 white_color"><i class="fas fa-phone-alt"></i> +91 9642343434</p>
+                <p class="mb-0 gradient_text_color"><i class="fas fa-phone-alt"></i> +91 9642343434</p>
             </div>
 
             <!-- Center: Kakinada Hub -->
             <div class="col-md-4 text-center">
-                <h3 class="text-white">Kakinada Hub</h3>
+                <h3 class="gradient_text_color">Kakinada Hub</h3>
             </div>
 
             <!-- Right Side: Social Media Icons -->
             <div class="col-md-4 text-end">
-                <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
-                <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
-                <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="gradient_text_color me-3"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="gradient_text_color me-3"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="gradient_text_color me-3"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="gradient_text_color"><i class="fab fa-linkedin-in"></i></a>
             </div>
         </div>
     </div>

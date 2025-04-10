@@ -51,17 +51,17 @@ $result = $stmt->get_result();
     <div class="container">
 
         <div class="text-center   ">
-            <h1>Upcomming Events</h1>
+            <h1 class="gradient_text_color">Upcomming Events</h1>
         </div>
         <div class="row">
 
             <div class="col-lg-2  col-12 text_side_div d-none d-lg-block">
 
-                <img src="assets/img/test/sideimg2.png" alt="" class="img-fluid">
+                <img src="assets/img/test/sideimg2.png" alt="" class="img-fluid side_dive_images">
 
-                <img src="assets/img/test/animation.gif" alt="Animated GIF" class="mt-5">
+                <img src="assets/img/test/animation.gif" alt="Animated GIF" class=" my-4 side_dive_images">
 
-                <img src="assets/img/test/sideimg1.png" alt="" class="img-fluid mt-5">
+                <img src="assets/img/test/sideimg1.png" alt="" class="img-fluid  side_dive_images">
             </div>
 
             <div class="col-lg-8 col-12 ">
@@ -69,18 +69,16 @@ $result = $stmt->get_result();
 
 
 
-
-
                     <section class="OfferContainer_exclusive__non wow fadeInUp my-2" data-wow-delay="100ms">
-                        <div class="col-12  card_div px-3">
-                            <div class="row  py-3">
-                                <div class="col-12 col-md-4 job_image_card mb-3 parent-container">
-                                    <img src="assets/img/self_images/spandhana.jpeg" class="img-fluid" alt="">
+                        <div class="   container  card_div ">
+                            <div class="row  need_padding_div ">
+                                <div class="col-12 col-md-4 job_image_card_main mb-2 parent-container">
+                                    <img src="assets/img/self_images/spandhana.jpeg" class="img-fluid inner_image_card_job" alt="">
 
                                 </div>
 
                                 <div class="col-12 col-md-8">
-                                    <h4> <strong class="property_strong"> occasion :</strong>Ugadhi</h4>
+                                    <h4 class="gradient_text_color"> <strong class="property_strong"> occasion :</strong>Ugadhi</h4>
                                     <p class="property_p_tag"><strong class="property_strong"> Venue :</strong> Spandhana </p>
                                     <p class="property_p_tag"> <strong class="property_strong"> Location : </strong> Kakinada </p>
                                     <p class="property_p_tag"> <strong class="property_strong"> Phone :</strong>9642343434 </p>
@@ -95,7 +93,7 @@ $result = $stmt->get_result();
                                 <div class="col-12 terms_cond_styles">
                                     <div class="terms_justify">
 
-                                        <p>
+                                        <p class="gradient_text_color">
                                             <a href="event_full_page.php" class=" ">View More Details</a>
                                         </p>
                                     </div>
@@ -214,11 +212,11 @@ $result = $stmt->get_result();
 
             <div class="col-lg-2  col-12 text_side_div d-none d-lg-block">
 
-                <img src="assets/img/test/sideimg2.png" alt="" class="img-fluid">
+                <img src="assets/img/test/sideimg2.png" alt="" class="img-fluid side_dive_images">
 
-                <img src="assets/img/test/animation.gif" alt="Animated GIF" class="mt-5">
+                <img src="assets/img/test/animation.gif" alt="Animated GIF" class=" my-4 side_dive_images">
 
-                <img src="assets/img/test/sideimg1.png" alt="" class="img-fluid mt-5">
+                <img src="assets/img/test/sideimg1.png" alt="" class="img-fluid  side_dive_images">
             </div>
 
             <div id="mobileModal" class="mobile-modal-overlay">

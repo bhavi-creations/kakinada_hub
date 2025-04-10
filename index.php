@@ -32,29 +32,42 @@ $marquee_content = implode(' &nbsp; || &nbsp; ', $marquee_texts);
 
 <section class="black_bg_body ">
     <div class="container text-center">
-        <div class="d-flex justify-content-between align-items-center equal-divs">
 
+        <div class="d-flex justify-content-between align-items-center equal-divs pt-5 position-relative">
 
+            <!-- Left Text -->
             <div class="first_side_div_image">
-
                 <h6 class="white_coor_text">
-                    <li>ART AND DESIGN </li>
+                    <li>ART AND DESIGN</li>
                 </h6>
-                <p class="white_coor_text">Explore the high tech, low-life world where the lines between </p>
-
+                <p class="white_coor_text">Explore the high tech, low-life world where the lines between</p>
+                <button class="gradient_color_btn">Read More</button>
             </div>
+
+            <!-- Center Image -->
             <div class="center_side_div_image">
-
-                <img src="assets/img/self_images/cyber_mask_man.jpg" class="img-fluid" alt="">
+                <img src="assets/img/self_images/robot.jpeg" class="img-fluid" alt="">
             </div>
 
+            <!-- Horizontal and Vertical Lines -->
+            <div class="horizontal_line_between_left"></div>
+            <div class="vertical_line_left"></div>
+
+            <div class="horizontal_line_between_right"></div>
+            <div class="vertical_line_right"></div>
+
+            <!-- Right Text -->
             <div class="last_side_div_image">
-
                 <h2 class="white_coor_text">ART AND DESIGN</h2>
-                <p class="white_coor_text">Explore the high tech, low-life world where the lines between low-life world where the lines between </p>
-                <button class="gradient_color_btn"> Read More</button>
+                <p class="white_coor_text">Explore the high tech, low-life world where the lines between low-life world where the lines between</p>
+                <button class="gradient_color_btn">Read More</button>
             </div>
+
         </div>
+
+
+
+
 
 
 
@@ -188,111 +201,7 @@ mysqli_close($conn);
 
 
 
-<?php
-include './db.connection/db_connection.php'; // Ensure the database connection is included
 
-// Fetch trending items with type 'upper'
-$sqlUpper = "SELECT * FROM trending WHERE type = 'upper' ORDER BY created_at DESC";
-$resultUpper = $conn->query($sqlUpper);
-
-// Fetch trending items with type 'lower'
-$sqlLower = "SELECT * FROM trending WHERE type = 'lower' ORDER BY created_at DESC";
-$resultLower = $conn->query($sqlLower);
-?>
-
-<section class="team-section-three space-md-bottom   black_bg_body section_space">
-    <!-- <section class="team-section-three space-md-bottom bg_image_for_shops  "> -->
-
-    <div class="container-style6 bg_color_white">
-        <div class="title-area-three text-center wow fadeInUp shop_heads" data-wow-delay="400ms">
-            <span class="sub-title7">Trending Now</span>
-        </div>
-
-        <!-- Upper Type Swiper -->
-        <div class="swiper-container swiper-container-upper team-slider  ">
-            <div class="swiper-wrapper">
-                <?php if ($resultUpper->num_rows > 0): ?>
-                    <?php while ($row = $resultUpper->fetch_assoc()): ?>
-                        <div class="swiper-slide">
-                            <div class="card_border_styles">
-                                <div class="row">
-                                    <div class="col-4">
-                                        <div class="img_border">
-                                            <img src="./admin/uploads/home_trending/<?php echo htmlspecialchars($row['image']); ?>" class="img-fluid" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="col-8">
-                                        <div class="d-flex">
-                                            <p class="brand_name"><?php echo htmlspecialchars($row['title']); ?></p>
-                                        </div>
-                                        <div class="d-flex">
-                                            <p class="brand_type">
-                                                ⭐<?php echo htmlspecialchars($row['offer']); ?></p>
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <div class="row mini_card_spacings">
-                                    <p class="brand_special_discount">
-                                        <?php
-                                        $text = htmlspecialchars($row['description']);
-                                        echo (strlen($text) > 60) ? substr($text, 0, 57) . '...' : $text;
-                                        ?>
-                                    </p>
-                                </div>
-
-
-                            </div>
-                        </div>
-                    <?php endwhile; ?>
-                <?php else: ?>
-                    <p>No upper trending items found.</p>
-                <?php endif; ?>
-            </div>
-        </div>
-
-        <!-- Lower Type Swiper -->
-        <div class="swiper-container swiper-container-lower team-slider">
-            <div class="swiper-wrapper">
-                <?php if ($resultLower->num_rows > 0): ?>
-                    <?php while ($row = $resultLower->fetch_assoc()): ?>
-                        <div class="swiper-slide">
-                            <div class="card_border_styles">
-                                <div class="row">
-                                    <div class="col-4">
-                                        <div class="img_border">
-                                            <img src="./admin/uploads/home_trending/<?php echo htmlspecialchars($row['image']); ?>" class="img-fluid" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="col-8">
-                                        <div class="d-flex">
-                                            <p class="brand_name"><?php echo htmlspecialchars($row['title']); ?></p>
-                                        </div>
-                                        <div class="d-flex">
-                                            <p class="brand_type">⭐ <?php echo htmlspecialchars($row['offer']); ?></p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row mini_card_spacings">
-                                    <p class="brand_special_discount">
-                                        <?php
-                                        $text = htmlspecialchars($row['description']);
-                                        echo (strlen($text) > 60) ? substr($text, 0, 57) . '...' : $text;
-                                        ?>
-                                    </p>
-                                </div>
-
-                            </div>
-                        </div>
-                    <?php endwhile; ?>
-                <?php else: ?>
-                    <p>No lower trending items found.</p>
-                <?php endif; ?>
-            </div>
-        </div>
-
-    </div>
-</section>
 
 
 
@@ -309,12 +218,12 @@ $sqlLower = "SELECT * FROM offers WHERE type = 'lower' ORDER BY created_at DESC"
 $resultLower = $conn->query($sqlLower);
 ?>
 
-<section class="team-section-three space-md-bottom   black_bg_body">
+<section class="team-section-three space-md-bottom black_bg_body   ">
     <!-- <section class="team-section-three space-md-bottom bg_image_for_shops  "> -->
 
-    <div class="container-style6 bg_color_white">
-        <div class="title-area-three text-center wow fadeInUp" data-wow-delay="400ms">
-            <span class="sub-title7">Offers </span>
+    <div class="container-style6  ">
+        <div class="title-area-three text-center wow fadeInUp offers_section_text" data-wow-delay="400ms">
+            <span class="sub-title7 gradient_text_color">Offers </span>
         </div>
 
         <!-- Upper Type Swiper -->
@@ -323,30 +232,37 @@ $resultLower = $conn->query($sqlLower);
                 <?php if ($resultUpper->num_rows > 0): ?>
                     <?php while ($row = $resultUpper->fetch_assoc()): ?>
                         <div class="swiper-slide">
-                            <div class="card_border_styles">
-                                <div class="row">
-                                    <div class="col-4">
-                                        <div class="img_border">
-                                            <img src="./admin/uploads/home_offers/<?php echo htmlspecialchars($row['image']); ?>" class="img-fluid" alt="">
+                            <div class="gradient_card_wrapper">
+
+                                <div class="card_border_styles">
+
+                                    <div class="row">
+
+                                        <div class="col-5 d-flex flex-column justify-content-center hr_line_side">
+                                            <div class="gradient_border_wrapper">
+                                                <div class="img_border">
+                                                    <img src="./admin/uploads/home_offers/<?php echo htmlspecialchars($row['image']); ?>" alt="">
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="col-8">
-                                        <div class="d-flex">
-                                            <p class="brand_name"><?php echo htmlspecialchars($row['title']); ?></p>
-                                        </div>
-                                        <div class="d-flex">
-                                            <p class="brand_type">⭐ <?php echo htmlspecialchars($row['offer']); ?></p>
+
+
+
+                                        <div class="col-7">
+
+                                            <p class="brand_name gradient_text_color_orange_to_gold"><?php echo htmlspecialchars($row['title']); ?></p>
+
+                                            <p class="brand_type gradient_text_color_orange_to_gold">⭐ <?php echo htmlspecialchars($row['offer']); ?></p>
+
+                                            <p class="brand_special_discount gradient_text_color_orange_to_gold">
+                                                <?php
+                                                $text = htmlspecialchars($row['description']);
+                                                echo (strlen($text) > 30) ? substr($text, 0, 27) . '...' : $text;
+                                                ?>
+                                            </p>
                                         </div>
 
                                     </div>
-                                </div>
-                                <div class="row mini_card_spacings">
-                                    <p class="brand_special_discount">
-                                        <?php
-                                        $text = htmlspecialchars($row['description']);
-                                        echo (strlen($text) > 60) ? substr($text, 0, 57) . '...' : $text;
-                                        ?>
-                                    </p>
                                 </div>
 
 
@@ -365,29 +281,34 @@ $resultLower = $conn->query($sqlLower);
                 <?php if ($resultLower->num_rows > 0): ?>
                     <?php while ($row = $resultLower->fetch_assoc()): ?>
                         <div class="swiper-slide">
-                            <div class="card_border_styles">
-                                <div class="row">
-                                    <div class="col-4">
-                                        <div class="img_border">
-                                            <img src="./admin/uploads/home_offers/<?php echo htmlspecialchars($row['image']); ?>" class="img-fluid" alt="">
+                            <div class="gradient_card_wrapper">
+
+                                <div class="card_border_styles">
+                                    <div class="row">
+
+                                        <div class="col-5 d-flex flex-column justify-content-center hr_line_side">
+                                            <div class="gradient_border_wrapper">
+                                                <div class="img_border">
+                                                    <img src="./admin/uploads/home_offers/<?php echo htmlspecialchars($row['image']); ?>" class="img-fluid" alt="">
+                                                </div>
+                                            </div>
                                         </div>
+                                        <div class="col-7">
+
+                                            <p class="brand_name gradient_text_color_orange_to_gold"><?php echo htmlspecialchars($row['title']); ?></p>
+
+                                            <p class="brand_type gradient_text_color_orange_to_gold">⭐ <?php echo htmlspecialchars($row['offer']); ?></p>
+
+                                            <p class="brand_special_discount gradient_text_color_orange_to_gold">
+                                                <?php
+                                                $text = htmlspecialchars($row['description']);
+                                                echo (strlen($text) > 30) ? substr($text, 0, 27) . '...' : $text;
+                                                ?>
+                                            </p>
+                                        </div>
+
                                     </div>
-                                    <div class="col-8">
-                                        <div class="d-flex">
-                                            <p class="brand_name"><?php echo htmlspecialchars($row['title']); ?></p>
-                                        </div>
-                                        <div class="d-flex">
-                                            <p class="brand_type">⭐ <?php echo htmlspecialchars($row['offer']); ?></p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row mini_card_spacings">
-                                    <p class="brand_special_discount">
-                                        <?php
-                                        $text = htmlspecialchars($row['description']);
-                                        echo (strlen($text) > 60) ? substr($text, 0, 57) . '...' : $text;
-                                        ?>
-                                    </p>
+
                                 </div>
 
                             </div>
@@ -401,9 +322,6 @@ $resultLower = $conn->query($sqlLower);
 
     </div>
 </section>
-
-
-
 
 
 
@@ -458,8 +376,6 @@ $resultLower = $conn->query($sqlLower);
 
     </div>
 </section>
-
-
 
 
 
