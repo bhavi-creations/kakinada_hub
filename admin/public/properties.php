@@ -70,7 +70,11 @@
                                             <td>
                                                 <a href="view_property.php?id=<?php echo $row['id']; ?>" class="btn btn-info btn-sm mb-1"><i class="fas fa-eye"></i> View</a>
                                                 <a href="edit_property.php?id=<?php echo $row['id']; ?>" class="btn btn-warning btn-sm mb-1"><i class="fas fa-edit"></i> Edit</a>
-                                                <a href="delete_property.php?id=<?php echo $row['id']; ?>" class="btn btn-danger btn-sm mb-1" onclick="return confirm('Are you sure you want to delete this property?');"><i class="fas fa-trash-alt"></i> Delete</a>
+                                                <button class="btn btn-danger btn-sm mb-1 delete-property" data-id="<?php echo $row['id']; ?>">
+                                                    <i class="fas fa-trash-alt"></i> Delete
+                                                </button>
+
+                                                <!-- <a href="delete_property.php?id=<?php echo $row['id']; ?>" class="btn btn-danger btn-sm mb-1" onclick="return confirm('Are you sure you want to delete this property?');"><i class="fas fa-trash-alt"></i> Delete</a> -->
                                             </td>
                                         </tr>
                                     <?php endwhile; ?>
@@ -89,50 +93,101 @@
 
 <!-- Filter Script -->
 <script>
-document.addEventListener("DOMContentLoaded", function() {
-    const categoryFilter = document.getElementById("category-filter");
-    const typeFilter = document.getElementById("type-filter");
-    const propertyRows = document.querySelectorAll(".property-row");
+    document.addEventListener("DOMContentLoaded", function() {
+        const categoryFilter = document.getElementById("category-filter");
+        const typeFilter = document.getElementById("type-filter");
+        const propertyRows = document.querySelectorAll(".property-row");
 
-    const typeOptions = {
-        "Residential": ["For Rent", "For Sale", "For Lease"],
-        "Commercial": ["For Rent", "For Sale", "For Lease"]
-    };
+        const typeOptions = {
+            "Residential": ["For Rent", "For Sale", "For Lease"],
+            "Commercial": ["For Rent", "For Sale", "For Lease"]
+        };
 
-    // Populate types when category changes
-    categoryFilter.addEventListener("change", function() {
-        const selectedCategory = this.value;
-        typeFilter.innerHTML = '<option value="all">All</option>';
+        // Populate types when category changes
+        categoryFilter.addEventListener("change", function() {
+            const selectedCategory = this.value;
+            typeFilter.innerHTML = '<option value="all">All</option>';
 
-        if (selectedCategory !== "all" && typeOptions[selectedCategory]) {
-            typeOptions[selectedCategory].forEach(type => {
-                typeFilter.innerHTML += `<option value="${type}">${type}</option>`;
+            if (selectedCategory !== "all" && typeOptions[selectedCategory]) {
+                typeOptions[selectedCategory].forEach(type => {
+                    typeFilter.innerHTML += `<option value="${type}">${type}</option>`;
+                });
+                typeFilter.disabled = false;
+            } else {
+                typeFilter.disabled = true;
+            }
+
+            filterProperties();
+            updateSerialNumbers();
+        });
+
+        // Trigger filtering on type change
+        typeFilter.addEventListener("change", () => {
+            filterProperties();
+            updateSerialNumbers();
+        });
+
+        // Core filtering logic
+        function filterProperties() {
+            const selectedCategory = categoryFilter.value;
+            const selectedType = typeFilter.value;
+            const propertyRows = document.querySelectorAll(".property-row");
+
+            propertyRows.forEach(row => {
+                const rowCategory = row.getAttribute("data-category");
+                const rowType = row.getAttribute("data-type");
+
+                const categoryMatch = (selectedCategory === "all" || rowCategory === selectedCategory);
+                const typeMatch = (selectedType === "all" || rowType === selectedType);
+
+                row.style.display = (categoryMatch && typeMatch) ? "" : "none";
             });
-            typeFilter.disabled = false;
-        } else {
-            typeFilter.disabled = true;
+
+            updateSerialNumbers(); // Recalculate serial numbers after filtering
         }
 
-        filterProperties();
-    });
+        // Function to update S.No column
+        function updateSerialNumbers() {
+            const rows = document.querySelectorAll("#property-table-body .property-row");
+            let count = 1;
+            rows.forEach(row => {
+                if (row.style.display !== "none") {
+                    row.querySelector("td:first-child").textContent = count++;
+                }
+            });
+        }
 
-    // Trigger filtering on type change
-    typeFilter.addEventListener("change", filterProperties);
+        // Delete property via AJAX
+        const deleteButtons = document.querySelectorAll(".delete-property");
+        deleteButtons.forEach(button => {
+            button.addEventListener("click", function() {
+                const propertyId = this.getAttribute("data-id");
+                const confirmed = confirm("Are you sure you want to delete this property?");
+                if (!confirmed) return;
 
-    // Core filtering logic
-    function filterProperties() {
-        const selectedCategory = categoryFilter.value;
-        const selectedType = typeFilter.value;
-
-        propertyRows.forEach(row => {
-            const rowCategory = row.getAttribute("data-category");
-            const rowType = row.getAttribute("data-type");
-
-            const categoryMatch = (selectedCategory === "all" || rowCategory === selectedCategory);
-            const typeMatch = (selectedType === "all" || rowType === selectedType);
-
-            row.style.display = (categoryMatch && typeMatch) ? "" : "none";
+                fetch("delete_property.php", {
+                        method: "POST",
+                        headers: {
+                            "Content-Type": "application/x-www-form-urlencoded"
+                        },
+                        body: "id=" + propertyId
+                    })
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data.success) {
+                            alert(data.message);
+                            // Remove the row
+                            this.closest("tr").remove();
+                            updateSerialNumbers(); // Auto-adjust S.No after deletion
+                        } else {
+                            alert("Error: " + data.message);
+                        }
+                    })
+                    .catch(error => {
+                        alert("Error deleting property.");
+                        console.error("Error:", error);
+                    });
+            });
         });
-    }
-});
+    });
 </script>
