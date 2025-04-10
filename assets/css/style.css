@@ -1265,7 +1265,9 @@ textarea.form-control.is-invalid {
 .mobile-menu-form input {
   height: 40px;
   border: none;
-  background-color: var(--white-color);
+  color: #000 !important;
+  background: linear-gradient(to right, #6b390d, #ffb013);
+
   border-radius: 5px;
   -webkit-box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.09);
           box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.09);
@@ -1906,7 +1908,7 @@ textarea.form-control.is-invalid {
   width: 60px;
   height: 70px;
   background-color: var(--white-color);
-  color: var(--theme-color);
+  color: #000000;
   line-height: 70px;
   text-align: center;
   left: 60px !important;
@@ -4201,11 +4203,14 @@ textarea.form-control.is-invalid {
 }
 
 .main-menu a {
-  display: block;
+  display: block; 
   position: relative;
   font-family: var(--body-font);
   font-weight: 700;
-  color: white;
+  background: linear-gradient(to right, #6b390d, #ffb013);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
   font-size: 18px;
   /* Large devices */
 }

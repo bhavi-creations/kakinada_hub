@@ -1,4 +1,51 @@
+<!-- <div class="color-stripe-bar"></div> -->
+
+
+
+<?php
+include './db.connection/db_connection.php'; // Ensure the database connection is included
+
+// Fetch marquee texts
+$sql = "SELECT text FROM marquee_texts ORDER BY created_at DESC";
+$result = $conn->query($sql);
+
+// Prepare marquee content
+$marquee_texts = [];
+while ($row = $result->fetch_assoc()) {
+    $marquee_texts[] = '<span class="highlight-text">' . htmlspecialchars($row['text']) . '</span>';
+}
+
+// Convert array to string with separators
+$marquee_content = implode(' &nbsp; || &nbsp; ', $marquee_texts);
+?>
+<!-- 
+<section class="marquee-section">
+    <div class="marquee-content">
+        <marquee behavior="scroll" direction="left" class="marquee">
+            <?php echo $marquee_content; ?>
+        </marquee>
+    </div>
+</section> -->
+
 <?php include 'navbar.php';  ?>
+
+
+<section class="black_bg_body">
+    <div class="container text-center">
+        <img src="assets/img/self_images/cyber_mask_man.jpg" class="img-fluid" alt="">
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
 
 
  
@@ -6,244 +53,181 @@
 
 
 
-<div class="container">
-    <div class="row">
-        <div class="col-12">
 
-            <?php include './db.connection/db_connection.php'; ?>
-
-            <!-- Display Success Message -->
-            <?php if (isset($_SESSION['message'])): ?>
-                <div id="alert-box" class="alert alert-<?php echo $_SESSION['msg_type']; ?>">
-                    <?php echo $_SESSION['message']; ?>
-                    <?php unset($_SESSION['message']); ?>
-                </div>
-
-                <script>
-                    setTimeout(function() {
-                        let alertBox = document.getElementById('alert-box');
-                        if (alertBox) {
-                            alertBox.style.display = 'none';
-                        }
-                    }, 3000);
-                </script>
-            <?php endif; ?>
+ 
 
 
 
+
+
+
+<?php
+include './db.connection/db_connection.php'; // Ensure the database connection is included
+
+// Fetch only upper images
+$upperQuery = "SELECT image FROM home_ads WHERE type = 'upper'";
+$upperResult = mysqli_query($conn, $upperQuery);
+
+$upperImages = [];
+while ($row = mysqli_fetch_assoc($upperResult)) {
+    $upperImages[] = $row['image'];
+}
+
+// Fetch only lower images
+$lowerQuery = "SELECT image FROM home_ads WHERE type = 'lower'";
+$lowerResult = mysqli_query($conn, $lowerQuery);
+
+$lowerImages = [];
+while ($row = mysqli_fetch_assoc($lowerResult)) {
+    $lowerImages[] = $row['image'];
+}
+
+// Close connection (optional)
+mysqli_close($conn);
+?>
+
+
+
+
+
+<section   class="d-none">
+    <div class="px-0">
+        <div class="row justify-content-center mx-0">
+            <div class="col-12 px-0">
+                <?php if (!empty($upperImages)): ?>
+                    <div id="upperCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+                        <div class="carousel-inner">
+                            <?php foreach ($upperImages as $index => $image): ?>
+                                <div class="carousel-item <?= ($index === 0) ? 'active' : ''; ?>">
+                                    <img src="./admin/uploads/home_ads/<?= htmlspecialchars($image) ?>" class="d-block w-100 img-fluid" style="object-fit: cover; max-height: 500px;" alt="Upper Image">
+                                </div>
+                            <?php endforeach; ?>
+                        </div>
+
+                        <!-- Navigation buttons -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#upperCarousel" data-bs-slide="prev">
+
+                            <i class="fas fa-arrow-left"></i> <!-- Left arrow icon -->
+
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#upperCarousel" data-bs-slide="next">
+                            <i class="fas fa-arrow-right"></i>
+
+                        </button>
+                    </div>
+                <?php else: ?>
+                    <p class="text-center text-muted">No upper images available.</p>
+                <?php endif; ?>
+            </div>
         </div>
     </div>
-</div>
+</section>
 
 
 
 
 
+<?php
+    include './db.connection/db_connection.php'; // Ensure the database connection is included
 
-<div class="container text-center">
+    // Fetch trending items with type 'upper'
+    $sqlUpper = "SELECT * FROM trending WHERE type = 'upper' ORDER BY created_at DESC";
+    $resultUpper = $conn->query($sqlUpper);
 
-    <!-- Buttons for Larger Screens -->
-    <div class="col-12  ">
-        <div class="mt-5 text-center">
-            <button class="redirect_blog_srivice filter-btn" data-filter="all">All</button>
-            <button class="redirect_blog_srivice filter-btn" data-filter="For Sale">For Sale</button>
-            <button class="redirect_blog_srivice filter-btn" data-filter="For Rent">For Rent</button>
-            <button class="redirect_blog_srivice filter-btn" data-filter="For Lease">For Lease</button>
+    // Fetch trending items with type 'lower'
+    $sqlLower = "SELECT * FROM trending WHERE type = 'lower' ORDER BY created_at DESC";
+    $resultLower = $conn->query($sqlLower);
+?>
+
+<section class="team-section-three space-md-bottom   black_bg_body section_space">
+    <!-- <section class="team-section-three space-md-bottom bg_image_for_shops  "> -->
+
+    <div class="container-style6 bg_color_white">
+        <div class="title-area-three text-center wow fadeInUp shop_heads" data-wow-delay="400ms">
+            <span class="sub-title7">Trending Now</span>
         </div>
-    </div>
+
+        <!-- Upper Type Swiper -->
+        <div class="swiper-container swiper-container-upper team-slider  ">
+            <div class="swiper-wrapper">
+                <?php if ($resultUpper->num_rows > 0): ?>
+                    <?php while ($row = $resultUpper->fetch_assoc()): ?>
+                        <div class="swiper-slide">
+                            <div class="card_border_styles">
+                                <div class="row">
+                                    <div class="col-4">
+                                        <div class="img_border">
+                                            <img src="./admin/uploads/home_trending/<?php echo htmlspecialchars($row['image']); ?>" class="img-fluid" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-8">
+                                        <div class="d-flex">
+                                            <p class="brand_name"><?php echo htmlspecialchars($row['title']); ?></p>
+                                        </div>
+                                        <div class="d-flex">
+                                            <p class="brand_type">
+                                                ⭐<?php echo htmlspecialchars($row['offer']); ?></p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="row mini_card_spacings">
+                                    <p class="brand_special_discount">
+                                        <?php
+                                        $text = htmlspecialchars($row['description']);
+                                        echo (strlen($text) > 60) ? substr($text, 0, 57) . '...' : $text;
+                                        ?>
+                                    </p>
+                                </div>
 
 
-
-
-
-    <script>
-        $(document).ready(function() {
-            function filterProperties(filterValue) {
-                $(".property-item").hide(); // Hide all property items
-
-                if (filterValue === "all") {
-                    $(".property-item").fadeIn(); // Show all properties if "All" is selected
-                } else {
-                    $(".property-item").each(function() {
-                        if ($(this).data("type").trim() === filterValue) {
-                            $(this).fadeIn(); // Show only the matching properties
-                        }
-                    });
-                }
-            }
-
-            // Filter when a button is clicked (for large screens)
-            $(".filter-btn").click(function() {
-                let filterValue = $(this).data("filter");
-                filterProperties(filterValue);
-            });
-
-            // Filter when a dropdown option is selected (for mobile)
-            $(".filter-dropdown").change(function() {
-                let filterValue = $(this).val();
-                filterProperties(filterValue);
-            });
-        });
-    </script>
-
-</div>
-
-
-
-
-
-
-<section>
-    <div class="container">
-
-        <div class="text-center   ">
-            <h1>List Of Properties</h1>
-            <h5>Find Your Residency By One Click</h5>
+                            </div>
+                        </div>
+                    <?php endwhile; ?>
+                <?php else: ?>
+                    <p>No upper trending items found.</p>
+                <?php endif; ?>
+            </div>
         </div>
-        <div class="row">
 
-            <div class="col-lg-9 col-12 ">
-                <div class="row    fadeIn" data-wow-delay="0.3s">
-
-
-                    <section class="OfferContainer_exclusive__non wow fadeInUp my-2" data-wow-delay="100ms">
-
-
-                        <div class="row" id="property-list">
-                            <?php
-                            $query = "SELECT * FROM properties ORDER BY id DESC";
-                            $result = mysqli_query($conn, $query);
-                            while ($row = mysqli_fetch_assoc($result)):
-                                $propertyType = trim($row['type']);
-                            ?>
-                                <div class="col-12 card_div px-3 property-item" data-type="<?php echo $propertyType; ?>">
-                                    <div class="row py-3">
-                                        <div class="col-12 col-md-3 job_image_card">
-                                            <img src="./admin/uploads/properties/<?php echo $row['image']; ?>" class="img-fluid company_logo_size" alt="Property Image">
+        <!-- Lower Type Swiper -->
+        <div class="swiper-container swiper-container-lower team-slider">
+            <div class="swiper-wrapper">
+                <?php if ($resultLower->num_rows > 0): ?>
+                    <?php while ($row = $resultLower->fetch_assoc()): ?>
+                        <div class="swiper-slide">
+                            <div class="card_border_styles">
+                                <div class="row">
+                                    <div class="col-4">
+                                        <div class="img_border">
+                                            <img src="./admin/uploads/home_trending/<?php echo htmlspecialchars($row['image']); ?>" class="img-fluid" alt="">
                                         </div>
-                                        <div class="col-8 col-md-9">
-                                            <h4><?php echo $row['title']; ?></h4>
-                                            <p class="property_p_tag">
-                                                <strong class="property_strong">Price:</strong>
-                                                <?php
-                                                // Check if the price is available and apply number formatting, otherwise show 'Not Provided'
-                                                $price = isset($row['price']) ? $row['price'] : null;
-                                                echo $price ? '₹' . number_format($price) : 'Not Provided';
-                                                ?>
-                                            </p>
-
-                                            <p class="property_p_tag"><strong class="property_strong">Location:</strong> <?php echo $row['location']; ?></p>
-                                            <p class="property_p_tag">
-                                                <strong class="property_strong">Posted On:</strong>
-                                                <?php echo isset($row['created_at']) ? date('d M Y', strtotime($row['created_at'])) : 'Not Available'; ?>
-                                            </p>
-
-
-                                            <p class="rent_tag <?php echo strtolower(str_replace(' ', '-', $propertyType)); ?>">
-                                                <?php echo $propertyType; ?>
-                                            </p>
-
-
-
+                                    </div>
+                                    <div class="col-8">
+                                        <div class="d-flex">
+                                            <p class="brand_name"><?php echo htmlspecialchars($row['title']); ?></p>
                                         </div>
-                                        <div class="col-12 terms_cond_styles">
-                                            <div class="terms_justify">
-                                                <p><a href="property_details.php?id=<?php echo $row['id']; ?>" class=" ">View Full Details</a></p>
-                                            </div>
-                                            <!-- <div class="terms-content mb-3" style="display: none;">
-                                                <h4>Addtional Details</h4>
-                                                <p class="property_p_tag"><strong class="property_strong">Phone:</strong> <?php echo $row['phone'] ?: 'Not Available'; ?></p>
-                                                <p class="property_p_tag"><strong class="property_strong">Description:</strong> <?php echo nl2br($row['description']); ?></p>
-                                                <a href="property_details.php?id=<?php echo $row['id']; ?>" class="btn btn-primary">View Full Details</a>
-                                            </div> -->
+                                        <div class="d-flex">
+                                            <p class="brand_type">⭐ <?php echo htmlspecialchars($row['offer']); ?></p>
                                         </div>
                                     </div>
                                 </div>
-                            <?php endwhile; ?>
+                                <div class="row mini_card_spacings">
+                                    <p class="brand_special_discount">
+                                        <?php
+                                        $text = htmlspecialchars($row['description']);
+                                        echo (strlen($text) > 60) ? substr($text, 0, 57) . '...' : $text;
+                                        ?>
+                                    </p>
+                                </div>
+
+                            </div>
                         </div>
-
-
-                    </section>
-
-
-                    <script>
-                        document.querySelectorAll('.filter-btn').forEach(button => {
-                            button.addEventListener('click', function() {
-                                let filter = this.getAttribute('data-filter');
-                                document.querySelectorAll('.property-item').forEach(item => {
-                                    if (filter === 'all' || item.getAttribute('data-type') === filter) {
-                                        item.style.display = 'block';
-                                    } else {
-                                        item.style.display = 'none';
-                                    }
-                                });
-                            });
-                        });
-                    </script>
-
-
-                    <script>
-                        document.addEventListener("DOMContentLoaded", function() {
-                            document.querySelectorAll(".toggle-terms").forEach(function(link) {
-                                link.addEventListener("click", function(event) {
-                                    event.preventDefault(); // Prevent default anchor behavior
-
-                                    var parentDiv = this.closest(".col-12");
-                                    var termsDiv = parentDiv.querySelector(".terms-content");
-                                    var separator = parentDiv.querySelector(".terms-separator");
-
-                                    // Toggle visibility
-                                    if (termsDiv.style.display === "none" || termsDiv.style.display === "") {
-                                        termsDiv.style.display = "block";
-                                        separator.style.display = "block"; // Show the separator
-                                    } else {
-                                        termsDiv.style.display = "none";
-                                        separator.style.display = "none"; // Hide the separator
-                                    }
-                                });
-                            });
-                        });
-                    </script>
-
-
-
-                </div>
-
+                    <?php endwhile; ?>
+                <?php else: ?>
+                    <p>No lower trending items found.</p>
+                <?php endif; ?>
             </div>
-
-            <div class="col-lg-3  col-12 text_side_div d-none d-lg-block">
-
-                <img src="assets/img/test/sideimg2.png" alt="" class="img-fluid">
-
-                <img src="assets/img/test/animation.gif" alt="Animated GIF" class="mt-5">
-
-                <img src="assets/img/test/sideimg1.png" alt="" class="img-fluid mt-5">
-            </div>
-
-            <div id="mobileModal" class="mobile-modal-overlay">
-                <div class="mobile-modal-content">
-                    <button class="close-btn" onclick="closeMobileModal()">×</button>
-                    <div class="col-12 text_side_div">
-                        <img src="assets/img/test/sideimg2.png" alt="" class="img-fluid">
-
-                    </div>
-                </div>
-            </div>
-
-            <script>
-                function closeMobileModal() {
-                    document.getElementById("mobileModal").style.display = "none";
-                }
-
-                document.addEventListener("DOMContentLoaded", function() {
-                    if (window.innerWidth <= 991) {
-                        document.getElementById("mobileModal").style.display = "flex";
-                    }
-                });
-            </script>
-
-
-
         </div>
 
     </div>
@@ -252,58 +236,255 @@
 
 
 
-<script>
-    let currentSlide = 0;
+<?php
+    include './db.connection/db_connection.php'; // Ensure the database connection is included
 
-    function slideImages() {
-        const slides = document.querySelectorAll('.custom-slide');
-        slides[currentSlide].classList.remove('active');
-        currentSlide = (currentSlide + 1) % slides.length;
-        slides[currentSlide].classList.add('active');
-    }
-    setInterval(slideImages, 3000); // Auto-slide every 3 seconds
+    // Fetch offers items with type 'upper'
+    $sqlUpper = "SELECT * FROM offers WHERE type = 'upper' ORDER BY created_at DESC";
+    $resultUpper = $conn->query($sqlUpper);
+
+    // Fetch offers items with type 'lower'
+    $sqlLower = "SELECT * FROM offers WHERE type = 'lower' ORDER BY created_at DESC";
+    $resultLower = $conn->query($sqlLower);
+?>
+
+<section class="team-section-three space-md-bottom   black_bg_body">
+    <!-- <section class="team-section-three space-md-bottom bg_image_for_shops  "> -->
+
+    <div class="container-style6 bg_color_white">
+        <div class="title-area-three text-center wow fadeInUp" data-wow-delay="400ms">
+            <span class="sub-title7">Offers </span>
+        </div>
+
+        <!-- Upper Type Swiper -->
+        <div class="swiper-container swiper-container-upper team-slider  ">
+            <div class="swiper-wrapper">
+                <?php if ($resultUpper->num_rows > 0): ?>
+                    <?php while ($row = $resultUpper->fetch_assoc()): ?>
+                        <div class="swiper-slide">
+                            <div class="card_border_styles">
+                                <div class="row">
+                                    <div class="col-4">
+                                        <div class="img_border">
+                                            <img src="./admin/uploads/home_offers/<?php echo htmlspecialchars($row['image']); ?>" class="img-fluid" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-8">
+                                        <div class="d-flex">
+                                            <p class="brand_name"><?php echo htmlspecialchars($row['title']); ?></p>
+                                        </div>
+                                        <div class="d-flex">
+                                            <p class="brand_type">⭐ <?php echo htmlspecialchars($row['offer']); ?></p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="row mini_card_spacings">
+                                    <p class="brand_special_discount">
+                                        <?php
+                                        $text = htmlspecialchars($row['description']);
+                                        echo (strlen($text) > 60) ? substr($text, 0, 57) . '...' : $text;
+                                        ?>
+                                    </p>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    <?php endwhile; ?>
+                <?php else: ?>
+                    <p>No upper offers items found.</p>
+                <?php endif; ?>
+            </div>
+        </div>
+
+        <!-- Lower Type Swiper -->
+        <div class="swiper-container swiper-container-lower team-slider">
+            <div class="swiper-wrapper">
+                <?php if ($resultLower->num_rows > 0): ?>
+                    <?php while ($row = $resultLower->fetch_assoc()): ?>
+                        <div class="swiper-slide">
+                            <div class="card_border_styles">
+                                <div class="row">
+                                    <div class="col-4">
+                                        <div class="img_border">
+                                            <img src="./admin/uploads/home_offers/<?php echo htmlspecialchars($row['image']); ?>" class="img-fluid" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-8">
+                                        <div class="d-flex">
+                                            <p class="brand_name"><?php echo htmlspecialchars($row['title']); ?></p>
+                                        </div>
+                                        <div class="d-flex">
+                                            <p class="brand_type">⭐ <?php echo htmlspecialchars($row['offer']); ?></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mini_card_spacings">
+                                    <p class="brand_special_discount">
+                                        <?php
+                                        $text = htmlspecialchars($row['description']);
+                                        echo (strlen($text) > 60) ? substr($text, 0, 57) . '...' : $text;
+                                        ?>
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+                    <?php endwhile; ?>
+                <?php else: ?>
+                    <p>No lower Offers items found.</p>
+                <?php endif; ?>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+
+
+
+
+
+<section class="vs-hero-wrapper position-relative slider-area   black_bg_body">
+        <div class="bg-overlay "></div>
+        <div class="vs-hero-carousel  " data-navprevnext="true" data-height="800" data-container="1900" data-slidertype="responsive">
+
+
+            <div class="ls-slide" data-ls="duration: 13000; transition2d: 5;">
+                <h1 class="slider_main_text ls-l ls-responsive" data-ls-mobile="left: 100px; top: 230px;" data-ls-tablet="left: 100px; top: 230px;" data-ls-laptop="left: 100px; top: 180px;" style="left: 300px; top: 270px; font-size: 72px; font-weight: 700;" data-ls="delayin: 600; easingin: easeInOutSine; texttransitionin: true; textstartatin: transitioninstart; textdurationin: 2000; texttypein: words_asc; textshiftin: 200; textoffsetyin: -100; offsetyout: -100; durationout: 2000; ">We always put the</h1>
+                <h1 class="slider_main_text ls-l ls-responsive" data-ls-mobile="left: 100px; top: 340px;" data-ls-tablet="left: 100px; top: 340px;" data-ls-laptop="left: 100px; top: 270px;" style="left: 300px; top: 352px; font-size: 72px; font-weight: 700;" data-ls="delayin: 0; easingin: easeInOutSine; texttransitionin: true; textstartatin: transitioninstart; textdurationin: 2000; texttypein: words_asc; textshiftin: 200; textoffsetyin: -100; offsetyout: -100; durationout: 2000; ">patients first</h1>
+                <p class="ls-l ls-responsive slider_main_text ls-hide-md" data-ls-mobile="left: 100px; top: 400px;" data-ls-tablet="left: 100px; top: 400px;" data-ls-laptop="left: 100px; top: 400px; width: 805px; font-size: 24px; line-height: 42px;" style="left: 300px; top: 464px; width: 605px; font-size: 16px; font-weight: 400; white-space: normal; letter-spacing: 0.02em; line-height: 28px;" data-ls="delayin: 800; texttransitionin: true; textstartatin: transitioninstart; texttypein: lines_asc; textshiftin: 100; textoffsetyin: 100; textdurationin: 2000; offsetyout: 100; durationout: 2000; ">Conveniently drive go forward architectures with future-proof growth strategies. Energistically supply low-risk high-yield process improvements for mission-critical testing procedures</p>
+
+
+                <div class="ls-btn ls-l ls-hide-md" style="top: 50%; left: 75%;">
+                    <img src="assets/img/self_images/sample (1).png" class="img-fluid" alt="">
+                </div>
+
+                <div class="ls-btn ls-l ls-responsive " data-ls-mobile="left: 100px; top: 500px;" data-ls-tablet="left: 100px; top: 500px;" data-ls-laptop="left: 100px;" style="left: 300px; top: 582px;" data-ls="offsetyin: 200; durationin: 2000; delayin: 1400; offsetyout: 300; durationout: 2000; durationout: 2000; ">
+                    <a href="service.html" class="vs-btn style2">View All Services<i class="fas fa-bolt"></i></a>
+                </div>
+            </div>
+            <div class="ls-slide" data-ls="duration: 13000; transition2d: 5;">
+                <h1 class="slider_main_text ls-l ls-responsive" data-ls-mobile="left: 100px; top: 230px;" data-ls-tablet="left: 100px; top: 230px;" data-ls-laptop="left: 100px; top: 180px;" style="left: 300px; top: 270px; font-size: 72px; font-weight: 700;" data-ls="delayin: 600; easingin: easeInOutSine; texttransitionin: true; textstartatin: transitioninstart; textdurationin: 2000; texttypein: words_asc; textshiftin: 200; textoffsetyin: -100; offsetyout: -100; durationout: 2000; ">We always put the</h1>
+                <h1 class="slider_main_text ls-l ls-responsive" data-ls-mobile="left: 100px; top: 340px;" data-ls-tablet="left: 100px; top: 340px;" data-ls-laptop="left: 100px; top: 270px;" style="left: 300px; top: 352px; font-size: 72px; font-weight: 700;" data-ls="delayin: 0; easingin: easeInOutSine; texttransitionin: true; textstartatin: transitioninstart; textdurationin: 2000; texttypein: words_asc; textshiftin: 200; textoffsetyin: -100; offsetyout: -100; durationout: 2000; ">patients first</h1>
+                <p class="ls-l ls-responsive slider_main_text ls-hide-md" data-ls-mobile="left: 100px; top: 400px;" data-ls-tablet="left: 100px; top: 400px;" data-ls-laptop="left: 100px; top: 400px; width: 805px; font-size: 24px; line-height: 42px;" style="left: 300px; top: 464px; width: 605px; font-size: 16px; font-weight: 400; white-space: normal; letter-spacing: 0.02em; line-height: 28px;" data-ls="delayin: 800; texttransitionin: true; textstartatin: transitioninstart; texttypein: lines_asc; textshiftin: 100; textoffsetyin: 100; textdurationin: 2000; offsetyout: 100; durationout: 2000; ">Conveniently drive go forward architectures with future-proof growth strategies. Energistically supply low-risk high-yield process improvements for mission-critical testing procedures</p>
+
+
+                <div class="ls-btn ls-l ls-hide-md" style="top: 50%; left: 75%;">
+                    <img src="assets/img/self_images/sample (2).png" class="img-fluid" alt="">
+                </div>
+
+                <div class="ls-btn ls-l ls-responsive " data-ls-mobile="left: 100px; top: 500px;" data-ls-tablet="left: 100px; top: 500px;" data-ls-laptop="left: 100px;" style="left: 300px; top: 582px;" data-ls="offsetyin: 200; durationin: 2000; delayin: 1400; offsetyout: 300; durationout: 2000; durationout: 2000; ">
+                    <a href="service.html" class="vs-btn style2">View All Services<i class="fas fa-bolt"></i></a>
+                </div>
+            </div>
+            <div class="ls-slide" data-ls="duration: 13000; transition2d: 5;">
+                <h1 class="slider_main_text ls-l ls-responsive" data-ls-mobile="left: 100px; top: 230px;" data-ls-tablet="left: 100px; top: 230px;" data-ls-laptop="left: 100px; top: 180px;" style="left: 300px; top: 270px; font-size: 72px; font-weight: 700;" data-ls="delayin: 600; easingin: easeInOutSine; texttransitionin: true; textstartatin: transitioninstart; textdurationin: 2000; texttypein: words_asc; textshiftin: 200; textoffsetyin: -100; offsetyout: -100; durationout: 2000; ">We always put the</h1>
+                <h1 class="slider_main_text ls-l ls-responsive" data-ls-mobile="left: 100px; top: 340px;" data-ls-tablet="left: 100px; top: 340px;" data-ls-laptop="left: 100px; top: 270px;" style="left: 300px; top: 352px; font-size: 72px; font-weight: 700;" data-ls="delayin: 0; easingin: easeInOutSine; texttransitionin: true; textstartatin: transitioninstart; textdurationin: 2000; texttypein: words_asc; textshiftin: 200; textoffsetyin: -100; offsetyout: -100; durationout: 2000; ">patients first</h1>
+                <p class="ls-l ls-responsive slider_main_text ls-hide-md" data-ls-mobile="left: 100px; top: 400px;" data-ls-tablet="left: 100px; top: 400px;" data-ls-laptop="left: 100px; top: 400px; width: 805px; font-size: 24px; line-height: 42px;" style="left: 300px; top: 464px; width: 605px; font-size: 16px; font-weight: 400; white-space: normal; letter-spacing: 0.02em; line-height: 28px;" data-ls="delayin: 800; texttransitionin: true; textstartatin: transitioninstart; texttypein: lines_asc; textshiftin: 100; textoffsetyin: 100; textdurationin: 2000; offsetyout: 100; durationout: 2000; ">Conveniently drive go forward architectures with future-proof growth strategies. Energistically supply low-risk high-yield process improvements for mission-critical testing procedures</p>
+
+
+                <div class="ls-btn ls-l ls-hide-md" style="top: 50%; left: 75%;">
+                    <img src="assets/img/self_images/sample (3).png" class="img-fluid" alt="">
+                </div>
+
+                <div class="ls-btn ls-l ls-responsive " data-ls-mobile="left: 100px; top: 500px;" data-ls-tablet="left: 100px; top: 500px;" data-ls-laptop="left: 100px;" style="left: 300px; top: 582px;" data-ls="offsetyin: 200; durationin: 2000; delayin: 1400; offsetyout: 300; durationout: 2000; durationout: 2000; ">
+                    <a href="service.html" class="vs-btn style2">View All Services<i class="fas fa-bolt"></i></a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+<section class="black_bg_body d-none">
+    <div class="px-0">
+        <div class="row justify-content-center mx-0">
+            <div class="col-12 px-0">
+                <?php if (!empty($lowerImages)): ?>
+                    <div id="lowerCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+                        <div class="carousel-inner">
+                            <?php foreach ($lowerImages as $index => $image): ?>
+                                <div class="carousel-item <?= ($index === 0) ? 'active' : ''; ?>">
+                                    <img src="./admin/uploads/home_ads/<?= htmlspecialchars($image) ?>"
+                                        class="d-block w-100 img-fluid"
+                                        style="object-fit: cover; max-height: 500px;"
+                                        alt="Lower Image">
+                                </div>
+                            <?php endforeach; ?>
+                        </div>
+
+                        <!-- Navigation buttons -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#lowerCarousel" data-bs-slide="prev">
+                            <i class="fas fa-arrow-left"></i> <!-- Left arrow icon -->
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#lowerCarousel" data-bs-slide="next">
+                            <i class="fas fa-arrow-right"></i> <!-- Right arrow icon -->
+                        </button>
+                    </div>
+                <?php else: ?>
+                    <p class="text-center text-muted">No lower images available.</p>
+                <?php endif; ?>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<script>
+    var swiper = new Swiper(".team-slider", {
+        slidesPerView: 3, // Show 3 slides at a time
+        spaceBetween: 20, // Adjust spacing between slides
+        loop: true, // Enables infinite scrolling
+        autoplay: {
+            delay: 3000, // Auto-slide every 3 seconds
+            disableOnInteraction: false,
+        },
+
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        breakpoints: {
+            1024: {
+                slidesPerView: 4
+            },
+            768: {
+                slidesPerView: 3
+            },
+            0: {
+                slidesPerView: 1
+            }
+        }
+    });
 </script>
 
-<script>
-    function toggleText(element) {
-        let hiddenText = element.previousElementSibling.querySelector(".hidden-text");
-        if (hiddenText.style.display === "none" || hiddenText.style.display === "") {
-            hiddenText.style.display = "inline";
-            element.innerText = "Read Less";
-        } else {
-            hiddenText.style.display = "none";
-            element.innerText = "Read More";
-        }
-    }
 
-    function toggleImages(element) {
-        let imagesDiv = element.nextElementSibling;
-        if (imagesDiv.style.display === "none" || imagesDiv.style.display === "") {
-            imagesDiv.style.display = "flex";
-            element.innerText = "Hide Images";
-        } else {
-            imagesDiv.style.display = "none";
-            element.innerText = "View Images";
-        }
-    }
 
-    function openLightbox(image) {
-        let lightbox = document.getElementById("lightbox");
-        let lightboxImg = document.getElementById("lightbox-img");
-        lightboxImg.src = image.src;
-        lightbox.style.display = "flex";
-    }
 
-    function closeLightbox() {
-        document.getElementById("lightbox").style.display = "none";
-    }
-</script>
+
+
+
+
+
 
 
 
 
 
 <?php include 'chat_bot.php';  ?>
+
+
 
 
 <?php include 'footer.php';  ?>

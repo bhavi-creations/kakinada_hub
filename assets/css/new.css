@@ -597,10 +597,10 @@
   # Global Sections
   --------------------------------------------------------------*/
  section,
- .section {
+   .section {
    color: var(--default-color);
    background-color: var(--background-color);
-   padding: 40px 0;
+   /* padding: 40px 0; */
    scroll-margin-top: 90px;
    overflow: clip;
  }
@@ -2124,7 +2124,7 @@
  }
 
  .header-main {
-   background-color: #7D1C4A;
+   background-color: #000000;
  }
 
 
@@ -3176,7 +3176,7 @@
  }
 
  .marquee-content {
-   font-size: 25px;
+   font-size: 20px;
    font-weight: bold;
    font-family: 'Arial', sans-serif;
    /* Change to any font you prefer */
@@ -3196,7 +3196,7 @@
 
 
  .footer_bg_last {
-   background-color: #7d1c4a;
+   background-color: #000000;
  }
 
 
@@ -3496,4 +3496,107 @@
 .scrollable-list {
   scrollbar-width: thin;
   scrollbar-color: #7D1C4A #f1f1f1;
+}
+
+
+
+
+
+.vs-hero-wrappera .bg-overlay {
+  background-color: #f71c52;
+  width: 89%;
+  left: 0;
+}
+
+.bg-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+.slider-area .bg-overlay {
+  background-color: #f71c52;
+  width: 89%;
+  left: 0;
+}
+ 
+.slider-area .slider-detail .slider-slide .slider-inner-content .slide-heading {
+  color: #FFFFFF;
+  font-family: Oswald, sans-serif;
+  font-size: 60px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}.slider-area .container .inner-bg-overlay {
+  background-color: #f71c52;
+  position: absolute;
+  width: 50%;
+  left: 0;
+  right: 12%;
+  bottom: 0;
+  top: 0;
+}.slider-area .container {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.position-relative {
+  position: relative;
+}
+.position-relative {
+  position: relative !important;
+}
+ 
+
+.slider_main_text{
+color: white;
+}
+
+
+.color-stripe-bar {
+  height: 10px;
+  width: 100%;  
+  background-image:  linear-gradient(
+      10deg, 
+      #ffffff 50%, 
+   
+      #f71c52 50%
+  );
+}
+
+
+.black_bg_body{
+  background-color: black;
+}
+
+
+/* .logo_title_color{
+  color: white;
+  font-weight: bold;
+} */
+.logo_title_color {
+  background: linear-gradient(to right, #6b390d, #ffb013);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+
+  font-weight: bold;
+}
+.has-new-label {
+  background: linear-gradient(to right, #6b390d, #ffb013);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.section_space{
+  padding-top: 40px;
+}
+
+.search_icon{
+ color: #888888;
+}
+
+.mobile-menu-form input::placeholder {
+  color: #888888; /* Replace with your desired color */
+  opacity: 1; /* Ensures full visibility */
 }

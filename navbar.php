@@ -240,8 +240,12 @@
                     <div class="container container-style1 position-relative">
                         <div class="row align-items-center justify-content-between">
                             <div class="col-auto">
-                                <div class="header1-logo py-2">
-                                    <a href="index.php"><img src="assets/img/self_images/kkd_mini.png" class="  img-fluid  " alt="Logo"></a>
+                                <div class="header1-logo  ">
+                                    <a href="index.php" class="text-center">
+                                        <h2 class="logo_title_color">KAKINADA   Hub</h2>
+                                        
+                                        <!-- <img src="assets/img/self_images/kkd_mini.png" class="  img-fluid  " alt="Logo"> -->
+                                    </a>
                                 </div>
                             </div>
 
@@ -255,15 +259,15 @@
 
 
                                         <li class="menu-item-has-children mega-menu-wrap">
-                                            <a href="services.php"><span class="has-new-label">Services<span class="new-label">New</span></span></a>
+                                            <a href="services.php"><span class="has-new-label">Services </span></a>
                                             <ul class="mega-menu dropdown-menu-mega">
                                                 <div class="mega-menu-row row  ">
                                                     <div class="col-3 movies_bg my-2">
 
 
                                                         <li><a class="sub_heading" href="#"> Movies</a>
-                                                            <ul  >
-                                                           
+                                                            <ul>
+
                                                                 <?php
                                                                 include './db.connection/db_connection.php';
 
@@ -323,7 +327,7 @@
                                                     </div>
                                                     <div class="col-3 gifts_bg my-2">
                                                         <li><a class="sub_heading" href="business_layout.php"> Gifts & Jewellery</a>
-                                                        <ul   >
+                                                            <ul>
 
                                                                 <li><a class="sub_mini_serices" href="sweets_chocolate.php"> Sweets & Chocolates </a></li>
                                                                 <li><a class="sub_mini_serices" href="sweets_chocolate.php"> Gifts & Collectables </a></li>
@@ -444,7 +448,6 @@
                                     <input type="text" class="form-control" placeholder="Search...">
                                     <button type="submit"><i class="search_icon  fas fa-search"></i></button>
                                 </form>
-
                             </div>
 
 
@@ -460,7 +463,7 @@
 
 
 
-    <section id="adSection">
+    <!-- <section id="adSection">
         <div class="sticky-ad" id="stickyAd">
             <div class="ad-container">
                 <button class="close-ad" onclick="closeAd()">✖</button>
@@ -484,4 +487,4 @@
         function closeAd() {
             document.getElementById("adSection").style.display = "none";
         }
-    </script>  
+    </script>   -->
