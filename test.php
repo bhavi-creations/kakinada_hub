@@ -30,9 +30,70 @@ $marquee_content = implode(' &nbsp; || &nbsp; ', $marquee_texts);
 <?php include 'navbar.php';  ?>
 
 
-<section class="black_bg_body">
+<section class="black_bg_body ">
     <div class="container text-center">
-        <img src="assets/img/self_images/cyber_mask_man.jpg" class="img-fluid" alt="">
+        <div class="d-flex justify-content-between align-items-center equal-divs">
+
+
+            <div class="first_side_div_image">
+
+                <h6 class="white_coor_text">
+                    <li>ART AND DESIGN </li>
+                </h6>
+                <p class="white_coor_text">Explore the high tech, low-life world where the lines between </p>
+
+            </div>
+            <div class="center_side_div_image">
+
+                <img src="assets/img/self_images/cyber_mask_man.jpg" class="img-fluid" alt="">
+            </div>
+
+            <div class="last_side_div_image">
+
+                <h2 class="white_coor_text">ART AND DESIGN</h2>
+                <p class="white_coor_text">Explore the high tech, low-life world where the lines between low-life world where the lines between </p>
+                <button class="gradient_color_btn"> Read More</button>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="row">
+
+
+            <div class="col-5  gradient-border-wrapper ">
+                <div class="row  border_styles_home">
+                    <div class="col-4">
+                        <img src="assets/img/self_images/mini_mask_man.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-8 inner_div_index">
+                        <h1 class="logo_title_color">76,285K+</h1>
+                        <h4 class="white_coor_text">Exeriene the Future</h4>
+                        <p class="white_coor_text"> Explore the high tech, low-life world where the lines between </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-5  art_and_design">
+                <h2 class="white_coor_text">ART AND DESIGN</h2>
+                <p class="white_coor_text">Explore the high tech, low-life world where the lines between </p>
+
+            </div>
+            <div class="col-2  gradient-border-wrapper-last ">
+                <div class="row  ">
+                    <div class="border_styles_home_last">
+
+
+                        <h1 class="logo_title_color">17+</h1>
+                        <h5 class="white_coor_text">Years of Experience</h5>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </div>
 </section>
 
@@ -48,13 +109,13 @@ $marquee_content = implode(' &nbsp; || &nbsp; ', $marquee_texts);
 
 
 
- 
 
 
 
 
 
- 
+
+
 
 
 
@@ -90,7 +151,7 @@ mysqli_close($conn);
 
 
 
-<section   class="d-none">
+<section class="d-none">
     <div class="px-0">
         <div class="row justify-content-center mx-0">
             <div class="col-12 px-0">
@@ -128,15 +189,15 @@ mysqli_close($conn);
 
 
 <?php
-    include './db.connection/db_connection.php'; // Ensure the database connection is included
+include './db.connection/db_connection.php'; // Ensure the database connection is included
 
-    // Fetch trending items with type 'upper'
-    $sqlUpper = "SELECT * FROM trending WHERE type = 'upper' ORDER BY created_at DESC";
-    $resultUpper = $conn->query($sqlUpper);
+// Fetch trending items with type 'upper'
+$sqlUpper = "SELECT * FROM trending WHERE type = 'upper' ORDER BY created_at DESC";
+$resultUpper = $conn->query($sqlUpper);
 
-    // Fetch trending items with type 'lower'
-    $sqlLower = "SELECT * FROM trending WHERE type = 'lower' ORDER BY created_at DESC";
-    $resultLower = $conn->query($sqlLower);
+// Fetch trending items with type 'lower'
+$sqlLower = "SELECT * FROM trending WHERE type = 'lower' ORDER BY created_at DESC";
+$resultLower = $conn->query($sqlLower);
 ?>
 
 <section class="team-section-three space-md-bottom   black_bg_body section_space">
@@ -237,15 +298,15 @@ mysqli_close($conn);
 
 
 <?php
-    include './db.connection/db_connection.php'; // Ensure the database connection is included
+include './db.connection/db_connection.php'; // Ensure the database connection is included
 
-    // Fetch offers items with type 'upper'
-    $sqlUpper = "SELECT * FROM offers WHERE type = 'upper' ORDER BY created_at DESC";
-    $resultUpper = $conn->query($sqlUpper);
+// Fetch offers items with type 'upper'
+$sqlUpper = "SELECT * FROM offers WHERE type = 'upper' ORDER BY created_at DESC";
+$resultUpper = $conn->query($sqlUpper);
 
-    // Fetch offers items with type 'lower'
-    $sqlLower = "SELECT * FROM offers WHERE type = 'lower' ORDER BY created_at DESC";
-    $resultLower = $conn->query($sqlLower);
+// Fetch offers items with type 'lower'
+$sqlLower = "SELECT * FROM offers WHERE type = 'lower' ORDER BY created_at DESC";
+$resultLower = $conn->query($sqlLower);
 ?>
 
 <section class="team-section-three space-md-bottom   black_bg_body">
@@ -348,55 +409,55 @@ mysqli_close($conn);
 
 
 <section class="vs-hero-wrapper position-relative slider-area   black_bg_body">
-        <div class="bg-overlay "></div>
-        <div class="vs-hero-carousel  " data-navprevnext="true" data-height="800" data-container="1900" data-slidertype="responsive">
+    <div class="bg-overlay "></div>
+    <div class="vs-hero-carousel  " data-navprevnext="true" data-height="800" data-container="1900" data-slidertype="responsive">
 
 
-            <div class="ls-slide" data-ls="duration: 13000; transition2d: 5;">
-                <h1 class="slider_main_text ls-l ls-responsive" data-ls-mobile="left: 100px; top: 230px;" data-ls-tablet="left: 100px; top: 230px;" data-ls-laptop="left: 100px; top: 180px;" style="left: 300px; top: 270px; font-size: 72px; font-weight: 700;" data-ls="delayin: 600; easingin: easeInOutSine; texttransitionin: true; textstartatin: transitioninstart; textdurationin: 2000; texttypein: words_asc; textshiftin: 200; textoffsetyin: -100; offsetyout: -100; durationout: 2000; ">We always put the</h1>
-                <h1 class="slider_main_text ls-l ls-responsive" data-ls-mobile="left: 100px; top: 340px;" data-ls-tablet="left: 100px; top: 340px;" data-ls-laptop="left: 100px; top: 270px;" style="left: 300px; top: 352px; font-size: 72px; font-weight: 700;" data-ls="delayin: 0; easingin: easeInOutSine; texttransitionin: true; textstartatin: transitioninstart; textdurationin: 2000; texttypein: words_asc; textshiftin: 200; textoffsetyin: -100; offsetyout: -100; durationout: 2000; ">patients first</h1>
-                <p class="ls-l ls-responsive slider_main_text ls-hide-md" data-ls-mobile="left: 100px; top: 400px;" data-ls-tablet="left: 100px; top: 400px;" data-ls-laptop="left: 100px; top: 400px; width: 805px; font-size: 24px; line-height: 42px;" style="left: 300px; top: 464px; width: 605px; font-size: 16px; font-weight: 400; white-space: normal; letter-spacing: 0.02em; line-height: 28px;" data-ls="delayin: 800; texttransitionin: true; textstartatin: transitioninstart; texttypein: lines_asc; textshiftin: 100; textoffsetyin: 100; textdurationin: 2000; offsetyout: 100; durationout: 2000; ">Conveniently drive go forward architectures with future-proof growth strategies. Energistically supply low-risk high-yield process improvements for mission-critical testing procedures</p>
+        <div class="ls-slide" data-ls="duration: 13000; transition2d: 5;">
+            <h1 class="slider_main_text ls-l ls-responsive" data-ls-mobile="left: 100px; top: 230px;" data-ls-tablet="left: 100px; top: 230px;" data-ls-laptop="left: 100px; top: 180px;" style="left: 300px; top: 270px; font-size: 72px; font-weight: 700;" data-ls="delayin: 600; easingin: easeInOutSine; texttransitionin: true; textstartatin: transitioninstart; textdurationin: 2000; texttypein: words_asc; textshiftin: 200; textoffsetyin: -100; offsetyout: -100; durationout: 2000; ">We always put the</h1>
+            <h1 class="slider_main_text ls-l ls-responsive" data-ls-mobile="left: 100px; top: 340px;" data-ls-tablet="left: 100px; top: 340px;" data-ls-laptop="left: 100px; top: 270px;" style="left: 300px; top: 352px; font-size: 72px; font-weight: 700;" data-ls="delayin: 0; easingin: easeInOutSine; texttransitionin: true; textstartatin: transitioninstart; textdurationin: 2000; texttypein: words_asc; textshiftin: 200; textoffsetyin: -100; offsetyout: -100; durationout: 2000; ">patients first</h1>
+            <p class="ls-l ls-responsive slider_main_text ls-hide-md" data-ls-mobile="left: 100px; top: 400px;" data-ls-tablet="left: 100px; top: 400px;" data-ls-laptop="left: 100px; top: 400px; width: 805px; font-size: 24px; line-height: 42px;" style="left: 300px; top: 464px; width: 605px; font-size: 16px; font-weight: 400; white-space: normal; letter-spacing: 0.02em; line-height: 28px;" data-ls="delayin: 800; texttransitionin: true; textstartatin: transitioninstart; texttypein: lines_asc; textshiftin: 100; textoffsetyin: 100; textdurationin: 2000; offsetyout: 100; durationout: 2000; ">Conveniently drive go forward architectures with future-proof growth strategies. Energistically supply low-risk high-yield process improvements for mission-critical testing procedures</p>
 
 
-                <div class="ls-btn ls-l ls-hide-md" style="top: 50%; left: 75%;">
-                    <img src="assets/img/self_images/sample (1).png" class="img-fluid" alt="">
-                </div>
-
-                <div class="ls-btn ls-l ls-responsive " data-ls-mobile="left: 100px; top: 500px;" data-ls-tablet="left: 100px; top: 500px;" data-ls-laptop="left: 100px;" style="left: 300px; top: 582px;" data-ls="offsetyin: 200; durationin: 2000; delayin: 1400; offsetyout: 300; durationout: 2000; durationout: 2000; ">
-                    <a href="service.html" class="vs-btn style2">View All Services<i class="fas fa-bolt"></i></a>
-                </div>
-            </div>
-            <div class="ls-slide" data-ls="duration: 13000; transition2d: 5;">
-                <h1 class="slider_main_text ls-l ls-responsive" data-ls-mobile="left: 100px; top: 230px;" data-ls-tablet="left: 100px; top: 230px;" data-ls-laptop="left: 100px; top: 180px;" style="left: 300px; top: 270px; font-size: 72px; font-weight: 700;" data-ls="delayin: 600; easingin: easeInOutSine; texttransitionin: true; textstartatin: transitioninstart; textdurationin: 2000; texttypein: words_asc; textshiftin: 200; textoffsetyin: -100; offsetyout: -100; durationout: 2000; ">We always put the</h1>
-                <h1 class="slider_main_text ls-l ls-responsive" data-ls-mobile="left: 100px; top: 340px;" data-ls-tablet="left: 100px; top: 340px;" data-ls-laptop="left: 100px; top: 270px;" style="left: 300px; top: 352px; font-size: 72px; font-weight: 700;" data-ls="delayin: 0; easingin: easeInOutSine; texttransitionin: true; textstartatin: transitioninstart; textdurationin: 2000; texttypein: words_asc; textshiftin: 200; textoffsetyin: -100; offsetyout: -100; durationout: 2000; ">patients first</h1>
-                <p class="ls-l ls-responsive slider_main_text ls-hide-md" data-ls-mobile="left: 100px; top: 400px;" data-ls-tablet="left: 100px; top: 400px;" data-ls-laptop="left: 100px; top: 400px; width: 805px; font-size: 24px; line-height: 42px;" style="left: 300px; top: 464px; width: 605px; font-size: 16px; font-weight: 400; white-space: normal; letter-spacing: 0.02em; line-height: 28px;" data-ls="delayin: 800; texttransitionin: true; textstartatin: transitioninstart; texttypein: lines_asc; textshiftin: 100; textoffsetyin: 100; textdurationin: 2000; offsetyout: 100; durationout: 2000; ">Conveniently drive go forward architectures with future-proof growth strategies. Energistically supply low-risk high-yield process improvements for mission-critical testing procedures</p>
-
-
-                <div class="ls-btn ls-l ls-hide-md" style="top: 50%; left: 75%;">
-                    <img src="assets/img/self_images/sample (2).png" class="img-fluid" alt="">
-                </div>
-
-                <div class="ls-btn ls-l ls-responsive " data-ls-mobile="left: 100px; top: 500px;" data-ls-tablet="left: 100px; top: 500px;" data-ls-laptop="left: 100px;" style="left: 300px; top: 582px;" data-ls="offsetyin: 200; durationin: 2000; delayin: 1400; offsetyout: 300; durationout: 2000; durationout: 2000; ">
-                    <a href="service.html" class="vs-btn style2">View All Services<i class="fas fa-bolt"></i></a>
-                </div>
-            </div>
-            <div class="ls-slide" data-ls="duration: 13000; transition2d: 5;">
-                <h1 class="slider_main_text ls-l ls-responsive" data-ls-mobile="left: 100px; top: 230px;" data-ls-tablet="left: 100px; top: 230px;" data-ls-laptop="left: 100px; top: 180px;" style="left: 300px; top: 270px; font-size: 72px; font-weight: 700;" data-ls="delayin: 600; easingin: easeInOutSine; texttransitionin: true; textstartatin: transitioninstart; textdurationin: 2000; texttypein: words_asc; textshiftin: 200; textoffsetyin: -100; offsetyout: -100; durationout: 2000; ">We always put the</h1>
-                <h1 class="slider_main_text ls-l ls-responsive" data-ls-mobile="left: 100px; top: 340px;" data-ls-tablet="left: 100px; top: 340px;" data-ls-laptop="left: 100px; top: 270px;" style="left: 300px; top: 352px; font-size: 72px; font-weight: 700;" data-ls="delayin: 0; easingin: easeInOutSine; texttransitionin: true; textstartatin: transitioninstart; textdurationin: 2000; texttypein: words_asc; textshiftin: 200; textoffsetyin: -100; offsetyout: -100; durationout: 2000; ">patients first</h1>
-                <p class="ls-l ls-responsive slider_main_text ls-hide-md" data-ls-mobile="left: 100px; top: 400px;" data-ls-tablet="left: 100px; top: 400px;" data-ls-laptop="left: 100px; top: 400px; width: 805px; font-size: 24px; line-height: 42px;" style="left: 300px; top: 464px; width: 605px; font-size: 16px; font-weight: 400; white-space: normal; letter-spacing: 0.02em; line-height: 28px;" data-ls="delayin: 800; texttransitionin: true; textstartatin: transitioninstart; texttypein: lines_asc; textshiftin: 100; textoffsetyin: 100; textdurationin: 2000; offsetyout: 100; durationout: 2000; ">Conveniently drive go forward architectures with future-proof growth strategies. Energistically supply low-risk high-yield process improvements for mission-critical testing procedures</p>
-
-
-                <div class="ls-btn ls-l ls-hide-md" style="top: 50%; left: 75%;">
-                    <img src="assets/img/self_images/sample (3).png" class="img-fluid" alt="">
-                </div>
-
-                <div class="ls-btn ls-l ls-responsive " data-ls-mobile="left: 100px; top: 500px;" data-ls-tablet="left: 100px; top: 500px;" data-ls-laptop="left: 100px;" style="left: 300px; top: 582px;" data-ls="offsetyin: 200; durationin: 2000; delayin: 1400; offsetyout: 300; durationout: 2000; durationout: 2000; ">
-                    <a href="service.html" class="vs-btn style2">View All Services<i class="fas fa-bolt"></i></a>
-                </div>
+            <div class="ls-btn ls-l ls-hide-md" style="top: 50%; left: 75%;">
+                <img src="assets/img/self_images/sample (1).png" class="img-fluid" alt="">
             </div>
 
+            <div class="ls-btn ls-l ls-responsive " data-ls-mobile="left: 100px; top: 500px;" data-ls-tablet="left: 100px; top: 500px;" data-ls-laptop="left: 100px;" style="left: 300px; top: 582px;" data-ls="offsetyin: 200; durationin: 2000; delayin: 1400; offsetyout: 300; durationout: 2000; durationout: 2000; ">
+                <a href="service.html" class="vs-btn style2">View All Services<i class="fas fa-bolt"></i></a>
+            </div>
         </div>
-    </section>
+        <div class="ls-slide" data-ls="duration: 13000; transition2d: 5;">
+            <h1 class="slider_main_text ls-l ls-responsive" data-ls-mobile="left: 100px; top: 230px;" data-ls-tablet="left: 100px; top: 230px;" data-ls-laptop="left: 100px; top: 180px;" style="left: 300px; top: 270px; font-size: 72px; font-weight: 700;" data-ls="delayin: 600; easingin: easeInOutSine; texttransitionin: true; textstartatin: transitioninstart; textdurationin: 2000; texttypein: words_asc; textshiftin: 200; textoffsetyin: -100; offsetyout: -100; durationout: 2000; ">We always put the</h1>
+            <h1 class="slider_main_text ls-l ls-responsive" data-ls-mobile="left: 100px; top: 340px;" data-ls-tablet="left: 100px; top: 340px;" data-ls-laptop="left: 100px; top: 270px;" style="left: 300px; top: 352px; font-size: 72px; font-weight: 700;" data-ls="delayin: 0; easingin: easeInOutSine; texttransitionin: true; textstartatin: transitioninstart; textdurationin: 2000; texttypein: words_asc; textshiftin: 200; textoffsetyin: -100; offsetyout: -100; durationout: 2000; ">patients first</h1>
+            <p class="ls-l ls-responsive slider_main_text ls-hide-md" data-ls-mobile="left: 100px; top: 400px;" data-ls-tablet="left: 100px; top: 400px;" data-ls-laptop="left: 100px; top: 400px; width: 805px; font-size: 24px; line-height: 42px;" style="left: 300px; top: 464px; width: 605px; font-size: 16px; font-weight: 400; white-space: normal; letter-spacing: 0.02em; line-height: 28px;" data-ls="delayin: 800; texttransitionin: true; textstartatin: transitioninstart; texttypein: lines_asc; textshiftin: 100; textoffsetyin: 100; textdurationin: 2000; offsetyout: 100; durationout: 2000; ">Conveniently drive go forward architectures with future-proof growth strategies. Energistically supply low-risk high-yield process improvements for mission-critical testing procedures</p>
+
+
+            <div class="ls-btn ls-l ls-hide-md" style="top: 50%; left: 75%;">
+                <img src="assets/img/self_images/sample (2).png" class="img-fluid" alt="">
+            </div>
+
+            <div class="ls-btn ls-l ls-responsive " data-ls-mobile="left: 100px; top: 500px;" data-ls-tablet="left: 100px; top: 500px;" data-ls-laptop="left: 100px;" style="left: 300px; top: 582px;" data-ls="offsetyin: 200; durationin: 2000; delayin: 1400; offsetyout: 300; durationout: 2000; durationout: 2000; ">
+                <a href="service.html" class="vs-btn style2">View All Services<i class="fas fa-bolt"></i></a>
+            </div>
+        </div>
+        <div class="ls-slide" data-ls="duration: 13000; transition2d: 5;">
+            <h1 class="slider_main_text ls-l ls-responsive" data-ls-mobile="left: 100px; top: 230px;" data-ls-tablet="left: 100px; top: 230px;" data-ls-laptop="left: 100px; top: 180px;" style="left: 300px; top: 270px; font-size: 72px; font-weight: 700;" data-ls="delayin: 600; easingin: easeInOutSine; texttransitionin: true; textstartatin: transitioninstart; textdurationin: 2000; texttypein: words_asc; textshiftin: 200; textoffsetyin: -100; offsetyout: -100; durationout: 2000; ">We always put the</h1>
+            <h1 class="slider_main_text ls-l ls-responsive" data-ls-mobile="left: 100px; top: 340px;" data-ls-tablet="left: 100px; top: 340px;" data-ls-laptop="left: 100px; top: 270px;" style="left: 300px; top: 352px; font-size: 72px; font-weight: 700;" data-ls="delayin: 0; easingin: easeInOutSine; texttransitionin: true; textstartatin: transitioninstart; textdurationin: 2000; texttypein: words_asc; textshiftin: 200; textoffsetyin: -100; offsetyout: -100; durationout: 2000; ">patients first</h1>
+            <p class="ls-l ls-responsive slider_main_text ls-hide-md" data-ls-mobile="left: 100px; top: 400px;" data-ls-tablet="left: 100px; top: 400px;" data-ls-laptop="left: 100px; top: 400px; width: 805px; font-size: 24px; line-height: 42px;" style="left: 300px; top: 464px; width: 605px; font-size: 16px; font-weight: 400; white-space: normal; letter-spacing: 0.02em; line-height: 28px;" data-ls="delayin: 800; texttransitionin: true; textstartatin: transitioninstart; texttypein: lines_asc; textshiftin: 100; textoffsetyin: 100; textdurationin: 2000; offsetyout: 100; durationout: 2000; ">Conveniently drive go forward architectures with future-proof growth strategies. Energistically supply low-risk high-yield process improvements for mission-critical testing procedures</p>
+
+
+            <div class="ls-btn ls-l ls-hide-md" style="top: 50%; left: 75%;">
+                <img src="assets/img/self_images/sample (3).png" class="img-fluid" alt="">
+            </div>
+
+            <div class="ls-btn ls-l ls-responsive " data-ls-mobile="left: 100px; top: 500px;" data-ls-tablet="left: 100px; top: 500px;" data-ls-laptop="left: 100px;" style="left: 300px; top: 582px;" data-ls="offsetyin: 200; durationin: 2000; delayin: 1400; offsetyout: 300; durationout: 2000; durationout: 2000; ">
+                <a href="service.html" class="vs-btn style2">View All Services<i class="fas fa-bolt"></i></a>
+            </div>
+        </div>
+
+    </div>
+</section>
 
 
 

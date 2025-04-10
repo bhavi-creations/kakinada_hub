@@ -597,7 +597,7 @@
   # Global Sections
   --------------------------------------------------------------*/
  section,
-   .section {
+ .section {
    color: var(--default-color);
    background-color: var(--background-color);
    /* padding: 40px 0; */
@@ -605,10 +605,11 @@
    overflow: clip;
  }
 
- #adSection{
-  padding:  0px;
+ #adSection {
+   padding: 0px;
 
  }
+
  @media (max-width: 1199px) {
 
    section,
@@ -3021,20 +3022,20 @@
    display: flex;
    justify-content: center;
    align-items: center;
- 
+
  }
 
  .job_image_card_main {
-  display: inline-block;
-  padding: 10px;
-  background: transparent;
-  border-radius: 8px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5) !important;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+   display: inline-block;
+   padding: 10px;
+   background: transparent;
+   border-radius: 8px;
+   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5) !important;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 
-}
+ }
 
  @media (max-width:768px) {
 
@@ -3338,265 +3339,402 @@
    color: white !important;
  }
 
- 
+
  .filter-group {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
+   display: flex;
+   flex-direction: column;
+   gap: 15px;
+ }
 
-.filter-item {
-  display: flex;
-  flex-direction: column;
-}
+ .filter-item {
+   display: flex;
+   flex-direction: column;
+ }
 
-.filter-item label {
-  margin-bottom: 5px;
-  font-weight: 500;
-}
+ .filter-item label {
+   margin-bottom: 5px;
+   font-weight: 500;
+ }
 
-.custom-input {
-  padding: 8px 10px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  background: #fff;
-  font-size: 14px;
-}
-
-
-.restaurant-list {
-  list-style: none;
-  padding-left: 0;
-  margin-top: 30px;
-}
-
-.restaurant-list li a {
-  display: block;
-  padding: 8px 0;
-  color: #007bff;
-  text-decoration: none;
-  border-bottom: 1px solid #ddd;
-}
-
-.restaurant-list li a:hover {
-  text-decoration: underline;
-}
-
-.property_p_tag {
-  margin-bottom: 10px;
-  font-size: 16px;
-}
-
-.property_strong {
-  font-weight: 600;
-  color: #333;
-}
-.badg_color{
-  background-color: #b8266bf0;
-  padding: 10px;
-}
-@media (min-width:768px) {
-  
-  .propertys_divs_for_text_paras{
-    margin-bottom: 15px !important;
-  }
-}
-
-.property_title_sace{
-  margin-top: 10px;
-  margin-bottom: 30px;
-}
+ .custom-input {
+   padding: 8px 10px;
+   border: 1px solid #ccc;
+   border-radius: 6px;
+   background: #fff;
+   font-size: 14px;
+ }
 
 
+ .restaurant-list {
+   list-style: none;
+   padding-left: 0;
+   margin-top: 30px;
+ }
 
-.bg_image_for_shops {
-  background-image: url('../img/self_images/shop_bg.png');
-  background-size: cover;            /* Ensures the image covers the entire section */
-  background-position: center;       /* Keeps the image centered */
-  background-repeat: no-repeat;      /* Prevents tiling */
-  background-attachment: fixed;      /* Optional: creates a parallax-like effect */
-  padding: 60px 20px;                /* Adjust as needed for spacing */
-  color: #fff;                       /* Text color to contrast with the background */
-  text-align: center;                /* Center align text */
-  position: relative;
-}
+ .restaurant-list li a {
+   display: block;
+   padding: 8px 0;
+   color: #007bff;
+   text-decoration: none;
+   border-bottom: 1px solid #ddd;
+ }
 
-/* Optional: Overlay for better readability of content */
-.bg_image_for_shops::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background: rgb(255 255 255 / 91%);
-        ;    /* Dark transparent overlay */
-  z-index: 1;
-}
+ .restaurant-list li a:hover {
+   text-decoration: underline;
+ }
 
-/* Content inside should be above the overlay */
-.bg_image_for_shops > * {
-  position: relative;
-  z-index: 2;
-}
+ .property_p_tag {
+   margin-bottom: 10px;
+   font-size: 16px;
+ }
 
+ .property_strong {
+   font-weight: 600;
+   color: #333;
+ }
 
-.bg_color_white{
-  background-color: white;
-}
+ .badg_color {
+   background-color: #b8266bf0;
+   padding: 10px;
+ }
 
- 
-@media (min-width:1400px) {
-  .scrollable-list {
-    max-height: 930px;
-    overflow-y: auto;
-    padding-right: 10px;
-  }
-   
-}
- 
-@media (min-width:1200px) and (max-width:1400px) {
-  .scrollable-list {
-    max-height: 835px;
-    overflow-y: auto;
-    padding-right: 10px;
-  }
-   
-}
-@media (min-width:992px) and (max-width:1200px) {
-  .scrollable-list {
-    max-height: 690px;
-    overflow-y: auto;
-    padding-right: 10px;
-  }
-   
-}
- 
+ @media (min-width:768px) {
 
-/* Scrollbar Styles (WebKit - Chrome, Edge, Safari) */
-.scrollable-list::-webkit-scrollbar {
-  width: 8px;
-}
+   .propertys_divs_for_text_paras {
+     margin-bottom: 15px !important;
+   }
+ }
 
-.scrollable-list::-webkit-scrollbar-track {
-  background: #f1f1f1;
-  border-radius: 10px;
-}
-
-.scrollable-list::-webkit-scrollbar-thumb {
-  background: #7D1C4A; /* Bootstrap Primary */
-  border-radius: 10px;
-}
-
-.scrollable-list::-webkit-scrollbar-thumb:hover {
-  background: #7D1C4A;
-}
-
-/* Firefox Scrollbar */
-.scrollable-list {
-  scrollbar-width: thin;
-  scrollbar-color: #7D1C4A #f1f1f1;
-}
+ .property_title_sace {
+   margin-top: 10px;
+   margin-bottom: 30px;
+ }
 
 
 
+ .bg_image_for_shops {
+   background-image: url('../img/self_images/shop_bg.png');
+   background-size: cover;
+   /* Ensures the image covers the entire section */
+   background-position: center;
+   /* Keeps the image centered */
+   background-repeat: no-repeat;
+   /* Prevents tiling */
+   background-attachment: fixed;
+   /* Optional: creates a parallax-like effect */
+   padding: 60px 20px;
+   /* Adjust as needed for spacing */
+   color: #fff;
+   /* Text color to contrast with the background */
+   text-align: center;
+   /* Center align text */
+   position: relative;
+ }
+
+ /* Optional: Overlay for better readability of content */
+ .bg_image_for_shops::before {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   height: 100%;
+   width: 100%;
+   background: rgb(255 255 255 / 91%);
+   ;
+   /* Dark transparent overlay */
+   z-index: 1;
+ }
+
+ /* Content inside should be above the overlay */
+ .bg_image_for_shops>* {
+   position: relative;
+   z-index: 2;
+ }
 
 
-.vs-hero-wrappera .bg-overlay {
-  background-color: #f71c52;
-  width: 89%;
-  left: 0;
-}
-
-.bg-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
+ .bg_color_white {
+   background-color: white;
+ }
 
 
-.slider-area .bg-overlay {
-  background-color: #f71c52;
-  width: 89%;
-  left: 0;
-}
- 
-.slider-area .slider-detail .slider-slide .slider-inner-content .slide-heading {
-  color: #FFFFFF;
-  font-family: Oswald, sans-serif;
-  font-size: 60px;
-  font-weight: 700;
-  margin-bottom: 30px;
-}.slider-area .container .inner-bg-overlay {
-  background-color: #f71c52;
-  position: absolute;
-  width: 50%;
-  left: 0;
-  right: 12%;
-  bottom: 0;
-  top: 0;
-}.slider-area .container {
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
-.position-relative {
-  position: relative;
-}
-.position-relative {
-  position: relative !important;
-}
- 
+ @media (min-width:1400px) {
+   .scrollable-list {
+     max-height: 930px;
+     overflow-y: auto;
+     padding-right: 10px;
+   }
 
-.slider_main_text{
-color: white;
-}
+ }
+
+ @media (min-width:1200px) and (max-width:1400px) {
+   .scrollable-list {
+     max-height: 835px;
+     overflow-y: auto;
+     padding-right: 10px;
+   }
+
+ }
+
+ @media (min-width:992px) and (max-width:1200px) {
+   .scrollable-list {
+     max-height: 690px;
+     overflow-y: auto;
+     padding-right: 10px;
+   }
+
+ }
 
 
-.color-stripe-bar {
-  height: 10px;
-  width: 100%;  
-  background-image:  linear-gradient(
-      10deg, 
-      #ffffff 50%, 
-   
-      #f71c52 50%
-  );
-}
+ /* Scrollbar Styles (WebKit - Chrome, Edge, Safari) */
+ .scrollable-list::-webkit-scrollbar {
+   width: 8px;
+ }
+
+ .scrollable-list::-webkit-scrollbar-track {
+   background: #f1f1f1;
+   border-radius: 10px;
+ }
+
+ .scrollable-list::-webkit-scrollbar-thumb {
+   background: #7D1C4A;
+   /* Bootstrap Primary */
+   border-radius: 10px;
+ }
+
+ .scrollable-list::-webkit-scrollbar-thumb:hover {
+   background: #7D1C4A;
+ }
+
+ /* Firefox Scrollbar */
+ .scrollable-list {
+   scrollbar-width: thin;
+   scrollbar-color: #7D1C4A #f1f1f1;
+ }
 
 
-.black_bg_body{
-  background-color: black;
-}
 
 
-/* .logo_title_color{
+
+ .vs-hero-wrappera .bg-overlay {
+   background-color: #f71c52;
+   width: 89%;
+   left: 0;
+ }
+
+ .bg-overlay {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+ }
+
+
+ .slider-area .bg-overlay {
+   background-color: #f71c52;
+   width: 89%;
+   left: 0;
+ }
+
+ .slider-area .slider-detail .slider-slide .slider-inner-content .slide-heading {
+   color: #FFFFFF;
+   font-family: Oswald, sans-serif;
+   font-size: 60px;
+   font-weight: 700;
+   margin-bottom: 30px;
+ }
+
+ .slider-area .container .inner-bg-overlay {
+   background-color: #f71c52;
+   position: absolute;
+   width: 50%;
+   left: 0;
+   right: 12%;
+   bottom: 0;
+   top: 0;
+ }
+
+ .slider-area .container {
+   padding-top: 100px;
+   padding-bottom: 100px;
+ }
+
+ .position-relative {
+   position: relative;
+ }
+
+ .position-relative {
+   position: relative !important;
+ }
+
+
+ .slider_main_text {
+   color: white;
+ }
+
+
+ .color-stripe-bar {
+   height: 10px;
+   width: 100%;
+   background-image: linear-gradient(10deg,
+       #ffffff 50%,
+
+       #f71c52 50%);
+ }
+
+
+ .black_bg_body {
+   background-color: black;
+ }
+
+
+ /* .logo_title_color{
   color: white;
   font-weight: bold;
 } */
-.logo_title_color {
+ .logo_title_color {
+   background: linear-gradient(to right, #6b390d, #ffb013);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   display: inline-block;
+
+   font-weight: bold;
+ }
+
+ .has-new-label {
+   background: linear-gradient(to right, #6b390d, #ffb013);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+ }
+
+ .section_space {
+   padding-top: 40px;
+ }
+
+ .search_icon {
+   color: #888888;
+ }
+
+ .mobile-menu-form input::placeholder {
+   color: #c5c4c4;
+   /* Replace with your desired color */
+   opacity: 1;
+   /* Ensures full visibility */
+ }
+
+ .white_coor_text {
+   color: #9a9a9a;
+ }
+
+ .gradient-border-wrapper {
+   background: linear-gradient(to right, #6b390d, #ffb013);
+   /* Border gradient */
+   padding-left: 14px;
+   padding-right: 13px;
+   padding-top: 1px;
+   padding-bottom: 3px;
+   border-radius: 12px;
+   /* Outer radius */
+   /* display: inline-block; */
+ }
+
+ .border_styles_home {
+   background-color: #000;
+   /* Solid black background */
+   border-radius: 10px;
+   /* Inner radius slightly less to avoid overflow */
+   padding-left: 15px;
+   padding-right: 15px;
+   padding-top: 20px;
+   padding-bottom: 20px;
+
+ }
+
+ .gradient-border-wrapper-last {
+   background: linear-gradient(to right, #6b390d, #ffb013);
+   /* Border gradient */
+   padding-left: 13px;
+   padding-right: 13px;
+   padding-top: 0px;
+   padding-bottom: 2px;
+   border-radius: 12px;
+   /* Outer radius */
+   /* display: inline-block; */
+   display: flex;
+   flex-direction: column;
+   justify-content: end;
+ }
+
+ .border_styles_home_last {
+   background-color: #111111;
+   /* Solid black background */
+   border-radius: 10px;
+   /* Inner radius slightly less to avoid overflow */
+   padding-left: 60px;
+   /* padding-right: 15px; */
+   padding-top: 83px;
+   padding-bottom: 20px;
+   text-align: left;
+
+ }
+
+ .inner_div_index {
+   text-align: left;
+
+ }
+
+ .art_and_design {
+   text-align: left;
+   display: flex;
+   flex-direction: column;
+   justify-content: end;
+   padding-left: 150px;
+   padding-right: 150px;
+ }
+
+
+ .first_side_div_image {
+   text-align: left;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+ }
+
+ 
+
+ .last_side_div_image {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end; /* aligns child elements (like button) to the right */
+}
+
+.gradient_color_btn {
+  color: white;
   background: linear-gradient(to right, #6b390d, #ffb013);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  display: inline-block;
-
-  font-weight: bold;
-}
-.has-new-label {
-  background: linear-gradient(to right, #6b390d, #ffb013);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.section_space{
-  padding-top: 40px;
+  width: 140px;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 0;
 }
 
-.search_icon{
- color: #888888;
+
+.equal-divs > div {
+  flex: 1; /* Makes each div take equal width */
+  padding: 0 10px; /* Optional: spacing between the content */
 }
 
-.mobile-menu-form input::placeholder {
-  color: #888888; /* Replace with your desired color */
-  opacity: 1; /* Ensures full visibility */
+.center_side_div_image {
+  text-align: center; /* centers image horizontally inside */
 }
+
+.last_side_div_image {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+
+ 
