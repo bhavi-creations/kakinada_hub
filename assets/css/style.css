@@ -574,10 +574,12 @@
    padding: 0 30px;
    padding-right: 60px;
    border: 1px solid #e3e3e3;
-   color: var(--body-color);
-   background-color: var(--white-color);
+   /* color: var(--body-color); */
+   
+   background: linear-gradient(to right, #6b390d, #ffb013);
    border-radius: 5px;
    font-weight: 400;
+   border: none;
  }
 
  .form-select:focus,
@@ -21198,3 +21200,13 @@
    word-spacing: 3px;
    line-height: 27px;
  }
+
+
+
+ input[name="search_name"]::placeholder {
+  color: #f5f7ff;
+}
+
+input[name="search_category"]::placeholder {
+  color: #f5f7ff;
+}

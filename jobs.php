@@ -30,13 +30,13 @@
 
                      <div class="row g-3 align-items-center">
                          <div class="col-md-4">
-                             <input type="text" name="search_name" class="form-control border-primary shadow-sm"
-                                 placeholder="🔍 Search by Company Name"
+                             <input type="text" name="search_name" class="form-control   shadow-sm"
+                                 placeholder="🔍 Company Name"
                                  value="<?php echo isset($_GET['search_name']) ? $_GET['search_name'] : ''; ?>">
                          </div>
                          <div class="col-md-4">
-                             <input type="text" name="search_category" class="form-control border-primary shadow-sm"
-                                 placeholder="🏷️ Search by Category"
+                             <input type="text" name="search_category" class="form-control   shadow-sm"
+                                 placeholder="🏷️ Category"
                                  value="<?php echo isset($_GET['search_category']) ? $_GET['search_category'] : ''; ?>">
                          </div>
                          <div class="col-md-4 text-end">
