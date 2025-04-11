@@ -23,7 +23,7 @@ $categoryResult = mysqli_query($conn, $categoryQuery);
 
 
         <!-- Filters -->
-        <div class="row gy-2 my-4 custom-filters">
+        <div class="row gy-2 my-4 custom-filters black_body">
             <div class="col-12 col-md-3">
                 <select id="typeFilter" class="custom-input" onchange="filterProperties()">
                     <option value="">All Types</option>
