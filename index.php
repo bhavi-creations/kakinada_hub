@@ -81,7 +81,7 @@ Get support, visibility, and tools to grow — all in one platform"
 Find exactly what you need, when you need it — fast and easy.
 Enjoy a seamless experience backed by quality and community trust
 customers"
-                    data-img="assets/img/self_images/robot2.jpeg">
+                    data-img="assets/img/self_images/robot.jpeg">
                     Read More
                 </button>
             </div>
