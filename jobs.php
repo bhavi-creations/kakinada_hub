@@ -26,7 +26,7 @@
                  <?php include 'db.connection/db_connection.php'; ?>
 
                  <!-- Search Form -->
-                 <form method="GET" action="" class="p-3 black_bg_body shadow-sm rounded">
+                 <form method="GET" action="" class="p-3 black_bg_body  shadow-sm rounded">
 
                      <div class="row g-3 align-items-center">
                          <div class="col-md-4">

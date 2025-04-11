@@ -10026,7 +10026,7 @@
    --btn-size: 40px;
    left: 150px;
    background-color: var(--white-color);
-   color: var(--theme-color);
+   color: black;
    width: var(--btn-size);
    height: var(--btn-size);
    line-height: var(--btn-size) !important;

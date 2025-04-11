@@ -114,95 +114,7 @@ $marquee_content = implode(' &nbsp; || &nbsp; ', $marquee_texts);
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<?php
-include './db.connection/db_connection.php'; // Ensure the database connection is included
-
-// Fetch only upper images
-$upperQuery = "SELECT image FROM home_ads WHERE type = 'upper'";
-$upperResult = mysqli_query($conn, $upperQuery);
-
-$upperImages = [];
-while ($row = mysqli_fetch_assoc($upperResult)) {
-    $upperImages[] = $row['image'];
-}
-
-// Fetch only lower images
-$lowerQuery = "SELECT image FROM home_ads WHERE type = 'lower'";
-$lowerResult = mysqli_query($conn, $lowerQuery);
-
-$lowerImages = [];
-while ($row = mysqli_fetch_assoc($lowerResult)) {
-    $lowerImages[] = $row['image'];
-}
-
-// Close connection (optional)
-mysqli_close($conn);
-?>
-
-
-
-
-
-<section class="d-none">
-    <div class="px-0">
-        <div class="row justify-content-center mx-0">
-            <div class="col-12 px-0">
-                <?php if (!empty($upperImages)): ?>
-                    <div id="upperCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
-                        <div class="carousel-inner">
-                            <?php foreach ($upperImages as $index => $image): ?>
-                                <div class="carousel-item <?= ($index === 0) ? 'active' : ''; ?>">
-                                    <img src="./admin/uploads/home_ads/<?= htmlspecialchars($image) ?>" class="d-block w-100 img-fluid" style="object-fit: cover; max-height: 500px;" alt="Upper Image">
-                                </div>
-                            <?php endforeach; ?>
-                        </div>
-
-                        <!-- Navigation buttons -->
-                        <button class="carousel-control-prev" type="button" data-bs-target="#upperCarousel" data-bs-slide="prev">
-
-                            <i class="fas fa-arrow-left"></i> <!-- Left arrow icon -->
-
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#upperCarousel" data-bs-slide="next">
-                            <i class="fas fa-arrow-right"></i>
-
-                        </button>
-                    </div>
-                <?php else: ?>
-                    <p class="text-center text-muted">No upper images available.</p>
-                <?php endif; ?>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-
-
-
-
-
+ 
 
 
 
@@ -381,8 +293,6 @@ $resultLower = $conn->query($sqlLower);
 
 
 
-
-
 <section class="black_bg_body d-none">
     <div class="px-0">
         <div class="row justify-content-center mx-0">
@@ -447,16 +357,7 @@ $resultLower = $conn->query($sqlLower);
 </script>
 
 
-
-
-
-
-
-
-
-
-
-
+ 
 
 
 <?php include 'chat_bot.php';  ?>
