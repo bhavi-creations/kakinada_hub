@@ -8,10 +8,29 @@
      <div class="container">
 
          <div class="text-center   ">
-             <h1 class="gradient_text_color">List Of Companies</h1>
+             <h1 class="gradient_text_color services_pages_heading">List Of Companies</h1>
          </div>
 
+         <form method="GET" action="" class="p-3 black_bg_body  shadow-sm rounded">
 
+             <div class="row g-3 align-items-center">
+                 <div class="col-md-4">
+                     <input type="text" name="search_name" class="form-control   shadow-sm"
+                         placeholder="🔍 Company Name"
+                         value="<?php echo isset($_GET['search_name']) ? $_GET['search_name'] : ''; ?>">
+                 </div>
+                 <div class="col-md-4">
+                     <input type="text" name="search_category" class="form-control   shadow-sm"
+                         placeholder="🏷️ Category"
+                         value="<?php echo isset($_GET['search_category']) ? $_GET['search_category'] : ''; ?>">
+                 </div>
+                 <div class="col-md-4 text-end">
+                     <button type="submit" class="btn btn-primary px-4 shadow">🔎 Search</button>
+                     <a href="jobs.php" class="btn btn-secondary px-4 shadow">⟲ Reset</a>
+                 </div>
+             </div>
+
+         </form>
          <div class="row">
 
              <div class="col-lg-2  col-12 text_side_div d-none d-lg-block">
@@ -28,26 +47,7 @@
                  <?php include 'db.connection/db_connection.php'; ?>
 
                  <!-- Search Form -->
-                 <form method="GET" action="" class="p-3 black_bg_body  shadow-sm rounded">
 
-                     <div class="row g-3 align-items-center">
-                         <div class="col-md-4">
-                             <input type="text" name="search_name" class="form-control   shadow-sm"
-                                 placeholder="🔍 Company Name"
-                                 value="<?php echo isset($_GET['search_name']) ? $_GET['search_name'] : ''; ?>">
-                         </div>
-                         <div class="col-md-4">
-                             <input type="text" name="search_category" class="form-control   shadow-sm"
-                                 placeholder="🏷️ Category"
-                                 value="<?php echo isset($_GET['search_category']) ? $_GET['search_category'] : ''; ?>">
-                         </div>
-                         <div class="col-md-4 text-end">
-                             <button type="submit" class="btn btn-primary px-4 shadow">🔎 Search</button>
-                             <a href="jobs.php" class="btn btn-secondary px-4 shadow">⟲ Reset</a>
-                         </div>
-                     </div>
-
-                 </form>
 
 
                  <div class="row fadeIn scrollable-list" data-wow-delay="0.3s">

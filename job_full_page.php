@@ -3,7 +3,7 @@
 
 
 
-<section>
+<section class="black_body">
     <div class="container">
         <?php
         include './db.connection/db_connection.php';
@@ -27,7 +27,7 @@
         ?>
 
         <div class="text-center   mb-5">
-            <h1><?php echo $company['name']; ?></h1>
+            <h1 class="heading-gradient"><?php echo $company['name']; ?></h1>
 
 
         </div>
@@ -58,8 +58,8 @@
             <div class="col-lg-9 col-12">
                 <div class="row">
                     <div class="col-md-6 col-12 my-2">
-                        <div class="job_image_card">
-                            <img src="./admin/uploads/companies/<?php echo $company['logo']; ?>" class="img-fluid" alt="">
+                        <div class="job_image_card border-gradient">
+                            <img src="./admin/uploads/companies/<?php echo $company['logo']; ?>" class="img-fluid " alt="">
                         </div>
                     </div>
 
@@ -95,14 +95,14 @@
 
                 <div class="row my-5 p-3">
                     <div class="col-md-8 col-12">
-                        <h2>About Company</h2>
-                        <h6><?php echo $company['about']; ?></h6>
+                        <h2 class="heading-gradient">About Company</h2>
+                        <h6 class="p-gradient"><?php echo $company['about']; ?></h6>
 
-                        <h2>Address</h2>
-                        <h6 class="card-text">
+                        <h2  class="heading-gradient">Address</h2>
+                        <h6 class="card-text movie-value">
                            
                             <?php if (!empty($company['map_url'])) { ?>
-                                <a href="<?php echo $company['map_url']; ?>" target="_blank" style="text-decoration: none; color: #007bff;">
+                                <a href="<?php echo $company['map_url']; ?>" target="_blank"  >
                                     <?php echo $company['address']; ?>
                                 </a>
                             <?php } else {
@@ -112,7 +112,7 @@
 
                     </div>
                     <div class="col-md-4 col-12">
-                        <h3 class="text-center">Jobs</h3>
+                        <h3 class="text-center heading-gradient">Jobs</h3>
                         <div class="product-content">
                             <?php while ($job = mysqli_fetch_assoc($jobResult)) { ?>
                                 <div class="d-flex justify-content-between align-items-center">
@@ -151,22 +151,22 @@
                 <div class="row mt-5 p-3">
                     <div class="col-md-8 col-12">
                         <div class="review-container">
-                            <h2>Customer Reviews</h2>
+                            <h2 class="heading-gradient">Customer Reviews</h2>
 
                             <div class="review">
                                 <div class="review-header">
                                     <img src="assets/img/test/woman.png" alt="User" class="profile-img">
                                     <div class="">
-                                        <p><strong>Veera Venkata Durgadevi Gandi</strong></p>
-                                        <p class="stars">⭐⭐⭐⭐⭐ 5/5</p>
+                                        <p  class="heading-gradient"><strong>Veera Venkata Durgadevi Gandi</strong></p>
+                                        <p class="stars  p-gradient ">⭐⭐⭐⭐⭐ 5/5</p>
                                     </div>
                                 </div>
-                                <p class="review-text">
+                                <p class="review-text  p-gradient ">
                                     Teeth gap fill cheyinchukunna chala Baga chesaru and chala Baga treat chesaru
                                     <!-- <span class="hidden-text"> It’s wonderful to know you’re satisfied with the teeth gap treatment. We're always here to keep your smile healthy and beautiful! Best regards, Srinivasa Multispecialty Dental Hospital"</span> -->
                                 </p>
-                                <p class="view-more" onclick="toggleText(this)">Read More</p>
-                                <p class="view-images" onclick="toggleImages(this)">View Images</p>
+                                <p class="view-more  heading-gradient " onclick="toggleText(this)">Read More</p>
+                                <p class="view-images  heading-gradient " onclick="toggleImages(this)">View Images</p>
                                 <div class="review-images">
                                     <img src="assets/img/test/1.png" alt="Review Image"
                                         onclick="openLightbox(this)">
@@ -179,18 +179,18 @@
                                 <div class="review-header">
                                     <img src="assets/img/test/boy11.png" alt="User" class="profile-img">
                                     <div class="">
-                                        <p><strong>
+                                        <p  class="heading-gradient"><strong>
                                                 kranthi kumar m
                                             </strong></p>
-                                        <p class="stars">⭐⭐⭐⭐</p>
+                                        <p class="stars  p-gradient">⭐⭐⭐⭐</p>
                                     </div>
                                 </div>
-                                <p class="review-text">
+                                <p class="review-text  p-gradient ">
                                     Treatment is very good.receving is fantastic and fully equipped dental hospital, fully satisfied.price is reasonable
                                     <span class="hidden-text">Dr.kiran Raju explains everything in detail and very happy for whole process"</span>
                                 </p>
-                                <p class="view-more" onclick="toggleText(this)">Read More</p>
-                                <p class="view-images" onclick="toggleImages(this)">View Images</p>
+                                <p class="view-more  heading-gradient " onclick="toggleText(this)">Read More</p>
+                                <p class="view-images  heading-gradient " onclick="toggleImages(this)">View Images</p>
                                 <div class="review-images">
                                     <img src="assets/img/review3.jpg" alt="Review Image"
                                         onclick="openLightbox(this)">
@@ -202,16 +202,16 @@
                                 <div class="review-header">
                                     <img src="assets/img/test/woman.png" alt="User" class="profile-img">
                                     <div class="">
-                                        <p><strong>Iqra mahi
+                                        <p  class="heading-gradient"><strong>Iqra mahi
                                             </strong></p>
-                                        <p class="stars">⭐⭐⭐⭐⭐ 5/5</p>
+                                        <p class="stars  p-gradient">⭐⭐⭐⭐⭐ 5/5</p>
                                     </div>
                                 </div>
-                                <p class="review-text">
+                                <p class="review-text  p-gradient ">
                                     Thanks you so much all im soo happy <!-- <span class="hidden-text">little slow during peak hours. Overall, a great place for a relaxed meal."</span> -->
                                 </p>
-                                <p class="view-more" onclick="toggleText(this)">Read More</p>
-                                <p class="view-images" onclick="toggleImages(this)">View Images</p>
+                                <p class="view-more  heading-gradient " onclick="toggleText(this)">Read More</p>
+                                <p class="view-images  heading-gradient " onclick="toggleImages(this)">View Images</p>
                                 <div class="review-images">
                                     <img src="assets/img/test/1.png" alt="Review Image"
                                         onclick="openLightbox(this)">
@@ -224,16 +224,16 @@
                                 <div class="review-header">
                                     <img src="assets/img/test/boy11.png" alt="User" class="profile-img">
                                     <div class="">
-                                        <p><strong>lokesh nandan</strong></p>
-                                        <p class="stars">⭐⭐⭐⭐</p>
+                                        <p  class="heading-gradient"><strong>lokesh nandan</strong></p>
+                                        <p class="stars  p-gradient">⭐⭐⭐⭐</p>
                                     </div>
                                 </div>
-                                <p class="review-text">
+                                <p class="review-text  p-gradient ">
                                     Treatment was super & excellent.... complete painless treatment....clinic was very clean and hygienic...Dr kira raju sir was treated me very caring....staff also very supported....and
                                     <span class="hidden-text">carring....I'm fully satisfied my treatment....tk u Dr Kiran raju sir and staff....tk u srinivasa dental"</span>
                                 </p>
-                                <p class="view-more" onclick="toggleText(this)">Read More</p>
-                                <p class="view-images" onclick="toggleImages(this)">View Images</p>
+                                <p class="view-more  heading-gradient " onclick="toggleText(this)">Read More</p>
+                                <p class="view-images  heading-gradient " onclick="toggleImages(this)">View Images</p>
                                 <div class="review-images">
                                     <img src="assets/img/review3.jpg" alt="Review Image"
                                         onclick="openLightbox(this)">
@@ -245,16 +245,16 @@
                                 <div class="review-header">
                                     <img src="assets/img/test/woman.png" alt="User" class="profile-img">
                                     <div class="">
-                                        <p><strong> Sophia L.</strong></p>
-                                        <p class="stars">⭐⭐⭐⭐⭐ 5/5</p>
+                                        <p  class="heading-gradient"><strong> Sophia L.</strong></p>
+                                        <p class="stars  p-gradient">⭐⭐⭐⭐⭐ 5/5</p>
                                     </div>
                                 </div>
-                                <p class="review-text">
+                                <p class="review-text  p-gradient ">
                                     "The food was amazing, especially the wood-fired pizza and seafood platter! However, the service was a
                                     <span class="hidden-text">little slow during peak hours. Overall, a great place for a relaxed meal."</span>
                                 </p>
-                                <p class="view-more" onclick="toggleText(this)">Read More</p>
-                                <p class="view-images" onclick="toggleImages(this)">View Images</p>
+                                <p class="view-more  heading-gradient " onclick="toggleText(this)">Read More</p>
+                                <p class="view-images  heading-gradient " onclick="toggleImages(this)">View Images</p>
                                 <div class="review-images">
                                     <img src="assets/img/test/1.png" alt="Review Image"
                                         onclick="openLightbox(this)">
@@ -274,8 +274,8 @@
                     </div>
                     <div class="col-md-4 col-12">
                         <div class="review-form">
-                            <h2>Submit Your Review</h2>
-                            <input type="text" id="name" placeholder="Your Name" required>
+                            <h2  class="heading-gradient">Submit Your Review</h2>
+                            <input  type="text" id="name" placeholder="Your Name" required>
                             <select id="rating">
                                 <option value="⭐">⭐</option>
                                 <option value="⭐⭐">⭐⭐</option>
@@ -285,7 +285,7 @@
                             </select>
                             <textarea id="comment" rows="3" placeholder="Write a comment..." required></textarea>
                             <input type="file" id="imageUpload" accept="image/*">
-                            <button onclick="submitReview()">Submit Review</button>
+                            <button class="button-gradient" onclick="submitReview()">Submit Review</button>
                         </div>
                     </div>
 

@@ -2,6 +2,7 @@
 
 
 
+
 <?php
 include './db.connection/db_connection.php'; // Ensure the database connection is included
 
@@ -114,7 +115,7 @@ $marquee_content = implode(' &nbsp; || &nbsp; ', $marquee_texts);
 
 
 
- 
+
 
 
 
@@ -159,12 +160,17 @@ $resultLower = $conn->query($sqlLower);
                                         </div>
 
 
+                                      
+                                       
+
 
                                         <div class="col-7">
 
                                             <p class="brand_name gradient_text_color_orange_to_gold"><?php echo htmlspecialchars($row['title']); ?></p>
 
                                             <p class="brand_type gradient_text_color_orange_to_gold">⭐ <?php echo htmlspecialchars($row['offer']); ?></p>
+
+                                            <a href="#" class="card_lrg_btn   fold_btn wow fadeInUp" data-wow-delay="500ms">Get Code </a>
 
                                             <p class="brand_special_discount gradient_text_color_orange_to_gold">
                                                 <?php
@@ -210,6 +216,7 @@ $resultLower = $conn->query($sqlLower);
                                             <p class="brand_name gradient_text_color_orange_to_gold"><?php echo htmlspecialchars($row['title']); ?></p>
 
                                             <p class="brand_type gradient_text_color_orange_to_gold">⭐ <?php echo htmlspecialchars($row['offer']); ?></p>
+                                            <a href="#" class="card_lrg_btn   fold_btn wow fadeInUp" data-wow-delay="500ms">Get Code </a>
 
                                             <p class="brand_special_discount gradient_text_color_orange_to_gold">
                                                 <?php
@@ -357,7 +364,7 @@ $resultLower = $conn->query($sqlLower);
 </script>
 
 
- 
+
 
 
 <?php include 'chat_bot.php';  ?>

@@ -65,36 +65,144 @@
 
  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
- :root {
-   --theme-color: #7D1C4A;
-   --theme-color2: #2cb624;
-   --theme-color3: #27477d;
-   --theme-color4: #07ccec;
-   --theme-color5: #27467C;
-   --title-color: #27477d;
-   --title-color2: #000000;
-   --body-color: #888c92;
-   --body-color2: #555555;
-   --secondary-color: #cdf8ff;
-   --smoke-color: #f3f6f7;
-   --light-color: #afafaf;
-   --black-color: #000000;
-   --dark-color: #060d0f;
-   --white-color: #ffffff;
-   --yellow-color: #fec624;
-   --success-color: #28a745;
-   --error-color: #dc3545;
-   --border-color: rgba(0, 0, 0, 0.10);
-   --title-font: "Quicksand", sans-serif;
-   --body-font: "Roboto", sans-serif;
-   --subtitle-font: "Poppins", sans-serif;
-
-
-
-   --icon-font: "Font Awesome 5 Pro";
-   --flaticon: "Flaticon";
-   --ripple-ani-duration: 5s;
+ body{
+  background-color: black;
  }
+ 
+ :root {
+  --btn-gradient: linear-gradient(to right, #dc3c0a, #ffb013);
+  --heading-gradient: linear-gradient(to right, #6b390d, #ffb013);
+  --text-gradient: linear-gradient(to right,#dc3c0a, #ffb013);
+  --border-gradient: linear-gradient(to right, #6b390d, #ffb013);
+  --card-gradient: linear-gradient(to right, #6b390d, #ffb013);
+  --placeholder-color: #000000;
+  --text-bg-gradient: linear-gradient(to right, #6b390d, #ffb013);
+}
+
+.button-gradient {
+  background: var(--btn-gradient);
+  color: #fff;
+  border: none !important;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+button {
+  background: var(--btn-gradient);
+  color: #fff;
+  border: none;
+  /* padding: 10px 20px; */
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Optional hover effect */
+button:hover {
+  filter: brightness(1.1);
+}
+.heading-gradient,
+.movie-label {
+  background: var(--heading-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.p-gradient,
+.movie-value,.job_roles,.cast_names {
+  background: var(--text-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.border-gradient,
+.job_image_card {
+    border: 2px solid transparent;
+    background-image: linear-gradient(#fff, #fff), var(--border-gradient);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    border-radius: 8px;
+}
+
+ .black_body{
+ 
+  background: var(--title-color2);
+
+}
+.card-gradient {
+  background: var(--card-gradient);
+  padding: 20px;
+  border-radius: 10px;
+  color: #fff;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+/* Default placeholder color and background */
+ 
+
+input[type="text"],
+textarea,
+select,
+input[type="file"] {
+  background: var(--text-bg-gradient) !important; /* Use your custom gradient */
+  color: #fff; /* Optional: make sure text is visible on dark gradients */
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  width: 100%;
+  font-family: var(--body-font);
+  font-size: 16px;
+}
+
+/* Optional: Add focus styling */
+input[type="text"]:focus,
+textarea:focus,
+select:focus,
+input[type="file"]:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(255, 176, 19, 0.5);
+}
+
+
+
+:root {
+  --theme-color: #ffb013;
+  --theme-color2: #2cb624;
+  --theme-color3: #27477d;
+  
+
+  --theme-color4: #07ccec;
+  --theme-color5: #27467C;
+  --title-color: #27477d;
+  --title-color2: #000000;
+  --body-color: #888c92;
+  --body-color2: #555555;
+  --secondary-color: #cdf8ff;
+  --smoke-color: #f3f6f7;
+  --light-color: #afafaf;
+  --black-color: #000000;
+  --dark-color: #060d0f;
+  --white-color: #ffffff;
+  --yellow-color: #fec624;
+  --success-color: #28a745;
+  --error-color: #dc3545;
+  --border-color: rgba(0, 0, 0, 0.10);
+  --title-font: "Quicksand", sans-serif;
+  --body-font: "Roboto", sans-serif;
+  --subtitle-font: "Poppins", sans-serif;
+
+
+
+  --icon-font: "Font Awesome 5 Pro";
+  --flaticon: "Flaticon";
+  --ripple-ani-duration: 5s;
+}
+
 
  .home-five {
    --theme-color: #f20000;
@@ -575,7 +683,7 @@
    padding-right: 60px;
    border: 1px solid #e3e3e3;
    /* color: var(--body-color); */
-   
+
    background: linear-gradient(to right, #6b390d, #ffb013);
    border-radius: 5px;
    font-weight: 400;
@@ -2211,7 +2319,7 @@
  }
 
  .scroll-bottom:hover i {
-   background-color: var(--theme-color);
+   background-color: black !important;
    color: var(--white-color);
  }
 
@@ -4903,7 +5011,7 @@
    text-align: left;
    top: 100%;
    left: 0;
-   background-color: var(--white-color);
+   background-color: rgb(0, 0, 0) !important;
    -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
    visibility: hidden;
@@ -20881,7 +20989,7 @@
 
  .dropdown-menu-mega {
    position: absolute;
-   max-height: 620px !important;
+   max-height: 590px !important;
    overflow-y: auto !important;
    z-index: 1050;
    /* Ensure it's above other elements */
@@ -20914,18 +21022,27 @@
 
  .sub_heading {
    font-size: 24px !important;
-   border: #00000021 1px solid !important;
    margin-bottom: 8px;
    color: #ffffff !important;
-   padding-top: 8px;
-   padding-bottom: 8px;
-   padding-left: 10px;
-   padding-right: 10px;
-   background-color: #D69ADE;
+   padding: 8px 10px;
    font-weight: 800;
    width: 100%;
    text-align: center;
    margin-top: 20px;
+   position: relative;
+   z-index: 1;
+
+   border: 2px solid transparent;
+
+   background-origin: border-box;
+   background-clip: padding-box, border-box;
+   border: 1px solid #ffb013;
+   border-radius:4px;
+
+   /* These help rendering */
+   display: inline-block;
+   /* or block if inside a div */
+   box-sizing: border-box;
  }
 
 
@@ -20934,8 +21051,22 @@
 
    background-color: #ffffff;
 
-
  }
+ .sub_mini_serices {
+  font-size: 18px !important;
+  letter-spacing: 0.9px;
+
+  /* Gradient text styles */
+  background: linear-gradient(to right, #6b390d, #ffb013);
+  /* background: linear-gradient(to right, #ffb013, #dc3c0a); */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  /* Optional for better compatibility */
+  background-clip: text;
+  color: transparent;
+}
+
 
  /* @media (max-width:992px) {
   .sub_mini_serices{
@@ -20945,18 +21076,21 @@
 }
 } */
  /* @media (min-width:992px) { */
- .sub_mini_serices {
-   font-size: 18px !important;
-   color: #ffffff !important;
-   letter-spacing: 0.9px;
- }
 
  /* } */
 
 
  .view_all_sub_mini_serices {
    font-size: 18px !important;
-   color: #ff226e !important;
+    /* Gradient text styles */
+    background: linear-gradient(to right, #6b390d, #ffb013);
+    /* background: linear-gradient(to right, #ffb013, #dc3c0a); */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  
+    /* Optional for better compatibility */
+    background-clip: text;
+    color: transparent;
    text-decoration: underline;
    font-weight: bold;
  }
@@ -20989,7 +21123,7 @@
  .need_padding_div {
    padding: 15px;
    padding-left: 20px;
- 
+
  }
 
  /* Gradient Border for Image Div */
@@ -20999,17 +21133,18 @@
    background-image: linear-gradient(#000000, #000000), linear-gradient(135deg, #dc3c0a, #ffb013);
    background-origin: border-box;
    background-clip: content-box, border-box;
-   padding:2px;
+   padding: 2px;
    overflow: hidden;
    display: flex;
    flex-direction: column;
    justify-content: center;
-   
+
  }
 
- .inner_image_card_job{
-  border-radius: 5px;
+ .inner_image_card_job {
+   border-radius: 5px;
  }
+
  /* .job_image_card_main {
    display: inline-block;
    padding: 10px;
@@ -21030,12 +21165,16 @@
  .job_image_card {
    display: inline-block;
    padding: 62px;
-   background: transparent;
+  
    border-radius: 8px;
-   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5) !important;
+  background-color: transparent !important;
    display: flex;
    justify-content: center;
    align-items: center;
+
+
+   background-image: linear-gradient(#000000, #000000), linear-gradient(135deg, #dc3c0a, #ffb013);
+
 
  }
 
@@ -21134,13 +21273,16 @@
    /* Full width of the parent */
    text-align: center;
    /* Centers text inside the button */
-   padding: 10px;
+   padding: 2px;
+
    /* Adjust padding for better appearance */
-   background-color: #D69ADE;
+   /* background-color: #D69ADE; */
+   background: linear-gradient(to right, #dc3c0a, #ffb013) !important;
+
    /* Example background color */
    color: white;
    /* Text color */
-   border-radius: 5px;
+   border-radius: 3px;
    /* Rounded corners */
    text-decoration: none;
    /* Removes underline from links */
@@ -21148,6 +21290,50 @@
    letter-spacing: 0.03em;
    text-transform: uppercase;
 
+ }
+
+
+ /* get code button styes  */
+
+ /* From Uiverse.io by ferlagher */
+ .fold_btn {
+   position: relative;
+
+   padding: 2px;
+   /* background-color: #7D1C4A; */
+   background: linear-gradient(to right, #dc3c0a, #ffb013) !important;
+
+   text-decoration: none;
+   border: none;
+   border-radius: 3px;
+   color: #DEDEDE;
+   box-shadow: 0.5em 0.5em 0.5em rgba(0, 0, 0, 0.3);
+ }
+
+ .fold_btn::before {
+   position: absolute;
+   content: '';
+   height: 0;
+   width: 0;
+   top: 0;
+   right: 0;
+   /* Move to the right top corner */
+   background: linear-gradient(-135deg, rgba(33, 33, 33, 1) 0%, rgba(33, 33, 33, 1) 50%, #dc3c0a 50%, #ffb013 60%);
+   border-radius: 0 0 0 0.5em;
+   /* Adjust for right-top fold */
+   box-shadow: -0.2em 0.2em 0.2em rgba(0, 0, 0, 0.3);
+   /* Shadow adjustment */
+   transition: 0.3s;
+ }
+
+ .fold_btn:hover::before {
+   width: 1.6em;
+   height: 1.6em;
+ }
+
+ .fold_btn:active {
+   box-shadow: 0.2em 0.2em 0.3em rgba(0, 0, 0, 0.3);
+   transform: translate(0.1em, 0.1em);
  }
 
  .card_time {
@@ -21204,9 +21390,22 @@
 
 
  input[name="search_name"]::placeholder {
-  color: #f5f7ff;
-}
+   color: #f5f7ff;
+ }
 
-input[name="search_category"]::placeholder {
-  color: #f5f7ff;
-}
+ input[name="search_category"]::placeholder {
+   color: #f5f7ff;
+ }
+
+
+ .need_no_styles{
+  background-color: black  !important;
+  border: none;
+  /* padding: 10px 20px; */
+ 
+ 
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+ }

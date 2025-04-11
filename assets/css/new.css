@@ -2249,9 +2249,17 @@
 
 
  .yello_heding {
-   background-color: #D69ADE;
-   border: none;
-   color: #ffffff;
+   
+   border: 1px solid #ffb013;
+     /* Gradient text styles */
+  background: linear-gradient(to right, #6b390d, #ffb013);
+  /* background: linear-gradient(to right, #ffb013, #dc3c0a); */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  /* Optional for better compatibility */
+  background-clip: text;
+  color: transparent;
    border-radius: 4px;
    text-align: center;
    padding: 15px 0px;
@@ -2360,47 +2368,7 @@
  }
 
 
- /* get code button styes  */
-
- /* From Uiverse.io by ferlagher */
- .fold_btn {
-   position: relative;
-   font-size: 1.2em;
-   padding: 0.7em 1.4em;
-   background-color: #7D1C4A;
-   /* Example background color */
-   text-decoration: none;
-   border: none;
-   border-radius: 0.5em;
-   color: #DEDEDE;
-   box-shadow: 0.5em 0.5em 0.5em rgba(0, 0, 0, 0.3);
- }
-
- .fold_btn::before {
-   position: absolute;
-   content: '';
-   height: 0;
-   width: 0;
-   top: 0;
-   right: 0;
-   /* Move to the right top corner */
-   background: linear-gradient(-135deg, rgba(33, 33, 33, 1) 0%, rgba(33, 33, 33, 1) 50%, #7D1C4A 50%, #7D1C4A 60%);
-   border-radius: 0 0 0 0.5em;
-   /* Adjust for right-top fold */
-   box-shadow: -0.2em 0.2em 0.2em rgba(0, 0, 0, 0.3);
-   /* Shadow adjustment */
-   transition: 0.3s;
- }
-
- .fold_btn:hover::before {
-   width: 1.6em;
-   height: 1.6em;
- }
-
- .fold_btn:active {
-   box-shadow: 0.2em 0.2em 0.3em rgba(0, 0, 0, 0.3);
-   transform: translate(0.1em, 0.1em);
- }
+ 
 
 
  .pop_search_index ul li a {
@@ -2436,7 +2404,7 @@
    left: 0;
    right: 0;
    bottom: 0;
-   background: rgba(0, 0, 0, 0.292);
+   background: rgba(0, 0, 0, 0.792);
    z-index: 0;
  }
 
@@ -2467,7 +2435,8 @@
    left: 0;
    right: 0;
    bottom: 0;
-   background: rgba(0, 0, 0, 0.292);
+   background: rgba(0, 0, 0, 0.792);
+
    z-index: 0;
  }
 
@@ -2493,7 +2462,8 @@
    left: 0;
    right: 0;
    bottom: 0;
-   background: rgba(0, 0, 0, 0.292);
+   background: rgba(0, 0, 0, 0.792);
+
    z-index: 0;
  }
 
@@ -2518,7 +2488,8 @@
    left: 0;
    right: 0;
    bottom: 0;
-   background: rgba(0, 0, 0, 0.292);
+   background: rgba(0, 0, 0, 0.792);
+
    z-index: 0;
  }
 
@@ -2543,7 +2514,8 @@
    left: 0;
    right: 0;
    bottom: 0;
-   background: rgba(0, 0, 0, 0.292);
+   background: rgba(0, 0, 0, 0.792);
+
    z-index: 0;
  }
 
@@ -2569,7 +2541,8 @@
    left: 0;
    right: 0;
    bottom: 0;
-   background: rgba(0, 0, 0, 0.292);
+   background: rgba(0, 0, 0, 0.792);
+
    z-index: 0;
  }
 
@@ -2594,7 +2567,8 @@
    left: 0;
    right: 0;
    bottom: 0;
-   background: rgba(0, 0, 0, 0.292);
+   background: rgba(0, 0, 0, 0.792);
+
    z-index: 0;
  }
 
@@ -2620,7 +2594,8 @@
    left: 0;
    right: 0;
    bottom: 0;
-   background: rgba(0, 0, 0, 0.292);
+   background: rgba(0, 0, 0, 0.792);
+
    z-index: 0;
  }
 
@@ -3085,7 +3060,7 @@
  }
 
  .job_roles {
-   color: #7D1C4A;
+   /* color: #7D1C4A; */
    text-align: right;
    flex: 1;
    font-weight: 800;
@@ -3956,3 +3931,31 @@
    max-height: 300px;
    /* Adjust based on your layout */
  }
+
+ 
+
+ .services_pages_heading{
+  padding-top: 30px;
+  padding-bottom: 30px;
+ }
+
+
+
+
+ .drag_the_location_icon {
+  position: absolute;
+  top: 81%;       
+  left:-9.8%;     
+  z-index: 1000;   
+  font-size: 40px;
+  
+}
+
+.gradient_text_color_location {
+  background: linear-gradient(to right, #6b390d, #ffb013);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+ 
+
+ 

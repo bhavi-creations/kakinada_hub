@@ -242,8 +242,8 @@
                             <div class="col-auto">
                                 <div class="header1-logo  ">
                                     <a href="index.php" class="text-center">
-                                        <h2 class="logo_title_color">KAKINADA   Hub</h2>
-                                        
+                                        <h2 class="logo_title_color">KAKINADA Hub</h2>
+
                                         <!-- <img src="assets/img/self_images/kkd_mini.png" class="  img-fluid  " alt="Logo"> -->
                                     </a>
                                 </div>
@@ -446,11 +446,14 @@
                             <div class="col-auto gap-3 d-none d-lg-flex">
                                 <form action="#" class="mobile-menu-form  d-none d-lg-block">
                                     <input type="text" class="form-control" placeholder="Search...">
-                                    <button type="submit"><i class="search_icon  fas fa-search"></i></button>
+                                    <button class="need_no_styles" type="submit"><i class="search_icon  fas fa-search"></i></button>
                                 </form>
                             </div>
 
-
+                            <a href="#" class="gradient_text_color_location drag_the_location_icon">
+                                <i class="fas fa-map-marker-alt rotate-icon"></i>
+                            </a>
+ 
                         </div>
                     </div>
                 </div>

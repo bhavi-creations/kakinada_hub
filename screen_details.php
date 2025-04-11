@@ -20,7 +20,7 @@ $movie = mysqli_fetch_assoc($result);
         $screen = mysqli_fetch_assoc($screen_result);
         ?>
         <div class="text-center mb-5">
-            <h1><?php echo htmlspecialchars($screen['screen_name']); ?></h1>
+            <h1 class="heading-gradient"><?php echo htmlspecialchars($screen['screen_name']); ?></h1>
         </div>
 
         <div class="row">
@@ -83,11 +83,11 @@ $movie = mysqli_fetch_assoc($result);
                 </div>
                 <div class="row my-5 p-3">
                     <div class="col-md-8 col-12">
-                        <h2>About the movie</h2>
-                        <p><?php echo htmlspecialchars($movie['about_movie']); ?></p>
+                        <h2 class="heading-gradient">About the movie</h2>
+                        <p class="p-gradient"><?php echo htmlspecialchars($movie['about_movie']); ?></p>
                     </div>
                     <div class="col-md-4 col-12">
-                        <h3 class="text-center">Cast</h3>
+                        <h3 class="text-center heading-gradient">Cast</h3>
                         <div class="product-content">
                             <div class="d-flex justify-content-between align-items-center">
                                 <p class="movie-label"><strong>Hero:</strong></p>
@@ -99,7 +99,7 @@ $movie = mysqli_fetch_assoc($result);
                             </div>
                         </div>
                         <hr>
-                        <h3 class="text-center">Crew</h3>
+                        <h3 class="text-center heading-gradient">Crew</h3>
                         <div class="product-content">
                             <div class="d-flex justify-content-between align-items-center">
                                 <p class="movie-label"><strong>Director:</strong></p>
@@ -117,25 +117,27 @@ $movie = mysqli_fetch_assoc($result);
                     </div>
                 </div>
 
-                <div class="row p-3">
+
+
+                 <div class="row mt-5 p-3">
                     <div class="col-md-8 col-12">
                         <div class="review-container">
-                            <h2>Customer Reviews</h2>
+                            <h2 class="heading-gradient">Customer Reviews</h2>
 
                             <div class="review">
                                 <div class="review-header">
                                     <img src="assets/img/test/woman.png" alt="User" class="profile-img">
                                     <div class="">
-                                        <p><strong>Emma R</strong></p>
-                                        <p class="stars">⭐⭐⭐⭐⭐</p>
+                                        <p  class="heading-gradient"><strong>Veera Venkata Durgadevi Gandi</strong></p>
+                                        <p class="stars  p-gradient ">⭐⭐⭐⭐⭐ 5/5</p>
                                     </div>
                                 </div>
-                                <p class="review-text">
-                                    "The ambiance was elegant, and the food was absolutely delicious! Every dish was beautifully presented, and the flavors were exceptional.
-                                    <span class="hidden-text">The staff was courteous and attentive, making the experience even more enjoyable. Highly recommended!"</span>
+                                <p class="review-text  p-gradient ">
+                                    Teeth gap fill cheyinchukunna chala Baga chesaru and chala Baga treat chesaru
+                                    <!-- <span class="hidden-text"> It’s wonderful to know you’re satisfied with the teeth gap treatment. We're always here to keep your smile healthy and beautiful! Best regards, Srinivasa Multispecialty Dental Hospital"</span> -->
                                 </p>
-                                <p class="view-more" onclick="toggleText(this)">Read More</p>
-                                <p class="view-images" onclick="toggleImages(this)">View Images</p>
+                                <p class="view-more  heading-gradient " onclick="toggleText(this)">Read More</p>
+                                <p class="view-images  heading-gradient " onclick="toggleImages(this)">View Images</p>
                                 <div class="review-images">
                                     <img src="assets/img/test/1.png" alt="Review Image"
                                         onclick="openLightbox(this)">
@@ -148,16 +150,18 @@ $movie = mysqli_fetch_assoc($result);
                                 <div class="review-header">
                                     <img src="assets/img/test/boy11.png" alt="User" class="profile-img">
                                     <div class="">
-                                        <p><strong>David M</strong></p>
-                                        <p class="stars">⭐⭐⭐⭐</p>
+                                        <p  class="heading-gradient"><strong>
+                                                kranthi kumar m
+                                            </strong></p>
+                                        <p class="stars  p-gradient">⭐⭐⭐⭐</p>
                                     </div>
                                 </div>
-                                <p class="review-text">
-                                    "A top-notch restaurant with a warm and inviting atmosphere. The wine selection was impressive, and the.
-                                    <span class="hidden-text">chef’s special was divine. Will definitely be coming back!"</span>
+                                <p class="review-text  p-gradient ">
+                                    Treatment is very good.receving is fantastic and fully equipped dental hospital, fully satisfied.price is reasonable
+                                    <span class="hidden-text">Dr.kiran Raju explains everything in detail and very happy for whole process"</span>
                                 </p>
-                                <p class="view-more" onclick="toggleText(this)">Read More</p>
-                                <p class="view-images" onclick="toggleImages(this)">View Images</p>
+                                <p class="view-more  heading-gradient " onclick="toggleText(this)">Read More</p>
+                                <p class="view-images  heading-gradient " onclick="toggleImages(this)">View Images</p>
                                 <div class="review-images">
                                     <img src="assets/img/review3.jpg" alt="Review Image"
                                         onclick="openLightbox(this)">
@@ -169,16 +173,16 @@ $movie = mysqli_fetch_assoc($result);
                                 <div class="review-header">
                                     <img src="assets/img/test/woman.png" alt="User" class="profile-img">
                                     <div class="">
-                                        <p><strong> Sophia L.</strong></p>
-                                        <p class="stars">⭐⭐⭐⭐⭐</p>
+                                        <p  class="heading-gradient"><strong>Iqra mahi
+                                            </strong></p>
+                                        <p class="stars  p-gradient">⭐⭐⭐⭐⭐ 5/5</p>
                                     </div>
                                 </div>
-                                <p class="review-text">
-                                    "The food was amazing, especially the wood-fired pizza and seafood platter! However, the service was a
-                                    <span class="hidden-text">little slow during peak hours. Overall, a great place for a relaxed meal."</span>
+                                <p class="review-text  p-gradient ">
+                                    Thanks you so much all im soo happy <!-- <span class="hidden-text">little slow during peak hours. Overall, a great place for a relaxed meal."</span> -->
                                 </p>
-                                <p class="view-more" onclick="toggleText(this)">Read More</p>
-                                <p class="view-images" onclick="toggleImages(this)">View Images</p>
+                                <p class="view-more  heading-gradient " onclick="toggleText(this)">Read More</p>
+                                <p class="view-images  heading-gradient " onclick="toggleImages(this)">View Images</p>
                                 <div class="review-images">
                                     <img src="assets/img/test/1.png" alt="Review Image"
                                         onclick="openLightbox(this)">
@@ -191,16 +195,16 @@ $movie = mysqli_fetch_assoc($result);
                                 <div class="review-header">
                                     <img src="assets/img/test/boy11.png" alt="User" class="profile-img">
                                     <div class="">
-                                        <p><strong>David M</strong></p>
-                                        <p class="stars">⭐⭐⭐⭐</p>
+                                        <p  class="heading-gradient"><strong>lokesh nandan</strong></p>
+                                        <p class="stars  p-gradient">⭐⭐⭐⭐</p>
                                     </div>
                                 </div>
-                                <p class="review-text">
-                                    "A top-notch restaurant with a warm and inviting atmosphere. The wine selection was impressive, and the.
-                                    <span class="hidden-text">chef’s special was divine. Will definitely be coming back!"</span>
+                                <p class="review-text  p-gradient ">
+                                    Treatment was super & excellent.... complete painless treatment....clinic was very clean and hygienic...Dr kira raju sir was treated me very caring....staff also very supported....and
+                                    <span class="hidden-text">carring....I'm fully satisfied my treatment....tk u Dr Kiran raju sir and staff....tk u srinivasa dental"</span>
                                 </p>
-                                <p class="view-more" onclick="toggleText(this)">Read More</p>
-                                <p class="view-images" onclick="toggleImages(this)">View Images</p>
+                                <p class="view-more  heading-gradient " onclick="toggleText(this)">Read More</p>
+                                <p class="view-images  heading-gradient " onclick="toggleImages(this)">View Images</p>
                                 <div class="review-images">
                                     <img src="assets/img/review3.jpg" alt="Review Image"
                                         onclick="openLightbox(this)">
@@ -212,16 +216,16 @@ $movie = mysqli_fetch_assoc($result);
                                 <div class="review-header">
                                     <img src="assets/img/test/woman.png" alt="User" class="profile-img">
                                     <div class="">
-                                        <p><strong> Sophia L.</strong></p>
-                                        <p class="stars">⭐⭐⭐⭐⭐</p>
+                                        <p  class="heading-gradient"><strong> Sophia L.</strong></p>
+                                        <p class="stars  p-gradient">⭐⭐⭐⭐⭐ 5/5</p>
                                     </div>
                                 </div>
-                                <p class="review-text">
+                                <p class="review-text  p-gradient ">
                                     "The food was amazing, especially the wood-fired pizza and seafood platter! However, the service was a
                                     <span class="hidden-text">little slow during peak hours. Overall, a great place for a relaxed meal."</span>
                                 </p>
-                                <p class="view-more" onclick="toggleText(this)">Read More</p>
-                                <p class="view-images" onclick="toggleImages(this)">View Images</p>
+                                <p class="view-more  heading-gradient " onclick="toggleText(this)">Read More</p>
+                                <p class="view-images  heading-gradient " onclick="toggleImages(this)">View Images</p>
                                 <div class="review-images">
                                     <img src="assets/img/test/1.png" alt="Review Image"
                                         onclick="openLightbox(this)">
@@ -241,22 +245,24 @@ $movie = mysqli_fetch_assoc($result);
                     </div>
                     <div class="col-md-4 col-12">
                         <div class="review-form">
-                            <h2>Submit Your Review</h2>
-                            <input type="text" id="name" placeholder="Your Name" required>
+                            <h2  class="heading-gradient">Submit Your Review</h2>
+                            <input  type="text" id="name" placeholder="Your Name" required>
                             <select id="rating">
                                 <option value="⭐">⭐</option>
                                 <option value="⭐⭐">⭐⭐</option>
                                 <option value="⭐⭐⭐">⭐⭐⭐</option>
                                 <option value="⭐⭐⭐⭐">⭐⭐⭐⭐</option>
-                                <option value="⭐⭐⭐⭐⭐" selected>⭐⭐⭐⭐⭐</option>
+                                <option value="⭐⭐⭐⭐⭐ 5/5" selected>⭐⭐⭐⭐⭐ 5/5</option>
                             </select>
                             <textarea id="comment" rows="3" placeholder="Write a comment..." required></textarea>
                             <input type="file" id="imageUpload" accept="image/*">
-                            <button onclick="submitReview()">Submit Review</button>
+                            <button class="button-gradient" onclick="submitReview()">Submit Review</button>
                         </div>
                     </div>
 
                 </div>
+
+
             </div>
             <div class="col-lg-3 col-12 text_side_div d-none d-lg-block">
                 <img src="assets/img/test/sideimg2.png" alt="" class="img-fluid">

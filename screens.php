@@ -23,7 +23,7 @@ mysqli_stmt_execute($stmt);
 $result = mysqli_stmt_get_result($stmt);
 ?>
 
-<h1 class="text-center my-4"><?php echo $theater_name; ?></h1>
+<h1 class="text-center my-4 heading-gradient"><?php echo $theater_name; ?></h1>
 
 <section>
     <div class="container">

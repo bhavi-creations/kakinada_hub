@@ -38,6 +38,7 @@
 
             <!-- Right Side: Social Media Icons -->
             <div class="col-md-4 text-end">
+            
                 <a href="#" class="gradient_text_color me-3"><i class="fab fa-facebook-f"></i></a>
                 <a href="#" class="gradient_text_color me-3"><i class="fab fa-twitter"></i></a>
                 <a href="#" class="gradient_text_color me-3"><i class="fab fa-instagram"></i></a>
