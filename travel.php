@@ -3,9 +3,12 @@
 
 <?php include './db.connection/db_connection.php'; ?>
 
-<h1 class="text-center my-4">Travel Destinations</h1>
+<section class="black_bg_body p-5">
 
-<div class="container">
+
+<h1 class="text-center gradient_text_color  pb-5">Travel Destinations</h1>
+
+<div class="container p-5">
     <div class="row justify-content-center">
         <?php
         $query = "SELECT id, name, filter_image, created_at FROM travels";
@@ -33,6 +36,7 @@
         ?>
     </div>
 </div>
+</section>
 
 <?php include 'chat_bot.php'; ?>
 <?php include 'footer.php'; ?>

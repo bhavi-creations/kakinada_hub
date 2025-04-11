@@ -13,12 +13,12 @@ $categoryQuery = "SELECT DISTINCT category FROM properties WHERE category IS NOT
 $categoryResult = mysqli_query($conn, $categoryQuery);
 ?>
 
-<section>
+<section class="black_bg_body">
     <div class="container">
 
         <div class="text-center">
-            <h1>List Of Properties</h1>
-            <h5>Find Your Residency By One Click</h5>
+            <h1 class="gradient_text_color">List Of Properties</h1>
+            <h5  class="gradient_text_color">Find Your Residency By One Click</h5>
         </div>
 
 
@@ -91,7 +91,7 @@ $categoryResult = mysqli_query($conn, $categoryQuery);
                                             <img src="./admin/uploads/properties/<?php echo $row['image']; ?>" class="img-fluid company_logo_size" alt="Property Image">
                                         </div>
                                         <div class="col-8 col-md-9">
-                                            <h4><?php echo $row['title']; ?></h4>
+                                            <h4  class="gradient_text_color"><?php echo $row['title']; ?></h4>
                                             <p class="property_p_tag">
                                                 <strong class="property_strong">Price:</strong>
                                                 <?php echo $numericPrice ? '₹' . number_format($numericPrice) : 'Not Provided'; ?>
@@ -107,7 +107,7 @@ $categoryResult = mysqli_query($conn, $categoryQuery);
                                         </div>
                                         <div class="col-12 terms_cond_styles">
                                             <div class="terms_justify">
-                                                <p><a href="property_details.php?id=<?php echo $row['id']; ?>">View Full Details</a></p>
+                                                <p  class="gradient_text_color"><a href="property_details.php?id=<?php echo $row['id']; ?>">View Full Details</a></p>
                                             </div>
                                         </div>
                                     </div>

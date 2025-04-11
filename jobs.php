@@ -10,6 +10,8 @@
          <div class="text-center   ">
              <h1 class="gradient_text_color">List Of Companies</h1>
          </div>
+
+
          <div class="row">
 
              <div class="col-lg-2  col-12 text_side_div d-none d-lg-block">
@@ -76,8 +78,10 @@
 
                             echo '<section class="OfferContainer_exclusive__non wow fadeInUp my-2 " data-wow-delay="100ms">
                                     <div class="   container  card_div  ">
-                                        <div class="row  need_padding_div ">
-                                            <div class="col-12 col-md-3 job_image_card_main mb-2 parent-container">
+
+                                        <div class="row  need_padding_div ">        
+
+                                            <div class="col-12 col-md-3 job_image_card_main mb-2 parent-container"> 
                                                 <img src="./admin/uploads/companies/' . $company['logo'] . '" class="img-fluid company_logo_size inner_image_card_job" alt="">
                                             </div>
 
@@ -90,6 +94,7 @@
                                                     <a target="_blank" href="' . $company['website'] . '">' . $company['website'] . '</a>
                                                 </p>
                                             </div>
+
                                         </div>';
 
                             // Display jobs count if available

@@ -47,8 +47,8 @@ $result = $stmt->get_result();
 
 
 
-<section>
-    <div class="container">
+<section class=" black_bg_body">
+    <div class="container  ">
 
         <div class="text-center   ">
             <h1 class="gradient_text_color">Upcomming Events</h1>
@@ -107,19 +107,19 @@ $result = $stmt->get_result();
                     </section>
 
                     <section class="OfferContainer_exclusive__non wow fadeInUp my-2" data-wow-delay="100ms">
-                        <div class="col-12  card_div px-3">
-                            <div class="row  py-3">
-                                <div class="col-12 col-md-4 job_image_card mb-3 ">
-                                    <img src="assets/img/self_images/challa.jpeg" class="img-fluid" alt="">
+                        <div class="   container  card_div ">
+                            <div class="row  need_padding_div ">
+                                <div class="col-12 col-md-4 job_image_card_main mb-2 parent-container">
+                                    <img src="assets/img/self_images/spandhana.jpeg" class="img-fluid inner_image_card_job" alt="">
 
                                 </div>
 
                                 <div class="col-12 col-md-8">
-                                    <h4> <strong class="property_strong"> occasion :</strong>ramzan</h4>
-                                    <p class="property_p_tag"><strong class="property_strong"> Venue :</strong> Challa function hall </p>
+                                    <h4 class="gradient_text_color"> <strong class="property_strong"> occasion :</strong>Ugadhi</h4>
+                                    <p class="property_p_tag"><strong class="property_strong"> Venue :</strong> Spandhana </p>
                                     <p class="property_p_tag"> <strong class="property_strong"> Location : </strong> Kakinada </p>
-                                    <p class="property_p_tag"> <strong class="property_strong"> Phone :</strong> 9642343434 </p>
-                                    <p class="property_p_tag"> <strong class="property_strong"> Website :</strong><a target="_blank" href="https://bhavicreationspvtltd.com/"> https://challaevents.com/ </a> </p>
+                                    <p class="property_p_tag"> <strong class="property_strong"> Phone :</strong>9642343434 </p>
+                                    <p class="property_p_tag"> <strong class="property_strong"> Website :</strong><a target="_blank" href="https://bhavicreationspvtltd.com/"> https://Spandhnaevents.com/ </a> </p>
 
 
                                 </div>
@@ -130,8 +130,8 @@ $result = $stmt->get_result();
                                 <div class="col-12 terms_cond_styles">
                                     <div class="terms_justify">
 
-                                        <p>
-                                            <a href="event_full_page1.php" class=" ">View More Details</a>
+                                        <p class="gradient_text_color">
+                                            <a href="event_full_page.php" class=" ">View More Details</a>
                                         </p>
                                     </div>
 
@@ -143,20 +143,20 @@ $result = $stmt->get_result();
                         </div>
                     </section>
 
-                    <section class="OfferContainer_exclusive__non wow fadeInUp my-2" data-wow-delay="100ms">
-                        <div class="col-12  card_div px-3">
-                            <div class="row  py-3">
-                                <div class="col-12 col-md-4 job_image_card mb-3">
-                                    <img src="assets/img/self_images/srmt.jpeg" class="img-fluid" alt="">
+                    v<section class="OfferContainer_exclusive__non wow fadeInUp my-2" data-wow-delay="100ms">
+                        <div class="   container  card_div ">
+                            <div class="row  need_padding_div ">
+                                <div class="col-12 col-md-4 job_image_card_main mb-2 parent-container">
+                                    <img src="assets/img/self_images/spandhana.jpeg" class="img-fluid inner_image_card_job" alt="">
 
                                 </div>
 
                                 <div class="col-12 col-md-8">
-                                    <h4> <strong class="property_strong"> occasion :</strong> Holi Dhamaka</h4>
-                                    <p class="property_p_tag"><strong class="property_strong"> Venue :</strong> Vedhika </p>
+                                    <h4 class="gradient_text_color"> <strong class="property_strong"> occasion :</strong>Ugadhi</h4>
+                                    <p class="property_p_tag"><strong class="property_strong"> Venue :</strong> Spandhana </p>
                                     <p class="property_p_tag"> <strong class="property_strong"> Location : </strong> Kakinada </p>
-                                    <p class="property_p_tag"> <strong class="property_strong"> Phone :</strong> 9876543210 </p>
-                                    <p class="property_p_tag"> <strong class="property_strong"> Website :</strong><a target="_blank" href="https://bhavicreationspvtltd.com/"> https://Vedhikaevents.com/ </a> </p>
+                                    <p class="property_p_tag"> <strong class="property_strong"> Phone :</strong>9642343434 </p>
+                                    <p class="property_p_tag"> <strong class="property_strong"> Website :</strong><a target="_blank" href="https://bhavicreationspvtltd.com/"> https://Spandhnaevents.com/ </a> </p>
 
 
                                 </div>
@@ -167,7 +167,7 @@ $result = $stmt->get_result();
                                 <div class="col-12 terms_cond_styles">
                                     <div class="terms_justify">
 
-                                        <p>
+                                        <p class="gradient_text_color">
                                             <a href="event_full_page.php" class=" ">View More Details</a>
                                         </p>
                                     </div>
