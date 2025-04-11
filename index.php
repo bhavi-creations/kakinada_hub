@@ -39,10 +39,21 @@ $marquee_content = implode(' &nbsp; || &nbsp; ', $marquee_texts);
             <!-- Left Text -->
             <div class="first_side_div_image">
                 <h6 class="white_coor_text">
-                    <li>ART AND DESIGN</li>
+                    GROW WITH US
                 </h6>
-                <p class="white_coor_text">Explore the high tech, low-life world where the lines between</p>
-                <button class="gradient_color_btn">Read More</button>
+                <p class="white_coor_text">Showcase your business to a growing local audience.
+                    Connect with real customers looking ...</p>
+                <button
+                    class="gradient_color_btn client"
+                    data-bs-toggle="modal"
+                    data-bs-target="#customModal"
+                    data-title="GROW WITH US"
+                    data-description="Showcase your business to a growing local audience.
+Connect with real customers looking for products and services like yours.
+Get support, visibility, and tools to grow — all in one platform"
+                    data-img="assets/img/self_images/robot.jpeg">
+                    Read More
+                </button>
             </div>
 
             <!-- Center Image -->
@@ -59,14 +70,43 @@ $marquee_content = implode(' &nbsp; || &nbsp; ', $marquee_texts);
 
             <!-- Right Text -->
             <div class="last_side_div_image">
-                <h2 class="white_coor_text">ART AND DESIGN</h2>
-                <p class="white_coor_text">Explore the high tech, low-life world where the lines between low-life world where the lines between</p>
-                <button class="gradient_color_btn">Read More</button>
+                <h2 class="white_coor_text">GET YOU SOLUTION HERE</h2>
+                <p class="white_coor_text">Discover trusted local businesses right at your fingertips...</p>
+                <button
+                    class="gradient_color_btn coustmer"
+                    data-bs-toggle="modal"
+                    data-bs-target="#customModal"
+                    data-title="GET YOU SOLUTION HERE"
+                    data-description="Discover trusted local businesses right at your fingertips.
+Find exactly what you need, when you need it — fast and easy.
+Enjoy a seamless experience backed by quality and community trust
+customers"
+                    data-img="assets/img/self_images/robot2.jpeg">
+                    Read More
+                </button>
             </div>
 
         </div>
 
 
+
+        <!-- Modal -->
+        <div class="modal fade" id="customModal" tabindex="-1" aria-labelledby="customModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg"> <!-- you can adjust size with modal-sm/modal-lg -->
+                <div class="modal-content">
+
+                    <div class="modal-body d-flex flex-column flex-md-row align-items-center">
+                        <div class="modal-img pe-md-4 mb-3 mb-md-0">
+                            <img id="modalImage" src="" alt="Modal Image" class="img-fluid rounded shadow" style="max-width: 300px;">
+                        </div>
+                        <div class="modal-text">
+                            <h5 class="modal-title heading-gradient" id="customModalLabel"></h5>
+                            <p id="modalDescription" class="mb-0 p-gradient"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
 
@@ -83,17 +123,19 @@ $marquee_content = implode(' &nbsp; || &nbsp; ', $marquee_texts);
                         <img src="assets/img/self_images/mini_mask_man.jpg" class="img-fluid" alt="">
                     </div>
                     <div class="col-8 inner_div_index">
-                        <h1 class="logo_title_color">76,285K+</h1>
-                        <h4 class="white_coor_text">Exeriene the Future</h4>
-                        <p class="white_coor_text"> Explore the high tech, low-life world where the lines between </p>
+                        <h1 class="logo_title_color">1000+</h1>
+                        <h4 class="white_coor_text">TRAFFIC</h4>
+                        <p class="white_coor_text"> Join the brands already hitting 1000+ traffic with proven methods
+                         </p>
                     </div>
                 </div>
             </div>
 
 
             <div class="col-5  art_and_design">
-                <h2 class="white_coor_text">ART AND DESIGN</h2>
-                <p class="white_coor_text">Explore the high tech, low-life world where the lines between </p>
+                <h2 class="white_coor_text">Trusted. Local. Easy</h2>
+                <p class="white_coor_text">Connecting Businesses with a Growing Audience, Every Day.
+                connectuion </p>
 
             </div>
             <div class="col-2  gradient-border-wrapper-last ">
@@ -101,8 +143,8 @@ $marquee_content = implode(' &nbsp; || &nbsp; ', $marquee_texts);
                     <div class="border_styles_home_last">
 
 
-                        <h1 class="logo_title_color">17+</h1>
-                        <h5 class="white_coor_text">Years of Experience</h5>
+                        <h1 class="logo_title_color"> 500+ </h1>
+                        <h5 class="white_coor_text">Supporting vendors  </h5>
                     </div>
                 </div>
             </div>
@@ -113,6 +155,25 @@ $marquee_content = implode(' &nbsp; || &nbsp; ', $marquee_texts);
 
 
 
+<script>
+    const customModal = document.getElementById('customModal');
+
+    customModal.addEventListener('show.bs.modal', function(event) {
+        const button = event.relatedTarget;
+
+        const title = button.getAttribute('data-title');
+        const description = button.getAttribute('data-description');
+        const image = button.getAttribute('data-img');
+
+        const modalTitle = customModal.querySelector('.modal-title');
+        const modalDesc = customModal.querySelector('#modalDescription');
+        const modalImg = customModal.querySelector('#modalImage');
+
+        modalTitle.textContent = title;
+        modalDesc.textContent = description;
+        modalImg.src = image;
+    });
+</script>
 
 
 
@@ -160,8 +221,8 @@ $resultLower = $conn->query($sqlLower);
                                         </div>
 
 
-                                      
-                                       
+
+
 
 
                                         <div class="col-7">
@@ -170,7 +231,14 @@ $resultLower = $conn->query($sqlLower);
 
                                             <p class="brand_type gradient_text_color_orange_to_gold">⭐ <?php echo htmlspecialchars($row['offer']); ?></p>
 
-                                            <a href="#" class="card_lrg_btn   fold_btn wow fadeInUp" data-wow-delay="500ms">Get Code </a>
+                                            <button
+                                                class="card_lrg_btn fold_btn wow fadeInUp"
+                                                data-wow-delay="500ms"
+                                                data-bs-toggle="modal"
+                                                data-bs-target="#codeModal"
+                                                data-code='&lt;div class="example  p-gradient"&gt;Your Code LN3U4O34ITBG3N&lt;/div&gt;'>
+                                                Get Code
+                                            </button>
 
                                             <p class="brand_special_discount gradient_text_color_orange_to_gold">
                                                 <?php
@@ -216,7 +284,15 @@ $resultLower = $conn->query($sqlLower);
                                             <p class="brand_name gradient_text_color_orange_to_gold"><?php echo htmlspecialchars($row['title']); ?></p>
 
                                             <p class="brand_type gradient_text_color_orange_to_gold">⭐ <?php echo htmlspecialchars($row['offer']); ?></p>
-                                            <a href="#" class="card_lrg_btn   fold_btn wow fadeInUp" data-wow-delay="500ms">Get Code </a>
+
+                                            <button
+                                                class="card_lrg_btn fold_btn wow fadeInUp"
+                                                data-wow-delay="500ms"
+                                                data-bs-toggle="modal"
+                                                data-bs-target="#codeModal"
+                                                data-code='&lt;div class="example p-gradient"&gt;Your Code D3L5N5PDS979&lt;/div&gt;'>
+                                                Get Code
+                                            </button>
 
                                             <p class="brand_special_discount gradient_text_color_orange_to_gold">
                                                 <?php
@@ -240,6 +316,34 @@ $resultLower = $conn->query($sqlLower);
         </div>
 
     </div>
+
+
+    <!-- Code Reveal Modal -->
+    <div class="modal fade" id="codeModal" tabindex="-1" aria-labelledby="codeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+
+                <div class="modal-body">
+                    <h5 class="modal-title heading-gradient" id="codeModalLabel">Your Discount Code </h5>
+                    <pre><code id="codeBlock" class="language-html"></code></pre>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        const codeModal = document.getElementById('codeModal');
+
+        codeModal.addEventListener('show.bs.modal', function(event) {
+            const button = event.relatedTarget;
+            const code = button.getAttribute('data-code');
+
+            const codeBlock = codeModal.querySelector('#codeBlock');
+            codeBlock.innerHTML = code;
+        });
+    </script>
+
 </section>
 
 
