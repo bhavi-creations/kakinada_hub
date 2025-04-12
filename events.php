@@ -47,7 +47,7 @@ $result = $stmt->get_result();
 
 
 
-<section class=" black_bg_body">
+<section class="  ">
     <div class="container  ">
 
         <div class="text-center   ">

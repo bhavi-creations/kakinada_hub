@@ -4,7 +4,7 @@
 
 
 
-<section class="black_bg_body">
+<section class=" ">
     <div class="container">
         <div class="row">
             <div class="yellow_fields_cards_container">
