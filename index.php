@@ -32,7 +32,7 @@ $marquee_content = implode(' &nbsp; || &nbsp; ', $marquee_texts);
 
 
 <section class="  ">
-    <div class="container text-center">
+    <div class="container text-center main_div_container">
 
         <div class="d-flex justify-content-between align-items-center equal-divs pt-5 position-relative">
 
@@ -138,6 +138,7 @@ $marquee_content = implode(' &nbsp; || &nbsp; ', $marquee_texts);
                     connectuion </p>
 
             </div>
+
             <div class="col-12  col-md-2 gradient-border-wrapper-last ">
                 <div class="row  ">
                     <div class="border_styles_home_last">
@@ -150,6 +151,7 @@ $marquee_content = implode(' &nbsp; || &nbsp; ', $marquee_texts);
             </div>
 
         </div>
+
     </div>
 </section>
 
@@ -213,7 +215,7 @@ $resultLower = $conn->query($sqlLower);
                                     <div class="row">
 
                                         <div class="col-5 d-flex flex-column justify-content-center hr_line_side">
-                                            <div class="gradient_border_wrapper">
+                                            <div class="gradient_border_wrapper ">
                                                 <div class="img_border">
                                                     <img src="./admin/uploads/home_offers/<?php echo htmlspecialchars($row['image']); ?>" alt="">
                                                 </div>
@@ -357,11 +359,10 @@ $resultLower = $conn->query($sqlLower);
         <div class="ls-slide" data-ls="duration: 13000; transition2d: 5;">
             <h1 class="slider_main_text ls-l ls-responsive" data-ls-mobile="left: 100px; top: 230px;" data-ls-tablet="left: 100px; top: 230px;" data-ls-laptop="left: 100px; top: 180px;" style="left: 300px; top: 270px; font-size: 72px; font-weight: 700;" data-ls="delayin: 600; easingin: easeInOutSine; texttransitionin: true; textstartatin: transitioninstart; textdurationin: 2000; texttypein: words_asc; textshiftin: 200; textoffsetyin: -100; offsetyout: -100; durationout: 2000; ">We always put the</h1>
             <h1 class="slider_main_text ls-l ls-responsive" data-ls-mobile="left: 100px; top: 340px;" data-ls-tablet="left: 100px; top: 340px;" data-ls-laptop="left: 100px; top: 270px;" style="left: 300px; top: 352px; font-size: 72px; font-weight: 700;" data-ls="delayin: 0; easingin: easeInOutSine; texttransitionin: true; textstartatin: transitioninstart; textdurationin: 2000; texttypein: words_asc; textshiftin: 200; textoffsetyin: -100; offsetyout: -100; durationout: 2000; ">patients first</h1>
-            <p class="ls-l ls-responsive slider_main_text ls-hide-md" data-ls-mobile="left: 100px; top: 400px;" data-ls-tablet="left: 100px; top: 400px;" data-ls-laptop="left: 100px; top: 400px; width: 805px; font-size: 24px; line-height: 42px;" style="left: 300px; top: 464px; width: 605px; font-size: 16px; font-weight: 400; white-space: normal; letter-spacing: 0.02em; line-height: 28px;" data-ls="delayin: 800; texttransitionin: true; textstartatin: transitioninstart; texttypein: lines_asc; textshiftin: 100; textoffsetyin: 100; textdurationin: 2000; offsetyout: 100; durationout: 2000; ">Conveniently drive go forward architectures with future-proof growth strategies. Energistically supply low-risk high-yield process improvements for mission-critical testing procedures</p>
 
 
-            <div class="ls-btn ls-l ls-hide-md" style="top: 50%; left: 75%;">
-                <img src="assets/img/self_images/sample (1).png" class="img-fluid" alt="">
+            <div class="ls-btn ls-l  " style="top: 50%; left: 75%;">
+                <img src="assets/img/self_images/sample (1).png" class="img-fluid last_image_cid" alt="">
             </div>
 
             <div class="ls-btn ls-l ls-responsive " data-ls-mobile="left: 100px; top: 500px;" data-ls-tablet="left: 100px; top: 500px;" data-ls-laptop="left: 100px;" style="left: 300px; top: 582px;" data-ls="offsetyin: 200; durationin: 2000; delayin: 1400; offsetyout: 300; durationout: 2000; durationout: 2000; ">
@@ -371,11 +372,10 @@ $resultLower = $conn->query($sqlLower);
         <div class="ls-slide" data-ls="duration: 13000; transition2d: 5;">
             <h1 class="slider_main_text ls-l ls-responsive" data-ls-mobile="left: 100px; top: 230px;" data-ls-tablet="left: 100px; top: 230px;" data-ls-laptop="left: 100px; top: 180px;" style="left: 300px; top: 270px; font-size: 72px; font-weight: 700;" data-ls="delayin: 600; easingin: easeInOutSine; texttransitionin: true; textstartatin: transitioninstart; textdurationin: 2000; texttypein: words_asc; textshiftin: 200; textoffsetyin: -100; offsetyout: -100; durationout: 2000; ">We always put the</h1>
             <h1 class="slider_main_text ls-l ls-responsive" data-ls-mobile="left: 100px; top: 340px;" data-ls-tablet="left: 100px; top: 340px;" data-ls-laptop="left: 100px; top: 270px;" style="left: 300px; top: 352px; font-size: 72px; font-weight: 700;" data-ls="delayin: 0; easingin: easeInOutSine; texttransitionin: true; textstartatin: transitioninstart; textdurationin: 2000; texttypein: words_asc; textshiftin: 200; textoffsetyin: -100; offsetyout: -100; durationout: 2000; ">patients first</h1>
-            <p class="ls-l ls-responsive slider_main_text ls-hide-md" data-ls-mobile="left: 100px; top: 400px;" data-ls-tablet="left: 100px; top: 400px;" data-ls-laptop="left: 100px; top: 400px; width: 805px; font-size: 24px; line-height: 42px;" style="left: 300px; top: 464px; width: 605px; font-size: 16px; font-weight: 400; white-space: normal; letter-spacing: 0.02em; line-height: 28px;" data-ls="delayin: 800; texttransitionin: true; textstartatin: transitioninstart; texttypein: lines_asc; textshiftin: 100; textoffsetyin: 100; textdurationin: 2000; offsetyout: 100; durationout: 2000; ">Conveniently drive go forward architectures with future-proof growth strategies. Energistically supply low-risk high-yield process improvements for mission-critical testing procedures</p>
 
 
-            <div class="ls-btn ls-l ls-hide-md" style="top: 50%; left: 75%;">
-                <img src="assets/img/self_images/sample (2).png" class="img-fluid" alt="">
+            <div class="ls-btn ls-l  " style="top: 50%; left: 75%;">
+                <img src="assets/img/self_images/sample (2).png" class="img-fluid last_image_cid" alt="">
             </div>
 
             <div class="ls-btn ls-l ls-responsive " data-ls-mobile="left: 100px; top: 500px;" data-ls-tablet="left: 100px; top: 500px;" data-ls-laptop="left: 100px;" style="left: 300px; top: 582px;" data-ls="offsetyin: 200; durationin: 2000; delayin: 1400; offsetyout: 300; durationout: 2000; durationout: 2000; ">
@@ -385,11 +385,10 @@ $resultLower = $conn->query($sqlLower);
         <div class="ls-slide" data-ls="duration: 13000; transition2d: 5;">
             <h1 class="slider_main_text ls-l ls-responsive" data-ls-mobile="left: 100px; top: 230px;" data-ls-tablet="left: 100px; top: 230px;" data-ls-laptop="left: 100px; top: 180px;" style="left: 300px; top: 270px; font-size: 72px; font-weight: 700;" data-ls="delayin: 600; easingin: easeInOutSine; texttransitionin: true; textstartatin: transitioninstart; textdurationin: 2000; texttypein: words_asc; textshiftin: 200; textoffsetyin: -100; offsetyout: -100; durationout: 2000; ">We always put the</h1>
             <h1 class="slider_main_text ls-l ls-responsive" data-ls-mobile="left: 100px; top: 340px;" data-ls-tablet="left: 100px; top: 340px;" data-ls-laptop="left: 100px; top: 270px;" style="left: 300px; top: 352px; font-size: 72px; font-weight: 700;" data-ls="delayin: 0; easingin: easeInOutSine; texttransitionin: true; textstartatin: transitioninstart; textdurationin: 2000; texttypein: words_asc; textshiftin: 200; textoffsetyin: -100; offsetyout: -100; durationout: 2000; ">patients first</h1>
-            <p class="ls-l ls-responsive slider_main_text ls-hide-md" data-ls-mobile="left: 100px; top: 400px;" data-ls-tablet="left: 100px; top: 400px;" data-ls-laptop="left: 100px; top: 400px; width: 805px; font-size: 24px; line-height: 42px;" style="left: 300px; top: 464px; width: 605px; font-size: 16px; font-weight: 400; white-space: normal; letter-spacing: 0.02em; line-height: 28px;" data-ls="delayin: 800; texttransitionin: true; textstartatin: transitioninstart; texttypein: lines_asc; textshiftin: 100; textoffsetyin: 100; textdurationin: 2000; offsetyout: 100; durationout: 2000; ">Conveniently drive go forward architectures with future-proof growth strategies. Energistically supply low-risk high-yield process improvements for mission-critical testing procedures</p>
 
 
-            <div class="ls-btn ls-l ls-hide-md" style="top: 50%; left: 75%;">
-                <img src="assets/img/self_images/sample (3).png" class="img-fluid" alt="">
+            <div class="ls-btn ls-l  image_topper_dive " style="top: 50%; left: 75%;">
+                <img src="assets/img/self_images/sample (3).png" class="img-fluid last_image_cid" alt="">
             </div>
 
             <div class="ls-btn ls-l ls-responsive " data-ls-mobile="left: 100px; top: 500px;" data-ls-tablet="left: 100px; top: 500px;" data-ls-laptop="left: 100px;" style="left: 300px; top: 582px;" data-ls="offsetyin: 200; durationin: 2000; delayin: 1400; offsetyout: 300; durationout: 2000; durationout: 2000; ">
@@ -403,39 +402,7 @@ $resultLower = $conn->query($sqlLower);
 
 
 
-
-<section class="  d-none">
-    <div class="px-0">
-        <div class="row justify-content-center mx-0">
-            <div class="col-12 px-0">
-                <?php if (!empty($lowerImages)): ?>
-                    <div id="lowerCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
-                        <div class="carousel-inner">
-                            <?php foreach ($lowerImages as $index => $image): ?>
-                                <div class="carousel-item <?= ($index === 0) ? 'active' : ''; ?>">
-                                    <img src="./admin/uploads/home_ads/<?= htmlspecialchars($image) ?>"
-                                        class="d-block w-100 img-fluid"
-                                        style="object-fit: cover; max-height: 500px;"
-                                        alt="Lower Image">
-                                </div>
-                            <?php endforeach; ?>
-                        </div>
-
-                        <!-- Navigation buttons -->
-                        <button class="carousel-control-prev" type="button" data-bs-target="#lowerCarousel" data-bs-slide="prev">
-                            <i class="fas fa-arrow-left"></i> <!-- Left arrow icon -->
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#lowerCarousel" data-bs-slide="next">
-                            <i class="fas fa-arrow-right"></i> <!-- Right arrow icon -->
-                        </button>
-                    </div>
-                <?php else: ?>
-                    <p class="text-center text-muted">No lower images available.</p>
-                <?php endif; ?>
-            </div>
-        </div>
-    </div>
-</section>
+ 
 
 
 
