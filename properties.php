@@ -68,7 +68,7 @@ $categoryResult = mysqli_query($conn, $categoryQuery);
                     <section class="OfferContainer_exclusive__non wow fadeInUp my-2" data-wow-delay="100ms">
 
                         <!-- Scrollable Container Starts -->
-                        <div style="max-height: 1000px; overflow-y: auto;" class="custom-scrollbar">
+                        <div style="max-height: 1000px; overflow-y: scroll; overflow-x: hidden; padding: 10px;" class="custom-scrollbar">
                             <div class="row" id="property-list">
                                 <?php
                                 $query = "SELECT * FROM properties ORDER BY id DESC";
@@ -87,23 +87,24 @@ $categoryResult = mysqli_query($conn, $categoryQuery);
                                         data-location="<?= $location ?>"
                                         data-price="<?= $numericPrice ?>">
 
-                                        <div style="background: linear-gradient(135deg, #dc3c0a, #ffb013); border-radius: 12px; padding: 2px;">
+                                        <div style="border-radius: 12px; padding: 2px;">
                                             <div class="card_div property-item position-relative"
-                                                style="background: white; border-radius: 10px; padding: 10px; min-height: 260px;">
+                                                style="background: transparent; border: 1px solid orange; border-radius: 10px; padding: 10px; min-height: 260px;">
                                                 <div class="row gy-3 align-items-start">
+
                                                     <!-- Image -->
                                                     <div class="col-12 col-md-4">
-                                                        <div style="background: linear-gradient(135deg, #dc3c0a, #ffb013); padding: 2px; border-radius: 8px;">
+                                                        <div style="padding: 2px; border-radius: 8px; border: 1px solid orange;">
                                                             <img src="./admin/uploads/properties/<?php echo $row['image']; ?>"
                                                                 class="img-fluid w-100 rounded"
-                                                                style="max-height: 180px; object-fit: cover; background: white; border-radius: 6px;"
+                                                                style="max-height: 180px; object-fit: cover; border-radius: 6px;"
                                                                 alt="Property Image">
                                                         </div>
                                                     </div>
 
                                                     <!-- Info -->
                                                     <div class="col-12 col-md-8" style="padding-left: 15px;">
-                                                        <h5 class="gradient_text_color"><?php echo $row['title']; ?></h5>
+                                                        <h5><?php echo $row['title']; ?></h5>
                                                         <p class="mb-1"><strong>Price:</strong> ₹<?php echo number_format($numericPrice); ?></p>
                                                         <p class="mb-1"><strong>Location:</strong> <?php echo $row['location']; ?></p>
                                                         <p class="mb-1"><strong>Posted On:</strong>
@@ -114,7 +115,8 @@ $categoryResult = mysqli_query($conn, $categoryQuery);
                                                 </div>
 
                                                 <div class="position-absolute" style="bottom: 10px; right: 15px;">
-                                                    <a href="property_details.php?id=<?php echo $row['id']; ?>" class="btn btn-sm btn-outline-primary">View Full Details</a>
+                                                    <a href="property_details.php?id=<?php echo $row['id']; ?>" class="no-hover-link">View Full Details</a>
+                                                    <!-- <a href="property_details.php?id=<?php echo $row['id']; ?>">View Full Details</a> -->
                                                 </div>
                                             </div>
                                         </div>
@@ -127,6 +129,12 @@ $categoryResult = mysqli_query($conn, $categoryQuery);
                     </section>
                 </div>
             </div>
+
+
+
+
+
+
 
             <!-- Sidebar Right -->
             <div class="col-lg-2 col-12 text_side_div d-none d-lg-block">

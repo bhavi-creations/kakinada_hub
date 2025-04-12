@@ -1378,7 +1378,7 @@
  .vs-menu-wrapper .vs-menu-area {
    width: 100%;
    max-width: 310px;
-   background-color: #fff;
+   background: linear-gradient(to right,#f5d19e, #fdf6ec, #f5d19e);  
    border-right: 3px solid var(--theme-color);
    height: 100%;
    position: relative;
@@ -1457,7 +1457,9 @@
    line-height: 1;
    font-size: 16px;
    text-transform: capitalize;
-   color: var(--title-color);
+   background: var(--heading-gradient);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
  }
 
  .vs-mobile-menu ul li a:before {
@@ -1502,7 +1504,9 @@
    display: inline-block;
    text-align: center;
    background-color: var(--smoke-color);
-   color: var(--title-color);
+   background: var(--heading-gradient);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
    -webkit-box-shadow: 0 0 20px -8px rgba(7, 204, 236, 0.3);
    box-shadow: 0 0 20px -8px rgba(7, 204, 236, 0.3);
    border-radius: 50%;

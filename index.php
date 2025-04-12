@@ -34,10 +34,16 @@ $marquee_content = implode(' &nbsp; || &nbsp; ', $marquee_texts);
 <section class="  ">
     <div class="container text-center main_div_container">
 
-        <div class="d-flex justify-content-between align-items-center equal-divs pt-5 position-relative">
+        <div class="    d-md-none    mt-5 first_dive_image_top_div_robot">
+            <img src="assets/img/self_images/robot_bg.png" class="img-fluid" alt="">
+        </div>
+
+        <div class="row justify-content-between align-items-center equal-divs pt-5 position-relative">
+
+
 
             <!-- Left Text -->
-            <div class="first_side_div_image">
+            <div class="col-5 col-md-4 first_side_div_image   order-md-0">
                 <h6 class="white_coor_text">
                     GROW WITH US
                 </h6>
@@ -51,25 +57,25 @@ $marquee_content = implode(' &nbsp; || &nbsp; ', $marquee_texts);
                     data-description="Showcase your business to a growing local audience.
                     Connect with real customers looking for products and services like yours.
                     Get support, visibility, and tools to grow — all in one platform"
-                                        data-img="assets/img/self_images/robot_bg.png">
+                    data-img="assets/img/self_images/robot_bg.png">
                     Read More
                 </button>
             </div>
 
             <!-- Center Image -->
-            <div class="center_side_div_image">
+            <div class="  col-md-4  d-none d-md-block center_side_div_image  order-0  order-md-1">
                 <img src="assets/img/self_images/robot_bg.png" class="img-fluid" alt="">
             </div>
 
             <!-- Horizontal and Vertical Lines -->
-            <div class="horizontal_line_between_left"></div>
-            <div class="vertical_line_left"></div>
+            <div class="horizontal_line_between_left d-none d-md-block "></div>
+            <!-- <div class="d-flex vertical_line_left"></div> -->
 
-            <div class="horizontal_line_between_right"></div>
-            <div class="vertical_line_right"></div>
+            <div class="horizontal_line_between_right  d-none d-md-block "></div>
+            <!-- <div class="vertical_line_right"></div> -->
 
             <!-- Right Text -->
-            <div class="last_side_div_image">
+            <div class="col-5 col-md-4 last_side_div_image     order-md-2">
                 <h2 class="white_coor_text">GET YOU SOLUTION HERE</h2>
                 <p class="white_coor_text">Discover trusted local businesses right at your fingertips...</p>
                 <button
@@ -402,7 +408,7 @@ $resultLower = $conn->query($sqlLower);
 
 
 
- 
+
 
 
 

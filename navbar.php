@@ -66,7 +66,12 @@
         <div class="vs-menu-area text-center">
             <button class="vs-menu-toggle"><i class="fal fa-times"></i></button>
             <div class="mobile-logo">
-                <a href="index.php"><img src="assets/img/self_images/kakinada_hub.png" alt="Kakinada Hub"></a>
+                <a href="index.php">
+                    <!-- <img src="assets/img/self_images/kakinada_hub.png" alt="Kakinada Hub"> -->
+                    <h2 class="logo_title_color my-5    ">KAKINADA Hub</h2>
+
+                
+                </a>
             </div>
             <form action="#" class="mobile-menu-form">
                 <input type="text" class="form-control" placeholder="Search...">
