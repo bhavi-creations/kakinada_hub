@@ -2135,8 +2135,8 @@
  }
 
  .card_border_styles {
-   background-color: #000000;
-   /* or any card background */
+  background: linear-gradient(to right,#f5d19e, #fdf6ec, #f5d19e);  
+  /* or any card background */
    border-radius: 8px;
    padding: 10px;
  }
@@ -2184,7 +2184,8 @@
  }
 
  .header-main {
-   background-color: #F4F5F9;
+    background: linear-gradient(to right,#f9b455, #fbdeb8 ,#f9b455);  
+    /* background-color: #F4F5F9; */
  }
 
 
@@ -3229,7 +3230,9 @@
 
 
  .footer_bg_last {
-   background-color: #F4F5F9;
+   /* background-color: #F4F5F9; */
+   background: linear-gradient(to right,#f9b455, #fbdeb8 ,#f9b455);  
+
  }
 
 
@@ -3679,7 +3682,8 @@
  }
 
  .border_styles_home {
-   background-color: #000;
+  background: linear-gradient(to right,#f5d19e, #fdf6ec, #f5d19e);  
+
    /* Solid black background */
    border-radius: 10px;
    /* Inner radius slightly less to avoid overflow */
@@ -3691,7 +3695,8 @@
  }
 
  .gradient-border-wrapper-last {
-   background: linear-gradient(to right, #6b390d, #ffb013);
+  background: linear-gradient(to right, #6b390d, #ffb013);
+
    /* Border gradient */
    padding-left: 13px;
    padding-right: 13px;
@@ -3705,8 +3710,8 @@
    justify-content: end;
  }
 
- /* .border_styles_home_last {
-   background-color: #111111;
+ .border_styles_home_last {
+  background: linear-gradient(to right,#f5d19e, #fdf6ec, #f5d19e);  
    
    border-radius: 10px;
 
@@ -3716,7 +3721,7 @@
    padding-bottom: 20px;
    text-align: left;
 
- } */
+ }
 
 
  @media (min-width:375px) and (max-width:768px) {

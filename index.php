@@ -31,7 +31,7 @@ $marquee_content = implode(' &nbsp; || &nbsp; ', $marquee_texts);
 <?php include 'navbar.php';  ?>
 
 
-<section class="black_bg_body ">
+<section class="  ">
     <div class="container text-center">
 
         <div class="d-flex justify-content-between align-items-center equal-divs pt-5 position-relative">
@@ -49,9 +49,9 @@ $marquee_content = implode(' &nbsp; || &nbsp; ', $marquee_texts);
                     data-bs-target="#customModal"
                     data-title="GROW WITH US"
                     data-description="Showcase your business to a growing local audience.
-Connect with real customers looking for products and services like yours.
-Get support, visibility, and tools to grow — all in one platform"
-                    data-img="assets/img/self_images/robot.jpeg">
+                    Connect with real customers looking for products and services like yours.
+                    Get support, visibility, and tools to grow — all in one platform"
+                                        data-img="assets/img/self_images/robot.jpeg">
                     Read More
                 </button>
             </div>
@@ -78,9 +78,9 @@ Get support, visibility, and tools to grow — all in one platform"
                     data-bs-target="#customModal"
                     data-title="GET YOU SOLUTION HERE"
                     data-description="Discover trusted local businesses right at your fingertips.
-Find exactly what you need, when you need it — fast and easy.
-Enjoy a seamless experience backed by quality and community trust
-customers"
+                Find exactly what you need, when you need it — fast and easy.
+                Enjoy a seamless experience backed by quality and community trust
+                customers"
                     data-img="assets/img/self_images/robot.jpeg">
                     Read More
                 </button>
@@ -192,7 +192,7 @@ $sqlLower = "SELECT * FROM offers WHERE type = 'lower' ORDER BY created_at DESC"
 $resultLower = $conn->query($sqlLower);
 ?>
 
-<section class="team-section-three space-md-bottom black_bg_body   ">
+<section class="team-section-three space-md-bottom     ">
     <!-- <section class="team-section-three space-md-bottom bg_image_for_shops  "> -->
 
     <div class="container-style6  ">
@@ -349,7 +349,7 @@ $resultLower = $conn->query($sqlLower);
 
 
 
-<section class="vs-hero-wrapper position-relative slider-area   black_bg_body">
+<section class="vs-hero-wrapper position-relative slider-area    ">
     <div class="bg-overlay "></div>
     <div class="vs-hero-carousel  " data-navprevnext="true" data-height="800" data-container="1900" data-slidertype="responsive">
 
@@ -404,7 +404,7 @@ $resultLower = $conn->query($sqlLower);
 
 
 
-<section class="black_bg_body d-none">
+<section class="  d-none">
     <div class="px-0">
         <div class="row justify-content-center mx-0">
             <div class="col-12 px-0">

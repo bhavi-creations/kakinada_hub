@@ -69,7 +69,7 @@
     /* background-color: rgb(221 221 221);  */
   /* background-color: #fdf7ee;
    background-color: #f5f3f0;*/
-  /*  background: linear-gradient(to right, #fffaf0, #f9f5ec);*/
+   /* background: linear-gradient(to right, #fffaf0, #f9f5ec); */
    /* background-color: #fbf6f0;  */
 
 
@@ -84,7 +84,7 @@
     /* background: linear-gradient(to right, #fff3e0, #ffe0b2); */
     /* background: linear-gradient(to right, #8b5a2b, #f6ae2d); */
     /* background: linear-gradient(to right, #3e1f00, #ffb013) !important; */
-    /* background: linear-gradient(to right, #fdf6ec, #f3e3cd);   */
+    background: linear-gradient(to right,#f5d19e, #fdf6ec, #f5d19e);  
  } 
 
  :root {
