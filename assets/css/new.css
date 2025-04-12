@@ -3572,7 +3572,7 @@
  /* Firefox Scrollbar */
  .scrollable-list {
    scrollbar-width: thin;
-   scrollbar-color: #ffb013 #000000;
+   scrollbar-color: #ffb013  #dfac80;
  }
 
 
