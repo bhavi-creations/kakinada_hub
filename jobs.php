@@ -4,14 +4,14 @@
 
 
 
- <section class="black_bg_body">
+ <section class=" ">
      <div class="container">
 
          <div class="text-center   ">
              <h1 class="gradient_text_color services_pages_heading">List Of Companies</h1>
          </div>
 
-         <form method="GET" action="" class="p-3 black_bg_body  shadow-sm rounded">
+         <form method="GET" action="" class="p-3    shadow-sm rounded">
 
              <div class="row g-3 align-items-center">
                  <div class="col-md-4">
