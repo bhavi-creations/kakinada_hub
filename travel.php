@@ -3,7 +3,7 @@
 
 <?php include './db.connection/db_connection.php'; ?>
 
-<section class="black_bg_body p-5">
+<section class="  p-5">
 
 
 <h1 class="text-center gradient_text_color  pb-5">Travel Destinations</h1>

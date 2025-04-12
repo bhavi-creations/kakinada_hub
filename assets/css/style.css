@@ -65,143 +65,169 @@
 
  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
- body{
-  background-color:rgb(221 221 221);
- }
- 
+ body {
+    /* background-color: rgb(221 221 221);  */
+  /* background-color: #fdf7ee;
+   background-color: #f5f3f0;*/
+  /*  background: linear-gradient(to right, #fffaf0, #f9f5ec);*/
+   /* background-color: #fbf6f0;  */
+
+
+   /* background-color: #f8f1e8; */
+   /* background-color: #fff4e5; */
+   /* background: linear-gradient(to bottom, #fffaf0, #f7efe0); */
+
+   /* background: linear-gradient(to right, #ff6a00, #ffb347);
+ background: linear-gradient(to right, #4e2a00, #d48e00);
+   background: linear-gradient(to right, #3e2f1c, #b5893e);
+    background: linear-gradient(to right, #ff9966, #ff5e62);
+    /* background: linear-gradient(to right, #fff3e0, #ffe0b2); */
+    /* background: linear-gradient(to right, #8b5a2b, #f6ae2d); */
+    /* background: linear-gradient(to right, #3e1f00, #ffb013); */
+    /* background: linear-gradient(to right, #fdf6ec, #f3e3cd);   */
+ } 
+
  :root {
-  --btn-gradient: linear-gradient(to right, #dc3c0a, #ffb013);
-  --heading-gradient: linear-gradient(to right, #6b390d, #ffb013);
-  --text-gradient: linear-gradient(to right,#dc3c0a, #ffb013);
-  --border-gradient: linear-gradient(to right, #6b390d, #ffb013);
-  --card-gradient: linear-gradient(to right, #6b390d, #ffb013);
-  --placeholder-color: #000000;
-  --text-bg-gradient: linear-gradient(to right, #6b390d, #ffb013);
-}
+   --btn-gradient: linear-gradient(to right, #dc3c0a, #ffb013);
+   --heading-gradient: linear-gradient(to right, #6b390d, #ffb013);
+   --text-gradient: linear-gradient(to right, #dc3c0a, #ffb013);
+   --border-gradient: linear-gradient(to right, #6b390d, #ffb013);
+   --card-gradient: linear-gradient(to right, #6b390d, #ffb013);
+   --placeholder-color: #000000;
+   --text-bg-gradient: linear-gradient(to right, #6b390d, #ffb013);
+ }
 
-.button-gradient {
-  background: var(--btn-gradient);
-  color: #fff;
-  border: none !important;
-  padding: 10px 20px;
-  border-radius: 6px;
-  font-weight: bold;
-}
+ .button-gradient {
+   background: var(--btn-gradient);
+   color: #fff;
+   border: none !important;
+   padding: 10px 20px;
+   border-radius: 6px;
+   font-weight: bold;
+ }
 
-button {
-  background: var(--btn-gradient);
-  color: #fff;
-  border: none;
-  /* padding: 10px 20px; */
-  border-radius: 6px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
+ button {
+   background: var(--btn-gradient);
+   color: #fff;
+   border: none;
+   /* padding: 10px 20px; */
+   border-radius: 6px;
+   font-weight: bold;
+   cursor: pointer;
+   transition: all 0.3s ease;
+ }
 
-/* Optional hover effect */
-button:hover {
-  filter: brightness(1.1);
-}
-.heading-gradient,
-.movie-label {
-  background: var(--heading-gradient);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.p-gradient,
-.movie-value,.job_roles,.cast_names {
-  background: var(--text-gradient);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.border-gradient,
-.job_image_card {
-    border: 2px solid transparent;
-    background-image: linear-gradient(#fff, #fff), var(--border-gradient);
-    background-origin: border-box;
-    background-clip: padding-box, border-box;
-    border-radius: 8px;
-}
+ /* Optional hover effect */
+ button:hover {
+   filter: brightness(1.1);
+ }
 
- .black_body{
- 
-  background: var(--title-color2);
+ .heading-gradient,
+ .movie-label {
+   background: var(--heading-gradient);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+ }
 
-}
-.card-gradient {
-  background: var(--card-gradient);
-  padding: 20px;
-  border-radius: 10px;
-  color: #fff;
-  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1);
-}
+ .p-gradient,
+ .movie-value,
+ .job_roles,
+ .cast_names {
+   background: var(--text-gradient);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+ }
 
+ .border-gradient,
+ .job_image_card {
+   border: 2px solid transparent;
+   background-image: linear-gradient(#fff, #fff), var(--border-gradient);
+   background-origin: border-box;
+   background-clip: padding-box, border-box;
+   border-radius: 8px;
+ }
 
+ .black_body {
 
+   background: var(--title-color2);
 
+ }
 
-/* Default placeholder color and background */
- 
-
-input[type="text"],
-textarea,
-select,
-input[type="file"] {
-  background: var(--text-bg-gradient) !important; /* Use your custom gradient */
-  color: #fff; /* Optional: make sure text is visible on dark gradients */
-  border: none;
-  padding: 10px;
-  border-radius: 6px;
-  margin-bottom: 10px;
-  width: 100%;
-  font-family: var(--body-font);
-  font-size: 16px;
-}
-
-/* Optional: Add focus styling */
-input[type="text"]:focus,
-textarea:focus,
-select:focus,
-input[type="file"]:focus {
-  outline: none;
-  box-shadow: 0 0 0 2px rgba(255, 176, 19, 0.5);
-}
+ .card-gradient {
+   background: var(--card-gradient);
+   padding: 20px;
+   border-radius: 10px;
+   color: #fff;
+   box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1);
+ }
 
 
 
-:root {
-  --theme-color: #ffb013;
-  --theme-color2: #2cb624;
-  --theme-color3: #27477d;
-  
-
-  --theme-color4: #07ccec;
-  --theme-color5: #27467C;
-  --title-color: #27477d;
-  --title-color2: #000000;
-  --body-color: #888c92;
-  --body-color2: #555555;
-  --secondary-color: #cdf8ff;
-  --smoke-color: #f3f6f7;
-  --light-color: #afafaf;
-  --black-color: #000000;
-  --dark-color: #060d0f;
-  --white-color: #ffffff;
-  --yellow-color: #fec624;
-  --success-color: #28a745;
-  --error-color: #dc3545;
-  --border-color: rgba(0, 0, 0, 0.10);
-  --title-font: "Quicksand", sans-serif;
-  --body-font: "Roboto", sans-serif;
-  --subtitle-font: "Poppins", sans-serif;
 
 
+ /* Default placeholder color and background */
 
-  --icon-font: "Font Awesome 5 Pro";
-  --flaticon: "Flaticon";
-  --ripple-ani-duration: 5s;
-}
+
+ input[type="text"],
+ textarea,
+ select,
+ input[type="file"] {
+   background: var(--text-bg-gradient) !important;
+   /* Use your custom gradient */
+   color: #fff;
+   /* Optional: make sure text is visible on dark gradients */
+   border: none;
+   padding: 10px;
+   border-radius: 6px;
+   margin-bottom: 10px;
+   width: 100%;
+   font-family: var(--body-font);
+   font-size: 16px;
+ }
+
+ /* Optional: Add focus styling */
+ input[type="text"]:focus,
+ textarea:focus,
+ select:focus,
+ input[type="file"]:focus {
+   outline: none;
+   box-shadow: 0 0 0 2px rgba(255, 176, 19, 0.5);
+ }
+
+
+
+ :root {
+   --theme-color: #ffb013;
+   --theme-color2: #2cb624;
+   --theme-color3: #27477d;
+
+
+   --theme-color4: #07ccec;
+   --theme-color5: #27467C;
+   --title-color: #27477d;
+   --title-color2: #000000;
+   --body-color: #888c92;
+   --body-color2: #555555;
+   --secondary-color: #cdf8ff;
+   --smoke-color: #f3f6f7;
+   --light-color: #afafaf;
+   --black-color: #000000;
+   --dark-color: #060d0f;
+   --white-color: #ffffff;
+   --yellow-color: #fec624;
+   --success-color: #28a745;
+   --error-color: #dc3545;
+   --border-color: rgba(0, 0, 0, 0.10);
+   --title-font: "Quicksand", sans-serif;
+   --body-font: "Roboto", sans-serif;
+   --subtitle-font: "Poppins", sans-serif;
+
+
+
+   --icon-font: "Font Awesome 5 Pro";
+   --flaticon: "Flaticon";
+   --ripple-ani-duration: 5s;
+ }
 
 
  .home-five {
@@ -4874,32 +4900,63 @@ input[type="file"]:focus {
  }
 
  /* Left side gradient border */
- body::before {
-   content: '';
-   position: fixed;
-   top: 0;
-   left: 45px;
-   width: .5px;
-   /* Thickness */
-   height: 100vh;
-   background: linear-gradient(to bottom, #f84c0d, #eaac1c);
-   /* Adjust colors */
-   z-index: 99999;
+
+
+ @media (min-width:992px) {
+   body::before {
+     content: '';
+     position: fixed;
+     top: 0;
+     left: 45px;
+     width: .5px;
+     /* Thickness */
+     height: 100vh;
+     background: linear-gradient(to bottom, #f84c0d, #eaac1c);
+     /* Adjust colors */
+     z-index: 99999;
+   }
+
+   /* Right side gradient border */
+   body::after {
+     content: '';
+     position: fixed;
+     top: 0;
+     right: 45px;
+     width: .5px;
+     height: 100vh;
+     background: linear-gradient(to bottom, #f84c0d, #eaac1c);
+     /* Adjust colors */
+     z-index: 99999;
+   }
  }
 
- /* Right side gradient border */
- body::after {
-   content: '';
-   position: fixed;
-   top: 0;
-   right: 45px;
-   width: .5px;
-   height: 100vh;
-   background: linear-gradient(to bottom, #f84c0d, #eaac1c);
-   /* Adjust colors */
-   z-index: 99999;
- }
+ @media (max-width:992px) {
+   body::before {
+     content: '';
+     position: fixed;
+     top: 0;
+     left: 8px;
+     width: .5px;
+     /* Thickness */
+     height: 100vh;
+     background: linear-gradient(to bottom, #f84c0d, #eaac1c);
+     /* Adjust colors */
+     z-index: 99999;
+   }
 
+   /* Right side gradient border */
+   body::after {
+     content: '';
+     position: fixed;
+     top: 0;
+     right: 8px;
+     width: .5px;
+     height: 100vh;
+     background: linear-gradient(to bottom, #f84c0d, #eaac1c);
+     /* Adjust colors */
+     z-index: 99999;
+   }
+ }
 
  .will-sticky .sticky-active {
    position: fixed;
@@ -21037,7 +21094,7 @@ input[type="file"]:focus {
    background-origin: border-box;
    background-clip: padding-box, border-box;
    border: 1px solid #ffb013;
-   border-radius:4px;
+   border-radius: 4px;
 
    /* These help rendering */
    display: inline-block;
@@ -21052,20 +21109,21 @@ input[type="file"]:focus {
    background-color: #ffffff;
 
  }
+
  .sub_mini_serices {
-  font-size: 18px !important;
-  letter-spacing: 0.9px;
+   font-size: 18px !important;
+   letter-spacing: 0.9px;
 
-  /* Gradient text styles */
-  background: linear-gradient(to right, #6b390d, #ffb013);
-  /* background: linear-gradient(to right, #ffb013, #dc3c0a); */
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+   /* Gradient text styles */
+   background: linear-gradient(to right, #6b390d, #ffb013);
+   /* background: linear-gradient(to right, #ffb013, #dc3c0a); */
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
 
-  /* Optional for better compatibility */
-  background-clip: text;
-  color: transparent;
-}
+   /* Optional for better compatibility */
+   background-clip: text;
+   color: transparent;
+ }
 
 
  /* @media (max-width:992px) {
@@ -21082,15 +21140,15 @@ input[type="file"]:focus {
 
  .view_all_sub_mini_serices {
    font-size: 18px !important;
-    /* Gradient text styles */
-    background: linear-gradient(to right, #6b390d, #ffb013);
-    /* background: linear-gradient(to right, #ffb013, #dc3c0a); */
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  
-    /* Optional for better compatibility */
-    background-clip: text;
-    color: transparent;
+   /* Gradient text styles */
+   background: linear-gradient(to right, #6b390d, #ffb013);
+   /* background: linear-gradient(to right, #ffb013, #dc3c0a); */
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+
+   /* Optional for better compatibility */
+   background-clip: text;
+   color: transparent;
    text-decoration: underline;
    font-weight: bold;
  }
@@ -21165,9 +21223,9 @@ input[type="file"]:focus {
  .job_image_card {
    display: inline-block;
    padding: 62px;
-  
+
    border-radius: 8px;
-  background-color: transparent !important;
+   background-color: transparent !important;
    display: flex;
    justify-content: center;
    align-items: center;
@@ -21398,14 +21456,14 @@ input[type="file"]:focus {
  }
 
 
- .need_no_styles{
-  background-color: black  !important;
-  border: none;
-  /* padding: 10px 20px; */
- 
- 
-  border-radius: 6px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: all 0.3s ease;
+ .need_no_styles {
+   background-color: black !important;
+   border: none;
+   /* padding: 10px 20px; */
+
+
+   border-radius: 6px;
+   font-weight: bold;
+   cursor: pointer;
+   transition: all 0.3s ease;
  }
