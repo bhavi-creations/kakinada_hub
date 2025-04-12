@@ -3639,6 +3639,7 @@
 
    font-weight: bold;
  }
+ 
 
  .has-new-label {
    background: linear-gradient(to right, #6b390d, #ffb013);
@@ -3704,17 +3705,34 @@
    justify-content: end;
  }
 
- .border_styles_home_last {
+ /* .border_styles_home_last {
    background-color: #111111;
-   /* Solid black background */
+   
    border-radius: 10px;
-   /* Inner radius slightly less to avoid overflow */
+
    padding-left: 60px;
-   /* padding-right: 15px; */
+  
    padding-top: 83px;
    padding-bottom: 20px;
    text-align: left;
 
+ } */
+
+
+ @media (min-width:375px) and (max-width:768px) {
+  
+ .border_styles_home_last {
+  background-color: #111111;
+
+  border-radius: 10px;
+
+  padding-left: 60px;
+
+  padding-top: 25px;
+  padding-bottom: 20px;
+  text-align: center;
+
+}
  }
 
  .inner_div_index {

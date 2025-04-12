@@ -92,7 +92,7 @@ customers"
 
         <!-- Modal -->
         <div class="modal fade" id="customModal" tabindex="-1" aria-labelledby="customModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-lg"> <!-- you can adjust size with modal-sm/modal-lg -->
+            <div class="modal-dialog modal-dialog-centered modal-lg">
                 <div class="modal-content">
 
                     <div class="modal-body d-flex flex-column flex-md-row align-items-center">
@@ -117,34 +117,34 @@ customers"
         <div class="row">
 
 
-            <div class="col-5  gradient-border-wrapper ">
+            <div class="col-12 col-md-5  gradient-border-wrapper ">
                 <div class="row  border_styles_home">
-                    <div class="col-4">
+                    <div class="col-6 col-md-4">
                         <img src="assets/img/self_images/mini_mask_man.jpg" class="img-fluid" alt="">
                     </div>
-                    <div class="col-8 inner_div_index">
+                    <div class="col-6 col-md-8 inner_div_index">
                         <h1 class="logo_title_color">1000+</h1>
                         <h4 class="white_coor_text">TRAFFIC</h4>
                         <p class="white_coor_text"> Join the brands already hitting 1000+ traffic with proven methods
-                         </p>
+                        </p>
                     </div>
                 </div>
             </div>
 
 
-            <div class="col-5  art_and_design">
+            <div class="col-12 col-md-5  art_and_design">
                 <h2 class="white_coor_text">Trusted. Local. Easy</h2>
                 <p class="white_coor_text">Connecting Businesses with a Growing Audience, Every Day.
-                connectuion </p>
+                    connectuion </p>
 
             </div>
-            <div class="col-2  gradient-border-wrapper-last ">
+            <div class="col-12  col-md-2 gradient-border-wrapper-last ">
                 <div class="row  ">
                     <div class="border_styles_home_last">
 
 
                         <h1 class="logo_title_color"> 500+ </h1>
-                        <h5 class="white_coor_text">Supporting vendors  </h5>
+                        <h5 class="white_coor_text">Supporting vendors </h5>
                     </div>
                 </div>
             </div>
