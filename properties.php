@@ -14,7 +14,7 @@ $categoryResult = mysqli_query($conn, $categoryQuery);
 ?>
 
 
-<section class="black_bg_body">
+<section class=" ">
     <div class="container">
 
         <div class="text-center">

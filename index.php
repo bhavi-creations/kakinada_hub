@@ -51,14 +51,14 @@ $marquee_content = implode(' &nbsp; || &nbsp; ', $marquee_texts);
                     data-description="Showcase your business to a growing local audience.
                     Connect with real customers looking for products and services like yours.
                     Get support, visibility, and tools to grow — all in one platform"
-                                        data-img="assets/img/self_images/robot.jpeg">
+                                        data-img="assets/img/self_images/robot_bg.png">
                     Read More
                 </button>
             </div>
 
             <!-- Center Image -->
             <div class="center_side_div_image">
-                <img src="assets/img/self_images/robot.jpeg" class="img-fluid" alt="">
+                <img src="assets/img/self_images/robot_bg.png" class="img-fluid" alt="">
             </div>
 
             <!-- Horizontal and Vertical Lines -->
@@ -81,7 +81,7 @@ $marquee_content = implode(' &nbsp; || &nbsp; ', $marquee_texts);
                 Find exactly what you need, when you need it — fast and easy.
                 Enjoy a seamless experience backed by quality and community trust
                 customers"
-                    data-img="assets/img/self_images/robot.jpeg">
+                    data-img="assets/img/self_images/robot_bg.png">
                     Read More
                 </button>
             </div>

@@ -3356,7 +3356,11 @@
  }
 
  .custom-filters {
-   background-color: #000000;
+   /* background-color: #000000; */
+   /* background: linear-gradient(to right,#f5d19e, #fdf6ec, #f5d19e);  
+    */
+
+    background: linear-gradient(to right, #f9b455, #fbdeb8, #f9b455);
    padding: 15px 20px;
    border-radius: 12px;
    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.06);
