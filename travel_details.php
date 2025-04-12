@@ -11,7 +11,7 @@ $query = "SELECT * FROM travel_details WHERE travel_id = '$travel_id'";
 $result = mysqli_query($conn, $query);
 ?>
 
-<h1 class="text-center my-4">Available Travel Options</h1>
+<h1 class="text-center my-4 heading-gradient">Available Travel Options</h1>
 
 <div class="container">
     <div class="row">
@@ -41,7 +41,7 @@ $result = mysqli_query($conn, $query);
 
                 // Car Details
                 if (!empty($model) || !empty($seating) || !empty($mileage) || !empty($price)) {
-                    echo '<h5 class="text-primary">Car Details</h5>';
+                    echo '<h5 class="text-primary heading-gradient">Car Details</h5>';
                     
                     if (!empty($model)) {
                         echo '<div class="d-flex justify-content-between align-items-center">

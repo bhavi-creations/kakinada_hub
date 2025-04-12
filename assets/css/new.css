@@ -3331,7 +3331,9 @@
    padding: 8px 12px;
    border: 1px solid #ced4da;
    border-radius: 8px;
-   background-color: #fff;
+   /* background-color: #fff; */
+  background: var(--card-gradient) !important;
+
    font-size: 14px;
    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
    transition: border-color 0.2s ease-in-out;
@@ -3390,9 +3392,11 @@
 
  .custom-input {
    padding: 8px 10px;
-   border: 1px solid #ccc;
+   border: 1px solid #000000;
    border-radius: 6px;
-   background: #fff;
+   /* background: #fff; */
+  background: var(--card-gradient) !important;
+
    font-size: 14px;
  }
 
