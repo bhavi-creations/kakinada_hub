@@ -31,12 +31,12 @@ if (isset($_GET['id'])) {
 
 ?>
 <a href="properties.php">
-<button id="restaurant-icon" class="restaurant-icon">🔙</button>
- </a>
+    <button id="restaurant-icon" class="restaurant-icon">🔙</button>
+</a>
 
 <section>
-    <div class="container">
-        <h1 class="text-center"><?php echo htmlspecialchars($property['category']); ?> - <?php echo htmlspecialchars($property['type']); ?></h1>
+    <div class="container my-5">
+        <h1 class="text-center heading-gradient"><?php echo htmlspecialchars($property['category']); ?> - <?php echo htmlspecialchars($property['type']); ?></h1>
 
         <!-- 🟡 Display category -->
         <h5 class="text-center text-muted mb-4">
@@ -48,9 +48,9 @@ if (isset($_GET['id'])) {
             <div class="col-lg-8 col-12 order-1 order-md-0">
                 <div class="row fadeIn" data-wow-delay="0.3s">
                     <section class="OfferContainer_exclusive__non wow fadeInUp my-2" data-wow-delay="100ms">
-                        <div class="col-12 card_div px-3">
-                            <div class="row py-3">
-                                <h4 class="  text-center property_title_sace"><i class="fas fa-home"></i> <?php echo htmlspecialchars($property['title']); ?></h4>
+                        <div class="col-12 card_div  ">
+                            <div class="row p-3">
+                                <h4 class="  text-center property_title_sace  heading-gradient"><i class="fas fa-home"></i> <?php echo htmlspecialchars($property['title']); ?></h4>
 
 
 
@@ -138,44 +138,48 @@ if (isset($_GET['id'])) {
                 </div>
             </div>
 
-            <div class="col-lg-4 col-12 text_side_div text-center order-0 order-md-1">
-                <div class="image-gallery">
-                    <!-- Main Image Carousel -->
-                    <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
-                        <div class="carousel-inner">
-                            <?php
-                            if (!empty($images)) {
-                                foreach ($images as $index => $image) {
-                                    $image = trim($image); // Ensure clean filenames
-                                    $activeClass = ($index === 0) ? "active" : "";
-                                    echo "
-                                    <div class='carousel-item $activeClass'>
+            <div class="col-lg-4 col-12 text-center order-0 order-md-1">
+                <div class="container  text_side_div ">
+
+                    <div class="image-gallery">
+                        <!-- Main Image Carousel -->
+                        <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+                            <div class="carousel-inner ">
+                                <?php
+                                if (!empty($images)) {
+                                    foreach ($images as $index => $image) {
+                                        $image = trim($image); // Ensure clean filenames
+                                        $activeClass = ($index === 0) ? "active" : "";
+                                        echo "
+                                    <div class='carousel-item $activeClass '>
                                         <img src='./admin/uploads/properties/$image' class='d-block w-100' alt='Property Image'>
                                     </div>";
+                                    }
                                 }
-                            }
-                            ?>
+                                ?>
+                            </div>
                         </div>
-                    </div>
 
-                    <!-- Thumbnails Row -->
-                    <div class="thumbnail-gallery mt-3">
-                        <div class="row gx-2">
-                            <?php
-                            if (!empty($images)) {
-                                foreach ($images as $index => $image) {
-                                    $image = trim($image); // Remove extra spaces
-                                    $activeClass = ($index === 0) ? "active-thumb" : "";
-                                    echo "
+                        <!-- Thumbnails Row -->
+                        <div class="thumbnail-gallery mt-3">
+                            <div class="row gx-2">
+                                <?php
+                                if (!empty($images)) {
+                                    foreach ($images as $index => $image) {
+                                        $image = trim($image); // Remove extra spaces
+                                        $activeClass = ($index === 0) ? "active-thumb" : "";
+                                        echo "
                                 <div class='col-3'>
                                     <img src='./admin/uploads/properties/$image' class='img-thumbnail thumb $activeClass' data-bs-target='#mainCarousel' data-bs-slide-to='$index'>
                                 </div>";
+                                    }
                                 }
-                            }
-                            ?>
+                                ?>
 
+                            </div>
                         </div>
                     </div>
+
                 </div>
 
 

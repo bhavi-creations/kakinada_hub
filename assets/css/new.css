@@ -2224,15 +2224,22 @@
  } */
 
  .text_side_div {
-   border: 3px solid transparent;
-   border-radius: 12px;
-   background-image: linear-gradient(#f5d19e, #fdf6ec, #f5d19e), linear-gradient(135deg, #dc3c0a, #ffb013);
-   background-origin: border-box;
-   background-clip: content-box, border-box;
-   padding-left: .5px;
-   padding-right: .5px;
+  border: 3px solid transparent;
+  border-radius: 12px;
+  background-image: linear-gradient(#f5d19e, #fdf6ec, #f5d19e), linear-gradient(135deg, #dc3c0a, #ffb013);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  padding-left: .5px;
+  padding-right: .5px;
 
- }
+  display: flex;
+  flex-direction: column;
+  align-items: center;       /* Align horizontally */
+  justify-content: center;   /* Align vertically */
+  height: 100%;              /* Make sure the container takes full height */
+}
+
+
 
  .side_dive_images {
    border-radius: 3px;
@@ -2274,7 +2281,7 @@
 
    border: 1px solid #ffb013;
    /* Gradient text styles */
-   background: linear-gradient(to right, #dc3c0a, #ffb013);   
+   background: linear-gradient(to right, #dc3c0a, #ffb013);
 
    /* background: linear-gradient(to right, #ffb013, #dc3c0a); */
    -webkit-background-clip: text;
@@ -2604,7 +2611,7 @@
    background-position: center;
    background-repeat: no-repeat;
    color: #fff !important;
- 
+
    padding: 15px;
    position: relative;
    overflow: hidden;
@@ -3574,7 +3581,7 @@
  /* Firefox Scrollbar */
  .scrollable-list {
    scrollbar-width: thin;
-   scrollbar-color: #ffb013  #dfac80;
+   scrollbar-color: #ffb013 #dfac80;
  }
 
 
@@ -4159,30 +4166,30 @@
 
 
  /* Apply gradient text and background to custom input */
-.custom-input {
-  /* background-color: #ffb013; /* Set dropdown background */
-  /* color: transparent;
+ .custom-input {
+   /* background-color: #ffb013; /* Set dropdown background */
+   /* color: transparent;
   background-image: linear-gradient(to right, #6b390d, #ffb013); /* Gradient text */
-  -webkit-background-clip: text; 
-  background-clip: text; 
-  border: none !important;
-  padding: 8px;
-  font-size: 16px;
-  font-weight: 900;
-}
+   -webkit-background-clip: text;
+   background-clip: text;
+   border: none !important;
+   padding: 8px;
+   font-size: 16px;
+   font-weight: 900;
+ }
 
-/* Option text color fallback */
-.custom-input option {
-  color: #6b390d;
-    /* background: linear-gradient(to right, #f9b455, #fbdeb8, #f9b455) !important; */
-    background-color: #fbdeb8;
-  }
- 
-  
+ /* Option text color fallback */
+ .custom-input option {
+   color: #6b390d;
+   /* background: linear-gradient(to right, #f9b455, #fbdeb8, #f9b455) !important; */
+   background-color: #fbdeb8;
+ }
 
 
-.custom-input option:first-child {
-  color: #6b390d;
 
-  background-color: #fbdeb8;
-}
+
+ .custom-input option:first-child {
+   color: #6b390d;
+
+   background-color: #fbdeb8;
+ }

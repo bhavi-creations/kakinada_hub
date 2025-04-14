@@ -2,7 +2,7 @@
 
 
 
-<!-- <?php include 'moviesidebar.php';  ?> -->
+ 
 
 
 
@@ -22,7 +22,16 @@
 
         </div>
         <div class="row">
-            <div class="col-lg-9 col-12">
+            <div class="col-lg-2  col-12 text_side_div d-none d-lg-block">
+
+                <img src="assets/img/test/sideimg2.png" alt="" class="img-fluid side_dive_images">
+
+                <img src="assets/img/test/animation.gif" alt="Animated GIF" class=" my-4 side_dive_images">
+
+                <img src="assets/img/test/sideimg1.png" alt="" class="img-fluid  side_dive_images">
+            </div>
+
+            <div class="col-lg-8 col-12">
                 <div class="row">
 
                     <div class="col-md-8 col-12 my-2">
@@ -58,11 +67,11 @@
                             </div>
                             <div class="d-flex justify-content-between align-items-center">
                                 <p class="movie-label"><strong>Location:</strong></p>
-                                <p class="movie-value">  Kakinada</p>
+                                <p class="movie-value"> Kakinada</p>
                             </div>
                             <div class="d-flex justify-content-between align-items-center">
                                 <p class="movie-label"><strong>Date:</strong></p>
-                                <p class="movie-value">  14-03-2025</p>
+                                <p class="movie-value"> 14-03-2025</p>
                             </div>
                         </div>
 
@@ -74,13 +83,13 @@
                     <div class=" col-12 ">
                         <h2>About the Event</h2>
                         <h6 class="events_paragraph">
-                        Ugadi, also known as the Telugu and Kannada New Year, is a joyous festival celebrated primarily in the states of Andhra Pradesh, Telangana, and Karnataka. It marks the beginning of a new year according to the lunisolar Hindu calendar and symbolizes new beginnings, prosperity, and hope. The festival falls in the spring season, usually in March or April, and is observed with great enthusiasm.                         </h6>
+                            Ugadi, also known as the Telugu and Kannada New Year, is a joyous festival celebrated primarily in the states of Andhra Pradesh, Telangana, and Karnataka. It marks the beginning of a new year according to the lunisolar Hindu calendar and symbolizes new beginnings, prosperity, and hope. The festival falls in the spring season, usually in March or April, and is observed with great enthusiasm. </h6>
                         <h2>About the Venue</h2>
-                        <h6  class="events_paragraph">
-                        Spandana Function Hall is a versatile event venue located in Kakinada, Andhra Pradesh. It offers two indoor spaces: one accommodating up to 200 guests and another larger hall suitable for up to 600 seated guests, making it ideal for various events from intimate gatherings to grand celebrations. The venue also provides four rooms for guests and parking facilities for up to 50 vehicles.                         </h6>
+                        <h6 class="events_paragraph">
+                            Spandana Function Hall is a versatile event venue located in Kakinada, Andhra Pradesh. It offers two indoor spaces: one accommodating up to 200 guests and another larger hall suitable for up to 600 seated guests, making it ideal for various events from intimate gatherings to grand celebrations. The venue also provides four rooms for guests and parking facilities for up to 50 vehicles. </h6>
 
                     </div>
-                 
+
                 </div>
                 <div class="row p-3">
                     <div class="col-md-8 col-12">
@@ -223,14 +232,15 @@
 
                 </div>
             </div>
-            <div class="col-lg-3  col-12 text_side_div d-none d-lg-block">
+            <div class="col-lg-2  col-12 text_side_div d-none d-lg-block">
 
-                <img src="assets/img/test/sideimg2.png" alt="" class="img-fluid">
+                <img src="assets/img/test/sideimg2.png" alt="" class="img-fluid side_dive_images">
 
-                <img src="assets/img/test/animation.gif" alt="Animated GIF" class="mt-5">
+                <img src="assets/img/test/animation.gif" alt="Animated GIF" class=" my-4 side_dive_images">
 
-                <img src="assets/img/test/sideimg1.png" alt="" class="img-fluid mt-5">
+                <img src="assets/img/test/sideimg1.png" alt="" class="img-fluid  side_dive_images">
             </div>
+
 
             <div id="mobileModal" class="mobile-modal-overlay">
                 <div class="mobile-modal-content">

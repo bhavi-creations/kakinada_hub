@@ -34,28 +34,38 @@
         <div class="row">
 
 
-            <?php
-            include './db.connection/db_connection.php';
+            <div class="col-lg-2  col-12 text_side_div d-none d-lg-block">
 
-            // Get company ID from URL
-            if (isset($_GET['company_id'])) {
-                $company_id = intval($_GET['company_id']);
+                <img src="assets/img/test/sideimg2.png" alt="" class="img-fluid side_dive_images">
 
-                // Fetch company details
-                $companyQuery = "SELECT * FROM companies WHERE id = $company_id";
-                $companyResult = mysqli_query($conn, $companyQuery);
-                $company = mysqli_fetch_assoc($companyResult);
+                <img src="assets/img/test/animation.gif" alt="Animated GIF" class=" my-4 side_dive_images">
 
-                // Fetch all jobs for this company
-                $jobQuery = "SELECT * FROM jobs WHERE company_id = $company_id";
-                $jobResult = mysqli_query($conn, $jobQuery);
-            } else {
-                echo "Invalid Company Selection";
-                exit;
-            }
-            ?>
+                <img src="assets/img/test/sideimg1.png" alt="" class="img-fluid  side_dive_images">
+            </div>
 
-            <div class="col-lg-9 col-12">
+            <div class="col-lg-8 col-12">
+
+
+                <?php
+                include './db.connection/db_connection.php';
+
+                // Get company ID from URL
+                if (isset($_GET['company_id'])) {
+                    $company_id = intval($_GET['company_id']);
+
+                    // Fetch company details
+                    $companyQuery = "SELECT * FROM companies WHERE id = $company_id";
+                    $companyResult = mysqli_query($conn, $companyQuery);
+                    $company = mysqli_fetch_assoc($companyResult);
+
+                    // Fetch all jobs for this company
+                    $jobQuery = "SELECT * FROM jobs WHERE company_id = $company_id";
+                    $jobResult = mysqli_query($conn, $jobQuery);
+                } else {
+                    echo "Invalid Company Selection";
+                    exit;
+                }
+                ?>
                 <div class="row">
                     <div class="col-md-6 col-12 my-2">
                         <div class="job_image_card border-gradient">
@@ -98,11 +108,11 @@
                         <h2 class="heading-gradient">About Company</h2>
                         <h6 class="p-gradient"><?php echo $company['about']; ?></h6>
 
-                        <h2  class="heading-gradient">Address</h2>
+                        <h2 class="heading-gradient">Address</h2>
                         <h6 class="card-text movie-value">
-                           
+
                             <?php if (!empty($company['map_url'])) { ?>
-                                <a href="<?php echo $company['map_url']; ?>" target="_blank"  >
+                                <a href="<?php echo $company['map_url']; ?>" target="_blank">
                                     <?php echo $company['address']; ?>
                                 </a>
                             <?php } else {
@@ -157,7 +167,7 @@
                                 <div class="review-header">
                                     <img src="assets/img/test/woman.png" alt="User" class="profile-img">
                                     <div class="">
-                                        <p  class="heading-gradient"><strong>Veera Venkata Durgadevi Gandi</strong></p>
+                                        <p class="heading-gradient"><strong>Veera Venkata Durgadevi Gandi</strong></p>
                                         <p class="stars  p-gradient ">⭐⭐⭐⭐⭐ 5/5</p>
                                     </div>
                                 </div>
@@ -179,7 +189,7 @@
                                 <div class="review-header">
                                     <img src="assets/img/test/boy11.png" alt="User" class="profile-img">
                                     <div class="">
-                                        <p  class="heading-gradient"><strong>
+                                        <p class="heading-gradient"><strong>
                                                 kranthi kumar m
                                             </strong></p>
                                         <p class="stars  p-gradient">⭐⭐⭐⭐</p>
@@ -202,7 +212,7 @@
                                 <div class="review-header">
                                     <img src="assets/img/test/woman.png" alt="User" class="profile-img">
                                     <div class="">
-                                        <p  class="heading-gradient"><strong>Iqra mahi
+                                        <p class="heading-gradient"><strong>Iqra mahi
                                             </strong></p>
                                         <p class="stars  p-gradient">⭐⭐⭐⭐⭐ 5/5</p>
                                     </div>
@@ -224,7 +234,7 @@
                                 <div class="review-header">
                                     <img src="assets/img/test/boy11.png" alt="User" class="profile-img">
                                     <div class="">
-                                        <p  class="heading-gradient"><strong>lokesh nandan</strong></p>
+                                        <p class="heading-gradient"><strong>lokesh nandan</strong></p>
                                         <p class="stars  p-gradient">⭐⭐⭐⭐</p>
                                     </div>
                                 </div>
@@ -245,7 +255,7 @@
                                 <div class="review-header">
                                     <img src="assets/img/test/woman.png" alt="User" class="profile-img">
                                     <div class="">
-                                        <p  class="heading-gradient"><strong> Sophia L.</strong></p>
+                                        <p class="heading-gradient"><strong> Sophia L.</strong></p>
                                         <p class="stars  p-gradient">⭐⭐⭐⭐⭐ 5/5</p>
                                     </div>
                                 </div>
@@ -274,8 +284,8 @@
                     </div>
                     <div class="col-md-4 col-12">
                         <div class="review-form">
-                            <h2  class="heading-gradient">Submit Your Review</h2>
-                            <input  type="text" id="name" placeholder="Your Name" required>
+                            <h2 class="heading-gradient">Submit Your Review</h2>
+                            <input type="text" id="name" placeholder="Your Name" required>
                             <select id="rating">
                                 <option value="⭐">⭐</option>
                                 <option value="⭐⭐">⭐⭐</option>
@@ -295,14 +305,16 @@
 
 
 
-            <div class="col-lg-3  col-12 text_side_div d-none d-lg-block">
+            <div class="col-lg-2  col-12 text_side_div d-none d-lg-block">
 
-                <img src="assets/img/test/sideimg2.png" alt="" class="img-fluid">
+                <img src="assets/img/test/sideimg2.png" alt="" class="img-fluid side_dive_images">
 
-                <img src="assets/img/test/animation.gif" alt="Animated GIF" class="mt-5">
+                <img src="assets/img/test/animation.gif" alt="Animated GIF" class=" my-4 side_dive_images">
 
-                <img src="assets/img/test/sideimg1.png" alt="" class="img-fluid mt-5">
+                <img src="assets/img/test/sideimg1.png" alt="" class="img-fluid  side_dive_images">
             </div>
+
+
 
             <div id="mobileModal" class="mobile-modal-overlay">
                 <div class="mobile-modal-content">
