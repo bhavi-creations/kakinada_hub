@@ -12,6 +12,8 @@
     <div class="container">
         <div class="row">
 
+
+        
         <div class="col-12 col-md-3">
                 <a href="rental.php">
                     <div class="rental-card p-3 border rounded shadow">
