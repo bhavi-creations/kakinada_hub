@@ -3,12 +3,12 @@
 
 <?php include './db.connection/db_connection.php'; ?>
 
-<section class="  p-5">
+<section class="  py-5">
 
 
 <h1 class="text-center gradient_text_color  pb-5">Travel Destinations</h1>
 
-<div class="container p-5">
+<div class="container py-5">
     <div class="row justify-content-center">
         <?php
         $query = "SELECT id, name, filter_image, created_at FROM travels";

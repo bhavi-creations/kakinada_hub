@@ -25,8 +25,8 @@
                          value="<?php echo isset($_GET['search_category']) ? $_GET['search_category'] : ''; ?>">
                  </div>
                  <div class="col-md-4 text-end">
-                     <button type="submit" class="btn   px-4 shadow">🔎 Search</button>
-                     <a href="jobs.php" class="btn btn-secondary px-4 shadow">⟲ Reset</a>
+                     <button type="submit" class="btn    shadow">🔎 Search</button>
+                     <a href="jobs.php" class="btn btn-secondary  shadow">⟲ Reset</a>
                  </div>
              </div>
 

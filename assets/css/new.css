@@ -2274,7 +2274,8 @@
 
    border: 1px solid #ffb013;
    /* Gradient text styles */
-   background: linear-gradient(to right, #6b390d, #ffb013);
+   background: linear-gradient(to right, #dc3c0a, #ffb013);   
+
    /* background: linear-gradient(to right, #ffb013, #dc3c0a); */
    -webkit-background-clip: text;
    -webkit-text-fill-color: transparent;
@@ -2426,7 +2427,8 @@
    left: 0;
    right: 0;
    bottom: 0;
-   background: rgba(0, 0, 0, 0.792);
+   background: rgb(0 0 0 / 48%);
+
    z-index: 0;
  }
 
@@ -2457,7 +2459,8 @@
    left: 0;
    right: 0;
    bottom: 0;
-   background: rgba(0, 0, 0, 0.792);
+   background: rgb(0 0 0 / 48%);
+
 
    z-index: 0;
  }
@@ -2484,7 +2487,7 @@
    left: 0;
    right: 0;
    bottom: 0;
-   background: rgba(0, 0, 0, 0.792);
+   background: rgb(0 0 0 / 48%);
 
    z-index: 0;
  }
@@ -2510,7 +2513,7 @@
    left: 0;
    right: 0;
    bottom: 0;
-   background: rgba(0, 0, 0, 0.792);
+   background: rgb(0 0 0 / 48%);
 
    z-index: 0;
  }
@@ -2536,7 +2539,7 @@
    left: 0;
    right: 0;
    bottom: 0;
-   background: rgba(0, 0, 0, 0.792);
+   background: rgb(0 0 0 / 48%);
 
    z-index: 0;
  }
@@ -2563,7 +2566,7 @@
    left: 0;
    right: 0;
    bottom: 0;
-   background: rgba(0, 0, 0, 0.792);
+   background: rgb(0 0 0 / 48%);
 
    z-index: 0;
  }
@@ -2589,8 +2592,7 @@
    left: 0;
    right: 0;
    bottom: 0;
-   background: rgba(0, 0, 0, 0.792);
-
+   background: rgb(0 0 0 / 48%);
    z-index: 0;
  }
 
@@ -2602,6 +2604,7 @@
    background-position: center;
    background-repeat: no-repeat;
    color: #fff !important;
+ 
    padding: 15px;
    position: relative;
    overflow: hidden;
@@ -2616,8 +2619,7 @@
    left: 0;
    right: 0;
    bottom: 0;
-   background: rgba(0, 0, 0, 0.792);
-
+   background: rgb(0 0 0 / 48%);
    z-index: 0;
  }
 
@@ -4163,7 +4165,7 @@
   background-image: linear-gradient(to right, #6b390d, #ffb013); /* Gradient text */
   -webkit-background-clip: text; 
   background-clip: text; 
-  border: 1px solid #fff;
+  border: none !important;
   padding: 8px;
   font-size: 16px;
   font-weight: 900;
