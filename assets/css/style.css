@@ -84,7 +84,8 @@
     /* background: linear-gradient(to right, #fff3e0, #ffe0b2); */
     /* background: linear-gradient(to right, #8b5a2b, #f6ae2d); */
     /* background: linear-gradient(to right, #3e1f00, #ffb013) !important; */
-    background: linear-gradient(to right,#f5d19e, #fdf6ec, #f5d19e);  
+    /* background: linear-gradient(to right,#f5d19e, #fdf6ec, #f5d19e);   */
+    background-color: none;
  } 
 
  :root {
