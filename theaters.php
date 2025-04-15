@@ -8,6 +8,7 @@ include './db.connection/db_connection.php';
 <section class="py-5 black_body">
     <div class="container">
         <div class="row g-4">
+            
 
             <?php 
             // Fetch all theaters from the database
