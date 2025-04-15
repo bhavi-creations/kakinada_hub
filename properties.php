@@ -76,50 +76,45 @@ $categoryResult = mysqli_query($conn, $categoryQuery);
             <div class="col-lg-8 col-12">
 
                 <div class="row fadeIn" data-wow-delay="0.3s">
-                    <section class="OfferContainer_exclusive__non wow fadeInUp my-2" data-wow-delay="100ms">
-                        <div class="row" id="property-list">
-                            <?php
-                            $query = "SELECT * FROM properties ORDER BY id DESC";
-                            $result = mysqli_query($conn, $query);
-                            while ($row = mysqli_fetch_assoc($result)):
-                                $propertyType = trim($row['type']);
-                                $propertyCategory = trim($row['category']);
-                                $numericPrice = isset($row['price']) ? (int) preg_replace('/[^\d]/', '', $row['price']) : '';
-                            ?>
-                                <div class="col-12 card_div px-3 property-item"
-                                    data-type="<?php echo $propertyType; ?>"
-                                    data-category="<?php echo $propertyCategory; ?>"
-                                    data-price="<?php echo $numericPrice; ?>">
+                    <?php
+                    $query = "SELECT * FROM properties ORDER BY id DESC";
+                    $result = mysqli_query($conn, $query);
+                    while ($row = mysqli_fetch_assoc($result)):
+                        $propertyType = trim($row['type']);
+                        $propertyCategory = trim($row['category']);
+                        $numericPrice = isset($row['price']) ? (int) preg_replace('/[^\d]/', '', $row['price']) : '';
+                    ?>
 
-                                    <div class="row py-3">
-                                        <div class="col-12 col-md-3 job_image_card_main">
-                                            <img src="./admin/uploads/properties/<?php echo $row['image']; ?>" class="img-fluid company_logo_size" alt="Property Image">
-                                        </div>
-                                        <div class="col-8 col-md-9">
-                                            <h4 class="gradient_text_color"><?php echo $row['title']; ?></h4>
-                                            <p class="property_p_tag">
-                                                <strong class="property_strong">Price:</strong>
-                                                <?php echo $numericPrice ? '₹' . number_format($numericPrice) : 'Not Provided'; ?>
-                                            </p>
-                                            <p class="property_p_tag"><strong class="property_strong">Location:</strong> <?php echo $row['location']; ?></p>
-                                            <p class="property_p_tag">
-                                                <strong class="property_strong">Posted On:</strong>
-                                                <?php echo isset($row['created_at']) ? date('d M Y', strtotime($row['created_at'])) : 'Not Available'; ?>
-                                            </p>
-                                            <p class="rent_tag <?php echo strtolower(str_replace(' ', '-', $propertyType)); ?>">
-                                                <?php echo $propertyType; ?>
-                                            </p>
-                                        </div>
-                                        <div class="col-12 terms_cond_styles">
-                                            <div class="terms_justify">
-                                                <p class="gradient_text_color"><a href="property_details.php?id=<?php echo $row['id']; ?>">View Full Details</a></p>
-                                            </div>
-                                        </div>
+                        <section class="OfferContainer_exclusive__non wow fadeInUp my-2 property-item"
+                            data-wow-delay="100ms"
+                            data-type="<?php echo strtolower($propertyType); ?>"
+                            data-category="<?php echo strtolower($propertyCategory); ?>"
+                            data-price="<?php echo $numericPrice; ?>">
+
+                            <div class="container card_div">
+                                <div class="row need_padding_div">
+                                    <div class="col-12 col-md-3 job_image_card_main mb-2 parent-container">
+                                        <img src="./admin/uploads/properties/<?php echo $row['image']; ?>" class="img-fluid company_logo_size inner_image_card_job" alt="Property Image">
+                                    </div>
+                                    <div class="col-12 col-md-9">
+                                        <h4 class="gradient_text_color"><?php echo $row['title']; ?></h4>
+                                        <p class="property_p_tag"><strong class="property_strong">Price:</strong> ₹<?php echo number_format($numericPrice); ?></p>
+                                        <p class="property_p_tag"><strong class="property_strong">Location:</strong> <?php echo $row['location']; ?></p>
+                                        <p class="property_p_tag"><strong class="property_strong">Posted On:</strong> <?php echo date('d M Y', strtotime($row['created_at'])); ?></p>
+                                        <p class="rent_tag <?php echo strtolower(str_replace(' ', '-', $propertyType)); ?>"><?php echo $propertyType; ?></p>
                                     </div>
                                 </div>
-                            <?php endwhile; ?>
-                        </div>
-                    </section>
+
+                                <div class="col-12 terms_cond_styles">
+                                    <div class="terms_justify">
+                                        <p class="gradient_text_color"><a href="property_details.php?id=<?php echo $row['id']; ?>">View Full Details</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                    <?php endwhile; ?>
+
                 </div>
 
                 <!-- JavaScript Filtering -->
@@ -187,6 +182,7 @@ $categoryResult = mysqli_query($conn, $categoryQuery);
 
 
         </div>
+
     </div>
 
 
