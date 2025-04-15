@@ -2203,8 +2203,8 @@
  }
 
  .header-main {
-   background: linear-gradient(to right, #f9b455, #fbdeb8, #f9b455);
-   /* background-color: #F4F5F9; */
+   /* background: linear-gradient(to right, #f9b455, #fbdeb8, #f9b455); */
+   background-color: #000000;
  }
 
 
@@ -2224,9 +2224,9 @@
  } */
 
  .text_side_div {
-  border: 3px solid transparent;
+  border: 3px solid  #ff7230;
   border-radius: 12px;
-  background-image: linear-gradient(#f5d19e, #fdf6ec, #f5d19e), linear-gradient(135deg, #dc3c0a, #ffb013);
+  /* background-image: linear-gradient(#f5d19e, #fdf6ec, #f5d19e), linear-gradient(135deg, #dc3c0a, #ffb013); */
   background-origin: border-box;
   background-clip: content-box, border-box;
   padding-left: .5px;
@@ -2718,9 +2718,10 @@
  .side_view {
    width: 300px;
    height: 100vh;
-   background:
+   /* background:
      linear-gradient(#cd4a87, #cf4a87),
-     white;
+     white; */
+     background-color: #000000;
    position: fixed;
    top: 0;
    left: -320px;
@@ -2908,9 +2909,9 @@
 
 
  .image-gallery {
-   border: 1px solid #ccc;
+   /* border: 1px solid #ccc; */
    padding: 10px;
-   background-color: #f9f9f9;
+   /* background-color: #f9f9f9; */
    max-width: 500px;
    margin: 0 auto;
    position: relative;
@@ -2923,6 +2924,7 @@
    width: 100%;
    border: 2px solid transparent;
    transition: border-color 0.3s;
+   background-color: transparent;
  }
 
  .thumbnail-gallery img.active-thumb {
@@ -3204,13 +3206,16 @@
 
 
 
-
+.need_img_center{
+  align-items: center !important;
+}
 
  .rental-card {
-   background: #fff;
+   /* background: transparent  ; */
    border-radius: 10px;
    text-align: center;
    margin-bottom: 20px;
+   border: 1px solid #ff7230 !important;
  }
 
  .car_image {
@@ -3260,8 +3265,8 @@
 
 
  .footer_bg_last {
-   /* background-color: #F4F5F9; */
-   background: linear-gradient(to right, #f9b455, #fbdeb8, #f9b455);
+   background-color: #000000;
+   /* background: linear-gradient(to right, #f9b455, #fbdeb8, #f9b455); */
 
  }
 
@@ -3390,7 +3395,7 @@
    /* background: linear-gradient(to right,#f5d19e, #fdf6ec, #f5d19e);  
     */
 
-   background: linear-gradient(to right, #f9b455, #fbdeb8, #f9b455);
+   /* background: linear-gradient(to right, #f9b455, #fbdeb8, #f9b455); */
    padding: 15px 20px;
    border-radius: 12px;
    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.06);
@@ -3532,7 +3537,7 @@
 
  @media (min-width:1400px) {
    .scrollable-list {
-     max-height: 930px;
+     max-height: 1040px;
      overflow-y: auto;
      padding-right: 10px;
    }
@@ -3581,7 +3586,8 @@
  /* Firefox Scrollbar */
  .scrollable-list {
    scrollbar-width: thin;
-   scrollbar-color: #ffb013 #dfac80;
+   scrollbar-color: #ffb013 #000000;
+ 
  }
 
 
@@ -4193,3 +4199,116 @@
 
    background-color: #fbdeb8;
  }
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* .travels_section{
+  background-image: url(../img/test/travels_image.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.9;
+ } */
+
+ .travels_section{
+  position: relative;
+  background-color: black;
+  color: white !important;
+
+  
+  
+}
+.travels_section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 45px;
+  right: 46px;
+  bottom: 0;
+  background-image: url(../img/test/travels_image.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.4;
+  z-index: 0;
+  color: white !important;
+}
+
+
+@media (min-width:375px)  and (max-width:768px){
+  .travels_section{
+padding: 50px;
+  }
+  .travels_section::before{
+left: 10px;
+right: 10px;
+  }
+}
+.travels_section .container {
+  position: relative;
+  z-index: 1; 
+}
+
+
+
+
+
+
+
+ .events_section {
+  position: relative;
+  background-color: black;
+  /* padding: 0 100px; */
+}
+@media (min-width:375px)  and (max-width:768px){
+  .events_section{
+padding: 50px;
+  }
+  .events_section::before{
+    left: 10px;
+    right: 10px;
+  }
+}
+
+.events_section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50px;
+  right: 46px;
+  bottom: 0;
+  background-image: url(../img/test/events_image.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.4;
+  z-index: 0;
+}
+
+.events_section .container {
+  position: relative;
+  z-index: 1; 
+}

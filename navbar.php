@@ -247,7 +247,7 @@
                             <div class="col-auto">
                                 <div class="header1-logo  ">
                                     <a href="index.php" class="text-center">
-                                        <h2 class="logo_title_color">KAKINADA Hub</h2>
+                                        <h2 class="logo_title_color">KAKINADA  Hub</h2>
 
                                         <!-- <img src="assets/img/self_images/kkd_mini.png" class="  img-fluid  " alt="Logo"> -->
                                     </a>

@@ -4,7 +4,7 @@
 
 
 
- <section class=" ">
+ <section class="my-5 ">
      <div class="container">
 
          <div class="text-center   ">
@@ -137,7 +137,11 @@
 
          </div>
 
-         <div id="mobileModal" class="mobile-modal-overlay">
+        
+
+     </div>
+
+     <div id="mobileModal" class="mobile-modal-overlay">
              <div class="mobile-modal-content">
                  <button class="close-btn" onclick="closeMobileModal()">×</button>
                  <div class="col-12 text_side_div">
@@ -158,8 +162,6 @@
                  }
              });
          </script>
-
-     </div>
  </section>
 
 

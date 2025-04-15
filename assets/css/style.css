@@ -85,7 +85,8 @@
     /* background: linear-gradient(to right, #8b5a2b, #f6ae2d); */
     /* background: linear-gradient(to right, #3e1f00, #ffb013) !important; */
     /* background: linear-gradient(to right,#f5d19e, #fdf6ec, #f5d19e);   */
-    background-color: none;
+    /* background-color: none; */
+    background-color: #000;
  } 
 
  :root {
@@ -142,7 +143,8 @@
  .border-gradient,
  .job_image_card {
    border: 2px solid transparent;
-   background-image: linear-gradient(#fff, #fff), var(--border-gradient);
+   background-color: transparent;
+   /* background-image: linear-gradient(#fff, #fff), var(--border-gradient); */
    background-origin: border-box;
    background-clip: padding-box, border-box;
    border-radius: 8px;
@@ -1381,7 +1383,8 @@ padding-left: 10px;
  .vs-menu-wrapper .vs-menu-area {
    width: 100%;
    max-width: 310px;
-   background: linear-gradient(to right,#f5d19e, #fdf6ec, #f5d19e);  
+   background-color: #000;
+   /* background: linear-gradient(to right,#f5d19e, #fdf6ec, #f5d19e);   */
    border-right: 3px solid var(--theme-color);
    height: 100%;
    position: relative;
@@ -5079,9 +5082,9 @@ padding-left: 10px;
    text-align: left;
    top: 100%;
    left: 0;
-   /* background-color: transparent !important; */
+   background-color: transparent !important;
 
-   background: linear-gradient(to right, #f9b455, #fbdeb8, #f9b455);
+   /* background: linear-gradient(to right, #f9b455, #fbdeb8, #f9b455); */
    -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
    visibility: hidden;
@@ -21185,9 +21188,9 @@ padding-left: 10px;
 
  /* Gradient Border for Main Card */
  .card_div {
-   border: 3px solid transparent;
+   border: 3px solid #ff7230 ;
    border-radius: 12px;
-   background-image: linear-gradient(#f5d19e, #fdf6ec, #f5d19e), linear-gradient(135deg, #dc3c0a, #ffb013);
+   /* background-image: linear-gradient(#f5d19e, #fdf6ec, #f5d19e), linear-gradient(135deg, #dc3c0a, #ffb013); */
    background-origin: border-box;
    background-clip: content-box, border-box;
    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
@@ -21202,18 +21205,27 @@ padding-left: 10px;
 }
 
  
+@media (min-width:992px) {
+  .need_padding_div {
+    padding: 15px;
+    padding-left: 22px;
+ 
+  }
+}
+@media (max-width:992px) {
+  .need_padding_div {
+    padding: 15px;
+    padding-left: 15px;
+ 
+  }
+}
 
- .need_padding_div {
-   padding: 15px;
-   padding-left: 20px;
-
- }
 
  /* Gradient Border for Image Div */
  .job_image_card_main {
-   border: 1.5px solid transparent;
+   border: 2px solid  #ff7230  ;
    border-radius: 10px;
-   background-image: linear-gradient(#f5d19e, #fdf6ec, #f5d19e), linear-gradient(135deg, #dc3c0a, #ffb013);
+   /* background-image: linear-gradient(#f5d19e, #fdf6ec, #f5d19e), linear-gradient(135deg, #dc3c0a, #ffb013); */
    background-origin: border-box;
    background-clip: content-box, border-box;
    padding: 2px;
@@ -21249,7 +21261,7 @@ padding-left: 10px;
  .job_image_card {
    display: inline-block;
    padding: 62px;
-
+border: #ff7230 2px solid;
    border-radius: 8px;
    background-color: transparent !important;
    display: flex;
@@ -21257,7 +21269,7 @@ padding-left: 10px;
    align-items: center;
 
 
-   background-image: linear-gradient(#f5d19e, #fdf6ec, #f5d19e), linear-gradient(135deg, #dc3c0a, #ffb013);
+   /* background-image: linear-gradient(#f5d19e, #fdf6ec, #f5d19e), linear-gradient(135deg, #dc3c0a, #ffb013); */
 
 
  }

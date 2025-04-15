@@ -79,7 +79,7 @@ $result = mysqli_query($conn, $query);
 
                 // Driver Details
                 if (!empty($driver_name) || !empty($price_per_6hrs) || !empty($experience) || !empty($driver_age) || !empty($driver_gender)) {
-                    echo '<h5 class="text-success mt-3">Driver Details</h5>';
+                    echo '<h5 class=" heading-gradient mt-3">Driver Details</h5>';
 
                     if (!empty($driver_name)) {
                         echo '<div class="d-flex justify-content-between align-items-center">

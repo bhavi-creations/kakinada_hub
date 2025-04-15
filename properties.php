@@ -13,7 +13,7 @@ $categoryQuery = "SELECT DISTINCT category FROM properties WHERE category IS NOT
 $categoryResult = mysqli_query($conn, $categoryQuery);
 ?>
 
-<section class=" ">
+<section class="my-5 ">
     <div class="container">
 
         <div class="text-center">
@@ -22,7 +22,7 @@ $categoryResult = mysqli_query($conn, $categoryQuery);
         </div>
 
         <!-- Filters -->
-        <div class="row gy-2 my-4 custom-filters black_body">
+        <div class="row gy-2 my-4 custom-filters  ">
             <div class="col-12 col-md-3">
                 <select id="typeFilter" class="custom-input" onchange="filterProperties()">
                     <option value="">All Types</option>
@@ -75,7 +75,7 @@ $categoryResult = mysqli_query($conn, $categoryQuery);
 
             <div class="col-lg-8 col-12">
 
-                <div class="row fadeIn" data-wow-delay="0.3s">
+                <div class="row fadeIn scrollable-list" data-wow-delay="0.3s">
                     <?php
                     $query = "SELECT * FROM properties ORDER BY id DESC";
                     $result = mysqli_query($conn, $query);
@@ -208,3 +208,9 @@ $categoryResult = mysqli_query($conn, $categoryQuery);
     </script>
 
 </section>
+
+
+
+<?php include 'chat_bot.php';  ?>
+
+<?php include 'footer.php';  ?>
