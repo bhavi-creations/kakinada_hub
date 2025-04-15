@@ -4896,17 +4896,44 @@ padding-left: 10px;
  }
 
  /* Add gradient border using pseudo-element */
- .header-wrapper::after {
-   content: '';
-   position: absolute;
-   bottom: 0;
-   left: 0;
-   height: .5px;
-   width: 100%;
-   background: linear-gradient(to right, #f84c0d, #eaac1c);
+ @media (min-width:768px) and (max-width:992px) {
+  .header-wrapper::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    background: linear-gradient(to right, #f84c0d, #eaac1c);
+ 
+  }
+ }
+ @media (max-width:768px) {
+  
+   .header-wrapper::after {
+     content: '';
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     height: .5px;
+     width: 100%;
+     background: linear-gradient(to right, #f84c0d, #eaac1c);
+    }
 
  }
+ @media (min-width:992px) {
+  
+  .header-wrapper::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: .5px;
+    width: 100%;
+    background: linear-gradient(to right, #f84c0d, #eaac1c);
+   }
 
+}
  body {
    position: relative;
    margin: 0;
@@ -5082,7 +5109,7 @@ padding-left: 10px;
    text-align: left;
    top: 100%;
    left: 0;
-   background-color: transparent !important;
+   background-color: transparent !important;  
 
    /* background: linear-gradient(to right, #f9b455, #fbdeb8, #f9b455); */
    -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);

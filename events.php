@@ -47,7 +47,7 @@ $result = $stmt->get_result();
 
 
 
-<section class="  ">
+<section class=" events_section ">
     <div class="container  ">
 
         <div class="text-center   ">

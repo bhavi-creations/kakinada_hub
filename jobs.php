@@ -4,7 +4,7 @@
 
 
 
- <section class="my-5 ">
+ <section class=" jobs_sections">
      <div class="container">
 
          <div class="text-center   ">

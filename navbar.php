@@ -70,7 +70,7 @@
                     <!-- <img src="assets/img/self_images/kakinada_hub.png" alt="Kakinada Hub"> -->
                     <h2 class="logo_title_color my-5    ">KAKINADA Hub</h2>
 
-                
+
                 </a>
             </div>
             <form action="#" class="mobile-menu-form">
@@ -234,238 +234,232 @@
         </div>
     </div>
 
+    <div class="header-container" style="position: relative;">
+        <a href="#" class="drag_the_location_icon">
+            <i class="fas fa-map-marker-alt rotate-icon"></i>
+        </a>
+        <header class="header-wrapper header-layout1">
 
-    <header class="header-wrapper header-layout1">
 
+            <div class="sticky-wrap">
+                <div class="sticky-active">
+                    <!-- Header Main -->
+                    <div class="header-main">
+                        <div class="container container-style1 position-relative">
+                            <div class="row align-items-center justify-content-between">
+                                <div class="col-auto">
+                                    <div class="header1-logo  ">
+                                        <a href="index.php" class="text-center">
+                                            <h2 class="logo_title_color">KAKINADA Hub</h2>
 
-        <div class="sticky-wrap">
-            <div class="sticky-active">
-                <!-- Header Main -->
-                <div class="header-main">
-                    <div class="container container-style1 position-relative">
-                        <div class="row align-items-center justify-content-between">
-                            <div class="col-auto">
-                                <div class="header1-logo  ">
-                                    <a href="index.php" class="text-center">
-                                        <h2 class="logo_title_color">KAKINADA  Hub</h2>
-
-                                        <!-- <img src="assets/img/self_images/kkd_mini.png" class="  img-fluid  " alt="Logo"> -->
-                                    </a>
+                                            <!-- <img src="assets/img/self_images/kkd_mini.png" class="  img-fluid  " alt="Logo"> -->
+                                        </a>
+                                    </div>
                                 </div>
+
+
+                                <div class="col text-end text-lg-center">
+                                    <nav class="main-menu menu-style1 d-none d-lg-block">
+                                        <ul>
+                                            <li class=" ">
+                                                <a href="index.php"> Home </a>
+                                            </li>
+
+
+                                            <li class="menu-item-has-children mega-menu-wrap">
+                                                <a href="services.php"><span class="has-new-label">Services </span></a>
+                                                <ul class="mega-menu dropdown-menu-mega">
+                                                    <div class="mega-menu-row row  ">
+                                                        <div class="col-3 movies_bg my-2">
+
+
+                                                            <li><a class="sub_heading" href="#"> Movies</a>
+                                                                <ul>
+
+                                                                    <?php
+                                                                    include './db.connection/db_connection.php';
+
+                                                                    // Fetch all theaters from the database
+                                                                    $theater_query = "SELECT id, name FROM theaters";
+                                                                    $theater_result = mysqli_query($conn, $theater_query);
+
+                                                                    while ($row = mysqli_fetch_assoc($theater_result)) {
+                                                                        echo '<li><a class="sub_mini_serices" href="screens.php?theater_id=' . $row['id'] . '">' . htmlspecialchars($row['name']) . '</a></li>';
+                                                                    }
+                                                                    ?>
+                                                                    <li><a class="view_all_sub_mini_serices" href="theaters.php"> View All Movies Deals </a></li>
+                                                                </ul>
+                                                            </li>
+
+
+
+
+
+                                                        </div>
+                                                        <div class="col-3 resturent_bg  my-2 ">
+                                                            <li><a class="sub_heading" href="#"> Resturents</a>
+                                                                <ul>
+                                                                    <li><a class="sub_mini_serices" href="business_layout.php"> Food Train </a></li>
+                                                                    <li><a class="sub_mini_serices" href="business_layout.php"> BBQ </a></li>
+                                                                    <li><a class="sub_mini_serices" href="business_layout.php"> Kritunga </a></li>
+                                                                    <li><a class="sub_mini_serices" href="business_layout.php"> Chitti Babu </a></li>
+                                                                    <li><a class="sub_mini_serices" href="business_layout.php"> Arabian nights </a></li>
+                                                                    <li><a class="sub_mini_serices" href="business_layout.php"> Hungry Birds </a></li>
+                                                                    <li><a class="sub_mini_serices" href="business_layout.php"> Khaidi </a></li>
+                                                                    <li><a class="sub_mini_serices" href="business_layout.php"> Zeeshan </a></li>
+
+                                                                    <li><a class="view_all_sub_mini_serices" href="resturents_layouts.php"> View All Resturents Deals </a></li>
+
+                                                                </ul>
+                                                            </li>
+
+                                                        </div>
+                                                        <div class="col-3 saloon_bg my-2">
+                                                            <li><a class="sub_heading" href="#"> Saloons & Spa</a>
+                                                                <ul>
+                                                                    <li><a class="sub_mini_serices" href="royal_touch.php"> Royal Touch </a></li>
+                                                                    <li><a class="sub_mini_serices" href="royal_touch.php"> V & V </a></li>
+                                                                    <li><a class="sub_mini_serices" href="royal_touch.php"> Tomboi </a></li>
+                                                                    <li><a class="sub_mini_serices" href="royal_touch.php"> VJ saloon </a></li>
+                                                                    <li><a class="sub_mini_serices" href="royal_touch.php"> Nice Looks </a></li>
+                                                                    <li><a class="sub_mini_serices" href="royal_touch.php"> Alince </a></li>
+                                                                    <li><a class="sub_mini_serices" href="royal_touch.php"> Celebraties secrets </a></li>
+                                                                    <li><a class="sub_mini_serices" href="royal_touch.php"> Decent </a></li>
+
+
+                                                                    <li><a class="view_all_sub_mini_serices" href="list_layout.php"> View All Saloons & Spa Deals </a></li>
+
+                                                                </ul>
+                                                            </li>
+
+                                                        </div>
+                                                        <div class="col-3 gifts_bg my-2">
+                                                            <li><a class="sub_heading" href="business_layout.php"> Gifts & Jewellery</a>
+                                                                <ul>
+
+                                                                    <li><a class="sub_mini_serices" href="sweets_chocolate.php"> Sweets & Chocolates </a></li>
+                                                                    <li><a class="sub_mini_serices" href="sweets_chocolate.php"> Gifts & Collectables </a></li>
+                                                                    <li><a class="sub_mini_serices" href="sweets_chocolate.php"> Flowers </a></li>
+                                                                    <li><a class="sub_mini_serices" href="sweets_chocolate.php"> Jewellery & Watches </a></li>
+                                                                    <li><a class="sub_mini_serices" href="sweets_chocolate.php"> Malbar </a></li>
+                                                                    <li><a class="sub_mini_serices" href="sweets_chocolate.php"> Tansique </a></li>
+                                                                    <li><a class="sub_mini_serices" href="sweets_chocolate.phpp"> Kazana Jewellery </a></li>
+                                                                    <li><a class="view_all_sub_mini_serices" href="list_layout.php"> View All Gifts & Jewellery Deals </a></li>
+
+                                                                </ul>
+                                                            </li>
+
+                                                        </div>
+                                                        <div class="col-3 fashion_bg  my-2">
+                                                            <li><a class="sub_heading" href="#"> Fashion</a>
+                                                                <ul>
+                                                                    <li><a class="sub_mini_serices" href="footware_fashion.php"> Footwear </a></li>
+                                                                    <li><a class="sub_mini_serices" href="footware_fashion.php"> Jewellery </a></li>
+                                                                    <li><a class="sub_mini_serices" href="footware_fashion.php"> Women's Fashion </a></li>
+                                                                    <li><a class="sub_mini_serices" href="footware_fashion.php"> Designerwear </a></li>
+                                                                    <li><a class="sub_mini_serices" href="footware_fashion.php"> Men's Fashion </a></li>
+                                                                    <li><a class="sub_mini_serices" href="footware_fashion.php"> Lingerie </a></li>
+                                                                    <li><a class="sub_mini_serices" href="footware_fashion.php"> Fashion Accessories </a></li>
+                                                                    <li><a class="sub_mini_serices" href="footware_fashion.php"> Children & Teen Fashion </a></li>
+
+                                                                    <li><a class="view_all_sub_mini_serices" href="list_layout.php"> View All Fashion Deals </a></li>
+
+                                                                </ul>
+                                                            </li>
+
+                                                        </div>
+                                                        <div class="col-3 hospital_bg my-2">
+                                                            <li><a class="sub_heading" href="#"> Hospitals</a>
+                                                                <ul>
+                                                                    <li><a class="sub_mini_serices" href="dental_hospital.php"> Dental Hospitals </a></li>
+                                                                    <li><a class="sub_mini_serices" href="dental_hospital.php"> Neuro Hospitals </a></li>
+                                                                    <li><a class="sub_mini_serices" href="dental_hospital.php"> ENT Hospitals </a></li>
+                                                                    <li><a class="sub_mini_serices" href="dental_hospital.php"> Skincare Hospitals </a></li>
+                                                                    <li><a class="sub_mini_serices" href="dental_hospital.php"> physiotherapy </a></li>
+
+                                                                    <li><a class="view_all_sub_mini_serices" href="list_layout.php"> View All Fashion Deals </a></li>
+
+                                                                </ul>
+                                                            </li>
+
+                                                        </div>
+                                                        <div class="col-3 sports_bg my-2">
+                                                            <li><a class="sub_heading" href="business_layout.php"> Sports & Gym</a>
+                                                                <ul>
+                                                                    <li><a class="sub_mini_serices" href="sports_clothing.php"> Sports Clothing </a></li>
+                                                                    <li><a class="sub_mini_serices" href="sports_clothing.php"> Clubs & Gyms </a></li>
+                                                                    <li><a class="sub_mini_serices" href="sports_clothing.php"> Camping & Outdoors </a></li>
+                                                                    <li><a class="sub_mini_serices" href="sports_clothing.php"> Sports & Fitness Equipment </a></li>
+                                                                    <li><a class="sub_mini_serices" href="sports_clothing.php"> Sports Nutrition & Diet </a></li>
+                                                                    <li><a class="sub_mini_serices" href="sports_clothing.php"> Cycling - Bikes & Accessories </a></li>
+                                                                    <li><a class="view_all_sub_mini_serices" href="list_layout.php"> View All Sports & Fitness Deals </a></li>
+
+                                                                </ul>
+                                                            </li>
+
+                                                        </div>
+                                                        <div class="col-3 kids_bg my-2">
+                                                            <li><a class="sub_heading" href="business_layout.php"> Kids & Babies</a>
+                                                                <ul>
+                                                                    <li><a class="sub_mini_serices" href="toys_games.php"> Toys & Games </a></li>
+                                                                    <li><a class="sub_mini_serices" href="toys_games.php"> Kids & Baby Clothes </a></li>
+                                                                    <li><a class="sub_mini_serices" href="toys_games.php"> Maternity </a></li>
+                                                                    <li><a class="sub_mini_serices" href="toys_games.php"> Baby Items & Furniture </a></li>
+                                                                    <li><a class="view_all_sub_mini_serices" href="list_layout.php"> View All Kids & Babies Deals </a></li>
+
+                                                                </ul>
+                                                            </li>
+
+                                                        </div>
+                                                    </div>
+                                                </ul>
+                                            </li>
+
+
+
+
+                                            <li class="">
+                                                <a class=" " href="jobs.php"> Jobs </a>
+                                            </li>
+
+
+
+                                            <li>
+                                                <a href="events.php">Events</a>
+                                            </li>
+                                            <li>
+                                                <a href="travel.php">Travel</a>
+                                            </li>
+                                            <li>
+                                                <a href="properties.php">Properties</a>
+                                            </li>
+
+                                        </ul>
+                                    </nav>
+
+
+                                    <button class="vs-menu-toggle d-inline-block d-lg-none"><i class="fas fa-bars"></i></button>
+
+                                </div>
+
+
+                                <div class="col-auto gap-3 d-none d-lg-flex">
+                                    <form action="#" class="mobile-menu-form  d-none d-lg-block">
+                                        <input type="text" class="form-control" placeholder="Search...">
+                                        <button class="need_no_styles" type="submit"><i class="search_icon  fas fa-search"></i></button>
+                                    </form>
+                                </div>
+
+
+
                             </div>
-
-
-                            <div class="col text-end text-lg-center">
-                                <nav class="main-menu menu-style1 d-none d-lg-block">
-                                    <ul>
-                                        <li class=" ">
-                                            <a href="index.php"> Home </a>
-                                        </li>
-
-
-                                        <li class="menu-item-has-children mega-menu-wrap">
-                                            <a href="services.php"><span class="has-new-label">Services </span></a>
-                                            <ul class="mega-menu dropdown-menu-mega">
-                                                <div class="mega-menu-row row  ">
-                                                    <div class="col-3 movies_bg my-2">
-
-
-                                                        <li><a class="sub_heading" href="#"> Movies</a>
-                                                            <ul>
-
-                                                                <?php
-                                                                include './db.connection/db_connection.php';
-
-                                                                // Fetch all theaters from the database
-                                                                $theater_query = "SELECT id, name FROM theaters";
-                                                                $theater_result = mysqli_query($conn, $theater_query);
-
-                                                                while ($row = mysqli_fetch_assoc($theater_result)) {
-                                                                    echo '<li><a class="sub_mini_serices" href="screens.php?theater_id=' . $row['id'] . '">' . htmlspecialchars($row['name']) . '</a></li>';
-                                                                }
-                                                                ?>
-                                                                <li><a class="view_all_sub_mini_serices" href="theaters.php"> View All Movies Deals </a></li>
-                                                            </ul>
-                                                        </li>
-
-
-
-
-
-                                                    </div>
-                                                    <div class="col-3 resturent_bg  my-2 ">
-                                                        <li><a class="sub_heading" href="#"> Resturents</a>
-                                                            <ul>
-                                                                <li><a class="sub_mini_serices" href="business_layout.php"> Food Train </a></li>
-                                                                <li><a class="sub_mini_serices" href="business_layout.php"> BBQ </a></li>
-                                                                <li><a class="sub_mini_serices" href="business_layout.php"> Kritunga </a></li>
-                                                                <li><a class="sub_mini_serices" href="business_layout.php"> Chitti Babu </a></li>
-                                                                <li><a class="sub_mini_serices" href="business_layout.php"> Arabian nights </a></li>
-                                                                <li><a class="sub_mini_serices" href="business_layout.php"> Hungry Birds </a></li>
-                                                                <li><a class="sub_mini_serices" href="business_layout.php"> Khaidi </a></li>
-                                                                <li><a class="sub_mini_serices" href="business_layout.php"> Zeeshan </a></li>
-
-                                                                <li><a class="view_all_sub_mini_serices" href="resturents_layouts.php"> View All Resturents Deals </a></li>
-
-                                                            </ul>
-                                                        </li>
-
-                                                    </div>
-                                                    <div class="col-3 saloon_bg my-2">
-                                                        <li><a class="sub_heading" href="#"> Saloons & Spa</a>
-                                                            <ul>
-                                                                <li><a class="sub_mini_serices" href="royal_touch.php"> Royal Touch </a></li>
-                                                                <li><a class="sub_mini_serices" href="royal_touch.php"> V & V </a></li>
-                                                                <li><a class="sub_mini_serices" href="royal_touch.php"> Tomboi </a></li>
-                                                                <li><a class="sub_mini_serices" href="royal_touch.php"> VJ saloon </a></li>
-                                                                <li><a class="sub_mini_serices" href="royal_touch.php"> Nice Looks </a></li>
-                                                                <li><a class="sub_mini_serices" href="royal_touch.php"> Alince </a></li>
-                                                                <li><a class="sub_mini_serices" href="royal_touch.php"> Celebraties secrets </a></li>
-                                                                <li><a class="sub_mini_serices" href="royal_touch.php"> Decent </a></li>
-
-
-                                                                <li><a class="view_all_sub_mini_serices" href="list_layout.php"> View All Saloons & Spa Deals </a></li>
-
-                                                            </ul>
-                                                        </li>
-
-                                                    </div>
-                                                    <div class="col-3 gifts_bg my-2">
-                                                        <li><a class="sub_heading" href="business_layout.php"> Gifts & Jewellery</a>
-                                                            <ul>
-
-                                                                <li><a class="sub_mini_serices" href="sweets_chocolate.php"> Sweets & Chocolates </a></li>
-                                                                <li><a class="sub_mini_serices" href="sweets_chocolate.php"> Gifts & Collectables </a></li>
-                                                                <li><a class="sub_mini_serices" href="sweets_chocolate.php"> Flowers </a></li>
-                                                                <li><a class="sub_mini_serices" href="sweets_chocolate.php"> Jewellery & Watches </a></li>
-                                                                <li><a class="sub_mini_serices" href="sweets_chocolate.php"> Malbar </a></li>
-                                                                <li><a class="sub_mini_serices" href="sweets_chocolate.php"> Tansique </a></li>
-                                                                <li><a class="sub_mini_serices" href="sweets_chocolate.phpp"> Kazana Jewellery </a></li>
-                                                                <li><a class="view_all_sub_mini_serices" href="list_layout.php"> View All Gifts & Jewellery Deals </a></li>
-
-                                                            </ul>
-                                                        </li>
-
-                                                    </div>
-                                                    <div class="col-3 fashion_bg  my-2">
-                                                        <li><a class="sub_heading" href="#"> Fashion</a>
-                                                            <ul>
-                                                                <li><a class="sub_mini_serices" href="footware_fashion.php"> Footwear </a></li>
-                                                                <li><a class="sub_mini_serices" href="footware_fashion.php"> Jewellery </a></li>
-                                                                <li><a class="sub_mini_serices" href="footware_fashion.php"> Women's Fashion </a></li>
-                                                                <li><a class="sub_mini_serices" href="footware_fashion.php"> Designerwear </a></li>
-                                                                <li><a class="sub_mini_serices" href="footware_fashion.php"> Men's Fashion </a></li>
-                                                                <li><a class="sub_mini_serices" href="footware_fashion.php"> Lingerie </a></li>
-                                                                <li><a class="sub_mini_serices" href="footware_fashion.php"> Fashion Accessories </a></li>
-                                                                <li><a class="sub_mini_serices" href="footware_fashion.php"> Children & Teen Fashion </a></li>
-
-                                                                <li><a class="view_all_sub_mini_serices" href="list_layout.php"> View All Fashion Deals </a></li>
-
-                                                            </ul>
-                                                        </li>
-
-                                                    </div>
-                                                    <div class="col-3 hospital_bg my-2">
-                                                        <li><a class="sub_heading" href="#"> Hospitals</a>
-                                                            <ul>
-                                                                <li><a class="sub_mini_serices" href="dental_hospital.php"> Dental Hospitals </a></li>
-                                                                <li><a class="sub_mini_serices" href="dental_hospital.php"> Neuro Hospitals </a></li>
-                                                                <li><a class="sub_mini_serices" href="dental_hospital.php"> ENT Hospitals </a></li>
-                                                                <li><a class="sub_mini_serices" href="dental_hospital.php"> Skincare Hospitals </a></li>
-                                                                <li><a class="sub_mini_serices" href="dental_hospital.php"> physiotherapy </a></li>
-
-                                                                <li><a class="view_all_sub_mini_serices" href="list_layout.php"> View All Fashion Deals </a></li>
-
-                                                            </ul>
-                                                        </li>
-
-                                                    </div>
-                                                    <div class="col-3 sports_bg my-2">
-                                                        <li><a class="sub_heading" href="business_layout.php"> Sports & Gym</a>
-                                                            <ul>
-                                                                <li><a class="sub_mini_serices" href="sports_clothing.php"> Sports Clothing </a></li>
-                                                                <li><a class="sub_mini_serices" href="sports_clothing.php"> Clubs & Gyms </a></li>
-                                                                <li><a class="sub_mini_serices" href="sports_clothing.php"> Camping & Outdoors </a></li>
-                                                                <li><a class="sub_mini_serices" href="sports_clothing.php"> Sports & Fitness Equipment </a></li>
-                                                                <li><a class="sub_mini_serices" href="sports_clothing.php"> Sports Nutrition & Diet </a></li>
-                                                                <li><a class="sub_mini_serices" href="sports_clothing.php"> Cycling - Bikes & Accessories </a></li>
-                                                                <li><a class="view_all_sub_mini_serices" href="list_layout.php"> View All Sports & Fitness Deals </a></li>
-
-                                                            </ul>
-                                                        </li>
-
-                                                    </div>
-                                                    <div class="col-3 kids_bg my-2">
-                                                        <li><a class="sub_heading" href="business_layout.php"> Kids & Babies</a>
-                                                            <ul>
-                                                                <li><a class="sub_mini_serices" href="toys_games.php"> Toys & Games </a></li>
-                                                                <li><a class="sub_mini_serices" href="toys_games.php"> Kids & Baby Clothes </a></li>
-                                                                <li><a class="sub_mini_serices" href="toys_games.php"> Maternity </a></li>
-                                                                <li><a class="sub_mini_serices" href="toys_games.php"> Baby Items & Furniture </a></li>
-                                                                <li><a class="view_all_sub_mini_serices" href="list_layout.php"> View All Kids & Babies Deals </a></li>
-
-                                                            </ul>
-                                                        </li>
-
-                                                    </div>
-                                                </div>
-                                            </ul>
-                                        </li>
-
-
-
-
-                                        <li class="">
-                                            <a class=" " href="jobs.php"> Jobs </a>
-                                        </li>
-
-
-                                        <!-- <li class="menu-item-has-children">
-                                            <a href="index.php">Blog</a>
-                                            <ul class="sub-menu">
-                                                <li><a href="index.php">Blog</a></li>
-                                                <li><a href="index.php">Blog Details</a></li>
-                                            </ul>
-                                        </li> -->
-
-
-                                        <li>
-                                            <a href="events.php">Events</a>
-                                        </li>
-                                        <li>
-                                            <a href="travel.php">Travel</a>
-                                        </li>
-                                        <li>
-                                            <a href="properties.php">Properties</a>
-                                        </li>
-
-                                    </ul>
-                                </nav>
-
-
-                                <button class="vs-menu-toggle d-inline-block d-lg-none"><i class="fas fa-bars"></i></button>
-
-                            </div>
-
-
-                            <div class="col-auto gap-3 d-none d-lg-flex">
-                                <form action="#" class="mobile-menu-form  d-none d-lg-block">
-                                    <input type="text" class="form-control" placeholder="Search...">
-                                    <button class="need_no_styles" type="submit"><i class="search_icon  fas fa-search"></i></button>
-                                </form>
-                            </div>
-
-                            <a href="#" class="gradient_text_color_location drag_the_location_icon">
-                                <i class="fas fa-map-marker-alt rotate-icon"></i>
-                            </a>
- 
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </header>
+        </header>
 
+    </div>
 
 
 
