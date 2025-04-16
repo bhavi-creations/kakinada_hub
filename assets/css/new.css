@@ -4616,11 +4616,11 @@ right: 10px;
 
 /* service images  */
 
-.bg_section_new_img::before{
+/* .bg_section_new_img::before{
   background-image: url(../img/test/28.png);
-}
+} */
 
-/* .Resturents_sections::before{
+.Resturents_sections::before{
   background-image: url(../img/test/restaurant.png);
 }
 
@@ -4631,12 +4631,17 @@ right: 10px;
 .Sweets_section::before{
   background-image: url(../img/test/gifts_jewellery.png);
 }
-.footware_section{
+.footware_section::before{
   background-image: url(../img/test/fashion.png);
 
 }
-.hospital_section{
+.hospital_section::before{
   background-image: url(../img/test/hospital.png);
 
-} */
-
+}
+.sports_section::before{
+  background-image: url(../img/test/sports.png);
+}
+.toys_section::before{
+  background-image: url(../img/test/toys.png);
+}

@@ -58,7 +58,7 @@
 
 
 
-    <section class="b`g_section_new bg_section_new_img`">
+    <section class="bg_section_new Resturents_sections">
         <div class="container">
 
             <div class="text-center   ">

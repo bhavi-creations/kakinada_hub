@@ -69,7 +69,7 @@
 
 
 
-<section class="bg_section_new bg_section_new_img">
+<section class="bg_section_new footware_section">
     <div class="container">
 
         <div class="text-center   ">
