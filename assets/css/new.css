@@ -4277,7 +4277,7 @@
   opacity: 0.9;
  } */
 
- .travels_section{
+ /* .travels_section{
   position: relative;
   background-color: black;
   color: white !important;
@@ -4314,7 +4314,7 @@ right: 10px;
 .travels_section .container {
   position: relative;
   z-index: 1; 
-}
+} */
 
 
 
@@ -4322,10 +4322,10 @@ right: 10px;
 
 
 
- .events_section {
+ /* .events_section {
   position: relative;
   background-color: black;
-  /* padding: 0 100px; */
+  
 }
 @media (min-width:375px)  and (max-width:768px){
   .events_section{
@@ -4355,11 +4355,11 @@ padding: 50px;
 .events_section .container {
   position: relative;
   z-index: 1; 
-}
+} */
 
 
 
-.jobs_sections{
+/* .jobs_sections{
   position: relative;
   background-color: black;
   color: white !important;
@@ -4381,10 +4381,10 @@ padding: 50px;
   opacity: 0.4;
   z-index: 0;
   color: white !important;
-}
+} */
 
 
-@media (min-width:375px)  and (max-width:768px){
+/* @media (min-width:375px)  and (max-width:768px){
   .jobs_sections{
 padding: 50px;
   }
@@ -4396,11 +4396,11 @@ right: 10px;
 .jobs_sections .container {
   position: relative;
   z-index: 1; 
-}
+} */
 
 /* services_section */
 
-.services_section{
+/* .services_section{
   position: relative;
   background-color: black;
   color: white !important;
@@ -4437,12 +4437,12 @@ right: 10px;
 .services_section .container {
   position: relative;
   z-index: 1; 
-}
+} */
 
 
-/* properties images   */
 
-.properties_section{
+
+/* .properties_section{
   position: relative;
   background-color: black;
   color: white !important;
@@ -4479,4 +4479,164 @@ right: 10px;
 .properties_section .container {
   position: relative;
   z-index: 1; 
+} */
+
+
+
+
+.bg_section_new,
+.bg_section{
+  position: relative;
+  background-color: black;
+  color: white !important;
+
+  
+  
 }
+
+.bg_section_new::before ,
+.bg_section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50px;
+  right: 46px;
+  bottom: 0;
+  /* background-image: url(../img/test/26.png); */
+  /* background-image: url(../img/test/jobs_images.png); */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.4;
+  z-index: 0;
+  color: white !important;
+}
+
+
+@media (min-width:375px)  and (max-width:768px){
+  
+  .bg_section{
+padding: 50px;
+  }
+  .bg_section_new::before,
+  .bg_section::before{
+left: 10px;
+right: 10px;
+  }
+}
+.bg_section_new .container,
+.bg_section .container {
+  position: relative;
+  z-index: 1; 
+}
+
+
+
+
+/* bg images  */
+
+.home_section::before {
+  background-image: url(../img/test/home_section.png);
+}
+
+.jobs_sections::before {
+  background-image: url(../img/test/26.png);
+}
+
+
+.services_section::before {
+  background-image: url(../img/test/24.png);
+}
+
+
+.properties_section::before {
+  background-image: url(../img/test/properties_images.png);
+}
+
+.events_section::before {
+  background-image: url(../img/test/events_image.png);
+}
+
+.travels_section::before {
+  background-image: url(../img/test/25.png);
+}
+
+
+
+
+
+
+
+
+
+
+.bg_section_new{
+  position: relative;
+  background-color: black;
+  color: white !important;
+
+  
+  
+}
+
+.bg_section_new::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50px;
+  right: 46px;
+  bottom: 0;
+  /* background-image: url(../img/test/26.png); */
+  /* background-image: url(../img/test/jobs_images.png); */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.4;
+  z-index: 0;
+  color: white !important;
+}
+
+
+@media (min-width:375px)  and (max-width:768px){
+  
+  /* .bg_section{
+padding: 50px;
+  } */
+  .bg_section_new::before{
+left: 10px;
+right: 10px;
+  }
+}
+.bg_section_new .container{
+  position: relative;
+  z-index: 1; 
+}
+
+
+
+/* service images  */
+
+.bg_section_new_img::before{
+  background-image: url(../img/test/28.png);
+}
+
+/* .Resturents_sections::before{
+  background-image: url(../img/test/restaurant.png);
+}
+
+.saloon_section::before{
+  background-image: url(../img/test/saloon.png);
+}
+
+.Sweets_section::before{
+  background-image: url(../img/test/gifts_jewellery.png);
+}
+.footware_section{
+  background-image: url(../img/test/fashion.png);
+
+}
+.hospital_section{
+  background-image: url(../img/test/hospital.png);
+
+} */
+

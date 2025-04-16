@@ -13,7 +13,7 @@ $categoryQuery = "SELECT DISTINCT category FROM properties WHERE category IS NOT
 $categoryResult = mysqli_query($conn, $categoryQuery);
 ?>
 
-<section class="  properties_section">
+<section class="bg_section py-5  properties_section">
     <div class="container">
 
         <div class="text-center">

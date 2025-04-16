@@ -3,25 +3,25 @@
 
 <?php include './db.connection/db_connection.php'; ?>
 
-<section class="  py-5 travels_section">
+<section class=" bg_section  py-5 travels_section">
 
 
-<h1 class="text-center gradient_text_color  pb-5">Travel Destinations</h1>
+    <h1 class="text-center gradient_text_color  pb-5">Travel Destinations</h1>
 
-<div class="container py-5 ">
-    <div class="row justify-content-center">
-        <?php
-        $query = "SELECT id, name, filter_image, created_at FROM travels";
-        $result = mysqli_query($conn, $query);
+    <div class="container py-5 ">
+        <div class="row justify-content-center">
+            <?php
+            $query = "SELECT id, name, filter_image, created_at FROM travels";
+            $result = mysqli_query($conn, $query);
 
-        while ($row = mysqli_fetch_assoc($result)) {
-            $id = $row['id'];
-            $name = ucwords($row['name']);
-            $image = "./admin/uploads/travels/" . $row['filter_image']; 
-            $createdAt = date("F j, Y", strtotime($row['created_at']));
+            while ($row = mysqli_fetch_assoc($result)) {
+                $id = $row['id'];
+                $name = ucwords($row['name']);
+                $image = "./admin/uploads/travels/" . $row['filter_image'];
+                $createdAt = date("F j, Y", strtotime($row['created_at']));
 
-            if (!empty($row['filter_image'])) {
-                echo '
+                if (!empty($row['filter_image'])) {
+                    echo '
                 <div class="col-md-4 col-sm-6 mb-4">
                     <a href="travel_details.php?id=' . $id . '" class="travel-card-link">
                         <div class="card shadow border-0 travel-card" style="background-image: url(\'' . $image . '\');">
@@ -31,11 +31,11 @@
                         </div>
                     </a>
                 </div>';
+                }
             }
-        }
-        ?>
+            ?>
+        </div>
     </div>
-</div>
 </section>
 
 <?php include 'chat_bot.php'; ?>

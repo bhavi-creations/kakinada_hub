@@ -69,7 +69,7 @@
 
 
 
-<section>
+<section class="bg_section_new bg_section_new_img">
     <div class="container">
 
         <div class="text-center   ">

@@ -380,8 +380,13 @@ padding-left: 10px;
  h5,
  .h6,
  h6 {
-   font-family: var(--title-font);
+   font-family: var(--title-font);  
    color: var(--title-color);
+   /* color:#bcd6ff; */
+   /* background: linear-gradient(to right, #c8a280, #ffb013); */
+   /* -webkit-background-clip: text; */
+   /* -webkit-text-fill-color: transparent; */
+   
    text-transform: none;
    font-weight: 700;
    line-height: 1.3;

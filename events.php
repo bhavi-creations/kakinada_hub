@@ -47,7 +47,7 @@ $result = $stmt->get_result();
 
 
 
-<section class=" events_section ">
+<section class=" bg_section  py-5  events_section ">
     <div class="container  ">
 
         <div class="text-center   ">

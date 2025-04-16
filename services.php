@@ -4,7 +4,7 @@
 
 
 
-<section class="services_section  ">
+<section class="services_section bg_section  py-5  ">
     <div class="container">
         <div class="row">
             <div class="yellow_fields_cards_container">

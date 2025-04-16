@@ -58,12 +58,12 @@
 
 
 
-    <section>
+    <section class="b`g_section_new bg_section_new_img`">
         <div class="container">
 
             <div class="text-center   ">
-                <h1>Welcome to The Royal Food</h1>
-                <h5> Experience Luxury Dining at The Royal Food</h5>
+                <h1 class="heading-gradient">Welcome to The Royal Food</h1>
+                <h5 class="p-gradient"> Experience Luxury Dining at The Royal Food</h5>
             </div>
             <div class="row">
                 <div class="col-lg-9 col-12">
@@ -92,8 +92,8 @@
                         </div>
                         <div class="col-md-4 col-12 p-3">
                             <div class="product-content">
-                                <h3>The Royal Food</h3>
-                                <p class="product-title h5 mt-1">Savor elegance, taste perfection, indulge in luxury</p>
+                                <h3 class="heading-gradient">The Royal Food</h3>
+                                <p class="product-title h5 mt-1 p-gradient">Savor elegance, taste perfection, indulge in luxury</p>
 
                                 <div class="rating-wrap">
                                     <div class="star-rating " role="img" aria-label="Rated 5.00 out of 5"><span
