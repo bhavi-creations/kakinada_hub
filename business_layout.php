@@ -58,12 +58,10 @@
 
 
 
-    <section class="bg_section Resturents_sections">
-        <div class="container">
-
-            <div class="text-center   ">
-                <h1 class="heading-gradient">Welcome to The Royal Food</h1>
-                <h5 class="p-gradient"> Experience Luxury Dining at The Royal Food</h5>
+<section class="bg_section responsive_section">
+    <div class="container ">
+    <h1 class="text-center gradient_text_color spacing_for_htag">Welcome to The Royal Food</h1>
+                <h5 class="text-center gradient_text_color spacing_for_htag"> Experience Luxury Dining at The Royal Food</h5>
             </div>
             <div class="row">
                 <div class="col-lg-9 col-12">

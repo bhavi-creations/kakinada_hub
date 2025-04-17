@@ -69,11 +69,10 @@
 
 
 
-<section  class="bg_section  hospital_section py-5 ">
-    <div class="container">
-
-        <div class="text-center   ">
-            <h1>Welcome to The Dental Hospital </h1>
+<section class="bg_section responsive_section">
+    <div class="container ">
+    <h1 class="text-center gradient_text_color spacing_for_htag">
+            Welcome to The Dental Hospital </h1>
             <h5>Comprehensive Dental Care for a Healthy, Confident Smile</h5>
         </div>
         <div class="row">

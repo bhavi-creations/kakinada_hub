@@ -11,17 +11,17 @@ $result = mysqli_query($conn, $query);
 $movie = mysqli_fetch_assoc($result);
 ?>
 
-<section class="my-5 bg_section py-5">
-    <div class="container">
+<section class="bg_section responsive_section">
+    <div class="container ">
         <?php
         // Fetch screen name from screens table
         $screen_query = "SELECT screen_name FROM screens WHERE id = $screen_id LIMIT 1";
         $screen_result = mysqli_query($conn, $screen_query);
         $screen = mysqli_fetch_assoc($screen_result);
         ?>
-        <div class="text-center mb-5">
-            <h1 class="heading-gradient"><?php echo htmlspecialchars($screen['screen_name']); ?></h1>
-        </div>
+        <h1 class="text-center gradient_text_color spacing_for_htag"><?php echo htmlspecialchars($screen['screen_name']); ?></h1>
+        
+    
 
         <div class="row">
 

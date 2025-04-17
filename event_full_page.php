@@ -14,11 +14,9 @@
 
 
 
-<section>
-    <div class="container">
-
-        <div class="text-center   mb-5">
-            <h1 class="logo_title_color"> ugadhi</h1>
+<section class="bg_section responsive_section">
+    <div class="container ">
+    <h1 class="text-center gradient_text_color spacing_for_htag"> ugadhi</h1>
 
         </div>
         <div class="row">

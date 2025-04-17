@@ -14,10 +14,9 @@ $result = mysqli_query($conn, $query);
 
 
 
-
-<section class=" bg_section py-5  ">
-    <div class="container my-5">
-        <h1 class="text-center my-4 heading-gradient">Available Travel Options</h1>
+<section class="bg_section responsive_section">
+    <div class="container ">
+    <h1 class="text-center gradient_text_color spacing_for_htag">Available Travel Options</h1>
 
 
 

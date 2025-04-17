@@ -6,15 +6,14 @@
 
 
 
-
-<section class="bg_section">
-    <div class="container my-5">
-    <h1 class="text-center gradient_text_color  pb-5">Travel Destinations</h1>
-
+<section class="bg_section responsive_section">
+    <div class="container ">
+    <h1 class="text-center gradient_text_color spacing_for_htag">Travel Destinations</h1>
 
 
 
-        <div class="row">
+
+        <div class="row ">
 
             <div class="col-lg-2  col-12 text_side_div d-none d-lg-block">
                 <img src="assets/img/test/sideimg2.png" alt="" class="img-fluid side_dive_images">
@@ -39,7 +38,7 @@
 
                 if (!empty($row['filter_image'])) {
                     echo '
-                <div class="col-6 mb-4">
+                <div class="col-12  col-md-6 g-5" >
                     <a href="travel_details.php?id=' . $id . '" class="travel-card-link">
                         <div class="card shadow border-0 travel-card" style="background-image: url(\'' . $image . '\');">
                             <div class="card-overlay travel_card_overlay">

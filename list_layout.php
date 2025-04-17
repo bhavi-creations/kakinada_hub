@@ -3,11 +3,13 @@
 
 
 
-<h1 class="text-center my-3">Movie Theaters</h1>
 
 
-<section class="py-5 ">
-    <div class="container">
+
+
+<section class="bg_section responsive_section">
+    <div class="container ">
+    <h1 class="text-center gradient_text_color spacing_for_htag">Movie Theaters</h1>
         <div class="row g-4">
         
 

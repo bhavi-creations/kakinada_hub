@@ -13,13 +13,12 @@ $categoryQuery = "SELECT DISTINCT category FROM properties WHERE category IS NOT
 $categoryResult = mysqli_query($conn, $categoryQuery);
 ?>
 
-<section class="bg_section py-5  properties_section">
-    <div class="container">
 
-        <div class="text-center">
-            <h1 class="gradient_text_color">List Of Properties</h1>
-            <h5 class="gradient_text_color">Find Your Residency By One Click</h5>
-        </div>
+<section class="bg_section responsive_section">
+    <div class="container ">
+    <h1 class="text-center gradient_text_color spacing_for_htag">List Of Properties</h1>
+            <h5 class="text-center gradient_text_color spacing_for_htag">Find Your Residency By One Click</h5>
+        
 
         <!-- Filters -->
         <div class="row gy-2 my-4 custom-filters  ">

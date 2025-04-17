@@ -47,12 +47,10 @@ $result = $stmt->get_result();
 
 
 
-<section class=" bg_section  py-5  events_section ">
-    <div class="container  ">
-
-        <div class="text-center   ">
-            <h1 class="gradient_text_color">Upcomming Events</h1>
-        </div>
+<section class="bg_section responsive_section">
+    <div class="container ">
+    <h1 class="text-center gradient_text_color spacing_for_htag">Upcomming Events</h1>
+        
         <div class="row">
 
             <div class="col-lg-2  col-12 text_side_div d-none d-lg-block">

@@ -34,14 +34,11 @@ if (isset($_GET['id'])) {
     <button id="restaurant-icon" class="restaurant-icon">🔙</button>
 </a>
 
-<section class="bg_section ">
-    <div class="container my-5">
-        <h1 class="text-center heading-gradient"><?php echo htmlspecialchars($property['category']); ?> - <?php echo htmlspecialchars($property['type']); ?></h1>
+<section class="bg_section responsive_section">
+    <div class="container ">
+    <h1 class="text-center gradient_text_color spacing_for_htag"><?php echo htmlspecialchars($property['category']); ?> - <?php echo htmlspecialchars($property['type']); ?></h1>
 
-        <!-- 🟡 Display category -->
-        <h5 class="text-center text-muted mb-4">
-
-        </h5>
+    
 
         <div class="row">
 

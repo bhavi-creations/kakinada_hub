@@ -4532,125 +4532,21 @@ right: 10px;
 
 
 
-
-/* bg images  */
-
-/* .home_section::before {
-  background-image: url(../img/test/home_section.png);
-}
-
-.jobs_sections::before {
-  background-image: url(../img/test/26.png);
-}
-
-
-.services_section::before {
-  background-image: url(../img/test/24.png);
-}
-
-
-.properties_section::before {
-  background-image: url(../img/test/properties_images.png);
-}
-
-.events_section::before {
-  background-image: url(../img/test/events_image.png);
-}
-
-.travels_section::before {
-  background-image: url(../img/test/25.png);
-} */
-
-
-
-
-
-
-
-
-
-
-/* .bg_section_new{
-  position: relative;
-  background-color: black;
-  color: white !important;
-
-  
-  
-}
-
-.bg_section_new::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 50px;
-  right: 46px;
-  bottom: 0;
-
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  opacity: 0.4;
-  z-index: 0;
-  color: white !important;
-}
-
-
-@media (min-width:375px)  and (max-width:768px){
-  
-
-  .bg_section_new::before{
-left: 10px;
-right: 10px;
+@media (min-width:992px) and (max-width:1200px) {
+  .responsive_section{
+    padding-left: 50px;
+    padding-right: 50px ;
   }
+  
 }
-.bg_section_new .container{
-  position: relative;
-  z-index: 1; 
+@media (min-width:1200px) and (max-width:1400px) {
+  .responsive_section{
+    padding-left: 50px;
+    padding-right: 50px ;
+  }
+  
 }
-
-
-
-
-
-.Resturents_sections::before{
-  background-image: url(../img/test/restaurant.png);
+.spacing_for_htag{
+  padding-top: 20px;
+  padding-bottom: 10px;
 }
-
-.saloon_section::before{
-  background-image: url(../img/test/saloon.png);
-}
-
-.Sweets_section::before{
-  background-image: url(../img/test/gifts_jewellery.png);
-}
-.footware_section::before{
-  background-image: url(../img/test/fashion.png);
-
-}
-.hospital_section::before{
-  background-image: url(../img/test/hospital.png);
-
-}
-.sports_section::before{
-  background-image: url(../img/test/sports.png);
-}
-.toys_section::before{
-  background-image: url(../img/test/toys.png);
-} */
-
-/* screen details  */
-
-
-
-/* .bg_section {
-  background-color: #F4F5F9;
-}
-.bg_section_new{
-  background-color: #F4F5F9;
-} */
-
-
-
-
-

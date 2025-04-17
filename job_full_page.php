@@ -3,8 +3,13 @@
 
 
 
-<section class="bg_section p-5 ">
-    <div class="container">
+
+<section class="bg_section responsive_section">
+    <div class="container ">
+
+
+
+
         <?php
         include './db.connection/db_connection.php';
 
@@ -26,11 +31,11 @@
         }
         ?>
 
-        <div class="text-center   mb-5">
-            <h1 class="heading-gradient"><?php echo $company['name']; ?></h1>
+
+        <h1 class="text-center gradient_text_color spacing_for_htag"><?php echo $company['name']; ?></h1>
 
 
-        </div>
+
         <div class="row">
 
 

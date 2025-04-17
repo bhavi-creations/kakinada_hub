@@ -4,12 +4,11 @@
 
 
 
- <section class="bg_section jobs_sections p-5 ">
-     <div class="container">
-
-         <div class="text-center   ">
-             <h1 class="gradient_text_color services_pages_heading">List Of Companies</h1>
-         </div>
+ 
+<section class="bg_section responsive_section">
+    <div class="container ">
+    <h1 class="text-center gradient_text_color spacing_for_htag">List Of Companies</h1>
+         
 
          <form method="GET" action="" class="p-3    shadow-sm rounded">
 
