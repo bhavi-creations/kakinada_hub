@@ -3075,6 +3075,7 @@
    display: flex;
    flex-direction: column;
    justify-content: center;
+   text-align: center;
 
  }
 
@@ -3796,7 +3797,7 @@
 
    border-radius: 10px;
 
-   padding-left: 60px;
+   padding-left: 30px;
 
    padding-top: 83px;
    padding-bottom: 20px;
@@ -4645,3 +4646,5 @@ right: 10px;
 .toys_section::before{
   background-image: url(../img/test/toys.png);
 }
+
+/* screen details  */

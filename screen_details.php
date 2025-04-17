@@ -37,7 +37,7 @@ $movie = mysqli_fetch_assoc($result);
             <div class="col-lg-8 col-12">
                 <div class="row  scrollable-list">
 
-                    <div class="row  scrollable-list">
+                    <div class="row scrollable-list">
                         <div class="col-md-8 col-12 my-2">
                             <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
                                 <div class="carousel-inner">
@@ -53,7 +53,7 @@ $movie = mysqli_fetch_assoc($result);
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4 col-12 my-2 movie_title_card">
+                        <div class="col-md-4 col-12 my-2 movie_title_card ">
                             <div class="product-content">
 
                                 <div class="d-flex justify-content-between align-items-center">
@@ -93,7 +93,7 @@ $movie = mysqli_fetch_assoc($result);
                             </div>
                         </div>
                     </div>
-                    <div class="row my-5 p-3">
+                    <div class="row my-5 p-3 ">
                         <div class="col-md-8 col-12">
                             <h2 class="heading-gradient">About the movie</h2>
                             <p class="p-gradient"><?php echo htmlspecialchars($movie['about_movie']); ?></p>
@@ -131,7 +131,7 @@ $movie = mysqli_fetch_assoc($result);
 
 
 
-                    <div class="row mt-5 p-3">
+                    <div class="row mt-5 p-3 ">
                         <div class="col-md-8 col-12">
                             <div class="review-container">
                                 <h2 class="heading-gradient">Customer Reviews</h2>

@@ -143,7 +143,7 @@ $result = $stmt->get_result();
                         </div>
                     </section>
 
-                    v<section class="OfferContainer_exclusive__non wow fadeInUp my-2" data-wow-delay="100ms">
+                    <section class="OfferContainer_exclusive__non wow fadeInUp my-2" data-wow-delay="100ms">
                         <div class="   container  card_div ">
                             <div class="row  need_padding_div ">
                                 <div class="col-12 col-md-4 job_image_card_main mb-2 parent-container">
