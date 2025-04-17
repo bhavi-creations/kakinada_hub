@@ -69,7 +69,7 @@
 
 
 
-<section  class="bg_section_new hospital_section ">
+<section  class="bg_section  hospital_section py-5 ">
     <div class="container">
 
         <div class="text-center   ">

@@ -3,13 +3,30 @@
 
 <?php include './db.connection/db_connection.php'; ?>
 
-<section class=" bg_section  py-5 travels_section">
 
 
+
+
+<section class="bg_section">
+    <div class="container my-5">
     <h1 class="text-center gradient_text_color  pb-5">Travel Destinations</h1>
 
-    <div class="container py-5 ">
-        <div class="row justify-content-center">
+
+
+
+        <div class="row">
+
+            <div class="col-lg-2  col-12 text_side_div d-none d-lg-block">
+                <img src="assets/img/test/sideimg2.png" alt="" class="img-fluid side_dive_images">
+                <img src="assets/img/test/animation.gif" alt="Animated GIF" class=" my-4 side_dive_images">
+                <img src="assets/img/test/sideimg1.png" alt="" class="img-fluid  side_dive_images">
+            </div>
+
+
+
+            <div class="col-lg-8 col-12">
+
+            <div class="row justify-content-center">
             <?php
             $query = "SELECT id, name, filter_image, created_at FROM travels";
             $result = mysqli_query($conn, $query);
@@ -22,7 +39,7 @@
 
                 if (!empty($row['filter_image'])) {
                     echo '
-                <div class="col-md-4 col-sm-6 mb-4">
+                <div class="col-6 mb-4">
                     <a href="travel_details.php?id=' . $id . '" class="travel-card-link">
                         <div class="card shadow border-0 travel-card" style="background-image: url(\'' . $image . '\');">
                             <div class="card-overlay travel_card_overlay">
@@ -35,8 +52,25 @@
             }
             ?>
         </div>
+
+            </div>
+
+
+            <div class="col-lg-2  col-12 text_side_div d-none d-lg-block">
+                <img src="assets/img/test/sideimg2.png" alt="" class="img-fluid side_dive_images">
+                <img src="assets/img/test/animation.gif" alt="Animated GIF" class=" my-4 side_dive_images">
+                <img src="assets/img/test/sideimg1.png" alt="" class="img-fluid  side_dive_images">
+            </div>
+
+
+
+
+
+        </div>
     </div>
 </section>
+
+
 
 <?php include 'chat_bot.php'; ?>
 <?php include 'footer.php'; ?>

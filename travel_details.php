@@ -11,113 +11,132 @@ $query = "SELECT * FROM travel_details WHERE travel_id = '$travel_id'";
 $result = mysqli_query($conn, $query);
 ?>
 
-<h1 class="text-center my-4 heading-gradient">Available Travel Options</h1>
 
-<div class="container">
-    <div class="row">
-        <?php
-        if (mysqli_num_rows($result) > 0) {
-            while ($row = mysqli_fetch_assoc($result)) {
-                $id = $row['id'];
-                $model = $row['model'] ?? '';
-                $seating = $row['seating_capacity'] ?? '';
-                $mileage = $row['fuel_efficiency'] ?? '';
-                $price = $row['price'] ?? '';
-                $price_per_6hrs = $row['price_per_6hrs'] ?? '';
-                $driver_name = $row['name'] ?? '';
-                $driver_age = $row['age'] ?? '';
-                $driver_gender = $row['gender'] ?? '';
-                $experience = $row['experience'] ?? '';
-                $image = !empty($row['image']) ? "./admin/uploads/travels/" . $row['image'] : '';
 
-                echo '<div class="col-12 col-md-3">
+
+
+<section class=" bg_section py-5  ">
+    <div class="container my-5">
+        <h1 class="text-center my-4 heading-gradient">Available Travel Options</h1>
+
+
+
+        <div class="row">
+
+            <div class="col-lg-2  col-12 text_side_div d-none d-lg-block">
+                <img src="assets/img/test/sideimg2.png" alt="" class="img-fluid side_dive_images">
+                <img src="assets/img/test/animation.gif" alt="Animated GIF" class=" my-4 side_dive_images">
+                <img src="assets/img/test/sideimg1.png" alt="" class="img-fluid  side_dive_images">
+            </div>
+
+
+
+            <div class="col-lg-8 col-12">
+
+                <div class="row">
+                    <?php
+                    if (mysqli_num_rows($result) > 0) {
+                        while ($row = mysqli_fetch_assoc($result)) {
+                            $id = $row['id'];
+                            $model = $row['model'] ?? '';
+                            $seating = $row['seating_capacity'] ?? '';
+                            $mileage = $row['fuel_efficiency'] ?? '';
+                            $price = $row['price'] ?? '';
+                            $price_per_6hrs = $row['price_per_6hrs'] ?? '';
+                            $driver_name = $row['name'] ?? '';
+                            $driver_age = $row['age'] ?? '';
+                            $driver_gender = $row['gender'] ?? '';
+                            $experience = $row['experience'] ?? '';
+                            $image = !empty($row['image']) ? "./admin/uploads/travels/" . $row['image'] : '';
+
+                            echo '<div class="col-12 col-md-4">
                     <div class="rental-card p-3 border rounded shadow">';
 
-                if (!empty($image)) {
-                    echo '<img src="' . htmlspecialchars($image) . '" class="car_image img-fluid" alt="' . htmlspecialchars($model) . '">';
-                }
+                            if (!empty($image)) {
+                                echo '<img src="' . htmlspecialchars($image) . '" class="car_image img-fluid" alt="' . htmlspecialchars($model) . '">';
+                            }
 
-                echo '<div class="product-content mt-3">';
+                            echo '<div class="product-content mt-3">';
 
-                // Car Details
-                if (!empty($model) || !empty($seating) || !empty($mileage) || !empty($price)) {
-                    echo '<h5 class="text-primary heading-gradient">Car Details</h5>';
-                    
-                    if (!empty($model)) {
-                        echo '<div class="d-flex justify-content-between align-items-center">
+                            // Car Details
+                            if (!empty($model) || !empty($seating) || !empty($mileage) || !empty($price)) {
+                                echo '<h5 class="text-primary heading-gradient">Car Details</h5>';
+
+                                if (!empty($model)) {
+                                    echo '<div class="d-flex justify-content-between align-items-center">
                                 <p class="movie-label"><strong>Model :</strong></p>
                                 <p class="cast_names">' . htmlspecialchars($model) . '</p>
                               </div>';
-                    }
-                    
-                    if (!empty($seating)) {
-                        echo '<div class="d-flex justify-content-between align-items-center">
+                                }
+
+                                if (!empty($seating)) {
+                                    echo '<div class="d-flex justify-content-between align-items-center">
                                 <p class="movie-label"><strong>Seating :</strong></p>
                                 <p class="cast_names">' . htmlspecialchars($seating) . '</p>
                               </div>';
-                    }
-                    if (!empty($price)) {
-                        echo '<div class="d-flex justify-content-between align-items-center">
+                                }
+                                if (!empty($price)) {
+                                    echo '<div class="d-flex justify-content-between align-items-center">
                                 <p class="movie-label"><strong>Price :</strong></p>
                                 <p class="cast_names">₹' . htmlspecialchars($price) . ' / 12hrs</p>
                               </div>';
-                    }
-                    if (!empty($mileage)) {
-                        echo '<div class="d-flex justify-content-between align-items-center">
+                                }
+                                if (!empty($mileage)) {
+                                    echo '<div class="d-flex justify-content-between align-items-center">
                                 <p class="movie-label"><strong>1 Liter :</strong></p>
                                 <p class="cast_names">' . htmlspecialchars($mileage) . ' Km</p>
                               </div>';
-                    }
+                                }
 
-                    if (!empty($price_per_6hrs)) {
-                        echo '<div class="d-flex justify-content-between align-items-center">
+                                if (!empty($price_per_6hrs)) {
+                                    echo '<div class="d-flex justify-content-between align-items-center">
                                 <p class="movie-label"><strong>Price :</strong></p>
                                 <p class="cast_names">' . htmlspecialchars($price_per_6hrs) . ' / 6 hrs</p>
                               </div>';
-                    }
-                }
+                                }
+                            }
 
-                // Driver Details
-                if (!empty($driver_name) || !empty($price_per_6hrs) || !empty($experience) || !empty($driver_age) || !empty($driver_gender)) {
-                    echo '<h5 class=" heading-gradient mt-3">Driver Details</h5>';
+                            // Driver Details
+                            if (!empty($driver_name) || !empty($price_per_6hrs) || !empty($experience) || !empty($driver_age) || !empty($driver_gender)) {
+                                echo '<h5 class=" heading-gradient mt-3">Driver Details</h5>';
 
-                    if (!empty($driver_name)) {
-                        echo '<div class="d-flex justify-content-between align-items-center">
+                                if (!empty($driver_name)) {
+                                    echo '<div class="d-flex justify-content-between align-items-center">
                                 <p class="movie-label"><strong>Name :</strong></p>
                                 <p class="cast_names">' . htmlspecialchars($driver_name) . '</p>
                               </div>';
-                    }
-                    
-                    if (!empty($price_per_6hrs)) {
-                        echo '<div class="d-flex justify-content-between align-items-center">
+                                }
+
+                                if (!empty($price_per_6hrs)) {
+                                    echo '<div class="d-flex justify-content-between align-items-center">
                                 <p class="movie-label"><strong>Price :</strong></p>
                                 <p class="cast_names"> ₹' . htmlspecialchars($price_per_6hrs) . ' /6 hrs</p>
                               </div>';
-                    }
+                                }
 
-                    if (!empty($experience)) {
-                        echo '<div class="d-flex justify-content-between align-items-center">
+                                if (!empty($experience)) {
+                                    echo '<div class="d-flex justify-content-between align-items-center">
                                 <p class="movie-label"><strong>Experience :</strong></p>
                                 <p class="cast_names">' . htmlspecialchars($experience) . ' Years</p>
                               </div>';
-                    }
+                                }
 
-                    if (!empty($driver_age)) {
-                        echo '<div class="d-flex justify-content-between align-items-center">
+                                if (!empty($driver_age)) {
+                                    echo '<div class="d-flex justify-content-between align-items-center">
                                 <p class="movie-label"><strong>Age :</strong></p>
                                 <p class="cast_names">' . htmlspecialchars($driver_age) . '</p>
                               </div>';
-                    }
+                                }
 
-                    if (!empty($driver_gender)) {
-                        echo '<div class="d-flex justify-content-between align-items-center">
+                                if (!empty($driver_gender)) {
+                                    echo '<div class="d-flex justify-content-between align-items-center">
                                 <p class="movie-label"><strong>Gender :</strong></p>
                                 <p class="cast_names">' . htmlspecialchars($driver_gender) . '</p>
                               </div>';
-                    }
-                }
+                                }
+                            }
 
-                echo '<div class="d-flex justify-content-center mt-3">
+                            echo '<div class="d-flex justify-content-center mt-3">
                         <button class="btn btn-primary book_now_btn px-4 py-2" data-bs-toggle="modal" 
                             data-bs-target="#bookingModal" 
                             data-model="' . htmlspecialchars($model) . '" 
@@ -126,14 +145,32 @@ $result = mysqli_query($conn, $query);
                         </button>
                       </div>';
 
-                echo '</div></div></div>';
-            }
-        } else {
-            echo '<div class="col-12"><p class="text-center">No details found for this travel destination.</p></div>';
-        }
-        ?>
+                            echo '</div></div></div>';
+                        }
+                    } else {
+                        echo '<div class="col-12"><p class="text-center">No details found for this travel destination.</p></div>';
+                    }
+                    ?>
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-2  col-12 text_side_div d-none d-lg-block">
+                <img src="assets/img/test/sideimg2.png" alt="" class="img-fluid side_dive_images">
+                <img src="assets/img/test/animation.gif" alt="Animated GIF" class=" my-4 side_dive_images">
+                <img src="assets/img/test/sideimg1.png" alt="" class="img-fluid  side_dive_images">
+            </div>
+
+
+
+
+
+        </div>
     </div>
-</div>
+</section>
+
+
 
 
 
@@ -147,7 +184,7 @@ $result = mysqli_query($conn, $query);
             </div>
             <div class="modal-body ">
                 <form action="travelform.php" role="form" class="php-email-form p-5 " method="POST">
-                  
+
 
 
 

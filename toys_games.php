@@ -69,7 +69,7 @@
 
 
 
-<section  class="bg_section_new toys_section">
+<section  class="bg_section py-5  toys_section">
     <div class="container">
 
         <div class="text-center   ">

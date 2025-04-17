@@ -69,7 +69,7 @@
 
 
 
-<section class="bg_section_new footware_section">
+<section class="bg_section py-5">
     <div class="container">
 
         <div class="text-center   ">

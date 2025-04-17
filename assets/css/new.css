@@ -4485,7 +4485,7 @@ right: 10px;
 
 
 
-.bg_section_new,
+ .bg_section_new,
 .bg_section{
   position: relative;
   background-color: black;
@@ -4495,7 +4495,7 @@ right: 10px;
   
 }
 
-.bg_section_new::before ,
+
 .bg_section::before {
   content: "";
   position: absolute;
@@ -4503,12 +4503,11 @@ right: 10px;
   left: 50px;
   right: 46px;
   bottom: 0;
-  /* background-image: url(../img/test/26.png); */
-  /* background-image: url(../img/test/jobs_images.png); */
+background-color: #F4F5F9;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 0.4;
+  opacity: 1;
   z-index: 0;
   color: white !important;
 }
@@ -4529,14 +4528,14 @@ right: 10px;
 .bg_section .container {
   position: relative;
   z-index: 1; 
-}
+} 
 
 
 
 
 /* bg images  */
 
-.home_section::before {
+/* .home_section::before {
   background-image: url(../img/test/home_section.png);
 }
 
@@ -4560,7 +4559,7 @@ right: 10px;
 
 .travels_section::before {
   background-image: url(../img/test/25.png);
-}
+} */
 
 
 
@@ -4571,7 +4570,7 @@ right: 10px;
 
 
 
-.bg_section_new{
+/* .bg_section_new{
   position: relative;
   background-color: black;
   color: white !important;
@@ -4587,8 +4586,7 @@ right: 10px;
   left: 50px;
   right: 46px;
   bottom: 0;
-  /* background-image: url(../img/test/26.png); */
-  /* background-image: url(../img/test/jobs_images.png); */
+
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -4600,9 +4598,7 @@ right: 10px;
 
 @media (min-width:375px)  and (max-width:768px){
   
-  /* .bg_section{
-padding: 50px;
-  } */
+
   .bg_section_new::before{
 left: 10px;
 right: 10px;
@@ -4615,11 +4611,7 @@ right: 10px;
 
 
 
-/* service images  */
 
-/* .bg_section_new_img::before{
-  background-image: url(../img/test/28.png);
-} */
 
 .Resturents_sections::before{
   background-image: url(../img/test/restaurant.png);
@@ -4645,6 +4637,20 @@ right: 10px;
 }
 .toys_section::before{
   background-image: url(../img/test/toys.png);
-}
+} */
 
 /* screen details  */
+
+
+
+/* .bg_section {
+  background-color: #F4F5F9;
+}
+.bg_section_new{
+  background-color: #F4F5F9;
+} */
+
+
+
+
+

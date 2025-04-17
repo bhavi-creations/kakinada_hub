@@ -4,7 +4,7 @@
 
 
 
- <section class="bg_section jobs_sections py-5">
+ <section class="bg_section jobs_sections p-5 ">
      <div class="container">
 
          <div class="text-center   ">

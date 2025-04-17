@@ -11,7 +11,7 @@ $result = mysqli_query($conn, $query);
 $movie = mysqli_fetch_assoc($result);
 ?>
 
-<section class="my-5">
+<section class="my-5 bg_section py-5">
     <div class="container">
         <?php
         // Fetch screen name from screens table

@@ -25,7 +25,7 @@ $result = mysqli_stmt_get_result($stmt);
 
 <h1 class="text-center my-4 heading-gradient"><?php echo $theater_name; ?></h1>
 
-<section>
+<section class="bg_section">
     <div class="container">
         <div class="row g-4"> <!-- g-4 adds spacing between items -->
 

@@ -3,7 +3,7 @@
 
 
 
-<section class=" ">
+<section class="bg_section p-5 ">
     <div class="container">
         <?php
         include './db.connection/db_connection.php';
