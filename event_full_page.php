@@ -18,7 +18,7 @@
     <div class="container ">
     <h1 class="text-center gradient_text_color spacing_for_htag"> ugadhi</h1>
 
-        </div>
+        
         <div class="row">
             <div class="col-lg-2  col-12 text_side_div d-none d-lg-block">
 
