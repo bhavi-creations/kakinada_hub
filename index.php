@@ -38,7 +38,7 @@ $marquee_content = implode(' &nbsp; || &nbsp; ', $marquee_texts);
     <section class=" ">
         <div class="container text-center main_div_container">
 
-            <div class="    d-md-none    mt-5 first_dive_image_top_div_robot">
+            <div class="    d-md-none    pt-5 first_dive_image_top_div_robot">
                 <img src="assets/img/self_images/robot_bg.png" class="img-fluid" alt="">
             </div>
 
