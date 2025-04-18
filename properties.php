@@ -16,8 +16,8 @@ $categoryResult = mysqli_query($conn, $categoryQuery);
 
 <section class="bg_section responsive_section">
     <div class="container ">
-    <h1 class="text-center gradient_text_color spacing_for_htag">List Of Properties</h1>
-            <h5 class="text-center gradient_text_color spacing_for_htag">Find Your Residency By One Click</h5>
+    <h1 class="text-center gradient_text_color spacing_for_htag">Find Your Residency by one click</h1>
+            <!-- <h5 class="text-center gradient_text_color spacing_for_htag">Find Your Residency By One Click</h5> -->
         
 
         <!-- Filters -->

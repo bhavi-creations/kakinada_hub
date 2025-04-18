@@ -82,10 +82,10 @@
 
                         <div class="col-md-6 col-12 my-2 movie_title_card">
                             <div class="product-content">
-                                <div class="d-flex justify-content-between align-items-center">
+                                <!-- <div class="d-flex justify-content-between align-items-center">
                                     <p class="movie-label"><strong>Company : </strong></p>
                                     <h4 class="movie-value"><?php echo $company['name']; ?></h4>
-                                </div>
+                                </div> -->
                                 <div class="d-flex justify-content-between align-items-center">
                                     <p class="movie-label"><strong>Category : </strong></p>
                                     <h4 class="movie-value"><?php echo $company['category']; ?></h4>
@@ -129,7 +129,7 @@
 
                         </div>
                         <div class="col-md-4 col-12">
-                            <h3 class="text-center heading-gradient">Jobs</h3>
+                            <h3 class="text-center heading-gradient">Vacancies </h3>
                             <div class="product-content">
                                 <?php while ($job = mysqli_fetch_assoc($jobResult)) { ?>
                                     <div class="d-flex justify-content-between align-items-center">

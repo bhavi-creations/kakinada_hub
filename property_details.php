@@ -36,9 +36,9 @@ if (isset($_GET['id'])) {
 
 <section class="bg_section responsive_section">
     <div class="container ">
-    <h1 class="text-center gradient_text_color spacing_for_htag"><?php echo htmlspecialchars($property['category']); ?> - <?php echo htmlspecialchars($property['type']); ?></h1>
+        <h1 class="text-center gradient_text_color spacing_for_htag"><?php echo htmlspecialchars($property['category']); ?> - <?php echo htmlspecialchars($property['type']); ?></h1>
 
-    
+
 
         <div class="row">
 
@@ -50,9 +50,9 @@ if (isset($_GET['id'])) {
 
 
 
-            <div class="col-lg-8 col-12">
+            <div class="col-lg-8 col-12 ">
 
-                <div class="row">
+                <div class="row ">
 
                     <div class=" col-12 order-1 order-md-0 my-4">
                         <div class="row fadeIn" data-wow-delay="0.3s">
@@ -69,15 +69,15 @@ if (isset($_GET['id'])) {
                                                 ₹<?php echo number_format($property['price']); ?>
                                             </p>
                                         </div>
-                                        <div class="col-12 col-md-6 propertys_divs_for_text_paras">
+                                        <!-- <div class="col-12 col-md-6 propertys_divs_for_text_paras">
                                             <p class="property_p_tag">
                                                 <strong class="property_strong">📍 Location:</strong>
                                                 <?php echo htmlspecialchars($property['location']); ?>
                                             </p>
-                                        </div>
+                                        </div> -->
                                         <div class="col-12 col-md-6 propertys_divs_for_text_paras">
                                             <p class="property_p_tag">
-                                                <strong class="property_strong">📏 Size (Sqft):</strong>
+                                                <strong class="property_strong">📏 Area (Sqft):</strong>
                                                 <?php echo htmlspecialchars($property['size_sqft']); ?>
                                             </p>
                                         </div>
@@ -129,22 +129,18 @@ if (isset($_GET['id'])) {
 
                                             <p class="property_p_tag">
                                                 <strong class="property_strong">📞 Contact Person:</strong>
-                                                <?php echo htmlspecialchars($property['phone']); ?>
+                                                <?php echo htmlspecialchars($property['phone']); ?> /
+                                                <?php echo htmlspecialchars($property['location']); ?>
                                             </p>
                                         </div>
 
-                                        <div class="col-12">
 
-                                            <p class="property_p_tag  ">
-                                                <strong class="property_strong">📝 Description:</strong>
-                                                <?php echo nl2br(htmlspecialchars($property['description'])); ?>
-                                            </p>
-                                        </div>
                                     </div>
                                 </div>
 
                             </section>
                         </div>
+
                     </div>
 
                     <div class="  col-12 text-center order-0 order-md-1">
@@ -218,6 +214,8 @@ if (isset($_GET['id'])) {
                         </script>
                     </div>
                 </div>
+                <div class="col-12 col-md-6"></div>
+                <div class="col-12 col-md-6"></div>
 
             </div>
 
@@ -237,3 +235,31 @@ if (isset($_GET['id'])) {
 </section>
 
 <?php include 'footer.php'; ?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

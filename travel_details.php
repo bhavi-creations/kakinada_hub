@@ -16,11 +16,11 @@ $result = mysqli_query($conn, $query);
 
 <section class="bg_section responsive_section">
     <div class="container ">
-    <h1 class="text-center gradient_text_color spacing_for_htag">Available Travel Options</h1>
+    <!-- <h1 class="text-center gradient_text_color spacing_for_htag">Available Travel Options</h1> -->
 
 
 
-        <div class="row">
+        <div class="row py-5">
 
             <div class="col-lg-2  col-12 text_side_div d-none d-lg-block">
                 <img src="assets/img/test/sideimg2.png" alt="" class="img-fluid side_dive_images">
@@ -59,7 +59,7 @@ $result = mysqli_query($conn, $query);
 
                             // Car Details
                             if (!empty($model) || !empty($seating) || !empty($mileage) || !empty($price)) {
-                                echo '<h5 class="text-primary heading-gradient">Car Details</h5>';
+                                // echo '<h5 class="text-primary heading-gradient">Car Details</h5>';
 
                                 if (!empty($model)) {
                                     echo '<div class="d-flex justify-content-between align-items-center">
@@ -97,7 +97,7 @@ $result = mysqli_query($conn, $query);
 
                             // Driver Details
                             if (!empty($driver_name) || !empty($price_per_6hrs) || !empty($experience) || !empty($driver_age) || !empty($driver_gender)) {
-                                echo '<h5 class=" heading-gradient mt-3">Driver Details</h5>';
+                                // echo '<h5 class=" heading-gradient mt-3">Driver Details</h5>';
 
                                 if (!empty($driver_name)) {
                                     echo '<div class="d-flex justify-content-between align-items-center">
@@ -106,19 +106,7 @@ $result = mysqli_query($conn, $query);
                               </div>';
                                 }
 
-                                if (!empty($price_per_6hrs)) {
-                                    echo '<div class="d-flex justify-content-between align-items-center">
-                                <p class="movie-label"><strong>Price :</strong></p>
-                                <p class="cast_names"> ₹' . htmlspecialchars($price_per_6hrs) . ' /6 hrs</p>
-                              </div>';
-                                }
-
-                                if (!empty($experience)) {
-                                    echo '<div class="d-flex justify-content-between align-items-center">
-                                <p class="movie-label"><strong>Experience :</strong></p>
-                                <p class="cast_names">' . htmlspecialchars($experience) . ' Years</p>
-                              </div>';
-                                }
+                            
 
                                 if (!empty($driver_age)) {
                                     echo '<div class="d-flex justify-content-between align-items-center">
@@ -127,12 +115,27 @@ $result = mysqli_query($conn, $query);
                               </div>';
                                 }
 
+
+                                if (!empty($experience)) {
+                                    echo '<div class="d-flex justify-content-between align-items-center">
+                                <p class="movie-label"><strong>Experience :</strong></p>
+                                <p class="cast_names">' . htmlspecialchars($experience) . ' Years</p>
+                              </div>';
+                                }
+
+                               
                                 if (!empty($driver_gender)) {
                                     echo '<div class="d-flex justify-content-between align-items-center">
                                 <p class="movie-label"><strong>Gender :</strong></p>
                                 <p class="cast_names">' . htmlspecialchars($driver_gender) . '</p>
                               </div>';
                                 }
+                            }
+                            if (!empty($price_per_6hrs)) {
+                                echo '<div class="d-flex justify-content-between align-items-center">
+                            <p class="movie-label"><strong>Price :</strong></p>
+                            <p class="cast_names"> ₹' . htmlspecialchars($price_per_6hrs) . ' /6 hrs</p>
+                          </div>';
                             }
 
                             echo '<div class="d-flex justify-content-center mt-3">

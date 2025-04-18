@@ -2107,6 +2107,44 @@
  }
 
 
+ .hr_line_side_new{
+  position: relative;
+}
+
+
+@media (min-width:992px) {
+
+  .hr_line_side_new::before {
+    content: "";
+    position: absolute;
+    right: 0;
+
+    top: 0;
+    width: 4px;
+   
+    height: 100%;
+    background: linear-gradient(to bottom, #dc3c0a, #ffb013);
+    border-radius: 10px;
+  }
+}
+
+@media (max-width:992px) {
+
+  .hr_line_side_new::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: -16px;
+    width: 4px;
+    /* thickness of the line */
+    height: 100%;
+    background: linear-gradient(to bottom, #dc3c0a, #ffb013);
+    border-radius: 10px;
+  }
+}
+
+
+
 
  .hr_line_side {
    position: relative;
@@ -2118,10 +2156,10 @@
      content: "";
      position: absolute;
      right: 0;
-     /* or right: 0; if you want it on the right side */
+
      top: 0;
      width: 4px;
-     /* thickness of the line */
+    
      height: 100%;
      background: linear-gradient(to bottom, #dc3c0a, #ffb013);
      border-radius: 10px;
@@ -2134,7 +2172,6 @@
      content: "";
      position: absolute;
      right: 0;
-     /* or right: 0; if you want it on the right side */
      top: -16px;
      width: 4px;
      /* thickness of the line */
@@ -3479,12 +3516,12 @@
    padding: 10px;
  }
 
- @media (min-width:768px) {
+ /* @media (min-width:768px) {
 
    .propertys_divs_for_text_paras {
      margin-bottom: 15px !important;
    }
- }
+ } */
 
  .property_title_sace {
    margin-top: 10px;
@@ -4489,9 +4526,11 @@ right: 10px;
 .bg_section{
   position: relative;
   background-color: black;
-  color: white !important;
+  color: #27477d!important;
+  font-weight: 500;
+  /* color: white !important; */
 
-  
+
   
 }
 
@@ -4573,3 +4612,4 @@ right: 10px;
        }
       }
  
+      
