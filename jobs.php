@@ -14,18 +14,18 @@
 
              <div class="row g-3 align-items-center">
                  <div class="col-md-4">
-                     <input type="text" name="search_name" class="form-control   shadow-sm"
+                     <input type="text" name="search_name" class="custom-input   shadow-sm"
                          placeholder="🔍 Company Name"
                          value="<?php echo isset($_GET['search_name']) ? $_GET['search_name'] : ''; ?>">
                  </div>
                  <div class="col-md-4">
-                     <input type="text" name="search_category" class="form-control   shadow-sm"
+                     <input type="text" name="search_category" class="custom-input   shadow-sm"
                          placeholder="🏷️ Category"
                          value="<?php echo isset($_GET['search_category']) ? $_GET['search_category'] : ''; ?>">
                  </div>
                  <div class="col-md-4 text-end">
-                     <button type="submit" class="btn    shadow">🔎 Search</button>
-                     <a href="jobs.php" class="btn btn-secondary  shadow">⟲ Reset</a>
+                     <button type="submit" class="btn    shadow text_white">🔎 Search</button>
+                     <a href="jobs.php" class="btn btn-secondary  shadow text_white">⟲ Reset</a>
                  </div>
              </div>
 

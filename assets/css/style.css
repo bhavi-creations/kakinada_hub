@@ -177,7 +177,7 @@
  input[type="file"] {
    background: var(--text-bg-gradient) !important;
    /* Use your custom gradient */
-   color: #fff;
+   color: #ffffff !important;
    /* Optional: make sure text is visible on dark gradients */
    border: none;
    padding-top:5px;
@@ -188,6 +188,7 @@ padding-left: 10px;
    width: 100%;
    font-family: var(--body-font);
    font-size: 16px;
+   font-weight: 100 !important;
  }
 
  /* Optional: Add focus styling */
