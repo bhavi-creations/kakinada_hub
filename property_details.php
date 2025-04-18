@@ -1,3 +1,11 @@
+
+
+
+
+
+
+
+
 <?php
 include 'navbar.php';
 
@@ -235,6 +243,11 @@ if (isset($_GET['id'])) {
 </section>
 
 <?php include 'footer.php'; ?>
+
+
+
+
+
 
 
 

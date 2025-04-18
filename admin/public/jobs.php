@@ -13,6 +13,9 @@
             <div class="container-fluid">
                 <div class="d-sm-flex align-items-center justify-content-between mb-4">
                     <h1 class="h3 mb-0 text-gray-800">Available Jobs</h1>
+                    <a href="add_company_ads.php" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">
+                        <i class="fa-solid fa-plus"></i> Add Ads
+                    </a>
                     <a href="add_job.php" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">
                         <i class="fa-solid fa-plus"></i> Add Jobs
                     </a>
