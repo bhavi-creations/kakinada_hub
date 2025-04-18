@@ -7,7 +7,7 @@
 
 
 
-<section class="bg_section responsive_section">
+<section class="bg_section spacing_for_htag responsive_section">
     <div class="container ">
     <h1 class="text-center gradient_text_color spacing_for_htag">Movie Theaters</h1>
         <div class="row g-4">
@@ -155,7 +155,7 @@
 
 
 
-<section class="team-section-three   space-md-bottom">
+<!-- <section class="team-section-three   space-md-bottom">
     <div class="title-area-three text-center wow fadeInUp" data-wow-delay="600ms">
         <span class="sub-title7">Popular Searches</span>
 
@@ -248,16 +248,16 @@
             </div>
         </div>
     </div>
-</section>
+</section> -->
 
 
 
 
 
-<section class="last py-4">
+<!-- <section class="last py-4">
     <div class="container mt-5 pop_search_index">
         <div class="row">
-            <!-- Column 1 -->
+           
             <div class="col-12 col-md-4 text-center text-md-start mb-4 mb-md-0">
                 <h5>Fantastic Discounts</h5>
                 <ul class="list-unstyled">
@@ -268,7 +268,7 @@
                 </ul>
             </div>
 
-            <!-- Column 2 -->
+           
             <div class="col-12 col-md-4 text-center text-md-start mb-4 mb-md-0">
                 <h5>Helpful Info & Contact Details</h5>
                 <ul class="list-unstyled">
@@ -280,7 +280,7 @@
                 </ul>
             </div>
 
-            <!-- Column 3 -->
+            
             <div class="col-12 col-md-4 text-center text-md-start">
                 <h5>More from <br> MyVoucherCodes</h5>
                 <ul class="list-unstyled">
@@ -292,7 +292,7 @@
             </div>
         </div>
     </div>
-</section>
+</section> -->
 
 
 <?php include 'chat_bot.php';  ?>

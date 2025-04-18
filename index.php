@@ -31,7 +31,7 @@ $marquee_content = implode(' &nbsp; || &nbsp; ', $marquee_texts);
 <?php include 'navbar.php';  ?>
 
 
-<section class="bg_section home_section  ">
+<section class="bg_section hom  e_section  ">
 
 
 
