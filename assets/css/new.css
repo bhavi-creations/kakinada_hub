@@ -4629,10 +4629,12 @@ right: 10px;
 
  .text_white,
  input.form-control::placeholder,
- input.custom-input::placeholder {
+ input.custom-input::placeholder,
+ .custom-input::placeholder {
   color: white !important;
 
  }
+
 
 
  /* prop[erties_details ] */

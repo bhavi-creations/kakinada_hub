@@ -57,7 +57,7 @@ if (isset($_GET['id'])) {
                     <div class="col-12 col-md-7 position-relative">
 
                         <!-- Posted Date -->
-                        <div class="position-absolute top-0 start-0 bg-light px-3 py-1 rounded-bottom-end shadow-sm small fw-semibold" style="z-index: 2;">
+                        <div class=" propeerty_section_details  top-0 start-0 bg-light px-3 py-1 rounded-bottom-end shadow-sm small fw-semibold" style="z-index: 2;">
                             📅 Posted On:
                             <?php
                             $created_at = isset($property['created_at']) ? strtotime($property['created_at']) : null;
@@ -125,13 +125,15 @@ if (isset($_GET['id'])) {
                                         <?php
                                         $details = [
                                             "💰 Price:" => "₹" . number_format($property['price']),
-                                            "📍 Location:" => $property['location'],
+
                                             "📏 Area (Sqft):" => $property['size_sqft'],
                                             "🛏 Bed Rooms:" => $property['bedrooms'],
                                             "🛁 Bath Rooms:" => $property['bathrooms'],
                                             "🪑 Furnishing Status:" => $property['furnishing_status'],
                                             "🛠 Amenities:" => $property['amenities'] . " Available",
-                                            "📞 Contact Person:" => $property['phone']
+                                            "📞 Contact :" => htmlspecialchars($property['phone']) . ' / ' . htmlspecialchars($property['location']),
+
+                                            // "📍 Location:" => $property['location']
                                         ];
                                         foreach ($details as $label => $value) {
                                             echo "
