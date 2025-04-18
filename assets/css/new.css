@@ -4630,7 +4630,7 @@ right: 10px;
  .text_white,
  input.form-control::placeholder,
  input.custom-input::placeholder {
-  color: white;
+  color: white !important;
 
  }
 
