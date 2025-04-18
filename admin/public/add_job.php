@@ -35,8 +35,8 @@
                                 // Insert each job into the database
                                 foreach ($job_titles as $index => $title) {
                                     $vacancy_count = $vacancies[$index];
-                                    $sql = "INSERT INTO jobs (company_id, job_title, vacancies, total_vacancies) 
-                                            VALUES ('$company_id', '$title', '$vacancy_count', '$total_vacancies')";
+                                    $sql = "INSERT INTO jobs (company_id, job_title, vacancies) 
+                                            VALUES ('$company_id', '$title', '$vacancy_count')";
                                     mysqli_query($conn, $sql);
                                 }
 

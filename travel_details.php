@@ -74,16 +74,17 @@ $result = mysqli_query($conn, $query);
                                 <p class="cast_names">' . htmlspecialchars($seating) . '</p>
                               </div>';
                                 }
-                                if (!empty($price)) {
-                                    echo '<div class="d-flex justify-content-between align-items-center">
-                                <p class="movie-label"><strong>Price :</strong></p>
-                                <p class="cast_names">₹' . htmlspecialchars($price) . ' / 12hrs</p>
-                              </div>';
-                                }
+                               
                                 if (!empty($mileage)) {
                                     echo '<div class="d-flex justify-content-between align-items-center">
                                 <p class="movie-label"><strong>1 Liter :</strong></p>
                                 <p class="cast_names">' . htmlspecialchars($mileage) . ' Km</p>
+                              </div>';
+                                }
+                                if (!empty($price)) {
+                                    echo '<div class="d-flex justify-content-between align-items-center">
+                                <p class="movie-label"><strong>Price :</strong></p>
+                                <p class="cast_names">₹' . htmlspecialchars($price) . ' / 12hrs</p>
                               </div>';
                                 }
 
