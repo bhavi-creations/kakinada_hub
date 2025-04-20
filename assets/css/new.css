@@ -4700,3 +4700,12 @@ right: 10px;
 margin-left: 10px !important;
 margin-right: 10px !important;
 } */
+
+.index_first_section{
+  background-image: url(../img/test/bg_image1.png) ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: contain;
+  
+background-position: center;
+}

@@ -31,11 +31,10 @@ $marquee_content = implode(' &nbsp; || &nbsp; ', $marquee_texts);
 <?php include 'navbar.php';  ?>
 
 
-<section class="bg_section hom  e_section  ">
 
 
 
-    <section class=" ">
+    <section class="index_first_section ">
         <div class="container text-center main_div_container">
 
             <div class="    d-md-none    pt-5 first_dive_image_top_div_robot">
@@ -203,6 +202,10 @@ $marquee_content = implode(' &nbsp; || &nbsp; ', $marquee_texts);
     $sqlLower = "SELECT * FROM offers WHERE type = 'lower' ORDER BY created_at DESC";
     $resultLower = $conn->query($sqlLower);
     ?>
+
+<section class="bg_section hom  e_section  ">
+
+
 
     <section class="team-section-three space-md-bottom     ">
         <!-- <section class="team-section-three space-md-bottom bg_image_for_shops  "> -->
