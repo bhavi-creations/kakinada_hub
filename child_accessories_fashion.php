@@ -69,7 +69,7 @@
 
 
 
-<section bg_section responsive_section>
+<section class=" bg_section responsive_section">
     <div class="container">
 
         <div class="text-center   ">

@@ -4618,7 +4618,7 @@ right: 10px;
  @media (min-width:992px) {
    .bg_section::before {
      left: 45px;
-     right: 10px;
+     right: 45px;
    }
  }
 

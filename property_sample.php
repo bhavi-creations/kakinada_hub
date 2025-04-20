@@ -17,8 +17,8 @@ $categoryResult = mysqli_query($conn, $categoryQuery);
     <div class="container">
 
         <div class="text-center">
-            <h1 class="gradient_text_color">List Of Properties</h1>
-            <h5 class="gradient_text_color">Find Your Residency By One Click</h5>
+            <!-- <h1 class="gradient_text_color">List Of Properties</h1> -->
+            <h1 class="gradient_text_color">Find Your Residency By One Click</h1>
         </div>
 
         <!-- Filters -->

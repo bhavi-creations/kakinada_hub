@@ -60,7 +60,7 @@ $marquee_content = implode(' &nbsp; || &nbsp; ', $marquee_texts);
                         data-title="GROW WITH US"
                         data-description="Showcase your business to a growing local audience.
                     Connect with real customers looking for products and services like yours.
-                    Get support, visibility, and tools to grow — all in one platform"
+               F     Get support, visibility, and tools to grow — all in one platform"
                         data-img="assets/img/self_images/robot_bg.png">
                         Read More
                     </button>
