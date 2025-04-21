@@ -57,7 +57,7 @@ if (isset($_GET['id'])) {
                     <div class="col-12 col-md-7 position-relative">
 
                         <!-- Posted Date -->
-                        <div class=" propeerty_section_details  top-0 start-0 bg-light px-3 py-1 rounded-bottom-end shadow-sm small fw-semibold" style="z-index: 2;">
+                        <div class=" propeerty_section_details " style="z-index: 2;">
                             📅 Posted On:
                             <?php
                             $created_at = isset($property['created_at']) ? strtotime($property['created_at']) : null;
@@ -105,11 +105,6 @@ if (isset($_GET['id'])) {
 
                         <hr class="horizontal my-4">
 
-                        <!-- Description -->
-                        <p class="property_p_tag">
-                            <strong class="property_strong">📝 Description:</strong>
-                            <?php echo nl2br(htmlspecialchars($property['description'])); ?>
-                        </p>
                     </div>
 
                     <!-- Right Side: Property Details -->
@@ -146,6 +141,13 @@ if (isset($_GET['id'])) {
                                 </div>
                             </section>
                         </div>
+
+                        
+                        <!-- Description -->
+                        <p class="property_p_tag">
+                            <strong class="property_strong">📝 Description:</strong>
+                            <?php echo nl2br(htmlspecialchars($property['description'])); ?>
+                        </p>
                     </div>
 
                 </div>

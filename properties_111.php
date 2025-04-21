@@ -16,9 +16,9 @@ $categoryResult = mysqli_query($conn, $categoryQuery);
 
 <section class="bg_section responsive_section">
     <div class="container ">
-        <h1 class="text-center gradient_text_color spacing_for_htag">Find Your Residency by one click</h1>
-        <!-- <h5 class="text-center gradient_text_color spacing_for_htag">Find Your Residency By One Click</h5> -->
-
+    <h1 class="text-center gradient_text_color spacing_for_htag">Find Your Residency by one click</h1>
+            <!-- <h5 class="text-center gradient_text_color spacing_for_htag">Find Your Residency By One Click</h5> -->
+        
 
         <!-- Filters -->
         <div class="row gy-2 my-4 custom-filters  ">
@@ -53,12 +53,7 @@ $categoryResult = mysqli_query($conn, $categoryQuery);
             </div>
 
             <div class="col-12 col-md-2">
-                <!-- <input type="text" id="priceInput" class="custom-input" placeholder="Search by price..." onkeyup="filterProperties()"> -->
-                <input type="text" id="priceInput" class="custom-input" placeholder="Filter by price..." readonly onclick="openPriceModal()">
-
-
-
-
+                <input type="text" id="priceInput" class="custom-input" placeholder="Search by price..." onkeyup="filterProperties()">
             </div>
 
             <div class="col-12 col-md-1">
@@ -79,7 +74,7 @@ $categoryResult = mysqli_query($conn, $categoryQuery);
 
             <div class="col-lg-8 col-12">
 
-                <div class="row fadeIn scrollable-list" data-wow-delay="0.1s">
+                <div class="row fadeIn scrollable-list" data-wow-delay="0.3s">
                     <?php
                     $query = "SELECT * FROM properties ORDER BY id DESC";
                     $result = mysqli_query($conn, $query);
@@ -188,55 +183,6 @@ $categoryResult = mysqli_query($conn, $categoryQuery);
         </div>
 
     </div>
-
-
-
-    <div class="modal fade" id="priceFilterModal" tabindex="-1" aria-labelledby="priceFilterLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content p-3">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="priceFilterLabel">Filter by Price</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <label for="minPrice">Min Price</label>
-                    <input type="number" id="minPrice" class="form-control mb-2">
-
-                    <label for="maxPrice">Max Price</label>
-                    <input type="number" id="maxPrice" class="form-control mb-3">
-
-                    <button class="btn btn-primary w-100" onclick="applyPriceFilter()">Apply Filter</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <script>
-        function openPriceModal() {
-            const modal = new bootstrap.Modal(document.getElementById('priceFilterModal'));
-            modal.show();
-        }
-
-        function applyPriceFilter() {
-            const min = parseInt(document.getElementById('minPrice').value) || 0;
-            const max = parseInt(document.getElementById('maxPrice').value) || Number.MAX_SAFE_INTEGER;
-
-            document.getElementById('priceInput').value = `₹${min} - ₹${max}`;
-
-            const cards = document.querySelectorAll('.property-item');
-            cards.forEach(card => {
-                const price = parseInt(card.getAttribute('data-price'));
-                card.style.display = (price >= min && price <= max) ? '' : 'none';
-            });
-
-            const modal = bootstrap.Modal.getInstance(document.getElementById('priceFilterModal'));
-            modal.hide();
-        }
-    </script>
-
-
-
 
 
     <div id="mobileModal" class="mobile-modal-overlay">

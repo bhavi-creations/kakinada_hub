@@ -34,7 +34,8 @@ $marquee_content = implode(' &nbsp; || &nbsp; ', $marquee_texts);
 
 
 
-    <section class="index_first_section ">
+
+    <section class=" bg_section index_first_section ">
         <div class="container text-center main_div_container">
 
             <div class="    d-md-none    pt-5 first_dive_image_top_div_robot">
@@ -203,11 +204,10 @@ $marquee_content = implode(' &nbsp; || &nbsp; ', $marquee_texts);
     $resultLower = $conn->query($sqlLower);
     ?>
 
-<section class="bg_section hom  e_section  ">
 
 
 
-    <section class="team-section-three space-md-bottom     ">
+    <section class="team-section-three space-md-bottom  bg_section    ">
         <!-- <section class="team-section-three space-md-bottom bg_image_for_shops  "> -->
 
         <div class="container-style6  ">
@@ -364,7 +364,7 @@ $marquee_content = implode(' &nbsp; || &nbsp; ', $marquee_texts);
 
 
 
-    <section class="vs-hero-wrapper position-relative slider-area    ">
+    <section class="vs-hero-wrapper position-relative slider-area  bg_section   ">
         <div class="bg-overlay "></div>
         <div class="vs-hero-carousel  " data-navprevnext="true" data-height="800" data-container="1900" data-slidertype="responsive">
 
