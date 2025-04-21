@@ -58,12 +58,16 @@ if (isset($_GET['id'])) {
 
                         <!-- Posted Date -->
                         <div class=" propeerty_section_details " style="z-index: 2;">
-                            📅 Posted On:
-                            <?php
-                            $created_at = isset($property['created_at']) ? strtotime($property['created_at']) : null;
-                            echo $created_at ? date('d M Y', $created_at) . ' (' . date('H:i', $created_at) . ')' : 'Not Available';
-                            ?>
+
+                            <div class="property_text"> 📅 Posted On:
+                                <?php
+                                $created_at = isset($property['created_at']) ? strtotime($property['created_at']) : null;
+                                echo $created_at ? date('d M Y', $created_at) . ' (' . date('H:i', $created_at) . ')' : 'Not Available';
+                                ?>
+                            </div>
+
                         </div>
+
 
                         <!-- Image Gallery -->
                         <div class="image-gallery  mt-4">
@@ -142,12 +146,14 @@ if (isset($_GET['id'])) {
                             </section>
                         </div>
 
-                        
+
                         <!-- Description -->
+
                         <p class="property_p_tag">
                             <strong class="property_strong">📝 Description:</strong>
                             <?php echo nl2br(htmlspecialchars($property['description'])); ?>
                         </p>
+
                     </div>
 
                 </div>

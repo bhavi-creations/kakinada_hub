@@ -4700,13 +4700,16 @@ background-position: center;
 }
 
 .propeerty_section_details{
-  /* background-color: red; */
+
+
+
+margin-top: 10px;
+background-color: black;
+}
+
+.property_text{
   /* background: linear-gradient(to right, #6b390d, #ffb013); */
-  /* background-color: #fff4e0; */
-  /* background: linear-gradient(to right, #6b390d, #262523); */
-/* color:linear-gradient(to right, #6b390d, #ffb013) ;  */
-background: linear-gradient(to right, #6b390d, #ffb013);
+  background: linear-gradient(to right, #6b390d, #ffb013);
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
-  
 }

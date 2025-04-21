@@ -91,7 +91,7 @@
 
                     <!-- ABOUT COMPANY & JOB LIST -->
                     <div class="row my-5 p-3">
-                        <div class="col-md-8 col-12">
+                        <div class=" col-12">
                             <h2 class="heading-gradient">About Company</h2>
                             <h6 class="p-gradient"><?php echo $company['about']; ?></h6>
 
@@ -105,22 +105,12 @@
                             </h6>
                         </div>
 
-                        <div class="col-md-4 col-12">
-                            <h3 class="text-center heading-gradient">vacancies</h3>
-                            <div class="product-content">
-                                <?php while ($job = mysqli_fetch_assoc($jobResult)): ?>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <p class="movie-label"><strong><?php echo $job['job_title']; ?> :</strong></p>
-                                        <p class="job_roles"><?php echo $job['vacancies']; ?></p>
-                                    </div>
-                                <?php endwhile; ?>
-                            </div>
-                        </div>
+
                     </div>
 
                     <!-- COMPANY IMAGE SLIDER -->
                     <div class="row">
-                        <div class="col-12 my-2">
+                        <div class="col-md-8 col-12 my-2">
                             <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
                                 <div class="carousel-inner">
                                     <?php
@@ -139,253 +129,274 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-
-
-                    <div class="">
-                    <div class="row px-2">
-                        <div class="swiper-container swiper-container-upper team-slider">
-                            <div class="swiper-wrapper">
-                                <!-- Slide 1 -->
-                                <div class="swiper-slide">
-                                    <div class="gradient_card_wrapper">
-                                        <div class="card_border_styles">
-                                            <div class="row">
-
-                                                <div class=" text-center">
-                                                    <p class="heading-gradient"><strong>Veera Venkata Durgadevi Gandi</strong></p>
-
-                                                    <img src="assets/img/test/woman.png" alt="User" class="profile-img ">
-                                                    <p class="stars  p-gradient ">⭐⭐⭐⭐⭐ 5/5</p>
-                                                </div>
-                                                <p class="review-text  p-gradient ">
-                                                    Teeth gap fill cheyinchukunna chala Baga chesaru and chala Baga treat chesaru
-                                                    <span class="hidden-text">Dr.kiran Raju explains everything in detail and very happy for whole process"</span>
-
-                                                </p>
-                                                <p class="view-more  heading-gradient " onclick="toggleText(this)">Read More</p>
-                                                <p class="view-images  heading-gradient " onclick="toggleImages(this)">View Images</p>
-                                                <div class="review-images">
-                                                    <img src="assets/img/test/1.png" alt="Review Image"
-                                                        onclick="openLightbox(this)">
-                                                    <img src="assets/img/test/2.png" alt="Review Image"
-                                                        onclick="openLightbox(this)">
-                                                </div>
-
-                                            </div>
-                                        </div>
+                        <div class="col-md-4 col-12">
+                            <h3 class="text-center heading-gradient">vacancies</h3>
+                            <div class="product-content">
+                                <?php while ($job = mysqli_fetch_assoc($jobResult)): ?>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <p class="movie-label"><strong><?php echo $job['job_title']; ?> :</strong></p>
+                                        <p class="job_roles"><?php echo $job['vacancies']; ?></p>
                                     </div>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <div class="gradient_card_wrapper">
-                                        <div class="card_border_styles">
-                                            <div class="row">
-
-                                                <div class=" text-center">
-                                                    <p class="heading-gradient"><strong>Iqra mahi</strong></p>
-
-                                                    <img src="assets/img/test/boy11.png" alt="User" class="profile-img">
-                                                    <p class="stars  p-gradient ">⭐⭐⭐⭐⭐ 5/5</p>
-                                                </div>
-                                                <p class="review-text  p-gradient ">
-                                                    Thanks you so much all im soo happy
-                                                </p>
-                                                <p class="view-more  heading-gradient " onclick="toggleText(this)">Read More</p>
-                                                <p class="view-images  heading-gradient " onclick="toggleImages(this)">View Images</p>
-                                                <div class="review-images">
-                                                    <img src="assets/img/test/1.png" alt="Review Image"
-                                                        onclick="openLightbox(this)">
-                                                    <img src="assets/img/test/2.png" alt="Review Image"
-                                                        onclick="openLightbox(this)">
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                                <div class="swiper-slide">
-                                    <div class="gradient_card_wrapper">
-                                        <div class="card_border_styles">
-                                            <div class="row">
-
-                                                <div class=" text-center">
-                                                    <p class="heading-gradient"><strong>lokesh nandan</strong></p>
-
-                                                    <img src="assets/img/test/boy11.png" alt="User" class="profile-img">
-                                                    <p class="stars  p-gradient ">⭐⭐⭐⭐⭐ 5/5</p>
-                                                </div>
-                                                <p class="review-text  p-gradient ">
-                                                    Treatment was super & excellent.... complete painless treatment....
-                                                    <span class="hidden-text">clinic was very clean and hygienic...Dr kira raju sir was treated me very caring....staff also very supported....and carring....I'm fully satisfied my treatment....tk u Dr Kiran raju sir and staff....tk u srinivasa dental"</span>
-                                                </p>
-                                                <p class="view-more  heading-gradient " onclick="toggleText(this)">Read More</p>
-                                                <p class="view-images  heading-gradient " onclick="toggleImages(this)">View Images</p>
-                                                <div class="review-images">
-                                                    <img src="assets/img/test/1.png" alt="Review Image"
-                                                        onclick="openLightbox(this)">
-                                                    <img src="assets/img/test/2.png" alt="Review Image"
-                                                        onclick="openLightbox(this)">
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                                <div class="swiper-slide">
-                                    <div class="gradient_card_wrapper">
-                                        <div class="card_border_styles">
-                                            <div class="row">
-
-                                                <div class=" text-center">
-                                                    <p class="heading-gradient"><strong>kranthi kumar m</strong></p>
-
-                                                    <img src="assets/img/test/woman.png" alt="User" class="profile-img ">
-                                                    <p class="stars  p-gradient ">⭐⭐⭐⭐⭐ 5/5</p>
-                                                </div>
-                                                <p class="review-text  p-gradient ">
-                                                    Treatment is very good.receving is fantastic and fully equipped
-                                                    <span class="hidden-text">dental hospital, fully satisfied.price is reasonable
-                                                        Dr.kiran Raju explains everything in detail and very happy for whole process"</span>
-
-                                                </p>
-                                                <p class="view-more  heading-gradient " onclick="toggleText(this)">Read More</p>
-                                                <p class="view-images  heading-gradient " onclick="toggleImages(this)">View Images</p>
-                                                <div class="review-images">
-                                                    <img src="assets/img/test/1.png" alt="Review Image"
-                                                        onclick="openLightbox(this)">
-                                                    <img src="assets/img/test/2.png" alt="Review Image"
-                                                        onclick="openLightbox(this)">
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-
+                                <?php endwhile; ?>
                             </div>
                         </div>
 
 
+                        <div class="">
+                            <div class="row px-2">
+                                <div class="swiper-container swiper-container-upper team-slider">
+                                    <div class="swiper-wrapper">
+                                        <!-- Slide 1 -->
+                                        <div class="swiper-slide">
+                                            <div class="gradient_card_wrapper">
+                                                <div class="card_border_styles">
+                                                    <div class="row">
 
-                        <script>
-                            var swiper = new Swiper(".team-slider", {
-                                slidesPerView: 3, // Show 3 slides at a time
-                                spaceBetween: 20, // Adjust spacing between slides
-                                loop: true, // Enables infinite scrolling
-                                autoplay: {
-                                    delay: 3000, // Auto-slide every 3 seconds
-                                    disableOnInteraction: false,
-                                },
+                                                        <div class=" text-center">
+                                                            <p class="heading-gradient"><strong>Veera Venkata Durgadevi Gandi</strong></p>
 
-                                pagination: {
-                                    el: ".swiper-pagination",
-                                    clickable: true,
-                                },
-                                breakpoints: {
-                                    1024: {
-                                        slidesPerView: 3
-                                    },
-                                    768: {
-                                        slidesPerView: 3
-                                    },
-                                    0: {
-                                        slidesPerView: 1
-                                    }
-                                }
-                            });
-                        </script>
+                                                            <img src="assets/img/test/woman.png" alt="User" class="profile-img ">
+                                                            <p class="stars  p-gradient ">⭐⭐⭐⭐⭐ 5/5</p>
+                                                        </div>
+                                                        <p class="review-text  p-gradient ">
+                                                            Teeth gap fill cheyinchukunna chala Baga chesaru and chala Baga treat chesaru
+                                                            <span class="hidden-text">Dr.kiran Raju explains everything in detail and very happy for whole process"</span>
+
+                                                        </p>
+                                                        <p class="view-more  heading-gradient " onclick="toggleText(this)">Read More</p>
+                                                        <p class="view-images  heading-gradient " onclick="toggleImages(this)">View Images</p>
+                                                        <div class="review-images">
+                                                            <img src="assets/img/test/1.png" alt="Review Image"
+                                                                onclick="openLightbox(this)">
+                                                            <img src="assets/img/test/2.png" alt="Review Image"
+                                                                onclick="openLightbox(this)">
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <div class="gradient_card_wrapper">
+                                                <div class="card_border_styles">
+                                                    <div class="row">
+
+                                                        <div class=" text-center">
+                                                            <p class="heading-gradient"><strong>Iqra mahi</strong></p>
+
+                                                            <img src="assets/img/test/boy11.png" alt="User" class="profile-img">
+                                                            <p class="stars  p-gradient ">⭐⭐⭐⭐⭐ 5/5</p>
+                                                        </div>
+                                                        <p class="review-text  p-gradient ">
+                                                            Thanks you so much all im soo happy
+                                                        </p>
+                                                        <p class="view-more  heading-gradient " onclick="toggleText(this)">Read More</p>
+                                                        <p class="view-images  heading-gradient " onclick="toggleImages(this)">View Images</p>
+                                                        <div class="review-images">
+                                                            <img src="assets/img/test/1.png" alt="Review Image"
+                                                                onclick="openLightbox(this)">
+                                                            <img src="assets/img/test/2.png" alt="Review Image"
+                                                                onclick="openLightbox(this)">
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
 
 
+                                        <div class="swiper-slide">
+                                            <div class="gradient_card_wrapper">
+                                                <div class="card_border_styles">
+                                                    <div class="row">
+
+                                                        <div class=" text-center">
+                                                            <p class="heading-gradient"><strong>lokesh nandan</strong></p>
+
+                                                            <img src="assets/img/test/boy11.png" alt="User" class="profile-img">
+                                                            <p class="stars  p-gradient ">⭐⭐⭐⭐⭐ 5/5</p>
+                                                        </div>
+                                                        <p class="review-text  p-gradient ">
+                                                            Treatment was super & excellent.... complete painless treatment....
+                                                            <span class="hidden-text">clinic was very clean and hygienic...Dr kira raju sir was treated me very caring....staff also very supported....and carring....I'm fully satisfied my treatment....tk u Dr Kiran raju sir and staff....tk u srinivasa dental"</span>
+                                                        </p>
+                                                        <p class="view-more  heading-gradient " onclick="toggleText(this)">Read More</p>
+                                                        <p class="view-images  heading-gradient " onclick="toggleImages(this)">View Images</p>
+                                                        <div class="review-images">
+                                                            <img src="assets/img/test/1.png" alt="Review Image"
+                                                                onclick="openLightbox(this)">
+                                                            <img src="assets/img/test/2.png" alt="Review Image"
+                                                                onclick="openLightbox(this)">
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
 
 
-                    </div>
+                                        <div class="swiper-slide">
+                                            <div class="gradient_card_wrapper">
+                                                <div class="card_border_styles">
+                                                    <div class="row">
 
-                    <div class="row mt-5 px-2">
+                                                        <div class=" text-center">
+                                                            <p class="heading-gradient"><strong>kranthi kumar m</strong></p>
 
-                        <div class="  col-12">
+                                                            <img src="assets/img/test/woman.png" alt="User" class="profile-img ">
+                                                            <p class="stars  p-gradient ">⭐⭐⭐⭐⭐ 5/5</p>
+                                                        </div>
+                                                        <p class="review-text  p-gradient ">
+                                                            Treatment is very good.receving is fantastic and fully equipped
+                                                            <span class="hidden-text">dental hospital, fully satisfied.price is reasonable
+                                                                Dr.kiran Raju explains everything in detail and very happy for whole process"</span>
 
-                            <div class="review-form">
+                                                        </p>
+                                                        <p class="view-more  heading-gradient " onclick="toggleText(this)">Read More</p>
+                                                        <p class="view-images  heading-gradient " onclick="toggleImages(this)">View Images</p>
+                                                        <div class="review-images">
+                                                            <img src="assets/img/test/1.png" alt="Review Image"
+                                                                onclick="openLightbox(this)">
+                                                            <img src="assets/img/test/2.png" alt="Review Image"
+                                                                onclick="openLightbox(this)">
+                                                        </div>
 
-                                <div class="row">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
 
-                                    <h2 class="heading-gradient">Submit Your Review</h2>
-                                    <div class="col-md-4">
-                                        <input type="text" class="custom-input" id="name" placeholder="Your Name" required>
 
                                     </div>
-                                    <div class="col-md-4">
-                                        <select id="rating">
-                                            <option value="⭐">⭐</option>
-                                            <option value="⭐⭐">⭐⭐</option>
-                                            <option value="⭐⭐⭐">⭐⭐⭐</option>
-                                            <option value="⭐⭐⭐⭐">⭐⭐⭐⭐</option>
-                                            <option value="⭐⭐⭐⭐⭐ 5/5" selected>⭐⭐⭐⭐⭐ 5/5</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <input type="file" class="custom-input" id="imageUpload" accept="image/*">
-                                    </div>
-                                    <div class="col-12">
-
-                                        <textarea id="comment" rows="3" class="custom-input" placeholder="Write a comment..." required></textarea>
-                                        <button class="button-gradient" onclick="submitReview()">Submit Review</button>
-                                    </div>
-
                                 </div>
+
+
+
+                                <script>
+                                    var swiper = new Swiper(".team-slider", {
+                                        slidesPerView: 3, // Show 3 slides at a time
+                                        spaceBetween: 20, // Adjust spacing between slides
+                                        loop: true, // Enables infinite scrolling
+                                        autoplay: {
+                                            delay: 3000, // Auto-slide every 3 seconds
+                                            disableOnInteraction: false,
+                                        },
+
+                                        pagination: {
+                                            el: ".swiper-pagination",
+                                            clickable: true,
+                                        },
+                                        breakpoints: {
+                                            1024: {
+                                                slidesPerView: 3
+                                            },
+                                            768: {
+                                                slidesPerView: 3
+                                            },
+                                            0: {
+                                                slidesPerView: 1
+                                            }
+                                        }
+                                    });
+                                </script>
+
+
+
+
+                            </div>
+
+                            <div class="row mt-5 px-2">
+
+                                <div class="  col-12">
+
+                                    <div class="review-form">
+
+                                        <div class="row">
+
+                                            <h2 class="heading-gradient">Submit Your Review</h2>
+                                            <div class="col-md-4">
+                                                <input type="text" class="custom-input" id="name" placeholder="Your Name" required>
+
+                                            </div>
+                                            <div class="col-md-4">
+                                                <select id="rating">
+                                                    <option value="⭐">⭐</option>
+                                                    <option value="⭐⭐">⭐⭐</option>
+                                                    <option value="⭐⭐⭐">⭐⭐⭐</option>
+                                                    <option value="⭐⭐⭐⭐">⭐⭐⭐⭐</option>
+                                                    <option value="⭐⭐⭐⭐⭐ 5/5" selected>⭐⭐⭐⭐⭐ 5/5</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <input type="file" class="custom-input" id="imageUpload" accept="image/*">
+                                            </div>
+                                            <div class="col-12">
+
+                                                <textarea id="comment" rows="3" class="custom-input" placeholder="Write a comment..." required></textarea>
+                                                <button class="button-gradient" onclick="submitReview()">Submit Review</button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
 
                     </div>
                 </div>
 
+
+
+
+
+
+
+
+
+
+
+
+                <!-- RIGHT ADS -->
+                <div class="col-lg-2 d-none d-lg-block ads-section ads_section text_side_div">
+                    <?php foreach ($rightAds as $ad): ?>
+                        <?php if ($ad['ad_type'] === 'image' || $ad['ad_type'] === 'gif'): ?>
+                            <img src="admin/uploads/company_ads/<?php echo $ad['file_name']; ?>" class="img-fluid my-2 side_dive_images" alt="Ad">
+                        <?php elseif ($ad['ad_type'] === 'video'): ?>
+                            <video controls class="img-fluid my-2 side_dive_images">
+                                <source src="admin/uploads/company_ads/<?php echo $ad['file_name']; ?>" type="video/mp4">
+                            </video>
+                        <?php endif; ?>
+                    <?php endforeach; ?>
+                </div>
+
+            </div>
+
+            <!-- MOBILE AD POPUP -->
+            <div id="mobileModal" class="mobile-modal-overlay">
+                <div class="mobile-modal-content">
+                    <button class="close-btn" onclick="closeMobileModal()">×</button>
+                    <div class="col-12 text_side_div">
+                        <img src="assets/img/test/sideimg2.png" alt="" class="img-fluid">
+
+                    </div>
                 </div>
             </div>
 
-            <!-- RIGHT ADS -->
-            <div class="col-lg-2 d-none d-lg-block ads-section ads_section text_side_div">
-                <?php foreach ($rightAds as $ad): ?>
-                    <?php if ($ad['ad_type'] === 'image' || $ad['ad_type'] === 'gif'): ?>
-                        <img src="admin/uploads/company_ads/<?php echo $ad['file_name']; ?>" class="img-fluid my-2 side_dive_images" alt="Ad">
-                    <?php elseif ($ad['ad_type'] === 'video'): ?>
-                        <video controls class="img-fluid my-2 side_dive_images">
-                            <source src="admin/uploads/company_ads/<?php echo $ad['file_name']; ?>" type="video/mp4">
-                        </video>
-                    <?php endif; ?>
-                <?php endforeach; ?>
-            </div>
-
-        </div>
-
-        <!-- MOBILE AD POPUP -->
-        <div id="mobileModal" class="mobile-modal-overlay">
-            <div class="mobile-modal-content">
-                <button class="close-btn" onclick="closeMobileModal()">×</button>
-                <div class="col-12 text_side_div">
-                    <img src="assets/img/test/sideimg2.png" alt="" class="img-fluid">
-
-                </div>
-            </div>
-        </div>
-
-        <script>
-            function closeMobileModal() {
-                document.getElementById("mobileModal").style.display = "none";
-            }
-
-            document.addEventListener("DOMContentLoaded", function() {
-                if (window.innerWidth <= 991) {
-                    document.getElementById("mobileModal").style.display = "flex";
+            <script>
+                function closeMobileModal() {
+                    document.getElementById("mobileModal").style.display = "none";
                 }
-            });
-        </script>
 
-    </div>
+                document.addEventListener("DOMContentLoaded", function() {
+                    if (window.innerWidth <= 991) {
+                        document.getElementById("mobileModal").style.display = "flex";
+                    }
+                });
+            </script>
+
+        </div>
 </section>
 
 
@@ -404,7 +415,7 @@
         currentSlide = (currentSlide + 1) % slides.length;
         slides[currentSlide].classList.add('active');
     }
-    setInterval(slideImages, 3000); // Auto-slide every 3 seconds
+    setInterval(slideImages, 2000); // Auto-slide every 3 seconds
 </script>
 
 <script>
