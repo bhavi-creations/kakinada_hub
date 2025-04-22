@@ -180,7 +180,7 @@ $result = mysqli_query($conn, $query);
 <!-- Booking Modal -->
 <div class="modal fade   " id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
     <div class="modal-dialog" id="travel_model_body">
-        <div class="modal-content">
+        <div class="modal-content filter_section">
             <div class="modal-header">
                 <h5 class="modal-title" id="bookingModalLabel">Book Your Ride</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>

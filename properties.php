@@ -200,10 +200,10 @@ $categoryResult = mysqli_query($conn, $categoryQuery);
                 </div>
                 <div class="modal-body">
                     <label for="minPrice">Min Price</label>
-                    <input type="number" id="minPrice" class="form-control mb-2">
+                    <input type="number" id="minPrice" class="form-control coustom-input  mb-2">
 
                     <label for="maxPrice">Max Price</label>
-                    <input type="number" id="maxPrice" class="form-control mb-3">
+                    <input type="number" id="maxPrice" class="form-control coustom-input mb-3">
 
                     <button class="btn btn-primary w-100" onclick="applyPriceFilter()">Apply Filter</button>
                 </div>

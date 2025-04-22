@@ -35,7 +35,7 @@ $marquee_content = implode(' &nbsp; || &nbsp; ', $marquee_texts);
 
 
 
-    <section class=" bg_section index_first_section ">
+    <section class=" bg_section   ">
         <div class="container text-center main_div_container">
 
             <div class="    d-md-none    pt-5 first_dive_image_top_div_robot">
