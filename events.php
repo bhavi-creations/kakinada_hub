@@ -63,11 +63,11 @@ $result = $stmt->get_result();
             </div>
 
             <div class="col-lg-8 col-12 ">
-                <div class="row    fadeIn" data-wow-delay="0.3s">
+                <div class="row    "  >
 
 
 
-                    <section class="OfferContainer_exclusive__non wow fadeInUp my-2" data-wow-delay="100ms">
+                    <section class="OfferContainer_exclusive__non    my-2"  >
                         <div class="   container  card_div ">
                             <div class="row  need_padding_div ">
                                 <div class="col-12 col-md-4 job_image_card_main mb-2 parent-container">
@@ -104,7 +104,7 @@ $result = $stmt->get_result();
                         </div>
                     </section>
 
-                    <section class="OfferContainer_exclusive__non wow fadeInUp my-2" data-wow-delay="100ms">
+                    <section class="OfferContainer_exclusive__non    my-2"  >
                         <div class="   container  card_div ">
                             <div class="row  need_padding_div ">
                                 <div class="col-12 col-md-4 job_image_card_main mb-2 parent-container">
@@ -141,7 +141,7 @@ $result = $stmt->get_result();
                         </div>
                     </section>
 
-                    <section class="OfferContainer_exclusive__non wow fadeInUp my-2" data-wow-delay="100ms">
+                    <section class="OfferContainer_exclusive__non    my-2" >
                         <div class="   container  card_div ">
                             <div class="row  need_padding_div ">
                                 <div class="col-12 col-md-4 job_image_card_main mb-2 parent-container">

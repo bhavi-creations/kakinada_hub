@@ -79,7 +79,7 @@ $categoryResult = mysqli_query($conn, $categoryQuery);
 
             <div class="col-lg-8 col-12">
 
-                <div class="row fadeIn scrollable-list" data-wow-delay="0.1s">
+                <div class="row   scrollable-list" >
                     <?php
                     $query = "SELECT * FROM properties ORDER BY id DESC";
                     $result = mysqli_query($conn, $query);
@@ -89,8 +89,8 @@ $categoryResult = mysqli_query($conn, $categoryQuery);
                         $numericPrice = isset($row['price']) ? (int) preg_replace('/[^\d]/', '', $row['price']) : '';
                     ?>
 
-                        <section class="OfferContainer_exclusive__non wow fadeInUp my-2 property-item"
-                            data-wow-delay="100ms"
+                        <section class="OfferContainer_exclusive__non   my-2 property-item"
+                           
                             data-type="<?php echo strtolower($propertyType); ?>"
                             data-category="<?php echo strtolower($propertyCategory); ?>"
                             data-price="<?php echo $numericPrice; ?>">

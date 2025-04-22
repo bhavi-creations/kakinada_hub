@@ -2382,9 +2382,15 @@
  .yellow_field_card ul li a:hover {
    color: #07ccec !important;
  }
+ @media (min-width: 768px) and (max-width: 992px) {
+  .yellow_field_card {
+    width: calc(33.333% - 10px); /* 3 cards per row with spacing */
+       
+  }
+}
 
  /* Tablets - 2 cards per row */
- @media (max-width: 768px) {
+ @media (min-width: 480px) and (max-width: 768px) {
    .yellow_field_card {
      width: calc(50% - 7.5px);
      /* 2 cards per row */
@@ -3591,7 +3597,7 @@
 
  @media (min-width:1200px) and (max-width:1400px) {
    .scrollable-list {
-     max-height: 835px;
+     max-height: 940px;
      overflow-y: auto;
      padding-right: 10px;
    }
@@ -3600,7 +3606,7 @@
 
  @media (min-width:992px) and (max-width:1200px) {
    .scrollable-list {
-     max-height: 690px;
+     max-height: 800px;
      overflow-y: auto;
      padding-right: 10px;
    }
@@ -4693,10 +4699,15 @@ right: 10px;
    .responsive_section {
      padding-left: 50px;
      padding-right: 50px;
-   }
+     
+    }
 
  }
 
+  .responsive_section {
+   padding-bottom: 60px;
+     
+    }
  .spacing_for_htag {
    padding-top: 20px;
    padding-bottom: 10px;

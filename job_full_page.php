@@ -2,7 +2,7 @@
 <?php include 'jobs_sidebar.php'; ?>
 
 
-<section class="bg_section responsive_section">
+<section class="bg_section responsive_section    ">
     <div class="container">
 
         <?php

@@ -39,7 +39,7 @@
             <div class="col-lg-8 col-12">
                 <?php include 'db.connection/db_connection.php'; ?>
 
-                <div class="row fadeIn scrollable-list" data-wow-delay="0.3s">
+                <div class="row   scrollable-list"  >
                     <?php
                     $searchName = isset($_GET['search_name']) ? trim($_GET['search_name']) : '';
                     $searchCategory = isset($_GET['search_category']) ? trim($_GET['search_category']) : '';
@@ -71,7 +71,7 @@
 
                         // Only show company if it has matching job(s)
                         if ($jobCount > 0) {
-                            echo '<section class="OfferContainer_exclusive__non wow fadeInUp my-2" data-wow-delay="100ms">
+                            echo '<section class="OfferContainer_exclusive__non     my-2" >
                                         <div class="container card_div">
                                             <div class="row need_padding_div">
                                                 <div class="col-12 col-md-3 job_image_card_main mb-2 parent-container"> 
