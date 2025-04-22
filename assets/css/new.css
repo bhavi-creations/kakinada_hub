@@ -2801,7 +2801,7 @@
    .sidebar-icon {
      top: 100px;
      left: 10px;
-     z-index: 9999;
+     z-index: 9999999;
    }
  }
 
@@ -2810,7 +2810,7 @@
    .restaurant-icon {
      top: 140px;
      left: 25px;
-     z-index: 9999;
+     z-index: 999999999 ;
 
    }
 
@@ -4559,9 +4559,9 @@ right: 10px;
 
  @media (min-width:375px) and (max-width:768px) {
 
-   .bg_section {
-     padding: 50px;
-   }
+      .bg_section {
+        padding: 10px;
+      }
 
    .bg_section_new::before,
    .bg_section::before {
@@ -4699,17 +4699,30 @@ right: 10px;
 background-position: center;
 }
 
-.propeerty_section_details{
 
 
 
-margin-top: 10px;
-background-color: black;
+
+.propeerty_section_details {
+  display: inline-block; 
+  margin-top: 10px;
+  background: linear-gradient(to right, #dc3c0a, #ffb013);
+  color: white;
+  border-radius: 5px;
+  padding: 6px 12px; 
+  font-weight: 500;
+  line-height: 1.4;
 }
 
-.property_text{
-  /* background: linear-gradient(to right, #6b390d, #ffb013); */
-  background: linear-gradient(to right, #6b390d, #ffb013);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
+.service_contant{
+  /* margin-top: 20px;
+  margin-bottom: 20px; */
+padding-top: 30px;
+padding-bottom: 30px;
 }
+
+.filter_section{
+  background-color: #fff4e0;
+
+}
+

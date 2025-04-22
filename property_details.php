@@ -59,12 +59,12 @@ if (isset($_GET['id'])) {
                         <!-- Posted Date -->
                         <div class=" propeerty_section_details " style="z-index: 2;">
 
-                            <div class="property_text"> 📅 Posted On:
+                             📅 Posted On:
                                 <?php
                                 $created_at = isset($property['created_at']) ? strtotime($property['created_at']) : null;
                                 echo $created_at ? date('d M Y', $created_at) . ' (' . date('H:i', $created_at) . ')' : 'Not Available';
                                 ?>
-                            </div>
+                     
 
                         </div>
 

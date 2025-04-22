@@ -193,7 +193,7 @@ $categoryResult = mysqli_query($conn, $categoryQuery);
 
     <div class="modal fade" id="priceFilterModal" tabindex="-1" aria-labelledby="priceFilterLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content p-3">
+            <div class="modal-content p-3 filter_section">
                 <div class="modal-header">
                     <h5 class="modal-title" id="priceFilterLabel">Filter by Price</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>

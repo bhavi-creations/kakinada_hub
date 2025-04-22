@@ -4,10 +4,10 @@
 
 
 
-<section class="bg_section responsive_section">
-    <div class="container ">
+<section class="bg_section responsive_section ">
+    <div class="container  service_contant">
     
-        <div class="row">
+        <div class="row ">
             <div class="yellow_fields_cards_container">
 
 
