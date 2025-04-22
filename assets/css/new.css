@@ -2810,7 +2810,7 @@
    .restaurant-icon {
      top: 140px;
      left: 25px;
-     z-index: 999999999 ;
+     z-index: 999999999;
 
    }
 
@@ -3653,22 +3653,35 @@
    width: 100%;
    height: 100%;
  }
-
- @media (min-width:768px) {
-   .slider-area .bg-overlay {
-     background: linear-gradient(to right, #dc3c0a, #ffb013);
-     width: 89%;
-     left: 56px;
-   }
- }
-
  @media (max-width:768px) {
+  .slider-area .bg-overlay {
+    background: linear-gradient(to right, #dc3c0a, #ffb013);
+    width: 89%;
+    left: 10px;
+  }
+}
+
+ @media (min-width:768px) and  (max-width:992px)  {
    .slider-area .bg-overlay {
      background: linear-gradient(to right, #dc3c0a, #ffb013);
      width: 89%;
-     left: 10px;
+     left: 8px;
    }
  }
+ @media (min-width:992px)  and  (max-width:1200px)  {
+  .slider-area .bg-overlay {
+    background: linear-gradient(to right, #dc3c0a, #ffb013);
+    width: 89%;
+    left: 45px;
+  }
+}
+ @media (min-width:1200px) {
+  .slider-area .bg-overlay {
+    background: linear-gradient(to right, #dc3c0a, #ffb013);
+    width: 89%;
+    left: 56px;
+  }
+}
 
 
  .slider-area .slider-detail .slider-slide .slider-inner-content .slide-heading {
@@ -3790,18 +3803,20 @@
      justify-content: end;
    }
 
-   .border_styles_home {
-     background: linear-gradient(to right, #f5d19e, #fdf6ec, #f5d19e);
 
-     /* Solid black background */
-     border-radius: 10px;
-     /* Inner radius slightly less to avoid overflow */
-     padding-left: 15px;
-     padding-right: 15px;
-     padding-top: 20px;
-     padding-bottom: 22px;
+ }
 
-   }
+ @media (min-width:1200px) and (max-width:1400px) {
+  
+  .border_styles_home {
+    background: linear-gradient(to right, #f5d19e, #fdf6ec, #f5d19e);
+    border-radius: 10px;/* Inner radius slightly less to avoid overflow */
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 44px;
+    padding-bottom: 22px;
+
+  }
  }
 
  @media (max-width:992px) {
@@ -3829,41 +3844,97 @@
    }
  }
 
+
  .main_div_container {
    padding-left: 30px;
    padding-right: 30px;
  }
 
- .border_styles_home_last {
-   background: linear-gradient(to right, #f5d19e, #fdf6ec, #f5d19e);
-
-   border-radius: 10px;
-
-   padding-left: 30px;
-
-   padding-top: 83px;
-   padding-bottom: 20px;
-   text-align: left;
-
- }
 
 
- @media (max-width:992px) {
+ @media (max-width:768px) {
 
    .border_styles_home_last {
-
-
+     background: linear-gradient(to right, #f5d19e, #fdf6ec, #f5d19e);
      border-radius: 10px;
-
      padding-left: 20px;
-
      padding-top: 25px;
      padding-bottom: 20px;
      text-align: center;
 
    }
  }
+ @media (min-width:768px) and (max-width:992px) {
 
+  .border_styles_home_last {
+    background: linear-gradient(to right, #f5d19e, #fdf6ec, #f5d19e);
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-top: 25px;
+    padding-bottom: 85px;
+    text-align: center;
+
+  }
+}
+
+@media (min-width:992px) and (max-width:1200px)   {
+  .border_styles_home_last {
+    background: linear-gradient(to right, #f5d19e, #fdf6ec, #f5d19e);
+    border-radius: 10px;
+    padding-left: 30px;
+    padding-top: 83px;
+    padding-bottom: 38px;
+    text-align: left;
+ 
+  }
+  .border_styles_home {
+    background: linear-gradient(to right, #f5d19e, #fdf6ec, #f5d19e);
+    border-radius: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 20px;
+    padding-bottom: 22px;
+
+  }
+  .main_div_container {
+    padding-left: 44px;
+    padding-right:44px;
+  }
+ 
+}
+@media (min-width:1200px) and (max-width:1400px)   {
+  .border_styles_home_last {
+    background: linear-gradient(to right, #f5d19e, #fdf6ec, #f5d19e);
+    border-radius: 10px;
+    padding-left: 30px;
+    padding-top: 83px;
+    padding-bottom: 38px;
+    text-align: left;
+ 
+  }
+ 
+}
+@media (min-width:1400px)  {
+  .border_styles_home_last {
+    background: linear-gradient(to right, #f5d19e, #fdf6ec, #f5d19e);
+    border-radius: 10px;
+    padding-left: 30px;
+    padding-top: 83px;
+    padding-bottom: 20px;
+    text-align: left;
+ 
+  }
+ 
+  .border_styles_home {
+    background: linear-gradient(to right, #f5d19e, #fdf6ec, #f5d19e);
+    border-radius: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 20px;
+    padding-bottom: 22px;
+
+  }
+}
  .inner_div_index {
    text-align: left;
 
@@ -3880,16 +3951,28 @@
  }
 
 
- @media (min-width:992px) {
+ @media (min-width:992px) and  (max-width:1400px)  {
    .art_and_design {
      text-align: left;
      display: flex;
      flex-direction: column;
      justify-content: end;
-     padding-left: 150px;
-     padding-right: 150px;
+     padding-left: 100px;
+     padding-right: 100px;
    }
  }
+
+ @media (min-width:1400px) {
+  .art_and_design {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+}
+
 
  .first_side_div_image {
    text-align: left;
@@ -4248,6 +4331,10 @@
    top: 50% !important;
    left: 75% !important;
  }
+ #image_topper_dive {
+  top: 50% !important;
+  left: 75% !important;
+}
 
  @media (max-width:992px) {
 
@@ -4256,6 +4343,19 @@
    }
  }
 
+ @media (min-width:992px) and (max-width:1200px) {
+
+  .last_image_cid {
+    width: 100%;
+  }
+}
+
+@media (min-width:1200px) and (max-width:1400px) {
+
+  .last_image_cid {
+    width: 100%;
+  }
+}
 
 
  /* Apply gradient text and background to custom input */
@@ -4559,16 +4659,19 @@ right: 10px;
 
  @media (min-width:375px) and (max-width:768px) {
 
-      .bg_section {
-        padding: 10px;
-      }
-
-   .bg_section_new::before,
-   .bg_section::before {
-     left: 10px;
-     right: 10px;
+   .bg_section {
+     padding: 10px;
    }
+
+ 
  }
+
+ @media (min-width:375px) and (max-width:992px) {
+  .bg_section_new::before,.bg_section::before {
+    left: 8px;
+    right: 8px;
+  }
+}
 
  .bg_section_new .container,
  .bg_section .container {
@@ -4601,19 +4704,16 @@ right: 10px;
 
  @media (min-width:320px) and (max-width:375px) {
    .bg_section {
-     background-color: #F4F5F9 !important;
+     background-color: #fff4e0 !important;
 
    }
-
-
- }
-
- @media (min-width:375px) and (max-width:992px) {
    .bg_section::before {
-     left: 8px;
-     right: 10px;
-   }
+    left: 8px;
+    right: 10px;
+  }
+
  }
+
 
  @media (min-width:992px) {
    .bg_section::before {
@@ -4631,7 +4731,7 @@ right: 10px;
  input.form-control::placeholder,
  input.custom-input::placeholder,
  .custom-input::placeholder {
-  color: white !important;
+   color: white !important;
 
  }
 
@@ -4658,7 +4758,7 @@ right: 10px;
   right: 46px; */
    bottom: 0;
    /* background-color: #fff4e0; */
-   background-image: url(../img/test/bg_remover.png) ;
+   background-image: url(../img/test/bg_remover.png);
    background-position: center;
    background-repeat: no-repeat;
    background-size: cover;
@@ -4674,7 +4774,7 @@ right: 10px;
      padding: 50px;
    }
 
-  
+
    .index_first_section::before {
      left: 10px;
      right: 10px;
@@ -4690,43 +4790,67 @@ right: 10px;
 
 
 
-.index_first_section{
+ .index_first_section {
 
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-size: contain;
-  
-background-position: center;
-}
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-size: contain;
 
-
+   background-position: center;
+ }
 
 
 
-.propeerty_section_details {
-  display: inline-block; 
-  margin-top: 10px;
-  background: linear-gradient(to right, #dc3c0a, #ffb013);
-  color: white;
-  border-radius: 5px;
-  padding: 6px 12px; 
-  font-weight: 500;
-  line-height: 1.4;
-}
 
-.service_contant{
-  /* margin-top: 20px;
+
+ .propeerty_section_details {
+   display: inline-block;
+   margin-top: 10px;
+   background: linear-gradient(to right, #dc3c0a, #ffb013);
+   color: white;
+   border-radius: 5px;
+   padding: 6px 12px;
+   font-weight: 500;
+   line-height: 1.4;
+ }
+
+ .service_contant {
+   /* margin-top: 20px;
   margin-bottom: 20px; */
-padding-top: 30px;
-padding-bottom: 30px;
-}
+   padding-top: 30px;
+   padding-bottom: 30px;
+ }
 
-.filter_section{
-  background-color: #fff4e0;
+ .filter_section {
+   background-color: #fff4e0;
 
-}
+ }
 
-.coustom-input {
-  color: #fff !important;
-   
-}
+ .coustom-input {
+   color: #fff !important;
+
+ }
+
+ @media (min-width:768px) and (max-width:992px) {
+
+
+   .tab_images_space {
+     margin-top: -83px;
+   }
+ }
+
+ @media (min-width:992px) and (max-width:1200px) {
+
+
+   .tab_images_space {
+     margin-top: -18px;
+   }
+ }
+
+ @media (min-width:1200px) and (max-width:1400px) {
+
+
+   .tab_images_space {
+     margin-top: -10px;
+   }
+ }
