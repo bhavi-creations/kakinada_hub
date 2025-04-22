@@ -79,8 +79,8 @@ $result = $stmt->get_result();
                                     <h4 class="gradient_text_color"> <strong class="property_strong"> occasion :</strong>Ugadhi</h4>
                                     <p class="property_p_tag"><strong class="property_strong"> Venue :</strong> Spandhana </p>
                                     <p class="property_p_tag"> <strong class="property_strong"> Location : </strong> Kakinada </p>
-                                    <p class="property_p_tag"> <strong class="property_strong"> Phone :</strong>9642343434 </p>
-                                    <p class="property_p_tag"> <strong class="property_strong"> Website :</strong><a target="_blank" href="https://bhavicreationspvtltd.com/"> https://Spandhnaevents.com/ </a> </p>
+                                    <p class="property_p_tag"> <strong class="property_strong"> Phone :</strong>9989796919 </p>
+                                    <p class="property_p_tag"> <strong class="property_strong"> Website :</strong><a target="_blank" href="     "> https://Spandhnaevents.com/ </a> </p>
 
 
                                 </div>
@@ -116,8 +116,8 @@ $result = $stmt->get_result();
                                     <h4 class="gradient_text_color"> <strong class="property_strong"> occasion :</strong>Ugadhi</h4>
                                     <p class="property_p_tag"><strong class="property_strong"> Venue :</strong> Spandhana </p>
                                     <p class="property_p_tag"> <strong class="property_strong"> Location : </strong> Kakinada </p>
-                                    <p class="property_p_tag"> <strong class="property_strong"> Phone :</strong>9642343434 </p>
-                                    <p class="property_p_tag"> <strong class="property_strong"> Website :</strong><a target="_blank" href="https://bhavicreationspvtltd.com/"> https://Spandhnaevents.com/ </a> </p>
+                                    <p class="property_p_tag"> <strong class="property_strong"> Phone :</strong>9989796919 </p>
+                                    <p class="property_p_tag"> <strong class="property_strong"> Website :</strong><a target="_blank" href="     "> https://Spandhnaevents.com/ </a> </p>
 
 
                                 </div>
@@ -153,8 +153,8 @@ $result = $stmt->get_result();
                                     <h4 class="gradient_text_color"> <strong class="property_strong"> occasion :</strong>Ugadhi</h4>
                                     <p class="property_p_tag"><strong class="property_strong"> Venue :</strong> Spandhana </p>
                                     <p class="property_p_tag"> <strong class="property_strong"> Location : </strong> Kakinada </p>
-                                    <p class="property_p_tag"> <strong class="property_strong"> Phone :</strong>9642343434 </p>
-                                    <p class="property_p_tag"> <strong class="property_strong"> Website :</strong><a target="_blank" href="https://bhavicreationspvtltd.com/"> https://Spandhnaevents.com/ </a> </p>
+                                    <p class="property_p_tag"> <strong class="property_strong"> Phone :</strong>9989796919 </p>
+                                    <p class="property_p_tag"> <strong class="property_strong"> Website :</strong><a target="_blank" href="     "> https://Spandhnaevents.com/ </a> </p>
 
 
                                 </div>

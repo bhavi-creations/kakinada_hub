@@ -110,7 +110,7 @@
 
                     <!-- COMPANY IMAGE SLIDER -->
                     <div class="row">
-                        <div class="col-md-8 col-12 my-2">
+                        <div class="col-md-7 col-12 my-2">
                             <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
                                 <div class="carousel-inner">
                                     <?php
@@ -129,7 +129,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4 col-12">
+                        <div class="col-md-5 col-12">
                             <h3 class="text-center heading-gradient">vacancies</h3>
                             <div class="product-content">
                                 <?php while ($job = mysqli_fetch_assoc($jobResult)): ?>
@@ -356,22 +356,22 @@
 
 
 
-
-
-                <!-- RIGHT ADS -->
-                <div class="col-lg-2 d-none d-lg-block ads-section ads_section text_side_div">
-                    <?php foreach ($rightAds as $ad): ?>
-                        <?php if ($ad['ad_type'] === 'image' || $ad['ad_type'] === 'gif'): ?>
-                            <img src="admin/uploads/company_ads/<?php echo $ad['file_name']; ?>" class="img-fluid my-2 side_dive_images" alt="Ad">
-                        <?php elseif ($ad['ad_type'] === 'video'): ?>
-                            <video controls class="img-fluid my-2 side_dive_images">
-                                <source src="admin/uploads/company_ads/<?php echo $ad['file_name']; ?>" type="video/mp4">
-                            </video>
-                        <?php endif; ?>
-                    <?php endforeach; ?>
-                </div>
-
             </div>
+
+            <!-- RIGHT ADS -->
+            <div class="col-lg-2 d-none d-lg-block ads-section ads_section text_side_div">
+                <?php foreach ($rightAds as $ad): ?>
+                    <?php if ($ad['ad_type'] === 'image' || $ad['ad_type'] === 'gif'): ?>
+                        <img src="admin/uploads/company_ads/<?php echo $ad['file_name']; ?>" class="img-fluid my-2 side_dive_images" alt="Ad">
+                    <?php elseif ($ad['ad_type'] === 'video'): ?>
+                        <video controls class="img-fluid my-2 side_dive_images">
+                            <source src="admin/uploads/company_ads/<?php echo $ad['file_name']; ?>" type="video/mp4">
+                        </video>
+                    <?php endif; ?>
+                <?php endforeach; ?>
+            </div>
+
+
 
             <!-- MOBILE AD POPUP -->
             <div id="mobileModal" class="mobile-modal-overlay">
