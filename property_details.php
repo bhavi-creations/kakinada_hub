@@ -54,17 +54,17 @@ if (isset($_GET['id'])) {
                 <div class="row gx-4 property-wrapper-v2 ">
 
                     <!-- Left Side: Image + Description -->
-                    <div class="col-12 col-md-7 position-relative">
+                    <div class="col-12 col-md-6 position-relative">
 
                         <!-- Posted Date -->
                         <div class=" propeerty_section_details " style="z-index: 2;">
 
-                             📅 Posted On:
-                                <?php
-                                $created_at = isset($property['created_at']) ? strtotime($property['created_at']) : null;
-                                echo $created_at ? date('d M Y', $created_at) . ' (' . date('H:i', $created_at) . ')' : 'Not Available';
-                                ?>
-                     
+                            📅 Posted On:
+                            <?php
+                            $created_at = isset($property['created_at']) ? strtotime($property['created_at']) : null;
+                            echo $created_at ? date('d M Y', $created_at) . ' (' . date('H:i', $created_at) . ')' : 'Not Available';
+                            ?>
+
 
                         </div>
 
@@ -112,7 +112,7 @@ if (isset($_GET['id'])) {
                     </div>
 
                     <!-- Right Side: Property Details -->
-                    <div class="col-12 col-md-5">
+                    <div class="col-12 col-md-6">
                         <div class="row fadeIn" data-wow-delay="0.3s">
                             <section class="OfferContainer_exclusive__non wow fadeInUp my-2" data-wow-delay="100ms">
                                 <div class="col-12 card_div">
