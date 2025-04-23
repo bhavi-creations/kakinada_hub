@@ -4,10 +4,12 @@
 <?php
 $id = intval($_GET['id']);
 $item = mysqli_fetch_assoc(mysqli_query($conn, "SELECT * FROM offers WHERE id = $id"));
-
 if (!$item) die("Item not found.");
 
 $successMsg = '';
+if (isset($_GET['success']) && $_GET['success'] == 1) {
+    $successMsg = "Offers item updated successfully!";
+}
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $title = mysqli_real_escape_string($conn, $_POST['title']);
@@ -16,7 +18,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $offer = mysqli_real_escape_string($conn, $_POST['offer']);
     $type = $_POST['type'];
 
-    $imageName = $item['image']; // default old image
+    $imageName = $item['image']; // keep old image by default
 
     if (!empty($_FILES['image']['name'])) {
         $newImage = $_FILES['image']['name'];
@@ -24,10 +26,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $uploadPath = '../uploads/home_offers/' . basename($newImage);
 
         if (move_uploaded_file($tmpName, $uploadPath)) {
-            // Delete old image
+            // Delete old image only if new one is successfully uploaded
             $oldImagePath = '../uploads/home_offers/' . $item['image'];
-            if (file_exists($oldImagePath)) unlink($oldImagePath);
-
+            if (file_exists($oldImagePath)) {
+                unlink($oldImagePath);
+            }
             $imageName = $newImage;
         }
     }
@@ -38,8 +41,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         WHERE id=$id";
 
     if (mysqli_query($conn, $updateQuery)) {
-        $successMsg = "offers item updated successfully!";
-        $item = mysqli_fetch_assoc(mysqli_query($conn, "SELECT * FROM offers WHERE id = $id")); // refresh data
+        // Redirect to same page with success flag to avoid re-submission
+        header("Location: view_home_offers.php?id=$id&success=1");
+        exit();
     } else {
         $successMsg = "Error updating item: " . mysqli_error($conn);
     }
@@ -53,16 +57,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         <div id="content">
             <div class="container-fluid">
-
-
                 <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                    <h1 class="h3 mb-0 text-gray-800">Edit offers Item</h1>
+                    <h1 class="h3 mb-0 text-gray-800">Edit Offers Item</h1>
                     <a href="view_home_offers.php" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">
-                        <i class="fa-regular fa-eye"></i> View offers Lists
+                        <i class="fa-regular fa-eye"></i> View Offers List
                     </a>
                 </div>
-
-                
 
                 <?php if ($successMsg): ?>
                     <div class="alert alert-success"><?= $successMsg ?></div>

@@ -63,7 +63,7 @@ $result = $stmt->get_result();
             </div>
 
             <div class="col-lg-8 col-12 ">
-                <div class="row    "  >
+                <div class="row     "  >
 
 
 

@@ -50,7 +50,7 @@ if (isset($_GET['id'])) {
 
 
 
-            <div class="col-lg-8 col-12 text_side_div mx-auto px-4">
+            <div class="col-lg-8 col-12 text_side_div   px-3">
                 <div class="row gx-4 property-wrapper-v2 ">
 
                     <!-- Left Side: Image + Description -->
