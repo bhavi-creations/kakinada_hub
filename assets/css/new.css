@@ -2774,7 +2774,7 @@
    transition: all 0.3s ease-in-out;
    box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.1);
    padding: 20px;
-   z-index: 10000000;
+   z-index: 1000000000;
  }
 
 

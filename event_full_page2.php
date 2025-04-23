@@ -16,7 +16,7 @@
 
 <section class="bg_section responsive_section">
     <div class="container ">
-        <h1 class="text-center gradient_text_color spacing_for_htag"> New Year Party</h1>
+        <h1 class="text-center gradient_text_color spacing_for_htag"> ugadhi</h1>
 
 
         <div class="row">
@@ -38,13 +38,13 @@
                         <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <img src="assets/img/self_images/coco sliders (1).png" class="  img-fluid  d-block w-100" alt="...">
+                                    <img src="assets/img/self_images/ugadhi1.png" class="  img-fluid  d-block w-100" alt="...">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="assets/img/self_images/coco sliders (2).png" class="  img-fluid  d-block w-100" alt="...">
+                                    <img src="assets/img/self_images/ugadhi2.png" class="  img-fluid  d-block w-100" alt="...">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="assets/img/self_images/coco sliders (3).png" class="  img-fluid  d-block w-100" alt="...">
+                                    <img src="assets/img/self_images/ugadhi3.png" class="  img-fluid  d-block w-100" alt="...">
                                 </div>
                             </div>
                         </div>
@@ -57,7 +57,7 @@
                         <div class="product-content">
                             <div class="d-flex justify-content-between align-items-center">
                                 <p class="movie-label"><strong>Venue:</strong></p>
-                                <h3 class="movie-value">Coco Farms</h3>
+                                <h3 class="movie-value">Spandhana</h3>
                             </div>
                             <div class="d-flex justify-content-between align-items-center">
                                 <p class="movie-label"><strong>Rating:</strong></p>
@@ -65,11 +65,11 @@
                             </div>
                             <div class="d-flex justify-content-between align-items-center">
                                 <p class="movie-label"><strong>Location:</strong></p>
-                                <p class="movie-value"> Chebrolu</p>
+                                <p class="movie-value"> Kakinada</p>
                             </div>
                             <div class="d-flex justify-content-between align-items-center">
                                 <p class="movie-label"><strong>Date:</strong></p>
-                                <p class="movie-value"> 31-12-2024</p>
+                                <p class="movie-value"> 14-03-2025</p>
                             </div>
                         </div>
 
@@ -79,13 +79,10 @@
                     <div class=" col-12 py-3">
                         <h2 class="logo_title_color">About the Event</h2>
                         <h6 class="p-gradient">
-                            New Year's Eve is a global celebration marking the end of one year and the beginning of the next, typically on December 31st.
-                            It's a time for reflection, making resolutions, and looking forward to the future. People often gather with family and friends,
-                            enjoy festive meals, and participate in celebrations like parties, fireworks, and countdowns. </h6>
+                            Ugadi, also known as the Telugu and Kannada New Year, is a joyous festival celebrated primarily in the states of Andhra Pradesh, Telangana, and Karnataka. It marks the beginning of a new year according to the lunisolar Hindu calendar and symbolizes new beginnings, prosperity, and hope. The festival falls in the spring season, usually in March or April, and is observed with great enthusiasm. </h6>
                         <h2 class="logo_title_color">About the Venue</h2>
                         <h6 class="p-gradient">
-                            Coco Farms in Chebrolu is a staycation spot known for its luxury and nature, offering a tranquil escape with panoramic views,
-                            a swimming pool, and lush gardens Located at Gollaprolu-Chebrolu NH Y Junction in Kakinada, Coco Farms provides luxury suite rooms and a refreshing swimming pool. and they celebrates new year partys also.</h6>
+                            Spandana Function Hall is a versatile event venue located in Kakinada, Andhra Pradesh. It offers two indoor spaces: one accommodating up to 200 guests and another larger hall suitable for up to 600 seated guests, making it ideal for various events from intimate gatherings to grand celebrations. The venue also provides four rooms for guests and parking facilities for up to 50 vehicles. </h6>
 
                     </div>
 

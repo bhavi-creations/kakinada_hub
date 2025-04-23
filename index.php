@@ -383,7 +383,7 @@ $resultLower = $conn->query($sqlLower);
             </div>
 
             <div class="ls-btn ls-l ls-responsive " data-ls-mobile="left: 100px; top: 500px;" data-ls-tablet="left: 100px; top: 500px;" data-ls-laptop="left: 100px;" style="left: 300px; top: 582px;" data-ls="offsetyin: 200; durationin: 2000; delayin: 1400; offsetyout: 300; durationout: 2000; durationout: 2000; ">
-                <a href="service.php" class="vs-btn style2">View All Services<i class="fas fa-bolt"></i></a>
+                <a href="services.php" class="vs-btn style2">View All Services<i class="fas fa-bolt"></i></a>
             </div>
         </div>
         <div class="ls-slide" data-ls="duration: 13000; transition2d: 5;">
@@ -396,7 +396,7 @@ $resultLower = $conn->query($sqlLower);
             </div>
 
             <div class="ls-btn ls-l ls-responsive " data-ls-mobile="left: 100px; top: 500px;" data-ls-tablet="left: 100px; top: 500px;" data-ls-laptop="left: 100px;" style="left: 300px; top: 582px;" data-ls="offsetyin: 200; durationin: 2000; delayin: 1400; offsetyout: 300; durationout: 2000; durationout: 2000; ">
-                <a href="service.php" class="vs-btn style2">View All Services<i class="fas fa-bolt"></i></a>
+                <a href="services.php" class="vs-btn style2">View All Services<i class="fas fa-bolt"></i></a>
             </div>
         </div>
         <div class="ls-slide" data-ls="duration: 13000; transition2d: 5;">
@@ -409,7 +409,7 @@ $resultLower = $conn->query($sqlLower);
             </div>
 
             <div class="ls-btn ls-l ls-responsive " data-ls-mobile="left: 100px; top: 500px;" data-ls-tablet="left: 100px; top: 500px;" data-ls-laptop="left: 100px;" style="left: 300px; top: 582px;" data-ls="offsetyin: 200; durationin: 2000; delayin: 1400; offsetyout: 300; durationout: 2000; durationout: 2000; ">
-                <a href="service.php" class="vs-btn style2">View All Services<i class="fas fa-bolt"></i></a>
+                <a href="services.php" class="vs-btn style2">View All Services<i class="fas fa-bolt"></i></a>
             </div>
         </div>
 
