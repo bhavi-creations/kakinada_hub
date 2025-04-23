@@ -89,14 +89,14 @@
 
                             </div>
                         </div>
-                    <!--     <div class="col-md-4 col-lg-3 my-4">
+                            <div class="col-md-4 col-lg-3 my-4">
                             <div class="custom-card p-3 position-relative">
 
-                                <h5 class="mt-3 card_home_title">Home Slider Ads</h5>
+                                <h5 class="mt-3 card_home_title">Orange last Slider</h5>
                                 <a href="home_ads.php"> <button class="card-header-btn">Click Me</button></a>
 
                             </div>
-                        </div> -->
+                        </div>
                     </div>
                 </div>
 

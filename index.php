@@ -367,15 +367,70 @@ $resultLower = $conn->query($sqlLower);
 
 
 
+<!-- 
+
+<?php
+include './db.connection/db_connection.php';  
+
+ 
+ 
+
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+$query = "SELECT * FROM orange_slides ORDER BY id DESC";
+$result = $conn->query($query);
+?>
+
+<section class="orange-slider-wrapper position-relative slider-area bg_section">
+    <div class="bg-overlay"></div>
+
+    <div class="orange-slider-carousel vs-hero-carousel" data-navprevnext="true" data-height="800" data-container="1900" data-slidertype="responsive">
+
+        <?php while ($row = $result->fetch_assoc()): ?>
+            <div class="ls-slide">
+                <h1 class="orange-slider-title ls-l ls-responsive">
+                    <?= htmlspecialchars($row['heading_text']) ?>
+                </h1>
+
+                <div class="orange-slider-image-wrapper ls-btn ls-l">
+                    <img src="<?= htmlspecialchars($row['image_path']) ?>" class="img-fluid" alt="">
+                </div>
+
+                <div class="orange-slider-button-wrapper ls-btn ls-l ls-responsive">
+                    <a href="<?= htmlspecialchars($row['button_link']) ?>" class="vs-btn style2">
+                        <?= htmlspecialchars($row['button_text']) ?>
+                        <i class="fas fa-bolt"></i>
+                    </a>
+                </div>
+            </div>
+        <?php endwhile; ?>
+        
+    </div>
+</section> -->
+
+
+
+
+
+
+
+
+
+
+
 
 <section class="vs-hero-wrapper position-relative slider-area  bg_section   ">
     <div class="bg-overlay "></div>
     <div class="vs-hero-carousel  " data-navprevnext="true" data-height="800" data-container="1900" data-slidertype="responsive">
 
 
-        <div class="ls-slide" data-ls="duration: 13000; transition2d: 5;">
-            <h1 class="slider_main_text ls-l ls-responsive" data-ls-mobile="left: 100px; top: 230px;" data-ls-tablet="left: 100px; top: 230px;" data-ls-laptop="left: 100px; top: 180px;" style="left: 300px; top: 270px; font-size: 72px; font-weight: 700;" data-ls="delayin: 600; easingin: easeInOutSine; texttransitionin: true; textstartatin: transitioninstart; textdurationin: 2000; texttypein: words_asc; textshiftin: 200; textoffsetyin: -100; offsetyout: -100; durationout: 2000; ">We always put the</h1>
-            <h1 class="slider_main_text ls-l ls-responsive" data-ls-mobile="left: 100px; top: 340px;" data-ls-tablet="left: 100px; top: 340px;" data-ls-laptop="left: 100px; top: 270px;" style="left: 300px; top: 352px; font-size: 72px; font-weight: 700;" data-ls="delayin: 0; easingin: easeInOutSine; texttransitionin: true; textstartatin: transitioninstart; textdurationin: 2000; texttypein: words_asc; textshiftin: 200; textoffsetyin: -100; offsetyout: -100; durationout: 2000; ">patients first</h1>
+        <div class="ls-slide orange-slide">
+
+            <h1 class="slider_main_text ls-l ls-responsive  text_animation orange-slide-anim" data-ls-mobile="left: 100px; top: 230px;" data-ls-tablet="left: 100px; top: 230px;" data-ls-laptop="left: 100px; top: 180px;" style="left: 300px; top: 270px; font-size: 72px; font-weight: 700;">We always put the</h1>
+
+            <h1 class="slider_main_text ls-l ls-responsive orange-slide-anim" data-ls-mobile="left: 100px; top: 340px;" data-ls-tablet="left: 100px; top: 340px;" data-ls-laptop="left: 100px; top: 270px;" style="left: 300px; top: 352px; font-size: 72px; font-weight: 700;">patients first</h1>
 
 
             <div class="ls-btn ls-l  " style="top: 50%; left: 75%;">
@@ -383,12 +438,13 @@ $resultLower = $conn->query($sqlLower);
             </div>
 
             <div class="ls-btn ls-l ls-responsive " data-ls-mobile="left: 100px; top: 500px;" data-ls-tablet="left: 100px; top: 500px;" data-ls-laptop="left: 100px;" style="left: 300px; top: 582px;" data-ls="offsetyin: 200; durationin: 2000; delayin: 1400; offsetyout: 300; durationout: 2000; durationout: 2000; ">
-                <a href="services.php" class="vs-btn style2">View All Services<i class="fas fa-bolt"></i></a>
+                <a href="services.php" class="vs-btn style2">Know More<i class="fas fa-bolt"></i></a>
             </div>
         </div>
-        <div class="ls-slide" data-ls="duration: 13000; transition2d: 5;">
-            <h1 class="slider_main_text ls-l ls-responsive" data-ls-mobile="left: 100px; top: 230px;" data-ls-tablet="left: 100px; top: 230px;" data-ls-laptop="left: 100px; top: 180px;" style="left: 300px; top: 270px; font-size: 72px; font-weight: 700;" data-ls="delayin: 600; easingin: easeInOutSine; texttransitionin: true; textstartatin: transitioninstart; textdurationin: 2000; texttypein: words_asc; textshiftin: 200; textoffsetyin: -100; offsetyout: -100; durationout: 2000; ">We always put the</h1>
-            <h1 class="slider_main_text ls-l ls-responsive" data-ls-mobile="left: 100px; top: 340px;" data-ls-tablet="left: 100px; top: 340px;" data-ls-laptop="left: 100px; top: 270px;" style="left: 300px; top: 352px; font-size: 72px; font-weight: 700;" data-ls="delayin: 0; easingin: easeInOutSine; texttransitionin: true; textstartatin: transitioninstart; textdurationin: 2000; texttypein: words_asc; textshiftin: 200; textoffsetyin: -100; offsetyout: -100; durationout: 2000; ">patients first</h1>
+
+        <div class="ls-slide orange-slide">
+            <h1 class="slider_main_text ls-l ls-responsive orange-slide-anim" data-ls-mobile="left: 100px; top: 230px;" data-ls-tablet="left: 100px; top: 230px;" data-ls-laptop="left: 100px; top: 180px;" style="left: 300px; top: 270px; font-size: 72px; font-weight: 700;">We always put the</h1>
+            <h1 class="slider_main_text ls-l ls-responsive orange-slide-anim" data-ls-mobile="left: 100px; top: 340px;" data-ls-tablet="left: 100px; top: 340px;" data-ls-laptop="left: 100px; top: 270px;" style="left: 300px; top: 352px; font-size: 72px; font-weight: 700;">patients first</h1>
 
 
             <div class="ls-btn ls-l  " style="top: 50%; left: 75%;">
@@ -396,12 +452,14 @@ $resultLower = $conn->query($sqlLower);
             </div>
 
             <div class="ls-btn ls-l ls-responsive " data-ls-mobile="left: 100px; top: 500px;" data-ls-tablet="left: 100px; top: 500px;" data-ls-laptop="left: 100px;" style="left: 300px; top: 582px;" data-ls="offsetyin: 200; durationin: 2000; delayin: 1400; offsetyout: 300; durationout: 2000; durationout: 2000; ">
-                <a href="services.php" class="vs-btn style2">View All Services<i class="fas fa-bolt"></i></a>
+                <a href="services.php" class="vs-btn style2">Know More<i class="fas fa-bolt"></i></a>
             </div>
         </div>
-        <div class="ls-slide" data-ls="duration: 13000; transition2d: 5;">
-            <h1 class="slider_main_text ls-l ls-responsive" data-ls-mobile="left: 100px; top: 230px;" data-ls-tablet="left: 100px; top: 230px;" data-ls-laptop="left: 100px; top: 180px;" style="left: 300px; top: 270px; font-size: 72px; font-weight: 700;" data-ls="delayin: 600; easingin: easeInOutSine; texttransitionin: true; textstartatin: transitioninstart; textdurationin: 2000; texttypein: words_asc; textshiftin: 200; textoffsetyin: -100; offsetyout: -100; durationout: 2000; ">We always put the</h1>
-            <h1 class="slider_main_text ls-l ls-responsive" data-ls-mobile="left: 100px; top: 340px;" data-ls-tablet="left: 100px; top: 340px;" data-ls-laptop="left: 100px; top: 270px;" style="left: 300px; top: 352px; font-size: 72px; font-weight: 700;" data-ls="delayin: 0; easingin: easeInOutSine; texttransitionin: true; textstartatin: transitioninstart; textdurationin: 2000; texttypein: words_asc; textshiftin: 200; textoffsetyin: -100; offsetyout: -100; durationout: 2000; ">patients first</h1>
+
+        <div class="ls-slide orange-slide">
+
+            <h1 class="slider_main_text ls-l ls-responsive orange-slide-anim" data-ls-mobile="left: 100px; top: 230px;" data-ls-tablet="left: 100px; top: 230px;" data-ls-laptop="left: 100px; top: 180px;" style="left: 300px; top: 270px; font-size: 72px; font-weight: 700;">We always put the</h1>
+            <h1 class="slider_main_text ls-l ls-responsive orange-slide-anim" data-ls-mobile="left: 100px; top: 340px;" data-ls-tablet="left: 100px; top: 340px;" data-ls-laptop="left: 100px; top: 270px;" style="left: 300px; top: 352px; font-size: 72px; font-weight: 700;">patients first</h1>
 
 
             <div class="ls-btn ls-l  image_topper_dive " style="top: 50%; left: 75%;">
@@ -409,15 +467,33 @@ $resultLower = $conn->query($sqlLower);
             </div>
 
             <div class="ls-btn ls-l ls-responsive " data-ls-mobile="left: 100px; top: 500px;" data-ls-tablet="left: 100px; top: 500px;" data-ls-laptop="left: 100px;" style="left: 300px; top: 582px;" data-ls="offsetyin: 200; durationin: 2000; delayin: 1400; offsetyout: 300; durationout: 2000; durationout: 2000; ">
-                <a href="services.php" class="vs-btn style2">View All Services<i class="fas fa-bolt"></i></a>
+                <a href="services.php" class="vs-btn style2">Know More<i class="fas fa-bolt"></i></a>
             </div>
+
         </div>
 
     </div>
+
+
+    <script>
+        // For h1 animation (title/subtitle)
+        document.querySelectorAll('.orange-slide-anim').forEach(el => {
+            el.setAttribute('data-ls',
+                'delayin: 600; easingin: easeInOutSine; texttransitionin: true; textstartatin: transitioninstart; textdurationin: 2000; texttypein: words_asc; textshiftin: 200; textoffsetyin: -100; offsetyout: -100; durationout: 2000;'
+            );
+        });
+
+        // For slide container animation
+        document.querySelectorAll('.orange-slide').forEach(el => {
+            el.setAttribute('data-ls', 'duration: 13000; transition2d: 5;');
+        });
+    </script>
+
+
 </section>
 
 
- 
+
 
 
 

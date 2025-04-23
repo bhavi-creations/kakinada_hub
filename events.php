@@ -145,16 +145,16 @@ $result = $stmt->get_result();
                         <div class="   container  card_div ">
                             <div class="row  need_padding_div ">
                                 <div class="col-12 col-md-4 job_image_card_main mb-2 parent-container">
-                                    <img src="assets/img/self_images/spandhana.jpeg" class="img-fluid inner_image_card_job" alt="">
+                                    <img src="assets/img/self_images/helcon.jpeg" class="img-fluid inner_image_card_job" alt="">
 
                                 </div>
 
                                 <div class="col-12 col-md-8">
-                                    <h4 class="gradient_text_color"> <strong class="property_strong"> occasion :</strong>Ugadhi</h4>
-                                    <p class="property_p_tag"><strong class="property_strong"> Venue :</strong> Spandhana </p>
+                                    <h4 class="gradient_text_color"> <strong class="property_strong"> occasion :</strong>Holi Event</h4>
+                                    <p class="property_p_tag"><strong class="property_strong"> Venue :</strong> Halcyon Times  </p>
                                     <p class="property_p_tag"> <strong class="property_strong"> Location : </strong> Kakinada </p>
-                                    <p class="property_p_tag"> <strong class="property_strong"> Phone :</strong>9989796919 </p>
-                                    <p class="property_p_tag"> <strong class="property_strong"> Website :</strong><a target="_blank" href="     "> https://Spandhnaevents.com/ </a> </p>
+                                    <p class="property_p_tag"> <strong class="property_strong"> Phone :</strong>7947108373 </p>
+                                    <p class="property_p_tag"> <strong class="property_strong"> Website :</strong><a target="_blank" href="     "> https://hylcontimes.com/ </a> </p>
 
 
                                 </div>
@@ -166,7 +166,7 @@ $result = $stmt->get_result();
                                     <div class="terms_justify">
 
                                         <p class="gradient_text_color">
-                                            <a href="event_full_page.php" class=" ">View More Details</a>
+                                            <a href="event_full_page1.php" class=" ">View More Details</a>
                                         </p>
                                     </div>
 
