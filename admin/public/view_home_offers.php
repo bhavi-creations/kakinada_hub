@@ -32,10 +32,10 @@ if (isset($_GET['delete'])) {
                 <div class="d-sm-flex align-items-center justify-content-between mb-4">
                     <h1 class="h3 mb-0 text-gray-800">Manage Home Page offers</h1>
                     <a href="add_home_offers.php" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">
-                    <i class="fa-solid fa-plus"></i>Add offers List
+                        <i class="fa-solid fa-plus"></i>Add offers List
                     </a>
                 </div>
-          
+
 
                 <?php if (isset($_GET['deleted'])): ?>
                     <div class="alert alert-success">offers item deleted successfully!</div>
