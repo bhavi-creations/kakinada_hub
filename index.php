@@ -370,15 +370,15 @@ $resultLower = $conn->query($sqlLower);
 
 
 <!-- <?php
-include './db.connection/db_connection.php';
+        include './db.connection/db_connection.php';
 
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
+        if ($conn->connect_error) {
+            die("Connection failed: " . $conn->connect_error);
+        }
 
-$query = "SELECT * FROM orange_slides ORDER BY id DESC";
-$result = $conn->query($query);
-?>
+        $query = "SELECT * FROM orange_slides ORDER BY id DESC";
+        $result = $conn->query($query);
+        ?>
 
 <section class="orange-slider-wrapper position-relative slider-area bg_section">
     <div class="bg-overlay"></div>
@@ -425,16 +425,32 @@ $result = $conn->query($query);
     <div class="vs-hero-carousel" data-navprevnext="true" data-height="800" data-container="1900" data-slidertype="responsive">
         <?php while ($row = $result->fetch_assoc()): ?>
             <div class="ls-slide orange-slide">
-                <h1 class="slider_main_text ls-l ls-responsive orange-slide-anim" data-ls-mobile="left: 100px; top: 230px;" data-ls-tablet="left: 100px; top: 230px;" data-ls-laptop="left: 100px; top: 180px;" style="left: 300px; top: 270px; font-size: 72px; font-weight: 700;">
+              
+
+                <h1 class="slider_main_text ls-l ls-responsive orange-slide-anim"
+                    data-ls-mobile="left: 100px; top: 230px;"
+                    data-ls-tablet="left: 100px; top: 230px;"
+                    data-ls-laptop="left: 100px; top: 180px;"
+                    style="
+                        left: 300px;
+                        top: 270px;
+                        font-size: 72px;
+                        font-weight: 700;
+                        max-width: 700px; /* Limit the width */
+                        white-space: normal; /* Allow wrapping */
+                        z-index: 10; /* Make sure it's on top if overlapping */
+                        line-height: 1.2;
+                    ">
                     <?= htmlspecialchars($row['heading_text']) ?>
                 </h1>
 
+
                 <div class="ls-btn ls-l" style="top: 50%; left: 75%;">
-                    
+
                     <img src="./admin/uploads/home_slides/<?= htmlspecialchars($row['image_name']) ?>" class="img-fluid last_image_cid" alt="<?= htmlspecialchars($row['heading_text']) ?>">
                 </div>
 
-                
+
 
                 <div class="ls-btn ls-l ls-responsive" data-ls-mobile="left: 100px; top: 500px;" data-ls-tablet="left: 100px; top: 500px;" data-ls-laptop="left: 100px;" style="left: 300px; top: 582px;" data-ls="offsetyin: 200; durationin: 2000; delayin: 1400; offsetyout: 300; durationout: 2000; durationout: 2000;">
                     <a href="<?= htmlspecialchars($row['button_link']) ?>" class="vs-btn style2"><?= htmlspecialchars($row['button_text']) ?><i class="fas fa-bolt"></i></a>
@@ -468,7 +484,7 @@ $result = $conn->query($query);
 
 
 
-<section class="vs-hero-wrapper position-relative slider-area  bg_section   ">
+<!-- <section class="vs-hero-wrapper position-relative slider-area  bg_section   ">
     <div class="bg-overlay "></div>
     <div class="vs-hero-carousel  " data-navprevnext="true" data-height="800" data-container="1900" data-slidertype="responsive">
 
@@ -537,7 +553,7 @@ $result = $conn->query($query);
     </script>
 
 
-</section>
+</section> -->
 
 
 
