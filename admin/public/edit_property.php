@@ -43,6 +43,7 @@
                                 $title = mysqli_real_escape_string($conn, $_POST['title']);
                                 $price = mysqli_real_escape_string($conn, $_POST['price']);
                                 $phone = mysqli_real_escape_string($conn, $_POST['phone']);
+                                $facing = mysqli_real_escape_string($conn, $_POST['facing']);
                                 $location = mysqli_real_escape_string($conn, $_POST['location']);
                                 $size_sqft = mysqli_real_escape_string($conn, $_POST['size_sqft']);
                                 $bedrooms = mysqli_real_escape_string($conn, $_POST['bedrooms']);
@@ -58,7 +59,7 @@
                                 type='$type', 
                                 price='$price', 
                                 phone='$phone', 
-                                location='$location', 
+                                facing='$facing', 
                                 size_sqft='$size_sqft', 
                                 bedrooms='$bedrooms', 
                                 bathrooms='$bathrooms', 
@@ -142,6 +143,12 @@
                                             <label>Phone Number</label>
                                             <input type="text" name="phone" value="<?php echo $property['phone']; ?>" class="form-control" required>
                                         </div>
+                                        <div class="form-group col-6">
+                                            <label>Facing</label>
+                                            <input type="text" name="facing" value="<?php echo $property['facing']; ?>" class="form-control" required>
+                                        </div>
+
+                                        
                                         <div class="form-group col-6">
                                             <label>Location</label>
                                             <input type="text" name="location" value="<?php echo $property['location']; ?>" class="form-control" required>

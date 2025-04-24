@@ -124,23 +124,22 @@ if (isset($_GET['id'])) {
                                         <?php
                                         $details = [
                                             "💰 Price:" => "₹" . number_format($property['price']),
-
                                             "📏 Area (Sqft):" => $property['size_sqft'],
                                             "🛏 Bed Rooms:" => $property['bedrooms'],
                                             "🛁 Bath Rooms:" => $property['bathrooms'],
+                                            "🧭 Facing:" => $property['facing'], // <-- Added this line
                                             "🪑 Furnishing Status:" => $property['furnishing_status'],
                                             "🛠 Amenities:" => $property['amenities'] . " Available",
                                             "📞 Contact :" => htmlspecialchars($property['phone']) . ' / ' . htmlspecialchars($property['location']),
-
-                                            // "📍 Location:" => $property['location']
                                         ];
                                         foreach ($details as $label => $value) {
                                             echo "
-                                <div class='col-12 propertys_divs_for_text_paras'>
-                                    <p class='property_p_tag'><strong class='property_strong'>$label</strong> " . htmlspecialchars($value) . "</p>
-                                </div>";
+        <div class='col-12 propertys_divs_for_text_paras'>
+            <p class='property_p_tag'><strong class='property_strong'>$label</strong> " . htmlspecialchars($value) . "</p>
+        </div>";
                                         }
                                         ?>
+
                                     </div>
                                 </div>
                             </section>

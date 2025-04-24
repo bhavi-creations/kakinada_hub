@@ -34,6 +34,7 @@ include 'header.php';
                     $bathrooms = (int) $_POST['bathrooms']; // Ensure integer
                     $furnishing_status = $_POST['furnishing_status'];
                     $description = $_POST['description'];
+                    $facing = $_POST['facing'];
                     $amenities = $_POST['amenities'];
 
 
@@ -80,11 +81,14 @@ include 'header.php';
                     $multiple_images_str = implode(',', $multiple_images);
 
                     // ✅ Updated Query with Category
-                    $query = "INSERT INTO properties (title, type, category, price, phone, location, size_sqft, bedrooms, bathrooms, furnishing_status, amenities, image, images, description) 
-                              VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+
+
+                    $query = "INSERT INTO properties (title, type, category, price, phone, location, size_sqft, bedrooms, bathrooms, furnishing_status, facing, amenities, image, images, description) 
+                    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+
 
                     $stmt = $conn->prepare($query);
-                    $stmt->bind_param("sssissiiisssss", $title, $type, $category, $price, $phone, $location, $size_sqft, $bedrooms, $bathrooms, $furnishing_status, $amenities, $image_name, $multiple_images_str, $description);
+                    $stmt->bind_param("sssissiiissssss", $title, $type, $category, $price, $phone, $location, $size_sqft, $bedrooms, $bathrooms, $furnishing_status, $facing, $amenities, $image_name, $multiple_images_str, $description);
 
                     if ($stmt->execute()) {
                         $_SESSION['message'] = "Property added successfully!";
@@ -162,6 +166,21 @@ include 'header.php';
                                 <label>Size (sqft):</label>
                                 <input type="number" name="size_sqft" class="form-control" required>
                             </div>
+                            <div class="col-md-6 mb-3">
+                                <label>Facing:</label>
+                                <select name="facing" class="form-control" required>
+                                    <option value="">-- Select Facing --</option>
+                                    <option value="East">East</option>
+                                    <option value="West">West</option>
+                                    <option value="North">North</option>
+                                    <option value="South">South</option>
+                                    <option value="North-East">North-East</option>
+                                    <option value="North-West">North-West</option>
+                                    <option value="South-East">South-East</option>
+                                    <option value="South-West">South-West</option>
+                                </select>
+                            </div>
+
                             <div class="col-md-6 mb-3">
                                 <label>Bedrooms:</label>
                                 <input type="number" name="bedrooms" class="form-control" required>
