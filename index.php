@@ -227,49 +227,54 @@ $resultLower = $conn->query($sqlLower);
                         <div class="swiper-slide">
                             <div class="gradient_card_wrapper">
 
-                                <div class="card_border_styles">
+                                <a target="_blank" href="<?php echo htmlspecialchars($row['link']); ?>" class="card-link-wrapper" style="text-decoration: none; color: inherit;">
+                                    <div class="card_border_styles">
 
-                                    <div class="row">
+                                        <div class="row">
 
-                                        <div class="col-5 d-flex flex-column justify-content-center hr_line_side">
-                                            <div class="gradient_border_wrapper ">
-                                                <div class="img_border">
-                                                    <img src="./admin/uploads/home_offers/<?php echo htmlspecialchars($row['image']); ?>" alt="">
+                                            <div class="col-5 d-flex flex-column justify-content-center hr_line_side">
+                                                <div class="gradient_border_wrapper ">
+                                                    <div class="img_border">
+                                                        <img src="./admin/uploads/home_offers/<?php echo htmlspecialchars($row['image']); ?>" alt="">
+                                                    </div>
                                                 </div>
                                             </div>
+
+
+
+
+
+
+                                            <div class="col-7">
+
+                                                <p class="brand_name gradient_text_color_orange_to_gold"><?php echo htmlspecialchars($row['title']); ?></p>
+
+                                                <p class="brand_type gradient_text_color_orange_to_gold">⭐ <?php echo htmlspecialchars($row['offer']); ?></p>
+
+
+
+                                                <button
+                                                    class="card_lrg_btn fold_btn wow fadeInUp"
+                                                    data-wow-delay="500ms"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#codeModal"
+                                                    data-code='<?php echo htmlspecialchars($row["offer_code"]); ?>'
+                                                    onclick="event.stopPropagation(); event.preventDefault();">
+                                                    Get Code
+                                                </button>
+
+
+                                                <p class="brand_special_discount gradient_text_color_orange_to_gold">
+                                                    <?php
+                                                    $text = htmlspecialchars($row['description']);
+                                                    echo (strlen($text) > 30) ? substr($text, 0, 27) . '...' : $text;
+                                                    ?>
+                                                </p>
+                                            </div>
+
                                         </div>
-
-
-
-
-
-
-                                        <div class="col-7">
-
-                                            <p class="brand_name gradient_text_color_orange_to_gold"><?php echo htmlspecialchars($row['title']); ?></p>
-
-                                            <p class="brand_type gradient_text_color_orange_to_gold">⭐ <?php echo htmlspecialchars($row['offer']); ?></p>
-
-                                            <button
-                                                class="card_lrg_btn fold_btn wow fadeInUp"
-                                                data-wow-delay="500ms"
-                                                data-bs-toggle="modal"
-                                                data-bs-target="#codeModal"
-                                                data-code='&lt;div class="example  p-gradient"&gt;Your Code LN3U4O34ITBG3N&lt;/div&gt;'>
-                                                Get Code
-                                            </button>
-
-                                            <p class="brand_special_discount gradient_text_color_orange_to_gold">
-                                                <?php
-                                                $text = htmlspecialchars($row['description']);
-                                                echo (strlen($text) > 30) ? substr($text, 0, 27) . '...' : $text;
-                                                ?>
-                                            </p>
-                                        </div>
-
                                     </div>
-                                </div>
-
+                                </a>
 
                             </div>
                         </div>
@@ -287,43 +292,48 @@ $resultLower = $conn->query($sqlLower);
                     <?php while ($row = $resultLower->fetch_assoc()): ?>
                         <div class="swiper-slide">
                             <div class="gradient_card_wrapper">
+                                <a target="_blank" href="<?php echo htmlspecialchars($row['link']); ?>" class="card-link-wrapper" style="text-decoration: none; color: inherit;">
+                                    <div class="card_border_styles">
+                                        <div class="row">
 
-                                <div class="card_border_styles">
-                                    <div class="row">
-
-                                        <div class="col-5 d-flex flex-column justify-content-center hr_line_side">
-                                            <div class="gradient_border_wrapper">
-                                                <div class="img_border">
-                                                    <img src="./admin/uploads/home_offers/<?php echo htmlspecialchars($row['image']); ?>" class="img-fluid" alt="">
+                                            <div class="col-5 d-flex flex-column justify-content-center hr_line_side">
+                                                <div class="gradient_border_wrapper">
+                                                    <div class="img_border">
+                                                        <img src="./admin/uploads/home_offers/<?php echo htmlspecialchars($row['image']); ?>" class="img-fluid" alt="">
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="col-7">
+                                            <div class="col-7">
 
-                                            <p class="brand_name gradient_text_color_orange_to_gold"><?php echo htmlspecialchars($row['title']); ?></p>
+                                                <p class="brand_name gradient_text_color_orange_to_gold"><?php echo htmlspecialchars($row['title']); ?></p>
 
-                                            <p class="brand_type gradient_text_color_orange_to_gold">⭐ <?php echo htmlspecialchars($row['offer']); ?></p>
+                                                <p class="brand_type gradient_text_color_orange_to_gold">⭐ <?php echo htmlspecialchars($row['offer']); ?></p>
 
-                                            <button
-                                                class="card_lrg_btn fold_btn wow fadeInUp"
-                                                data-wow-delay="500ms"
-                                                data-bs-toggle="modal"
-                                                data-bs-target="#codeModal"
-                                                data-code='&lt;div class="example p-gradient"&gt;Your Code D3L5N5PDS979&lt;/div&gt;'>
-                                                Get Code
-                                            </button>
+                                               
 
-                                            <p class="brand_special_discount gradient_text_color_orange_to_gold">
-                                                <?php
-                                                $text = htmlspecialchars($row['description']);
-                                                echo (strlen($text) > 30) ? substr($text, 0, 27) . '...' : $text;
-                                                ?>
-                                            </p>
+                                                <button
+                                                    class="card_lrg_btn fold_btn wow fadeInUp"
+                                                    data-wow-delay="500ms"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#codeModal"
+                                                    data-code='<?php echo htmlspecialchars($row["offer_code"]); ?>'
+                                                    onclick="event.stopPropagation(); event.preventDefault();">
+                                                    Get Code
+                                                </button>
+
+
+                                                <p class="brand_special_discount gradient_text_color_orange_to_gold">
+                                                    <?php
+                                                    $text = htmlspecialchars($row['description']);
+                                                    echo (strlen($text) > 30) ? substr($text, 0, 27) . '...' : $text;
+                                                    ?>
+                                                </p>
+                                            </div>
+
                                         </div>
 
                                     </div>
-
-                                </div>
+                                </a>
 
                             </div>
                         </div>
@@ -425,7 +435,7 @@ $result = $conn->query($query);
     <div class="vs-hero-carousel" data-navprevnext="true" data-height="800" data-container="1900" data-slidertype="responsive">
         <?php while ($row = $result->fetch_assoc()): ?>
             <div class="ls-slide orange-slide">
-              
+
 
                 <h1 class="slider_main_text ls-l ls-responsive orange-slide-anim"
                     data-ls-mobile="left: 100px; top: 230px;"

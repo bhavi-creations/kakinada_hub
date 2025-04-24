@@ -11,6 +11,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $description = mysqli_real_escape_string($conn, $_POST['description']);
     $link = mysqli_real_escape_string($conn, $_POST['link']);
     $offer = mysqli_real_escape_string($conn, $_POST['offer']);
+    $offerCode = mysqli_real_escape_string($conn, $_POST['offer_code']);
     $type = $_POST['type'];
 
     // Image Upload Handling
@@ -25,8 +26,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
 
     if (move_uploaded_file($imageTmp, $uploadPath)) {
-        $sql = "INSERT INTO offers (title, description, image, link, offer, type)
-                VALUES ('$title', '$description', '$imageName', '$link', '$offer', '$type')";
+   
+
+
+        $sql = "INSERT INTO offers (title, description, image, link, offer, type, offer_code)
+        VALUES ('$title', '$description', '$imageName', '$link', '$offer', '$type', '$offerCode')";
 
         if (mysqli_query($conn, $sql)) {
             // Redirect to prevent form resubmission
@@ -85,6 +89,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                                 <label>Offer</label>
                                 <input type="text" name="offer" class="form-control" required>
                             </div>
+                            <div class="form-group col-6">
+                                <label>Offer Code</label>
+                                <input type="text" name="offer_code" class="form-control" required>
+                            </div>
+
 
                             <div class="form-group col-6">
                                 <label>Link (optional)</label>

@@ -39,6 +39,9 @@ if (!$item) {
                             <h4>Offer:</h4>
                             <p><?= htmlspecialchars($item['offer']) ?></p>
 
+                            <h4>Offer Code:</h4>
+                            <p><?= htmlspecialchars($item['offer_code']) ?></p>
+
                             <h4>Link:</h4>
                             <p>
                                 <?php if (!empty($item['link'])): ?>

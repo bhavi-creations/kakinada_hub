@@ -16,6 +16,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $description = mysqli_real_escape_string($conn, $_POST['description']);
     $link = mysqli_real_escape_string($conn, $_POST['link']);
     $offer = mysqli_real_escape_string($conn, $_POST['offer']);
+    $offer_code = mysqli_real_escape_string($conn, $_POST['offer_code']);
     $type = $_POST['type'];
 
     $imageName = $item['image']; // keep old image by default
@@ -37,7 +38,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     $updateQuery = "UPDATE offers SET 
         title='$title', description='$description', link='$link', 
-        offer='$offer', type='$type', image='$imageName' 
+        offer='$offer', offer_code='$offer_code',   type='$type', image='$imageName' 
         WHERE id=$id";
 
     if (mysqli_query($conn, $updateQuery)) {
@@ -71,14 +72,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <div class="card shadow p-4">
                     <form method="POST" enctype="multipart/form-data">
                         <div class="row">
-                            <div class="form-group col-md-6">
+                            <div class="form-group col-md-4">
                                 <label>Title</label>
                                 <input type="text" name="title" value="<?= htmlspecialchars($item['title']) ?>" class="form-control" required>
                             </div>
 
-                            <div class="form-group col-md-6">
+                            <div class="form-group col-md-4">
                                 <label>Offer</label>
                                 <input type="text" name="offer" value="<?= htmlspecialchars($item['offer']) ?>" class="form-control" required>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label>Offer code</label>
+                                <input type="text" name="offer_code" value="<?= htmlspecialchars($item['offer_code']) ?>" class="form-control" required>
                             </div>
 
                             <div class="form-group col-md-12">

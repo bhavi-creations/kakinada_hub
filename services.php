@@ -46,7 +46,7 @@
                         <li><a class="sub_mini_serices" href="business_layout.php"> Khaidi </a></li>
                         <li><a class="sub_mini_serices" href="business_layout.php"> Zeeshan </a></li>
 
-                        <li><a class="view_all_sub_mini_serices" href="list_layout.php"> View All Resturents Deals </a></li>
+                        <li><a class="view_all_sub_mini_serices" href="theaters.php"> View All Resturents Deals </a></li>
 
                     </ul>
 
@@ -65,7 +65,7 @@
                         <li><a class="sub_mini_serices" href="royal_touch.php"> Decent </a></li>
 
 
-                        <li><a class="view_all_sub_mini_serices" href="list_layout.php"> View All Saloons & Spa Deals </a></li>
+                        <li><a class="view_all_sub_mini_serices" href="theaters.php"> View All Saloons & Spa Deals </a></li>
 
                     </ul>
 
@@ -82,7 +82,7 @@
                         <li><a class="sub_mini_serices" href="malbar.php"> Malbar </a></li>
                         <li><a class="sub_mini_serices" href="tanisqe.php"> Tansique </a></li>
                         <li><a class="sub_mini_serices" href="khazana.php"> Kazana Jewellery </a></li>
-                        <li><a class="view_all_sub_mini_serices" href=""> View All Gifts & Jewellery Deals </a></li>
+                        <li><a class="view_all_sub_mini_serices" href="theaters.php"> View All Gifts & Jewellery Deals </a></li>
 
                     </ul>
 
@@ -101,7 +101,7 @@
                         <li><a class="sub_mini_serices" href="fashion_accessories.php"> Fashion Accessories </a></li>
                         <li><a class="sub_mini_serices" href="child_accessories_fashion.php"> Children & Teen Fashion </a></li>
 
-                        <li><a class="view_all_sub_mini_serices" href="list_layout.php"> View All Fashion Deals </a></li>
+                        <li><a class="view_all_sub_mini_serices" href="theaters.php"> View All Fashion Deals </a></li>
 
                     </ul>
                 </div>
@@ -116,7 +116,7 @@
                         <li><a class="sub_mini_serices" href="dental_hospital.php"> Skincare Hospitals </a></li>
                         <li><a class="sub_mini_serices" href="dental_hospital.php"> physiotherapy </a></li>
 
-                        <li><a class="view_all_sub_mini_serices" href="list_layout.php"> View All Fashion Deals </a></li>
+                        <li><a class="view_all_sub_mini_serices" href="theaters.php"> View All Fashion Deals </a></li>
 
                     </ul>
 
@@ -132,7 +132,7 @@
                         <li><a class="sub_mini_serices" href="sports_clothing.php"> Sports & Fitness Equipment </a></li>
                         <li><a class="sub_mini_serices" href="sports_clothing.php"> Sports Nutrition & Diet </a></li>
                         <li><a class="sub_mini_serices" href="sports_clothing.php"> Cycling - Bikes & Accessories </a></li>
-                        <li><a class="view_all_sub_mini_serices" href="list_layout.php"> View All Sports & Fitness Deals </a></li>
+                        <li><a class="view_all_sub_mini_serices" href="theaters.php"> View All Sports & Fitness Deals </a></li>
 
                     </ul>
 
@@ -146,7 +146,7 @@
                         <li><a class="sub_mini_serices" href="toys_games.php"> Kids & Baby Clothes </a></li>
                         <li><a class="sub_mini_serices" href="toys_games.php"> Maternity </a></li>
                         <li><a class="sub_mini_serices" href="toys_games.php"> Baby Items & Furniture </a></li>
-                        <li><a class="view_all_sub_mini_serices" href="list_layout.php"> View All Kids & Babies Deals </a></li>
+                        <li><a class="view_all_sub_mini_serices" href="theaters.php"> View All Kids & Babies Deals </a></li>
 
                     </ul>
                 </div>
