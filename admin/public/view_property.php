@@ -63,6 +63,10 @@
                                         <td><?php echo $property['phone']; ?></td>
                                     </tr>
                                     <tr>
+                                        <th>Facing</th>
+                                        <td><?php echo $property['facing']; ?></td>
+                                    </tr>
+                                    <tr>
                                         <th>Location</th>
                                         <td><?php echo $property['location']; ?></td>
                                     </tr>
