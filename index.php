@@ -349,29 +349,58 @@ $resultLower = $conn->query($sqlLower);
 
     <!-- Code Reveal Modal -->
     <div class="modal fade" id="codeModal" tabindex="-1" aria-labelledby="codeModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-            <div class="modal-content">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
 
-                <div class="modal-body">
-                    <h5 class="modal-title heading-gradient" id="codeModalLabel">Your Discount Code </h5>
-                    <pre><code id="codeBlock" class="language-html"></code></pre>
-                </div>
+            <div class="modal-body">
+                <h5 class="modal-title heading-gradient" id="codeModalLabel">Your Discount Code </h5>
+                <pre><code id="codeBlock" class="language-html"></code></pre>
+
+                <button class="btn btn-primary mt-3" id="copyCodeBtn">
+                    📋 Copy Code
+                </button>
+                <span id="copyMsg" class="ms-2 text-success" style="display: none;">Copied!</span>
             </div>
         </div>
     </div>
+</div>
 
 
-    <script>
-        const codeModal = document.getElementById('codeModal');
+ 
+<script>
+    const codeModal = document.getElementById('codeModal');
+    const codeBlock = document.getElementById('codeBlock');
+    const copyBtn = document.getElementById('copyCodeBtn');
+    const copyMsg = document.getElementById('copyMsg');
 
-        codeModal.addEventListener('show.bs.modal', function(event) {
-            const button = event.relatedTarget;
-            const code = button.getAttribute('data-code');
+    // Load code into the modal
+    codeModal.addEventListener('show.bs.modal', function (event) {
+        const button = event.relatedTarget;
+        const code = button.getAttribute('data-code');
+        codeBlock.textContent = code;
 
-            const codeBlock = codeModal.querySelector('#codeBlock');
-            codeBlock.innerHTML = code;
-        });
-    </script>
+        // Hide "Copied!" message
+        copyMsg.style.display = 'none';
+    });
+
+    // Copy code to clipboard
+    copyBtn.addEventListener('click', async function () {
+        try {
+            const codeText = codeBlock.textContent;
+            await navigator.clipboard.writeText(codeText);
+
+            // Show success message
+            copyMsg.textContent = 'Copied!';
+            copyMsg.style.display = 'inline';
+        } catch (err) {
+            console.error('Failed to copy:', err);
+            copyMsg.textContent = 'Failed to copy';
+            copyMsg.style.display = 'inline';
+        }
+    });
+</script>
+
+
 
 </section>
 
