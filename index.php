@@ -367,13 +367,10 @@ $resultLower = $conn->query($sqlLower);
 
 
 
-<!-- 
 
-<?php
-include './db.connection/db_connection.php';  
 
- 
- 
+<!-- <?php
+include './db.connection/db_connection.php';
 
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
@@ -395,7 +392,8 @@ $result = $conn->query($query);
                 </h1>
 
                 <div class="orange-slider-image-wrapper ls-btn ls-l">
-                    <img src="<?= htmlspecialchars($row['image_path']) ?>" class="img-fluid" alt="">
+                   
+                    <img src="./admin/<?= htmlspecialchars($row['image_name']) ?>" class="img-fluid" alt="<?= htmlspecialchars($row['heading_text']) ?>">
                 </div>
 
                 <div class="orange-slider-button-wrapper ls-btn ls-l ls-responsive">
@@ -406,10 +404,59 @@ $result = $conn->query($query);
                 </div>
             </div>
         <?php endwhile; ?>
-        
+
     </div>
 </section> -->
 
+
+<?php
+include './db.connection/db_connection.php';
+
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+$query = "SELECT * FROM orange_slides ORDER BY id DESC";
+$result = $conn->query($query);
+?>
+
+<section class="vs-hero-wrapper position-relative slider-area bg_section">
+    <div class="bg-overlay"></div>
+    <div class="vs-hero-carousel" data-navprevnext="true" data-height="800" data-container="1900" data-slidertype="responsive">
+        <?php while ($row = $result->fetch_assoc()): ?>
+            <div class="ls-slide orange-slide">
+                <h1 class="slider_main_text ls-l ls-responsive orange-slide-anim" data-ls-mobile="left: 100px; top: 230px;" data-ls-tablet="left: 100px; top: 230px;" data-ls-laptop="left: 100px; top: 180px;" style="left: 300px; top: 270px; font-size: 72px; font-weight: 700;">
+                    <?= htmlspecialchars($row['heading_text']) ?>
+                </h1>
+
+                <div class="ls-btn ls-l" style="top: 50%; left: 75%;">
+                    
+                    <img src="./admin/uploads/home_slides/<?= htmlspecialchars($row['image_name']) ?>" class="img-fluid last_image_cid" alt="<?= htmlspecialchars($row['heading_text']) ?>">
+                </div>
+
+                
+
+                <div class="ls-btn ls-l ls-responsive" data-ls-mobile="left: 100px; top: 500px;" data-ls-tablet="left: 100px; top: 500px;" data-ls-laptop="left: 100px;" style="left: 300px; top: 582px;" data-ls="offsetyin: 200; durationin: 2000; delayin: 1400; offsetyout: 300; durationout: 2000; durationout: 2000;">
+                    <a href="<?= htmlspecialchars($row['button_link']) ?>" class="vs-btn style2"><?= htmlspecialchars($row['button_text']) ?><i class="fas fa-bolt"></i></a>
+                </div>
+            </div>
+        <?php endwhile; ?>
+    </div>
+
+    <script>
+        // For h1 animation (title/subtitle)
+        document.querySelectorAll('.orange-slide-anim').forEach(el => {
+            el.setAttribute('data-ls',
+                'delayin: 600; easingin: easeInOutSine; texttransitionin: true; textstartatin: transitioninstart; textdurationin: 2000; texttypein: words_asc; textshiftin: 200; textoffsetyin: -100; offsetyout: -100; durationout: 2000;'
+            );
+        });
+
+        // For slide container animation
+        document.querySelectorAll('.orange-slide').forEach(el => {
+            el.setAttribute('data-ls', 'duration: 13000; transition2d: 5;');
+        });
+    </script>
+</section>
 
 
 

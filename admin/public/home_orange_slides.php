@@ -12,8 +12,8 @@
             <div class="container-fluid">
                 <div class="d-sm-flex align-items-center justify-content-between mb-4">
                     <h1 class="h3 mb-0 text-gray-800">Available Services</h1>
-                    <a href="add_service.php" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">
-                        <i class="fa-solid fa-plus"></i> Add Property Types
+                    <a href="add_home_slides.php" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">
+                        <i class="fa-solid fa-plus"></i> Add slides
                     </a>
                 </div>
 
@@ -31,7 +31,7 @@
                             ?>
                                     <div class="col-md-4 mb-4">
                                         <div class="card h-100 shadow">
-                                            <img src="../<?php echo $row['image_name']; ?>" class="card-img-top" alt="Slide Image" style="height: 200px; object-fit: cover;">
+                                            <img src="../uploads/home_slides/<?php echo $row['image_name']; ?>" class="card-img-top" alt="Slide Image" style="height: 200px; object-fit: cover;">
                                             <div class="card-body">
                                                 <h5 class="card-title"><?php echo htmlspecialchars($row['heading_text']); ?></h5>
                                                 <p>

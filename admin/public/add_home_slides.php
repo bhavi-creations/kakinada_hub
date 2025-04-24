@@ -44,7 +44,7 @@
                                 $image_path = $upload_dir . $unique_image_name;
 
                                 // Store only filename in DB
-                                $image_db_name = "uploads/home_slides/" . $unique_image_name;
+                                $image_db_name =  $unique_image_name;
 
                                 if (move_uploaded_file($image_tmp, $image_path)) {
                                     // Insert data into the database

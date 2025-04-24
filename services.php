@@ -27,7 +27,7 @@
                             echo '<li><a class="sub_mini_serices" href="screens.php?theater_id=' . $row['id'] . '">' . htmlspecialchars($row['name']) . '</a></li>';
                         }
                         ?>
-                        <li><a class="view_all_sub_mini_serices" href="list_layout.php"> View All Movies Deals </a></li>
+                        <li><a class="view_all_sub_mini_serices" href="theaters.php"> View All Movies Deals </a></li>
                     </ul>
                 </div>
                 <div class="yellow_field_card resturent_bg">
