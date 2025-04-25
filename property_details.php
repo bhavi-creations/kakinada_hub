@@ -50,7 +50,7 @@ if (isset($_GET['id'])) {
 
 
 
-            <div class="col-lg-8 col-12 text_side_div   px-3">
+            <div class="col-lg-8 col-12 text_side_div   px-3" style="min-height: 400px;">
                 <div class="row gx-4 property-wrapper-v2 ">
 
                     <!-- Left Side: Image + Description -->
@@ -112,7 +112,7 @@ if (isset($_GET['id'])) {
                     </div>
 
                     <!-- Right Side: Property Details -->
-                    <div class="col-12 col-md-6">
+                    <div class="col-12 col-md-6" style="min-height: 400px;">
                         <div class="row fadeIn" data-wow-delay="0.3s">
                             <section class="OfferContainer_exclusive__non wow fadeInUp my-2" data-wow-delay="100ms">
                                 <div class="col-12 card_div">
@@ -127,7 +127,7 @@ if (isset($_GET['id'])) {
                                             "📏 Area (Sqft):" => $property['size_sqft'],
                                             "🛏 Bed Rooms:" => $property['bedrooms'],
                                             "🛁 Bath Rooms:" => $property['bathrooms'],
-                                            "🧭 Facing:" => $property['facing'], // <-- Added this line
+                                            // "🧭 Facing:" => $property['facing'], 
                                             "🪑 Furnishing Status:" => $property['furnishing_status'],
                                             "🛠 Amenities:" => $property['amenities'] . " Available",
                                             "📞 Contact :" => htmlspecialchars($property['phone']) . ' / ' . htmlspecialchars($property['location']),
@@ -148,14 +148,15 @@ if (isset($_GET['id'])) {
 
                         <!-- Description -->
 
-                        <p class="property_p_tag">
-                            <strong class="property_strong">📝 Description:</strong>
-                            <?php echo nl2br(htmlspecialchars($property['description'])); ?>
-                        </p>
+
 
                     </div>
 
                 </div>
+                <p class="property_p_tag">
+                    <strong class="property_strong">📝 Description:</strong>
+                    <?php echo nl2br(htmlspecialchars($property['description'])); ?>
+                </p>
             </div>
 
             <!-- Optional JS for Active Thumbnail -->

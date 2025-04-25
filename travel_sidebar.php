@@ -19,7 +19,7 @@ $travelJSON = json_encode($travelDestinations);
 <div id="overlay" class="overlay"></div>
 <button id="sidebar-icon" class="sidebar-icon">🚗</button>
 <div id="sidebar" class="sidebar side_view">
-    <h1 class="side_bar_tittle">Travel Destinations 🚗</h1>
+    <h1 class="side_bar_tittle"><a href="travel.php"> Travel Destinations 🚗</a> </h1>
     <ul id="travel-list" class="service-list"></ul>
 </div>
 

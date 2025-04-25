@@ -6,7 +6,7 @@
 
 <!-- Sidebar -->
 <div id="sidebar" class="sidebar side_view">
-    <h2 class="side_bar_tittle">Properties 🏠</h2>
+    <h2 class="side_bar_tittle"><a href="properties.php"> Properties 🏠</a></h2>
 
     <!-- Filter Inputs -->
     <div class="filter-group">

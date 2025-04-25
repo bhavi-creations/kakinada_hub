@@ -89,6 +89,22 @@
                         </div>
                     </div>
 
+
+
+                    <div id="carouselExampleSlidesOnly" class="carousel slide d-md-none" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="assets/img/test/21.png" class="  img-fluid  d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/img/test/22.png" class="img-fluid d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/img/test/23.png" class="img-fluid  d-block w-100" alt="...">
+                                </div>
+                            </div>
+                        </div>
+
                     <!-- ABOUT COMPANY & JOB LIST -->
                     <div class="row my-5 p-3">
                         <div class=" col-12">
@@ -140,6 +156,21 @@
                                 <?php endwhile; ?>
                             </div>
                         </div>
+
+                        <div id="carouselExampleSlidesOnly" class="carousel slide d-md-none" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="assets/img/test/21.png" class="  img-fluid  d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/img/test/22.png" class="img-fluid d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/img/test/23.png" class="img-fluid  d-block w-100" alt="...">
+                                </div>
+                            </div>
+                        </div>
+
 
 
                         <div class="">

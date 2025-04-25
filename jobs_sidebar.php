@@ -19,7 +19,7 @@ $companiesJSON = json_encode($companies);
 <div id="overlay" class="overlay"></div>
 <button id="sidebar-icon" class="sidebar-icon">🏢</button>
 <div id="sidebar" class="sidebar side_view">
-    <h1 class="side_bar_tittle">Companies 🏢</h1>
+    <h1 class="side_bar_tittle"> <a href="jobs.php">Companies 🏢</a> </h1>
     <ul id="company-list" class="service-list"></ul>
 </div>
 
