@@ -1,5 +1,7 @@
-<?php include 'navbar.php'; ?>
-<?php include './db.connection/db_connection.php'; ?>
+<?php include 'navbar.php';  ?>
+
+ 
+
 
 <?php include 'propertys_sidebar.php'; ?>
 
@@ -79,7 +81,7 @@ $categoryResult = mysqli_query($conn, $categoryQuery);
 
             <div class="col-lg-8 col-12">
 
-                <div class="row   scrollable-list" >
+                <div class="row   scrollable-list">
                     <?php
                     $query = "SELECT * FROM properties ORDER BY id DESC";
                     $result = mysqli_query($conn, $query);
@@ -90,7 +92,7 @@ $categoryResult = mysqli_query($conn, $categoryQuery);
                     ?>
 
                         <section class="OfferContainer_exclusive__non   my-2 property-item"
-                           
+
                             data-type="<?php echo strtolower($propertyType); ?>"
                             data-category="<?php echo strtolower($propertyCategory); ?>"
                             data-price="<?php echo $numericPrice; ?>">

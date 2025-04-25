@@ -12,10 +12,13 @@
             <div class="container-fluid">
                 <div class="d-sm-flex align-items-center justify-content-between mb-4">
                     <h1 class="h3 mb-0 text-gray-800">Available Services</h1>
-                    <a href="add_service.php" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">
-                        <i class="fa-solid fa-plus"></i> Add Property Types
+                    <a href="view_banner_adds.php" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">
+                    <i class="fa-regular fa-eye"></i> View Banner Ads
                     </a>
-                </div>
+                    <a href="add_banner_pages.php" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">
+                        <i class="fa-solid fa-plus"></i> Add Pages
+                    </a>
+                </div>  
 
                 <div class="container">
                     <div class="row">
@@ -27,12 +30,13 @@
                                     <h5 class="card-title">Add Banner Ad</h5>
 
                                     <?php
+                                    // Handle form submission
                                     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                         $page_name = $_POST['page_name'];
                                         $target_url = $_POST['target_url'];
                                         $status = $_POST['status'];
-                                        $uploadDir = '../uploads/banner_ads/'; // folder path
-                                        $dbPath = ''; // only file name saved here
+                                        $uploadDir = '../uploads/banner_ads/';
+                                        $dbPath = '';
 
                                         if (!is_dir($uploadDir)) {
                                             mkdir($uploadDir, 0777, true);
@@ -49,14 +53,47 @@
                                                 $stmt = $conn->prepare("INSERT INTO banner_ads (page_name, image_path, target_url, status) VALUES (?, ?, ?, ?)");
                                                 $stmt->bind_param("ssss", $page_name, $dbPath, $target_url, $status);
                                                 if ($stmt->execute()) {
-                                                    echo '<div class="alert alert-success">Banner added successfully!</div>';
+                                                    header("Location: " . $_SERVER['PHP_SELF'] . "?success=1");
+                                                    exit;
                                                 } else {
-                                                    echo '<div class="alert alert-danger">Database error.</div>';
+                                                    $error = "Database error.";
                                                 }
                                             } else {
-                                                echo '<div class="alert alert-danger">File upload failed.</div>';
+                                                $error = "File upload failed.";
                                             }
                                         }
+                                    }
+
+                                    // Display success message
+                                    if (isset($_GET['success'])) {
+                                        echo '<div class="alert alert-success alert-dismissible fade show" id="success-alert">Banner added successfully!</div>';
+                                        echo '<script>
+                                            setTimeout(function() {
+                                                const alertBox = document.getElementById("success-alert");
+                                                if (alertBox) {
+                                                    alertBox.style.display = "none";
+                                                }
+                                            }, 3000);
+                                        </script>';
+                                    }
+
+                                    // Display error if exists
+                                    if (isset($error)) {
+                                        echo '<div class="alert alert-danger">' . $error . '</div>';
+                                    }
+
+                                    // Fetch available and used pages
+                                    $pages = [];
+                                    $usedPages = [];
+
+                                    $pagesQuery = mysqli_query($conn, "SELECT name FROM banner_pages ORDER BY name ASC");
+                                    while ($row = mysqli_fetch_assoc($pagesQuery)) {
+                                        $pages[] = $row['name'];
+                                    }
+
+                                    $usedQuery = mysqli_query($conn, "SELECT DISTINCT page_name FROM banner_ads");
+                                    while ($row = mysqli_fetch_assoc($usedQuery)) {
+                                        $usedPages[] = $row['page_name'];
                                     }
                                     ?>
 
@@ -65,10 +102,11 @@
                                             <label for="page_name">Page Name</label>
                                             <select name="page_name" class="form-control" required>
                                                 <option value="">Select Page</option>
-                                                <option value="home">Home</option>
-                                                <option value="services">Services</option>
-                                                <option value="jobs">Jobs</option>
-                                                <!-- Add more if needed -->
+                                                <?php foreach ($pages as $page): ?>
+                                                    <option value="<?= htmlspecialchars($page) ?>" <?= in_array($page, $usedPages) ? 'disabled' : '' ?>>
+                                                        <?= ucfirst($page) ?> <?= in_array($page, $usedPages) ? '(Already Added)' : '' ?>
+                                                    </option>
+                                                <?php endforeach; ?>
                                             </select>
                                         </div>
 
@@ -94,11 +132,6 @@
                                     </form>
                                 </div>
                             </div>
-
-
-
-
-
 
                         </div>
                     </div>

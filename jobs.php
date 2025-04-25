@@ -1,18 +1,6 @@
-<?php include 'navbar.php'; ?>
+<?php include 'navbar.php';  ?>
 
-
-<?php
-$pageName = 'jobs'; // change per page like 'services', 'jobs', etc.
-
-$query = "SELECT * FROM banner_ads WHERE page_name = '$pageName' AND status = 'active' LIMIT 1";
-$result = mysqli_query($conn, $query);
-$banner = mysqli_fetch_assoc($result);
-?>
-
-
-
-
-<?php include 'banner_ads.php'; ?>
+ 
 
 
 

@@ -1,16 +1,6 @@
 <?php include 'navbar.php';  ?>
 
-<?php
-$pageName = 'home';
-
-$query = "SELECT * FROM banner_ads WHERE page_name = '$pageName' AND status = 'active' LIMIT 1";
-$result = mysqli_query($conn, $query);
-$banner = mysqli_fetch_assoc($result);
-?>
-
-
-<?php include 'banner_ads.php';  ?>
-
+ 
 
 
 
@@ -179,7 +169,7 @@ $banner = mysqli_fetch_assoc($result);
 
 
 <?php
-include './db.connection/db_connection.php'; // Ensure the database connection is included
+ 
 
 // Fetch offers items with type 'upper'
 $sqlUpper = "SELECT * FROM offers WHERE type = 'upper' ORDER BY created_at DESC";
@@ -391,7 +381,7 @@ $resultLower = $conn->query($sqlLower);
 
 
 <!-- <?php
-        include './db.connection/db_connection.php';
+         
 
         if ($conn->connect_error) {
             die("Connection failed: " . $conn->connect_error);
@@ -431,7 +421,7 @@ $resultLower = $conn->query($sqlLower);
 
 
 <?php
-include './db.connection/db_connection.php';
+ 
 
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);

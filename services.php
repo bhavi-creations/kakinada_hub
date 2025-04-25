@@ -1,18 +1,8 @@
 <?php include 'navbar.php';  ?>
 
 
-<?php
-$pageName = 'services';  
 
-$query = "SELECT * FROM banner_ads WHERE page_name = '$pageName' AND status = 'active' LIMIT 1";
-$result = mysqli_query($conn, $query);
-$banner = mysqli_fetch_assoc($result);
-?>
-
-
-
-
-<?php include 'banner_ads.php'; ?>
+ 
 
 
 

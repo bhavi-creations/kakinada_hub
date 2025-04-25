@@ -1,7 +1,8 @@
-<?php include 'navbar.php'; ?>
-<?php include 'travel_sidebar.php'; ?>
+<?php include 'navbar.php';  ?>
+ 
 
-<?php include './db.connection/db_connection.php'; ?>
+<?php include 'travel_sidebar.php'; ?>
+ 
 
 
 

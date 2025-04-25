@@ -69,7 +69,7 @@
                                         </div>
 
                                         <div class="mb-3">
-                                            <label class="form-label">Experience (Years)</label>
+                                            <label class="form-label">Established  (Years)</label>
                                             <input type="number" name="experience_years" class="form-control" value="<?php echo $row['experience_years']; ?>" required>
                                         </div>
 
