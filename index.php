@@ -1,33 +1,8 @@
-<!-- <div class="color-stripe-bar"></div> -->
 
 
 
 
-<?php
-include './db.connection/db_connection.php'; // Ensure the database connection is included
-
-// Fetch marquee texts
-$sql = "SELECT text FROM marquee_texts ORDER BY created_at DESC";
-$result = $conn->query($sql);
-
-// Prepare marquee content
-$marquee_texts = [];
-while ($row = $result->fetch_assoc()) {
-    $marquee_texts[] = '<span class="highlight-text">' . htmlspecialchars($row['text']) . '</span>';
-}
-
-// Convert array to string with separators
-$marquee_content = implode(' &nbsp; || &nbsp; ', $marquee_texts);
-?>
-<!-- 
-<section class="marquee-section">
-    <div class="marquee-content">
-        <marquee behavior="scroll" direction="left" class="marquee">
-            <?php echo $marquee_content; ?>
-        </marquee>
-    </div>
-</section> -->
-
+ 
 <?php include 'navbar.php';  ?>
 
 
