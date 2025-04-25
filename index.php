@@ -1,9 +1,16 @@
-
-
-
-
- 
 <?php include 'navbar.php';  ?>
+
+<?php
+$pageName = 'home';
+
+$query = "SELECT * FROM banner_ads WHERE page_name = '$pageName' AND status = 'active' LIMIT 1";
+$result = mysqli_query($conn, $query);
+$banner = mysqli_fetch_assoc($result);
+?>
+
+
+<?php include 'banner_ads.php';  ?>
+
 
 
 
@@ -284,7 +291,7 @@ $resultLower = $conn->query($sqlLower);
 
                                                 <p class="brand_type gradient_text_color_orange_to_gold">⭐ <?php echo htmlspecialchars($row['offer']); ?></p>
 
-                                               
+
 
                                                 <button
                                                     class="card_lrg_btn fold_btn wow fadeInUp"
@@ -324,56 +331,56 @@ $resultLower = $conn->query($sqlLower);
 
     <!-- Code Reveal Modal -->
     <div class="modal fade" id="codeModal" tabindex="-1" aria-labelledby="codeModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-lg">
-        <div class="modal-content">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
 
-            <div class="modal-body">
-                <h5 class="modal-title heading-gradient" id="codeModalLabel">Your Discount Code </h5>
-                <pre><code id="codeBlock" class="language-html"></code></pre>
+                <div class="modal-body">
+                    <h5 class="modal-title heading-gradient" id="codeModalLabel">Your Discount Code </h5>
+                    <pre><code id="codeBlock" class="language-html"></code></pre>
 
-                <button class="btn btn-primary mt-3" id="copyCodeBtn">
-                    📋 Copy Code
-                </button>
-                <span id="copyMsg" class="ms-2 text-success" style="display: none;">Copied!</span>
+                    <button class="btn btn-primary mt-3" id="copyCodeBtn">
+                        📋 Copy Code
+                    </button>
+                    <span id="copyMsg" class="ms-2 text-success" style="display: none;">Copied!</span>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
 
- 
-<script>
-    const codeModal = document.getElementById('codeModal');
-    const codeBlock = document.getElementById('codeBlock');
-    const copyBtn = document.getElementById('copyCodeBtn');
-    const copyMsg = document.getElementById('copyMsg');
 
-    // Load code into the modal
-    codeModal.addEventListener('show.bs.modal', function (event) {
-        const button = event.relatedTarget;
-        const code = button.getAttribute('data-code');
-        codeBlock.textContent = code;
+    <script>
+        const codeModal = document.getElementById('codeModal');
+        const codeBlock = document.getElementById('codeBlock');
+        const copyBtn = document.getElementById('copyCodeBtn');
+        const copyMsg = document.getElementById('copyMsg');
 
-        // Hide "Copied!" message
-        copyMsg.style.display = 'none';
-    });
+        // Load code into the modal
+        codeModal.addEventListener('show.bs.modal', function(event) {
+            const button = event.relatedTarget;
+            const code = button.getAttribute('data-code');
+            codeBlock.textContent = code;
 
-    // Copy code to clipboard
-    copyBtn.addEventListener('click', async function () {
-        try {
-            const codeText = codeBlock.textContent;
-            await navigator.clipboard.writeText(codeText);
+            // Hide "Copied!" message
+            copyMsg.style.display = 'none';
+        });
 
-            // Show success message
-            copyMsg.textContent = 'Copied!';
-            copyMsg.style.display = 'inline';
-        } catch (err) {
-            console.error('Failed to copy:', err);
-            copyMsg.textContent = 'Failed to copy';
-            copyMsg.style.display = 'inline';
-        }
-    });
-</script>
+        // Copy code to clipboard
+        copyBtn.addEventListener('click', async function() {
+            try {
+                const codeText = codeBlock.textContent;
+                await navigator.clipboard.writeText(codeText);
+
+                // Show success message
+                copyMsg.textContent = 'Copied!';
+                copyMsg.style.display = 'inline';
+            } catch (err) {
+                console.error('Failed to copy:', err);
+                copyMsg.textContent = 'Failed to copy';
+                copyMsg.style.display = 'inline';
+            }
+        });
+    </script>
 
 
 

@@ -55,6 +55,10 @@
     <link rel="stylesheet" href="assets/css/style1.css">
 </head>
 
+
+<?php   include './db.connection/db_connection.php'; ?>
+
+
 <body class="">
 
 
@@ -92,7 +96,7 @@
                             <li class="movies_bg"><a class=" " href="#"> Movies</a>
                                 <ul>
                                     <?php
-                                    include './db.connection/db_connection.php'; // Database connection
+                                  // Database connection
 
                                     $query = "SELECT id, name FROM theaters";
                                     $result = mysqli_query($conn, $query);
@@ -277,8 +281,7 @@
                                                                 <ul>
 
                                                                     <?php
-                                                                    include './db.connection/db_connection.php';
-
+                                                                    
                                                                     // Fetch all theaters from the database
                                                                     $theater_query = "SELECT id, name FROM theaters";
                                                                     $theater_result = mysqli_query($conn, $theater_query);
@@ -465,28 +468,9 @@
 
 
 
-   <section id="adSection">
-        <div class="sticky-ad" id="stickyAd">
-            <div class="ad-container">
-                <button class="close-ad" onclick="closeAd()">✖</button>
-                <img src="assets/img/self_images/top_add.png" class="img-fluid" alt="Ad">
-            </div>
-        </div>
-    </section>
+
     
-    <script>
-        window.addEventListener("scroll", function() {
-            let ad = document.getElementById("stickyAd");
-            let adPosition = ad.offsetTop;
-    
-            if (window.scrollY >= adPosition) {
-                ad.classList.add("fixed");
-            } else {
-                ad.classList.remove("fixed");
-            }
-        });
-    
-        function closeAd() {
-            document.getElementById("adSection").style.display = "none";
-        }
-    </script>   
+
+
+ 
+

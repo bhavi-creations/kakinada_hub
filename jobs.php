@@ -1,4 +1,21 @@
 <?php include 'navbar.php'; ?>
+
+
+<?php
+$pageName = 'jobs'; // change per page like 'services', 'jobs', etc.
+
+$query = "SELECT * FROM banner_ads WHERE page_name = '$pageName' AND status = 'active' LIMIT 1";
+$result = mysqli_query($conn, $query);
+$banner = mysqli_fetch_assoc($result);
+?>
+
+
+
+
+<?php include 'banner_ads.php'; ?>
+
+
+
 <?php include 'jobs_sidebar.php'; ?>
 
 <section class="bg_section responsive_section">
@@ -37,7 +54,7 @@
             </div>
 
             <div class="col-lg-8 col-12">
-                <?php include 'db.connection/db_connection.php'; ?>
+                
 
                 <div class="row   scrollable-list"  >
                     <?php
