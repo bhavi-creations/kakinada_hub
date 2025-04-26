@@ -159,6 +159,12 @@ if (isset($_GET['id'])) {
                 </p>
             </div>
 
+            
+
+
+
+          
+
             <!-- Optional JS for Active Thumbnail -->
             <script>
                 document.addEventListener("DOMContentLoaded", function() {

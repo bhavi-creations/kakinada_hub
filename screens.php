@@ -26,7 +26,7 @@ $result = mysqli_stmt_get_result($stmt);
 
 <section class="bg_section responsive_section">
     <div class="container ">
-        <h1 class="text-center gradient_text_color spacing_for_htag"><?php echo $theater_name; ?></h1>
+        <!-- <h1 class="text-center gradient_text_color spacing_for_htag"><?php echo $theater_name; ?></h1> -->
 
         <div class="row">
 
@@ -73,14 +73,14 @@ $result = mysqli_stmt_get_result($stmt);
                 <div id="carouselExampleSlidesOnly" class="carousel slide d-md-none mt-5" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="assets/img/test/21.png" class="  img-fluid  d-block w-100" alt="...">
+                        <img src="assets/img/test/theater1.png" class="  img-fluid  d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="assets/img/test/22.png" class="img-fluid d-block w-100" alt="...">
+                        <img src="assets/img/test/theater2.png" class="img-fluid d-block w-100" alt="...">
                     </div>
-                    <div class="carousel-item">
+                    <!-- <div class="carousel-item">
                         <img src="assets/img/test/23.png" class="img-fluid  d-block w-100" alt="...">
-                    </div>
+                    </div> -->
                 </div>
             </div>
 

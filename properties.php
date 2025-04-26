@@ -126,6 +126,8 @@ $categoryResult = mysqli_query($conn, $categoryQuery);
 
                 </div>
 
+                
+
                 <!-- JavaScript Filtering -->
                 <script>
                     function normalizePrice(priceText) {

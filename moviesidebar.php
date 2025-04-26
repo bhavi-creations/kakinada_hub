@@ -19,7 +19,7 @@ $theatersJSON = json_encode($theaters);
 <div id="overlay" class="overlay"></div>
 <button id="sidebar-icon" class="sidebar-icon">🎥</button>
 <div id="sidebar" class="sidebar side_view">
-    <h1 class="side_bar_tittle">Theaters 🎭</h1>
+    <h1 class="side_bar_tittle"><a href="theaters.php">Theaters 🎭</a> </h1>
     <ul id="theater-list" class="service-list"></ul>
 </div>
 

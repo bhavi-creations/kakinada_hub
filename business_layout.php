@@ -5,7 +5,7 @@
 <div id="overlay" class="overlay"></div>
 <button id="restaurant-icon" class="restaurant-icon">🍽</button>
 <div id="sidebar" class="sidebar side_view">
-    <h1 class="side_bar_tittle">Restaurants 🍽</h1>
+    <h1 class="side_bar_tittle"><a href="resturents_layouts.php"> Restaurants 🍽</a></h1>
     <ul id="restaurant-list" class="restaurant-list"></ul>
 </div>
 <script>
