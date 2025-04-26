@@ -23,36 +23,44 @@
 
 
 
-<footer class=" footer_bg_last  pt-3">
+<footer class="footer_bg_last pt-3">
     <div class="container">
-        <div class="row align-items-center">
-            <!-- Left Side: Mobile Number -->
+        <div class="row align-items-center d-none d-md-flex">
+            <!-- Desktop View -->
             <div class="col-md-4 text-white">
                 <p class="mb-0 gradient_text_color"><i class="fas fa-phone-alt"></i> +91 9642343434</p>
             </div>
-
-            <!-- Center: Kakinada Hub -->
             <div class="col-md-4 text-center">
                 <h3 class="gradient_text_color">Kakinada Hub</h3>
             </div>
-
-            <!-- Right Side: Social Media Icons -->
             <div class="col-md-4 text-end">
-            
                 <a href="#" class="gradient_text_color me-3"><i class="fab fa-facebook-f"></i></a>
                 <a href="#" class="gradient_text_color me-3"><i class="fab fa-twitter"></i></a>
                 <a href="#" class="gradient_text_color me-3"><i class="fab fa-instagram"></i></a>
                 <a href="#" class="gradient_text_color"><i class="fab fa-linkedin-in"></i></a>
             </div>
         </div>
+
+        <!-- Mobile View -->
+        <div class="d-flex d-md-none justify-content-between text-white">
+            <p class="mb-0 gradient_text_color"><i class="fas fa-phone-alt"></i> +91 9642343434</p>
+            <h5 class="mb-0 gradient_text_color">Kakinada Hub</h5>
+        </div>
+        <div class="d-md-none text-center mt-2">
+            <a href="#" class="gradient_text_color me-3"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="gradient_text_color me-3"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="gradient_text_color me-3"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="gradient_text_color"><i class="fab fa-linkedin-in"></i></a>
+        </div>
     </div>
 </footer>
+
 
 <!-- Include Font Awesome for icons -->
 <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> -->
 
 
- 
+
 
 <!-- Scroll To Top -->
 <a href="#" class="scrollToTop scroll-bottom  style2"><i class="fas fa-arrow-alt-up"></i></a>

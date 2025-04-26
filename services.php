@@ -2,13 +2,13 @@
 
 
 
- 
+
 
 
 
 <section class="bg_section responsive_section ">
     <div class="container  service_contant">
-    
+
         <div class="row ">
             <div class="yellow_fields_cards_container">
 
@@ -20,7 +20,7 @@
 
                     <ul>
                         <?php
-                     
+
 
                         $query = "SELECT id, name FROM theaters";
                         $result = mysqli_query($conn, $query);
