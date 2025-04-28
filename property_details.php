@@ -157,13 +157,28 @@ if (isset($_GET['id'])) {
                     <strong class="property_strong">📝 Description:</strong>
                     <?php echo nl2br(htmlspecialchars($property['description'])); ?>
                 </p>
+
+
+                <div id="carouselExampleSlidesOnly" class="carousel slide    mb-3" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="assets/img/test/21.png" class="img-fluid d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/img/test/22.png" class="img-fluid d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/img/test/23.png" class="img-fluid d-block w-100" alt="...">
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            
 
 
 
-          
+
+
 
             <!-- Optional JS for Active Thumbnail -->
             <script>

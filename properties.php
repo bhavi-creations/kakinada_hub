@@ -1,6 +1,6 @@
 <?php include 'navbar.php';  ?>
 
- 
+
 
 
 <?php include 'propertys_sidebar.php'; ?>
@@ -70,7 +70,7 @@ $categoryResult = mysqli_query($conn, $categoryQuery);
 
 
 
-        
+
 
         <div class="row">
 
@@ -126,7 +126,7 @@ $categoryResult = mysqli_query($conn, $categoryQuery);
 
                 </div>
 
-                
+
 
                 <!-- JavaScript Filtering -->
                 <script>
@@ -179,7 +179,11 @@ $categoryResult = mysqli_query($conn, $categoryQuery);
                     }
                 </script>
 
+
+              
+
             </div>
+
 
             <!-- Sidebar (for desktop) -->
             <div class="col-lg-2  col-12 text_side_div d-none d-lg-block">
