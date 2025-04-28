@@ -159,7 +159,7 @@ if (isset($_GET['id'])) {
                 </p>
 
 
-                <div id="carouselExampleSlidesOnly" class="carousel slide    mb-3" data-bs-ride="carousel">
+                <div id="carouselExampleSlidesOnly" class="carousel slide    py-3" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <img src="assets/img/test/21.png" class="img-fluid d-block w-100" alt="...">
