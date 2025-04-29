@@ -15,7 +15,7 @@
 
                 <div class="yellow_field_card movies_bg">
                     <h4 class="yello_heding">
-                        <img src="assets/img/self_images/day.png" alt="" class="img-fluid"> Movies
+                        <img src="assets/img/self_images/day.png" alt="" class="img-fluid"><a href="theaters.php">Movies</a>  
                     </h4>
 
                     <ul>
@@ -33,7 +33,7 @@
                     </ul>
                 </div>
                 <div class="yellow_field_card resturent_bg">
-                    <h4 class="yello_heding"><img src="assets/img/self_images/spoon-and-fork.png" alt="" class="img-fluid"> Resturents</h4>
+                    <h4 class="yello_heding"><img src="assets/img/self_images/spoon-and-fork.png" alt="" class="img-fluid"> <a href="resturents_layouts.php">Resturents</a> </h4>
 
                     <ul>
 
@@ -54,7 +54,7 @@
 
                 </div>
                 <div class="yellow_field_card saloon_bg">
-                    <h4 class="yello_heding"><img src="assets/img/self_images/haircut.png" alt="" class="img-fluid"> Saloons & Spa</h4>
+                    <h4 class="yello_heding"><img src="assets/img/self_images/haircut.png" alt="" class="img-fluid"> <a href="theaters.php"> Saloons & Spa</a></h4>
 
                     <ul>
                         <li><a class="sub_mini_serices" href="royal_touch.php"> Royal Touch </a></li>
@@ -73,7 +73,7 @@
 
                 </div>
                 <div class="yellow_field_card gifts_bg">
-                    <h4 class="yello_heding"><img src="assets/img/self_images/giftbox.png" alt="" class="img-fluid"> Gifts & Jewellery</h4>
+                    <h4 class="yello_heding"><img src="assets/img/self_images/giftbox.png" alt="" class="img-fluid"> <a href="theaters.php"> Gifts & Jewellery </a></h4>
 
 
                     <ul>
@@ -91,7 +91,7 @@
                 </div>
                 <div class="yellow_field_card fashion_bg">
 
-                    <h4 class="yello_heding "> <img src="assets/img/self_images/fashion.png" alt="" class="img-fluid"> Fashion</h4>
+                    <h4 class="yello_heding "> <img src="assets/img/self_images/fashion.png" alt="" class="img-fluid">  <a href="theaters.php">Fashion</a> </h4>
 
                     <ul>
                         <li><a class="sub_mini_serices" href="footware_fashion.php"> Footwear </a></li>
@@ -108,7 +108,7 @@
                     </ul>
                 </div>
                 <div class="yellow_field_card hospital_bg">
-                    <h4 class="yello_heding"><img src="assets/img/self_images/hospital.png" alt="" class="img-fluid"> Hospitals</h4>
+                    <h4 class="yello_heding"><img src="assets/img/self_images/hospital.png" alt="" class="img-fluid"> <a href="theaters.php">Hospitals</a> </h4>
 
 
                     <ul>
@@ -124,7 +124,7 @@
 
                 </div>
                 <div class="yellow_field_card sports_bg">
-                    <h4 class="yello_heding"><img src="assets/img/self_images/Sports.png" alt="" class="img-fluid"> Sports & Gym </h4>
+                    <h4 class="yello_heding"><img src="assets/img/self_images/Sports.png" alt="" class="img-fluid">  <a href="theaters.php"> Sports & Gym</a> </h4>
 
 
                     <ul>
@@ -140,7 +140,7 @@
 
                 </div>
                 <div class="yellow_field_card kids_bg">
-                    <h4 class="yello_heding"><img src="assets/img/self_images/kids.png" alt="" class="img-fluid"> Kids & Babies</h4>
+                    <h4 class="yello_heding"><img src="assets/img/self_images/kids.png" alt="" class="img-fluid"> <a href="theaters.php">   Kids & Babies</a></h4>
 
 
                     <ul>

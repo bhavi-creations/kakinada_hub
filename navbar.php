@@ -90,10 +90,10 @@
 
 
                     <li class="menu-item-has-children">
-                        <a href="#">Services</a>
+                        <a href="# ">Services</a>
                         <!-- Arrow for submenu toggle -->
                         <ul class="sub-menu ">
-                            <li class="movies_bg"><a class=" " href="#"> Movies</a>
+                            <li class="movies_bg"><a class=" " href="theaters.php"> Movies</a>
                                 <ul>
                                     <?php
                                   // Database connection
@@ -111,7 +111,7 @@
 
 
 
-                            <li class="resturent_bg"><a class=" " href="#"> Resturents</a>
+                            <li class="resturent_bg"><a class=" " href="theaters.php"> Resturents</a>
                                 <ul>
                                     <li><a class="sub_mini_serices" href="business_layout.php"> Food Train </a></li>
                                     <li><a class="sub_mini_serices" href="business_layout.php"> BBQ </a></li>
@@ -127,7 +127,7 @@
 
                                 </ul>
                             </li>
-                            <li class="saloon_bg"><a class=" " href="#"> Saloons & Spa</a>
+                            <li class="saloon_bg"><a class=" " href="theaters.php"> Saloons & Spa</a>
                                 <ul>
                                     <li><a class="sub_mini_serices" href="royal_touch.php"> Royal Touch </a></li>
                                     <li><a class="sub_mini_serices" href="vv_saloon.php"> V & V </a></li>
@@ -156,7 +156,7 @@
 
                                 </ul>
                             </li>
-                            <li class="fashion_bg"><a class=" " href="#"> Fashion</a>
+                            <li class="fashion_bg"><a class=" " href="theaters.php"> Fashion</a>
                                 <ul>
                                     <li><a class="sub_mini_serices" href="footware_fashion.php"> Footwear </a></li>
                                     <li><a class="sub_mini_serices" href="footware_fashion.php"> Jewellery </a></li>
@@ -171,7 +171,7 @@
 
                                 </ul>
                             </li>
-                            <li class="hospital_bg"><a class=" " href="#"> Hospitals</a>
+                            <li class="hospital_bg"><a class=" " href="theaters.php"> Hospitals</a>
                                 <ul>
                                     <li><a class="sub_mini_serices" href="dental_hospital.php"> Dental Hospitals </a></li>
                                     <li><a class="sub_mini_serices" href="dental_hospital.php"> Neuro Hospitals </a></li>
@@ -277,7 +277,7 @@
                                                         <div class="col-3 movies_bg my-2">
 
 
-                                                            <li><a class="sub_heading" href="#"> Movies</a>
+                                                            <li><a class="sub_heading" href="theaters.php"> Movies</a>
                                                                 <ul>
 
                                                                     <?php
@@ -300,7 +300,7 @@
 
                                                         </div>
                                                         <div class="col-3 resturent_bg  my-2 ">
-                                                            <li><a class="sub_heading" href="#"> Resturents</a>
+                                                            <li><a class="sub_heading" href="resturents_layouts.php"> Resturents</a>
                                                                 <ul>
                                                                     <li><a class="sub_mini_serices" href="business_layout.php"> Food Train </a></li>
                                                                     <li><a class="sub_mini_serices" href="business_layout.php"> BBQ </a></li>
@@ -318,7 +318,7 @@
 
                                                         </div>
                                                         <div class="col-3 saloon_bg my-2">
-                                                            <li><a class="sub_heading" href="#"> Saloons & Spa</a>
+                                                            <li><a class="sub_heading" href="royal_touch.php"> Saloons & Spa</a>
                                                                 <ul>
                                                                     <li><a class="sub_mini_serices" href="royal_touch.php"> Royal Touch </a></li>
                                                                     <li><a class="sub_mini_serices" href="royal_touch.php"> V & V </a></li>
@@ -337,7 +337,7 @@
 
                                                         </div>
                                                         <div class="col-3 gifts_bg my-2">
-                                                            <li><a class="sub_heading" href="business_layout.php"> Gifts & Jewellery</a>
+                                                            <li><a class="sub_heading" href="sweets_chocolate.php"> Gifts & Jewellery</a>
                                                                 <ul>
 
                                                                     <li><a class="sub_mini_serices" href="sweets_chocolate.php"> Sweets & Chocolates </a></li>
@@ -354,7 +354,7 @@
 
                                                         </div>
                                                         <div class="col-3 fashion_bg  my-2">
-                                                            <li><a class="sub_heading" href="#"> Fashion</a>
+                                                            <li><a class="sub_heading" href="footware_fashion.php"> Fashion</a>
                                                                 <ul>
                                                                     <li><a class="sub_mini_serices" href="footware_fashion.php"> Footwear </a></li>
                                                                     <li><a class="sub_mini_serices" href="footware_fashion.php"> Jewellery </a></li>
@@ -372,7 +372,7 @@
 
                                                         </div>
                                                         <div class="col-3 hospital_bg my-2">
-                                                            <li><a class="sub_heading" href="#"> Hospitals</a>
+                                                            <li><a class="sub_heading" href="dental_hospital.php"> Hospitals</a>
                                                                 <ul>
                                                                     <li><a class="sub_mini_serices" href="dental_hospital.php"> Dental Hospitals </a></li>
                                                                     <li><a class="sub_mini_serices" href="dental_hospital.php"> Neuro Hospitals </a></li>
@@ -387,7 +387,7 @@
 
                                                         </div>
                                                         <div class="col-3 sports_bg my-2">
-                                                            <li><a class="sub_heading" href="business_layout.php"> Sports & Gym</a>
+                                                            <li><a class="sub_heading" href="sports_clothing.php"> Sports & Gym</a>
                                                                 <ul>
                                                                     <li><a class="sub_mini_serices" href="sports_clothing.php"> Sports Clothing </a></li>
                                                                     <li><a class="sub_mini_serices" href="sports_clothing.php"> Clubs & Gyms </a></li>
@@ -402,7 +402,7 @@
 
                                                         </div>
                                                         <div class="col-3 kids_bg my-2">
-                                                            <li><a class="sub_heading" href="business_layout.php"> Kids & Babies</a>
+                                                            <li><a class="sub_heading" href="toys_games.php"> Kids & Babies</a>
                                                                 <ul>
                                                                     <li><a class="sub_mini_serices" href="toys_games.php"> Toys & Games </a></li>
                                                                     <li><a class="sub_mini_serices" href="toys_games.php"> Kids & Baby Clothes </a></li>

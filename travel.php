@@ -53,6 +53,20 @@
             ?>
         </div>
 
+
+        <div id="carouselExampleSlidesOnly" class="carousel slide    py-5" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="assets/img/test/c2.png" class="img-fluid d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/img/test/c1.png" class="img-fluid d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/img/test/c3.png" class="img-fluid d-block w-100" alt="...">
+                        </div>
+                    </div>
+                </div>
             </div>
 
 

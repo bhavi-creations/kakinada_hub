@@ -168,13 +168,13 @@ if (isset($_GET['id'])) {
                 <div id="carouselExampleSlidesOnly" class="carousel slide    py-3" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="assets/img/test/21.png" class="img-fluid d-block w-100" alt="...">
+                            <img src="assets/img/test/h4.png" class="img-fluid d-block w-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                            <img src="assets/img/test/22.png" class="img-fluid d-block w-100" alt="...">
+                            <img src="assets/img/test/h5.png" class="img-fluid d-block w-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                            <img src="assets/img/test/23.png" class="img-fluid d-block w-100" alt="...">
+                            <img src="assets/img/test/h6.png" class="img-fluid d-block w-100" alt="...">
                         </div>
                     </div>
                 </div>
@@ -183,7 +183,7 @@ if (isset($_GET['id'])) {
 
 
 
-
+           
 
 
 

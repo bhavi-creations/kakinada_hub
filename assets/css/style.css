@@ -5067,12 +5067,27 @@ padding-left: 10px;
    font-family: var(--body-font);
    font-weight: 700;
    background: linear-gradient(to right, #6b390d, #ffb013);
+
    -webkit-background-clip: text;
    -webkit-text-fill-color: transparent;
    display: inline-block;
    font-size: 18px;
-   /* Large devices */
+   
  }
+
+ .main-menu  a  {
+  display: block;
+  position: relative;
+  font-family: var(--body-font);
+  font-weight: 700;
+  background: linear-gradient(to right, #dc3c0a, #ffb013) ;
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  font-size: 18px;
+  /* Large devices */
+}
 
  .main-menu a:hover {
 
@@ -21203,7 +21218,9 @@ padding-left: 10px;
    /* Gradient text styles */
    /* background: linear-gradient(to right, #ffffff, #ffffff); */
    /* background: linear-gradient(to right, #ffb013, #dc3c0a); */
-   background: linear-gradient(to right, #dc3c0a, #ffb013);   
+   background: linear-gradient(to right, #dc3c0a, #ffb013) ;   
+
+   /* background: linear-gradient(to right, #dc3c0a, #ffb013) */
    -webkit-background-clip: text;
    -webkit-text-fill-color: transparent;
 
