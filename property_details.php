@@ -51,6 +51,7 @@ if (isset($_GET['id'])) {
 
 
             <div class="col-lg-8 col-12 text_side_div   px-3" style="min-height: 400px;">
+
                 <div class="row gx-4 property-wrapper-v2 ">
 
                     <!-- Left Side: Image + Description -->
@@ -134,9 +135,9 @@ if (isset($_GET['id'])) {
                                         ];
                                         foreach ($details as $label => $value) {
                                             echo "
-        <div class='col-12 propertys_divs_for_text_paras'>
-            <p class='property_p_tag'><strong class='property_strong'>$label</strong> " . htmlspecialchars($value) . "</p>
-        </div>";
+                                            <div class='col-12 propertys_divs_for_text_paras'>
+                                                <p class='property_p_tag'><strong class='property_strong'>$label</strong> " . htmlspecialchars($value) . "</p>
+                                            </div>";
                                         }
                                         ?>
 
@@ -152,11 +153,16 @@ if (isset($_GET['id'])) {
 
                     </div>
 
+                    <p class="property_p_tag text-center">
+                        <strong class="property_strong">📝 Description:</strong>
+                        <?php echo nl2br(htmlspecialchars($property['description'])); ?>
+                    </p>
+
+
                 </div>
-                <p class="property_p_tag">
-                    <strong class="property_strong">📝 Description:</strong>
-                    <?php echo nl2br(htmlspecialchars($property['description'])); ?>
-                </p>
+
+
+
 
 
                 <div id="carouselExampleSlidesOnly" class="carousel slide    py-3" data-bs-ride="carousel">
@@ -172,6 +178,7 @@ if (isset($_GET['id'])) {
                         </div>
                     </div>
                 </div>
+
             </div>
 
 
