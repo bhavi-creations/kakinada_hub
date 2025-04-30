@@ -29,6 +29,7 @@
                 <!-- <h6 class="collapse-header">NEW BLOG</h6> -->
                 <a class="collapse-item" href="home_index.php"> <i class="fas fa-fw fa-blog"></i> Home</a>
                 <a class="collapse-item" href="banner_ads.php"> <i class="fas fa-fw fa-edit"></i> Banner Ads</a>
+                <a class="collapse-item" href="side_piller_ads.php"> <i class="fas fa-fw fa-edit"></i> Side Piller Ads</a>
             </div>
         </div>
     </li>

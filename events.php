@@ -49,25 +49,18 @@ $result = $stmt->get_result();
 
 <section class="bg_section responsive_section">
     <div class="container ">
-    <h1 class="text-center gradient_text_color spacing_for_htag">Upcomming Events</h1>
-        
+        <h1 class="text-center gradient_text_color spacing_for_htag">Upcomming Events</h1>
+
         <div class="row">
 
-            <div class="col-lg-2  col-12 text_side_div d-none d-lg-block">
-
-                <img src="assets/img/test/sideimg2.png" alt="" class="img-fluid side_dive_images">
-
-                <img src="assets/img/test/animation.gif" alt="Animated GIF" class=" my-4 side_dive_images">
-
-                <img src="assets/img/test/sideimg1.png" alt="" class="img-fluid  side_dive_images">
-            </div>
+            <?php include 'left_side_ads.php'; ?>
 
             <div class="col-lg-8 col-12 ">
-                <div class="row     "  >
+                <div class="row     ">
 
 
 
-                    <section class="OfferContainer_exclusive__non    my-2"  >
+                    <section class="OfferContainer_exclusive__non    my-2">
                         <div class="   container  card_div ">
                             <div class="row  need_padding_div ">
                                 <div class="col-12 col-md-4 job_image_card_main mb-2 parent-container">
@@ -104,7 +97,7 @@ $result = $stmt->get_result();
                         </div>
                     </section>
 
-                    <section class="OfferContainer_exclusive__non    my-2"  >
+                    <section class="OfferContainer_exclusive__non    my-2">
                         <div class="   container  card_div ">
                             <div class="row  need_padding_div ">
                                 <div class="col-12 col-md-4 job_image_card_main mb-2 parent-container">
@@ -141,7 +134,7 @@ $result = $stmt->get_result();
                         </div>
                     </section>
 
-                    <section class="OfferContainer_exclusive__non    my-2" >
+                    <section class="OfferContainer_exclusive__non    my-2">
                         <div class="   container  card_div ">
                             <div class="row  need_padding_div ">
                                 <div class="col-12 col-md-4 job_image_card_main mb-2 parent-container">
@@ -151,7 +144,7 @@ $result = $stmt->get_result();
 
                                 <div class="col-12 col-md-8">
                                     <h4 class="gradient_text_color"> <strong class="property_strong"> occasion :</strong>Holi Event</h4>
-                                    <p class="property_p_tag"><strong class="property_strong"> Venue :</strong> Halcyon Times  </p>
+                                    <p class="property_p_tag"><strong class="property_strong"> Venue :</strong> Halcyon Times </p>
                                     <p class="property_p_tag"> <strong class="property_strong"> Location : </strong> Kakinada </p>
                                     <p class="property_p_tag"> <strong class="property_strong"> Phone :</strong>7947108373 </p>
                                     <p class="property_p_tag"> <strong class="property_strong"> Website :</strong><a target="_blank" href="     "> https://hylcontimes.com/ </a> </p>
@@ -208,14 +201,7 @@ $result = $stmt->get_result();
 
             </div>
 
-            <div class="col-lg-2  col-12 text_side_div d-none d-lg-block">
-
-                <img src="assets/img/test/sideimg2.png" alt="" class="img-fluid side_dive_images">
-
-                <img src="assets/img/test/animation.gif" alt="Animated GIF" class=" my-4 side_dive_images">
-
-                <img src="assets/img/test/sideimg1.png" alt="" class="img-fluid  side_dive_images">
-            </div>
+            <?php include 'right_side_ads.php'; ?>
 
             <div id="mobileModal" class="mobile-modal-overlay">
                 <div class="mobile-modal-content">
@@ -305,5 +291,3 @@ $result = $stmt->get_result();
 
 
 <?php include 'footer.php';  ?>
-
-
