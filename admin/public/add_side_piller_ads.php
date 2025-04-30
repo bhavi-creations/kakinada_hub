@@ -22,7 +22,6 @@
                                 // Handle form submission
                                 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                     $page_name = $_POST['page_name'];
-                                    $device_type = $_POST['device_type'];
                                     $ad_side = $_POST['ad_side'];
                                     $ad_position = $_POST['ad_position'] ?? null; // Can be NULL
                                     $target_urls = $_POST['target_urls']; // array
@@ -45,8 +44,9 @@
 
                                             if (move_uploaded_file($tmpName, $filePath)) {
                                                 $url = $target_urls[$index] ?? ''; // Use empty string if URL is missing
-                                                $stmt = $conn->prepare("INSERT INTO side_piller_ads (page_name, device_type, ad_side, ad_position, image_path, target_url, status, created_at) VALUES (?, ?, ?, ?, ?, ?, ?, NOW())");
-                                                $stmt->bind_param("sssssss", $page_name, $device_type, $ad_side, $ad_position, $dbPath, $url, $status);
+                                                // Removed device_type from the query
+                                                $stmt = $conn->prepare("INSERT INTO side_piller_ads (page_name, ad_side, ad_position, image_path, target_url, status, created_at) VALUES (?, ?, ?, ?, ?, ?, NOW())");
+                                                $stmt->bind_param("ssssss", $page_name, $ad_side, $ad_position, $dbPath, $url, $status); // Removed device_type
                                                 if ($stmt->execute()) {
                                                     $insertedCount++;
                                                 } else {
@@ -88,7 +88,7 @@
                                                 alertBox.remove();
                                             }
                                         }, 3000);
-                                    </script>';
+                                        </script>';
                                 }
 
                                 if (isset($error)) {
@@ -108,21 +108,13 @@
                                         <label for="page_name">Page Name</label>
                                         <select name="page_name" class="form-control" required>
                                             <option value="">Select Page</option>
-                                            <?php foreach ($pages as $page): ?>
+                                            <?php foreach ($pages as $page) : ?>
                                                 <option value="<?= htmlspecialchars($page) ?>"><?= ucfirst($page) ?></option>
                                             <?php endforeach; ?>
                                         </select>
                                     </div>
 
-                                    <div class="form-group">
-                                        <label for="device_type">Device Type</label>
-                                        <select name="device_type" class="form-control" required>
-                                            <option value="">Select Device</option>
-                                            <option value="desktop">Desktop</option>
-                                            <option value="mobile">Mobile</option>
-                                        </select>
-                                    </div>
-
+                                    // Removed Device Type Selection
                                     <div class="form-group">
                                         <label for="ad_side">Ad Side</label>
                                         <select name="ad_side" class="form-control" required onchange="toggleAdPosition()">
@@ -141,7 +133,7 @@
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
-                                            </select>
+                                        </select>
                                         <small class="form-text text-muted">This is to order ads within the content.</small>
                                     </div>
 

@@ -30,8 +30,8 @@ $result = mysqli_stmt_get_result($stmt);
 
         <div class="row">
 
-        <?php include 'left_side_ads.php'; ?>
-      
+            <?php include 'left_side_ads.php'; ?>
+
 
 
 
@@ -67,28 +67,18 @@ $result = mysqli_stmt_get_result($stmt);
                 </div>
 
 
-                <div id="carouselExampleSlidesOnly" class="carousel slide d-md-none mt-5" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="assets/img/test/theater1.png" class="  img-fluid  d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="assets/img/test/theater2.png" class="img-fluid d-block w-100" alt="...">
-                        </div>
-                        <!-- <div class="carousel-item">
-                        <img src="assets/img/test/23.png" class="img-fluid  d-block w-100" alt="...">
-                    </div> -->
-                    </div>
-                </div>
 
 
+
+                <?php include 'default_ads.php'; ?>
+ 
 
 
 
             </div>
 
 
-   <?php include 'right_side_ads.php'; ?>
+            <?php include 'right_side_ads.php'; ?>
 
 
 

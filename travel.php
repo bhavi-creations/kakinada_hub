@@ -35,34 +35,33 @@
 
                         if (!empty($row['filter_image'])) {
                             echo '
-                <div class="col-12  col-md-6 g-5" >
-                    <a href="travel_details.php?id=' . $id . '" class="travel-card-link">
-                        <div class="card shadow border-0 travel-card" style="background-image: url(\'' . $image . '\');">
-                            <div class="card-overlay travel_card_overlay">
-                                <h5 class="card-title travel_card_tittle">' . $name . '</h5>
-                            </div>
-                        </div>
-                    </a>
-                </div>';
+                        <div class="col-12  col-md-6 g-5" >
+                            <a href="travel_details.php?id=' . $id . '" class="travel-card-link">
+                                <div class="card shadow border-0 travel-card" style="background-image: url(\'' . $image . '\');">
+                                    <div class="card-overlay travel_card_overlay">
+                                        <h5 class="card-title travel_card_tittle">' . $name . '</h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>';
                         }
                     }
                     ?>
                 </div>
 
 
-                <div id="carouselExampleSlidesOnly" class="carousel slide    py-5" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="assets/img/test/c2.png" class="img-fluid d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="assets/img/test/c1.png" class="img-fluid d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="assets/img/test/c3.png" class="img-fluid d-block w-100" alt="...">
-                        </div>
-                    </div>
-                </div>
+
+
+
+
+
+                <?php include 'default_ads.php'; ?>
+
+
+
+
+
+
             </div>
 
 

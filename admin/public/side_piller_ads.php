@@ -69,7 +69,7 @@
                             <div class="custom-card p-3 position-relative">
 
                                 <h5 class="mt-3 card_home_title">Add Side Piller Ads</h5>
-                                <a href="add_banner_adds.php"> <button class="card-header-btn">Click Me</button></a>
+                                <a href="add_side_piller_ads.php"> <button class="card-header-btn">Click Me</button></a>
 
                             </div>
                         </div>
