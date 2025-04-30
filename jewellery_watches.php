@@ -78,7 +78,11 @@
             </h5>
         </div>
         <div class="row">
-            <div class="col-lg-9 col-12">
+
+        <?php include 'left_side_ads.php'; ?>
+          
+
+            <div class="col-lg-8 col-12">
                 <div class="row">
                     <div class="col-md-8 col-12">
 
@@ -122,12 +126,12 @@
                 <div class="row my-5 p-3">
                     <div class="col-md-8 col-12 ">
                         <h6>
-                        Jewelry and watches are more than just accessories—they are timeless expressions of style, sophistication, and personal identity. Whether it's a dazzling diamond necklace, a sleek gold bracelet, or a luxurious timepiece, these pieces add charm and elegance to any look.
+                            Jewelry and watches are more than just accessories—they are timeless expressions of style, sophistication, and personal identity. Whether it's a dazzling diamond necklace, a sleek gold bracelet, or a luxurious timepiece, these pieces add charm and elegance to any look.
 
 
                         </h6>
                         <h6>
-                        Jewelry enhances beauty and signifies love, tradition, and self-expression. From intricately designed earrings to statement rings, every piece tells a story. Watches, on the other hand, combine functionality with fashion, making them an essential accessory for both men and women. Whether you prefer a classic leather strap watch or a high-end designer timepiece, the right watch adds a touch of refinement to any outfit.
+                            Jewelry enhances beauty and signifies love, tradition, and self-expression. From intricately designed earrings to statement rings, every piece tells a story. Watches, on the other hand, combine functionality with fashion, making them an essential accessory for both men and women. Whether you prefer a classic leather strap watch or a high-end designer timepiece, the right watch adds a touch of refinement to any outfit.
 
 
 
@@ -150,7 +154,7 @@
                         <h3 class="text-center">Menu</h3>
                         <div class="menu-container">
                             <div class="menu-item">
-                                <span class="food-name">Diamond Necklace  
+                                <span class="food-name">Diamond Necklace
 
                                 </span>
                                 <span class="price"> $1,200</span>
@@ -161,7 +165,7 @@
                             </div>
                             <div class="menu-item">
                                 <span class="food-name">Silver Earrings </span>
-                                <span class="price">  $250</span>
+                                <span class="price"> $250</span>
                             </div>
                             <div class="menu-item">
                                 <span class="food-name">Orchid Bliss Bouquet </span>
@@ -396,14 +400,9 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3  col-12 text_side_div d-none d-lg-block">
+          
+              <?php include 'right_side_ads.php'; ?>
 
-                <img src="assets/img/test/sideimg2.png" alt="" class="img-fluid">
-
-                <img src="assets/img/test/animation.gif" alt="Animated GIF" class="mt-5">
-
-                <img src="assets/img/test/sideimg1.png" alt="" class="img-fluid mt-5">
-            </div>
 
             <div id="mobileModal" class="mobile-modal-overlay">
                 <div class="mobile-modal-content">

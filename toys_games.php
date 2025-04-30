@@ -69,7 +69,7 @@
 
 
 
-<section  class="bg_section py-5  toys_section">
+<section class="bg_section py-5  toys_section">
     <div class="container">
 
         <div class="text-center   ">
@@ -77,7 +77,12 @@
             <h5>Fun and Educational Toys for Kids</h5>
         </div>
         <div class="row">
-            <div class="col-lg-9 col-12">
+
+
+        <?php include 'left_side_ads.php'; ?>
+
+
+            <div class="col-lg-8 col-12">
                 <div class="row">
                     <div class="col-md-8 col-12">
 
@@ -119,7 +124,7 @@
                 <div class="row my-5 p-3">
                     <div class="col-md-8 col-12 ">
                         <h6>
-                        Toys and games play a crucial role in a child’s growth and development. They are not just for entertainment but also help enhance cognitive skills, creativity, and social interactions. From educational toys that improve problem-solving abilities to interactive games that encourage teamwork, there are countless options to keep children engaged. Classic board games, building blocks, and puzzles stimulate young minds, while outdoor games promote physical activity and coordination.
+                            Toys and games play a crucial role in a child’s growth and development. They are not just for entertainment but also help enhance cognitive skills, creativity, and social interactions. From educational toys that improve problem-solving abilities to interactive games that encourage teamwork, there are countless options to keep children engaged. Classic board games, building blocks, and puzzles stimulate young minds, while outdoor games promote physical activity and coordination.
 
 
 
@@ -143,43 +148,43 @@
                         <h3 class="text-center">Menu</h3>
                         <div class="menu-container">
                             <div class="menu-item">
-                                <span class="food-name">Building Blocks Set 	</span>
-                                <span class="price">  $25</span>
+                                <span class="food-name">Building Blocks Set </span>
+                                <span class="price"> $25</span>
                             </div>
                             <div class="menu-item">
                                 <span class="food-name">
-                                Remote Control Car </span>
-                                <span class="price">  $40	</span>
+                                    Remote Control Car </span>
+                                <span class="price"> $40 </span>
                             </div>
                             <div class="menu-item">
                                 <span class="food-name">
-                                Interactive Learning Tablet </span>
+                                    Interactive Learning Tablet </span>
                                 <span class="price"> $60</span>
                             </div>
                             <div class="menu-item">
                                 <span class="food-name">
-                                Soft Plush Teddy Bear  	</span>
+                                    Soft Plush Teddy Bear </span>
                                 <span class="price"> $15
                                 </span>
                             </div>
                             <div class="menu-item">
-                                <span class="food-name">Dollhouse with Accessories  </span>
-                                <span class="price">  $50</span>
+                                <span class="food-name">Dollhouse with Accessories </span>
+                                <span class="price"> $50</span>
                             </div>
 
                             <div class="menu-item">
                                 <span class="food-name">
-                                Puzzle Set for Brain Development  </span>
-                                <span class="price">  $20 </span>
+                                    Puzzle Set for Brain Development </span>
+                                <span class="price"> $20 </span>
                             </div>
                             <div class="menu-item">
                                 <span class="food-name">
-                                Kids’ Play Tent House </span>
-                                <span class="price">  $45 </span>
+                                    Kids’ Play Tent House </span>
+                                <span class="price"> $45 </span>
                             </div>
                             <div class="menu-item">
                                 <span class="food-name">
-                                Electric Toy Train Set with Tracks  </span>
+                                    Electric Toy Train Set with Tracks </span>
                                 <span class="price"> $50</span>
                             </div>
                         </div>
@@ -390,14 +395,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3  col-12 text_side_div d-none d-lg-block">
-
-                <img src="assets/img/test/sideimg2.png" alt="" class="img-fluid">
-
-                <img src="assets/img/test/animation.gif" alt="Animated GIF" class="mt-5">
-
-                <img src="assets/img/test/sideimg1.png" alt="" class="img-fluid mt-5">
-            </div>
+    
+            <?php include 'right_side_ads.php'; ?>
 
             <div id="mobileModal" class="mobile-modal-overlay">
                 <div class="mobile-modal-content">
@@ -492,4 +491,4 @@
 <?php include 'chat_bot.php';  ?>
 
 
-<?php include 'footer.php';  ?>                                                                                                                                     
+<?php include 'footer.php';  ?>

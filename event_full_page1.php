@@ -8,14 +8,9 @@
 
 
         <div class="row">
-            <div class="col-lg-2  col-12 text_side_div d-none d-lg-block">
-
-                <img src="assets/img/test/sideimg2.png" alt="" class="img-fluid side_dive_images">
-
-                <img src="assets/img/test/animation.gif" alt="Animated GIF" class=" my-4 side_dive_images">
-
-                <img src="assets/img/test/sideimg1.png" alt="" class="img-fluid  side_dive_images">
-            </div>
+            
+        <?php include 'left_side_ads.php'; ?>
+           
 
             <div class="col-lg-8 col-12">
                 <div class="row scrollable-list">
@@ -290,14 +285,10 @@
 
 
             </div>
-            <div class="col-lg-2  col-12 text_side_div d-none d-lg-block">
+           
+             <?php include 'right_side_ads.php'; ?>
 
-                <img src="assets/img/test/sideimg2.png" alt="" class="img-fluid side_dive_images">
 
-                <img src="assets/img/test/animation.gif" alt="Animated GIF" class=" my-4 side_dive_images">
-
-                <img src="assets/img/test/sideimg1.png" alt="" class="img-fluid  side_dive_images">
-            </div>
 
 
             <div id="mobileModal" class="mobile-modal-overlay">

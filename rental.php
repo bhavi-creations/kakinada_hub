@@ -57,7 +57,7 @@
                             <div class="d-flex justify-content-between align-items-center">
                                 <p class="movie-label"><strong>Model :</strong></p>
                                 <p class="cast_names">
-                                Jeep Compass</p>
+                                    Jeep Compass</p>
                             </div>
 
                             <div class="d-flex justify-content-between align-items-center">
@@ -94,8 +94,8 @@
                         <div class="product-content mt-3">
                             <div class="d-flex justify-content-between align-items-center">
                                 <p class="movie-label"><strong>Model :</strong></p>
-                                <p class="cast_names">   
-                                Honda City</p>
+                                <p class="cast_names">
+                                    Honda City</p>
                             </div>
 
                             <div class="d-flex justify-content-between align-items-center">
@@ -163,8 +163,8 @@
                         <div class="product-content mt-3">
                             <div class="d-flex justify-content-between align-items-center">
                                 <p class="movie-label"><strong>Model :</strong></p>
-                                <p class="cast_names"> 
-                                  Innova Crysta</p>
+                                <p class="cast_names">
+                                    Innova Crysta</p>
                             </div>
 
                             <div class="d-flex justify-content-between align-items-center">
@@ -190,7 +190,7 @@
                     </div>
                 </a>
             </div>
-            
+
 
 
 

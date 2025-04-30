@@ -77,7 +77,13 @@
             <h5>Crafted to Perfection, Designed for You</h5>
         </div>
         <div class="row">
-            <div class="col-lg-9 col-12">
+
+        <?php include 'left_side_ads.php'; ?>
+          
+
+
+
+            <div class="col-lg-8 col-12">
                 <div class="row">
                     <div class="col-md-8 col-12">
 
@@ -119,15 +125,15 @@
                 <div class="row my-5 p-3">
                     <div class="col-md-8 col-12 ">
                         <h6>
-                        Malabar is a globally recognized jewelry brand known for its commitment to purity, craftsmanship, and exceptional service. Established in 1993, Malabar has grown into one of the largest jewelry retail chains, offering a wide range of gold, diamond, platinum, and gemstone jewelry.
+                            Malabar is a globally recognized jewelry brand known for its commitment to purity, craftsmanship, and exceptional service. Established in 1993, Malabar has grown into one of the largest jewelry retail chains, offering a wide range of gold, diamond, platinum, and gemstone jewelry.
 
-                       </h6>
+                        </h6>
 
-                       <h6>
-                       With showrooms across India, the Middle East, Southeast Asia, and the USA, Malabar is trusted for its high-quality designs, ethical sourcing, and transparent pricing. The brand blends traditional artistry with modern aesthetics, catering to diverse customer preferences.
+                        <h6>
+                            With showrooms across India, the Middle East, Southeast Asia, and the USA, Malabar is trusted for its high-quality designs, ethical sourcing, and transparent pricing. The brand blends traditional artistry with modern aesthetics, catering to diverse customer preferences.
 
 
-                       </h6>
+                        </h6>
                     </div>
 
 
@@ -146,18 +152,18 @@
                         <div class="menu-container">
                             <div class="menu-item">
                                 <span class="food-name">Gold Necklace (22K, 10g) </span>
-                                <span class="price">  ₹65,000 </span>
+                                <span class="price"> ₹65,000 </span>
                             </div>
                             <div class="menu-item">
                                 <span class="food-name">Gold Bangles (22K, per pair) </span>
                                 <span class="price"> ₹1,00,000</span>
                             </div>
                             <div class="menu-item">
-                                <span class="food-name">Diamond Necklace  </span>
+                                <span class="food-name">Diamond Necklace </span>
                                 <span class="price">₹3,00,000 </span>
                             </div>
                             <div class="menu-item">
-                                <span class="food-name">Diamond Ring   </span>
+                                <span class="food-name">Diamond Ring </span>
                                 <span class="price">₹90,000</span>
                             </div>
                             <div class="menu-item">
@@ -167,11 +173,11 @@
 
                             <div class="menu-item">
                                 <span class="food-name">Platinum Ring </span>
-                                <span class="price">  ₹50,000 </span>
+                                <span class="price"> ₹50,000 </span>
                             </div>
                             <div class="menu-item">
-                                <span class="food-name">Emerald Earrings  </span>
-                                <span class="price">₹1,20,000  </span>
+                                <span class="food-name">Emerald Earrings </span>
+                                <span class="price">₹1,20,000 </span>
                             </div>
                             <div class="menu-item">
                                 <span class="food-name">Sapphire Ring – ₹90,000 </span>
@@ -385,14 +391,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3  col-12 text_side_div d-none d-lg-block">
-
-                <img src="assets/img/test/sideimg2.png" alt="" class="img-fluid">
-
-                <img src="assets/img/test/animation.gif" alt="Animated GIF" class="mt-5">
-
-                <img src="assets/img/test/sideimg1.png" alt="" class="img-fluid mt-5">
-            </div>
+              <?php include 'right_side_ads.php'; ?>
 
             <div id="mobileModal" class="mobile-modal-overlay">
                 <div class="mobile-modal-content">

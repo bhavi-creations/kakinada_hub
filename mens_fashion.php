@@ -77,7 +77,12 @@
             <h5>Men's Fashion – Classic, Bold, and Timeless Styles</h5>
         </div>
         <div class="row">
-            <div class="col-lg-9 col-12">
+
+        <?php include 'left_side_ads.php'; ?>
+         
+
+
+            <div class="col-lg-8 col-12">
                 <div class="row">
                     <div class="col-md-8 col-12">
 
@@ -119,10 +124,10 @@
                 <div class="row my-5 p-3">
                     <div class="col-md-8 col-12 ">
                         <h6>
-                        Men's fashion is all about confidence, comfort, and style. Over the years, men's fashion has evolved, offering a variety of options that cater to every man’s personal style. Whether it's formal wear, casual attire, or streetwear, men’s fashion embraces versatility, enabling men to express their personalities through their clothing choices. Fashion isn’t just for women; it’s an essential part of a man’s identity and lifestyle.
+                            Men's fashion is all about confidence, comfort, and style. Over the years, men's fashion has evolved, offering a variety of options that cater to every man’s personal style. Whether it's formal wear, casual attire, or streetwear, men’s fashion embraces versatility, enabling men to express their personalities through their clothing choices. Fashion isn’t just for women; it’s an essential part of a man’s identity and lifestyle.
 
                         </h6>
-                        
+
                     </div>
 
 
@@ -149,28 +154,28 @@
                             </div>
                             <div class="menu-item">
                                 <span class="food-name">Denim Jacket </span>
-                                <span class="price">  ₹2,500 to ₹6,000 </span>
+                                <span class="price"> ₹2,500 to ₹6,000 </span>
                             </div>
                             <div class="menu-item">
                                 <span class="food-name">Casual Trousers </span>
-                                <span class="price">  ₹1,200 to ₹3,500  </span>
+                                <span class="price"> ₹1,200 to ₹3,500 </span>
                             </div>
                             <div class="menu-item">
                                 <span class="food-name">Cargo Shorts </span>
-                                <span class="price">  ₹1,200 to ₹3,000 </span>
+                                <span class="price"> ₹1,200 to ₹3,000 </span>
                             </div>
 
                             <div class="menu-item">
-                                <span class="food-name">Leather Jacket  </span>
-                                <span class="price">  ₹6,000 to ₹15,000</span>
+                                <span class="food-name">Leather Jacket </span>
+                                <span class="price"> ₹6,000 to ₹15,000</span>
                             </div>
                             <div class="menu-item">
                                 <span class="food-name">Blazer </span>
-                                <span class="price">  ₹5,000 to ₹12,000  </span>
+                                <span class="price"> ₹5,000 to ₹12,000 </span>
                             </div>
                             <div class="menu-item">
-                                <span class="food-name">Zip-Up Hoodie  </span>
-                                <span class="price">  ₹1,200 to ₹3,500 </span>
+                                <span class="food-name">Zip-Up Hoodie </span>
+                                <span class="price"> ₹1,200 to ₹3,500 </span>
                             </div>
                         </div>
 
@@ -380,15 +385,10 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3  col-12 text_side_div d-none d-lg-block">
+            
+   <?php include 'right_side_ads.php'; ?>
 
-                <img src="assets/img/test/sideimg2.png" alt="" class="img-fluid">
-
-                <img src="assets/img/test/animation.gif" alt="Animated GIF" class="mt-5">
-
-                <img src="assets/img/test/sideimg1.png" alt="" class="img-fluid mt-5">
-            </div>
-
+   
             <div id="mobileModal" class="mobile-modal-overlay">
                 <div class="mobile-modal-content">
                     <button class="close-btn" onclick="closeMobileModal()">×</button>

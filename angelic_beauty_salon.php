@@ -77,6 +77,8 @@
             <h5>Experience Luxury & Elegance at Angelic Beauty Salon</h5>
         </div>
         <div class="row">
+            <?php include 'left_side_ads.php'; ?>
+
             <div class="col-lg-9 col-12">
                 <div class="row">
                     <div class="col-md-8 col-12">
@@ -384,14 +386,9 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3  col-12 text_side_div d-none d-lg-block">
 
-                <img src="assets/img/test/sideimg2.png" alt="" class="img-fluid">
 
-                <img src="assets/img/test/animation.gif" alt="Animated GIF" class="mt-5">
-
-                <img src="assets/img/test/sideimg1.png" alt="" class="img-fluid mt-5">
-            </div>
+            <?php include 'right_side_ads.php'; ?>
 
             <div id="mobileModal" class="mobile-modal-overlay">
                 <div class="mobile-modal-content">

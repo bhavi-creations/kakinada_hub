@@ -1,4 +1,5 @@
 <?php
+
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
@@ -29,7 +30,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $mail->Port = 587;
 
         // Recipients
-        $mail->setFrom('kakinadahub2025@gmail.com', 'kakinadahub.com' ); // Your Gmail email and name
+        $mail->setFrom('kakinadahub2025@gmail.com', 'kakinadahub.com'); // Your Gmail email and name
         $mail->addAddress('kakinadahub2025@gmail.com', 'kakinadahub.com'); // Recipient's email and name
 
         // Content
@@ -53,4 +54,3 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // If accessed directly without POST data
     echo 'Access Denied';
 }
-?>

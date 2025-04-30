@@ -165,7 +165,7 @@
                                 <span class="price"> ₹1,000</span>
                             </div>
                             <div class="menu-item">
-                                <span class="food-name">Casual Shoes   </span>
+                                <span class="food-name">Casual Shoes </span>
                                 <span class="price">₹2,000</span>
                             </div>
                             <div class="menu-item">

@@ -20,14 +20,7 @@
 
 
         <div class="row">
-            <div class="col-lg-2  col-12 text_side_div d-none d-lg-block">
-
-                <img src="assets/img/test/sideimg2.png" alt="" class="img-fluid side_dive_images">
-
-                <img src="assets/img/test/animation.gif" alt="Animated GIF" class=" my-4 side_dive_images">
-
-                <img src="assets/img/test/sideimg1.png" alt="" class="img-fluid  side_dive_images">
-            </div>
+            <?php include 'left_side_ads.php'; ?>
 
             <div class="col-lg-8 col-12">
                 <div class="row scrollable-list">
@@ -76,18 +69,18 @@
                     </div>
 
                     <div id="carouselExampleSlidesOnly" class="carousel slide d-md-none" data-bs-ride="carousel">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="assets/img/test/21.png" class="  img-fluid  d-block w-100" alt="...">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="assets/img/test/22.png" class="img-fluid d-block w-100" alt="...">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="assets/img/test/23.png" class="img-fluid  d-block w-100" alt="...">
-                                </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="assets/img/test/21.png" class="  img-fluid  d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/img/test/22.png" class="img-fluid d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/img/test/23.png" class="img-fluid  d-block w-100" alt="...">
                             </div>
                         </div>
+                    </div>
 
 
                     <div class=" col-12 py-3">
@@ -309,14 +302,10 @@
 
 
             </div>
-            <div class="col-lg-2  col-12 text_side_div d-none d-lg-block">
 
-                <img src="assets/img/test/sideimg2.png" alt="" class="img-fluid side_dive_images">
 
-                <img src="assets/img/test/animation.gif" alt="Animated GIF" class=" my-4 side_dive_images">
-
-                <img src="assets/img/test/sideimg1.png" alt="" class="img-fluid  side_dive_images">
-            </div>
+           
+            <?php include 'right_side_ads.php'; ?>
 
 
             <div id="mobileModal" class="mobile-modal-overlay">

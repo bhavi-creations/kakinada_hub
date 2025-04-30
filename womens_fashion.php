@@ -77,7 +77,12 @@
             <h5>Elevate Your Style with Trendy Women's Fashion</h5>
         </div>
         <div class="row">
-            <div class="col-lg-9 col-12">
+
+
+  <?php include 'left_side_ads.php'; ?>
+
+
+            <div class="col-lg-8 col-12">
                 <div class="row">
                     <div class="col-md-8 col-12">
 
@@ -119,13 +124,13 @@
                 <div class="row my-5 p-3">
                     <div class="col-md-8 col-12 ">
                         <h6>
-                        Women's fashion is a dynamic and ever-evolving industry that allows women to express their individuality, creativity, and confidence. From classic pieces to contemporary trends, fashion is an essential aspect of every woman's daily life. Whether it’s a casual outing, a formal event, or a special occasion, there’s always something in fashion that fits perfectly.
+                            Women's fashion is a dynamic and ever-evolving industry that allows women to express their individuality, creativity, and confidence. From classic pieces to contemporary trends, fashion is an essential aspect of every woman's daily life. Whether it’s a casual outing, a formal event, or a special occasion, there’s always something in fashion that fits perfectly.
 
 
 
                         </h6>
                         <h6>
-                        Fashion is not just about following trends; it’s about choosing pieces that make a woman feel comfortable, empowered, and stylish. The clothing and accessories a woman chooses often reflect her personality, mood, and the environment she’s in, making fashion an essential form of self-expression.
+                            Fashion is not just about following trends; it’s about choosing pieces that make a woman feel comfortable, empowered, and stylish. The clothing and accessories a woman chooses often reflect her personality, mood, and the environment she’s in, making fashion an essential form of self-expression.
 
 
                         </h6>
@@ -146,11 +151,11 @@
                         <h3 class="text-center">Menu</h3>
                         <div class="menu-container">
                             <div class="menu-item">
-                                <span class="food-name">Casual T-Shirts  </span>
+                                <span class="food-name">Casual T-Shirts </span>
                                 <span class="price"> ₹500 to ₹1,500 </span>
                             </div>
                             <div class="menu-item">
-                                <span class="food-name">Maxi Dresses  </span>
+                                <span class="food-name">Maxi Dresses </span>
                                 <span class="price"> ₹1,500 to ₹4,000</span>
                             </div>
                             <div class="menu-item">
@@ -168,14 +173,14 @@
 
                             <div class="menu-item">
                                 <span class="food-name">Flats and Sandals </span>
-                                <span class="price">  ₹500 to ₹2,500</span>
+                                <span class="price"> ₹500 to ₹2,500</span>
                             </div>
                             <div class="menu-item">
-                                <span class="food-name">Handbags  </span>
+                                <span class="food-name">Handbags </span>
                                 <span class="price"> ₹1,500 to ₹10,000 </span>
                             </div>
                             <div class="menu-item">
-                                <span class="food-name">Sunglasses  </span>
+                                <span class="food-name">Sunglasses </span>
                                 <span class="price"> ₹1,000 to ₹4,000</span>
                             </div>
                         </div>
@@ -386,14 +391,12 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3  col-12 text_side_div d-none d-lg-block">
+           
+            
 
-                <img src="assets/img/test/sideimg2.png" alt="" class="img-fluid">
 
-                <img src="assets/img/test/animation.gif" alt="Animated GIF" class="mt-5">
-
-                <img src="assets/img/test/sideimg1.png" alt="" class="img-fluid mt-5">
-            </div>
+          
+            <?php include 'right_side_ads.php'; ?>
 
             <div id="mobileModal" class="mobile-modal-overlay">
                 <div class="mobile-modal-content">

@@ -16,18 +16,14 @@ $result = mysqli_query($conn, $query);
 
 <section class="bg_section responsive_section">
     <div class="container ">
-    <!-- <h1 class="text-center gradient_text_color spacing_for_htag">Available Travel Options</h1> -->
+        <!-- <h1 class="text-center gradient_text_color spacing_for_htag">Available Travel Options</h1> -->
 
 
 
         <div class="row py-5">
 
-            <div class="col-lg-2  col-12 text_side_div d-none d-lg-block">
-                <img src="assets/img/test/sideimg2.png" alt="" class="img-fluid side_dive_images">
-                <img src="assets/img/test/animation.gif" alt="Animated GIF" class=" my-4 side_dive_images">
-                <img src="assets/img/test/sideimg1.png" alt="" class="img-fluid  side_dive_images">
-            </div>
 
+            <?php include 'left_side_ads.php'; ?>
 
 
             <div class="col-lg-8 col-12">
@@ -74,7 +70,7 @@ $result = mysqli_query($conn, $query);
                                 <p class="cast_names">' . htmlspecialchars($seating) . '</p>
                               </div>';
                                 }
-                               
+
                                 if (!empty($mileage)) {
                                     echo '<div class="d-flex justify-content-between align-items-center">
                                 <p class="movie-label"><strong>1 Liter :</strong></p>
@@ -107,7 +103,7 @@ $result = mysqli_query($conn, $query);
                               </div>';
                                 }
 
-                            
+
 
                                 if (!empty($driver_age)) {
                                     echo '<div class="d-flex justify-content-between align-items-center">
@@ -124,7 +120,7 @@ $result = mysqli_query($conn, $query);
                               </div>';
                                 }
 
-                               
+
                                 if (!empty($driver_gender)) {
                                     echo '<div class="d-flex justify-content-between align-items-center">
                                 <p class="movie-label"><strong>Gender :</strong></p>
@@ -171,11 +167,8 @@ $result = mysqli_query($conn, $query);
             </div>
 
 
-            <div class="col-lg-2  col-12 text_side_div d-none d-lg-block">
-                <img src="assets/img/test/sideimg2.png" alt="" class="img-fluid side_dive_images">
-                <img src="assets/img/test/animation.gif" alt="Animated GIF" class=" my-4 side_dive_images">
-                <img src="assets/img/test/sideimg1.png" alt="" class="img-fluid  side_dive_images">
-            </div>
+
+            <?php include 'right_side_ads.php'; ?>
 
 
 

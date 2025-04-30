@@ -12,121 +12,121 @@
         <div class="row g-4">
 
 
-           
 
 
 
-                <div class="col-6 col-md-3">
-                    <a href="business_layout.php">
 
-                        <div class="card bg-dark text-white shadow-lg  d-flex flex-column align-items-center"
-                            style="height: 220px;">
-                            <img src="assets/img/self_images/food_train.jpeg" alt="Offer Image" class="img-fluid pic"
-                                style="width: 100%; height: 220px; object-fit: cover;">
-                            <h3 class="mt-2 p-3 text-center  list_page_test_tittle flex-grow-1 text-white">Food Train</h3>
-                        </div>
-                    </a>
+            <div class="col-6 col-md-3">
+                <a href="business_layout.php">
 
-                </div>
+                    <div class="card bg-dark text-white shadow-lg  d-flex flex-column align-items-center"
+                        style="height: 220px;">
+                        <img src="assets/img/self_images/food_train.jpeg" alt="Offer Image" class="img-fluid pic"
+                            style="width: 100%; height: 220px; object-fit: cover;">
+                        <h3 class="mt-2 p-3 text-center  list_page_test_tittle flex-grow-1 text-white">Food Train</h3>
+                    </div>
+                </a>
 
-                <!-- Card 1 -->
-                <div class="col-6 col-md-3">
-                    <a href="business_layout.php">
+            </div>
 
-                        <div class="card bg-dark text-white  shadow-lg  d-flex flex-column align-items-center "
-                            style="height: 220px;">
-                            <img src="assets/img/self_images/bbq.png" alt="Offer Image" class="img-fluid pic"
-                                style="width: 100%; height: 220px; object-fit: cover;">
-                            <h3 class="mt-2 p-3 text-center  list_page_test_tittle flex-grow-1 text-white"> BBQ</h3>
-                        </div>
-                    </a>
-                </div>
+            <!-- Card 1 -->
+            <div class="col-6 col-md-3">
+                <a href="business_layout.php">
 
-
-
-                <!-- Card 1 -->
-                <div class="col-6 col-md-3">
-                    <a href="business_layout.php">
-
-                        <div class="card bg-dark text-white  shadow-lg  d-flex flex-column align-items-center "
-                            style="height: 220px;">
-                            <img src="assets/img/self_images/kritunga.jpeg" alt="Offer Image" class="img-fluid pic"
-                                style="width: 100%; height: 220px; object-fit: cover;">
-                            <h3 class="mt-2 p-3 text-center  list_page_test_tittle flex-grow-1 text-white"> Kritunga</h3>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="col-6 col-md-3">
-                    <a href="business_layout.php">
-
-                        <div class="card bg-dark text-white  shadow-lg  d-flex flex-column align-items-center "
-                            style="height: 220px;">
-                            <img src="assets/img/self_images/chittibabu.jpeg" alt="Offer Image" class="img-fluid pic"
-                                style="width: 100%; height: 220px; object-fit: cover;">
-                            <h3 class="mt-2 p-3 text-center  list_page_test_tittle flex-grow-1 text-white"> Chitti Babu </h3>
-                        </div>
-                    </a>
-                </div>
-                <!-- Card 2 -->
-                <div class="col-6 col-md-3">
-                    <a href="business_layout.php">
+                    <div class="card bg-dark text-white  shadow-lg  d-flex flex-column align-items-center "
+                        style="height: 220px;">
+                        <img src="assets/img/self_images/bbq.png" alt="Offer Image" class="img-fluid pic"
+                            style="width: 100%; height: 220px; object-fit: cover;">
+                        <h3 class="mt-2 p-3 text-center  list_page_test_tittle flex-grow-1 text-white"> BBQ</h3>
+                    </div>
+                </a>
+            </div>
 
 
-                        <div class="card bg-dark text-white shadow-lg  d-flex flex-column align-items-center"
-                            style="height: 220px;">
-                            <img src="assets/img/self_images/arabian.jpeg" alt="Offer Image" class="img-fluid pic"
-                                style="width: 100%; height: 220px; object-fit: cover;">
-                            <h3 class="mt-2 p-3 text-center  list_page_test_tittle flex-grow-1 text-white">Arabian nights</h3>
-                        </div>
-                    </a>
 
-                </div>
+            <!-- Card 1 -->
+            <div class="col-6 col-md-3">
+                <a href="business_layout.php">
 
-                <!-- Card 1 -->
-                <div class="col-6 col-md-3">
-                    <a href="business_layout.php">
+                    <div class="card bg-dark text-white  shadow-lg  d-flex flex-column align-items-center "
+                        style="height: 220px;">
+                        <img src="assets/img/self_images/kritunga.jpeg" alt="Offer Image" class="img-fluid pic"
+                            style="width: 100%; height: 220px; object-fit: cover;">
+                        <h3 class="mt-2 p-3 text-center  list_page_test_tittle flex-grow-1 text-white"> Kritunga</h3>
+                    </div>
+                </a>
+            </div>
 
-                        <div class="card bg-dark text-white  shadow-lg  d-flex flex-column align-items-center "
-                            style="height: 220px;">
-                            <img src="assets/img/self_images/hungry_birds.png" alt="Offer Image" class="img-fluid pic"
-                                style="width: 100%; height: 220px; object-fit: cover;">
-                            <h3 class="mt-2 p-3 text-center  list_page_test_tittle flex-grow-1 text-white">Hungry Birds</h3>
-                        </div>
-                    </a>
-                </div>
+            <div class="col-6 col-md-3">
+                <a href="business_layout.php">
 
-                <!-- Card 2 -->
-                <div class="col-6 col-md-3">
-                    <a href="business_layout.php">
-
-
-                        <div class="card bg-dark text-white shadow-lg  d-flex flex-column align-items-center"
-                            style="height: 220px;">
-                            <img src="assets/img/self_images/khaidi.jpeg" alt="Offer Image" class="img-fluid pic"
-                                style="width: 100%; height: 220px; object-fit: cover;">
-                            <h3 class="mt-2 p-3 text-center  list_page_test_tittle flex-grow-1 text-white">Khaidi</h3>
-                        </div>
-                    </a>
-                </div>
-
-                <!-- Card 1 -->
-                <div class="col-6 col-md-3">
-                    <a href="business_layout.php">
+                    <div class="card bg-dark text-white  shadow-lg  d-flex flex-column align-items-center "
+                        style="height: 220px;">
+                        <img src="assets/img/self_images/chittibabu.jpeg" alt="Offer Image" class="img-fluid pic"
+                            style="width: 100%; height: 220px; object-fit: cover;">
+                        <h3 class="mt-2 p-3 text-center  list_page_test_tittle flex-grow-1 text-white"> Chitti Babu </h3>
+                    </div>
+                </a>
+            </div>
+            <!-- Card 2 -->
+            <div class="col-6 col-md-3">
+                <a href="business_layout.php">
 
 
-                        <div class="card bg-dark text-white  shadow-lg  d-flex flex-column align-items-center "
-                            style="height: 220px;">
-                            <img src="assets/img/self_images/zeeshan.webp" alt="Offer Image" class="img-fluid pic"
-                                style="width: 100%; height: 220px; object-fit: cover;">
-                            <h3 class="mt-2 p-3 text-center  list_page_test_tittle flex-grow-1 text-white"> Zeeshan</h3>
-                        </div>
-                    </a>
-                </div>
+                    <div class="card bg-dark text-white shadow-lg  d-flex flex-column align-items-center"
+                        style="height: 220px;">
+                        <img src="assets/img/self_images/arabian.jpeg" alt="Offer Image" class="img-fluid pic"
+                            style="width: 100%; height: 220px; object-fit: cover;">
+                        <h3 class="mt-2 p-3 text-center  list_page_test_tittle flex-grow-1 text-white">Arabian nights</h3>
+                    </div>
+                </a>
 
-         
+            </div>
 
-      
+            <!-- Card 1 -->
+            <div class="col-6 col-md-3">
+                <a href="business_layout.php">
+
+                    <div class="card bg-dark text-white  shadow-lg  d-flex flex-column align-items-center "
+                        style="height: 220px;">
+                        <img src="assets/img/self_images/hungry_birds.png" alt="Offer Image" class="img-fluid pic"
+                            style="width: 100%; height: 220px; object-fit: cover;">
+                        <h3 class="mt-2 p-3 text-center  list_page_test_tittle flex-grow-1 text-white">Hungry Birds</h3>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-6 col-md-3">
+                <a href="business_layout.php">
+
+
+                    <div class="card bg-dark text-white shadow-lg  d-flex flex-column align-items-center"
+                        style="height: 220px;">
+                        <img src="assets/img/self_images/khaidi.jpeg" alt="Offer Image" class="img-fluid pic"
+                            style="width: 100%; height: 220px; object-fit: cover;">
+                        <h3 class="mt-2 p-3 text-center  list_page_test_tittle flex-grow-1 text-white">Khaidi</h3>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Card 1 -->
+            <div class="col-6 col-md-3">
+                <a href="business_layout.php">
+
+
+                    <div class="card bg-dark text-white  shadow-lg  d-flex flex-column align-items-center "
+                        style="height: 220px;">
+                        <img src="assets/img/self_images/zeeshan.webp" alt="Offer Image" class="img-fluid pic"
+                            style="width: 100%; height: 220px; object-fit: cover;">
+                        <h3 class="mt-2 p-3 text-center  list_page_test_tittle flex-grow-1 text-white"> Zeeshan</h3>
+                    </div>
+                </a>
+            </div>
+
+
+
+
 
 
 

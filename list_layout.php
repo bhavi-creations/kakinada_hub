@@ -9,20 +9,20 @@
 
 <section class="bg_section spacing_for_htag responsive_section">
     <div class="container ">
-    <h1 class="text-center gradient_text_color spacing_for_htag">Movie Theaters</h1>
+        <h1 class="text-center gradient_text_color spacing_for_htag">Movie Theaters</h1>
         <div class="row g-4">
-        
+
 
 
             <div class="col-6 col-md-3">
-            <a href="cc.php">
+                <a href="cc.php">
 
-                <div class="card bg-dark text-white shadow-lg  d-flex flex-column align-items-center"
-                    style="height: 220px;">
-                    <img src="assets/img/self_images/cc.jpg" alt="Offer Image" class="img-fluid pic"
-                        style="width: 100%; height: 220px; object-fit: cover;">
-                    <h3 class="mt-2 p-3 text-center  list_page_test_tittle flex-grow-1 text-white">C & C</h3>
-                </div>
+                    <div class="card bg-dark text-white shadow-lg  d-flex flex-column align-items-center"
+                        style="height: 220px;">
+                        <img src="assets/img/self_images/cc.jpg" alt="Offer Image" class="img-fluid pic"
+                            style="width: 100%; height: 220px; object-fit: cover;">
+                        <h3 class="mt-2 p-3 text-center  list_page_test_tittle flex-grow-1 text-white">C & C</h3>
+                    </div>
                 </a>
 
             </div>
@@ -59,7 +59,7 @@
                         style="height: 220px;">
                         <img src="assets/img/self_images/geet_sangeet.jpg" alt="Offer Image" class="img-fluid pic"
                             style="width: 100%; height: 220px; object-fit: cover;">
-                        <h3 class="mt-2 p-3 text-center  list_page_test_tittle flex-grow-1 text-white">   Geeth Sangeeth</h3>
+                        <h3 class="mt-2 p-3 text-center  list_page_test_tittle flex-grow-1 text-white"> Geeth Sangeeth</h3>
                     </div>
                 </a>
             </div>

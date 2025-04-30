@@ -1,66 +1,67 @@
 <?php include 'navbar.php';  ?>
 
-    
-
-
-    <section class="bg_section">
-        <div class="container">
-
-            <div class="text-center   ">
-                <h1>Welcome to The Royal Touch</h1>
-                <h5>Relax, Rejuvenate, Glow – Ultimate Salon Experience</h5>
-            </div>
-            <div class="row">
-                <div class="col-lg-9 col-12">
-                    <div class="row">
-                        <div class="col-md-8 col-12">
 
 
 
+<section class="bg_section">
+    <div class="container">
+
+        <div class="text-center   ">
+            <h1>Welcome to The Royal Touch</h1>
+            <h5>Relax, Rejuvenate, Glow – Ultimate Salon Experience</h5>
+        </div>
+        <div class="row">
 
 
-                            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active">
-                                        <img src="assets/img/test/21.png" class="  img-fluid  d-block w-100" alt="...">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="assets/img/test/22.png" class="img-fluid d-block w-100" alt="...">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="assets/img/test/23.png" class="img-fluid  d-block w-100" alt="...">
-                                    </div>
+            <?php include 'left_side_ads.php'; ?>
+
+
+            <div class="col-lg-8 col-12">
+                <div class="row">
+                    <div class="col-md-8 col-12">
+
+
+
+
+
+                        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="assets/img/test/21.png" class="  img-fluid  d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/img/test/22.png" class="img-fluid d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/img/test/23.png" class="img-fluid  d-block w-100" alt="...">
                                 </div>
                             </div>
-
-                             
                         </div>
-                        <div class="col-md-4 col-12 p-3">
-                            <div class="product-content">
-                                <h3>The Royal Touch</h3>
-                                <p class="product-title h5 mt-1">Luxury Salon & Spa for Ultimate Relaxation</p>
 
-                                <div class="rating-wrap">
-                                    <div class="star-rating " role="img" aria-label="Rated 5.00 out of 5"><span
-                                            style="width:100%">Rated <strong class="rating">5.00</strong> out of
-                                            5</span></div>
-                                </div>
 
-                                <!-- <span class="price">$120.00</span> -->
+                    </div>
+                    <div class="col-md-4 col-12 p-3">
+                        <div class="product-content">
+                            <h3>The Royal Touch</h3>
+                            <p class="product-title h5 mt-1">Luxury Salon & Spa for Ultimate Relaxation</p>
+
+                            <div class="rating-wrap">
+                                <div class="star-rating " role="img" aria-label="Rated 5.00 out of 5"><span
+                                        style="width:100%">Rated <strong class="rating">5.00</strong> out of
+                                        5</span></div>
                             </div>
+
+                            <!-- <span class="price">$120.00</span> -->
                         </div>
                     </div>
-                    <div class="row my-5 p-3">
-                        <div class="col-md-8 col-12 ">
-                            <h6>
+                </div>
+                <div class="row my-5 p-3">
+                    <div class="col-md-8 col-12 ">
+                        <h6>
                             Royal Touch Salon & Spa offers a luxurious escape where beauty meets elegance. Our expert stylists and therapists provide top-tier haircuts, styling, skincare, and rejuvenating spa treatments. With a commitment to excellence, we use premium products and the latest techniques to ensure you look and feel your best. Experience a royal touch of pampering in a relaxing and sophisticated ambiance. Whether it's a refreshing facial, a soothing massage, or a stunning makeover, we redefine beauty with elegance and care. Indulge in the ultimate self-care experience at Royal Touch Salon & Spa.
 
-                            </h6>
-                        </div>
-
-
-
-                       
+                        </h6>
+                    </div>
 
 
 
@@ -69,49 +70,53 @@
 
 
 
-                        <div class="col-md-4 col-12  ">
-                            <h3 class="text-center">Menu</h3>
-                            <div class="menu-container">
-                                <div class="menu-item">
-                                    <span class="food-name">Haircut & Styling</span>
-                                    <span class="price"> $30 - $80</span>
-                                </div>
-                                <div class="menu-item">
-                                    <span class="food-name">Hair Coloring & Highlights</span>
-                                    <span class="price">$60 - $200</span>
-                                </div>
-                                <div class="menu-item">
-                                    <span class="food-name">Keratin Treatment</span>
-                                    <span class="price"> $100 - $300</span>
-                                </div>
-                                <div class="menu-item">
-                                    <span class="food-name">Hair Spa</span>
-                                    <span class="price">$40 - $100</span>
-                                </div>
-                                <div class="menu-item">
-                                    <span class="food-name">Scalp Treatment</span>
-                                    <span class="price"> $50 - $120</span>
-                                </div>
 
-                                    <div class="menu-item">
-                                    <span class="food-name">Basic Facial</span>
-                                    <span class="price">$40 - $80</span>
-                                </div>
-                                <div class="menu-item">
-                                    <span class="food-name">Anti-Aging Facial </span>
-                                    <span class="price">$80 - $150</span>
-                                </div>
-                                <div class="menu-item">
-                                    <span class="food-name">Hydrating Facial</span>
-                                    <span class="price">$60 - $120</span>
-                                </div>
+
+
+
+                    <div class="col-md-4 col-12  ">
+                        <h3 class="text-center">Menu</h3>
+                        <div class="menu-container">
+                            <div class="menu-item">
+                                <span class="food-name">Haircut & Styling</span>
+                                <span class="price"> $30 - $80</span>
+                            </div>
+                            <div class="menu-item">
+                                <span class="food-name">Hair Coloring & Highlights</span>
+                                <span class="price">$60 - $200</span>
+                            </div>
+                            <div class="menu-item">
+                                <span class="food-name">Keratin Treatment</span>
+                                <span class="price"> $100 - $300</span>
+                            </div>
+                            <div class="menu-item">
+                                <span class="food-name">Hair Spa</span>
+                                <span class="price">$40 - $100</span>
+                            </div>
+                            <div class="menu-item">
+                                <span class="food-name">Scalp Treatment</span>
+                                <span class="price"> $50 - $120</span>
                             </div>
 
-
-
+                            <div class="menu-item">
+                                <span class="food-name">Basic Facial</span>
+                                <span class="price">$40 - $80</span>
+                            </div>
+                            <div class="menu-item">
+                                <span class="food-name">Anti-Aging Facial </span>
+                                <span class="price">$80 - $150</span>
+                            </div>
+                            <div class="menu-item">
+                                <span class="food-name">Hydrating Facial</span>
+                                <span class="price">$60 - $120</span>
+                            </div>
                         </div>
+
+
+
                     </div>
-                    <div class="">
+                </div>
+                <div class="">
                     <div class="row px-2">
                         <div class="swiper-container swiper-container-upper team-slider">
                             <div class="swiper-wrapper">
@@ -312,105 +317,102 @@
 
                     </div>
                 </div>
-                </div>
-                <div class="col-lg-3  col-12 text_side_div d-none d-lg-block">
-              
-                    <img src="assets/img/test/sideimg2.png" alt="" class="img-fluid">
-                   
-                    <img src="assets/img/test/animation.gif" alt="Animated GIF" class="mt-5">
+            </div>
 
-                     <img src="assets/img/test/sideimg1.png" alt="" class="img-fluid mt-5">
-                </div>
+            <?php include 'right_side_ads.php'; ?>
 
-                <div id="mobileModal" class="mobile-modal-overlay">
-                    <div class="mobile-modal-content">
-                        <button class="close-btn" onclick="closeMobileModal()">×</button>
-                        <div class="col-12 text_side_div">
-                            <img src="assets/img/test/sideimg2.png" alt="" class="img-fluid">
-            
-                        </div>
+
+
+            <div id="mobileModal" class="mobile-modal-overlay">
+                <div class="mobile-modal-content">
+                    <button class="close-btn" onclick="closeMobileModal()">×</button>
+                    <div class="col-12 text_side_div">
+                        <img src="assets/img/test/sideimg2.png" alt="" class="img-fluid">
+
                     </div>
                 </div>
-                
-                <script>
+            </div>
+
+            <script>
                 function closeMobileModal() {
                     document.getElementById("mobileModal").style.display = "none";
                 }
-                
+
                 document.addEventListener("DOMContentLoaded", function() {
                     if (window.innerWidth <= 991) {
                         document.getElementById("mobileModal").style.display = "flex";
                     }
                 });
-                </script>
-                
-             
-                
-                
-                
+            </script>
 
-            </div>
+
+
+
+
 
         </div>
-    </section>
+
+    </div>
+</section>
 
 
 
 
 
 
-    
- 
 
-    <script>
-        let currentSlide = 0;
-        function slideImages() {
-            const slides = document.querySelectorAll('.custom-slide');
-            slides[currentSlide].classList.remove('active');
-            currentSlide = (currentSlide + 1) % slides.length;
-            slides[currentSlide].classList.add('active');
+
+
+<script>
+    let currentSlide = 0;
+
+    function slideImages() {
+        const slides = document.querySelectorAll('.custom-slide');
+        slides[currentSlide].classList.remove('active');
+        currentSlide = (currentSlide + 1) % slides.length;
+        slides[currentSlide].classList.add('active');
+    }
+    setInterval(slideImages, 3000); // Auto-slide every 3 seconds
+</script>
+
+<script>
+    function toggleText(element) {
+        let hiddenText = element.previousElementSibling.querySelector(".hidden-text");
+        if (hiddenText.style.display === "none" || hiddenText.style.display === "") {
+            hiddenText.style.display = "inline";
+            element.innerText = "Read Less";
+        } else {
+            hiddenText.style.display = "none";
+            element.innerText = "Read More";
         }
-        setInterval(slideImages, 3000); // Auto-slide every 3 seconds
-    </script>
+    }
 
-    <script>
-        function toggleText(element) {
-            let hiddenText = element.previousElementSibling.querySelector(".hidden-text");
-            if (hiddenText.style.display === "none" || hiddenText.style.display === "") {
-                hiddenText.style.display = "inline";
-                element.innerText = "Read Less";
-            } else {
-                hiddenText.style.display = "none";
-                element.innerText = "Read More";
-            }
+    function toggleImages(element) {
+        let imagesDiv = element.nextElementSibling;
+        if (imagesDiv.style.display === "none" || imagesDiv.style.display === "") {
+            imagesDiv.style.display = "flex";
+            element.innerText = "Hide Images";
+        } else {
+            imagesDiv.style.display = "none";
+            element.innerText = "View Images";
         }
+    }
 
-        function toggleImages(element) {
-            let imagesDiv = element.nextElementSibling;
-            if (imagesDiv.style.display === "none" || imagesDiv.style.display === "") {
-                imagesDiv.style.display = "flex";
-                element.innerText = "Hide Images";
-            } else {
-                imagesDiv.style.display = "none";
-                element.innerText = "View Images";
-            }
-        }
+    function openLightbox(image) {
+        let lightbox = document.getElementById("lightbox");
+        let lightboxImg = document.getElementById("lightbox-img");
+        lightboxImg.src = image.src;
+        lightbox.style.display = "flex";
+    }
 
-        function openLightbox(image) {
-            let lightbox = document.getElementById("lightbox");
-            let lightboxImg = document.getElementById("lightbox-img");
-            lightboxImg.src = image.src;
-            lightbox.style.display = "flex";
-        }
-
-        function closeLightbox() {
-            document.getElementById("lightbox").style.display = "none";
-        }
-    </script>
+    function closeLightbox() {
+        document.getElementById("lightbox").style.display = "none";
+    }
+</script>
 
 
 
-    
+
 <?php include 'chat_bot.php';  ?>
 
 
