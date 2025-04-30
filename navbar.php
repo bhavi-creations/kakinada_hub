@@ -29,6 +29,8 @@
     <!--==============================
 	    All CSS File
 	============================== -->
+
+    
     <!-- Bootstrap -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <!-- <link rel="stylesheet" href="assets/css/app.min.css"> -->
@@ -514,3 +516,10 @@
             document.getElementById("adSection").style.display = "none";
         }
     </script>
+
+
+
+
+
+
+<?php include 'pop_up_ads.php'; ?>

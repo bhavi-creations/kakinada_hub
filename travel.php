@@ -1,6 +1,5 @@
 <?php include 'navbar.php';  ?>
 
-
 <?php include 'travel_sidebar.php'; ?>
 
 
@@ -75,6 +74,8 @@
         </div>
     </div>
 </section>
+
+
 
 
 

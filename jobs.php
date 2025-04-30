@@ -38,7 +38,7 @@
 
 
             <?php include 'left_side_ads.php'; ?>
-            
+
 
             <div class="col-lg-8 col-12">
 
@@ -105,6 +105,9 @@
                     }
                     ?>
                 </div>
+
+
+                <?php include 'pop_up_ads.php'; ?>
             </div>
 
             <?php include 'right_side_ads.php'; ?>
@@ -113,27 +116,7 @@
         </div>
     </div>
 
-    <!-- Mobile Modal -->
-    <div id="mobileModal" class="mobile-modal-overlay">
-        <div class="mobile-modal-content">
-            <button class="close-btn" onclick="closeMobileModal()">×</button>
-            <div class="col-12 text_side_div">
-                <img src="assets/img/test/sideimg2.png" alt="" class="img-fluid">
-            </div>
-        </div>
-    </div>
 
-    <script>
-        function closeMobileModal() {
-            document.getElementById("mobileModal").style.display = "none";
-        }
-
-        document.addEventListener("DOMContentLoaded", function() {
-            if (window.innerWidth <= 991) {
-                document.getElementById("mobileModal").style.display = "flex";
-            }
-        });
-    </script>
 </section>
 
 <script>

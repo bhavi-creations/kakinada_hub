@@ -372,6 +372,13 @@
 
                     </div>
                 </div>
+
+
+
+
+
+
+
             </div>
 
 
@@ -386,17 +393,33 @@
 
 
 
-            
 
-            <div id="mobileModal" class="mobile-modal-overlay">
-                <div class="mobile-modal-content">
-                    <button class="close-btn" onclick="closeMobileModal()">×</button>
-                    <div class="col-12 text_side_div">
-                        <img src="assets/img/test/sideimg2.png" alt="" class="img-fluid">
+            <!-- Modal Structure -->
+            <div id="mobileModal" class="mobile-modal-overlay"  >
 
+                <div class="mobile-modal-content"  >
+                    <!-- Close Button -->
+                    <button class="close-btn" onclick="closeMobileModal()"
+                        style="position: absolute; top: 5px; right: 10px; background: none; border: none; font-size: 24px; cursor: pointer;">×</button>
+
+                    <!-- Carousel Starts Here -->
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="assets/img/test/21.png" class="img-fluid d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/img/test/22.png" class="img-fluid d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/img/test/23.png" class="img-fluid d-block w-100" alt="...">
+                            </div>
+                        </div>
                     </div>
+                    
                 </div>
             </div>
+
 
             <script>
                 function closeMobileModal() {

@@ -23,8 +23,8 @@
                                 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                     $page_name = $_POST['page_name'];
                                     $ad_side = $_POST['ad_side'];
-                                    $ad_position = $_POST['ad_position'] ?? null; // Can be NULL
-                                    $target_urls = $_POST['target_urls']; // array
+                                    $ad_position = $_POST['ad_position'] ?? null;
+                                    $target_urls = $_POST['target_urls'];
                                     $status = $_POST['status'];
                                     $uploadDir = '../uploads/side_piller_ads/';
                                     $uploadSuccess = true;
@@ -43,8 +43,8 @@
                                             $dbPath = $fileName;
 
                                             if (move_uploaded_file($tmpName, $filePath)) {
-                                                $url = $target_urls[$index] ?? ''; // Use empty string if URL is missing
-                                                // Removed device_type from the query
+                                                $url = $target_urls[$index] ?? '';
+                                                // Include device_type in the query and bind
                                                 $stmt = $conn->prepare("INSERT INTO side_piller_ads (page_name, ad_side, ad_position, image_path, target_url, status, created_at) VALUES (?, ?, ?, ?, ?, ?, NOW())");
                                                 $stmt->bind_param("ssssss", $page_name, $ad_side, $ad_position, $dbPath, $url, $status); // Removed device_type
                                                 if ($stmt->execute()) {
@@ -114,7 +114,7 @@
                                         </select>
                                     </div>
 
-                                    // Removed Device Type Selection
+                                    
                                     <div class="form-group">
                                         <label for="ad_side">Ad Side</label>
                                         <select name="ad_side" class="form-control" required onchange="toggleAdPosition()">
@@ -123,6 +123,8 @@
                                             <option value="right">Right</option>
                                             <option value="in-between">In-Between</option>
                                             <option value="default">Default</option>
+                                            <option value="popup">Popup</option>
+
                                         </select>
                                     </div>
 

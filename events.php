@@ -199,6 +199,9 @@ $result = $stmt->get_result();
 
                 </div>
 
+                <?php include 'pop_up_ads.php'; ?>
+
+
             </div>
 
             <?php include 'right_side_ads.php'; ?>
