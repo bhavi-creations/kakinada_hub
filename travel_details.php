@@ -151,7 +151,7 @@ $result = mysqli_query($conn, $query);
                     }
                     ?>
                 </div>
-                <div id="carouselExampleSlidesOnly" class="carousel slide    py-3" data-bs-ride="carousel">
+                <!-- <div id="carouselExampleSlidesOnly" class="carousel slide    py-3" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <img src="assets/img/test/21.png" class="img-fluid d-block w-100" alt="...">
@@ -163,7 +163,7 @@ $result = mysqli_query($conn, $query);
                             <img src="assets/img/test/23.png" class="img-fluid d-block w-100" alt="...">
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
 
 

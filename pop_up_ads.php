@@ -26,7 +26,7 @@ while ($row = mysqli_fetch_assoc($popup_ads_query)) {
     <div class="mobile-modal-content" >
         <!-- Close Button -->
         <button class="close-btn" onclick="closeMobileModal()" 
-                style="position: absolute; top: 5px; right: 10px; background: none; border: none; font-size: 24px; cursor: pointer;">×</button>
+                style="position: absolute; top: 5px; right: 10px; background: none; background-color: aqua; border: none; font-size: 24px; cursor: pointer;">×</button>
 
         <!-- Carousel Starts Here -->
         <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">

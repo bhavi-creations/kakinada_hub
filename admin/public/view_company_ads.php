@@ -16,6 +16,8 @@ include '../../db.connection/db_connection.php';
           <a href="add_company_ads.php" class="btn btn-sm btn-primary shadow-sm">
             <i class="fa-regular fa-plus"></i> Upload New Ads
           </a>
+
+
           <a href="companies.php" class="btn btn-sm btn-secondary shadow-sm">
             <i class="fa-regular fa-building"></i> View Companies
           </a>

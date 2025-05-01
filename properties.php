@@ -55,7 +55,6 @@ $categoryResult = mysqli_query($conn, $categoryQuery);
             </div>
 
             <div class="col-12 col-md-2">
-                <!-- <input type="text" id="priceInput" class="custom-input" placeholder="Search by price..." onkeyup="filterProperties()"> -->
                 <input type="text" id="priceInput" class="custom-input" placeholder="Filter by price..." readonly onclick="openPriceModal()">
 
 
