@@ -1,4 +1,4 @@
-<ul class="navbar-nav sidebar sidebar-dark accordion" id="accordionSidebar" style="background-color: #000000;">
+<ul class="navbar-nav sidebar sidebar-dark accordion" id="accordionSidebar"  >
     <!-- Sidebar - Brand -->
     <a class="sidebar-brand d-flex align-items-center justify-content-center bg-light text-primary" href="./index.php">
         <div class="sidebar-brand-text mx-3">Kakinada <br> Hub</div>
