@@ -121,9 +121,9 @@
                                             <option value="">Select Placement</option>
                                             <option value="left">Left</option>
                                             <option value="right">Right</option>
-                                            <option value="in-between">In-Between</option>
-                                            <option value="default">Default</option>
-                                            <option value="popup">Popup</option>
+                                            <!-- <option value="in-between">In-Between</option> -->
+                                            <option value="default">All Device Ads </option>
+                                            <option value="popup">Mobile Popup Ads</option>
 
                                         </select>
                                     </div>
