@@ -2387,8 +2387,8 @@ padding-left: 10px;
    color: #ff4d00;
    line-height: 70px;
    text-align: center;
-   left: 35px !important;
-   bottom: 0;
+   /* left: 35px !important;
+   bottom: 0; */
    font-size: 1.2em;
    -webkit-box-shadow: 0 -5px 50px 0 rgba(0, 0, 0, 0.1);
    box-shadow: 0 -5px 50px 0 rgba(0, 0, 0, 0.1);
@@ -2397,6 +2397,30 @@ padding-left: 10px;
    z-index: 9999999 !important;
    position: absolute;
  }
+
+ @media (max-width:768px) {
+  .scroll-bottom i {
+  left: -6px !important;
+    bottom: 60px;
+  }
+ }
+
+ @media (min-width:769px) and (max-width:992px) {
+  .scroll-bottom i {
+    left: -6px !important;
+    bottom: 50px;
+  }
+ }
+
+@media (min-width:993px) {
+  .scroll-bottom i {
+    left: 27px!important;
+    bottom: 50px;
+  }
+
+  
+}
+
 
  .scroll-bottom:hover i {
    /* background-color: black !important; */

@@ -1,13 +1,16 @@
-<?php
-ob_start(); // Start output buffering
-session_start();
+<!-- <?php
+
 
  
 if (!isset($_SESSION['username'])) {
     header("Location: login.php");
     exit();
 }
-?>
+
+
+ob_start(); 
+session_start();
+?> -->
 
 <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
 
@@ -15,6 +18,9 @@ if (!isset($_SESSION['username'])) {
     <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
         <i class="fa fa-bars"></i>
     </button>
+ <div class="admin_section_navbar">
+    <h2>Kakinada Hub</h2>
+ </div>
 
     <!-- Topbar Search -->
     <!-- <form
@@ -32,6 +38,7 @@ if (!isset($_SESSION['username'])) {
 
     <!-- Topbar Navbar -->
     <ul class="navbar-nav ml-auto">
+
 
 
         <!-- <li class="nav-item dropdown no-arrow d-sm-none">

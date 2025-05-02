@@ -1777,7 +1777,13 @@ pre code {
 .table {
     width: 100%;
     margin-bottom: 1rem;
-    color: #858796
+    color: #ffa500c7;
+    /* color: #858796 */
+    /* background: linear-gradient(to right, #6b390d, #ffb013); */
+  
+    /* -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+    
 }
 
 .table td,
@@ -1789,7 +1795,7 @@ pre code {
 
 .table thead th {
     vertical-align: bottom;
-    border-bottom: 2px solid #e3e6f0
+    border-bottom: 2px solid #ffa500c7
 }
 
 .table tbody+tbody {
@@ -1807,7 +1813,7 @@ pre code {
 
 .table-bordered td,
 .table-bordered th {
-    border: 1px solid #e3e6f0
+    border: 1px solid #ffa500c7
 }
 
 .table-bordered thead td,
@@ -10999,7 +11005,7 @@ a:focus {
 }
 
 #wrapper #content-wrapper {
-    background-color:white      ;
+    background-color:#000000    ;
     width: 100%;
     overflow-x: hidden
 }
@@ -11224,7 +11230,9 @@ a:focus {
 }
 
 .text-gray-600 {
-    color: #858796 !important
+    color: #ffa500d1 !important;
+    font-weight: 600;
+    
 }
 
 .text-gray-700 {
@@ -11238,6 +11246,11 @@ a:focus {
     -webkit-text-fill-color: transparent;
     font-weight: 600;
 }
+
+
+
+
+
 
 .text-gray-900 {
     color: #3a3b45 !important
@@ -11407,7 +11420,7 @@ a:focus {
 
 .topbar .topbar-divider {
     width: 0;
-    border-right: 1px solid #e3e6f0;
+    border-right: 1px solid orange;
     height: calc(4.375rem - 2rem);
     margin: auto 1rem
 }
@@ -11927,7 +11940,8 @@ a:focus {
 }
 
 .sidebar-dark hr.sidebar-divider {
-    border-top: 1px solid rgba(255, 255, 255, .15)
+    /* border-top: 1px solid rgba(255, 255, 255, .15) */
+    border-top: 1px solid orange
 }
 
 .sidebar-dark .sidebar-heading {
@@ -12653,6 +12667,10 @@ body.sidebar-toggled footer.sticky-footer {
 }
 
 
+.form_view_company_ads{
+    text-align: center !important;
+}
+
 
 
 .side_content{
@@ -12662,3 +12680,26 @@ background: linear-gradient(to right, #6b390d, #ffb013);
     -webkit-text-fill-color: transparent;
     font-weight: 900;
 }
+
+.form_view_company_ads{
+
+    padding: 20px;
+    gap: 30px;
+}
+
+
+.admin_sidebar_section{
+    background-color: black !important;
+}
+
+
+.admin_section_navbar{
+    text-align: center !important;
+    background: linear-gradient(to right, #6b390d, #ffb013);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900 !important;
+    
+
+   
+    } 
