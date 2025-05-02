@@ -122,8 +122,8 @@
                                             <option value="left">Left</option>
                                             <option value="right">Right</option>
                                             <!-- <option value="in-between">In-Between</option> -->
-                                            <option value="default">All Device Ads </option>
-                                            <option value="popup">Mobile Popup Ads</option>
+                                            <option value="default">All Device Ads (Default )</option>
+                                            <option value="popup">Mobile Popup Ads (pop up)  </option>
 
                                         </select>
                                     </div>
