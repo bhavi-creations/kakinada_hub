@@ -19,7 +19,7 @@
 
 
 
-
+<?php include 'pop_up_ads.php'; ?>
 
 
 
