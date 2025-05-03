@@ -1,6 +1,7 @@
 <!-- <?php
 
-
+ob_start(); 
+session_start();
  
 if (!isset($_SESSION['username'])) {
     header("Location: login.php");
@@ -8,8 +9,7 @@ if (!isset($_SESSION['username'])) {
 }
 
 
-ob_start(); 
-session_start();
+
 ?> -->
 
 <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
