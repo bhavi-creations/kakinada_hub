@@ -7119,7 +7119,8 @@ button.bg-dark:hover {
 }
 
 .bg-white {
-    background-color:#000000 !important
+    /* background-color:#000000 !important; */
+    background-color: white !important;
 }
 
 .bg-transparent {
@@ -11005,7 +11006,8 @@ a:focus {
 }
 
 #wrapper #content-wrapper {
-    background-color:#000000    ;
+        /* background-color:#000000 !important; */
+        /* background-color: white !important; */
     width: 100%;
     overflow-x: hidden
 }
@@ -12689,7 +12691,8 @@ background: linear-gradient(to right, #6b390d, #ffb013);
 
 
 .admin_sidebar_section{
-    background-color: black !important;
+      /* background-color:#000000 !important; */
+      background-color: white !important;
 }
 
 

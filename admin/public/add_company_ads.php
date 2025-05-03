@@ -1,5 +1,4 @@
 <?php include 'header.php'; ?>
-
 <div id="wrapper">
     <?php include 'sidebar.php'; ?>
 
@@ -15,7 +14,8 @@
                         <h1 class="h3 mb-0 text-gray-800">Upload Company Ads</h1>
 
                         <div>
-                            <a href="view_company_ads.php" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">
+                            <a href="view_company_ads.php"
+                                class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">
                                 <i class="fa-regular fa-eye"></i> View Ads
                             </a>
                             <a href="companies.php" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">
@@ -31,9 +31,9 @@
 
                     // Handle form submission
                     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-                        $company_id  = (int)$_POST['company_id'];
+                        $company_id = (int)$_POST['company_id'];
                         $ad_position = $_POST['ad_position'];
-                        $upload_dir  = '../uploads/company_ads/';
+                        $upload_dir = '../uploads/company_ads/';
                         if (!is_dir($upload_dir)) mkdir($upload_dir, 0777, true);
 
                         $errors = [];
@@ -41,9 +41,9 @@
                             foreach ($_FILES['ads_files']['tmp_name'] as $idx => $tmpPath) {
                                 if (!$tmpPath) continue;
                                 $origName = basename($_FILES['ads_files']['name'][$idx]);
-                                $ext    = strtolower(pathinfo($origName, PATHINFO_EXTENSION));
-                                $newName  = time() . "_{$idx}." . $ext;
-                                $dest   = $upload_dir . $newName;
+                                $ext = strtolower(pathinfo($origName, PATHINFO_EXTENSION));
+                                $newName = time() . "_{$idx}." . $ext;
+                                $dest = $upload_dir . $newName;
                                 if (!move_uploaded_file($tmpPath, $dest)) {
                                     $errors[] = "Failed to upload $origName";
                                     continue;
@@ -56,16 +56,19 @@
                                 } else {
                                     $ad_type = 'image';
                                 }
+                                $target_url = $_POST['target_urls'][$idx] ?? ''; // Get target URL
 
-                                // Get the corresponding target URL, default to empty string if not set
-                                $target_url = $_POST['target_urls'][$idx] ?? '';
+                                // Get the current max ad_number for this company and position.
+                                $result = $conn->query("SELECT MAX(ad_number) AS max_ad_number FROM company_ads WHERE company_id = $company_id AND ad_position = '$ad_position'");
+                                $row = $result->fetch_assoc();
+                                $next_ad_number = ($row['max_ad_number'] === null) ? 1 : $row['max_ad_number'] + 1;
 
-                                // Insert into DB with target_url
+                                // Insert into DB
                                 $stmt = $conn->prepare(
-                                    "INSERT INTO company_ads (company_id, file_name, ad_type, ad_position, target_url)
-                                    VALUES (?, ?, ?, ?, ?)"
+                                    "INSERT INTO company_ads (company_id, file_name, ad_type, ad_position, target_url, ad_number)
+                                    VALUES (?, ?, ?, ?, ?, ?)"
                                 );
-                                $stmt->bind_param("issss", $company_id, $newName, $ad_type, $ad_position, $target_url);
+                                $stmt->bind_param("issssi", $company_id, $newName, $ad_type, $ad_position, $target_url, $next_ad_number);
                                 $stmt->execute();
                                 $stmt->close();
                             }
@@ -111,7 +114,8 @@
                         <div class="mb-3">
                             <label class="form-label">Ad Position</label>
                             <div>
-                                <label class="me-3"><input type="radio" name="ad_position" value="left" required> Left</label>
+                                <label class="me-3"><input type="radio" name="ad_position" value="left" required>
+                                    Left</label>
                                 <label class="me-3"><input type="radio" name="ad_position" value="right"> Right</label>
                                 <label><input type="radio" name="ad_position" value="mobile popup"> Mobile Popup</label>
                             </div>
@@ -127,14 +131,14 @@
                         <div class="mb-3">
                             <label class="form-label">Target URLs (match file order)</label>
                             <div id="urlFields">
-                                <input type="url" name="target_urls[]" class="form-control mb-2" placeholder="https://example.com" required>
+                                <input type="url" name="target_urls[]" class="form-control mb-2"
+                                    placeholder="https://example.com" required>
                             </div>
                         </div>
 
                         <button type="submit" class="btn btn-primary">Upload Ads</button>
                     </form>
                 </div>
-
             </div>
         </div>
 
