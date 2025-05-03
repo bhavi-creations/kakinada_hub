@@ -90,20 +90,7 @@
                     </div>
 
 
-<!-- 
-                    <div id="carouselExampleSlidesOnly" class="carousel slide d-md-none" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="assets/img/test/j10.png" class="  img-fluid  d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="assets/img/test/j11.png" class="img-fluid d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="assets/img/test/j12.png" class="img-fluid  d-block w-100" alt="...">
-                            </div>
-                        </div>
-                    </div> -->
+
 
                     <!-- ABOUT COMPANY & JOB LIST -->
                     <div class="row my-5 p-3">
@@ -156,20 +143,7 @@
                                 <?php endwhile; ?>
                             </div>
                         </div>
-<!-- 
-                        <div id="carouselExampleSlidesOnly" class="carousel slide d-md-none" data-bs-ride="carousel">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="assets/img/test/21.png" class="  img-fluid  d-block w-100" alt="...">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="assets/img/test/22.png" class="img-fluid d-block w-100" alt="...">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="assets/img/test/23.png" class="img-fluid  d-block w-100" alt="...">
-                                </div>
-                            </div>
-                        </div> -->
+
 
 
 
@@ -404,13 +378,59 @@
 
 
 
-            <!-- MOBILE AD POPUP -->
-            <div id="mobileModal" class="mobile-modal-overlay">
-                <div class="mobile-modal-content">
-                    <button class="close-btn" onclick="closeMobileModal()">×</button>
-                    <div class="col-12 text_side_div">
-                        <img src="assets/img/test/sideimg2.png" alt="" class="img-fluid">
+            <?php
+            // Fetch mobile popup ads for the current company
+            $sql_mobile_ads = "SELECT ca.file_name, ca.ad_type, ca.target_url, c.name AS company_name
+                   FROM company_ads ca
+                   JOIN companies c ON ca.company_id = c.id
+                   WHERE ca.ad_position = 'mobile popup' AND ca.company_id = $company_id
+                   ORDER BY ca.created_at DESC";
+            $result_mobile_ads = $conn->query($sql_mobile_ads);
+            $mobile_ads = [];
+            if ($result_mobile_ads && $result_mobile_ads->num_rows > 0) {
+                while ($row = $result_mobile_ads->fetch_assoc()) {
+                    $mobile_ads[] = $row;
+                }
+            }
+            ?>
 
+            <div id="mobileModal" class="mobile-modal-overlay" style="display: none;  ">
+                <div class="mobile-modal-content" style="position: relative;">
+                    <button class="close-btn" onclick="closeMobileModal()"
+                        style="position: absolute; top: 5px; right: 10px; background: none; border: none; font-size: 24px; cursor: pointer;">×</button>
+
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+                        <div class="carousel-inner">
+                            <?php if (!empty($mobile_ads)): ?>
+                                <?php foreach ($mobile_ads as $index => $ad): ?>
+                                    <div class="carousel-item <?= $index === 0 ? 'active' : '' ?>">
+                                        <?php if (!empty($ad['target_url'])): ?>
+                                            <a href="<?= htmlspecialchars($ad['target_url']) ?>" target="_blank" style="display: block;">
+                                            <?php endif; ?>
+                                            <?php if ($ad['ad_type'] === 'video'): ?>
+                                                <video src="admin/uploads/company_ads/<?= urlencode($ad['file_name']) ?>" class="img-fluid d-block w-100" controls></video>
+                                            <?php else: ?>
+                                                <img src="admin/uploads/company_ads/<?= urlencode($ad['file_name']) ?>" class="img-fluid d-block w-100" alt="<?= htmlspecialchars($ad['company_name']) ?>">
+                                            <?php endif; ?>
+                                            <?php if (!empty($ad['target_url'])): ?>
+                                            </a>
+                                        <?php endif; ?>
+                                        <?php if (!empty($ad['company_name'])): ?>
+                                            <div class="carousel-caption d-none d-md-block" style="background: rgba(0, 0, 0, 0.5); color: white; text-align: center;">
+                                                <h5><?= htmlspecialchars($ad['company_name']) ?></h5>
+                                            </div>
+                                        <?php endif; ?>
+                                    </div>
+                                <?php endforeach; ?>
+                            <?php else: ?>
+                                <div class="carousel-item active">
+                                    <img src="assets/img/placeholder.png" class="img-fluid d-block w-100" alt="No Ads Available">
+                                    <div class="carousel-caption d-none d-md-block" style="background: rgba(0, 0, 0, 0.5); color: white; text-align: center;">
+                                        <h5>No Mobile Ads Available</h5>
+                                    </div>
+                                </div>
+                            <?php endif; ?>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -421,11 +441,59 @@
                 }
 
                 document.addEventListener("DOMContentLoaded", function() {
-                    if (window.innerWidth <= 991) {
+                    if (window.innerWidth <= 991 && <?php echo !empty($mobile_ads) ? 'true' : 'false'; ?>) {
                         document.getElementById("mobileModal").style.display = "flex";
+                        // Initialize Bootstrap Carousel if ads are present
+                        const carouselElement = document.getElementById('carouselExampleSlidesOnly');
+                        if (carouselElement) {
+                            const carousel = new bootstrap.Carousel(carouselElement, {
+                                interval: 3000, // Adjust interval as needed (in milliseconds)
+                                ride: 'carousel' // Ensure it starts automatically
+                            });
+                        }
                     }
                 });
             </script>
+
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+            <style>
+                .mobile-modal-overlay {
+                    display: none;
+                    /* Initially hidden */
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba(0, 0, 0, 0.8);
+                    /* Semi-transparent background */
+                    justify-content: center;
+                    align-items: center;
+                    z-index: 1000;
+                    /* Ensure it's on top of everything */
+                }
+
+                .mobile-modal-content {
+                    background-color: #fff;
+                    border-radius: 8px;
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+                    max-width: 90%;
+                    max-height: 90%;
+                    overflow: auto;
+                    position: relative;
+                    /* For close button positioning */
+                }
+
+                .carousel-inner .carousel-item img {
+                    max-height: 70vh;
+                    /* Adjust as needed */
+                    object-fit: contain;
+                    /* Or 'cover' depending on your preference */
+                }
+            </style>
+
 
         </div>
 </section>
