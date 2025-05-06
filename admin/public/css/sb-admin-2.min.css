@@ -7119,8 +7119,8 @@ button.bg-dark:hover {
 }
 
 .bg-white {
-    /* background-color:#000000 !important; */
-    background-color: white !important;
+    background-color:#000000 !important;
+    /* background-color: white !important; */
 }
 
 .bg-transparent {
@@ -11006,7 +11006,7 @@ a:focus {
 }
 
 #wrapper #content-wrapper {
-        /* background-color:#000000 !important; */
+        background-color:#000000 !important;
         /* background-color: white !important; */
     width: 100%;
     overflow-x: hidden
@@ -12691,18 +12691,21 @@ background: linear-gradient(to right, #6b390d, #ffb013);
 
 
 .admin_sidebar_section{
-      /* background-color:#000000 !important; */
-      background-color: white !important;
+      background-color:#000000 !important;
+      /* background-color: white !important; */
 }
 
 
 .admin_section_navbar{
-    text-align: center !important;
+    /* text-align: center !important;
+    align-items: center !important; */
+
     background: linear-gradient(to right, #6b390d, #ffb013);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 900 !important;
-    
-
+    display: flex;
+    justify-content:center ;
+align-items: center;
    
     } 

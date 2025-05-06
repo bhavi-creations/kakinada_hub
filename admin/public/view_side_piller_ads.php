@@ -2,12 +2,12 @@
 include 'header.php';
 include '../../db.connection/db_connection.php';
 
-// Function to safely escape output
-function e($value) {
+function e($value)
+{
     return htmlspecialchars($value, ENT_QUOTES, 'UTF-8');
 }
 
-// Handle delete action
+// Handle delete
 if (isset($_GET['delete_id']) && is_numeric($_GET['delete_id'])) {
     $delete_id = $_GET['delete_id'];
     $stmt_delete = $conn->prepare("DELETE FROM side_piller_ads WHERE id = ?");
@@ -20,13 +20,18 @@ if (isset($_GET['delete_id']) && is_numeric($_GET['delete_id'])) {
     $stmt_delete->close();
 }
 
-// Fetch all side piller ads
+// Fetch all ads
 $sql = "SELECT * FROM side_piller_ads ORDER BY created_at DESC";
 $result = $conn->query($sql);
 $ads = [];
+$page_names = [];
+
 if ($result && $result->num_rows > 0) {
     while ($row = $result->fetch_assoc()) {
         $ads[] = $row;
+        if (!in_array($row['page_name'], $page_names)) {
+            $page_names[] = $row['page_name'];
+        }
     }
 }
 ?>
@@ -39,47 +44,36 @@ if ($result && $result->num_rows > 0) {
 
         <div id="content">
             <div class="container-fluid">
-
                 <h1 class="h3 mb-4 text-gray-800">View Side Piller Ads</h1>
 
                 <?php if (isset($delete_success_message)) : ?>
                     <div class="alert alert-success alert-dismissible fade show" role="alert">
                         <?= e($delete_success_message) ?>
-                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span>&times;</span></button>
                     </div>
-                    <script>
-                        setTimeout(function() {
-                            const alertBox = document.querySelector('.alert-success');
-                            if (alertBox) {
-                                alertBox.remove();
-                            }
-                        }, 3000);
-                    </script>
                 <?php endif; ?>
 
                 <?php if (isset($delete_error_message)) : ?>
                     <div class="alert alert-danger alert-dismissible fade show" role="alert">
                         <?= e($delete_error_message) ?>
-                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span>&times;</span></button>
                     </div>
-                    <script>
-                        setTimeout(function() {
-                            const alertBox = document.querySelector('.alert-danger');
-                            if (alertBox) {
-                                alertBox.remove();
-                            }
-                        }, 3000);
-                    </script>
                 <?php endif; ?>
 
                 <div class="card shadow mb-4">
-                    <div class="card-header py-3">
+                    <div class="card-header py-3 d-flex justify-content-between align-items-center">
                         <h6 class="m-0 font-weight-bold text-primary">Current Side Piller Ads</h6>
+                        <div>
+                            <label for="pageFilter">Filter by Page Name:</label>
+                            <select id="pageFilter" class="form-control form-control-sm" style="width: auto; display: inline-block;">
+                                <option value="">All</option>
+                                <?php foreach ($page_names as $page) : ?>
+                                    <option value="<?= e($page) ?>"><?= e(ucfirst($page)) ?></option>
+                                <?php endforeach; ?>
+                            </select>
+                        </div>
                     </div>
+
                     <div class="card-body">
                         <div class="table-responsive">
                             <?php if (empty($ads)) : ?>
@@ -88,7 +82,8 @@ if ($result && $result->num_rows > 0) {
                                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                     <thead>
                                         <tr>
-                                            <th>S.No.</th> <th>ID</th>
+                                            <th>S.No.</th>
+                                            <th>ID</th>
                                             <th>Page Name</th>
                                             <th>Ad Side</th>
                                             <th>Ad Position</th>
@@ -100,12 +95,14 @@ if ($result && $result->num_rows > 0) {
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <?php $serialNumber = 1; ?> <?php foreach ($ads as $ad) : ?>
+                                        <?php $serialNumber = 1; ?>
+                                        <?php foreach ($ads as $ad) : ?>
                                             <tr>
-                                                <td><?= e($serialNumber++) ?></td> <td><?= e($ad['id']) ?></td>
+                                                <td><?= e($serialNumber++) ?></td>
+                                                <td><?= e($ad['id']) ?></td>
                                                 <td><?= e(ucfirst($ad['page_name'])) ?></td>
                                                 <td><?= e(ucfirst($ad['ad_side'])) ?></td>
-                                                <td><?= e($ad['ad_position'] ? $ad['ad_position'] : '-') ?></td>
+                                                <td><?= e($ad['ad_position'] ?: '-') ?></td>
                                                 <td><img src="../uploads/side_piller_ads/<?= e($ad['image_path']) ?>" alt="Ad Image" width="100"></td>
                                                 <td><a href="<?= e($ad['target_url']) ?>" target="_blank"><?= e($ad['target_url']) ?></a></td>
                                                 <td><?= e(ucfirst($ad['status'])) ?></td>
@@ -131,8 +128,25 @@ if ($result && $result->num_rows > 0) {
 </div>
 <?php include 'end.php'; ?>
 
-<script>
-    $(document).ready(function() {
-        $('#dataTable').DataTable();
+<!-- DataTables JS (make sure you load these if not already in your template) -->
+<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+
+<!-- DataTables Initialization + Page Name Filter --><script>
+    $(document).ready(function () {
+        var table = $('#dataTable').DataTable({
+            lengthChange: false,
+            info: false,
+            paging: false
+        });
+
+        $('#pageFilter').on('change', function () {
+            var selectedPage = $(this).val();
+            if (selectedPage) {
+                table.column(2).search('^' + selectedPage + '$', true, false).draw(); // Exact match
+            } else {
+                table.column(2).search('').draw(); // Reset
+            }
+        });
     });
 </script>

@@ -18,9 +18,13 @@ if (!isset($_SESSION['username'])) {
     <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
         <i class="fa fa-bars"></i>
     </button>
- <div class="admin_section_navbar">
+ <!-- <div class="admin_section_navbar">
     <h2>Kakinada Hub</h2>
- </div>
+ </div> -->
+ <div class="mx-auto d-flex justify-content-center align-items-center" style="width: 100%;">
+         <h2 class=" admin_section_navbar m-0">Kakinada Hub</h2>
+     </div>
+    
 
     <!-- Topbar Search -->
     <!-- <form
