@@ -7095,9 +7095,7 @@ button.bg-danger:hover {
     background-color: #d52a1a !important
 }
 
-.bg-light {
-    background-color: #000000 !important
-}
+
 
 
 a.bg-light:focus,
@@ -12715,5 +12713,10 @@ body.sidebar-toggled footer.sticky-footer {
 
 .bg-white {
     /* background-color:#000000 !important; */
+    background-color: white !important;
+}
+
+.bg-light {
+    /* background-color: #000000 !important */
     background-color: white !important;
 }
