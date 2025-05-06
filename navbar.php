@@ -125,7 +125,7 @@
                                     <li><a class="sub_mini_serices" href="business_layout.php"> Zeeshan </a></li>
 
 
-                                    <li><a class="view_all_sub_mini_serices" href="resturents_layouts.php"> View All Resturents Deals </a></li>
+                                    <li><a class="view_all_sub_mini_serices" href="resturents.php"> View All Resturents Deals </a></li>
 
                                 </ul>
                             </li>
@@ -313,7 +313,7 @@
                                                                     <li><a class="sub_mini_serices" href="business_layout.php"> Khaidi </a></li>
                                                                     <li><a class="sub_mini_serices" href="business_layout.php"> Zeeshan </a></li>
 
-                                                                    <li><a class="view_all_sub_mini_serices" href="resturents_layouts.php"> View All Resturents Deals </a></li>
+                                                                    <li><a class="view_all_sub_mini_serices" href="resturents.php"> View All Resturents Deals </a></li>
 
                                                                 </ul>
                                                             </li>

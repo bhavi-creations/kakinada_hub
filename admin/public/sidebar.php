@@ -96,7 +96,7 @@
                 </div>
 
                 <!-- Continue other main services -->
-                <a class="collapse-item side_content" href="allPDF.php" data-toggle="collapse" data-target="#collapseRestaurants" aria-expanded="false" aria-controls="collapseRestaurants">
+                <a class="collapse-item side_content" href="#" data-toggle="collapse" data-target="#collapseRestaurants" aria-expanded="false" aria-controls="collapseRestaurants">
                     <i class="fas fa-utensils"></i> &nbsp; Restaurants
                 </a>
 
@@ -105,7 +105,7 @@
 
                         <!-- Theater Sub Menu -->
                         <a class="collapse-item side_content collapsed" href="#" data-toggle="collapse" data-target="#collapseFood" aria-expanded="false" aria-controls="collapseFood">
-                            <i class="fas fa-theater-masks"></i> &nbsp; Theater
+                            <i class="fas fa-theater-masks"></i> &nbsp; Restaurants
                         </a>
                         <div id="collapseFood" class="collapse">
                             <a class="collapse-item side_content" href="add_theater.php">
@@ -118,7 +118,7 @@
 
                         <!-- Screens Sub Menu -->
                         <a class="collapse-item side_content collapsed" href="#" data-toggle="collapse" data-target="#collapsestartes" aria-expanded="false" aria-controls="collapsestartes">
-                            <i class="fas fa-tv"></i> &nbsp; Screens
+                            <i class="fas fa-tv"></i> &nbsp; Restaurants
                         </a>
                         <div id="collapsestartes" class="collapse">
                             <a class="collapse-item side_content" href="add_screen.php">
@@ -131,7 +131,7 @@
 
                         <!-- Show Sub Menu -->
                         <a class="collapse-item side_content collapsed" href="#" data-toggle="collapse" data-target="#collapsefooditems" aria-expanded="false" aria-controls="collapsefooditems">
-                            <i class="fas fa-video"></i> &nbsp; Show
+                            <i class="fas fa-video"></i> &nbsp; Restaurants
                         </a>
                         <div id="collapsefooditems" class="collapse">
                             <a class="collapse-item side_content" href="add_show.php">
@@ -148,22 +148,22 @@
 
 
 
-                <a class="collapse-item side_content" href="allPDF.php">
+                <a class="collapse-item side_content" href="#">
                     <i class="fas fa-spa"></i> &nbsp; Saloons & Spa
                 </a>
-                <a class="collapse-item side_content" href="allPDF.php">
+                <a class="collapse-item side_content" href="#">
                     <i class="fas fa-gem"></i> &nbsp; Gifts & Jewellery
                 </a>
-                <a class="collapse-item side_content" href="allPDF.php">
+                <a class="collapse-item side_content" href="#">
                     <i class="fas fa-tshirt"></i> &nbsp; Fashion
                 </a>
-                <a class="collapse-item side_content" href="allPDF.php">
+                <a class="collapse-item side_content" href="#">
                     <i class="fas fa-hospital-alt"></i> &nbsp; Hospitals
                 </a>
-                <a class="collapse-item side_content" href="allPDF.php">
+                <a class="collapse-item side_content" href="#">
                     <i class="fas fa-dumbbell"></i> &nbsp; Sports & Gym
                 </a>
-                <a class="collapse-item side_content" href="allPDF.php">
+                <a class="collapse-item side_content" href="#">
                     <i class="fas fa-baby"></i> &nbsp; Kids & Babies
                 </a>
                 <!-- Jobs -->
@@ -175,16 +175,16 @@
 
                         <!-- Job Categories -->
                         <a class="collapse-item collapsed side_content" href="#" data-toggle="collapse" data-target="#collapseJobCategories" aria-expanded="false" aria-controls="collapseJobCategories">
-                            <i class="fas fa-tags"></i> &nbsp; Companies
+                            <i class="fas fa-building"></i>&nbsp; Companies
                         </a>
                         <div id="collapseJobCategories" class="collapse">
-                            <a class="collapse-item side_content" href="add_job_category.php"><i class="fas fa-plus-circle"></i> Add Category</a>
-                            <a class="collapse-item side_content" href="view_job_categories.php"><i class="fas fa-eye"></i> View Categories</a>
+                            <a class="collapse-item side_content" href="add_companies.php"><i class="fas fa-building"></i> Add Company</a>
+                            <a class="collapse-item side_content" href="companies.php"><i class="fas fa-eye"></i> View Company</a>
                         </div>
 
                         <!-- Postings -->
                         <a class="collapse-item collapsed side_content" href="#" data-toggle="collapse" data-target="#collapseJobPostings" aria-expanded="false" aria-controls="collapseJobPostings">
-                            <i class="fas fa-file-alt"></i> &nbsp; Jobs
+                            <i class="fas fa-briefcase"></i>&nbsp; Jobs
                         </a>
                         <div id="collapseJobPostings" class="collapse">
                             <a class="collapse-item side_content" href="add_job.php"><i class="fas fa-plus-circle"></i> Add Job</a>
@@ -193,25 +193,72 @@
 
                         <!-- Applicants -->
                         <a class="collapse-item collapsed side_content" href="#" data-toggle="collapse" data-target="#collapseApplicants" aria-expanded="false" aria-controls="collapseApplicants">
-                            <i class="fas fa-users"></i> &nbsp; Add Ads
+                            <i class="fas fa-ad"></i> &nbsp; Add Ads
                         </a>
                         <div id="collapseApplicants" class="collapse">
-                            <a class="collapse-item side_content" href="add_applicant.php"><i class="fas fa-plus-circle"></i> Add Applicant</a>
-                            <a class="collapse-item side_content" href="view_applicants.php"><i class="fas fa-eye"></i> View Applicants</a>
+                            <a class="collapse-item side_content" href="add_companies.php"><i class="fas fa-plus-circle"></i> Add Ads</a>
+                            <a class="collapse-item side_content" href="view_company_ads.php"><i class="fas fa-eye"></i> View Ads</a>
                         </div>
 
                     </div>
                 </div>
 
-                <a class="collapse-item side_content" href="allPDF.php">
+                <a class="collapse-item side_content" href="#">
                     <i class="fas fa-calendar-alt"></i> &nbsp; Events
                 </a>
-                <a class="collapse-item side_content" href="allPDF.php">
+                <a class="collapse-item side_content" href="#" data-toggle="collapse" data-target="#collapseTravels" aria-expanded="false" aria-controls="collapseTravels">
                     <i class="fas fa-bus"></i> &nbsp; Travel
                 </a>
-                <a class="collapse-item side_content" href="allPDF.php">
+
+                <div id="collapseTravels" class="collapse">
+                    <div class="bg-white py-2 collapse-inner rounded">
+
+
+
+                        <!-- Postings -->
+                        <a class="collapse-item collapsed side_content" href="#" data-toggle="collapse" data-target="#collapseTraveltype" aria-expanded="false" aria-controls="collapseTraveltype">
+                            <i class="fas fa-file-alt"></i> &nbsp; Travel Type
+                        </a>
+                        <div id="collapseTraveltype" class="collapse">
+                            <a class="collapse-item side_content" href="add_travel.php "><i class="fas fa-plus-circle"></i> Add Travel Type</a>
+                            <a class="collapse-item side_content" href="travel.php"><i class="fas fa-eye"></i> View Travel Type</a>
+                        </div>
+
+
+                        <!-- Job Categories -->
+                        <a class="collapse-item collapsed side_content" href="#" data-toggle="collapse" data-target="#collapseTravelservice" aria-expanded="false" aria-controls="collapseTravelservice">
+                            <i class="fas fa-tags"></i> &nbsp; Travel Service
+                        </a>
+                        <div id="collapseTravelservice" class="collapse">
+                            <a class="collapse-item side_content" href="add_travel_type.php"><i class="fas fa-plus-circle"></i> Add Travel Service</a>
+                            <!-- <a class="collapse-item side_content" href="companies.php"><i class="fas fa-eye"></i> View Travel Service</a> -->
+                        </div>
+
+
+
+
+
+                    </div>
+                </div>
+                <a class="collapse-item side_content" href="#" data-toggle="collapse" data-target="#collapseProperties" aria-expanded="false" aria-controls="collapseProperties">
                     <i class="fas fa-home"></i> &nbsp; Properties
                 </a>
+                <div id="collapseProperties" class="collapse">
+                    <div class="bg-white py-2 collapse-inner rounded">
+
+
+
+                        <!-- Postings -->
+                        <a class="collapse-item collapsed side_content" href="#" data-toggle="collapse" data-target="#collapsePropertiestype" aria-expanded="false" aria-controls="collapsePropertiestype">
+                            <i class="fas fa-file-alt"></i> &nbsp; Add properties
+                        </a>
+                        <div id="collapsePropertiestype" class="collapse">
+                            <a class="collapse-item side_content" href="add_property_type.php "><i class="fas fa-plus-circle"></i> Add properties</a>
+                            <a class="collapse-item side_content" href="properties.php"><i class="fas fa-eye"></i> View properties</a>
+                        </div>
+
+                    </div>
+                </div>
 
             </div>
         </div>
@@ -243,26 +290,6 @@
         </a>
     </li>
 
-    <li class="nav-item">
-        <a class="nav-link" href="movies_ads_pages.php">
-            <i class="fas fa-film"></i>
-            <span>Movies</span>
-        </a>
-    </li>
-
-    <li class="nav-item">
-        <a class="nav-link" href="jobs_ads_pages.php">
-            <i class="fas fa-briefcase"></i>
-            <span>Jobs</span>
-        </a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="travel_ads_page.php">
-            <i class="fas fa-map-marked-alt"></i>
-            <span>Travels</span>
-        </a>
-    </li>
-    <!-- #region -->
 
 
 
