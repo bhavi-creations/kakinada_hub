@@ -3,7 +3,7 @@
 <?php include 'resturents_sidebar.php'; ?>
 
 
- 
+
 
 
 
@@ -26,7 +26,7 @@
 
 
             <?php
-           
+
 
             // 1. Check if ID is present
             if (!isset($_GET['id'])) {
@@ -55,7 +55,7 @@
 
             <!-- 5. Display -->
             <div class="col-lg-8 col-12">
-            <h1 class="text-center gradient_text_color spacing_for_htag">Welcome to <?= htmlspecialchars($row['name']) ?></h1>
+                <h1 class="text-center gradient_text_color spacing_for_htag">Welcome to <?= htmlspecialchars($row['name']) ?></h1>
 
                 <div class="row">
                     <div class="col-md-8 col-12">
@@ -71,16 +71,30 @@
                     </div>
 
                     <div class="col-md-4 col-12 p-3">
+
                         <div class="product-content">
-                            <h3 class="heading-gradient"><?= htmlspecialchars($row['name']) ?></h3>
-                            <p class="product-title h5 mt-1 p-gradient"><?= htmlspecialchars($row['tagline']) ?></p>
+
+
+                            <h3 class="heading-gradient movie-value "><?= htmlspecialchars($row['name']) ?></h3>
+                            <p class="product-title h5 mt-1 p-gradient movie-value"><?= htmlspecialchars($row['tagline']) ?></p>
 
                             <div class="rating-wrap">
-                                <div class="star-rating" role="img" aria-label="Rated <?= $row['star_rating'] ?> out of 5">
-                                    <span style="width:<?= ($row['star_rating'] / 5) * 100 ?>%">
-                                        Rated <strong class="rating"><?= $row['star_rating'] ?></strong> out of 5
-                                    </span>
-                                </div>
+                                <p class="movie-value">
+                                    <?php
+                                    $rating = intval($row['star_rating']); // Convert rating to integer
+                                    for ($i = 1; $i <= 5; $i++) {
+                                        if ($i <= $rating) {
+                                            echo '<i class="fas fa-star text-warning"></i>'; // Filled star
+                                        } else {
+                                            echo '<i class="far fa-star text-warning"></i>'; // Empty star
+                                        }
+                                    }
+                                    ?>
+                                    (<?= htmlspecialchars($row['star_rating']) ?>/5)
+                                </p>
+
+
+
                             </div>
                         </div>
                     </div>
