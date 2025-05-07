@@ -4392,6 +4392,12 @@
    }
  }
 
+
+
+ .drag_the_location_icon{
+  color: var(--theme-color) !important;
+}
+
  .gradient_text_color_location {
    background: linear-gradient(to right, #ffa352, #ffb013);
 
