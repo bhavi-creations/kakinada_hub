@@ -99,51 +99,11 @@
                 <a class="collapse-item side_content" href="#" data-toggle="collapse" data-target="#collapseRestaurants" aria-expanded="false" aria-controls="collapseRestaurants">
                     <i class="fas fa-utensils"></i> &nbsp; Restaurants
                 </a>
-
-                <div id="collapseRestaurants" class="collapse" data-parent="#collapsePDFMenu">
-                    <div class="bg-white py-2 collapse-inner rounded">
-
-                        <!-- Theater Sub Menu -->
-                        <a class="collapse-item side_content collapsed" href="#" data-toggle="collapse" data-target="#collapseFood" aria-expanded="false" aria-controls="collapseFood">
-                            <i class="fas fa-theater-masks"></i> &nbsp; Restaurants
-                        </a>
-                        <div id="collapseFood" class="collapse">
-                            <a class="collapse-item side_content" href="add_theater.php">
-                                <i class="fas fa-plus-circle"></i> Add Theater
-                            </a>
-                            <a class="collapse-item side_content" href="view_theater.php">
-                                <i class="fas fa-eye"></i> View Theater
-                            </a>
-                        </div>
-
-                        <!-- Screens Sub Menu -->
-                        <a class="collapse-item side_content collapsed" href="#" data-toggle="collapse" data-target="#collapsestartes" aria-expanded="false" aria-controls="collapsestartes">
-                            <i class="fas fa-tv"></i> &nbsp; Restaurants
-                        </a>
-                        <div id="collapsestartes" class="collapse">
-                            <a class="collapse-item side_content" href="add_screen.php">
-                                <i class="fas fa-plus-circle"></i> Add Screens
-                            </a>
-                            <a class="collapse-item side_content" href="view_screen.php">
-                                <i class="fas fa-eye"></i> View Screens
-                            </a>
-                        </div>
-
-                        <!-- Show Sub Menu -->
-                        <a class="collapse-item side_content collapsed" href="#" data-toggle="collapse" data-target="#collapsefooditems" aria-expanded="false" aria-controls="collapsefooditems">
-                            <i class="fas fa-video"></i> &nbsp; Restaurants
-                        </a>
-                        <div id="collapsefooditems" class="collapse">
-                            <a class="collapse-item side_content" href="add_show.php">
-                                <i class="fas fa-plus-circle"></i> Add Show
-                            </a>
-                            <a class="collapse-item side_content" href="view_show.php">
-                                <i class="fas fa-eye"></i> View Show
-                            </a>
-                        </div>
-
-                    </div>
+                <div id="collapseRestaurants" class="collapse">
+                    <a class="collapse-item side_content" href="add_restaurant.php"><i class="fas fa-plus-circle"></i> Add   Restaurants</a>
+                    <a class="collapse-item side_content" href="view_restaurants.php"><i class="fas fa-eye"></i> View Restaurants</a>
                 </div>
+                 
 
 
 
@@ -203,9 +163,17 @@
                     </div>
                 </div>
 
-                <a class="collapse-item side_content" href="#">
+                <a class="collapse-item side_content" href="#"  data-toggle="collapse" data-target="#collapseEvent" aria-expanded="false" aria-controls="collapseEvent">
                     <i class="fas fa-calendar-alt"></i> &nbsp; Events
                 </a>
+
+                <div id="collapseEvent" class="collapse">
+                    <a class="collapse-item side_content" href="add_event.php "><i class="fas fa-plus-circle"></i> Add   Events</a>
+                    <a class="collapse-item side_content" href="events.php"><i class="fas fa-eye"></i> View Events</a>
+                </div>
+
+
+
                 <a class="collapse-item side_content" href="#" data-toggle="collapse" data-target="#collapseTravels" aria-expanded="false" aria-controls="collapseTravels">
                     <i class="fas fa-bus"></i> &nbsp; Travel
                 </a>

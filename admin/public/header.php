@@ -40,4 +40,6 @@ if (!isset($_SESSION['username'])) {
 
 </head>
 
+<?php 
+include '../../db.connection/db_connection.php';  ?>
 <body id="page-top">
