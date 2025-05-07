@@ -55,154 +55,88 @@ $result = $stmt->get_result();
 
             <?php include 'left_side_ads.php'; ?>
 
-            <div class="col-lg-8 col-12 ">
-                <div class="row     ">
+            <div class="col-lg-8 col-12">
+                <div class="row">
 
+                    <?php
+                    // Fetch events from the database
+                    $query = "SELECT * FROM events ORDER BY created_at DESC";
+                    $result = $conn->query($query);
 
+                    // Check if there are events
+                    if ($result && $result->num_rows > 0):
+                        // Loop through each event
+                        while ($row = $result->fetch_assoc()):
+                    ?>
 
-                    <section class="OfferContainer_exclusive__non    my-2">
-                        <div class="   container  card_div ">
-                            <div class="row  need_padding_div ">
-                                <div class="col-12 col-md-4 job_image_card_main mb-2 parent-container">
-                                    <img src="assets/img/self_images/cocomain.png" class="img-fluid inner_image_card_job" alt="">
+                            <section class="OfferContainer_exclusive__non my-2">
+                                <div class="container card_div">
+                                    <div class="row need_padding_div">
+                                        <div class="col-12 col-md-4 job_image_card_main mb-2 parent-container">
+                                            <?php if (!empty($row['main_image'])): ?>
+                                                <img src="./admin/uploads/events/<?= htmlspecialchars($row['main_image']) ?>" class="img-fluid inner_image_card_job" alt="Event Image">
+                                            <?php else: ?>
+                                                <img src="assets/img/self_images/cocomain.png" class="img-fluid inner_image_card_job" alt="No Image">
+                                            <?php endif; ?>
+                                        </div>
 
-                                </div>
+                                        <div class="col-12 col-md-8">
+                                            <h4 class="gradient_text_color">
+                                                <strong class="property_strong">occasion:</strong> <?= htmlspecialchars($row['occasion']) ?>
+                                            </h4>
+                                            <p class="property_p_tag"><strong class="property_strong">Venue:</strong> <?= htmlspecialchars($row['venue']) ?></p>
+                                            <p class="property_p_tag"><strong class="property_strong">Location:</strong> <?= htmlspecialchars($row['location_address']) ?></p>
+                                            <p class="property_p_tag"><strong class="property_strong">Phone:</strong> <?= htmlspecialchars($row['phone']) ?></p>
+                                            <p class="property_p_tag"><strong class="property_strong">Website:</strong>
+                                                <a target="_blank" href="<?= htmlspecialchars($row['website_url']) ?>">
+                                                    <?= htmlspecialchars($row['website_text']) ?>
+                                                </a>
+                                            </p>
+                                        </div>
 
-                                <div class="col-12 col-md-8">
-                                    <h4 class="gradient_text_color"> <strong class="property_strong"> occasion :</strong>New Year Party</h4>
-                                    <p class="property_p_tag"><strong class="property_strong"> Venue :</strong> Coco Farms </p>
-                                    <p class="property_p_tag"> <strong class="property_strong"> Location : </strong> Chebrolu </p>
-                                    <p class="property_p_tag"> <strong class="property_strong"> Phone :</strong>7989732763 </p>
-                                    <p class="property_p_tag"> <strong class="property_strong"> Website :</strong><a target="_blank" href="     "> https://cocofarmskkd.com </a> </p>
-
-
-                                </div>
-
-
-
-
-                                <div class="col-12 terms_cond_styles">
-                                    <div class="terms_justify">
-
-                                        <p class="gradient_text_color">
-                                            <a href="event_full_page.php" class=" ">View More Details</a>
-                                        </p>
+                                        <div class="col-12 terms_cond_styles">
+                                            <div class="terms_justify">
+                                                <p class="gradient_text_color">
+                                                    <a href="event_full_page.php?id=<?= $row['id'] ?>" class=" ">View More Details</a>
+                                                </p>
+                                            </div>
+                                        </div>
                                     </div>
-
-
-
                                 </div>
-                            </div>
+                            </section>
 
-                        </div>
-                    </section>
-
-                    <section class="OfferContainer_exclusive__non    my-2">
-                        <div class="   container  card_div ">
-                            <div class="row  need_padding_div ">
-                                <div class="col-12 col-md-4 job_image_card_main mb-2 parent-container">
-                                    <img src="assets/img/self_images/spandhana.jpeg" class="img-fluid inner_image_card_job" alt="">
-
-                                </div>
-
-                                <div class="col-12 col-md-8">
-                                    <h4 class="gradient_text_color"> <strong class="property_strong"> occasion :</strong>Ugadhi</h4>
-                                    <p class="property_p_tag"><strong class="property_strong"> Venue :</strong> Spandhana </p>
-                                    <p class="property_p_tag"> <strong class="property_strong"> Location : </strong> Kakinada </p>
-                                    <p class="property_p_tag"> <strong class="property_strong"> Phone :</strong>9989796919 </p>
-                                    <p class="property_p_tag"> <strong class="property_strong"> Website :</strong><a target="_blank" href="     "> https://Spandhnaevents.com/ </a> </p>
-
-
-                                </div>
-
-
-
-
-                                <div class="col-12 terms_cond_styles">
-                                    <div class="terms_justify">
-
-                                        <p class="gradient_text_color">
-                                            <a href="event_full_page2.php" class=" ">View More Details</a>
-                                        </p>
-                                    </div>
-
-
-
-                                </div>
-                            </div>
-
-                        </div>
-                    </section>
-
-                    <section class="OfferContainer_exclusive__non    my-2">
-                        <div class="   container  card_div ">
-                            <div class="row  need_padding_div ">
-                                <div class="col-12 col-md-4 job_image_card_main mb-2 parent-container">
-                                    <img src="assets/img/self_images/helcon.jpeg" class="img-fluid inner_image_card_job" alt="">
-
-                                </div>
-
-                                <div class="col-12 col-md-8">
-                                    <h4 class="gradient_text_color"> <strong class="property_strong"> occasion :</strong>Holi Event</h4>
-                                    <p class="property_p_tag"><strong class="property_strong"> Venue :</strong> Halcyon Times </p>
-                                    <p class="property_p_tag"> <strong class="property_strong"> Location : </strong> Kakinada </p>
-                                    <p class="property_p_tag"> <strong class="property_strong"> Phone :</strong>7947108373 </p>
-                                    <p class="property_p_tag"> <strong class="property_strong"> Website :</strong><a target="_blank" href="     "> https://hylcontimes.com/ </a> </p>
-
-
-                                </div>
-
-
-
-
-                                <div class="col-12 terms_cond_styles">
-                                    <div class="terms_justify">
-
-                                        <p class="gradient_text_color">
-                                            <a href="event_full_page1.php" class=" ">View More Details</a>
-                                        </p>
-                                    </div>
-
-
-
-                                </div>
-                            </div>
-
-                        </div>
-                    </section>
-
-
-                    <script>
-                        document.addEventListener("DOMContentLoaded", function() {
-                            document.querySelectorAll(".toggle-terms").forEach(function(link) {
-                                link.addEventListener("click", function(event) {
-                                    event.preventDefault(); // Prevent default anchor behavior
-
-                                    var parentDiv = this.closest(".col-12");
-                                    var termsDiv = parentDiv.querySelector(".terms-content");
-                                    var separator = parentDiv.querySelector(".terms-separator");
-
-                                    // Toggle visibility
-                                    if (termsDiv.style.display === "none" || termsDiv.style.display === "") {
-                                        termsDiv.style.display = "block";
-                                        separator.style.display = "block"; // Show the separator
-                                    } else {
-                                        termsDiv.style.display = "none";
-                                        separator.style.display = "none"; // Hide the separator
-                                    }
-                                });
-                            });
-                        });
-                    </script>
-
-
+                        <?php endwhile; ?>
+                    <?php else: ?>
+                        <p>No events available at the moment.</p>
+                    <?php endif; ?>
 
                 </div>
 
                 <?php include 'pop_up_ads.php'; ?>
-
-
             </div>
+
+            <script>
+                document.addEventListener("DOMContentLoaded", function() {
+                    document.querySelectorAll(".toggle-terms").forEach(function(link) {
+                        link.addEventListener("click", function(event) {
+                            event.preventDefault(); // Prevent default anchor behavior
+
+                            var parentDiv = this.closest(".col-12");
+                            var termsDiv = parentDiv.querySelector(".terms-content");
+                            var separator = parentDiv.querySelector(".terms-separator");
+
+                            // Toggle visibility
+                            if (termsDiv.style.display === "none" || termsDiv.style.display === "") {
+                                termsDiv.style.display = "block";
+                                separator.style.display = "block"; // Show the separator
+                            } else {
+                                termsDiv.style.display = "none";
+                                separator.style.display = "none"; // Hide the separator
+                            }
+                        });
+                    });
+                });
+            </script>
 
             <?php include 'right_side_ads.php'; ?>
 

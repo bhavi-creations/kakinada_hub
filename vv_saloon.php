@@ -69,7 +69,7 @@
 
 
 
-<section>
+<section class="bg_section">
     <div class="container">
 
         <div class="text-center   ">
