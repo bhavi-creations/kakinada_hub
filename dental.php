@@ -19,7 +19,7 @@
 
                     <div class="card bg-dark text-white shadow-lg  d-flex flex-column align-items-center"
                         style="height: 220px;">
-                        <img src="assets/img/self_images/cc.jpg" alt="Offer Image" class="img-fluid pic"
+                        <img src="assets/img/test/hos14.png" alt="Offer Image" class="img-fluid pic"
                             style="width: 100%; height: 220px; object-fit: cover;">
                         <h3 class="mt-2 p-3 text-center  list_page_test_tittle flex-grow-1 text-white">
                         Dental Hospitals</h3>
@@ -33,7 +33,7 @@
                 <a href="neuro_hospital.php">
                     <div class="card bg-dark text-white  shadow-lg  d-flex flex-column align-items-center "
                         style="height: 220px;">
-                        <img src="assets/img/self_images/padmapriya.avif" alt="Offer Image" class="img-fluid pic"
+                        <img src="assets/img/test/hos15.png" alt="Offer Image" class="img-fluid pic"
                             style="width: 100%; height: 220px; object-fit: cover;">
                         <h3 class="mt-2 p-3 text-center  list_page_test_tittle flex-grow-1 text-white"> Neuro Hospitals</h3>
                     </div>
@@ -47,7 +47,7 @@
                 <a href="ent_hospital.php">
                     <div class="card bg-dark text-white  shadow-lg  d-flex flex-column align-items-center "
                         style="height: 220px;">
-                        <img src="assets/img/self_images/anand.jpg" alt="Offer Image" class="img-fluid pic"
+                        <img src="assets/img/test/hos13.png" alt="Offer Image" class="img-fluid pic"
                             style="width: 100%; height: 220px; object-fit: cover;">
                         <h3 class="mt-2 p-3 text-center  list_page_test_tittle flex-grow-1 text-white">ENT Hospitals</h3>
                     </div>
@@ -58,7 +58,7 @@
                 <a href="skincare.php">
                     <div class="card bg-dark text-white  shadow-lg  d-flex flex-column align-items-center "
                         style="height: 220px;">
-                        <img src="assets/img/self_images/geet_sangeet.jpg" alt="Offer Image" class="img-fluid pic"
+                        <img src="assets/img/test/hos16.png" alt="Offer Image" class="img-fluid pic"
                             style="width: 100%; height: 220px; object-fit: cover;">
                         <h3 class="mt-2 p-3 text-center  list_page_test_tittle flex-grow-1 text-white">Skincare Hospitals</h3>
                     </div>
@@ -66,11 +66,11 @@
             </div>
             <!-- Card 2 -->
             <div class="col-6 col-md-3">
-                <a href="dental_hospital.php">
+                <a href="physiotherapy.php">
 
                     <div class="card bg-dark text-white shadow-lg  d-flex flex-column align-items-center"
                         style="height: 220px;">
-                        <img src="assets/img/self_images/tirumala.jpeg" alt="Offer Image" class="img-fluid pic"
+                        <img src="assets/img/test/hos17.png" alt="Offer Image" class="img-fluid pic"
                             style="width: 100%; height: 220px; object-fit: cover;">
                         <h3 class="mt-2 p-3 text-center  list_page_test_tittle flex-grow-1 text-white">physiotherapy</h3>
                     </div>

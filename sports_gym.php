@@ -29,10 +29,10 @@
 
             <!-- Card 1 -->
             <div class="col-6 col-md-3">
-                <a href="sports_gym.php">
+                <a href="gym.php">
                     <div class="card bg-dark text-white  shadow-lg  d-flex flex-column align-items-center "
                         style="height: 220px;">
-                        <img src="ssets/img/test/sportsclothes1.png" alt="Offer Image" class="img-fluid pic"
+                        <img src="assets/img/test/sportsclothes1.png" alt="Offer Image" class="img-fluid pic"
                             style="width: 100%; height: 220px; object-fit: cover;">
                         <h3 class="mt-2 p-3 text-center  list_page_test_tittle flex-grow-1 text-white"> Gyms</h3>
                     </div>
@@ -46,7 +46,7 @@
                 <a href="camping.php">
                     <div class="card bg-dark text-white  shadow-lg  d-flex flex-column align-items-center "
                         style="height: 220px;">
-                        <img src="ssets/img/test/sportsclothes2.png" alt="Offer Image" class="img-fluid pic"
+                        <img src="assets/img/test/sportsclothes2.png" alt="Offer Image" class="img-fluid pic"
                             style="width: 100%; height: 220px; object-fit: cover;">
                         <h3 class="mt-2 p-3 text-center  list_page_test_tittle flex-grow-1 text-white">Camping & Outdoors</h3>
                     </div>
@@ -57,7 +57,7 @@
                 <a href="fitness.php">
                     <div class="card bg-dark text-white  shadow-lg  d-flex flex-column align-items-center "
                         style="height: 220px;">
-                        <img src="ssets/img/test/sportsclothes3.png" alt="Offer Image" class="img-fluid pic"
+                        <img src="assets/img/test/sportsclothes3.png" alt="Offer Image" class="img-fluid pic"
                             style="width: 100%; height: 220px; object-fit: cover;">
                         <h3 class="mt-2 p-3 text-center  list_page_test_tittle flex-grow-1 text-white">Sports & Fitness</h3>
                     </div>
@@ -69,7 +69,7 @@
 
                     <div class="card bg-dark text-white shadow-lg  d-flex flex-column align-items-center"
                         style="height: 220px;">
-                        <img src="ssets/img/test/sportsclothes4.png" alt="Offer Image" class="img-fluid pic"
+                        <img src="assets/img/test/sportsclothes4.png" alt="Offer Image" class="img-fluid pic"
                             style="width: 100%; height: 220px; object-fit: cover;">
                         <h3 class="mt-2 p-3 text-center  list_page_test_tittle flex-grow-1 text-white">Equipment</h3>
                     </div>
@@ -82,7 +82,7 @@
                 <a href="nutrition_diet.php">
                     <div class="card bg-dark text-white  shadow-lg  d-flex flex-column align-items-center "
                         style="height: 220px;">
-                        <img src="ssets/img/test/sportsclothes5.png" alt="Offer Image" class="img-fluid pic"
+                        <img src="assets/img/test/sportsclothes5.png" alt="Offer Image" class="img-fluid pic"
                             style="width: 100%; height: 220px; object-fit: cover;">
                         <h3 class="mt-2 p-3 text-center  list_page_test_tittle flex-grow-1 text-white">Nutrition & Diet</h3>
                     </div>
@@ -95,7 +95,7 @@
 
                     <div class="card bg-dark text-white shadow-lg  d-flex flex-column align-items-center"
                         style="height: 220px;">
-                        <img src="ssets/img/test/sportsclothes6.png" alt="Offer Image" class="img-fluid pic"
+                        <img src="assets/img/test/sportsclothes6.png" alt="Offer Image" class="img-fluid pic"
                             style="width: 100%; height: 220px; object-fit: cover;">
                         <h3 class="mt-2 p-3 text-center  list_page_test_tittle flex-grow-1 text-white">Cycling - Bikes & Accessories</h3>
                     </div>

@@ -120,10 +120,10 @@
 
                     <ul>
                         <li><a class="sub_mini_serices" href="dental_hospital.php"> Dental Hospitals </a></li>
-                        <li><a class="sub_mini_serices" href="dental_hospital.php"> Neuro Hospitals </a></li>
-                        <li><a class="sub_mini_serices" href="dental_hospital.php"> ENT Hospitals </a></li>
-                        <li><a class="sub_mini_serices" href="dental_hospital.php"> Skincare Hospitals </a></li>
-                        <li><a class="sub_mini_serices" href="dental_hospital.php"> physiotherapy </a></li>
+                        <li><a class="sub_mini_serices" href="neuro_hospital.php"> Neuro Hospitals </a></li>
+                        <li><a class="sub_mini_serices" href="ent_hospital.php"> ENT Hospitals </a></li>
+                        <li><a class="sub_mini_serices" href="skincare.php"> Skincare Hospitals </a></li>
+                        <li><a class="sub_mini_serices" href="physiotherapy.php"> physiotherapy </a></li>
 
                         <li><a class="view_all_sub_mini_serices" href="dental.php"> View All Fashion Deals </a></li>
 
@@ -136,7 +136,7 @@
 
                     <ul>
                         <li><a class="sub_mini_serices" href="sports_clothing.php"> Sports Clothing </a></li>
-                        <li><a class="sub_mini_serices" href="sports_clothing.php"> Gyms </a></li>
+                        <li><a class="sub_mini_serices" href="gym.php"> Gyms </a></li>
                         <li><a class="sub_mini_serices" href="sports_clothing.php"> Camping & Outdoors </a></li>
                         <li><a class="sub_mini_serices" href="sports_clothing.php"> Sports & Fitness Equipment </a></li>
                         <li><a class="sub_mini_serices" href="sports_clothing.php">  Nutrition & Diet </a></li>

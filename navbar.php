@@ -395,10 +395,10 @@
                                                             <li><a class="sub_heading" href="dental_hospital.php"> Hospitals</a>
                                                                 <ul>
                                                                     <li><a class="sub_mini_serices" href="dental_hospital.php"> Dental Hospitals </a></li>
-                                                                    <li><a class="sub_mini_serices" href="dental_hospital.php"> Neuro Hospitals </a></li>
-                                                                    <li><a class="sub_mini_serices" href="dental_hospital.php"> ENT Hospitals </a></li>
-                                                                    <li><a class="sub_mini_serices" href="dental_hospital.php"> Skincare Hospitals </a></li>
-                                                                    <li><a class="sub_mini_serices" href="dental_hospital.php"> physiotherapy </a></li>
+                                                                    <li><a class="sub_mini_serices" href="neuro_hospital.php"> Neuro Hospitals </a></li>
+                                                                    <li><a class="sub_mini_serices" href="ent_hospital.php"> ENT Hospitals </a></li>
+                                                                    <li><a class="sub_mini_serices" href="skincare.php"> Skincare Hospitals </a></li>
+                                                                    <li><a class="sub_mini_serices" href="physiotherapy.php"> physiotherapy </a></li>
 
                                                                     <li><a class="view_all_sub_mini_serices" href="dental.php"> View All Fashion Deals </a></li>
 
