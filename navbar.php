@@ -360,7 +360,7 @@
                                                             <li><a class="sub_heading" href="sweets_chocolate.php"> Gifts & Jewellery</a>
                                                                 <ul>
 
-                                                                    <li><a class="sub_mini_serices" href="sweets_chocolate.php"> Sweets & Chocolates </a></li>
+                                                                    <li><a class="sub_mini_serices" href="sweets_chocolate.php"> kotaiah sweets </a></li>
                                                                     <li><a class="sub_mini_serices" href="gifts_collactable.php">YUVA GIFT WORLD</a></li>
                                                                     <li><a class="sub_mini_serices" href="flowers_gifts.php"> Flowers </a></li>
                                                                     <li><a class="sub_mini_serices" href="jewellery_watches.php"> Jewellery & Watches </a></li>

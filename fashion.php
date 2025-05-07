@@ -19,7 +19,7 @@
 
                     <div class="card bg-dark text-white shadow-lg  d-flex flex-column align-items-center"
                         style="height: 220px;">
-                        <img src="assets/img/self_images/cc.jpg" alt="Offer Image" class="img-fluid pic"
+                        <img src="assets\img\test\hollywoodfootware.png" alt="Offer Image" class="img-fluid pic"
                             style="width: 100%; height: 220px; object-fit: cover;">
                         <h3 class="mt-2 p-3 text-center  list_page_test_tittle flex-grow-1 text-white">
                         Footwear</h3>
@@ -33,7 +33,7 @@
                 <a href="footware_fashion.php">
                     <div class="card bg-dark text-white  shadow-lg  d-flex flex-column align-items-center "
                         style="height: 220px;">
-                        <img src="assets/img/self_images/padmapriya.avif" alt="Offer Image" class="img-fluid pic"
+                        <img src="assets\img\test\1g.png" alt="Offer Image" class="img-fluid pic"
                             style="width: 100%; height: 220px; object-fit: cover;">
                         <h3 class="mt-2 p-3 text-center  list_page_test_tittle flex-grow-1 text-white"> 1g Jewellery</h3>
                     </div>
@@ -47,7 +47,7 @@
                 <a href="womens_fashion.php">
                     <div class="card bg-dark text-white  shadow-lg  d-flex flex-column align-items-center "
                         style="height: 220px;">
-                        <img src="assets/img/self_images/anand.jpg" alt="Offer Image" class="img-fluid pic"
+                        <img src="assets\img\test\womenfashion.png" alt="Offer Image" class="img-fluid pic"
                             style="width: 100%; height: 220px; object-fit: cover;">
                         <h3 class="mt-2 p-3 text-center  list_page_test_tittle flex-grow-1 text-white">Women's Fashion</h3>
                     </div>
@@ -58,7 +58,7 @@
                 <a href="mens_fashion.php">
                     <div class="card bg-dark text-white  shadow-lg  d-flex flex-column align-items-center "
                         style="height: 220px;">
-                        <img src="assets/img/self_images/geet_sangeet.jpg" alt="Offer Image" class="img-fluid pic"
+                        <img src="assets\img\test\mensfashion.png" alt="Offer Image" class="img-fluid pic"
                             style="width: 100%; height: 220px; object-fit: cover;">
                         <h3 class="mt-2 p-3 text-center  list_page_test_tittle flex-grow-1 text-white">Men's Fashion</h3>
                     </div>
@@ -70,7 +70,7 @@
 
                     <div class="card bg-dark text-white shadow-lg  d-flex flex-column align-items-center"
                         style="height: 220px;">
-                        <img src="assets/img/self_images/tirumala.jpeg" alt="Offer Image" class="img-fluid pic"
+                        <img src="assets\img\test\fashionaccessories.png" alt="Offer Image" class="img-fluid pic"
                             style="width: 100%; height: 220px; object-fit: cover;">
                         <h3 class="mt-2 p-3 text-center  list_page_test_tittle flex-grow-1 text-white">Fashion Accessories</h3>
                     </div>
@@ -83,7 +83,7 @@
                 <a href="child_accessories_fashion.php">
                     <div class="card bg-dark text-white  shadow-lg  d-flex flex-column align-items-center "
                         style="height: 220px;">
-                        <img src="assets/img/self_images/inox.jpeg" alt="Offer Image" class="img-fluid pic"
+                        <img src="assets\img\test\childrenteenfashion.png" alt="Offer Image" class="img-fluid pic"
                             style="width: 100%; height: 220px; object-fit: cover;">
                         <h3 class="mt-2 p-3 text-center  list_page_test_tittle flex-grow-1 text-white">Children & Teen Fashion</h3>
                     </div>

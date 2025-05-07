@@ -1,5 +1,6 @@
 <?php include 'navbar.php';  ?>
 
+<?php include 'events_sidebar.php'; ?>
 
 
 

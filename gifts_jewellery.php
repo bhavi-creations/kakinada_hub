@@ -19,10 +19,10 @@
 
                     <div class="card bg-dark text-white shadow-lg  d-flex flex-column align-items-center"
                         style="height: 220px;">
-                        <img src="assets/img/self_images/cc.jpg" alt="Offer Image" class="img-fluid pic"
+                        <img src="assets\img\test\sweets.png" alt="Offer Image" class="img-fluid pic"
                             style="width: 100%; height: 220px; object-fit: cover;">
                         <h3 class="mt-2 p-3 text-center  list_page_test_tittle flex-grow-1 text-white">
-                        Sweets & Chocolates</h3>
+                        kotaiah sweets</h3>
                     </div>
                 </a>
 
@@ -33,7 +33,7 @@
                 <a href="gifts_collactable.php">
                     <div class="card bg-dark text-white  shadow-lg  d-flex flex-column align-items-center "
                         style="height: 220px;">
-                        <img src="assets/img/self_images/padmapriya.avif" alt="Offer Image" class="img-fluid pic"
+                        <img src="assets\img\test\cg1.png" alt="Offer Image" class="img-fluid pic"
                             style="width: 100%; height: 220px; object-fit: cover;">
                         <h3 class="mt-2 p-3 text-center  list_page_test_tittle flex-grow-1 text-white">YUVA GIFT WORLD</h3>
                     </div>
@@ -47,7 +47,7 @@
                 <a href="flowers_gifts.php">
                     <div class="card bg-dark text-white  shadow-lg  d-flex flex-column align-items-center "
                         style="height: 220px;">
-                        <img src="assets/img/self_images/anand.jpg" alt="Offer Image" class="img-fluid pic"
+                        <img src="assets\img\test\fs1.png" alt="Offer Image" class="img-fluid pic"
                             style="width: 100%; height: 220px; object-fit: cover;">
                         <h3 class="mt-2 p-3 text-center  list_page_test_tittle flex-grow-1 text-white">Siri Florist</h3>
                     </div>
@@ -58,7 +58,7 @@
                 <a href="jewellery_watches.php">
                     <div class="card bg-dark text-white  shadow-lg  d-flex flex-column align-items-center "
                         style="height: 220px;">
-                        <img src="assets/img/self_images/geet_sangeet.jpg" alt="Offer Image" class="img-fluid pic"
+                        <img src="assets\img\test\watches1.png" alt="Offer Image" class="img-fluid pic"
                             style="width: 100%; height: 220px; object-fit: cover;">
                         <h3 class="mt-2 p-3 text-center  list_page_test_tittle flex-grow-1 text-white">Jewellery & Watches</h3>
                     </div>
@@ -70,7 +70,7 @@
 
                     <div class="card bg-dark text-white shadow-lg  d-flex flex-column align-items-center"
                         style="height: 220px;">
-                        <img src="assets/img/self_images/tirumala.jpeg" alt="Offer Image" class="img-fluid pic"
+                        <img src="assets\img\test\malbar.png" alt="Offer Image" class="img-fluid pic"
                             style="width: 100%; height: 220px; object-fit: cover;">
                         <h3 class="mt-2 p-3 text-center  list_page_test_tittle flex-grow-1 text-white">Malbar</h3>
                     </div>
@@ -83,7 +83,7 @@
                 <a href="tanisqe.php">
                     <div class="card bg-dark text-white  shadow-lg  d-flex flex-column align-items-center "
                         style="height: 220px;">
-                        <img src="assets/img/self_images/inox.jpeg" alt="Offer Image" class="img-fluid pic"
+                        <img src="assets\img\test\tanishq.png" alt="Offer Image" class="img-fluid pic"
                             style="width: 100%; height: 220px; object-fit: cover;">
                         <h3 class="mt-2 p-3 text-center  list_page_test_tittle flex-grow-1 text-white">Tansique</h3>
                     </div>
@@ -96,7 +96,7 @@
 
                     <div class="card bg-dark text-white shadow-lg  d-flex flex-column align-items-center"
                         style="height: 220px;">
-                        <img src="assets/img/self_images/surya.avif" alt="Offer Image" class="img-fluid pic"
+                        <img src="assets\img\test\khazana.png" alt="Offer Image" class="img-fluid pic"
                             style="width: 100%; height: 220px; object-fit: cover;">
                         <h3 class="mt-2 p-3 text-center  list_page_test_tittle flex-grow-1 text-white">Kazana Jewellery</h3>
                     </div>

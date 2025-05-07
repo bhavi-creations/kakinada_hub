@@ -1,3 +1,11 @@
+<?php include 'navbar.php';  ?>
+
+
+
+
+
+<?php include 'events_sidebar.php'; ?>
+
 <?php
 include './db.connection/db_connection.php'; // Include your database connection file
 
@@ -33,11 +41,6 @@ $result = $stmt->get_result();
 
 
 
-<?php include 'navbar.php';  ?>
-
-
-
-
 
 
 
@@ -56,7 +59,7 @@ $result = $stmt->get_result();
             <?php include 'left_side_ads.php'; ?>
 
             <div class="col-lg-8 col-12">
-                <div class="row">
+                <div class="row scrollable-list">
 
                     <?php
                     // Fetch events from the database

@@ -19,7 +19,7 @@
 
                     <div class="card bg-dark text-white shadow-lg  d-flex flex-column align-items-center"
                         style="height: 220px;">
-                        <img src="assets/img/self_images/cc.jpg" alt="Offer Image" class="img-fluid pic"
+                        <img src="assets/img/test/rts.png" alt="Offer Image" class="img-fluid pic"
                             style="width: 100%; height: 220px; object-fit: cover;">
                         <h3 class="mt-2 p-3 text-center  list_page_test_tittle flex-grow-1 text-white">Royal Tuch</h3>
                     </div>
@@ -32,7 +32,7 @@
                 <a href="vv_saloon.php">
                     <div class="card bg-dark text-white  shadow-lg  d-flex flex-column align-items-center "
                         style="height: 220px;">
-                        <img src="assets/img/self_images/padmapriya.avif" alt="Offer Image" class="img-fluid pic"
+                        <img src="assets/img/test/vvs.png" alt="Offer Image" class="img-fluid pic"
                             style="width: 100%; height: 220px; object-fit: cover;">
                         <h3 class="mt-2 p-3 text-center  list_page_test_tittle flex-grow-1 text-white"> V & V Saloon</h3>
                     </div>
@@ -46,7 +46,7 @@
                 <a href="s3_beauty_saloon.php">
                     <div class="card bg-dark text-white  shadow-lg  d-flex flex-column align-items-center "
                         style="height: 220px;">
-                        <img src="assets/img/self_images/anand.jpg" alt="Offer Image" class="img-fluid pic"
+                        <img src="assets/img/test/s3.png" alt="Offer Image" class="img-fluid pic"
                             style="width: 100%; height: 220px; object-fit: cover;">
                         <h3 class="mt-2 p-3 text-center  list_page_test_tittle flex-grow-1 text-white">S3 Beauty Saloon</h3>
                     </div>
@@ -57,7 +57,7 @@
                 <a href="groom9_saloon.php">
                     <div class="card bg-dark text-white  shadow-lg  d-flex flex-column align-items-center "
                         style="height: 220px;">
-                        <img src="assets/img/self_images/geet_sangeet.jpg" alt="Offer Image" class="img-fluid pic"
+                        <img src="assets/img/test/groom9.png" alt="Offer Image" class="img-fluid pic"
                             style="width: 100%; height: 220px; object-fit: cover;">
                         <h3 class="mt-2 p-3 text-center  list_page_test_tittle flex-grow-1 text-white">Groom 9 Saloon</h3>
                     </div>
@@ -69,7 +69,7 @@
 
                     <div class="card bg-dark text-white shadow-lg  d-flex flex-column align-items-center"
                         style="height: 220px;">
-                        <img src="assets/img/self_images/tirumala.jpeg" alt="Offer Image" class="img-fluid pic"
+                        <img src="assets/img/test/nss.png" alt="Offer Image" class="img-fluid pic"
                             style="width: 100%; height: 220px; object-fit: cover;">
                         <h3 class="mt-2 p-3 text-center  list_page_test_tittle flex-grow-1 text-white">Natural Saloon</h3>
                     </div>
@@ -82,7 +82,7 @@
                 <a href="angelic_beauty_salon.php">
                     <div class="card bg-dark text-white  shadow-lg  d-flex flex-column align-items-center "
                         style="height: 220px;">
-                        <img src="assets/img/self_images/inox.jpeg" alt="Offer Image" class="img-fluid pic"
+                        <img src="assets/img/test/abss.png" alt="Offer Image" class="img-fluid pic"
                             style="width: 100%; height: 220px; object-fit: cover;">
                         <h3 class="mt-2 p-3 text-center  list_page_test_tittle flex-grow-1 text-white">Angelic Beauty Saloom</h3>
                     </div>
@@ -95,7 +95,7 @@
 
                     <div class="card bg-dark text-white shadow-lg  d-flex flex-column align-items-center"
                         style="height: 220px;">
-                        <img src="assets/img/self_images/surya.avif" alt="Offer Image" class="img-fluid pic"
+                        <img src="assets/img/test/lss.png" alt="Offer Image" class="img-fluid pic"
                             style="width: 100%; height: 220px; object-fit: cover;">
                         <h3 class="mt-2 p-3 text-center  list_page_test_tittle flex-grow-1 text-white">Laavish Saloon</h3>
                     </div>
@@ -103,7 +103,7 @@
             </div>
 
             <!-- Card 1 -->
-            <div class="col-6 col-md-3">
+            <!-- <div class="col-6 col-md-3">
                 <a href="angelic_beauty_salon.php">
 
                     <div class="card bg-dark text-white  shadow-lg  d-flex flex-column align-items-center "
@@ -113,7 +113,7 @@
                         <h3 class="mt-2 p-3 text-center  list_page_test_tittle flex-grow-1 text-white">Decent</h3>
                     </div>
                 </a>
-            </div>
+            </div> -->
 
         
 

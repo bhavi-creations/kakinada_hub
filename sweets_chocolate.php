@@ -73,7 +73,7 @@
     <div class="container">
 
         <div class="text-center   ">
-            <h1>Welcome to The Sweets & Chocolate</h1>
+            <h1>Welcome to The kotaiah sweets</h1>
             <h5>Deliciously Crafted Treats for Every Occasion</h5>
         </div>
         <div class="row">
@@ -109,7 +109,7 @@
                     </div>
                     <div class="col-md-4 col-12 p-3">
                         <div class="product-content">
-                            <h3>Sweets & Cholocate</h3>
+                            <h3>kotaiah sweets</h3>
                             <p class="product-title h5 mt-1">Indulge in Irresistible Sweets and Chocolate</p>
 
                             <div class="rating-wrap">

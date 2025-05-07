@@ -1,6 +1,6 @@
 <?php include 'navbar.php';  ?>
 
- 
+
 
 
 
@@ -169,7 +169,7 @@
 
 
 <?php
- 
+
 
 // Fetch offers items with type 'upper'
 $sqlUpper = "SELECT * FROM offers WHERE type = 'upper' ORDER BY created_at DESC";
@@ -381,7 +381,7 @@ $resultLower = $conn->query($sqlLower);
 
 
 <!-- <?php
-         
+
 
         if ($conn->connect_error) {
             die("Connection failed: " . $conn->connect_error);
@@ -421,7 +421,7 @@ $resultLower = $conn->query($sqlLower);
 
 
 <?php
- 
+
 
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);

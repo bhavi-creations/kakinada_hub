@@ -19,7 +19,7 @@
 
                     <div class="card bg-dark text-white shadow-lg  d-flex flex-column align-items-center"
                         style="height: 220px;">
-                        <img src="assets/img/self_images/cc.jpg" alt="Offer Image" class="img-fluid pic"
+                        <img src="assets/img/test/toysandgames.png" alt="Offer Image" class="img-fluid pic"
                             style="width: 100%; height: 220px; object-fit: cover;">
                         <h3 class="mt-2 p-3 text-center  list_page_test_tittle flex-grow-1 text-white">Toys & Games</h3>
                     </div>
@@ -32,7 +32,7 @@
                 <a href="kids_babies.php">
                     <div class="card bg-dark text-white  shadow-lg  d-flex flex-column align-items-center "
                         style="height: 220px;">
-                        <img src="assets/img/self_images/padmapriya.avif" alt="Offer Image" class="img-fluid pic"
+                        <img src="assets/img/test/toysandgames1.png" alt="Offer Image" class="img-fluid pic"
                             style="width: 100%; height: 220px; object-fit: cover;">
                         <h3 class="mt-2 p-3 text-center  list_page_test_tittle flex-grow-1 text-white"> Kids & Baby Clothes</h3>
                     </div>
@@ -46,9 +46,9 @@
                 <a href="s3_beauty_saloon.php">
                     <div class="card bg-dark text-white  shadow-lg  d-flex flex-column align-items-center "
                         style="height: 220px;">
-                        <img src="assets/img/self_images/anand.jpg" alt="Offer Image" class="img-fluid pic"
+                        <img src="assets/img/test/toysandgames2.png" alt="Offer Image" class="img-fluid pic"
                             style="width: 100%; height: 220px; object-fit: cover;">
-                        <h3 class="mt-2 p-3 text-center  list_page_test_tittle flex-grow-1 text-white">Little Twins</h3>
+                        <h3 class="mt-2 p-3 text-center  list_page_test_tittle flex-grow-1 text-white">Laxons Baby World</h3>
                     </div>
                 </a>
             </div>
@@ -57,7 +57,18 @@
                 <a href="groom9_saloon.php">
                     <div class="card bg-dark text-white  shadow-lg  d-flex flex-column align-items-center "
                         style="height: 220px;">
-                        <img src="assets/img/self_images/geet_sangeet.jpg" alt="Offer Image" class="img-fluid pic"
+                        <img src="assets/img/test/toysandgames2.png" alt="Offer Image" class="img-fluid pic"
+                            style="width: 100%; height: 220px; object-fit: cover;">
+                        <h3 class="mt-2 p-3 text-center  list_page_test_tittle flex-grow-1 text-white">Groom 9 Saloon</h3>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-6 col-md-3">
+                <a href="groom9_saloon.php">
+                    <div class="card bg-dark text-white  shadow-lg  d-flex flex-column align-items-center "
+                        style="height: 220px;">
+                        <img src="assets/img/test/toysandgames.png" alt="Offer Image" class="img-fluid pic"
                             style="width: 100%; height: 220px; object-fit: cover;">
                         <h3 class="mt-2 p-3 text-center  list_page_test_tittle flex-grow-1 text-white">Groom 9 Saloon</h3>
                     </div>

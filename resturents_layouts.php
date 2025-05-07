@@ -75,7 +75,6 @@
                         <div class="product-content">
 
 
-                            <h3 class="heading-gradient movie-value "><?= htmlspecialchars($row['name']) ?></h3>
                             <p class="product-title h5 mt-1 p-gradient movie-value"><?= htmlspecialchars($row['tagline']) ?></p>
 
                             <div class="rating-wrap">
