@@ -111,7 +111,7 @@ $upload_path = '../uploads/restaurants/';
                                                 <td><?= date('F j, Y, g:i a', strtotime($restaurant['created_at'])) ?></td>
                                                 <td>
                                                     <a href="edit_restaurant.php?id=<?= $restaurant['id'] ?>" class="btn btn-sm btn-primary">Edit</a>
-                                                    <a href="edit_restaurant.php?id=<?= $restaurant['id'] ?>" class="btn btn-sm btn-danger" onclick="return confirm('Are you sure you want to delete this restaurant?')">Delete</a>
+                                                    <a href="delete_restaurant.php?id=<?= $restaurant['id'] ?>" class="btn btn-sm btn-danger" onclick="return confirm('Are you sure you want to delete this restaurant?')">Delete</a>
                                                 </td>
                                             </tr>
                                         <?php endforeach; ?>
