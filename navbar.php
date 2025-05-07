@@ -30,7 +30,7 @@
 	    All CSS File
 	============================== -->
 
-    
+
     <!-- Bootstrap -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <!-- <link rel="stylesheet" href="assets/css/app.min.css"> -->
@@ -113,20 +113,26 @@
 
 
 
-                            <li class="resturent_bg"><a class=" " href="theaters.php"> Resturents</a>
+                            <li class="resturent_bg"><a class=" " href="resturents.php"> Resturents</a>
                                 <ul>
-                                    <li><a class="sub_mini_serices" href="business_layout.php"> Food Train </a></li>
-                                    <li><a class="sub_mini_serices" href="business_layout.php"> BBQ </a></li>
-                                    <li><a class="sub_mini_serices" href="business_layout.php"> Kritunga </a></li>
-                                    <li><a class="sub_mini_serices" href="business_layout.php"> Chitti Babu </a></li>
-                                    <li><a class="sub_mini_serices" href="business_layout.php"> Arabian nights </a></li>
-                                    <li><a class="sub_mini_serices" href="business_layout.php"> Hungry Birds </a></li>
-                                    <li><a class="sub_mini_serices" href="business_layout.php"> Khaidi </a></li>
-                                    <li><a class="sub_mini_serices" href="business_layout.php"> Zeeshan </a></li>
+                                    <?php
+                                    $query = "SELECT id, name FROM restaurants ORDER BY name ASC LIMIT 8";
+                                    $result = mysqli_query($conn, $query);
 
+                                    if ($result && mysqli_num_rows($result) > 0):
+                                        while ($row = mysqli_fetch_assoc($result)):
+                                            $id = $row['id'];
+                                            $name = htmlspecialchars($row['name']);
+                                    ?>
+                                            <li><a class="sub_mini_serices" href="resturents_layouts.php?id=<?= $id ?>"><?= $name ?></a></li>
+                                    <?php
+                                        endwhile;
+                                    else:
+                                        echo '<li>No restaurants available</li>';
+                                    endif;
+                                    ?>
 
-                                    <li><a class="view_all_sub_mini_serices" href="resturents.php"> View All Resturents Deals </a></li>
-
+                                    <li><a class="view_all_sub_mini_serices" href="resturents.php">View All Restaurants Deals</a></li>
                                 </ul>
                             </li>
                             <li class="saloon_bg"><a class=" " href="theaters.php"> Saloons & Spa</a>
@@ -302,20 +308,30 @@
 
                                                         </div>
                                                         <div class="col-3 resturent_bg  my-2 ">
-                                                            <li><a class="sub_heading" href="resturents_layouts.php"> Resturents</a>
+                                                            <li><a class="sub_heading" href="resturents.php"> Resturents</a>
                                                                 <ul>
-                                                                    <li><a class="sub_mini_serices" href="business_layout.php"> Food Train </a></li>
-                                                                    <li><a class="sub_mini_serices" href="business_layout.php"> BBQ </a></li>
-                                                                    <li><a class="sub_mini_serices" href="business_layout.php"> Kritunga </a></li>
-                                                                    <li><a class="sub_mini_serices" href="business_layout.php"> Chitti Babu </a></li>
-                                                                    <li><a class="sub_mini_serices" href="business_layout.php"> Arabian nights </a></li>
-                                                                    <li><a class="sub_mini_serices" href="business_layout.php"> Hungry Birds </a></li>
-                                                                    <li><a class="sub_mini_serices" href="business_layout.php"> Khaidi </a></li>
-                                                                    <li><a class="sub_mini_serices" href="business_layout.php"> Zeeshan </a></li>
+                                                                    <?php
 
-                                                                    <li><a class="view_all_sub_mini_serices" href="resturents.php"> View All Resturents Deals </a></li>
 
+                                                                    $query = "SELECT id, name FROM restaurants ORDER BY name ASC LIMIT 8";
+                                                                    $result = mysqli_query($conn, $query);
+
+                                                                    if ($result && mysqli_num_rows($result) > 0):
+                                                                        while ($row = mysqli_fetch_assoc($result)):
+                                                                            $id = $row['id'];
+                                                                            $name = htmlspecialchars($row['name']);
+                                                                    ?>
+                                                                            <li><a class="sub_mini_serices" href="resturents_layouts.php?id=<?= $id ?>"><?= $name ?></a></li>
+                                                                    <?php
+                                                                        endwhile;
+                                                                    else:
+                                                                        echo '<li>No restaurants available</li>';
+                                                                    endif;
+                                                                    ?>
+
+                                                                    <li><a class="view_all_sub_mini_serices" href="resturents.php">View All Restaurants Deals</a></li>
                                                                 </ul>
+
                                                             </li>
 
                                                         </div>
@@ -520,24 +536,24 @@
 
 
 
-<?php
-   include './db.connection/db_connection.php'; // Ensure the database connection is included
+    <?php
+    include './db.connection/db_connection.php'; // Ensure the database connection is included
 
-   // Fetch marquee texts
-   $sql = "SELECT text FROM marquee_texts ORDER BY created_at DESC";
-   $result = $conn->query($sql);
+    // Fetch marquee texts
+    $sql = "SELECT text FROM marquee_texts ORDER BY created_at DESC";
+    $result = $conn->query($sql);
 
-   // Prepare marquee content
-   $marquee_texts = [];
-   while ($row = $result->fetch_assoc()) {
-       $marquee_texts[] = '<span class="highlight-text">' . htmlspecialchars($row['text']) . '</span>';
-   }
+    // Prepare marquee content
+    $marquee_texts = [];
+    while ($row = $result->fetch_assoc()) {
+        $marquee_texts[] = '<span class="highlight-text">' . htmlspecialchars($row['text']) . '</span>';
+    }
 
-   // Convert array to string with separators
-   $marquee_content = implode(' &nbsp; || &nbsp; ', $marquee_texts);
-   ?>
+    // Convert array to string with separators
+    $marquee_content = implode(' &nbsp; || &nbsp; ', $marquee_texts);
+    ?>
 
-<!-- <section class="marquee-section">
+    <!-- <section class="marquee-section">
     <div class="marquee-content">
         <marquee behavior="scroll" direction="left" class="marquee">
             <?php echo $marquee_content; ?>
@@ -547,22 +563,19 @@
 
 
 
-<section class="marquee-section" id="marqueeSection">
-    <div class="marquee-content">
-        <marquee behavior="scroll" direction="left" class="marquee">
-            <?php echo $marquee_content; ?>
-        </marquee>
-        <button class="close-marquee" onclick="closeMarquee()">×</button>
-    </div>
-</section>
+    <section class="marquee-section" id="marqueeSection">
+        <div class="marquee-content">
+            <marquee behavior="scroll" direction="left" class="marquee">
+                <?php echo $marquee_content; ?>
+            </marquee>
+            <button class="close-marquee" onclick="closeMarquee()">×</button>
+        </div>
+    </section>
 
 
 
-<script>
-function closeMarquee() {
-    document.getElementById("marqueeSection").style.display = "none";
-}
-</script>
-
-
-
+    <script>
+        function closeMarquee() {
+            document.getElementById("marqueeSection").style.display = "none";
+        }
+    </script>

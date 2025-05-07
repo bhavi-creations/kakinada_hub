@@ -5055,3 +5055,12 @@ right: 10px;
      top: 55%;
    }
  }
+
+
+
+
+ .scroll_foe_restrents {
+  max-height: 85vh !important;
+  overflow-y: auto !important;
+  padding-right: 10px !important;
+}

@@ -1,6 +1,4 @@
 <?php
-include 'db.connection/db_connection.php';
-
 // Fetch companies from database
 $companyQuery = "SELECT id, name FROM companies ORDER BY name ASC";
 $companyResult = mysqli_query($conn, $companyQuery);

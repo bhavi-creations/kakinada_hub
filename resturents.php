@@ -1,4 +1,6 @@
 <?php include 'navbar.php'; ?>
+<?php include 'resturents_sidebar.php'; ?>
+
  
 
 <section class="bg_section responsive_section">

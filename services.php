@@ -15,7 +15,7 @@
 
                 <div class="yellow_field_card movies_bg">
                     <h4 class="yello_heding">
-                        <img src="assets/img/self_images/day.png" alt="" class="img-fluid"><a href="theaters.php">Movies</a>  
+                        <img src="assets/img/self_images/day.png" alt="" class="img-fluid"><a href="theaters.php">Movies</a>
                     </h4>
 
                     <ul>
@@ -33,24 +33,31 @@
                     </ul>
                 </div>
                 <div class="yellow_field_card resturent_bg">
-                    <h4 class="yello_heding"><img src="assets/img/self_images/spoon-and-fork.png" alt="" class="img-fluid"> <a href="resturents_layouts.php">Resturents</a> </h4>
+                    <h4 class="yello_heding"><img src="assets/img/self_images/spoon-and-fork.png" alt="" class="img-fluid"> <a href="resturents.php">Resturents</a> </h4>
 
                     <ul>
+                        <?php
+                         
 
+                        $query = "SELECT id, name FROM restaurants ORDER BY name ASC LIMIT 8";
+                        $result = mysqli_query($conn, $query);
 
+                        if ($result && mysqli_num_rows($result) > 0):
+                            while ($row = mysqli_fetch_assoc($result)):
+                                $id = $row['id'];
+                                $name = htmlspecialchars($row['name']);
+                        ?>
+                                <li><a class="sub_mini_serices" href="resturents_layouts.php?id=<?= $id ?>"><?= $name ?></a></li>
+                        <?php
+                            endwhile;
+                        else:
+                            echo '<li>No restaurants available</li>';
+                        endif;
+                        ?>
 
-                        <li><a class="sub_mini_serices" href="business_layout.php"> Food Train </a></li>
-                        <li><a class="sub_mini_serices" href="business_layout.php"> BBQ </a></li>
-                        <li><a class="sub_mini_serices" href="business_layout.php"> Kritunga </a></li>
-                        <li><a class="sub_mini_serices" href="business_layout.php"> Chitti Babu </a></li>
-                        <li><a class="sub_mini_serices" href="business_layout.php"> Arabian nights </a></li>
-                        <li><a class="sub_mini_serices" href="business_layout.php"> Hungry Birds </a></li>
-                        <li><a class="sub_mini_serices" href="business_layout.php"> Khaidi </a></li>
-                        <li><a class="sub_mini_serices" href="business_layout.php"> Zeeshan </a></li>
-
-                        <li><a class="view_all_sub_mini_serices" href="resturents.php"> View All Resturents Deals </a></li>
-
+                        <li><a class="view_all_sub_mini_serices" href="resturents.php">View All Restaurants Deals</a></li>
                     </ul>
+
 
                 </div>
                 <div class="yellow_field_card saloon_bg">
@@ -91,7 +98,7 @@
                 </div>
                 <div class="yellow_field_card fashion_bg">
 
-                    <h4 class="yello_heding "> <img src="assets/img/self_images/fashion.png" alt="" class="img-fluid">  <a href="theaters.php">Fashion</a> </h4>
+                    <h4 class="yello_heding "> <img src="assets/img/self_images/fashion.png" alt="" class="img-fluid"> <a href="theaters.php">Fashion</a> </h4>
 
                     <ul>
                         <li><a class="sub_mini_serices" href="footware_fashion.php"> Footwear </a></li>
@@ -124,7 +131,7 @@
 
                 </div>
                 <div class="yellow_field_card sports_bg">
-                    <h4 class="yello_heding"><img src="assets/img/self_images/Sports.png" alt="" class="img-fluid">  <a href="theaters.php"> Sports & Gym</a> </h4>
+                    <h4 class="yello_heding"><img src="assets/img/self_images/Sports.png" alt="" class="img-fluid"> <a href="theaters.php"> Sports & Gym</a> </h4>
 
 
                     <ul>
@@ -140,7 +147,7 @@
 
                 </div>
                 <div class="yellow_field_card kids_bg">
-                    <h4 class="yello_heding"><img src="assets/img/self_images/kids.png" alt="" class="img-fluid"> <a href="theaters.php">   Kids & Babies</a></h4>
+                    <h4 class="yello_heding"><img src="assets/img/self_images/kids.png" alt="" class="img-fluid"> <a href="theaters.php"> Kids & Babies</a></h4>
 
 
                     <ul>
