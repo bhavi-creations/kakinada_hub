@@ -377,9 +377,9 @@
                                                             <li><a class="sub_heading" href="footware_fashion.php"> Fashion</a>
                                                                 <ul>
                                                                     <li><a class="sub_mini_serices" href="footware_fashion.php"> Footwear </a></li>
-                                                                    <li><a class="sub_mini_serices" href="footware_fashion.php"> Jewellery </a></li>
+                                                                    <!-- <li><a class="sub_mini_serices" href="footware_fashion.php"> Jewellery </a></li> -->
                                                                     <li><a class="sub_mini_serices" href="womens_fashion.php"> Women's Fashion </a></li>
-                                                                    <li><a class="sub_mini_serices" href="footware_fashion.php"> Designerwear </a></li>
+                                                                    <!-- <li><a class="sub_mini_serices" href="footware_fashion.php"> Designerwear </a></li> -->
                                                                     <li><a class="sub_mini_serices" href="mens_fashion.php"> Men's Fashion </a></li>
                                                                     <!-- <li><a class="sub_mini_serices" href="footware_fashion.php"> Lingerie </a></li> -->
                                                                     <li><a class="sub_mini_serices" href="fashion_accessories.php"> Fashion Accessories </a></li>
@@ -410,11 +410,11 @@
                                                             <li><a class="sub_heading" href="sports_clothing.php"> Sports & Gym</a>
                                                                 <ul>
                                                                     <li><a class="sub_mini_serices" href="sports_clothing.php"> Sports Clothing </a></li>
-                                                                    <li><a class="sub_mini_serices" href="sports_clothing.php"> Gyms </a></li>
-                                                                    <li><a class="sub_mini_serices" href="sports_clothing.php"> Camping & Outdoors </a></li>
-                                                                    <li><a class="sub_mini_serices" href="sports_clothing.php"> Sports & Fitness Equipment </a></li>
-                                                                    <li><a class="sub_mini_serices" href="sports_clothing.php"> Nutrition & Diet </a></li>
-                                                                    <li><a class="sub_mini_serices" href="sports_clothing.php"> Cycling - Bikes & Accessories </a></li>
+                                                                    <li><a class="sub_mini_serices" href="gym.php"> Gyms </a></li>
+                                                                    <li><a class="sub_mini_serices" href="outdoor.php"> Camping & Outdoors </a></li>
+                                                                    <li><a class="sub_mini_serices" href="fitness.php"> Sports & Fitness Equipment </a></li>
+                                                                    <li><a class="sub_mini_serices" href="nutrition_diet.php"> Nutrition & Diet </a></li>
+                                                                    <li><a class="sub_mini_serices" href="accessories.php"> Cycling - Bikes & Accessories </a></li>
                                                                     <li><a class="view_all_sub_mini_serices" href="sports_gym.php"> View All Sports & Fitness Deals </a></li>
 
 
@@ -427,8 +427,12 @@
                                                                 <ul>
                                                                     <li><a class="sub_mini_serices" href="toys_games.php"> Toys & Games </a></li>
                                                                     <li><a class="sub_mini_serices" href="toys_games.php"> Little Twins </a></li>
-                                                                    <li><a class="sub_mini_serices" href="toys_games.php"> Maternity </a></li>
-                                                                    <li><a class="sub_mini_serices" href="toys_games.php"> Baby Items & Furniture </a></li>
+                                                                    <li><a class="sub_mini_serices" href="tinynest.php"> TinyNest World </a></li>
+                                                                    <li><a class="sub_mini_serices" href="toys_hub.php"> ToyTales Hub </a></li>
+                                                                    <li><a class="sub_mini_serices" href="snugglebee.php"> SnuggleBee  </a></li>
+                                                                    <li><a class="sub_mini_serices" href="littlewonders.php"> LittleWonders  </a></li>
+                                                                    <li><a class="sub_mini_serices" href="dreamcrib.php"> DreamCrib  </a></li>
+
                                                                     <li><a class="view_all_sub_mini_serices" href="kids_babies.php"> View All Kids & Babies Deals </a></li>
 
                                                                 </ul>

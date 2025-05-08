@@ -34,6 +34,9 @@ if (isset($_GET['id'])) {
     <button id="restaurant-icon" class="restaurant-icon">🔙</button>
 </a>
 
+
+
+
 <section class="bg_section responsive_section">
     <div class="container ">
         <h1 class="text-center gradient_text_color spacing_for_htag"><?php echo htmlspecialchars($property['category']); ?> - <?php echo htmlspecialchars($property['type']); ?></h1>
@@ -48,37 +51,34 @@ if (isset($_GET['id'])) {
 
             <div class="col-lg-8 col-12 text_side_div   px-3" style="min-height: 400px;">
 
-                <div class="row gx-4 property-wrapper-v2 ">
 
+
+
+
+                <div class="row gx-4 property_wrapper_v2_section">
                     <!-- Left Side: Image + Description -->
-                    <div class="col-12 col-md-6 position-relative">
-
-                        <!-- Posted Date -->
-                        <div class=" propeerty_section_details " style="z-index: 2;">
-
+                    <div class="col-12 col-md-6 left_col_section position-relative">
+                        <div class="propeerty_section_details mt-2">
                             📅 Posted On:
                             <?php
                             $created_at = isset($property['created_at']) ? strtotime($property['created_at']) : null;
                             echo $created_at ? date('d M Y', $created_at) . ' (' . date('H:i', $created_at) . ')' : 'Not Available';
                             ?>
-
-
                         </div>
 
-
                         <!-- Image Gallery -->
-                        <div class="image-gallery  mt-4">
-                            <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
-                                <div class="carousel-inner">
+                        <div class="image-gallery mt-3">
+                            <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+                                <div class="carousel_inner_section">
                                     <?php
                                     if (!empty($images)) {
                                         foreach ($images as $index => $image) {
                                             $image = trim($image);
                                             $activeClass = ($index === 0) ? "active" : "";
                                             echo "
-                                <div class='carousel-item $activeClass'>
-                                    <img src='./admin/uploads/properties/$image' class='d-block w-100' alt='Property Image'>
-                                </div>";
+                            <div class='carousel-item $activeClass'>
+                                <img src='./admin/uploads/properties/$image' class='d-block w-100' alt='Property Image'>
+                            </div>";
                                         }
                                     }
                                     ?>
@@ -86,7 +86,7 @@ if (isset($_GET['id'])) {
                             </div>
 
                             <!-- Thumbnail Gallery -->
-                            <div class="thumbnail-gallery mt-3">
+                            <div class="thumbnail_gallery_section mt-3">
                                 <div class="row gx-2">
                                     <?php
                                     if (!empty($images)) {
@@ -103,13 +103,11 @@ if (isset($_GET['id'])) {
                                 </div>
                             </div>
                         </div>
-
                         <hr class="horizontal my-4">
-
                     </div>
 
                     <!-- Right Side: Property Details -->
-                    <div class="col-12 col-md-6" style="min-height: 400px;">
+                    <div class="col-12 col-md-6 right_col_section">
                         <div class="row fadeIn" data-wow-delay="0.3s">
                             <section class="OfferContainer_exclusive__non wow fadeInUp my-2" data-wow-delay="100ms">
                                 <div class="col-12 card_div">
@@ -124,37 +122,28 @@ if (isset($_GET['id'])) {
                                             "📏 Area (Sqft):" => $property['size_sqft'],
                                             "🛏 Bed Rooms:" => $property['bedrooms'],
                                             "🛁 Bath Rooms:" => $property['bathrooms'],
-                                            // "🧭 Facing:" => $property['facing'], 
                                             "🪑 Furnishing Status:" => $property['furnishing_status'],
                                             "🛠 Amenities:" => $property['amenities'] . " Available",
                                             "📞 Contact :" => htmlspecialchars($property['phone']) . ' / ' . htmlspecialchars($property['location']),
                                         ];
                                         foreach ($details as $label => $value) {
                                             echo "
-                                            <div class='col-12 propertys_divs_for_text_paras'>
-                                                <p class='property_p_tag'><strong class='property_strong'>$label</strong> " . htmlspecialchars($value) . "</p>
-                                            </div>";
+                            <div class='col-12 propertys_divs_for_text_paras'>
+                                <p class='property_p_tag'><strong class='property_strong'>$label</strong> " . htmlspecialchars($value) . "</p>
+                            </div>";
                                         }
                                         ?>
-
                                     </div>
                                 </div>
                             </section>
                         </div>
-
-
-                        <!-- Description -->
-
-
-
                     </div>
 
-                    <p class="property_p_tag text-center">
+                    <!-- Description (Full width below both sides) -->
+                    <p class="property_p_tag  mt-3">
                         <strong class="property_strong">📝 Description:</strong>
                         <?php echo nl2br(htmlspecialchars($property['description'])); ?>
                     </p>
-
-
                 </div>
 
 

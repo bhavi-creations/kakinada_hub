@@ -90,13 +90,13 @@
                         <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <img src="assets/img/test/7.png" class="  img-fluid  d-block w-100" alt="...">
+                                    <img src="assets\img\service _inside_images\hospitals5.png" class="  img-fluid  d-block w-100" alt="...">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="assets/img/test/8.png" class="img-fluid d-block w-100" alt="...">
+                                    <img src="assets\img\service _inside_images\hospitals7.png" class="img-fluid d-block w-100" alt="...">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="assets/img/test/9.png" class="img-fluid  d-block w-100" alt="...">
+                                    <img src="assets\img\service _inside_images\hospital8.png" class="img-fluid  d-block w-100" alt="...">
                                 </div>
                             </div>
                         </div>

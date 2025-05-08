@@ -73,8 +73,8 @@
     <div class="container">
 
         <div class="text-center   ">
-            <h1>Welcome to The Gifts & Collactables</h1>
-            <h5>Welcome to The Gifts & Collectables – A Treasure Trove of Unique Finds
+            <h1>Welcome to The Yuva Gift World</h1>
+            <h5>Welcome to The Yuva Gift World – A Treasure Trove of Unique Finds
             </h5>
         </div>
         <div class="row">
@@ -92,14 +92,14 @@
                         <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <img src="assets/img/test/21.png" class="  img-fluid  d-block w-100" alt="...">
+                                    <img src="assets\img\service _inside_images\gifts1.png" class="  img-fluid  d-block w-100" alt="...">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="assets/img/test/22.png" class="img-fluid d-block w-100" alt="...">
+                                    <img src="assets\img\service _inside_images\gifts2.png" class="img-fluid d-block w-100" alt="...">
                                 </div>
-                                <div class="carousel-item">
+                                <!-- <div class="carousel-item">
                                     <img src="assets/img/test/23.png" class="img-fluid  d-block w-100" alt="...">
-                                </div>
+                                </div> -->
                             </div>
                         </div>
 
@@ -107,7 +107,7 @@
                     </div>
                     <div class="col-md-4 col-12 p-3">
                         <div class="product-content">
-                            <h3>The Gifts & Collactables</h3>
+                            <h3>The Yuva Gift World</h3>
                             <p class="product-title h5 mt-1">Discover the Perfect Gift for Every Occasion
 
                             </p>
@@ -125,7 +125,7 @@
                 <div class="row my-5 p-3">
                     <div class="col-md-8 col-12 ">
                         <h6>
-                            At The Gifts & Collectables, we take pride in offering a carefully curated selection of gifts, souvenirs, and rare collectibles. Whether you are looking for a special present for a loved one or a unique item to add to your collection, we have something for everyone. From handcrafted decor to personalized gifts, our collection is designed to make every occasion memorable.
+                            At The Yuva Gift World, we take pride in offering a carefully curated selection of gifts, souvenirs, and rare collectibles. Whether you are looking for a special present for a loved one or a unique item to add to your collection, we have something for everyone. From handcrafted decor to personalized gifts, our collection is designed to make every occasion memorable.
 
 
 

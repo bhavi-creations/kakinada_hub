@@ -95,9 +95,7 @@
                                 <div class="carousel-item">
                                     <img src="assets/img/test/8.png" class="img-fluid d-block w-100" alt="...">
                                 </div>
-                                <div class="carousel-item">
-                                    <img src="assets/img/test/9.png" class="img-fluid  d-block w-100" alt="...">
-                                </div>
+                            
                             </div>
                         </div>
 

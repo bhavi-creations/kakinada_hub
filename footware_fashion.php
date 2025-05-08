@@ -77,7 +77,17 @@
             <h5>Trendy Footwear for Every Occasion</h5>
         </div>
         <div class="row">
-            <div class="col-lg-9 col-12">
+
+
+            <div class="col-lg-2  col-12 text_side_div d-none d-lg-block">
+
+                <img src="assets/img/test/sideimg2.png" alt="" class="img-fluid">
+
+                <img src="assets/img/test/animation.gif" alt="Animated GIF" class="mt-5">
+
+                <img src="assets/img/test/sideimg1.png" alt="" class="img-fluid mt-5">
+            </div>
+            <div class="col-lg-8 col-12">
                 <div class="row">
                     <div class="col-md-8 col-12">
 
@@ -380,7 +390,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3  col-12 text_side_div d-none d-lg-block">
+            <div class="col-lg-2  col-12 text_side_div d-none d-lg-block">
 
                 <img src="assets/img/test/sideimg2.png" alt="" class="img-fluid">
 

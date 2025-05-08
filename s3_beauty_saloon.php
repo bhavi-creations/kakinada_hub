@@ -77,11 +77,12 @@
             <h5>Experience Luxury & Elegance at S3 beauty saloon</h5>
         </div>
         <div class="row">
-             
 
 
 
-      <?php include 'left_side_ads.php'; ?>
+
+            <?php include 'left_side_ads.php'; ?>
+
 
 
 
@@ -97,13 +98,13 @@
                         <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <img src="assets/img/test/21.png" class="  img-fluid  d-block w-100" alt="...">
+                                    <img src="assets/img/service _inside_images/saloonandspa7.png" class="  img-fluid  d-block w-100" alt="...">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="assets/img/test/22.png" class="img-fluid d-block w-100" alt="...">
+                                    <img src="assets/img/service _inside_images/saloonandspa8.png" class="img-fluid d-block w-100" alt="...">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="assets/img/test/23.png" class="img-fluid  d-block w-100" alt="...">
+                                    <img src="assets/img/service _inside_images/saloonandspa9.png" class="img-fluid  d-block w-100" alt="...">
                                 </div>
                             </div>
                         </div>
@@ -393,9 +394,9 @@
                     </div>
                 </div>
             </div>
-         
-            
-      
+
+
+
             <?php include 'right_side_ads.php'; ?>
 
             <div id="mobileModal" class="mobile-modal-overlay">

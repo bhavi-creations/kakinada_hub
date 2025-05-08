@@ -1,139 +1,174 @@
 <?php include 'navbar.php';  ?>
 
 
-
-
-
-
-
-
-<section class="bg_section spacing_for_htag responsive_section">
+<section class="bg_section responsive_section">
     <div class="container ">
-        <h1 class="text-center gradient_text_color spacing_for_htag">Kids & Babies</h1>
-        <div class="row g-4">
+        <h1 class="text-center gradient_text_color spacing_for_htag"> Toys and games </h1>
+
+
+        <div class="row">
+
+            <?php include 'left_side_ads.php'; ?>
 
 
 
-            <div class="col-6 col-md-3">
-                <a href="toys_games.php">
+            <div class="col-lg-8 col-12">
 
-                    <div class="card bg-dark text-white shadow-lg  d-flex flex-column align-items-center"
-                        style="height: 220px;">
-                        <img src="assets/img/test/toysandgames.png" alt="Offer Image" class="img-fluid pic"
-                            style="width: 100%; height: 220px; object-fit: cover;">
-                        <h3 class="mt-2 p-3 text-center  list_page_test_tittle flex-grow-1 text-white">Toys & Games</h3>
+                <div class="row g-4">
+
+
+
+                    <div class="col-12 col-md-4">
+                        <a href="toys_games.php">
+
+                            <div class="card bg-dark text-white shadow-lg  d-flex flex-column align-items-center"
+                                style="height: 220px;">
+                                <img src="assets/img/test/toysandgames.png" alt="Offer Image" class="img-fluid pic"
+                                    style="width: 100%; height: 220px; object-fit: cover;">
+                                <h3 class="mt-2 p-3 text-center  list_page_test_tittle flex-grow-1 text-white">Toys & Games</h3>
+                            </div>
+                        </a>
+
                     </div>
-                </a>
+
+                    <!-- Card 1 -->
+                    <div class="col-12 col-md-4">
+                        <a href="kids_babies.php">
+                            <div class="card bg-dark text-white  shadow-lg  d-flex flex-column align-items-center "
+                                style="height: 220px;">
+                                <img src="assets/img/test/toysandgames1.png" alt="Offer Image" class="img-fluid pic"
+                                    style="width: 100%; height: 220px; object-fit: cover;">
+                                <h3 class="mt-2 p-3 text-center  list_page_test_tittle flex-grow-1 text-white"> Kids & Baby Clothes</h3>
+                            </div>
+                        </a>
+                    </div>
+
+
+
+                    <!-- Card 1 -->
+                    <div class="col-12 col-md-4">
+                        <a href="dreamcrib.php">
+                            <div class="card bg-dark text-white  shadow-lg  d-flex flex-column align-items-center "
+                                style="height: 220px;">
+                                <img src="assets/img/test/dreamcrib.png" alt="Offer Image" class="img-fluid pic"
+                                    style="width: 100%; height: 220px; object-fit: cover;">
+                                <h3 class="mt-2 p-3 text-center  list_page_test_tittle flex-grow-1 text-white">DreamCrib</h3>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-12 col-md-4">
+                        <a href="toys_hub.php">
+                            <div class="card bg-dark text-white  shadow-lg  d-flex flex-column align-items-center "
+                                style="height: 220px;">
+                                <img src="assets/img/test/toytales.png" alt="Offer Image" class="img-fluid pic"
+                                    style="width: 100%; height: 220px; object-fit: cover;">
+                                <h3 class="mt-2 p-3 text-center  list_page_test_tittle flex-grow-1 text-white">ToyTales Hub </h3>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-12 col-md-4">
+                        <a href="snugglebee.php">
+                            <div class="card bg-dark text-white  shadow-lg  d-flex flex-column align-items-center "
+                                style="height: 220px;">
+                                <img src="assets/img/test/snugglebee.png" alt="Offer Image" class="img-fluid pic"
+                                    style="width: 100%; height: 220px; object-fit: cover;">
+                                <h3 class="mt-2 p-3 text-center  list_page_test_tittle flex-grow-1 text-white">SnuggleBee </h3>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-12 col-md-4">
+                        <a href="littlewonders.php">
+                            <div class="card bg-dark text-white  shadow-lg  d-flex flex-column align-items-center "
+                                style="height: 220px;">
+                                <img src="assets/img/test/little wonder.png" alt="Offer Image" class="img-fluid pic"
+                                    style="width: 100%; height: 220px; object-fit: cover;">
+                                <h3 class="mt-2 p-3 text-center  list_page_test_tittle flex-grow-1 text-white">LittleWonders PlayStore </h3>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Card 2 -->
+                    <!-- <div class="col-12 col-md-4">
+    <a href="natural_saloon.php">
+
+        <div class="card bg-dark text-white shadow-lg  d-flex flex-column align-items-center"
+            style="height: 220px;">
+            <img src="assets/img/self_images/tirumala.jpeg" alt="Offer Image" class="img-fluid pic"
+                style="width: 100%; height: 220px; object-fit: cover;">
+            <h3 class="mt-2 p-3 text-center  list_page_test_tittle flex-grow-1 text-white">Natural Saloon</h3>
+        </div>
+    </a>
+
+</div> -->
+
+                    <!-- Card 1 -->
+                    <!-- <div class="col-12 col-md-4">
+    <a href="angelic_beauty_salon.php">
+        <div class="card bg-dark text-white  shadow-lg  d-flex flex-column align-items-center "
+            style="height: 220px;">
+            <img src="assets/img/self_images/inox.jpeg" alt="Offer Image" class="img-fluid pic"
+                style="width: 100%; height: 220px; object-fit: cover;">
+            <h3 class="mt-2 p-3 text-center  list_page_test_tittle flex-grow-1 text-white">Angelic Beauty Saloom</h3>
+        </div>
+    </a>
+</div> -->
+
+                    <!-- Card 2 -->
+                    <!-- <div class="col-12 col-md-4">
+    <a href="laavish_saloon.php">
+
+        <div class="card bg-dark text-white shadow-lg  d-flex flex-column align-items-center"
+            style="height: 220px;">
+            <img src="assets/img/self_images/surya.avif" alt="Offer Image" class="img-fluid pic"
+                style="width: 100%; height: 220px; object-fit: cover;">
+            <h3 class="mt-2 p-3 text-center  list_page_test_tittle flex-grow-1 text-white">Laavish Saloon</h3>
+        </div>
+    </a>
+</div> -->
+
+                    <!-- Card 1 -->
+                    <!-- <div class="col-12 col-md-4">
+    <a href="angelic_beauty_salon.php">
+
+        <div class="card bg-dark text-white  shadow-lg  d-flex flex-column align-items-center "
+            style="height: 220px;">
+            <img src="assets/img/self_images/sports.jpg" alt="Offer Image" class="img-fluid pic"
+                style="width: 100%; height: 220px; object-fit: cover;">
+            <h3 class="mt-2 p-3 text-center  list_page_test_tittle flex-grow-1 text-white">Decent</h3>
+        </div>
+    </a>
+</div> -->
+
+
+
+
+
+
+                </div>
 
             </div>
 
-            <!-- Card 1 -->
-            <div class="col-6 col-md-3">
-                <a href="kids_babies.php">
-                    <div class="card bg-dark text-white  shadow-lg  d-flex flex-column align-items-center "
-                        style="height: 220px;">
-                        <img src="assets/img/test/toysandgames1.png" alt="Offer Image" class="img-fluid pic"
-                            style="width: 100%; height: 220px; object-fit: cover;">
-                        <h3 class="mt-2 p-3 text-center  list_page_test_tittle flex-grow-1 text-white"> Kids & Baby Clothes</h3>
-                    </div>
-                </a>
-            </div>
 
+            <?php include 'right_side_ads.php'; ?>
 
-
-            <!-- Card 1 -->
-            <div class="col-6 col-md-3">
-                <a href="s3_beauty_saloon.php">
-                    <div class="card bg-dark text-white  shadow-lg  d-flex flex-column align-items-center "
-                        style="height: 220px;">
-                        <img src="assets/img/test/toysandgames2.png" alt="Offer Image" class="img-fluid pic"
-                            style="width: 100%; height: 220px; object-fit: cover;">
-                        <h3 class="mt-2 p-3 text-center  list_page_test_tittle flex-grow-1 text-white">Laxons Baby World</h3>
-                    </div>
-                </a>
-            </div>
-
-            <div class="col-6 col-md-3">
-                <a href="groom9_saloon.php">
-                    <div class="card bg-dark text-white  shadow-lg  d-flex flex-column align-items-center "
-                        style="height: 220px;">
-                        <img src="assets/img/test/toysandgames2.png" alt="Offer Image" class="img-fluid pic"
-                            style="width: 100%; height: 220px; object-fit: cover;">
-                        <h3 class="mt-2 p-3 text-center  list_page_test_tittle flex-grow-1 text-white">Groom 9 Saloon</h3>
-                    </div>
-                </a>
-            </div>
-
-            <div class="col-6 col-md-3">
-                <a href="groom9_saloon.php">
-                    <div class="card bg-dark text-white  shadow-lg  d-flex flex-column align-items-center "
-                        style="height: 220px;">
-                        <img src="assets/img/test/toysandgames.png" alt="Offer Image" class="img-fluid pic"
-                            style="width: 100%; height: 220px; object-fit: cover;">
-                        <h3 class="mt-2 p-3 text-center  list_page_test_tittle flex-grow-1 text-white">Groom 9 Saloon</h3>
-                    </div>
-                </a>
-            </div>
-            <!-- Card 2 -->
-            <!-- <div class="col-6 col-md-3">
-                <a href="natural_saloon.php">
-
-                    <div class="card bg-dark text-white shadow-lg  d-flex flex-column align-items-center"
-                        style="height: 220px;">
-                        <img src="assets/img/self_images/tirumala.jpeg" alt="Offer Image" class="img-fluid pic"
-                            style="width: 100%; height: 220px; object-fit: cover;">
-                        <h3 class="mt-2 p-3 text-center  list_page_test_tittle flex-grow-1 text-white">Natural Saloon</h3>
-                    </div>
-                </a>
-
-            </div> -->
-
-            <!-- Card 1 -->
-            <!-- <div class="col-6 col-md-3">
-                <a href="angelic_beauty_salon.php">
-                    <div class="card bg-dark text-white  shadow-lg  d-flex flex-column align-items-center "
-                        style="height: 220px;">
-                        <img src="assets/img/self_images/inox.jpeg" alt="Offer Image" class="img-fluid pic"
-                            style="width: 100%; height: 220px; object-fit: cover;">
-                        <h3 class="mt-2 p-3 text-center  list_page_test_tittle flex-grow-1 text-white">Angelic Beauty Saloom</h3>
-                    </div>
-                </a>
-            </div> -->
-
-            <!-- Card 2 -->
-            <!-- <div class="col-6 col-md-3">
-                <a href="laavish_saloon.php">
-
-                    <div class="card bg-dark text-white shadow-lg  d-flex flex-column align-items-center"
-                        style="height: 220px;">
-                        <img src="assets/img/self_images/surya.avif" alt="Offer Image" class="img-fluid pic"
-                            style="width: 100%; height: 220px; object-fit: cover;">
-                        <h3 class="mt-2 p-3 text-center  list_page_test_tittle flex-grow-1 text-white">Laavish Saloon</h3>
-                    </div>
-                </a>
-            </div> -->
-
-            <!-- Card 1 -->
-            <!-- <div class="col-6 col-md-3">
-                <a href="angelic_beauty_salon.php">
-
-                    <div class="card bg-dark text-white  shadow-lg  d-flex flex-column align-items-center "
-                        style="height: 220px;">
-                        <img src="assets/img/self_images/sports.jpg" alt="Offer Image" class="img-fluid pic"
-                            style="width: 100%; height: 220px; object-fit: cover;">
-                        <h3 class="mt-2 p-3 text-center  list_page_test_tittle flex-grow-1 text-white">Decent</h3>
-                    </div>
-                </a>
-            </div> -->
-
-        
 
 
 
 
         </div>
+
+
+
     </div>
 </section>
+
+
+
+
+
+
 
 
 
@@ -150,7 +185,7 @@
     </div>
     <div class="container pop_search_index">
         <div class="row">
-            <div class="col-6 col-sm-4 col-md-2">
+            <div class="col-12 col-sm-4 col-md-2">
                 <ul class="dot">
                     <li><a href="">British Airways</a></li>
                     <li><a href="">Gym Shark</a></li>
@@ -163,7 +198,7 @@
                     <li><a href="">Spa Seekers</a></li>
                 </ul>
             </div>
-            <div class="col-6 col-sm-4 col-md-2">
+            <div class="col-12 col-sm-4 col-md-2">
                 <ul class="dot">
                     <li><a href="">Debenhams</a></li>
                     <li><a href="">Snuz</a></li>
@@ -177,7 +212,7 @@
                     <li><a href="">American Golf</a></li>
                 </ul>
             </div>
-            <div class="col-6 col-sm-4 col-md-2">
+            <div class="col-12 col-sm-4 col-md-2">
                 <ul class="dot">
                     <li><a href="">Homebase</a></li>
                     <li><a href="">Magic Madhouse</a></li>
@@ -191,7 +226,7 @@
                     <li><a href="">LEGO Shop</a></li>
                 </ul>
             </div>
-            <div class="col-6 col-sm-4 col-md-2">
+            <div class="col-12 col-sm-4 col-md-2">
                 <ul class="dot">
                     <li><a href="">Dell</a></li>
                     <li><a href="">Sainsbury's</a></li>
@@ -205,7 +240,7 @@
                     <li><a href="">Hearst Magazines</a></li>
                 </ul>
             </div>
-            <div class="col-6 col-sm-4 col-md-2">
+            <div class="col-12 col-sm-4 col-md-2">
                 <ul class="dot">
                     <li><a href="">eFlorist</a></li>
                     <li><a href="">Railcard</a></li>
@@ -220,7 +255,7 @@
                     <li><a href="">Muscle Food</a></li>
                 </ul>
             </div>
-            <div class="col-6 col-sm-4 col-md-2">
+            <div class="col-12 col-sm-4 col-md-2">
                 <ul class="dot">
                     <li><a href="">Cult Beauty</a></li>
                     <li><a href="">Clarks</a></li>
