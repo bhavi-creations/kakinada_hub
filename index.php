@@ -7,7 +7,7 @@
 
 
 
-<section class=" bg_section   ">
+<section class="   bg_section  index_starting_section ">
     <div class="container text-center main_div_container">
 
         <div class="    d-md-none    pt-5 first_dive_image_top_div_robot">
@@ -89,8 +89,8 @@
                     </div>
                     <div class="col-6 col-md-8 inner_div_index">
                         <h1 class="logo_title_color">1000+</h1>
-                        <h4 class="white_coor_text">TRAFFIC</h4>
-                        <p class="white_coor_text"> Join the brands already hitting 1000+ traffic with proven methods
+                        <h4 class="white_coor_text_section">TRAFFIC</h4>
+                        <p class="white_coor_text_section"> Join the brands already hitting 1000+ traffic with proven methods
                         </p>
                     </div>
                 </div>
@@ -110,7 +110,7 @@
 
 
                         <h1 class="logo_title_color"> 500+ </h1>
-                        <h5 class="white_coor_text">Supporting vendors </h5>
+                        <h5 class="white_coor_text_section">Supporting vendors </h5>
                     </div>
                 </div>
             </div>
@@ -431,7 +431,7 @@ $query = "SELECT * FROM orange_slides ORDER BY id DESC";
 $result = $conn->query($query);
 ?>
 
-<section class="vs-hero-wrapper position-relative slider-area bg_section">
+<section class="vs-hero-wrapper position-relative slider-area index_last_section">
     <div class="bg-overlay"></div>
     <div class="vs-hero-carousel" data-navprevnext="true" data-height="800" data-container="1900" data-slidertype="responsive">
         <?php while ($row = $result->fetch_assoc()): ?>

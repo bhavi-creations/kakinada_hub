@@ -2752,7 +2752,8 @@ padding-left: 10px;
 
  .title-area-three .sub-title7 {
    font-family: var(--subtitle-font);
-   color: #7D1C4A;
+   /* color: #7D1C4A; */
+   color: white;
    font-size: 32px;
    font-weight: 900;
    line-height: normal;
