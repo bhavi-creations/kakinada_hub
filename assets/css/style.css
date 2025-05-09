@@ -336,7 +336,9 @@ padding-left: 10px;
 
  a {
    /* color: var(--theme-color); */
-   color: white !important;
+
+
+   color: rgb(0, 204, 255) !important;
    text-decoration: none;
    outline: 0;
    -webkit-transition: all ease 0.4s;
