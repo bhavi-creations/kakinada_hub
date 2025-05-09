@@ -28,29 +28,29 @@
         <div class="row align-items-center d-none d-md-flex">
             <!-- Desktop View -->
             <div class="col-md-4 text-white">
-                <p class="mb-0 gradient_text_color"><i class="fas fa-phone-alt"></i> +91 9642343434</p>
+                <p class="mb-0 gradient_text_color_section"><i class="fas fa-phone-alt"></i> +91 9642343434</p>
             </div>
             <div class="col-md-4 text-center">
-                <h3 class="gradient_text_color">Kakinada Hub</h3>
+                <h3 class="gradient_text_color_section">Kakinada Hub</h3>
             </div>
             <div class="col-md-4 text-end">
-                <a href="#" class="gradient_text_color me-3"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" class="gradient_text_color me-3"><i class="fab fa-twitter"></i></a>
-                <a href="#" class="gradient_text_color me-3"><i class="fab fa-instagram"></i></a>
-                <a href="#" class="gradient_text_color"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="gradient_text_color_section me-3"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="gradient_text_color_section me-3"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="gradient_text_color_section me-3"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="gradient_text_color_section"><i class="fab fa-linkedin-in"></i></a>
             </div>
         </div>
 
         <!-- Mobile View -->
         <div class="d-flex d-md-none justify-content-between text-white">
-            <p class="mb-0 gradient_text_color"><i class="fas fa-phone-alt"></i> +91 9642343434</p>
-            <h5 class="mb-0 gradient_text_color">Kakinada Hub</h5>
+            <p class="mb-0 gradient_text_color_section"><i class="fas fa-phone-alt"></i> +91 9642343434</p>
+            <h5 class="mb-0 gradient_text_color_section">Kakinada Hub</h5>
         </div>
         <div class="d-md-none text-center mt-2">
-            <a href="#" class="gradient_text_color me-3"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" class="gradient_text_color me-3"><i class="fab fa-twitter"></i></a>
-            <a href="#" class="gradient_text_color me-3"><i class="fab fa-instagram"></i></a>
-            <a href="#" class="gradient_text_color"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="gradient_text_color_section me-3"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="gradient_text_color_section me-3"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="gradient_text_color_section me-3"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="gradient_text_color_section"><i class="fab fa-linkedin-in"></i></a>
         </div>
     </div>
 </footer>

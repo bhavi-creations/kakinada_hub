@@ -2261,7 +2261,8 @@
  } */
 
  .text_side_div {
-   border: 3px solid #ff7230;
+   border: 3px solid #ffffff;
+   /* border: 3px solid #ff7230; */
    border-radius: 12px;
    /* background-image: linear-gradient(#f5d19e, #fdf6ec, #f5d19e), linear-gradient(135deg, #dc3c0a, #ffb013); */
    background-origin: border-box;
@@ -2944,15 +2945,17 @@
 
  .property_strong {
    font-weight: bold;
-   background: linear-gradient(to right, #6b390d, #ffb013);
+   /* background: linear-gradient(to right, #6b390d, #ffb013);
    -webkit-background-clip: text;
-   -webkit-text-fill-color: transparent;
+   -webkit-text-fill-color: transparent; */
+   color:white !important ;
  }
 
  .property_p_tag {
-   background: linear-gradient(to right, #6b390d, #ffb013);
+   /* background: linear-gradient(to right, #6b390d, #ffb013);
    -webkit-background-clip: text;
-   -webkit-text-fill-color: transparent;
+   -webkit-text-fill-color: transparent; */
+   color: white;
  }
 
 
@@ -3268,7 +3271,9 @@
    border-radius: 10px;
    text-align: center;
    margin-bottom: 20px;
-   border: 1px solid #ff7230 !important;
+   border: 1px solid #ffffff !important;
+  
+   /* border: 1px solid #ff7230 !important; */
  }
 
  .car_image {
@@ -3332,7 +3337,7 @@
   /* background: linear-gradient(to right, #6b390d, #ffb013); */
   /* -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; */
-   color: #D2691E	;
+   color: #D2691E;
    font-size: 16px;
    font-weight: bold;
    white-space: nowrap;
@@ -3811,6 +3816,16 @@
    -webkit-background-clip: text;
    -webkit-text-fill-color: transparent;
    display: inline-block;
+   /* color: white; */
+
+   font-weight: bold;
+ }
+ .logo_title_color_section {
+     background: linear-gradient(to right, #6b390d, #ffb013);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   display: inline-block;
+ 
 
    font-weight: bold;
  }
@@ -4278,12 +4293,19 @@
    padding-top: 100px;
  }
 
- /* .gradient_text_color {
-   background: linear-gradient(to right, #6b390d, #ffb013);
+ .gradient_text_color {
+   /* background: linear-gradient(to right, #6b390d, #ffb013);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent; */
+   color: white;
+ }
+
+ .gradient_text_color_section{
+  background: linear-gradient(to right, #6b390d, #ffb013);
    -webkit-background-clip: text;
    -webkit-text-fill-color: transparent;
- } */
 
+ }
 
 
  .gradient_text_color_orange_to_gold {
@@ -4443,8 +4465,8 @@
  /* Apply gradient text and background to custom input */
  .custom-input {
    /* background-color: #ffb013; /* Set dropdown background */
-   /* color: transparent;
-  background-image: linear-gradient(to right, #6b390d, #ffb013); /* Gradient text */
+  /* color: transparent; */
+  /* background-image: linear-gradient(to right, #6b390d, #ffb013);  */
    -webkit-background-clip: text;
    background-clip: text;
    border: none !important;
@@ -4733,8 +4755,11 @@ right: 10px;
   right: 46px; */
    bottom: 0;
    /* background-color: #fff4e0; */
-   /* .linear-gradient(to right, #dc3c0a, #ffb013) */
-   background-color:#dc3c0a ;
+   /* . */
+   /* background:linear-gradient(to right, #dc3c0a, #ffb013) ; */
+   /* background:linear-gradient(to right, #dc3c0a, #ffb013) ; */
+   background-color:#f1840f ;
+   
    background-position: center;
    background-repeat: no-repeat;
    background-size: cover;

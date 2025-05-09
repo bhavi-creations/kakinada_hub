@@ -364,7 +364,7 @@
 
                                 <div class="row">
 
-                                    <h2 class="heading-gradient">Submit Your Review</h2>
+                                    <h2 class="heading-gradient_section">Submit Your Review</h2>
                                     <div class="col-md-4">
                                         <input type="text" class="custom-input" id="name" placeholder="Your Name" required>
 

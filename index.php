@@ -188,7 +188,8 @@ $resultLower = $conn->query($sqlLower);
 
     <div class="container-style6  ">
         <div class="title-area-three text-center wow fadeInUp offers_section_text" data-wow-delay="400ms">
-            <span class="sub-title7 gradient_text_color">Offers </span>
+            <!-- <span class="sub-title7 gradient_text_color">Offers </span> -->
+            <span class="sub-title7 text-white">Offers </span>
         </div>
 
         <!-- Upper Type Swiper -->

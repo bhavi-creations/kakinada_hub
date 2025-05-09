@@ -6,7 +6,7 @@
 <section class="bg_section">
     <div class="container">
 
-        <div class="text-center   ">
+        <div class="text-center  service_heading_section  ">
             <h1>Welcome to The Royal Touch</h1>
             <h5>Relax, Rejuvenate, Glow – Ultimate Salon Experience</h5>
         </div>
@@ -57,7 +57,7 @@
                 </div>
                 <div class="row my-5 p-3">
                     <div class="col-md-8 col-12 ">
-                        <h6>
+                        <h6 class="service_last_section">
                             Royal Touch Salon & Spa offers a luxurious escape where beauty meets elegance. Our expert stylists and therapists provide top-tier haircuts, styling, skincare, and rejuvenating spa treatments. With a commitment to excellence, we use premium products and the latest techniques to ensure you look and feel your best. Experience a royal touch of pampering in a relaxing and sophisticated ambiance. Whether it's a refreshing facial, a soothing massage, or a stunning makeover, we redefine beauty with elegance and care. Indulge in the ultimate self-care experience at Royal Touch Salon & Spa.
 
                         </h6>

@@ -298,7 +298,8 @@
   max-width: 100%;
   padding: 20px;
 
-  border: 2px solid #ff7230;
+  border: 2px solid #ffffff;
+  /* border: 2px solid #ff7230; */
   /* background-image: linear-gradient(#fff, #fff), var(--border-gradient); */
    /* background-image: linear-gradient(#f5d19e, #fdf6ec, #f5d19e), linear-gradient(135deg, #dc3c0a, #ffb013); */
 
@@ -375,7 +376,8 @@
   flex: 0 0 80px;
   text-align: right;
   font-weight: bold;
-  color: #d9534f;
+  color: #ffffff;
+  /* color: #d9534f; */
 }
 
 .review p{

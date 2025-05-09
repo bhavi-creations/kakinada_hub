@@ -140,9 +140,11 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
 
                     <div class="col-12 py-3">
                         <?php if (isset($event)): ?>
-                            <h2 class="logo_title_color">About the Event</h2>
+                            <h2>About the Event</h2>
+                            <!-- <h2 class="logo_title_color">About the Event</h2> -->
                             <h6 class="p-gradient"><?= nl2br(htmlspecialchars($event['about_event'])) ?></h6>
-                            <h2 class="logo_title_color">About the Venue</h2>
+                            <h2 >About the Venue</h2>
+                            <!-- <h2 class="logo_title_color">About the Venue</h2> -->
                             <h6 class="p-gradient"><?= nl2br(htmlspecialchars($event['about_venue'])) ?></h6>
                         <?php endif; ?>
                     </div>

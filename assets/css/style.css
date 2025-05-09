@@ -124,22 +124,37 @@
    filter: brightness(1.1);
  }
 
- .heading-gradient,
+ 
  .movie-label {
-   background: var(--heading-gradient);
+   /* background: var(--heading-gradient);
    -webkit-background-clip: text;
-   -webkit-text-fill-color: transparent;
+   -webkit-text-fill-color: transparent; */
+   color: white;
+   font-weight: 600;
  }
 
- .p-gradient,
+ 
  .movie-value,
  .job_roles,
  .cast_names {
-   background: var(--text-gradient);
+   /* background: var(--text-gradient);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent; */
+   color: #fff4e0;
+ }
+/* .heading-gradient,
+.p-gradient{
+     background: var(--text-gradient);
    -webkit-background-clip: text;
    -webkit-text-fill-color: transparent;
- }
+} */
 
+.white_coor_text_section{
+  background: linear-gradient(to right, #6b390d, #ffb013) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+}
+ 
  .border-gradient,
  .job_image_card {
    border: 2px solid transparent;
@@ -320,7 +335,8 @@ padding-left: 10px;
  }
 
  a {
-   color: var(--theme-color);
+   /* color: var(--theme-color); */
+   color: white !important;
    text-decoration: none;
    outline: 0;
    -webkit-transition: all ease 0.4s;
@@ -382,11 +398,12 @@ padding-left: 10px;
  .h6,
  h6 {
    font-family: var(--title-font);  
-   color: var(--title-color);
+   /* color: var(--title-color); */
+   color: white;
    /* color:#bcd6ff; */
-   /* background: linear-gradient(to right, #c8a280, #ffb013); */
-   /* -webkit-background-clip: text; */
-   /* -webkit-text-fill-color: transparent; */
+   /* background: linear-gradient(to right, #c8a280, #ffb013);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent; */
    
    text-transform: none;
    font-weight: 700;
@@ -21299,7 +21316,8 @@ padding-left: 10px;
 
  /* Gradient Border for Main Card */
  .card_div {
-   border: 3px solid #ff7230 ;
+   /* border: 3px solid #ff7230 ; */
+   border: 3px solid #ffffff ;
    border-radius: 12px;
    /* background-image: linear-gradient(#f5d19e, #fdf6ec, #f5d19e), linear-gradient(135deg, #dc3c0a, #ffb013); */
    background-origin: border-box;
@@ -21334,7 +21352,8 @@ padding-left: 10px;
 
  /* Gradient Border for Image Div */
  .job_image_card_main {
-   border: 2px solid  #ff7230  ;
+   border: 2px solid  #ffffff  ;
+   /* border: 2px solid  #ff7230  ; */
    border-radius: 10px;
    /* background-image: linear-gradient(#f5d19e, #fdf6ec, #f5d19e), linear-gradient(135deg, #dc3c0a, #ffb013); */
    background-origin: border-box;
@@ -21372,7 +21391,8 @@ padding-left: 10px;
  .job_image_card {
    display: inline-block;
    padding: 62px;
-border: #ff7230 2px solid;
+/* border: #ff7230 2px solid; */
+border: #ffffff 2px solid;
    border-radius: 8px;
    background-color: transparent !important;
    display: flex;
@@ -21699,3 +21719,24 @@ color: white !important;
             height: 200px;
         }
     }
+
+
+
+
+    /* services stylings  */
+
+    .product-content h3  {
+      color: white !important;
+    }
+    .product-content p  {
+      color: white !important;
+    }
+.service_heading_section h1{
+  color: white !important;
+}
+.service_heading_section h5{
+  color: white !important;
+}
+.service_last_section{
+  color: white !important;
+}
